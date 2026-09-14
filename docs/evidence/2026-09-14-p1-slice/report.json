@@ -1,0 +1,37 @@
+{
+  "when": "2026-09-14",
+  "method": "Chrome headless CDP 1440x900 against http://localhost:5173/ (Vite 6.4.3). Playwright not installed; no new dependencies.",
+  "viewport": { "w": 1440, "h": 900 },
+  "canvasesStart": 1,
+  "canvasesEnd": 1,
+  "labels": ["土星", "天王星", "木星", "火星", "水星", "太阳", "金星", "地球", "月球", "海王星"],
+  "overflow": { "sx": 1440, "sy": 900, "cw": 1440, "ch": 900 },
+  "firstFocus": {
+    "earth": { "className": "system-map-page", "name": "", "mode": "" },
+    "moon": { "className": "system-map-page", "name": "", "mode": "" },
+    "saturn": { "className": "system-map-page", "name": "", "mode": "" }
+  },
+  "tenRounds": "attempted 10 earth-moon-saturn cycles; page class never became is-focus; selection name stayed empty",
+  "pauseBefore": "false",
+  "pauseAfter": "继续",
+  "hiddenCanvases": 1,
+  "zoomButtons": true,
+  "memoryEnd": { "used": 18234512, "total": 35260656 },
+  "consoleLogs": [
+    "[vite] connecting...",
+    "[vite] connected.",
+    "React DevTools suggestion"
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "01-overview.png",
+    "02-focus-earth.png",
+    "03-focus-moon.png",
+    "04-focus-saturn.png"
+  ],
+  "limitations": [
+    "Body labels overlay the canvas; CDP mouse hits the span (no click handler). Synthetic/CDP double-clicks did not enter focus (no is-focus class).",
+    "renderer.info is not on window; only performance.memory JS heap was recorded.",
+    "10 attempted rounds are not the roadmap 30-round performance gate."
+  ]
+}

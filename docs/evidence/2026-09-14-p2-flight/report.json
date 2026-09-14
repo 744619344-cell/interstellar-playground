@@ -1,0 +1,45 @@
+{
+  "when": "2026-09-14",
+  "method": "Chrome headless CDP 1440x900 against http://localhost:5173/ after P1 session navigation.",
+  "enter": {
+    "canvases": 1,
+    "mode": "跟随视角",
+    "resources": "纹理 16 · 几何 38 · 程序 14",
+    "model": "飞船已就绪"
+  },
+  "cockpit": "驾驶舱 · 固定座椅",
+  "free": "自由观察",
+  "afterKeys": {
+    "mode": "视角过渡中",
+    "speed": "速度 0.00 m/s · 镜头 4.87 m · 视线通畅",
+    "nav": "尚未锁定目标"
+  },
+  "earthRoute": "地球 · 未开始",
+  "assist": "true",
+  "safety": "true",
+  "pausedFlight": "继续",
+  "afterReset": {
+    "canvases": 1,
+    "resources": "纹理 19 · 几何 49 · 程序 15",
+    "route": "未选择航线 · 未开始"
+  },
+  "afterExit": {
+    "canvases": 1,
+    "launch": true
+  },
+  "pageErrors": [],
+  "canvasesStable": true,
+  "screenshots": [
+    "01-follow.png",
+    "02-cockpit.png",
+    "03-free.png",
+    "04-earth-route.png",
+    "05-assist-safety.png"
+  ],
+  "limitations": [
+    "W/S/A/D CDP key events left speed at 0.00 m/s; keyboard thrust was not demonstrated in this session.",
+    "C key did start a view transition (视角过渡中).",
+    "Moon/Saturn lock was clicked via 月球航线/土星航线 after earth; final locked body after saturn click was not separately snapshotted.",
+    "Resource numbers are HUD 渲染资源 text, not a GPU profiler."
+  ]
+}

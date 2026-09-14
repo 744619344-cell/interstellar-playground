@@ -36,8 +36,8 @@
   **已被独立桌面架构取代。** 仓库中无 `SolarVoyageEngine`；模块已直接位于 `src/features/space-exploration/`。
 - [ ] P0-T03：将 `旧太阳系入口.h5.tsx` 拆分为页面容器、HUD、导航抽屉和日志抽屉。  
   **已被独立桌面架构取代。** 该文件不存在；当前入口为 `src/App.tsx` → `SystemMapShell`。
-- [ ] P0-T04：建立 `features/space-exploration` 目录和公开接口。  
-  **已实现待核验。** 证据：`src/features/space-exploration/index.ts`、`src/App.tsx`。P2-T06 任务文档曾引用此现状，但无 P0-T04 独立验收。
+- [x] P0-T04：建立 `features/space-exploration` 目录和公开接口。
+  **已验收。** [2026-09-14-p0-t04-public-interface-audit.md](../tasks/2026-09-14-p0-t04-public-interface-audit.md)：公开导出、根应用接入和边界测试通过；根应用直接引用 UI 实现记录为非阻断维护建议。
 - [ ] P0-T05：建立资源清单、许可字段和运行时预算检查。  
   **部分完成。** 模板见 `08-ASSET-MANIFEST-TEMPLATE.md`，现状登记见 `09-ASSET-INVENTORY.md`。源码中无运行时预算检查；本项不能勾选完成。
 - [ ] P0-T06：建立性能采样面板与 20 分钟内存测试脚本。  
@@ -51,12 +51,12 @@
 
 目标：在一个场景中同时展示完整太阳系，并支持全景和局部聚焦。
 
-- [ ] P1-T01：建立天体注册表和视觉尺度模型。  
-  **已实现待核验。** `src/features/space-exploration/domain/registry.ts`、`visualScale.ts` 及对应测试。
-- [ ] P1-T02：太阳、八大行星和月球同场景低模渲染。  
-  **已实现待核验。** `src/features/space-exploration/rendering/solar-system/systemMapBodies.ts` 创建十颗星体。
-- [ ] P1-T03：实现全景拖动、缩放、星体命中与聚焦。  
-  **已实现待核验。** `domain/cameraModel.ts`、`input/systemMapInput.ts`、`rendering/solar-system/systemMapPick.ts`、`systemMapEngine.ts`。
+- [x] P1-T01：建立天体注册表和视觉尺度模型。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p1-t01-t03-system-slice-audit.md)：十星体唯一注册和有限视觉尺度测试通过。
+- [x] P1-T02：太阳、八大行星和月球同场景低模渲染。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p1-t01-t03-system-slice-audit.md)：十星体同场创建、实际标签和单 canvas 通过。
+- [x] P1-T03：实现全景拖动、缩放、星体命中与聚焦。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p1-t01-t03-system-slice-audit.md)：实际拖动、滚轮及三个标杆星体 10 轮聚焦往返通过；不替代 30 轮阶段性能门禁。
 - [ ] P1-T04：实现浮动原点和局部渲染坐标。  
   **未开始。** 架构要求以飞船或目标为浮动原点并在超阈值时重定位；太阳系仍使用 `visualScale` 世界坐标直接渲染。`shipCameraPreview.ts` 的进入时局部原点只是飞船预览偏移，不能当作浮动原点完成。
 - [ ] P1-T05：实现星体 LOD2/LOD1 切换和资源取消。  
@@ -74,14 +74,14 @@
 
 - [ ] P2-T01：Blender 创建模块化飞船灰盒和碰撞体。  
   **部分完成。** 运行时灰盒为 `shipCameraPreview.ts` 中的球体+锥体，不是 Blender 模块化灰盒，也无正式碰撞网格。
-- [ ] P2-T02：实现固定时间步飞行模型。  
-  **已实现待核验。** `domain/shipFlightModel.ts`、`application/shipFlightSimulation.ts` 及测试。
-- [ ] P2-T03：实现第三人称相机、自由观察和相机避障。  
-  **已实现待核验。** `rendering/spacecraft/shipViewCamera.ts`、`domain/shipCameraCollision.ts`。
-- [ ] P2-T04：实现驾驶舱占位视角与视角切换。  
-  **已实现待核验。** `shipViewCamera.ts` 与 `ui/ShipCameraPreviewPanel.tsx`。
-- [ ] P2-T05：实现目标锁定、航向辅助和近星体防撞。  
-  **已实现待核验。** `domain/shipNavigation.ts`、`domain/shipFlightSafety.ts`。
+- [x] P2-T02：实现固定时间步飞行模型。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p2-t02-t05-flight-audit.md)：1/120 固定步、30/60/120 FPS 等价、异常帧与暂停测试通过。
+- [x] P2-T03：实现第三人称相机、自由观察和相机避障。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p2-t02-t05-flight-audit.md)：跟随/自由视角、约束及产品浏览器切换通过。
+- [x] P2-T04：实现驾驶舱占位视角与视角切换。
+  **已验收，并已由 P3-T06 的真实座椅机位取代占位。** [批量核验记录](../tasks/2026-09-14-p2-t02-t05-flight-audit.md)。
+- [x] P2-T05：实现目标锁定、航向辅助和近星体防撞。
+  **已验收。** [批量核验记录](../tasks/2026-09-14-p2-t02-t05-flight-audit.md)：锁定、辅助不接管推力、连续防撞和产品浏览器交互通过。
 - [x] P2-T06：实现地球、月球、土星完整航线。  
   **已验收。** [2026-09-10-p2-t06-benchmark-routes.md](../tasks/2026-09-10-p2-t06-benchmark-routes.md)；代码 `domain/shipRoute.ts`、`ui/ShipNavigationPanel.tsx`。
 - [x] P2-T07：实现推进器、姿态反馈和基础声音。  
