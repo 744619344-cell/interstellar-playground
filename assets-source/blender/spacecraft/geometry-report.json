@@ -1,0 +1,242 @@
+[
+  {
+    "lod": 0,
+    "triangles": 110824,
+    "vertices": 58095,
+    "dimensionsBlenderXYZ": [
+      7.8,
+      15.6,
+      4.8
+    ],
+    "meshObjects": 17,
+    "materialCount": 6,
+    "budget": [
+      80000,
+      120000
+    ],
+    "withinBudget": true,
+    "dimensionsMatch": true,
+    "nodes": [
+      "Exterior_Hull_Structure_Graphite",
+      "Exterior_Hull_Ceramic_WarmWhite",
+      "Canopy_Glass",
+      "Exterior_Hull_Navigation_Cyan",
+      "Exterior_Hull_Maintenance_Amber",
+      "Exterior_Hull_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Structure_Graphite",
+      "Exterior_EnginePod_-1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_-1_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Maintenance_Amber",
+      "Exterior_EnginePod_-1_Navigation_Cyan",
+      "Thruster_Main_-1",
+      "Thruster_Reverse_-1",
+      "Exterior_EnginePod_1_Structure_Graphite",
+      "Exterior_EnginePod_1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_1_Brushed_Titanium",
+      "Exterior_EnginePod_1_Maintenance_Amber",
+      "Exterior_EnginePod_1_Navigation_Cyan",
+      "Thruster_Main_1",
+      "Thruster_Reverse_1",
+      "Door_Outer",
+      "Anchor_EVA",
+      "Anchor_Tether",
+      "Anchor_CockpitCamera",
+      "Anchor_ThirdPersonCamera",
+      "Seat_Pilot",
+      "Seat_Copilot",
+      "Thruster_RCS_-1_0_0",
+      "Thruster_RCS_-1_0_1",
+      "Thruster_RCS_-1_0_2",
+      "Thruster_RCS_-1_1_0",
+      "Thruster_RCS_-1_1_1",
+      "Thruster_RCS_-1_1_2",
+      "Thruster_RCS_1_0_0",
+      "Thruster_RCS_1_0_1",
+      "Thruster_RCS_1_0_2",
+      "Thruster_RCS_1_1_0",
+      "Thruster_RCS_1_1_1",
+      "Thruster_RCS_1_1_2",
+      "Ship_Exterior_LOD0",
+      "Collider_Hull",
+      "Collider_Pod_-1",
+      "Collider_Pod_1"
+    ],
+    "clearance": {
+      "cockpitCanopyHidden": true,
+      "sightRayCount": 15,
+      "blockedSightRays": [
+        [
+          20,
+          10
+        ]
+      ],
+      "egressSampleCount": 25,
+      "blockedEgressSamples": [],
+      "egressSampleSizeMetres": [
+        1,
+        1.5,
+        2.1
+      ]
+    }
+  },
+  {
+    "lod": 1,
+    "triangles": 59720,
+    "vertices": 31603,
+    "dimensionsBlenderXYZ": [
+      7.7999,
+      15.6,
+      4.8
+    ],
+    "meshObjects": 17,
+    "materialCount": 6,
+    "budget": [
+      35000,
+      60000
+    ],
+    "withinBudget": true,
+    "dimensionsMatch": true,
+    "nodes": [
+      "Exterior_Hull_Structure_Graphite",
+      "Exterior_Hull_Ceramic_WarmWhite",
+      "Canopy_Glass",
+      "Exterior_Hull_Navigation_Cyan",
+      "Exterior_Hull_Maintenance_Amber",
+      "Exterior_Hull_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Structure_Graphite",
+      "Exterior_EnginePod_-1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_-1_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Maintenance_Amber",
+      "Exterior_EnginePod_-1_Navigation_Cyan",
+      "Thruster_Main_-1",
+      "Thruster_Reverse_-1",
+      "Exterior_EnginePod_1_Structure_Graphite",
+      "Exterior_EnginePod_1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_1_Brushed_Titanium",
+      "Exterior_EnginePod_1_Maintenance_Amber",
+      "Exterior_EnginePod_1_Navigation_Cyan",
+      "Thruster_Main_1",
+      "Thruster_Reverse_1",
+      "Door_Outer",
+      "Anchor_EVA",
+      "Anchor_Tether",
+      "Anchor_CockpitCamera",
+      "Anchor_ThirdPersonCamera",
+      "Seat_Pilot",
+      "Seat_Copilot",
+      "Thruster_RCS_-1_0_0",
+      "Thruster_RCS_-1_0_1",
+      "Thruster_RCS_-1_0_2",
+      "Thruster_RCS_-1_1_0",
+      "Thruster_RCS_-1_1_1",
+      "Thruster_RCS_-1_1_2",
+      "Thruster_RCS_1_0_0",
+      "Thruster_RCS_1_0_1",
+      "Thruster_RCS_1_0_2",
+      "Thruster_RCS_1_1_0",
+      "Thruster_RCS_1_1_1",
+      "Thruster_RCS_1_1_2",
+      "Ship_Exterior_LOD1",
+      "Collider_Hull",
+      "Collider_Pod_-1",
+      "Collider_Pod_1"
+    ],
+    "clearance": {
+      "cockpitCanopyHidden": true,
+      "sightRayCount": 15,
+      "blockedSightRays": [
+        [
+          20,
+          10
+        ]
+      ],
+      "egressSampleCount": 25,
+      "blockedEgressSamples": [],
+      "egressSampleSizeMetres": [
+        1,
+        1.5,
+        2.1
+      ]
+    }
+  },
+  {
+    "lod": 2,
+    "triangles": 17156,
+    "vertices": 9427,
+    "dimensionsBlenderXYZ": [
+      7.79919,
+      15.59482,
+      4.8
+    ],
+    "meshObjects": 17,
+    "materialCount": 6,
+    "budget": [
+      8000,
+      20000
+    ],
+    "withinBudget": true,
+    "dimensionsMatch": true,
+    "nodes": [
+      "Exterior_Hull_Structure_Graphite",
+      "Exterior_Hull_Ceramic_WarmWhite",
+      "Canopy_Glass",
+      "Exterior_Hull_Navigation_Cyan",
+      "Exterior_Hull_Maintenance_Amber",
+      "Exterior_Hull_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Structure_Graphite",
+      "Exterior_EnginePod_-1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_-1_Brushed_Titanium",
+      "Exterior_EnginePod_-1_Maintenance_Amber",
+      "Exterior_EnginePod_-1_Navigation_Cyan",
+      "Thruster_Main_-1",
+      "Thruster_Reverse_-1",
+      "Exterior_EnginePod_1_Structure_Graphite",
+      "Exterior_EnginePod_1_Ceramic_WarmWhite",
+      "Exterior_EnginePod_1_Brushed_Titanium",
+      "Exterior_EnginePod_1_Maintenance_Amber",
+      "Exterior_EnginePod_1_Navigation_Cyan",
+      "Thruster_Main_1",
+      "Thruster_Reverse_1",
+      "Door_Outer",
+      "Anchor_EVA",
+      "Anchor_Tether",
+      "Anchor_CockpitCamera",
+      "Anchor_ThirdPersonCamera",
+      "Seat_Pilot",
+      "Seat_Copilot",
+      "Thruster_RCS_-1_0_0",
+      "Thruster_RCS_-1_0_1",
+      "Thruster_RCS_-1_0_2",
+      "Thruster_RCS_-1_1_0",
+      "Thruster_RCS_-1_1_1",
+      "Thruster_RCS_-1_1_2",
+      "Thruster_RCS_1_0_0",
+      "Thruster_RCS_1_0_1",
+      "Thruster_RCS_1_0_2",
+      "Thruster_RCS_1_1_0",
+      "Thruster_RCS_1_1_1",
+      "Thruster_RCS_1_1_2",
+      "Ship_Exterior_LOD2",
+      "Collider_Hull",
+      "Collider_Pod_-1",
+      "Collider_Pod_1"
+    ],
+    "clearance": {
+      "cockpitCanopyHidden": true,
+      "sightRayCount": 15,
+      "blockedSightRays": [
+        [
+          20,
+          10
+        ]
+      ],
+      "egressSampleCount": 25,
+      "blockedEgressSamples": [],
+      "egressSampleSizeMetres": [
+        1,
+        1.5,
+        2.1
+      ]
+    }
+  }
+]

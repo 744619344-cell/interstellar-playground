@@ -1,0 +1,29 @@
+{
+  "ready": true,
+  "models": [
+    {
+      "lod": 0,
+      "triangles": 126124,
+      "meshes": 14
+    },
+    {
+      "lod": 1,
+      "triangles": 63324,
+      "meshes": 14
+    }
+  ],
+  "errors": [],
+  "selection": {
+    "lod": 1,
+    "view": "airlock",
+    "door": false
+  },
+  "render": {
+    "calls": 26,
+    "geometries": 43
+  },
+  "baseline": 43,
+  "disposal": {
+    "geometries": 0
+  }
+}

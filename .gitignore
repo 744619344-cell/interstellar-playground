@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.temp/
+.cache/
+.swc/
+.vite/
+*.log
+.DS_Store

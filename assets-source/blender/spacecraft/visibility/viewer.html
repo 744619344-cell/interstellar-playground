@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>探索艇 · 舱室可见性</title>
+<style>body{margin:0;background:#101923;color:#e0eaef;font:15px system-ui}canvas{display:block}aside{position:fixed;left:20px;top:18px;padding:16px;background:#101923ed;border-radius:12px;max-width:650px}h1{font-size:22px;margin:0 0 8px}button{padding:9px;margin:3px;background:#20313e;color:#e0eaef;border:1px solid #5c747d;border-radius:6px;cursor:pointer}button[aria-pressed=true]{color:#39e6f3;border-color:#39e6f3}output{display:block;margin-top:8px;color:#a6cbd0}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head>
+<body><aside><h1>探索艇 · 舱室可见性与灯光</h1><div>外部可拖动环绕 · 舱内固定检查机位</div>
+<div><button data-view="exterior">船外</button><button data-view="cockpit">驾驶舱</button><button data-view="cabin">生活舱</button><button data-view="airlock">气闸</button><button data-view="cutaway">剖面</button></div>
+<div><button data-door="outer">外门开 / 关</button><button data-door="inner">内门开 / 关</button><button id="pause">暂停</button><button id="reset">复位</button><button data-lod="0">LOD0</button><button data-lod="1">LOD1</button></div><output>加载中</output><div id="message" role="status"></div></aside><script type="module" src="./viewer.mjs"></script></body></html>

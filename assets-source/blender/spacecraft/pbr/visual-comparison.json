@@ -1,0 +1,50 @@
+[
+  {
+    "view": "lod0-console",
+    "meanAbsoluteRGBError255": 0.13479108796296296
+  },
+  {
+    "view": "lod0-inner-open",
+    "meanAbsoluteRGBError255": 0.3960888310185185
+  },
+  {
+    "view": "lod0-outer-closed",
+    "meanAbsoluteRGBError255": 0.04375723379629629
+  },
+  {
+    "view": "lod0-outer-mid",
+    "meanAbsoluteRGBError255": 0.043482349537037036
+  },
+  {
+    "view": "lod0-outer-open",
+    "meanAbsoluteRGBError255": 0.04393923611111111
+  },
+  {
+    "view": "lod0-thrust",
+    "meanAbsoluteRGBError255": 0.013385995370370371
+  },
+  {
+    "view": "lod1-console",
+    "meanAbsoluteRGBError255": 0.13630353009259258
+  },
+  {
+    "view": "lod1-inner-open",
+    "meanAbsoluteRGBError255": 0.4013336226851852
+  },
+  {
+    "view": "lod1-outer-closed",
+    "meanAbsoluteRGBError255": 0.04366348379629629
+  },
+  {
+    "view": "lod1-outer-mid",
+    "meanAbsoluteRGBError255": 0.043491898148148155
+  },
+  {
+    "view": "lod1-outer-open",
+    "meanAbsoluteRGBError255": 0.04412442129629629
+  },
+  {
+    "view": "lod1-thrust",
+    "meanAbsoluteRGBError255": 0.013110243055555556
+  }
+]

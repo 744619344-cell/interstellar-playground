@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>飞船外部 · 模型验收</title>
+<style>
+body{margin:0;background:#111923;color:#e5edf0;font:15px system-ui}canvas{display:block}
+aside{position:fixed;left:24px;top:22px;max-width:360px}h1{font-size:23px;margin:0 0 8px}
+button{background:#203342;color:#e5edf0;border:1px solid #526774;border-radius:6px;padding:9px;margin:12px 4px 0 0;cursor:pointer}
+output{display:block;color:#abd2da;margin-top:12px;white-space:pre-line}
+</style><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head>
+<body><aside><h1>探索艇 · 外部模型</h1><div>拖动环绕 · 滚轮缩放</div>
+<button data-lod="0">LOD0 近景</button><button data-lod="1">LOD1 航行</button><button data-lod="2">LOD2 远景</button>
+<output id="status">加载中</output></aside><script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+document.body.append(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#111923');
+const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment();
+const environment=pmrem.fromScene(room);scene.environment=environment.texture;room.dispose();pmrem.dispose();
+const camera=new THREE.PerspectiveCamera(42,innerWidth/innerHeight,.1,150);
+camera.position.set(17,11,-22);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;
+controls.minDistance=10;controls.maxDistance=45;
+const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder), models=[];
+const status=document.querySelector('#status');let active=0,frames=0;
+window.assetReview={ready:false,errors:[],models:[]};
+for(let lod=0;lod<3;lod++){
+ try{
+  const gltf=await loader.loadAsync(`/src/assets/models/spacecraft-exterior-lod${lod}.glb`);
+  const model=gltf.scene;model.visible=lod===0;scene.add(model);models.push(model);
+  const size=new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3());
+  let triangles=0,meshes=0;model.traverse(obj=>{if(obj.isMesh){triangles+=(obj.geometry.index?.count||obj.geometry.attributes.position.count)/3;meshes++;}});
+  window.assetReview.models.push({lod,dimensions:size.toArray(),triangles,meshes});
+ }catch(error){window.assetReview.errors.push(String(error));status.textContent=String(error);throw error;}
+}
+function select(lod){active=lod;models.forEach((model,i)=>model.visible=i===lod);
+ const info=window.assetReview.models[lod];status.textContent=`LOD${lod} · ${info.triangles.toLocaleString()} 三角面\n宽 7.8 m · 长 15.6 m · 高 4.8 m`;
+}
+document.querySelectorAll('button').forEach(button=>button.onclick=()=>select(Number(button.dataset.lod)));
+select(0);window.assetReview.ready=true;
+renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);frames++;
+ window.assetReview.render={frames,calls:renderer.info.render.calls,geometries:renderer.info.memory.geometries};});
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+addEventListener('pagehide',()=>{renderer.setAnimationLoop(null);controls.dispose();const geometries=new Set(),materials=new Set();
+ models.forEach(model=>model.traverse(obj=>{if(obj.isMesh){geometries.add(obj.geometry);materials.add(obj.material);}}));
+ geometries.forEach(item=>item.dispose());materials.forEach(item=>item.dispose());environment.dispose();renderer.dispose();},{once:true});
+</script></body></html>

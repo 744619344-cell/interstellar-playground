@@ -1,0 +1,46 @@
+{
+  "ready": true,
+  "errors": [],
+  "models": [
+    {
+      "lod": 0,
+      "dimensions": [
+        7.80078125,
+        4.80078125,
+        15.6015625
+      ],
+      "triangles": 110824,
+      "meshes": 17
+    },
+    {
+      "lod": 1,
+      "dimensions": [
+        7.80078125,
+        4.80078125,
+        15.6015625
+      ],
+      "triangles": 59720,
+      "meshes": 17
+    },
+    {
+      "lod": 2,
+      "dimensions": [
+        7.80078125,
+        4.80078125,
+        15.59375
+      ],
+      "triangles": 17156,
+      "meshes": 17
+    }
+  ],
+  "render": {
+    "frames": 91,
+    "calls": 17,
+    "geometries": 51
+  },
+  "afterSwitches": {
+    "frames": 178,
+    "calls": 17,
+    "geometries": 51
+  }
+}

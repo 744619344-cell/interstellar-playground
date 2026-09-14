@@ -1,0 +1,20 @@
+[
+  {
+    "lod": 0,
+    "triangles": 237312,
+    "meshes": 45,
+    "consoleBars": 8,
+    "sourceExterior": "LOD0",
+    "sourceInterior": "Interior_LOD0",
+    "materials": 16
+  },
+  {
+    "lod": 1,
+    "triangles": 123408,
+    "meshes": 45,
+    "consoleBars": 8,
+    "sourceExterior": "LOD1",
+    "sourceInterior": "Interior_LOD1",
+    "materials": 16
+  }
+]

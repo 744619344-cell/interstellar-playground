@@ -1,0 +1,66 @@
+{
+  "errors": [],
+  "selection": {
+    "lod": 1,
+    "view": "rear"
+  },
+  "render": {
+    "calls": 24,
+    "geometries": 48,
+    "textures": 8
+  },
+  "textures": [
+    {
+      "name": "Atlas_Exterior_Base",
+      "colorSpace": "srgb",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Atlas_Exterior_ORM",
+      "colorSpace": "",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Atlas_Exterior_Emission",
+      "colorSpace": "srgb",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Atlas_Interior_Base",
+      "colorSpace": "srgb",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Atlas_Interior_ORM",
+      "colorSpace": "",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "Atlas_Interior_Emission",
+      "colorSpace": "srgb",
+      "width": 2048,
+      "height": 2048
+    }
+  ],
+  "baseline": 48,
+  "disposal": {
+    "geometries": 0,
+    "textures": 1,
+    "contextLost": true
+  },
+  "checks": [
+    "two LODs / six views of animation states",
+    "pause",
+    "hidden time",
+    "door interlock",
+    "12 LOD switches preserve state",
+    "reset",
+    "one renderer",
+    "pagehide disposal"
+  ]
+}

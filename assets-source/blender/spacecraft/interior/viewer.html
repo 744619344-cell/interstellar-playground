@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>探索艇 · 内舱验收</title>
+<style>
+body{margin:0;background:#101923;color:#e0eaef;font:15px system-ui}canvas{display:block}
+aside{position:fixed;left:20px;top:18px;max-width:600px;padding:16px;background:#101923dd;border-radius:12px}
+h1{font-size:22px;margin:0 0 10px}button{padding:9px;margin:3px;border:1px solid #5c747d;background:#20313e;color:#e0eaef;border-radius:6px;cursor:pointer}
+button[aria-pressed=true]{border-color:#39e6f3;color:#39e6f3}output{display:block;margin-top:10px;color:#a6cbd0}
+</style><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head>
+<body><aside><h1>探索艇 · 双人内舱</h1><div>拖动环绕 · 滚轮缩放 · 静态资产预览</div>
+<div><button data-view="cutaway">整体剖面</button><button data-view="cabin">生活舱</button><button data-view="cockpit">驾驶舱</button><button data-view="pilot">驾驶位</button><button data-view="airlock">气闸</button></div>
+<div><button data-lod="0">LOD0 近景</button><button data-lod="1">LOD1 标准</button><button id="door">显示内门</button></div><output>加载中</output></aside>
+<script type="module" src="./viewer.mjs"></script></body></html>

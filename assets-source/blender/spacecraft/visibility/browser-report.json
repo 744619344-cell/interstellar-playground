@@ -1,0 +1,207 @@
+{
+  "states": [
+    {
+      "view": "exterior",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 0,
+      "meshes": 10,
+      "triangles": 111188,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cockpit",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 0,
+      "meshes": 15,
+      "triangles": 42932,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cabin",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 0,
+      "meshes": 9,
+      "triangles": 86836,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "airlock",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 0,
+      "meshes": 9,
+      "triangles": 29480,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cutaway",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 0,
+      "meshes": 20,
+      "triangles": 111016,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "exterior",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 1,
+      "meshes": 10,
+      "triangles": 60084,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cockpit",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 1,
+      "meshes": 15,
+      "triangles": 22028,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cabin",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 1,
+      "meshes": 9,
+      "triangles": 43284,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "airlock",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 1,
+      "meshes": 9,
+      "triangles": 15184,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    },
+    {
+      "view": "cutaway",
+      "outerOpen": false,
+      "innerOpen": false,
+      "lod": 1,
+      "meshes": 20,
+      "triangles": 56280,
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0
+        }
+      },
+      "paused": false
+    }
+  ],
+  "closed": 60084,
+  "opened": 123408,
+  "baseline": {
+    "geometries": 62,
+    "textures": 8,
+    "calls": 10
+  },
+  "disposal": {
+    "geometries": 0,
+    "textures": 1,
+    "contextLost": true
+  },
+  "errors": []
+}

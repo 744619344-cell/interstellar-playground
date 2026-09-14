@@ -1,0 +1,29 @@
+{
+  "errors": [],
+  "selection": {
+    "lod": 1,
+    "view": "rear"
+  },
+  "render": {
+    "calls": 45,
+    "geometries": 90,
+    "textures": 2
+  },
+  "textures": [],
+  "baseline": 90,
+  "disposal": {
+    "geometries": 0,
+    "textures": 1,
+    "contextLost": true
+  },
+  "checks": [
+    "two LODs / six views of animation states",
+    "pause",
+    "hidden time",
+    "door interlock",
+    "12 LOD switches preserve state",
+    "reset",
+    "one renderer",
+    "pagehide disposal"
+  ]
+}

@@ -1,0 +1,17 @@
+.ship-camera-launch, .ship-camera-panel { position: absolute; z-index: 9; left: 24px; top: 170px; color: #d8f2f7; background: #06121eed; border: 1px solid #315767; border-radius: 16px; padding: 16px; font: 14px/1.6 sans-serif; }
+.ship-camera-launch { cursor: pointer; }
+.ship-camera-panel { width: 290px; max-height: calc(100% - 200px); overflow-y: auto; }
+.ship-camera-panel p { margin: 8px 0; color: #9bb9c6; }
+.ship-camera-panel output { display: block; font-size: 12px; font-variant-numeric: tabular-nums; }
+.ship-feedback-row { display: flex; gap: 8px; margin-top: 10px; }
+.ship-feedback-row output { flex: 1; margin: 0; padding: 6px 8px; border: 1px solid #294b58; border-radius: 8px; color: #73edf4; text-align: center; background: #081c27cc; }
+.ship-camera-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 14px 0; }
+.ship-camera-button { padding: 8px; border-radius: 9px; border: 1px solid #34525f; background: #0b2431; color: #d8f2f7; cursor: pointer; font-size: 13px; }
+.ship-camera-button[aria-pressed=true] { border-color: #39e5ef; color: #39e5ef; }
+.system-map-page.is-camera-preview:not(.is-focus) .system-map-stage { inset: 0; width: 100%; height: 100%; transform: none; }
+.system-map-page.is-camera-preview .system-map-destination, .system-map-page.is-camera-preview .system-map-mode-nav { display: none; }
+.ship-cockpit { position: absolute; inset: 100px 20px 18px; z-index: 8; pointer-events: none; border: 2px solid #365b68; border-radius: 80px 80px 24px 24px; box-shadow: inset 0 -40px 50px #06121ecc; color: #a5e8ed; }
+.ship-cockpit-reticle { position: absolute; left: 50%; top: calc(50% - 41px); transform: translate(-50%, -50%); font: 24px monospace; opacity: .65; }
+.ship-cockpit-console { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 430px; padding: 18px 28px; border: 1px solid #365b68; border-radius: 24px 24px 0 0; background: #06121eed; display: flex; align-items: center; gap: 24px; font: 12px/1.6 sans-serif; }
+.ship-cockpit-console strong { font: 26px monospace; white-space: nowrap; }
+.ship-cockpit-console small { font-size: 12px; }

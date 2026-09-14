@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>探索艇 · 机械动画验收</title>
+<style>
+body{margin:0;background:#101923;color:#e0eaef;font:15px system-ui}canvas{display:block}
+aside{position:fixed;left:20px;top:18px;max-width:650px;padding:16px;background:#101923eb;border-radius:12px}
+h1{font-size:22px;margin:0 0 8px}button{padding:9px;margin:3px;border:1px solid #5c747d;background:#20313e;color:#e0eaef;border-radius:6px;cursor:pointer}
+button[aria-pressed=true]{border-color:#39e6f3;color:#39e6f3}output{display:block;margin-top:8px;color:#a6cbd0}#message{color:#ffcf85}
+</style><script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head>
+<body><aside><h1>探索艇 · 机械动画</h1><div>拖动环绕 · 滚轮缩放 · 独立资产预览</div>
+<div><button data-view="rear">船尾</button><button data-view="portal">外门近景</button><button data-view="inner">内门</button><button data-view="pilot">驾驶位</button><button data-view="cutaway">剖面</button></div>
+<div><button data-door="outer" data-open="1">开启外门</button><button data-door="outer" data-open="0">关闭外门</button><button data-door="inner" data-open="1">开启内门</button><button data-door="inner" data-open="0">关闭内门</button></div>
+<div><button id="console">控制台反馈</button><button id="thrust">推进器反馈</button><button id="pause">暂停</button><button id="reset">复位</button><button data-lod="0">LOD0</button><button data-lod="1">LOD1</button></div>
+<output>加载中</output><div id="message" role="status"></div></aside><script type="module" src="./viewer.mjs"></script></body></html>

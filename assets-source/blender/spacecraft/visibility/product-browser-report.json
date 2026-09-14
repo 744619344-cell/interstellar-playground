@@ -1,0 +1,15 @@
+{
+  "errors": [],
+  "resources": [
+    "纹理 19 · 几何 44 · 程序 15",
+    "纹理 19 · 几何 44 · 程序 15",
+    "纹理 19 · 几何 44 · 程序 15",
+    "纹理 19 · 几何 44 · 程序 15"
+  ],
+  "singleCanvas": true,
+  "driving": true,
+  "pauseAndBlur": true,
+  "routesClearReset": true,
+  "failureFallback": true,
+  "exitWhileLoading": true
+}

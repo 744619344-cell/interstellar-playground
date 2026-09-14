@@ -1,0 +1,8 @@
+.ship-navigation-panel { position: absolute; z-index: 9; right: 24px; top: 115px; width: 260px; max-height: calc(100% - 230px); overflow: auto; padding: 16px; border: 1px solid #315767; border-radius: 16px; background: #06121eed; color: #d8f2f7; font: 14px/1.6 sans-serif; }
+.ship-navigation-label { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+.ship-navigation-select { flex: 1; min-width: 0; padding: 8px; border: 1px solid #34525f; border-radius: 8px; background: #0b2431; color: #d8f2f7; font-size: 14px; }
+.ship-navigation-routes { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 8px; }
+.ship-navigation-actions { display: flex; gap: 8px; margin-bottom: 10px; }
+.ship-navigation-output { display: block; font-variant-numeric: tabular-nums; margin: 6px 0; }
+.ship-navigation-note { color: #9bb9c6; font-size: 12px; }
+.ship-navigation-panel .ship-camera-button:disabled { opacity: .45; cursor: default; }

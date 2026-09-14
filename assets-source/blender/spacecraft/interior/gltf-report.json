@@ -1,0 +1,80 @@
+[
+  {
+    "path": "src/assets/models/spacecraft-interior-lod0.glb",
+    "bytes": 1362440,
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 2,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/buffers/0"
+        }
+      ],
+      "truncated": false
+    },
+    "decodedIssues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "extensions": [
+      "EXT_meshopt_compression",
+      "KHR_materials_emissive_strength"
+    ],
+    "materials": 9,
+    "meshes": 14
+  },
+  {
+    "path": "src/assets/models/spacecraft-interior-lod1.glb",
+    "bytes": 758652,
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 2,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/buffers/0"
+        }
+      ],
+      "truncated": false
+    },
+    "decodedIssues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "extensions": [
+      "EXT_meshopt_compression",
+      "KHR_materials_emissive_strength"
+    ],
+    "materials": 9,
+    "meshes": 14
+  }
+]

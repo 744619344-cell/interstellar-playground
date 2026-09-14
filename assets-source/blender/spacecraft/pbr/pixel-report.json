@@ -1,0 +1,42 @@
+[
+  {
+    "lod": 0,
+    "bytes": 2464244,
+    "sha256": "97630c143574f0f94da819394f109f4c901a398ed30e67f0573281c1086f15ef",
+    "retainedNodes": 46,
+    "maxPixelError": {
+      "baseLinear": 0.0033146851805007094,
+      "roughness": 0.001960772392796517,
+      "metallic": 0.0019607843137254832,
+      "emissionLinear": 0.006253584663999723
+    },
+    "imageHashes": {
+      "Atlas_Exterior_Emission": "8702295e2643707b40347ebad8d9501b5bd17659691266a33bb7dbe39cf0f0c2",
+      "Atlas_Exterior_Base": "102d635b4b02b4bf41b098c1fdc5e46c6032e5820a220a509aabaa197588b72f",
+      "Atlas_Exterior_ORM": "9bb5f896033968ad99f96acb5b1535cf1310e235d2ebd1265e45aa35fa52516a",
+      "Atlas_Interior_Emission": "c6db552c73ecc90f129fc19bbf992487e5100d01a67739a3b0ad8d0bc723df95",
+      "Atlas_Interior_Base": "1ffc112439054126f8d797cb0f097cb581ff6724ea410f5c1afedeaa5ccb036b",
+      "Atlas_Interior_ORM": "a8e380f682967b237a391b3736930a33faf70138330cd12713efe9dd05492014"
+    }
+  },
+  {
+    "lod": 1,
+    "bytes": 1437104,
+    "sha256": "9664bc8b85fb3f07d540101a5a48c8f52f8f9b31b890434e418e9defe785e333",
+    "retainedNodes": 46,
+    "maxPixelError": {
+      "baseLinear": 0.0033146851805007094,
+      "roughness": 0.001960772392796517,
+      "metallic": 0.0019607843137254832,
+      "emissionLinear": 0.006253584663999723
+    },
+    "imageHashes": {
+      "Atlas_Exterior_Emission": "8702295e2643707b40347ebad8d9501b5bd17659691266a33bb7dbe39cf0f0c2",
+      "Atlas_Exterior_Base": "102d635b4b02b4bf41b098c1fdc5e46c6032e5820a220a509aabaa197588b72f",
+      "Atlas_Exterior_ORM": "9bb5f896033968ad99f96acb5b1535cf1310e235d2ebd1265e45aa35fa52516a",
+      "Atlas_Interior_Emission": "c6db552c73ecc90f129fc19bbf992487e5100d01a67739a3b0ad8d0bc723df95",
+      "Atlas_Interior_Base": "1ffc112439054126f8d797cb0f097cb581ff6724ea410f5c1afedeaa5ccb036b",
+      "Atlas_Interior_ORM": "a8e380f682967b237a391b3736930a33faf70138330cd12713efe9dd05492014"
+    }
+  }
+]

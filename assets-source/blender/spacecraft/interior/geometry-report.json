@@ -1,0 +1,98 @@
+[
+  {
+    "lod": 0,
+    "triangles": 126124,
+    "vertices": 63632,
+    "budget": [
+      100000,
+      160000
+    ],
+    "withinBudget": true,
+    "corridorSize": [
+      1,
+      9.9,
+      2.11
+    ],
+    "corridorObstructions": [],
+    "closedInnerDoorExcluded": true,
+    "doorClearWidth": 1.16,
+    "doorClearHeight": 2.21,
+    "shellMaxRadiusRatio": 0.9861375568311029,
+    "shellWorstPoint": [
+      -1.600000023841858,
+      2.75,
+      -1.3200000524520874
+    ],
+    "dimensions": [
+      3.4599997997283936,
+      12.607500076293945,
+      2.5449999570846558
+    ],
+    "anchors": {
+      "Seat_Pilot": [
+        -0.6385135650634766,
+        3.9519662857055664,
+        -0.5550158023834229
+      ],
+      "Seat_Copilot": [
+        0.638574481010437,
+        3.9519662857055664,
+        -0.5550158023834229
+      ],
+      "Anchor_CockpitCamera": [
+        -0.6385135650634766,
+        4.256158828735352,
+        0.6614572405815125
+      ]
+    },
+    "meshes": 14
+  },
+  {
+    "lod": 1,
+    "triangles": 63324,
+    "vertices": 32136,
+    "budget": [
+      40000,
+      80000
+    ],
+    "withinBudget": true,
+    "corridorSize": [
+      1,
+      9.9,
+      2.11
+    ],
+    "corridorObstructions": [],
+    "closedInnerDoorExcluded": true,
+    "doorClearWidth": 1.16,
+    "doorClearHeight": 2.21,
+    "shellMaxRadiusRatio": 0.9861375568311029,
+    "shellWorstPoint": [
+      -1.600000023841858,
+      2.75,
+      -1.3200000524520874
+    ],
+    "dimensions": [
+      3.4599997997283936,
+      12.607500076293945,
+      2.5449999570846558
+    ],
+    "anchors": {
+      "Seat_Pilot": [
+        -0.6385135650634766,
+        3.9519662857055664,
+        -0.5550158023834229
+      ],
+      "Seat_Copilot": [
+        0.638574481010437,
+        3.9519662857055664,
+        -0.5550158023834229
+      ],
+      "Anchor_CockpitCamera": [
+        -0.6385135650634766,
+        4.256158828735352,
+        0.6614572405815125
+      ]
+    },
+    "meshes": 14
+  }
+]

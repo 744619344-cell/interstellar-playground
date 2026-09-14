@@ -1,0 +1,132 @@
+[
+  {
+    "path": "src/assets/models/spacecraft-mechanisms-lod0.glb",
+    "bytes": 2426936,
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 2,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/buffers/0"
+        }
+      ],
+      "truncated": false
+    },
+    "decodedIssues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "extensions": [
+      "EXT_meshopt_compression",
+      "KHR_materials_emissive_strength"
+    ],
+    "materials": 16,
+    "meshes": 45,
+    "animations": [
+      {
+        "name": "ConsoleActive",
+        "channels": 8
+      },
+      {
+        "name": "InnerDoorOpen",
+        "channels": 2
+      },
+      {
+        "name": "InnerDoorClose",
+        "channels": 2
+      },
+      {
+        "name": "OuterDoorOpen",
+        "channels": 1
+      },
+      {
+        "name": "OuterDoorClose",
+        "channels": 1
+      },
+      {
+        "name": "ThrusterBurn",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "src/assets/models/spacecraft-mechanisms-lod1.glb",
+    "bytes": 1422236,
+    "issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 2,
+      "numHints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/buffers/0"
+        }
+      ],
+      "truncated": false
+    },
+    "decodedIssues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "extensions": [
+      "EXT_meshopt_compression",
+      "KHR_materials_emissive_strength"
+    ],
+    "materials": 16,
+    "meshes": 45,
+    "animations": [
+      {
+        "name": "ConsoleActive",
+        "channels": 8
+      },
+      {
+        "name": "InnerDoorOpen",
+        "channels": 2
+      },
+      {
+        "name": "InnerDoorClose",
+        "channels": 2
+      },
+      {
+        "name": "OuterDoorOpen",
+        "channels": 1
+      },
+      {
+        "name": "OuterDoorClose",
+        "channels": 1
+      },
+      {
+        "name": "ThrusterBurn",
+        "channels": 2
+      }
+    ]
+  }
+]
