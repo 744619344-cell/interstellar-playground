@@ -1,4 +1,4 @@
-import SystemMapShell from './features/space-exploration/ui/SystemMapShell'
+import SystemMapShell from './features/space-exploration'
 
 export default function App() {
   return <SystemMapShell />

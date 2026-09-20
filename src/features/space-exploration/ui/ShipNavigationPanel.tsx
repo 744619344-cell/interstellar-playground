@@ -17,7 +17,7 @@ export default function ShipNavigationPanel({ state, onAction }: {
     <strong>航行导航</strong>
     <div className='ship-navigation-routes' role='group' aria-label='标杆航线'>
       {SHIP_ROUTE_IDS.map((id) => (
-        <button key={id} className='ship-camera-button' aria-pressed={route?.id === id}
+        <button type='button' key={id} className='ship-camera-button' aria-pressed={route?.id === id}
           onClick={() => onAction(`route:${id}`)}>{SHIP_ROUTE_NAME[id]}航线</button>
       ))}
     </div>
@@ -33,8 +33,8 @@ export default function ShipNavigationPanel({ state, onAction }: {
       </select>
     </label>
     <div className='ship-navigation-actions'>
-      <button className='ship-camera-button' disabled={!state.targetId} aria-pressed={state.assist} onClick={() => onAction('assist')}>航向辅助</button>
-      <button className='ship-camera-button' disabled={!state.targetId} onClick={() => onAction('clearTarget')}>取消锁定</button>
+      <button type='button' className='ship-camera-button' disabled={!state.targetId} aria-pressed={state.assist} onClick={() => onAction('assist')}>航向辅助</button>
+      <button type='button' className='ship-camera-button' disabled={!state.targetId} onClick={() => onAction('clearTarget')}>取消锁定</button>
     </div>
     <output className='ship-navigation-output' aria-label='目标导航状态'>
       {target
@@ -47,6 +47,6 @@ export default function ShipNavigationPanel({ state, onAction }: {
         ? `自动制动 · ${bodyName(state.risk.id)} · 制动距离 ${state.risk.stoppingDistance.toFixed(1)} m` : '防撞保护就绪'}
     </output>
     <p className='ship-navigation-note'>航程需手动完成。辅助只修正船体朝向，不接管移动；空格会退出辅助并制动。W/S 前后、A/D 横移，方向随当前视线。抵达需停在安全净空并保持低相对速度。</p>
-    <button className='ship-camera-button' aria-pressed={state.safetyObstacle} onClick={() => onAction('safety')}>前方防撞试验</button>
+    <button type='button' className='ship-camera-button' aria-pressed={state.safetyObstacle} onClick={() => onAction('safety')}>前方防撞试验</button>
   </section>
 }

@@ -15,6 +15,8 @@ describe('desktop web entry', () => {
     assert.match(html, /src\/main\.tsx/)
     assert.match(main, /createRoot/)
     assert.match(app, /SystemMapShell/)
+    assert.match(app, /from ['"]\.\/features\/space-exploration['"]/)
+    assert.doesNotMatch(app, /\/ui\//)
     assert.match(css, /min-width:\s*1280px/)
     const forbidden = ['@' + 'tarojs', 'Solar' + 'SystemOverview', 'Experience' + 'Router', 'Photo' + 'Sphere', 'load' + 'VoyageShell', 'space' + 'Exploration', 'wea' + 'pp']
     const bundled = app + main + html

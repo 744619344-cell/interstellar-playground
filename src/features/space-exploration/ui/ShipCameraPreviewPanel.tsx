@@ -8,7 +8,7 @@ interface Props {
   onAction: (action: ShipPreviewAction) => void
 }
 export default function ShipCameraPreviewPanel({ state, onAction }: Props) {
-  if (!state) return <button className='ship-camera-launch' onClick={() => onAction('enter')}>相机试验</button>
+  if (!state) return <button type='button' className='ship-camera-launch' onClick={() => onAction('enter')}>相机试验</button>
   return <>
     <ShipNavigationPanel state={state.navigation} onAction={onAction} />
     {state.model.status !== 'ready' && state.mode === 'cockpit' && !state.transitioning && <div className='ship-cockpit' aria-label='驾驶舱占位'>
@@ -25,11 +25,11 @@ export default function ShipCameraPreviewPanel({ state, onAction }: Props) {
     <p>点击画布驾驶：W/S 沿当前视线前进或后退，A/D 向左或向右平移；方向键也可移动。松开移动键自动减速停止，空格立即制动。</p>
     <p>按住鼠标左键拖拽可在当前视角转动视线，移动方向会同步跟随视线；滚轮调整观察距离，C 切换视角，“返回全景”退出。</p>
     <div className='ship-camera-buttons'>
-      <button className='ship-camera-button' aria-pressed={state.mode === 'follow'} onClick={() => onAction('follow')}>跟随视角</button>
-      <button className='ship-camera-button' aria-pressed={state.mode === 'cockpit'} onClick={() => onAction('cockpit')}>驾驶舱</button>
-      <button className='ship-camera-button' aria-pressed={state.mode === 'free'} onClick={() => onAction('free')}>自由观察</button>
-      <button className='ship-camera-button' aria-pressed={state.obstacle} onClick={() => onAction('obstacle')}>避障试验</button>
-      <button className='ship-camera-button' onClick={() => onAction('reset')}>复位试验</button>
+      <button type='button' className='ship-camera-button' aria-pressed={state.mode === 'follow'} onClick={() => onAction('follow')}>跟随视角</button>
+      <button type='button' className='ship-camera-button' aria-pressed={state.mode === 'cockpit'} onClick={() => onAction('cockpit')}>驾驶舱</button>
+      <button type='button' className='ship-camera-button' aria-pressed={state.mode === 'free'} onClick={() => onAction('free')}>自由观察</button>
+      <button type='button' className='ship-camera-button' aria-pressed={state.obstacle} onClick={() => onAction('obstacle')}>避障试验</button>
+      <button type='button' className='ship-camera-button' onClick={() => onAction('reset')}>复位试验</button>
     </div>
     <output aria-label='视角状态'>{state.transitioning ? '视角过渡中' : state.mode === 'cockpit' ? '驾驶舱 · 固定座椅' : state.mode === 'free' ? '自由观察' : '跟随视角'}</output>
     <output aria-label='相机状态'>速度 {state.speed.toFixed(2)} m/s · 镜头 {state.distance.toFixed(2)} m · {state.blocked ? '视点受阻，请复位' : state.occluded ? '避障收近' : '视线通畅'}</output>

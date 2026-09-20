@@ -10,9 +10,9 @@
 
 P3-T04 机械动画已通过资产级验收：[机械预览](assets-source/blender/spacecraft/mechanisms/viewer.html)，支持内外门、控制台、推进器反馈及暂停/复位。[任务记录](docs/tasks/2026-09-13-p3-t04-spacecraft-mechanisms.md)与[资产登记](docs/space-exploration/12-SPACECRAFT-MECHANISM-ASSETS.md)包含复现方式；尚未接入游戏运行时。
 
-P3-T05 图集优化已验收：[PBR 预览](assets-source/blender/spacecraft/pbr/viewer.html)，完整装配视角绘制次数 45 → 24，保留几何和六个动画。[资产登记](docs/space-exploration/13-SPACECRAFT-PBR-ASSETS.md)记录纹理内存与文件体积取舍。下一项为 P3-T06 内外部可见性裁剪与灯光切换。
+P3-T05 图集优化已验收：[PBR 预览](assets-source/blender/spacecraft/pbr/viewer.html) 仍是独立资产检查入口，不是产品驾驶流程；完整装配视角绘制次数 45 → 24，保留几何和六个动画。[资产登记](docs/space-exploration/13-SPACECRAFT-PBR-ASSETS.md)记录纹理内存与文件体积取舍。
 
-P3-T06 已通过产品接入验收：根页面点击“相机试验”，即可驾驶正式 PBR 飞船并切换真实驾驶座视角；内外灯光隔离，退出释放模型，碰撞保护已适配完整船体。[舱室预览](assets-source/blender/spacecraft/visibility/viewer.html)保留为独立检查入口。证据见 [P3-T06](docs/tasks/2026-09-13-p3-t06-spacecraft-visibility.md)，下一项为 P3-T07 座椅、舱门、控制台和锚点交互。
+P3-T06 已将 PBR LOD1 接入根产品：点击“相机试验”即可驾驶正式飞船并切换真实驾驶座视角；内外灯光隔离，退出释放模型，碰撞保护已适配完整船体。外部/内舱/机械/舱室 HTML 查看器以及座椅、舱门、控制台交互仍不是产品流程。证据见 [P3-T06](docs/tasks/2026-09-13-p3-t06-spacecraft-visibility.md)。下一项为 P3-T07 座椅、舱门、控制台和锚点交互。
 
 本仓库不包含移动端适配、微信小程序、H5 多端抽象、旧十星体独立玩法、照片球或旧航行回退。唯一目标平台是桌面 Web。
 
