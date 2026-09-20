@@ -121,6 +121,10 @@ export class SystemMapEngine {
       if (down) this.preview.mode(nextShipView(this.preview.snapshot().mode))
       return true
     }
+    if (code === 'KeyF') {
+      if (down) this.preview.interact()
+      return true
+    }
     return this.preview.key(code, down)
   }
 

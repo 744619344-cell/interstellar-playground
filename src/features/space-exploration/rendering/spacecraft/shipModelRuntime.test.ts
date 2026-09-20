@@ -6,6 +6,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js'
 import { disposeShipModel, renderShipLayer, ShipModelRuntime } from './shipModelRuntime'
 import { ShipViewCamera } from './shipViewCamera'
+import { activateShipInteraction, createShipInteraction, selectShipInteraction, stepShipInteraction } from '../../domain/shipInteraction'
 
 test('shared PBR geometry, materials, all texture slots and image bitmap release exactly once', () => {
   const root = new Group(), geometry = new BoxGeometry(), material = new MeshStandardMaterial(), texture = new Texture()
@@ -43,15 +44,22 @@ test('actual Meshopt PBR assembly fits protection and its seat follows ship rota
   const bytes = await readFile(new URL('../../../../assets/models/spacecraft-pbr-lod1.glb', import.meta.url))
   const gltf = await loader.parseAsync(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer, '')
   let seat: { x: number; y: number; z: number } | undefined
-  const runtime = new ShipModelRuntime(value => { seat = value }, async () => gltf.scene)
+  const runtime = new ShipModelRuntime(value => { seat = value }, async () => ({ scene: gltf.scene, animations: gltf.animations }))
   await new Promise(done => setImmediate(done))
   assert.equal(runtime.snapshot().status, 'ready'); assert(seat)
+  assert.equal(runtime.snapshot().anchors.length, 7)
   assert(Math.abs(seat.z + 4.256158829) < .001)
   const subject = { position: { x: 25, y: -8, z: 13 }, orientation: new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), 1.2) }
   const camera = new ShipViewCamera(subject, seat); camera.setMode('cockpit')
   for (let i = 0; i < 120; i++) camera.update(subject, 1 / 120)
   const expected = new Vector3(seat.x, seat.y, seat.z).applyQuaternion(subject.orientation).add(new Vector3(25, -8, 13))
   assert(expected.distanceTo(new Vector3().copy(camera.snapshot().position)) < 1e-8)
+  const innerDoor = gltf.scene.getObjectByName('Rig_InnerDoor')!
+  const closed = innerDoor.position.clone()
+  let interaction = activateShipInteraction(selectShipInteraction(createShipInteraction(), 'inner-door')).state
+  for (let i = 0; i < 13; i++) interaction = stepShipInteraction(interaction, .05, true)
+  runtime.update(subject, { x: 0, y: 0, z: 0 }, false, true, 0, interaction)
+  assert(innerDoor.position.distanceTo(closed) > .1)
   runtime.dispose()
 })
 
@@ -59,4 +67,16 @@ test('rejected asset load keeps fallback status and teardown remains safe', asyn
   const runtime = new ShipModelRuntime(() => assert.fail('must not seat'), async () => { throw new Error('offline') })
   await new Promise(done => setImmediate(done))
   assert.equal(runtime.snapshot().status, 'failed'); runtime.dispose(); runtime.dispose()
+})
+
+test('missing interaction anchors or clips fail closed and release the model', async () => {
+  const model = new Group(), geometry = new BoxGeometry(); let disposed = 0
+  geometry.addEventListener('dispose', () => disposed++)
+  model.add(new Mesh(geometry, new MeshStandardMaterial()))
+  const runtime = new ShipModelRuntime(() => assert.fail('must not seat'), async () => ({ scene: model, animations: [] }))
+  await new Promise(done => setImmediate(done))
+  assert.equal(runtime.snapshot().status, 'failed')
+  assert.equal(disposed, 1)
+  assert.deepEqual(runtime.snapshot().anchors, [])
+  runtime.dispose()
 })

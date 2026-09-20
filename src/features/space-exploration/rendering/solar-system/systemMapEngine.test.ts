@@ -269,6 +269,27 @@ test('three view keyboard cycle preserves paused flight state and renderer', () 
   engine.destroy()
 })
 
+test('seat state follows view controls, F routes one contextual interaction, and reset clears the anchor', () => {
+  const { engine } = makeEngine(true)
+  engine.previewAction('enter')
+  engine.previewAction('cockpit')
+  assert.equal(engine.snapshot().cameraPreview?.interaction.seated, true)
+  engine.previewAction('free')
+  assert.equal(engine.snapshot().cameraPreview?.interaction.seated, false)
+  engine.previewAction('anchor:console')
+  assert.equal(engine.snapshot().cameraPreview?.interaction.activeAnchor, 'console')
+  const preview = (engine as any).preview
+  let interactions = 0
+  preview.interact = () => { interactions++ }
+  assert.equal(engine.previewKey('KeyF', true), true)
+  assert.equal(engine.previewKey('KeyF', false), true)
+  assert.equal(interactions, 1)
+  engine.previewAction('reset')
+  assert.equal(engine.snapshot().cameraPreview?.interaction.activeAnchor, 'cockpit')
+  assert.equal(engine.snapshot().cameraPreview?.interaction.seated, false)
+  engine.destroy()
+})
+
 test('navigation locks targets, assists without thrust, survives view changes and clears on reset', () => {
   const { engine, clock } = makeEngine(true)
   engine.previewAction('enter'); engine.start(); clock.flush(1000)

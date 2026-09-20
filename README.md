@@ -12,7 +12,7 @@ P3-T04 机械动画已通过资产级验收：[机械预览](assets-source/blend
 
 P3-T05 图集优化已验收：[PBR 预览](assets-source/blender/spacecraft/pbr/viewer.html) 仍是独立资产检查入口，不是产品驾驶流程；完整装配视角绘制次数 45 → 24，保留几何和六个动画。[资产登记](docs/space-exploration/13-SPACECRAFT-PBR-ASSETS.md)记录纹理内存与文件体积取舍。
 
-P3-T06 已将 PBR LOD1 接入根产品：点击“相机试验”即可驾驶正式飞船并切换真实驾驶座视角；内外灯光隔离，退出释放模型，碰撞保护已适配完整船体。外部/内舱/机械/舱室 HTML 查看器以及座椅、舱门、控制台交互仍不是产品流程。证据见 [P3-T06](docs/tasks/2026-09-13-p3-t06-spacecraft-visibility.md)。下一项为 P3-T07 座椅、舱门、控制台和锚点交互。
+P3-T06 已将 PBR LOD1 接入根产品：点击“相机试验”即可驾驶正式飞船并切换真实驾驶座视角；内外灯光隔离，退出释放模型，碰撞保护已适配完整船体。P3-T07 又接入驾驶座、站立点、控制台、内外舱门和七个锚点，支持按钮/`F` 键、机械互锁、暂停与复位。证据见 [P3-T06](docs/tasks/2026-09-13-p3-t06-spacecraft-visibility.md)和 [P3-T07](docs/tasks/2026-09-20-p3-t07-spacecraft-interactions.md)。下一项为 P4-T01 宇航员骨架、附件和权重清理。
 
 本仓库不包含移动端适配、微信小程序、H5 多端抽象、旧十星体独立玩法、照片球或旧航行回退。唯一目标平台是桌面 Web。
 

@@ -8,6 +8,12 @@
 .ship-camera-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 14px 0; }
 .ship-camera-button { padding: 8px; border-radius: 9px; border: 1px solid #34525f; background: #0b2431; color: #d8f2f7; cursor: pointer; font-size: 13px; }
 .ship-camera-button[aria-pressed=true] { border-color: #39e5ef; color: #39e5ef; }
+.ship-interaction-panel { margin: 12px 0; padding: 10px; border: 1px solid #294b58; border-radius: 10px; background: #081c27cc; }
+.ship-interaction-label { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.ship-interaction-label select { flex: 1; min-width: 0; padding: 6px; border: 1px solid #34525f; border-radius: 7px; background: #0b2431; color: #d8f2f7; }
+.ship-interaction-panel > .ship-camera-button { width: 100%; }
+.ship-interaction-status { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px; margin-top: 8px; }
+.ship-interaction-notice { min-height: 38px; margin-top: 7px; color: #73edf4; }
 .system-map-page.is-camera-preview:not(.is-focus) .system-map-stage { inset: 0; width: 100%; height: 100%; transform: none; }
 .system-map-page.is-camera-preview .system-map-destination, .system-map-page.is-camera-preview .system-map-mode-nav { display: none; }
 .ship-cockpit { position: absolute; inset: 100px 20px 18px; z-index: 8; pointer-events: none; border: 2px solid #365b68; border-radius: 80px 80px 24px 24px; box-shadow: inset 0 -40px 50px #06121ecc; color: #a5e8ed; }
