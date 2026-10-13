@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-11",
+  "images": [
+    {
+      "slot": "front",
+      "file": "正面.png",
+      "bytes": 1328185,
+      "sha256": "84e930fe0add1291a237f8bac6ab662b026c08933e3d724c059dbcfce8116875",
+      "resolution": [
+        1423,
+        1105
+      ],
+      "prompt": "正面-提示词.md"
+    },
+    {
+      "slot": "back",
+      "file": "背面.png",
+      "bytes": 1332806,
+      "sha256": "732e370188b97e8924f2273824c255231a0434a667593f4de1e3bde89de78e07",
+      "resolution": [
+        1423,
+        1105
+      ],
+      "prompt": "背面-提示词.md"
+    },
+    {
+      "slot": "left",
+      "file": "左侧.png",
+      "bytes": 1407778,
+      "sha256": "545ccfb420e3c2491e0e3c71b31fd8986b2a9f32aaaed5f1616ec7eb60ee304f",
+      "resolution": [
+        1423,
+        1105
+      ],
+      "prompt": "左侧-提示词.md"
+    },
+    {
+      "slot": "right",
+      "file": "右侧.png",
+      "bytes": 1431498,
+      "sha256": "2e2eab6723e85f0c191e5577cba56c67d9d54a1bc8dee42be5d40f37f3a140d4",
+      "resolution": [
+        1423,
+        1105
+      ],
+      "prompt": "右侧-提示词.md"
+    }
+  ],
+  "imageMode": "builtin-imagegen",
+  "preciseEngineeringViews": false,
+  "localGeometryMade": false,
+  "purpose": "旧舱空间参照内的单件试装变体，不改变原独立设计合同",
+  "targets": {
+    "outer": [
+      3.48,
+      2.676
+    ],
+    "opening": [
+      1.6,
+      2.47
+    ],
+    "flatWallDepth": 0.08,
+    "integratedRearwardReturnDepth": 0.1,
+    "totalDepth": 0.2,
+    "thresholdTarget": 0,
+    "openBottomDoorway": true
+  },
+  "frontRasterApprox": {
+    "outerAspect": 1.29375,
+    "requestedRasterAspect": 1.4,
+    "targetOuterAspect": 1.3004484304932735,
+    "preciseProjection": false,
+    "observationReport": "二维投影检查.json"
+  },
+  "review": "同件受控生成版本对照：v12正背纯左右四张原生输入字节原样复用，仅改为官方已观察V3.0正背左右多图模式/50k。不能假定老版本更好，仍须原件八向及舱内六角度试装，不修改几何。",
+  "generationModel": "V3.0",
+  "reusedRasterViews": [
+    "v12/正面.png",
+    "v12/背面.png",
+    "v12/左侧.png",
+    "v12/右侧.png"
+  ]
+}

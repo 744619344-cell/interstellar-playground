@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "component": "前窗总成",
+  "version": "v2",
+  "model": "V3.0",
+  "faceTarget": "50k",
+  "inputCount": 4,
+  "slots": [
+    "front",
+    "back",
+    "left",
+    "right"
+  ],
+  "status": "前窗v2静态接边候选保留，进入驾驶围护一致设计",
+  "clickAttemptsThisRevision": 1,
+  "acceptedFreeJobsThisRevision": 1,
+  "cumulativeClickAttempts": 22,
+  "cumulativeAcceptedFreeJobs": 19,
+  "observedQuotaBefore": 20,
+  "observedQuotaAfter": 19,
+  "quotaResetObserved": true,
+  "payment": false,
+  "localGeometryMade": false,
+  "productReplaced": false,
+  "rawDownloaded": true,
+  "sourceInspectionAccepted": true,
+  "fitAccepted": true,
+  "userArtAccepted": false,
+  "runtimeAccepted": false,
+  "evidence": [
+    "前窗v2-四图提交前50k.png",
+    "前窗v2-任务接收额度19.png"
+  ],
+  "inputManifest": "前窗总成-v2/四图输入清单.json",
+  "limits": "新正背独立图轮廓比约1.928；左右沿用v1原生图。尺寸是试装目标，不是精密输出保证。",
+  "sha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24",
+  "bytes": 43561088,
+  "trialVerdict": "前窗总成-v2/实装观察结论.json"
+}

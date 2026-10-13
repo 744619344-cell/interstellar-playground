@@ -247,7 +247,7 @@ test('preview freezes on pause and suspension, clears held input, and keeps came
   engine.destroy()
 })
 
-test('three view keyboard cycle preserves paused flight state and renderer', () => {
+test('four view keyboard cycle preserves paused flight state and renderer', () => {
   const { engine, clock } = makeEngine(true)
   engine.previewAction('enter'); engine.start(); clock.flush(1000)
   engine.previewKey('KeyW', true); clock.flush(1050)
@@ -255,7 +255,7 @@ test('three view keyboard cycle preserves paused flight state and renderer', () 
   const before = engine.snapshot().cameraPreview!
   const world = (engine as any).world
   let time = 1050
-  for (const mode of ['cockpit', 'free', 'follow']) {
+  for (const mode of ['cockpit', 'cabin', 'free', 'follow']) {
     engine.previewKey('KeyC', true); engine.previewKey('KeyC', false)
     for (let i = 0; i < 20; i++) clock.flush(time += 50)
     const after = engine.snapshot().cameraPreview!
@@ -287,6 +287,51 @@ test('seat state follows view controls, F routes one contextual interaction, and
   engine.previewAction('reset')
   assert.equal(engine.snapshot().cameraPreview?.interaction.activeAnchor, 'cockpit')
   assert.equal(engine.snapshot().cameraPreview?.interaction.seated, false)
+  engine.destroy()
+})
+
+test('cabin controls move only the observer, freeze on pause, and dispatch Ctrl pan separately from orbit', () => {
+  const {engine,clock}=makeEngine(true)
+  engine.previewAction('enter');engine.start();clock.flush(1000)
+  const preview=(engine as any).preview
+  // Simulate a ready installed model; this test exercises input routing rather than asynchronous asset loading.
+  preview.model.status='ready';preview.model.render=()=>{};preview.rig.setSeat({x:0,y:-.18,z:1})
+  engine.previewAction('cabin');clock.flush(1050)
+  const before=engine.snapshot().cameraPreview!
+  engine.previewKey('KeyS',true)
+  for(let i=0;i<10;i++)clock.flush(1100+i*50)
+  engine.previewKey('KeyS',false)
+  const after=engine.snapshot().cameraPreview!
+  assert(after.cabinPosition.z > before.cabinPosition.z)
+  assert.deepEqual(after.flightPosition,before.flightPosition);assert.equal(after.speed,0)
+  engine.clearInput();clock.flush(1650)
+  assert.deepEqual(engine.snapshot().cameraPreview!.cabinPosition,after.cabinPosition)
+  engine.setSimulationPaused(true);engine.previewKey('KeyS',true);clock.flush(1700)
+  engine.previewAction('cabinBack')
+  assert.deepEqual(engine.snapshot().cameraPreview!.cabinPosition,after.cabinPosition)
+  engine.setSimulationPaused(false)
+  engine.previewAction('zoomIn');assert.equal(engine.snapshot().cameraPreview!.interiorFov,50)
+  const yaw=engine.snapshot().cameraPreview!.yaw
+  engine.handlePointerDown(500,300,1,true);engine.handlePointerMove(530,320,1,true);engine.handlePointerUp(530,320,1,true)
+  const panned=engine.snapshot().cameraPreview!
+  assert.notDeepEqual(panned.cabinPosition,after.cabinPosition);assert.equal(panned.yaw,yaw)
+  engine.setInputEnabled(false);clock.flush(1800)
+  assert.deepEqual(engine.snapshot().cameraPreview!.cabinPosition,panned.cabinPosition)
+  engine.destroy()
+})
+
+test('inspection at the inner doorway prevents closing until the observer clears the frame', () => {
+  const { engine, clock } = makeEngine(true)
+  engine.previewAction('enter'); engine.start(); clock.flush(1000)
+  const preview = (engine as any).preview
+  preview.model.status = 'ready'; preview.model.render = () => {}
+  preview.rig.setSeat({ x: 0, y: -.18, z: 5 }); engine.previewAction('cabin')
+  preview.interaction.doors.inner = { progress: 1, target: 1 }
+  engine.previewAction('anchor:inner-door'); engine.previewAction('interact')
+  assert.equal(engine.snapshot().cameraPreview!.interaction.doors.inner.target, 1)
+  assert.match(engine.snapshot().cameraPreview!.interaction.notice!, /先移出门框/)
+  engine.previewAction('cabinForward'); engine.previewAction('interact')
+  assert.equal(engine.snapshot().cameraPreview!.interaction.doors.inner.target, 0)
   engine.destroy()
 })
 

@@ -1,0 +1,54 @@
+{
+  "version": "v15",
+  "sourceSha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+  "scale": 3.6155457925316408,
+  "trialFitMode": "roomInnerWidth",
+  "displayFitWidth": 3.409705638885498,
+  "roomReceiverReport": "当前舱内接收面检查.json",
+  "displayOnlyUniformFitByWidth": true,
+  "fittedAssetWritten": false,
+  "localGeometryMade": false,
+  "placement": {
+    "center": [
+      0,
+      -0.23239027103582566,
+      5.039291889101608
+    ],
+    "rotationYDegrees": 180,
+    "frontWallPlaneWorldZ": 4.94,
+    "depthAnchor": "六个平墙区域前表面交点的中位数；仅平移原件，不改网格"
+  },
+  "envelopeMeters": [
+    3.409705638885498,
+    2.695219457928349,
+    0.30174624382747744
+  ],
+  "openingCentralSampleMeters": [
+    1.5425352798688434,
+    2.3943032700910942
+  ],
+  "wallPatchDepthMeters": 0.29473907167018176,
+  "targetEnvelope": [
+    3.48,
+    2.676
+  ],
+  "targetOpening": [
+    1.6,
+    2.47
+  ],
+  "targetFlatWallDepth": 0.08,
+  "currentRoomReferenceEnvelope": [
+    3.48,
+    2.7
+  ],
+  "topMismatchMeters": 0.01921945792834867,
+  "topMismatchToOldReferenceMeters": -0.00478054207165135,
+  "openingMismatchMeters": [
+    -0.057464720131156666,
+    -0.07569672990890597
+  ],
+  "openAtAllNineSamples": true,
+  "fitAccepted": true,
+  "limits": "中心线和有限采样不代表全轮廓或完整接边；验收须记录实际六角度观察。",
+  "acceptanceScope": "仅v15原件在拒绝旧舱参照内、按两侧内墙净宽等比摆放的六角度视觉接边；不是原合同尺寸、完整机构、气密、无碰撞或用户美术验收"
+}

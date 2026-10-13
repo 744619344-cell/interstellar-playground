@@ -1,0 +1,952 @@
+{
+  "branch": "codex/cloud-handoff-20261013",
+  "activeTask": "docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md",
+  "selectedAsset": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/围护v9-局部修订-r9.glb",
+  "explicitGeometryScope": [
+    "v9 front-window/roof interface",
+    "two deformed v9 handles",
+    "missing v9 ceiling strips"
+  ],
+  "wholeCabinAccepted": false,
+  "productReplaced": false,
+  "cloudJobsAdded": 0,
+  "hashScope": "Git index blob bytes; normalized text line endings",
+  "excludedLocalOnly": [
+    "intermediate/rejected GLB archives",
+    "Python caches and render/build logs",
+    "Blender history",
+    "local ZIP imports",
+    "legacy hunyuanPreview high-poly diagnostic assets"
+  ],
+  "pythonChecksRequire": [
+    "numpy",
+    "Pillow"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 264,
+      "sha256": "f2d8997a89caf030d960b78da55eec34445ab218392ad1361cee13e2648e934f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3969,
+      "sha256": "e42ef8397e98b20722e5f805091328ec119dd5b2b9ae46354d8042989d8b46d8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6035,
+      "sha256": "f4c437ff22232d0f4ed95aa2ee36c5d79da0b7e6ec1a61fe943b4fc65c8b371b"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/README.md",
+      "bytes": 1647,
+      "sha256": "cd770eea448bfd7f9b57395c7dc2131f463b9c2c25479eb26355db3c726c9605"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/右侧-大留边候选-提示词.md",
+      "bytes": 1379,
+      "sha256": "08868f88335989014f3b0586f12bbbe360aaef5db317925a6400d3cdaacbfeee"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/右侧-大留边未冻结.png",
+      "bytes": 1396132,
+      "sha256": "b9ae913d42c946b9b3e9042200b659f983827383ed2c419f957d07afb75c3583"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/右侧.png",
+      "bytes": 1339578,
+      "sha256": "194679137e37acd7ba162af9037aefb0ee93cc8907d80085d5b61fbdfdc23219"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/四图输入清单.json",
+      "bytes": 2619,
+      "sha256": "fe95cc342a9b8463e62b6e961d9066cc6072d3ec41de4f793a2f6b30d230faa0"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/左侧-大留边候选-提示词.md",
+      "bytes": 1377,
+      "sha256": "9d973a8ecaa7ca5e87ca35b0be417de957d21ecd8281543df571518c796532bb"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/左侧-大留边未冻结.png",
+      "bytes": 1364487,
+      "sha256": "cc307424f6576cf89c8ea80a7fd5b1eae6a282edce43901c4e015e8aabd282c7"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/左侧.png",
+      "bytes": 1388886,
+      "sha256": "87c0399d9b4fe54b7a9ea00e4199c99c73c4d21de29c4aecff5f151e497da150"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-大留边候选-提示词.md",
+      "bytes": 1215,
+      "sha256": "1e237808f0885172580e54246f191e06d1c4ee12be0fb38ca14d802fcdfd16de"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-大留边未冻结.png",
+      "bytes": 1263512,
+      "sha256": "27be99f5d12fe0b66bef45f7f28fe49933867bacc60e6f6e9692f8974a329a40"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-提示词.md",
+      "bytes": 1062,
+      "sha256": "e5b2850f5c0dc93666116e816c1c69598f5291e092bf9c0a3e869e8d7d5a0385"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-灰底识别拒绝.png",
+      "bytes": 1712387,
+      "sha256": "1cc2ee6613ce90e22033f38927776b618b7f4d2a81315a100431fbaa5079a605"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-识别与比例返修-提示词.md",
+      "bytes": 2161,
+      "sha256": "d7b58186feb1de618d4f6262587d2e7bd76701e0cc73e534bbaf54408fe5c3ba"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面-首次上传识别拒绝.png",
+      "bytes": 1430414,
+      "sha256": "23bcb346688bd0a75f38daf38d77e67c7b04f2482235a040f707db036f46e7e2"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/正面.png",
+      "bytes": 1444582,
+      "sha256": "0eee58b5e9f864feb1555eb3c129431322905ecc6894df0874bc66f522bb7615"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-大留边候选-提示词.md",
+      "bytes": 1214,
+      "sha256": "22e52845156e370ac7bbe6def56fb9a0c95bca9bb9fe94dc5daf893d12074508"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-大留边未冻结.png",
+      "bytes": 1270406,
+      "sha256": "c05f77dec918b5ddd7b311dab73e309eea4494599895156d8bc71c5586d0ff0b"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-提示词.md",
+      "bytes": 1061,
+      "sha256": "4ed540e33d2d9a1bb076196766ab40efa71495faea0ca44fecec15db3bd40a0e"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-灰底识别拒绝.png",
+      "bytes": 1657103,
+      "sha256": "cc2f6d74b58eca88134154244302829c036c90bf4cd69cb01deec6f59a476b8a"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-识别与比例返修-提示词.md",
+      "bytes": 2279,
+      "sha256": "89fed20abcffdedf746f4629653bec8482fd63ec6899cb7485579da03bceafc4"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面-首次上传识别拒绝.png",
+      "bytes": 1451047,
+      "sha256": "feb1cbfe4525362ad46d1dd3a29ef03060fef4f56bcc0b269e682e087f9da41d"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/背面.png",
+      "bytes": 1493445,
+      "sha256": "4f8aeb0fcedbe65dae01e5b414955fb42239f36a3e482c656a32a4979ef8a218"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/二维投影检查.json",
+      "bytes": 1440,
+      "sha256": "b86f14aa1cf8d303ca2915a3be63ee09ad5b31417768f9b0a7feb324890ac551"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/右侧-提示词.md",
+      "bytes": 706,
+      "sha256": "dedf51dc5d5f2ed099d380dcf0a787014aa3408df34a3619c7c11ef54e337af6"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/右侧.png",
+      "bytes": 1431498,
+      "sha256": "2e2eab6723e85f0c191e5577cba56c67d9d54a1bc8dee42be5d40f37f3a140d4"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/四图输入清单.json",
+      "bytes": 2192,
+      "sha256": "a8685cb971470b12dd7606d5a2ba43306af7f5dda2dde36c8eabb756a21d61fd"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/左侧-提示词.md",
+      "bytes": 1188,
+      "sha256": "ce0b89cc6c603d80a88edbb9ac07eb6fd6aa41f9b415b0bfbcc955d02123d33d"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/左侧.png",
+      "bytes": 1407778,
+      "sha256": "545ccfb420e3c2491e0e3c71b31fd8986b2a9f32aaaed5f1616ec7eb60ee304f"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/正面-提示词.md",
+      "bytes": 1776,
+      "sha256": "681e011360f3c5473eac0622c4fbe1185760edaa81962af1c63101e589e2888b"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/正面.png",
+      "bytes": 1328185,
+      "sha256": "84e930fe0add1291a237f8bac6ab662b026c08933e3d724c059dbcfce8116875"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/背面-提示词.md",
+      "bytes": 997,
+      "sha256": "6464203c483298908def704300c386fe21de441ef123a3766d05e7be4b557e18"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/背面.png",
+      "bytes": 1332806,
+      "sha256": "732e370188b97e8924f2273824c255231a0434a667593f4de1e3bde89de78e07"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/右侧.png",
+      "bytes": 1505251,
+      "sha256": "e306b45af0945a65ad3b707634fd73ad046f9a40b94a218de0d39fea1941d4d7"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/四图输入清单.json",
+      "bytes": 2463,
+      "sha256": "0db8ac53bed58f7c687cd1937d35c0a7539961a98248deed75111fa4ad2b2735"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/左侧.png",
+      "bytes": 1529118,
+      "sha256": "e466183e9a37e82df53e7759bdaed4e04a1e7aed8df9c3fd5b5c84224b40a374"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/接口与试装说明.md",
+      "bytes": 576,
+      "sha256": "8814196c7444c52f82a40fb3c7f4f4d79944d7d9467f78a858b649ee56c69ea0"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/正面-提示词.md",
+      "bytes": 826,
+      "sha256": "c48754b072485b284c3af77b3c4f4dda00dae93a00dd9b2a3d0abf8b150f637e"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/正面-过宽候选.png",
+      "bytes": 1649568,
+      "sha256": "d61ef471fbedaf64748e1cec7350a33cb571c5076c30843b3eeade9ae79831c5"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/正面.png",
+      "bytes": 1648983,
+      "sha256": "c3ba8db5dbf5d28fffcaec00940c62086e8f324f1b5d40799228d15e33978532"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/背面-提示词.md",
+      "bytes": 1210,
+      "sha256": "8626a47c7e2257636254212dbfa6525e759ac9f443fb2f18cd4f22c9777bf216"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/背面.png",
+      "bytes": 1656924,
+      "sha256": "1a476eba167c8be5f1f96b87e60cb5eec4990b581d297c09c16396fee00bc7db"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/六图输入清单.json",
+      "bytes": 4905,
+      "sha256": "6b6ed289d0edc245b857c17d2a1aef3628cc8901f9ce46d82eca8f21039ce004"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前右-提示词.md",
+      "bytes": 10,
+      "sha256": "770c2d18aa4ec3159f46da461ef452972949942ff4f6a9771044485faa146398"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前右.png",
+      "bytes": 1921611,
+      "sha256": "b21d0b41e250b4dc6518edd5e7002bef050654d0c037a67579b4e7fba62a0b05"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前左-提示词.md",
+      "bytes": 1976,
+      "sha256": "db33debab78e406a2786d1952e2e5d7c039d1deecf31875fc9906849a6486cae"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前左.png",
+      "bytes": 2053953,
+      "sha256": "16466ad59e9a520c2f7bef0a788f2e03361936ec3c145d23be8b6cc979f9fd22"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/右侧.png",
+      "bytes": 1480448,
+      "sha256": "a4932e0e5fa0859225c37742fa710b7f0c031f0e1bc73d6d54e066f7ae645d58"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/基础四图清单.json",
+      "bytes": 3723,
+      "sha256": "755344a65caac4a73788138547eb760a7ed3137e8b82b0465bc6a6445e03e47a"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/左侧.png",
+      "bytes": 1523837,
+      "sha256": "185209129be11754048b7b2f0ba29a485a015c24c41586be3f99934242247872"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/正面.png",
+      "bytes": 1950770,
+      "sha256": "f93472f59ef829322f1c910dd9a40bb0ebbd4c4c7ceb70022c6bfdf19d7f6b66"
+    },
+    {
+      "path": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/背面.png",
+      "bytes": 2063458,
+      "sha256": "c6e3b41fa1789f465c1753b8f8be4a5bf4c16e0476d7df0275e9fd61637a2b31"
+    },
+    {
+      "path": "docs/CODEX_GROK_WORKFLOW.md",
+      "bytes": 9235,
+      "sha256": "d2d730d4eb10ff522027d48cfd031f03a09edf5781a8f15fbc412db1947f3781"
+    },
+    {
+      "path": "docs/DEVELOPMENT_WORKFLOW.md",
+      "bytes": 5491,
+      "sha256": "385232399b49629fd191bcb546fe1e0a99e2264fe8744c13d5e1fb50e32f2ef2"
+    },
+    {
+      "path": "docs/space-exploration/04-DELIVERY-ROADMAP.md",
+      "bytes": 15746,
+      "sha256": "476ba9ddb3348a6df341246f563e813bc3f4b273d792bc79861bf427ce64d038"
+    },
+    {
+      "path": "docs/space-exploration/16-ASTRONAUT-CANDIDATE.md",
+      "bytes": 5740,
+      "sha256": "5ab6ffa551ec586bfeb16dd2e6d8c0a137d48b37293f0f018d36ac92db403d4a"
+    },
+    {
+      "path": "docs/space-exploration/README.md",
+      "bytes": 5273,
+      "sha256": "0c67854dd68c82984e6a63538d7d9789dc01c6f57b38cafa80ad0df5d70eb2c4"
+    },
+    {
+      "path": "docs/tasks/2026-09-21-p4-t01-astronaut-rig.md",
+      "bytes": 25309,
+      "sha256": "c0ffe2dfb208c083241596ebb86130b6af85a9cfedf87689fa0a76aefb6edbde"
+    },
+    {
+      "path": "docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md",
+      "bytes": 346072,
+      "sha256": "b74141efd9e84e873e8792817a244ef87f3517084d6f4d99007459705a98b6ac"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/build_v9_local_revision.py",
+      "bytes": 5967,
+      "sha256": "d0d2141c006d3a93b3850c99de24f8e78e5056b51d450c7abf50295726bf8b03"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/v9_front_fit.py",
+      "bytes": 1125,
+      "sha256": "0286c0f326780eca747fda27029f2796b4e9d9640af53a081d53db0ab1aa9b27"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/v9_handle_local.py",
+      "bytes": 3370,
+      "sha256": "17108f7578afa6911a7421de8bee6f7afe2454f167e1fd02834d6b7a87ba2108"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/v9_local_asset.py",
+      "bytes": 3326,
+      "sha256": "356aec31806014cc25d55867f6968c2ccb737faaf651f362a57c1cbef470dc00"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/v9_roof_tuning.py",
+      "bytes": 3247,
+      "sha256": "6f2aac465bbc22305ed8922ef2d6758657495943c532d508f3bf9fe687d50310"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/verify_v9_local_revision.py",
+      "bytes": 3400,
+      "sha256": "93ab264f04b1d5774e3f7a448121dd5bd7c529af498b7a4ce12ad00402714941"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/原始格式检查.json",
+      "bytes": 804,
+      "sha256": "0525aae647f7d9e7faeed476e9ce1574de38c1ea9a1669a4a5a29bd84ce869e6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/原始门叶检查.json",
+      "bytes": 3523,
+      "sha256": "6a911b1230043bd9b8391352b416cbdb00b357383f353976b979f4c72ff48c68"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/实装观察结论.json",
+      "bytes": 1285,
+      "sha256": "831c4ac949805e0eb60302a5846fc1ac2ef4d6010f4e24e5260e805644daf09a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/槽内有限接边检查.json",
+      "bytes": 22463,
+      "sha256": "3a88314f7cdbabcd70e27421359c0b3b7ab0f512be3ad5ed9adb33d78ae8545a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/混元原始模型.glb",
+      "bytes": 28023856,
+      "sha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/混元执行记录.json",
+      "bytes": 1376,
+      "sha256": "ffdb81deeffe20cabda0684c4963c9c5bf176a9b1ea86722f8d806a3ed4d6076"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/原始接口检查.json",
+      "bytes": 5686,
+      "sha256": "275251a1f7b9c1533f992f730d0c8a8aa939af340c73b9a70cb1467f42878477"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/原始格式检查.json",
+      "bytes": 803,
+      "sha256": "0f86345f45869380f70cc8aa58ccd81ffbaabaf01b954dcebfbea39c4a7a12c8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/实装观察结论.json",
+      "bytes": 3089,
+      "sha256": "1995aec493fcf3f32d73690cf84ffd9f70bd0e493b7f9f203c51dc4f9fc9e601"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/混元原始模型.glb",
+      "bytes": 31488976,
+      "sha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/混元执行记录.json",
+      "bytes": 2068,
+      "sha256": "d142ad0b094d523a4f75541481a5c3cefcc69cd1d3e535be89f949bcf0105d15"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/舱体外宽对照检查.json",
+      "bytes": 1266,
+      "sha256": "c5c10ae58f20b36aa1b4ec42887a9a5e9ae714fd539b593a30a55f0e92e0b1ba"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/舱内显示尺度检查.json",
+      "bytes": 1618,
+      "sha256": "baa071da735c7660b3cfab82b5e5d4613bff562e87c07f51955c3daf4e1feaf9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/门叶接收槽深度检查.json",
+      "bytes": 5517,
+      "sha256": "3a00965081612340b663d1793d41eb1c92d78a2b384b786acbc22a989c88d561"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗同舱试装-v2.html",
+      "bytes": 2231,
+      "sha256": "c8681baa372fff16a3eaae0766d9b4b734e30fab455c44ce7fa27bc6f4cb702f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗同舱试装-v2.mjs",
+      "bytes": 5601,
+      "sha256": "3eaa7b6794ace24eb757e0da3f2198f8e561a1d73ce57bdedd1e736520a6abc7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/原件格式检查.json",
+      "bytes": 804,
+      "sha256": "1af319b0aeccac9a0ac5543ed7a0c6c0cb67e64b0432db0f89bd30d6d319da6c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/原始前窗检查.json",
+      "bytes": 4100,
+      "sha256": "60786d4955dde3b42fe60b8677e5e9a85e2943ffb42f187ad68c0192674f7dd4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/实装观察结论.json",
+      "bytes": 2267,
+      "sha256": "78f0c6a89c57b8a0e39a32ea9ffb08039fb8356d450931c5e0a32665d9266391"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/混元原始模型.glb",
+      "bytes": 43561088,
+      "sha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/混元执行记录.json",
+      "bytes": 1186,
+      "sha256": "9ec6b3521bf454a99fa549cd78cdb059d33874dbfaa371556a3b4b5fa6a253a1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/顶棚-安装基准检查.json",
+      "bytes": 636,
+      "sha256": "7e04130da1ccdd3db340607ed5a1999d52f0814e8c03d851c4c9800e95579e8e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/顶棚有限相交检查.json",
+      "bytes": 581,
+      "sha256": "5a631ddf17c86ea43dbb2f9932c11522e952a102ccd363ebf44a4feefdff6f69"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-侧面总览.png",
+      "bytes": 21741,
+      "sha256": "674060e319f885d3fbb226e4fced2b7eba46f6d29ffbd7c459ddec19c095ec2c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-右接边.png",
+      "bytes": 84184,
+      "sha256": "e2f9c7053dbe2fdc14b866da074c77966f520489dbb8294ab3a15a14ed4adc00"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-后舱接边.png",
+      "bytes": 84274,
+      "sha256": "094692b897ce4b35a28a12b9d2b57d348dc91142144aeaa415fc864552212ce3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-地面过渡.png",
+      "bytes": 59738,
+      "sha256": "44148d2c7427b45260df0dc102e3f494c53ac390f3579f30435682c62c608d06"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-左接边.png",
+      "bytes": 89137,
+      "sha256": "ca5e0aac07d1af845dd6afbd9d59e5025440ce96d2c273b6741f76778c962c58"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-背面.png",
+      "bytes": 110630,
+      "sha256": "a5bf21a37428df888d294acf556e6498e59d76fb8e7c17cfaa1c681c0709210b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-顶棚过渡.png",
+      "bytes": 63183,
+      "sha256": "e8f10149c21851f86f6cf307d474f0196d4b5a3725e480b0eb6811d37689affa"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9-驾驶席.png",
+      "bytes": 115220,
+      "sha256": "50ae79b3c1d4248505bd2684e22ca33cb62f1858ae1b77c4074f717de4923202"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9有限接口检查.json",
+      "bytes": 796,
+      "sha256": "b24804fd717fbb8427b531a1eef64501c443326f352ee1731cdd55aa19795074"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/修订-r9格式检查.json",
+      "bytes": 1698,
+      "sha256": "574f31e25b2fc28af5a3bb03732acf5ed9b05e8259b45d04630d7733c5d02b22"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/切页恢复-r9实测.json",
+      "bytes": 265,
+      "sha256": "917727e21fa3d5229368c1958992b4ef2a8f1f1956a709f9bc3cd7d6b55b1d16"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/原件对照-r9-驾驶席.png",
+      "bytes": 109144,
+      "sha256": "a3a975c3fa45bb3350dd18d942b3532503fbb52daa27ea1acb1253ea56bfe668"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/围护v9-局部修订-r9.glb",
+      "bytes": 36194972,
+      "sha256": "da9a6c56a79979ba11588fa06c01057bfbbce2be34a88f929c28eda46af4903e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/实装观察结论.json",
+      "bytes": 1552,
+      "sha256": "7d3970a000c0f28319247cf569c3b4a012a5ea71671314e373db13301b88c30b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/局部修订-r9来源记录.json",
+      "bytes": 1752,
+      "sha256": "a917d445488e39f1e55af0c2a791dfaf4316f1245b8fb4bb45c214df26db2610"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/观察移动-r9实测.json",
+      "bytes": 1656,
+      "sha256": "4d39acf93de69687b53262c41c5ce3989ad6025bae6d5089f0b15d8c28f86a96"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/鼠标观察-r9实测.json",
+      "bytes": 557,
+      "sha256": "7e9ba30a484957a7908b482424d11163e30594c24afa7b243f5568de6846f13d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/门叶同框试装-v2.html",
+      "bytes": 1994,
+      "sha256": "41bbd971474d77d320b7cef4d4480e410e9ca59c3807812c33dcf62739456c2b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/门叶同框试装-v2.mjs",
+      "bytes": 5580,
+      "sha256": "4f50f1790cd707b9ee884eca1081a39b35ec19c45b3ef7a43221cc3c4435d6cf"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护同舱试装-v9.html",
+      "bytes": 1853,
+      "sha256": "22f1a96af919f9161940f17aa6f104d16f409333ac2f01e6f520cc0107c92222"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护同舱试装-v9.mjs",
+      "bytes": 5479,
+      "sha256": "40e6ea803a19909a22d85a104a15a3f5cd54602b36c276fff8782138110ea4b4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护局部调整.html",
+      "bytes": 2286,
+      "sha256": "88d73197c302e43b8eaf23e5ccfba1612bd1a8d5b2930c33f10cdac048146122"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护局部调整.mjs",
+      "bytes": 6895,
+      "sha256": "72b27213de734d72be61ff1c0b77180cc8ab12064c58f36abb51f3b3992c2fdb"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/原件格式检查.json",
+      "bytes": 804,
+      "sha256": "88db39f92789e6343fab4275b7ceb1d57f0bc85cc9ae27c1813a5cb09997117f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/原始围护检查.json",
+      "bytes": 4918,
+      "sha256": "9400cd9c522205f28fe4ccb93fa4fa30ef0d44190a444b0e9536d4fef20a6ee9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/实装观察结论.json",
+      "bytes": 1605,
+      "sha256": "3f1ecda58248c47293d4d056b240832e1d14b63f91e924d8c712f39f56a97c83"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/来源材质只读检查.json",
+      "bytes": 1583,
+      "sha256": "354c65fe1ca1f7fa1a61c5b04e3f63ebe3e06af6c2f3277fd1ddd7d88dd3e13b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/混元原始模型.glb",
+      "bytes": 34017924,
+      "sha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/混元执行记录.json",
+      "bytes": 1568,
+      "sha256": "3c7119107b251dea9a0938d4fc25263db03c85f253e06a885a6c717772465de6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护观察移动.mjs",
+      "bytes": 1263,
+      "sha256": "b84d034949aa28d0a19413a122a7955ba35979d1415fc43e8502d76ca7b1a9a4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/v6-berths-检查.json",
+      "bytes": 2120,
+      "sha256": "2d887e5aab90a9fc2e851d71075880e63befe2d4411b035eb78ff9847078fbb6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/v6-hull-检查.json",
+      "bytes": 323,
+      "sha256": "28f8a0be23653e9cfb2b0cc682c840fd4737ee8f086fdc3a0649a40649466794"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/v6-structure-检查.json",
+      "bytes": 541,
+      "sha256": "e2acebd67d5c681e35deff9bf57d524ffee3a75c1b251aebd681a945c88f4010"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/v6-sweep-检查.json",
+      "bytes": 2152,
+      "sha256": "2bf7f674707bbb404449187488246f63e292f002ac217a6bc8205e3863bf62fc"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/整舱统一母版-v6.glb",
+      "bytes": 17732692,
+      "sha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/模块装配坐标-v6.json",
+      "bytes": 14104,
+      "sha256": "abf60ec30d51dd74f063fca11360f8881f04569e517f47c606e4eea65931cd74"
+    },
+    {
+      "path": "output/hunyuan-adaptation/master-design-20261009/装配清单-v6.json",
+      "bytes": 7645,
+      "sha256": "188dde4e10aed9ec41898ad1cbb911433474a4da53778e991fb34beedebde4c6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/repair/mesh_asset_io.py",
+      "bytes": 4882,
+      "sha256": "9ade632cef223aa1c5d706f74cb792570c159d6faa15e6e9425cf832e6df9ab6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/repair/verify_static_asset.py",
+      "bytes": 3983,
+      "sha256": "dc3365dd52beb497b20ff819f8526ea01fe43fa1a3bc504b015c983d27ab606e"
+    },
+    {
+      "path": "src/assets/models/astronaut-rigged-v4.glb",
+      "bytes": 7817020,
+      "sha256": "2b9c84392287f5092b7bb155e8719d75480a2f99190699c5fcf6630919c34700"
+    },
+    {
+      "path": "src/assets/models/astronaut-rigged.glb",
+      "bytes": 174404,
+      "sha256": "f615293a02c393b88567810174c0c47cec427b51e72f5279a8bec3f5e7e0348c"
+    },
+    {
+      "path": "src/assets/models/spacecraft-ceiling-repair.glb",
+      "bytes": 1408788,
+      "sha256": "6053cd1fb34442acbd1b7fb7a34a3d77ea00ddd441de8cfde7191dc824d088b4"
+    },
+    {
+      "path": "src/assets/models/spacecraft-floor-repair.glb",
+      "bytes": 3123412,
+      "sha256": "18d85f4337411df5208c244f2e957d0f4a5e9dd87220157453783bc8fdee032d"
+    },
+    {
+      "path": "src/assets/models/spacecraft-master-lod0.glb",
+      "bytes": 13203856,
+      "sha256": "bdb0f761d6960019f37b6cb227ea5c59f839c3e986045579227d7a909aa12a3b"
+    },
+    {
+      "path": "src/assets/models/spacecraft-redesign-exterior-lod1.glb",
+      "bytes": 4479148,
+      "sha256": "e0d8a05550d1d146dc46397458b0f7ac14c7dc071ac43cd7ff326e9329027986"
+    },
+    {
+      "path": "src/assets/models/spacecraft-redesign-lod0.glb",
+      "bytes": 33323376,
+      "sha256": "0b7bd4c18c7b11bd41c1d6ea54222ebec1c086a5ca1eec8a2c91b70d59443527"
+    },
+    {
+      "path": "src/features/space-exploration/domain/shipInteraction.test.ts",
+      "bytes": 2648,
+      "sha256": "7e0835493773828147ceb8369eddfce03bd758cf7625b2f26ed8c092c2eb8db9"
+    },
+    {
+      "path": "src/features/space-exploration/domain/shipInteraction.ts",
+      "bytes": 4465,
+      "sha256": "5b62a3fe706b952373b673ab76d33b27d72b9023ffaeaaf873e74e1d2713c8fe"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/astronaut/astronautRuntime.ts",
+      "bytes": 3106,
+      "sha256": "3e909fc06f5876e3c320d648bab98356f53c4b4f9e0a5f34692b9f985272faef"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/solar-system/systemMapEngine.test.ts",
+      "bytes": 18802,
+      "sha256": "5e2954cb92f31545ac08f581dab91d8589c526b0a774c8bbe92c13c3cd2da74b"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/solar-system/systemMapEngine.ts",
+      "bytes": 14798,
+      "sha256": "05c273f98a09ab8ec7b6fe0f126df38da2c7b8a505814787e236ef3967f35215"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/adaptedShipRuntime.test.ts",
+      "bytes": 17010,
+      "sha256": "7d152816962058540e6a6d44a500faa6a0f5a5fb134fe6f782627a2f1a3035c9"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/adaptedShipVisibility.ts",
+      "bytes": 1988,
+      "sha256": "27c4694638dd6d154a11732bc18959c862e97b7370145f12bf1523ea6c892335"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipAssemblyLoader.test.ts",
+      "bytes": 6219,
+      "sha256": "e7d9c2267d8ee572819600e649b954f921974536734dfbb222add97297bfa86d"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipAssemblyLoader.ts",
+      "bytes": 1827,
+      "sha256": "b69f6994217538896706b58e0b7319f74444febc56f4ccb66b0fcad8e23c0d8f"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipAssetLoader.ts",
+      "bytes": 635,
+      "sha256": "76bbee3b6777e4d97a26c5224fc19d5dfa440c4c4eabc0a54cadef2dc3894baf"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipCabinCamera.test.ts",
+      "bytes": 2958,
+      "sha256": "e2462f1d7377137d99c51ca7e536a0e656da49639a75fed741f2bfebe0e0a99c"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipCabinCamera.ts",
+      "bytes": 3564,
+      "sha256": "0e527430eb5157b8b1753fd5f1cc6b8f8dca7170533e5e946b3db7e9d4127779"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipCabinVolume.ts",
+      "bytes": 2764,
+      "sha256": "18f32101e5181be25afa17a0b6c8301f74e5bce2f297f3bb9fd5453ea55fceb3"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipCameraPreview.ts",
+      "bytes": 15036,
+      "sha256": "9258c90c770f50e2522220851e205d31e6a9f6edb04964e951e55e26eda0844e"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipCeilingRepair.ts",
+      "bytes": 1954,
+      "sha256": "9ea854c6346c4b86c6f66f78e128728ba2fbb1d5e7648a88314cdc82f44b451b"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipContactShading.ts",
+      "bytes": 3397,
+      "sha256": "d1112e18bf7a15d3e889936906ed0e0fa055382cb630b9d6969a6f4fe8c80cad"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipExteriorDetail.test.ts",
+      "bytes": 4131,
+      "sha256": "cc47b76fea81b1a4023c2912549933fa5cbee60856f1fe9d196c8619533b21ec"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipExteriorDetail.ts",
+      "bytes": 3151,
+      "sha256": "e403fec8a62a346a0197c0430dac2fcd696300e515bb1dcc4681aa5a263fce9f"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipFloorRepair.test.ts",
+      "bytes": 5605,
+      "sha256": "4cd280d57c9dbb7715833beca15678d88030d5b554362243082a7b1ac01d9391"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipFloorRepair.ts",
+      "bytes": 1627,
+      "sha256": "e1857d62c963c89b4bc25eb8102df0f09318273163b49e4e2645a65743917dac"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipFrameStats.test.ts",
+      "bytes": 1408,
+      "sha256": "41ba808949c6eec2169390bd194a5588ac12a0c3f33645ef75ed51657610d355"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipFrameStats.ts",
+      "bytes": 969,
+      "sha256": "9b93bdc3c74f4b41f7ccb5b9d07bec747ee1d3dce9f984166804fa1f33e7a345"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipHighPolyPreview.ts",
+      "bytes": 5005,
+      "sha256": "ebefb808f047b35dcf83ad2caab9a34d96463a1f5ae6c38c8dcd453aeeef7571"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorFinish.test.ts",
+      "bytes": 2332,
+      "sha256": "73e409752f0f152d93ad85553f176061450151b724bd18272906860baa8b8f3e"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorFinish.ts",
+      "bytes": 1852,
+      "sha256": "60751bd535c97a762f12cef334cd15fbb0304b6c6254d72dee9de11552ce8789"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorFit.ts",
+      "bytes": 1248,
+      "sha256": "877364765290cbf7a3fa60144945052cd64f3bfe0c9f2463ea914d392ccb43be"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorJoinery.ts",
+      "bytes": 7251,
+      "sha256": "fef3eb8b48f66ac8f4a14ebe6a61773692c094e4c625cd264ad00e7431d2b657"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorTransitions.test.ts",
+      "bytes": 6014,
+      "sha256": "7d2f8024413801f19d044b78058c238601aed16bc3c198935556842484e53153"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipInteriorTransitions.ts",
+      "bytes": 6389,
+      "sha256": "9a2177816d7e156bceb3469f799fef9209895362997862ffa6ec7cf724199318"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipMasterGeometry.test.ts",
+      "bytes": 4033,
+      "sha256": "678d176fdd7a8e85acb06a8f5348931f039604f97ebe3873f11c153c0ad5e6e2"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipMasterLoader.test.ts",
+      "bytes": 1595,
+      "sha256": "b6abd9ae21bbfe739c681911cc859a4cf516a0d84c566b022c3b12269116f3e1"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipMasterLoader.ts",
+      "bytes": 943,
+      "sha256": "40edfb80adacba4549ea6557f5b47a2d26489469f4d6813a47b4c80f6e2b8f6f"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipMasterRuntime.test.ts",
+      "bytes": 4246,
+      "sha256": "e394a0b0641d5ddbdf6523d873c039785d064b84195149f95f3b27e5ea126f48"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipModelEnvironment.test.ts",
+      "bytes": 1049,
+      "sha256": "2a6bc522d7ef4574c06216f863e27b159f3ed373288dce484ee6fe444785e997"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipModelEnvironment.ts",
+      "bytes": 894,
+      "sha256": "9911f19f6fb0b21084d2b9422338afb20fe1fbd22ccee96fb951bf4f1f2b752a"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipModelRuntime.ts",
+      "bytes": 10259,
+      "sha256": "38baa50146830f884d28f2a8d7d3d59292b253a47ac94312aea94488aa2d06c7"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipPressureBoundary.ts",
+      "bytes": 4767,
+      "sha256": "3a3ef50efed0168807411d9bcf4b4af3b8e35bc239ec7bc3be79b2dcef5a638c"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipPressureLiner.ts",
+      "bytes": 5356,
+      "sha256": "06cf4c91e256241bb0902213a56724024c7ac92a9c92eea2486c7ecb1ff3582c"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipViewCamera.test.ts",
+      "bytes": 3832,
+      "sha256": "35453b2e79114239c9c0a8527230b292fb26d43a2070013778923985afb812c7"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipViewCamera.ts",
+      "bytes": 6363,
+      "sha256": "9fd3d2bd4457f9c8ddacf6a631fb6daa1be42db9703cf39168065fec0b70535f"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipVisibility.test.ts",
+      "bytes": 4545,
+      "sha256": "42f53c8d24714a9b8ffd29d088813daeb881a77f9695298c208f09e03ee09524"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipVisibility.ts",
+      "bytes": 6509,
+      "sha256": "a68f8f1c76fb6dd892938ed99860faaa57c34c52842b33b6cc40429a32b61e35"
+    },
+    {
+      "path": "src/features/space-exploration/rendering/spacecraft/shipWindowReveal.ts",
+      "bytes": 5393,
+      "sha256": "de3935b3d2a1123e45f1f81eeee538109d658ca4b829fd8e274d085721c6f8a3"
+    },
+    {
+      "path": "src/features/space-exploration/ui/ShipCameraPreview.css",
+      "bytes": 2991,
+      "sha256": "c1353c5373b4a4e37348f88b3cace11b46157e20aa03ee8257f2e88ac834d4a8"
+    },
+    {
+      "path": "src/features/space-exploration/ui/ShipCameraPreviewPanel.tsx",
+      "bytes": 7194,
+      "sha256": "59f437003e914f2a521b117c6983c381ca340e60f164d1d10c0179c1184fb921"
+    },
+    {
+      "path": "src/features/space-exploration/ui/SystemMapExplorePanel.tsx",
+      "bytes": 1839,
+      "sha256": "563bc92e500205821d9890a48e40b1d8d04dda8dbb89823ca5a5e7eea3229d7c"
+    },
+    {
+      "path": "src/features/space-exploration/ui/SystemMapHud.tsx",
+      "bytes": 4966,
+      "sha256": "3bfe2e344642980d365bd536200fc8ba82f016ac177214a924fa51b7797876c4"
+    },
+    {
+      "path": "src/features/space-exploration/ui/SystemMapShell.tsx",
+      "bytes": 4002,
+      "sha256": "7b71a3c8be39813d5b4515dbb508bd223f35be0e6b5e9f46b6fd58c23d103144"
+    },
+    {
+      "path": "tools/prepare_cloud_handoff.py",
+      "bytes": 5462,
+      "sha256": "eb73aeb509e9fa2f243ef4a28c805dee365f1e4281792a7af8a73b7cbc82f547"
+    }
+  ]
+}

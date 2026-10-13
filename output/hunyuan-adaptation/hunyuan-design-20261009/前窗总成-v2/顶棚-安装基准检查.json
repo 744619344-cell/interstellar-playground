@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-12",
+  "windowSha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24",
+  "roomSha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "placement": "rearMount",
+  "uniformScale": 3.0598953613985707,
+  "verticalRigidOffsetMeters": -0.0065,
+  "originalLowerEdgeY": -1.5865,
+  "selectedVertices": 6081,
+  "roofCheckedVertices": 6081,
+  "aboveCeilingSamples": 0,
+  "maximumSampledPenetrationMeters": 0,
+  "localGeometryMade": false,
+  "limits": "Finite original vertex samples against existing ceiling surfaces; no exhaustive triangle collision, manifold or art acceptance."
+}

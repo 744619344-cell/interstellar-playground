@@ -1,0 +1,50 @@
+{
+  "version": "v15",
+  "sourceSha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+  "scale": 3.6900837463854255,
+  "displayOnlyUniformFitByWidth": true,
+  "fittedAssetWritten": false,
+  "localGeometryMade": false,
+  "placement": {
+    "center": [
+      0,
+      -0.20460800037618387,
+      5.0413388868918725
+    ],
+    "rotationYDegrees": 180,
+    "frontWallPlaneWorldZ": 4.94,
+    "depthAnchor": "六个平墙区域前表面交点的中位数；仅平移原件，不改网格"
+  },
+  "envelopeMeters": [
+    3.48,
+    2.7507839992476324,
+    0.307967032855907
+  ],
+  "openingCentralSampleMeters": [
+    1.5743361282348631,
+    2.4436641347845134
+  ],
+  "wallPatchDepthMeters": 0.30081540110526717,
+  "targetEnvelope": [
+    3.48,
+    2.676
+  ],
+  "targetOpening": [
+    1.6,
+    2.47
+  ],
+  "targetFlatWallDepth": 0.08,
+  "currentRoomReferenceEnvelope": [
+    3.48,
+    2.7
+  ],
+  "topMismatchMeters": 0.07478399924763224,
+  "topMismatchToOldReferenceMeters": 0.05078399924763222,
+  "openingMismatchMeters": [
+    -0.02566387176513696,
+    -0.02633586521548681
+  ],
+  "openAtAllNineSamples": true,
+  "fitAccepted": false,
+  "limits": "中心线和有限采样不代表全轮廓或完整接边；验收须记录实际六角度观察。"
+}

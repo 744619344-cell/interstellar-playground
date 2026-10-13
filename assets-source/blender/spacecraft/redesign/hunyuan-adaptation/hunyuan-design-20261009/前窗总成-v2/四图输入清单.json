@@ -1,0 +1,92 @@
+{
+  "component": "前窗总成",
+  "version": "v2",
+  "inputCount": 4,
+  "inputs": [
+    {
+      "slot": "front",
+      "name": "正面",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/正面.png",
+      "bytes": 1648983,
+      "sha256": "c3ba8db5dbf5d28fffcaec00940c62086e8f324f1b5d40799228d15e33978532",
+      "resolution": [
+        1750,
+        899
+      ],
+      "advisoryDarkBodyBounds": [
+        54,
+        23,
+        1696,
+        874
+      ],
+      "advisoryOuterRatio": 1.9284037558685445
+    },
+    {
+      "slot": "back",
+      "name": "背面",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/背面.png",
+      "bytes": 1656924,
+      "sha256": "1a476eba167c8be5f1f96b87e60cb5eec4990b581d297c09c16396fee00bc7db",
+      "resolution": [
+        1750,
+        899
+      ],
+      "advisoryDarkBodyBounds": [
+        53,
+        23,
+        1697,
+        875
+      ],
+      "advisoryOuterRatio": 1.928487690504103
+    },
+    {
+      "slot": "left",
+      "name": "左侧",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/左侧.png",
+      "bytes": 1529118,
+      "sha256": "e466183e9a37e82df53e7759bdaed4e04a1e7aed8df9c3fd5b5c84224b40a374",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "advisoryDarkBodyBounds": [
+        439,
+        110,
+        582,
+        1435
+      ],
+      "advisoryOuterRatio": 0.1085972850678733
+    },
+    {
+      "slot": "right",
+      "name": "右侧",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/右侧.png",
+      "bytes": 1505251,
+      "sha256": "e306b45af0945a65ad3b707634fd73ad046f9a40b94a218de0d39fea1941d4d7",
+      "resolution": [
+        1024,
+        1536
+      ],
+      "advisoryDarkBodyBounds": [
+        439,
+        109,
+        583,
+        1435
+      ],
+      "advisoryOuterRatio": 0.1092690278824416
+    }
+  ],
+  "generationModel": "V3.0",
+  "faceTarget": "50k",
+  "localGeometryMade": false,
+  "targetFrontMeters": [
+    3.409705638885498,
+    1.8
+  ],
+  "targetIntegratedReturnMeters": 0.2,
+  "reusedUnchangedSlots": [
+    "left",
+    "right"
+  ],
+  "limits": "Independent native raster illustrations, observed bbox only. Not exact engineering projections; actual cloud original must be trial-fitted."
+}

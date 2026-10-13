@@ -1,0 +1,584 @@
+{
+  "master": "整舱统一母版-v6.glb",
+  "masterSha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "modules": [
+    {
+      "module": "airlock-ceiling",
+      "file": "modules-v6/airlock-ceiling.glb",
+      "origin": [
+        0.0,
+        1.1122499704360962,
+        6.0299999713897705
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.452131986618042,
+        0.0755000114440918,
+        2.179999828338623
+      ],
+      "triangles": 4792,
+      "sha256": "25944701a761f367fc111e58b3fa5b422272dadd1ce4032e49efac7eadb315b1",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 6
+    },
+    {
+      "module": "airlock-door-frame",
+      "file": "modules-v6/airlock-door-frame.glb",
+      "origin": [
+        0.0,
+        -0.36000001430511475,
+        6.0299999713897705
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        2.494999885559082,
+        2.450000047683716,
+        2.2800002098083496
+      ],
+      "triangles": 2280,
+      "sha256": "9b32bafeb958740809a45f35a927e2c58e1f457567e2c6993952c917626de43f",
+      "reassemblyMaxErrorMeters": 5.960464477539063e-08,
+      "meshInstances": 6
+    },
+    {
+      "module": "airlock-floor",
+      "file": "modules-v6/airlock-floor.glb",
+      "origin": [
+        0.0,
+        -1.5774264335632324,
+        6.0299999713897705
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.452131986618042,
+        0.06514716148376465,
+        2.179999828338623
+      ],
+      "triangles": 1708,
+      "sha256": "6db52044d8fe0c81d2e1fd23936ea6b3dd4c567af8ab0bfac51fcd7689c2eea5",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 4
+    },
+    {
+      "module": "airlock-handrail",
+      "file": "modules-v6/airlock-handrail.glb",
+      "origin": [
+        -1.6714999675750732,
+        -0.3399999886751175,
+        6.0299999713897705
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.11899995803833008,
+        0.09000000357627869,
+        1.0099997520446777
+      ],
+      "triangles": 452,
+      "sha256": "a06db52ddeef5bc1ee84e409b922699ad97ae3a5db761dfb2113340e285c04ab",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 1
+    },
+    {
+      "module": "airlock-inner-door",
+      "file": "modules-v6/airlock-inner-door.glb",
+      "origin": [
+        -0.0040000081062316895,
+        -0.35999998450279236,
+        5.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        1.6019999980926514,
+        2.293999969959259,
+        0.2519998550415039
+      ],
+      "triangles": 3268,
+      "sha256": "e1c38f448370795e6680ec0e50da9dcc9e650f0f3031084094a6ceb6d3c022d9",
+      "reassemblyMaxErrorMeters": 2.9802322387695312e-08,
+      "meshInstances": 5
+    },
+    {
+      "module": "airlock-outer-door",
+      "file": "modules-v6/airlock-outer-door.glb",
+      "origin": [
+        0.0040000081062316895,
+        -0.35999998450279236,
+        7.0320000648498535
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        1.6019999980926514,
+        2.293999969959259,
+        0.2519998550415039
+      ],
+      "triangles": 3268,
+      "sha256": "582b72b6061ae2bfc6df41547cda44658882220e48c699bbd8d3669c2d7b1bbb",
+      "reassemblyMaxErrorMeters": 2.9802322387695312e-08,
+      "meshInstances": 5
+    },
+    {
+      "module": "airlock-pressure-panel",
+      "file": "modules-v6/airlock-pressure-panel.glb",
+      "origin": [
+        1.6740000247955322,
+        -0.24000000208616257,
+        5.740000009536743
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.1194298267364502,
+        0.6400000005960464,
+        0.2888178825378418
+      ],
+      "triangles": 2540,
+      "sha256": "3443004d174a2a9718fdfdfe9f04bd3052cea4a6f98aed08d51190bdee01212d",
+      "reassemblyMaxErrorMeters": 1.4901161193847656e-08,
+      "meshInstances": 4
+    },
+    {
+      "module": "airlock-wall",
+      "file": "modules-v6/airlock-wall.glb",
+      "origin": [
+        0.0,
+        -0.23000001907348633,
+        6.03000020980835
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.5399999618530273,
+        2.700000047683716,
+        2.2239999771118164
+      ],
+      "triangles": 3960,
+      "sha256": "d225c817fecbf81e3957adf278fce7ef662bd58597708f1a54df47c5a33c29b8",
+      "reassemblyMaxErrorMeters": 5.960464477539063e-08,
+      "meshInstances": 12
+    },
+    {
+      "module": "center-console",
+      "file": "modules-v6/center-console.glb",
+      "origin": [
+        0.0,
+        -1.225000023841858,
+        -3.9505001306533813
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.2800000011920929,
+        0.7000000476837158,
+        0.6990001201629639
+      ],
+      "triangles": 324,
+      "sha256": "7798beff7781423ea90985070c221641a2ce08e7004438f09c50f40e6614678c",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 3
+    },
+    {
+      "module": "cockpit-ceiling",
+      "file": "modules-v6/cockpit-ceiling.glb",
+      "origin": [
+        0.0,
+        0.6657594367861748,
+        -4.253741502761841
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.451763153076172,
+        0.915864959359169,
+        3.307483196258545
+      ],
+      "triangles": 7996,
+      "sha256": "e004a16e06c846f207c1a8220bee4b430e2227d96abe4ad2c66c41d3739529b5",
+      "reassemblyMaxErrorMeters": 7.450580596923828e-09,
+      "meshInstances": 6
+    },
+    {
+      "module": "cockpit-floor",
+      "file": "modules-v6/cockpit-floor.glb",
+      "origin": [
+        0.0,
+        -1.5774264335632324,
+        -4.25
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.452131986618042,
+        0.06514716148376465,
+        3.3000001907348633
+      ],
+      "triangles": 2496,
+      "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 4
+    },
+    {
+      "module": "cockpit-sidewall",
+      "file": "modules-v6/cockpit-sidewall.glb",
+      "origin": [
+        0.0,
+        -0.2429887056350708,
+        -4.252687692642212
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.5399999618530273,
+        2.6461546421051025,
+        3.305375576019287
+      ],
+      "triangles": 4296,
+      "sha256": "0ebb0cbddc05c06ff7fafee580b862abdce7af2c8a71a2341fd948287c28856e",
+      "reassemblyMaxErrorMeters": 5.960464477539063e-08,
+      "meshInstances": 8
+    },
+    {
+      "module": "dual-suit-locker",
+      "file": "modules-v6/dual-suit-locker.glb",
+      "origin": [
+        1.397000014781952,
+        -0.719999972730875,
+        3.0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.6833657026290894,
+        1.679999940097332,
+        1.0138087272644043
+      ],
+      "triangles": 3756,
+      "sha256": "e6fb6391260ded3513f529a4e0ff2521143227be81f942bd83a1618c3f4223c2",
+      "reassemblyMaxErrorMeters": 2.9802322387695312e-08,
+      "meshInstances": 6
+    },
+    {
+      "module": "folding-berth",
+      "file": "modules-v6/folding-berth.glb",
+      "origin": [
+        -1.402999997138977,
+        -0.9870000183582306,
+        0.8999999761581421
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.6459999084472656,
+        0.4660000205039978,
+        4.229999780654907
+      ],
+      "triangles": 3064,
+      "sha256": "e8bf78a0f686b0b35d4e2c4b46655ba1b70c54c974bb738a1e8027fc3e7f3cac",
+      "reassemblyMaxErrorMeters": 1.1920928955078125e-07,
+      "meshInstances": 14
+    },
+    {
+      "module": "front-window-frame",
+      "file": "modules-v6/front-window-frame.glb",
+      "origin": [
+        0.0,
+        -0.6650000214576721,
+        -5.904250144958496
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.4800000190734863,
+        1.8300000429153442,
+        0.08150005340576172
+      ],
+      "triangles": 1726,
+      "sha256": "c260e284e9a7f134d3e31948b8ccda3cf50703f67c23a70a4084d6446035e31f",
+      "reassemblyMaxErrorMeters": 2.9802322387695312e-08,
+      "meshInstances": 4
+    },
+    {
+      "module": "joystick",
+      "file": "modules-v6/joystick.glb",
+      "origin": [
+        0.32,
+        -0.8609999976158142,
+        -4.140000114440918
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        1.5245272731781006,
+        0.2999999523162842,
+        0.24422168731689453
+      ],
+      "triangles": 28100,
+      "sha256": "e486ab0f4fd01f99b09a9e607974c041daf19ae77eb6010d80cdcabfc36be2f7",
+      "reassemblyMaxErrorMeters": 1.907348634588857e-08,
+      "meshInstances": 16
+    },
+    {
+      "module": "main-console",
+      "file": "modules-v6/main-console.glb",
+      "origin": [
+        0.0,
+        -1.0559811890125275,
+        -5.445654630661011
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        2.640000104904175,
+        1.0470375418663025,
+        0.7382426261901855
+      ],
+      "triangles": 1952,
+      "sha256": "0a71e2e58087bf6dd1064ac7dabe8058276b9475c3f22a3b9fe2f0a96e330336",
+      "reassemblyMaxErrorMeters": 2.9802322387695312e-08,
+      "meshInstances": 6
+    },
+    {
+      "module": "pedals",
+      "file": "modules-v6/pedals.glb",
+      "origin": [
+        0.0,
+        -1.4319999928474427,
+        -4.539999961853027
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        1.7135992050170898,
+        0.2700001001358032,
+        0.3231086730957031
+      ],
+      "triangles": 52616,
+      "sha256": "152cc82429a4fdb1511ed604dfa877815c05fcb6b4a5aa9f2dfca0b66eec8bd6",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 16
+    },
+    {
+      "module": "rear-cabin-ceiling",
+      "file": "modules-v6/rear-cabin-ceiling.glb",
+      "origin": [
+        0.0,
+        1.1003232598304749,
+        1.1672322750091553
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.452131986618042,
+        0.09935343265533447,
+        7.545535564422607
+      ],
+      "triangles": 17552,
+      "sha256": "6afa63f4431558476c23e470ed7ee87f6350b82f66aa42f1172b82be57f636ca",
+      "reassemblyMaxErrorMeters": 1.1920928955078125e-07,
+      "meshInstances": 6
+    },
+    {
+      "module": "rear-cabin-floor",
+      "file": "modules-v6/rear-cabin-floor.glb",
+      "origin": [
+        0.0,
+        -1.5774264335632324,
+        1.1700000762939453
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.452131986618042,
+        0.06514716148376465,
+        7.539999961853027
+      ],
+      "triangles": 5452,
+      "sha256": "ce3ad95db8a432fe2c79c47709bf202591d1900beb2edb75023a18eb5f95a1ce",
+      "reassemblyMaxErrorMeters": 1.1920928955078125e-07,
+      "meshInstances": 4
+    },
+    {
+      "module": "rear-cabin-wall",
+      "file": "modules-v6/rear-cabin-wall.glb",
+      "origin": [
+        0.0,
+        -0.23000001907348633,
+        1.168026089668274
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        3.5399999618530273,
+        2.6721320152282715,
+        7.54394793510437
+      ],
+      "triangles": 9856,
+      "sha256": "c9f6c6dabe7e3e7f86632ed4605a2e638d20d45fb0051d755c2a216ac590b611",
+      "reassemblyMaxErrorMeters": 1.1920928955078125e-07,
+      "meshInstances": 8
+    },
+    {
+      "module": "rear-workbench",
+      "file": "modules-v6/rear-workbench.glb",
+      "origin": [
+        1.39724999666214,
+        -1.054999977350235,
+        -0.44999999552965164
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.654499888420105,
+        0.9899999499320984,
+        1.3200000375509262
+      ],
+      "triangles": 756,
+      "sha256": "70bcf3a6b65da9211038106dea7d66c7be197fc05da17db37b4397d6347a5417",
+      "reassemblyMaxErrorMeters": 1.4901161193847656e-08,
+      "meshInstances": 4
+    },
+    {
+      "module": "seat",
+      "file": "modules-v6/seat.glb",
+      "origin": [
+        0.0,
+        -0.9724079966545105,
+        -4.050000071525574
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        2.031219959259033,
+        1.2551840543746948,
+        0.7745859622955322
+      ],
+      "triangles": 18038,
+      "sha256": "f89602d814eb3a6d3a94607a6432f8155f138a7c2839123d1744d6af9f4b2e61",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 4
+    },
+    {
+      "module": "storage-cabinet",
+      "file": "modules-v6/storage-cabinet.glb",
+      "origin": [
+        1.4300000071525574,
+        -1.3169999718666077,
+        1.2699999809265137
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.6000000238418579,
+        0.5263861417770386,
+        1.0254271030426025
+      ],
+      "triangles": 2830,
+      "sha256": "4360cc02e684f7a6007a093c184d825c25a3a2ce0a989279dc18a7a3b1219733",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 5
+    },
+    {
+      "module": "throttle",
+      "file": "modules-v6/throttle.glb",
+      "origin": [
+        0.0,
+        -0.7529999856948852,
+        -3.9600000381469727
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        0.2779560983181,
+        0.24000000953674316,
+        0.27466773986816406
+      ],
+      "triangles": 5082,
+      "sha256": "0c167a93a466516f27ad05dbab41213629138797cc50a555a4af46e54c4f673e",
+      "reassemblyMaxErrorMeters": 0.0,
+      "meshInstances": 1
+    }
+  ],
+  "jointSpecification": "interfaces.json",
+  "maxReassemblyErrorMeters": 1.1920928955078125e-07,
+  "method": "Rigid translation to the master datum; no per-axis scaling, runtime backing or trim patches."
+}

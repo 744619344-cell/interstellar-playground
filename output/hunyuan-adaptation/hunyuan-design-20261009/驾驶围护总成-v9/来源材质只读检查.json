@@ -1,0 +1,62 @@
+{
+  "version": "v9",
+  "sha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+  "originalMaterial": {
+    "doubleSided": true,
+    "extensions": {
+      "KHR_materials_specular": {
+        "specularColorFactor": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    },
+    "name": "Material.001",
+    "normalTexture": {
+      "index": 0
+    },
+    "pbrMetallicRoughness": {
+      "baseColorTexture": {
+        "index": 1
+      },
+      "metallicRoughnessTexture": {
+        "index": 2
+      }
+    }
+  },
+  "finiteUVSamples": {
+    "allVertices": {
+      "count": 34668,
+      "medianOriginalAlbedoRGB": [
+        0.7686274509803922,
+        0.7215686274509804,
+        0.6509803921568628
+      ],
+      "medianOriginalRoughness": 0.2980392156862745,
+      "medianOriginalMetalness": 0.9921568627450981
+    },
+    "centralWallVertices": {
+      "count": 6118,
+      "medianOriginalAlbedoRGB": [
+        0.7450980392156863,
+        0.6980392156862745,
+        0.6274509803921569
+      ],
+      "medianOriginalRoughness": 0.30196078431372547,
+      "medianOriginalMetalness": 0.996078431372549
+    },
+    "floorVertices": {
+      "count": 9954,
+      "medianOriginalAlbedoRGB": [
+        0.3843137254901961,
+        0.37254901960784315,
+        0.35294117647058826
+      ],
+      "medianOriginalRoughness": 0.5490196078431373,
+      "medianOriginalMetalness": 0.7529411764705882
+    }
+  },
+  "localMaterialOrGeometryModified": false,
+  "limits": "Vertex UV samples only, may contain baked shading; not whole-surface visual or runtime acceptance."
+}

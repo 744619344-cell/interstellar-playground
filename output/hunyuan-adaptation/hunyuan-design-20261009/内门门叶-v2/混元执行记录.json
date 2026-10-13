@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-11",
+  "component": "内门门叶",
+  "model": "V3.0",
+  "faceTarget": "50k",
+  "inputCount": 4,
+  "slots": [
+    "front",
+    "back",
+    "left",
+    "right"
+  ],
+  "baseFrame": "内门隔舱总成-v15",
+  "limits": "静态匹配门叶逐件试装，不代表整舱、机构、气密、用户美术验收。",
+  "version": "v2",
+  "status": "槽内静态接边候选保留，进入前窗总成",
+  "clickAttemptsThisRevision": 1,
+  "acceptedFreeJobsThisRevision": 1,
+  "cumulativeClickAttempts": 20,
+  "cumulativeAcceptedFreeJobs": 17,
+  "observedQuotaBefore": 13,
+  "observedQuotaAfter": 12,
+  "localGeometryMade": false,
+  "productReplaced": false,
+  "payment": false,
+  "rawDownloaded": true,
+  "sourceInspectionAccepted": true,
+  "fitAccepted": true,
+  "userArtAccepted": false,
+  "evidence": [
+    "门叶v2-四图上传-20261011.png",
+    "门叶v2-提交前50k-20261011.png",
+    "门叶v2-生成接收12.png"
+  ],
+  "bytes": 28023856,
+  "sha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9",
+  "faces": 49974,
+  "rawModel": "内门门叶-v2/混元原始模型.glb",
+  "formatReport": "内门门叶-v2/原始格式检查.json",
+  "interfaceReport": "内门门叶-v2/原始门叶检查.json",
+  "officialOriginalFilename": "84b450cf079f9ab9cdf39165c953161b.glb",
+  "trialVerdict": "内门门叶-v2/实装观察结论.json"
+}

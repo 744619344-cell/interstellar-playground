@@ -1,0 +1,49 @@
+{
+  "sourceFile": "../驾驶围护总成-v9/混元原始模型.glb",
+  "sourceSha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+  "revisedFile": "围护v9-局部修订-r9.glb",
+  "revisedSha256": "da9a6c56a79979ba11588fa06c01057bfbbce2be34a88f929c28eda46af4903e",
+  "explicitAuthorization": "Only the v9 front-window/roof interface, local handles and missing ceiling strips; no whole-cabin rebuild.",
+  "sourceVertices": 34668,
+  "sourceTriangles": 50000,
+  "revisedBodyVertices": 34668,
+  "bodyTrianglesUnchanged": true,
+  "addedLampTriangles": 1520,
+  "roof": {
+    "roofChangedVertices": 5088,
+    "maximumRoofLiftMeters": 0.2197049994609434,
+    "longitudinalChangedRange": [
+      -5.9,
+      -4.6608027797166125
+    ],
+    "floorVerticesUnchanged": true
+  },
+  "handles": {
+    "handleChangedVertices": 748,
+    "maximumHandleMovementMeters": 0.009189090713643155,
+    "localCoatingFaces": 1156,
+    "strategy": "Flatten only the two deformed handle footprints, retain wall triangles, replace their distorted atlas with matching plain coating and two compact grab fixtures."
+  },
+  "sourceRawUnchanged": true,
+  "productReplaced": false,
+  "pose": {
+    "uniformScale": 4.565136904791819,
+    "rotationYDegrees": 180,
+    "placementCenter": [
+      0,
+      -0.27273100056271904,
+      -4.163558916318072
+    ],
+    "floorDatumY": -1.54485285282135,
+    "sourceFrontSign": 1,
+    "sampledSourceFloor": 0.01611233,
+    "displayBounds": [
+      3.4744983252917274,
+      2.6913536891276313,
+      3.472882167363856
+    ]
+  },
+  "limits": "Local revision only; full collision, seal, mechanisms and user art not accepted.",
+  "addedHandleTriangles": 320,
+  "originalGeometryOutsideRoofAndHandleFootprintsUnchanged": true
+}

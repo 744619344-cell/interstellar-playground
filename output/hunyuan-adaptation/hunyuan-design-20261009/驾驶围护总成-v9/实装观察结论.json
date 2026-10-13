@@ -1,0 +1,42 @@
+{
+  "version": "v9",
+  "rawDownloaded": true,
+  "sha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+  "bytes": 34017924,
+  "sourceViewsObserved": 8,
+  "trialViewsObserved": 8,
+  "sourceInspectionAccepted": false,
+  "fitAccepted": false,
+  "userArtAccepted": false,
+  "runtimeAccepted": false,
+  "trialPose": {
+    "uniformScale": 4.565136904791819,
+    "rotationYDegrees": 180,
+    "placementCenter": [
+      0,
+      -0.27273100056271904,
+      -4.163558916318072
+    ],
+    "floorDatumY": -1.54485285282135,
+    "sourceFrontSign": 1,
+    "sampledSourceFloor": 0.01611233,
+    "displayBounds": [
+      3.4744983252917274,
+      2.6913536891276313,
+      3.472882167363856
+    ]
+  },
+  "scaledOuterBounds": [
+    3.4744983252917274,
+    2.6913536891276313,
+    3.472882167363856
+  ],
+  "observations": [
+    "六图后整体高度接近旧舱、顶棚完整，前端低顶仍压到前窗上框；来源内壁和顶棚黑亮金属，顶灯完全丢失，把手大小形状和左右数量不一致，皱折边缘明显，来源与同舱整件视觉拒绝。"
+  ],
+  "originalModified": false,
+  "localGeometryMade": false,
+  "productReplaced": false,
+  "next": "v10用原生二维编辑统一六视图：外形/机位一致，适度提高低前口输入而保留高后端，内外改为无反光的中性哑光涂层，灯带以清晰漫射白色表现；这是输入补偿和视觉设计，不代表精密几何。六图核对后V3.1/50k一次免费生成，立即来源和实装检查。",
+  "limits": "有限射线与包络不是完整碰撞、气密或用户美术验收。"
+}

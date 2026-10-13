@@ -1,0 +1,75 @@
+{
+  "file": "围护v9-局部修订-r9.glb",
+  "sha256": "da9a6c56a79979ba11588fa06c01057bfbbce2be34a88f929c28eda46af4903e",
+  "bytes": 36194972,
+  "sceneTrianglesIncludingInstances": 51840,
+  "meshes": [
+    {
+      "triangles": 50000,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 46,
+      "maxNormalLengthError": 1.1920928955078125e-07
+    },
+    {
+      "triangles": 380,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 1,
+      "maxNormalLengthError": 5.960464477539063e-08
+    },
+    {
+      "triangles": 380,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 1,
+      "maxNormalLengthError": 5.960464477539063e-08
+    },
+    {
+      "triangles": 380,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 1,
+      "maxNormalLengthError": 5.960464477539063e-08
+    },
+    {
+      "triangles": 380,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 1,
+      "maxNormalLengthError": 5.960464477539063e-08
+    },
+    {
+      "triangles": 160,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 0,
+      "maxNormalLengthError": 5.960464477539063e-08
+    },
+    {
+      "triangles": 160,
+      "degenerateFaces": 0,
+      "opposedFaceNormals": 0,
+      "maxNormalLengthError": 5.960464477539063e-08
+    }
+  ],
+  "images": [
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "status": "container/accessor/index/material/scene/image checks passed",
+  "limits": "Not Khronos Validator; no self-intersection, collision, visual or runtime acceptance."
+}

@@ -1,0 +1,18 @@
+{
+  "sourceSha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+  "revisedSha256": "da9a6c56a79979ba11588fa06c01057bfbbce2be34a88f929c28eda46af4903e",
+  "sourceVertices": 34668,
+  "changedOriginalPositionVertices": 5836,
+  "bodyTrianglesUnchanged": true,
+  "floorVerticesByteExact": true,
+  "rearBodyVerticesByteExact": "Outside the two explicitly authorized handle footprints",
+  "finiteRoofWindowSamples": 6768,
+  "aboveRoofSamples": 0,
+  "maximumSampledPenetrationMeters": 0,
+  "minimumSampledClearanceMeters": 0.014416548182603572,
+  "meshCount": 7,
+  "sourceUnchanged": true,
+  "productReplaced": false,
+  "limits": "Finite source window vertex roof samples; not exhaustive triangle collision, seals or art acceptance.",
+  "outsideAuthorizedRegionsByteExact": true
+}

@@ -1,0 +1,272 @@
+{
+  "sourceFile": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/混元原始模型.glb",
+  "sha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+  "localGeometryMade": false,
+  "sourceUnitsAreMeters": false,
+  "worldBounds": {
+    "min": [
+      -0.47000300884246826,
+      -0.0,
+      -0.042118001729249954
+    ],
+    "max": [
+      0.47306498885154724,
+      0.7454530000686646,
+      0.04134000092744827
+    ],
+    "size": [
+      0.9430680274963379,
+      0.7454530000686646,
+      0.08345800638198853
+    ]
+  },
+  "outerWidthHeightRatio": 1.2650939226150513,
+  "designRatio": 1.4,
+  "openingCenterlineBounds": [
+    -0.21192411393362814,
+    0.21471556051196783,
+    -0.0,
+    0.662224573406545
+  ],
+  "openingCenterlineSize": [
+    0.426639674445596,
+    0.662224573406545
+  ],
+  "openingBoundarySearchComplete": true,
+  "openingSampleBasis": "opening centerline dimensions",
+  "openingReachesOuterBottomAtCenterline": true,
+  "openingSamples": [
+    {
+      "xy": [
+        -0.1264609123291393,
+        0.1740591280123688
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        -0.1264609123291393,
+        0.3727265000343323
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        -0.1264609123291393,
+        0.5713938720562958
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.0015309900045394897,
+        0.1740591280123688
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.0015309900045394897,
+        0.3727265000343323
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.0015309900045394897,
+        0.5713938720562958
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.1295228923382183,
+        0.1740591280123688
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.1295228923382183,
+        0.3727265000343323
+      ],
+      "intersections": 0
+    },
+    {
+      "xy": [
+        0.1295228923382183,
+        0.5713938720562958
+      ],
+      "intersections": 0
+    }
+  ],
+  "openAtAllNineSamples": true,
+  "openingWidthSamples": [
+    {
+      "heightFraction": 0.01,
+      "y": 0.00662224573406545,
+      "xBounds": [
+        -0.21182435473104302,
+        0.21471048801014145
+      ],
+      "width": 0.4265348427411845
+    },
+    {
+      "heightFraction": 0.1,
+      "y": 0.0662224573406545,
+      "xBounds": [
+        -0.21185309890805906,
+        0.2146817438331254
+      ],
+      "width": 0.4265348427411845
+    },
+    {
+      "heightFraction": 0.3,
+      "y": 0.19866737202196347,
+      "xBounds": [
+        -0.21189367892266997,
+        0.21468850716889387
+      ],
+      "width": 0.42658218609156384
+    },
+    {
+      "heightFraction": 0.5,
+      "y": 0.3311122867032725,
+      "xBounds": [
+        -0.21190720559420692,
+        0.21471217884408358
+      ],
+      "width": 0.4266193844382905
+    },
+    {
+      "heightFraction": 0.7,
+      "y": 0.46355720138458145,
+      "xBounds": [
+        -0.21190382392632268,
+        0.21468681633495176
+      ],
+      "width": 0.42659064026127447
+    },
+    {
+      "heightFraction": 0.8,
+      "y": 0.529779658725236,
+      "xBounds": [
+        -0.21190382392632268,
+        0.21468850716889387
+      ],
+      "width": 0.42659233109521655
+    },
+    {
+      "heightFraction": 0.9,
+      "y": 0.5960021160658905,
+      "xBounds": [
+        -0.21194778560881783,
+        0.21471894217985207
+      ],
+      "width": 0.4266667277886699
+    },
+    {
+      "heightFraction": 0.95,
+      "y": 0.6291133447362177,
+      "xBounds": [
+        -0.18952901837024,
+        0.1924050066456857
+      ],
+      "width": 0.38193402501592566
+    },
+    {
+      "heightFraction": 0.98,
+      "y": 0.648980081938414,
+      "xBounds": [
+        -0.16768175300409893,
+        0.17023648283054169
+      ],
+      "width": 0.33791823583464065
+    }
+  ],
+  "wallPatchDepthQuantile01To99": 0.08151993878185748,
+  "frontWallPlaneSampleZ": 0.027073489303062415,
+  "frontWallPlaneSamples": [
+    {
+      "xy": [
+        -0.32854281961917875,
+        0.26090855002403257
+      ],
+      "frontZ": 0.027043406469044413
+    },
+    {
+      "xy": [
+        -0.32854281961917875,
+        0.3727265000343323
+      ],
+      "frontZ": 0.02707568791032957
+    },
+    {
+      "xy": [
+        -0.32854281961917875,
+        0.484544450044632
+      ],
+      "frontZ": 0.03824478109632697
+    },
+    {
+      "xy": [
+        0.33160479962825773,
+        0.26090855002403257
+      ],
+      "frontZ": 0.027037795376629592
+    },
+    {
+      "xy": [
+        0.33160479962825773,
+        0.3727265000343323
+      ],
+      "frontZ": 0.027071290695795263
+    },
+    {
+      "xy": [
+        0.33160479962825773,
+        0.484544450044632
+      ],
+      "frontZ": 0.038254706740026484
+    }
+  ],
+  "hypotheticalUniformFitByHeight": {
+    "scale": 3.353665488997592,
+    "sizeMeters": [
+      3.1627347469329834,
+      2.5,
+      0.279890239238739
+    ],
+    "openingMeters": [
+      1.4308067524253631,
+      2.2208796977996825
+    ],
+    "wallPatchDepthMeters": 0.2733906053579118
+  },
+  "hypotheticalUniformFitByWidth": {
+    "scale": 3.7112911242382154,
+    "sizeMeters": [
+      3.5,
+      2.7665929794311523,
+      0.309736967086792
+    ],
+    "openingMeters": [
+      1.583384037017822,
+      2.457708181536149
+    ]
+  },
+  "designTargets": {
+    "outer": [
+      3.5,
+      2.5,
+      0.16
+    ],
+    "opening": [
+      1.2,
+      1.9
+    ]
+  },
+  "fittedAssetWritten": false,
+  "assemblyAccepted": false,
+  "limits": "Finite projected triangle rays and centerline opening bounds; no full contour, self-intersection, neighbor fit, continuous clearance, watertightness or runtime acceptance."
+}

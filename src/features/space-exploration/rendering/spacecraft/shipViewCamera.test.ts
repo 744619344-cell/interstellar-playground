@@ -29,8 +29,11 @@ test('cockpit accepts mouse look, keeps seat position and cycles all modes', () 
   assert.deepEqual(after.position, before.position)
   assert.notDeepEqual(after.target, before.target)
   assert.equal(after.requestedDistance, before.requestedDistance)
+  assert.equal(after.interiorFov, 85)
+  camera.zoom(-1000); assert.equal(camera.snapshot().interiorFov, 35)
+  camera.zoom(NaN); assert.equal(camera.snapshot().interiorFov, 35)
   camera.setMode('free'); assert.equal(settle(camera).mode, 'free')
-  assert.deepEqual(['follow', 'cockpit', 'free'].map((v) => nextShipView(v as 'follow' | 'cockpit' | 'free')), ['cockpit', 'free', 'follow'])
+  assert.deepEqual(['follow', 'cockpit', 'cabin', 'free'].map((v) => nextShipView(v as 'follow' | 'cockpit' | 'cabin' | 'free')), ['cockpit', 'cabin', 'free', 'follow'])
 })
 
 test('movement basis follows the current mouse view direction', () => {

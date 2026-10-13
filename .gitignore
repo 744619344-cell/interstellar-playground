@@ -6,3 +6,10 @@ dist/
 .vite/
 *.log
 .DS_Store
+__pycache__/
+*.py[cod]
+output/cloud-handoff-validation*/
+output/cloud-handoff-validation*.zip
+output/cloud-handoff-paths.json
+output/cloud-handoff-pathspec.txt
+output/cloud-handoff-commit-message.txt

@@ -15,6 +15,14 @@ export default function SystemMapShell() {
   const [helpOpen, setHelpOpen] = useState(false)
   const [musicOpen, setMusicOpen] = useState(false)
   const selected = runtime.snapshot.selectedId
+  const enterCockpit = () => {
+    runtime.previewAction('enter')
+    runtime.previewAction('cockpit')
+  }
+  const startMoonRoute = () => {
+    enterCockpit()
+    runtime.previewAction('route:moon')
+  }
 
   useEffect(() => {
     runtime.setOverlayPaused(helpOpen || musicOpen)
@@ -58,13 +66,15 @@ export default function SystemMapShell() {
           >{getSystemBody(label.id as SystemBodyId).displayName}</span>
         ))}
       </div>
-      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.cameraPreview && <SystemMapExplorePanel />}
+      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.cameraPreview && <SystemMapExplorePanel onEnterCockpit={enterCockpit} />}
       <ShipCameraPreviewPanel state={runtime.snapshot.cameraPreview} onAction={runtime.previewAction} />
       <SystemMapHud
         snapshot={runtime.snapshot}
         paused={runtime.paused}
         onPause={runtime.togglePaused}
         onOverview={runtime.overview}
+        onShip={enterCockpit}
+        onMoonRoute={startMoonRoute}
         onZoom={runtime.zoomBy}
         helpOpen={helpOpen}
         onHelp={() => setHelpOpen((open) => !open)}

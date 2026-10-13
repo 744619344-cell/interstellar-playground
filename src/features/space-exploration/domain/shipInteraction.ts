@@ -62,10 +62,10 @@ function commandDoor(state: ShipInteractionState, name: ShipDoorName): ShipInter
 
 export function activateShipInteraction(state: ShipInteractionState): {
   state: ShipInteractionState
-  view?: 'cockpit' | 'follow'
+  view?: 'cockpit' | 'cabin'
 } {
   if (state.activeAnchor === 'cockpit') return { state: setShipSeated(state, true), view: 'cockpit' }
-  if (state.activeAnchor === 'stand-up') return { state: setShipSeated(state, false), view: 'follow' }
+  if (state.activeAnchor === 'stand-up') return { state: setShipSeated(state, false), view: 'cabin' }
   if (state.activeAnchor === 'console') {
     const consoleActive = !state.consoleActive
     return { state: { ...state, consoleActive, notice: `控制台已${consoleActive ? '启动' : '关闭'}` } }

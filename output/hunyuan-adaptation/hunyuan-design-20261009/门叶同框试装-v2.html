@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>混元门叶与隔舱静态试装</title>
+<style>body{margin:0;overflow:hidden;background:#17354c;color:#e6edf2;font:14px/1.5 system-ui}canvas{display:block}header{position:absolute;inset:12px auto auto 12px;background:#132331ed;border-radius:8px;padding:12px;max-width:calc(100% - 48px)}button,select{margin:3px;padding:7px;background:#273f50;color:white;border:1px solid #5a7484;border-radius:4px}#status{white-space:pre-line}small{display:block}body.compact .info{display:none}</style>
+<header><b>混元门叶 v2 · 匹配隔舱 v15</b><button id="fold">收起信息</button><div class="info">
+<label>门叶等比尺度 <select id="fit" aria-label="门叶等比尺度"><option value="heightTarget">按目标高度2.390m</option><option value="widthTarget" selected>按目标宽度1.538m</option></select></label>
+<label>刚性定位 <select id="placement" aria-label="门叶刚性定位"><option value="recess">按原件槽深中部</option><option value="rearOutside">背缘外对照</option></select></label>
+<button data-view="后舱近景">后舱近景</button><button data-view="气闸反向">气闸反向</button><button data-view="左接边">左接边</button><button data-view="右接边">右接边</button><button data-view="门槛">门槛</button><button data-view="顶部">顶部</button>
+<label><input id="leaf" type="checkbox" checked>显示新门叶</label><label><input id="context" type="checkbox" checked>显示旧舱参照</label>
+<div id="status">加载原始文件…</div><small>拖动观察 · 滚轮缩放 · 右键平移。原件只作刚性定位和等比显示，无补几何或改网格。静态试装尚未代表机构、气密或用户美术验收。</small></div></header>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="./门叶同框试装-v2.mjs"></script></html>

@@ -1,0 +1,167 @@
+{
+  "component": "内门门叶",
+  "version": "v2",
+  "sha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9",
+  "worldBounds": {
+    "min": [
+      -0.3315419852733612,
+      -0.0,
+      -0.03369300067424774
+    ],
+    "max": [
+      0.3234330117702484,
+      1.0155489444732666,
+      0.032363999634981155
+    ],
+    "size": [
+      0.6549749970436096,
+      1.0155489444732666,
+      0.0660569965839386
+    ]
+  },
+  "outerWidthHeightRatio": 0.6449467539787292,
+  "centerSolidSamples": [
+    {
+      "xy": [
+        -0.2005469858646393,
+        0.2031097888946533
+      ],
+      "intersections": 2,
+      "frontZ": 0.023697702162618663
+    },
+    {
+      "xy": [
+        -0.2005469858646393,
+        0.5077744722366333
+      ],
+      "intersections": 2,
+      "frontZ": 0.023701283562077707
+    },
+    {
+      "xy": [
+        -0.2005469858646393,
+        0.8124391555786132
+      ],
+      "intersections": 2,
+      "frontZ": 0.02374635041037044
+    },
+    {
+      "xy": [
+        -0.0040544867515563965,
+        0.2031097888946533
+      ],
+      "intersections": 2,
+      "frontZ": 0.023727005138691158
+    },
+    {
+      "xy": [
+        -0.0040544867515563965,
+        0.5077744722366333
+      ],
+      "intersections": 2,
+      "frontZ": 0.03224228736563801
+    },
+    {
+      "xy": [
+        -0.0040544867515563965,
+        0.8124391555786132
+      ],
+      "intersections": 2,
+      "frontZ": 0.023768921984476984
+    },
+    {
+      "xy": [
+        0.1924380123615265,
+        0.2031097888946533
+      ],
+      "intersections": 2,
+      "frontZ": 0.02370995687262014
+    },
+    {
+      "xy": [
+        0.1924380123615265,
+        0.5077744722366333
+      ],
+      "intersections": 2,
+      "frontZ": 0.02371685647791854
+    },
+    {
+      "xy": [
+        0.1924380123615265,
+        0.8124391555786132
+      ],
+      "intersections": 2,
+      "frontZ": 0.023753270860559526
+    }
+  ],
+  "allNineCenterSamplesSolid": true,
+  "frontPlaneSampleZ": 0.023727005138691158,
+  "trialVariants": [
+    {
+      "mode": "heightTarget",
+      "uniformScale": 2.353407005153866,
+      "displayBounds": [
+        1.541422724723816,
+        2.3899998664855957,
+        0.1554589867591858
+      ],
+      "placementCenter": [
+        0,
+        -0.3850000667572022,
+        5.250568151282551
+      ],
+      "rotationYDegrees": 180
+    },
+    {
+      "mode": "widthTarget",
+      "uniformScale": 2.3481812388902483,
+      "displayBounds": [
+        1.5379999876022339,
+        2.384692907333374,
+        0.1551138013601303
+      ],
+      "placementCenter": [
+        0,
+        -0.38765354633331306,
+        5.250440686975163
+      ],
+      "rotationYDegrees": 180
+    }
+  ],
+  "heightTargetProjectedContour": [
+    {
+      "heightAboveFloor": 0.1,
+      "width": 1.5413929784335665
+    },
+    {
+      "heightAboveFloor": 0.5,
+      "width": 1.5412183406178492
+    },
+    {
+      "heightAboveFloor": 1.2,
+      "width": 1.5412288512271286
+    },
+    {
+      "heightAboveFloor": 2.0,
+      "width": 1.541249063937281
+    },
+    {
+      "heightAboveFloor": 2.15,
+      "width": 1.5412353192943775
+    },
+    {
+      "heightAboveFloor": 2.25,
+      "width": 1.4358656527611164
+    },
+    {
+      "heightAboveFloor": 2.35,
+      "width": 1.2173508943531404
+    },
+    {
+      "heightAboveFloor": 2.39,
+      "width": 8.085084060998355e-07
+    }
+  ],
+  "localGeometryMade": false,
+  "limits": "Finite center rays and bounds do not prove closed manifold, all aperture coverage, collision, mechanism or art acceptance."
+}

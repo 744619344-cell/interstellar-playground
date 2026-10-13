@@ -1,0 +1,280 @@
+{
+  "sourceSha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+  "localGeometryMade": false,
+  "sections": [
+    {
+      "worldZ": 4.94,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.6715870451220125
+        },
+        {
+          "height": 1.2,
+          "width": 1.6716993840316783
+        },
+        {
+          "height": 2.0,
+          "width": 1.6717923544576896
+        },
+        {
+          "height": 2.25,
+          "width": 1.6138300388878295
+        }
+      ]
+    },
+    {
+      "worldZ": 4.96,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.6231352040435472
+        },
+        {
+          "height": 1.2,
+          "width": 1.622800402020263
+        },
+        {
+          "height": 2.0,
+          "width": 1.6231381907261413
+        },
+        {
+          "height": 2.25,
+          "width": 1.5418311390144965
+        }
+      ]
+    },
+    {
+      "worldZ": 4.98,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5739640494455711
+        },
+        {
+          "height": 1.2,
+          "width": 1.573908928452399
+        },
+        {
+          "height": 2.0,
+          "width": 1.5738184393053176
+        },
+        {
+          "height": 2.25,
+          "width": 1.474929173066557
+        }
+      ]
+    },
+    {
+      "worldZ": 5.0,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5437715877844962
+        },
+        {
+          "height": 1.2,
+          "width": 1.5437667380392197
+        },
+        {
+          "height": 2.0,
+          "width": 1.5437666591381711
+        },
+        {
+          "height": 2.25,
+          "width": 1.4362653414874154
+        }
+      ]
+    },
+    {
+      "worldZ": 5.02,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5431379993126535
+        },
+        {
+          "height": 1.2,
+          "width": 1.5431931773885197
+        },
+        {
+          "height": 2.0,
+          "width": 1.5434889689152553
+        },
+        {
+          "height": 2.25,
+          "width": 1.4370959571514421
+        }
+      ]
+    },
+    {
+      "worldZ": 5.04,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5431538235753515
+        },
+        {
+          "height": 1.2,
+          "width": 1.543216792671902
+        },
+        {
+          "height": 2.0,
+          "width": 1.5434964244593776
+        },
+        {
+          "height": 2.25,
+          "width": 1.4371938593870708
+        }
+      ]
+    },
+    {
+      "worldZ": 5.06,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5431550085190233
+        },
+        {
+          "height": 1.2,
+          "width": 1.5432807930897294
+        },
+        {
+          "height": 2.0,
+          "width": 1.5435146939964328
+        },
+        {
+          "height": 2.25,
+          "width": 1.4371655943946047
+        }
+      ]
+    },
+    {
+      "worldZ": 5.08,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5431251505600672
+        },
+        {
+          "height": 1.2,
+          "width": 1.5432335142458589
+        },
+        {
+          "height": 2.0,
+          "width": 1.5434782310701682
+        },
+        {
+          "height": 2.25,
+          "width": 1.437019133231528
+        }
+      ]
+    },
+    {
+      "worldZ": 5.1,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5430226825880726
+        },
+        {
+          "height": 1.2,
+          "width": 1.5431791771326666
+        },
+        {
+          "height": 2.0,
+          "width": 1.5433739578090497
+        },
+        {
+          "height": 2.25,
+          "width": 1.4369042633108784
+        }
+      ]
+    },
+    {
+      "worldZ": 5.12,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5428030530763641
+        },
+        {
+          "height": 1.2,
+          "width": 1.5430351687282855
+        },
+        {
+          "height": 2.0,
+          "width": 1.543066742234545
+        },
+        {
+          "height": 2.25,
+          "width": 1.4356666180217355
+        }
+      ]
+    },
+    {
+      "worldZ": 5.14,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.5730347134076312
+        },
+        {
+          "height": 1.2,
+          "width": 1.5732115271952312
+        },
+        {
+          "height": 2.0,
+          "width": 1.573164818487317
+        },
+        {
+          "height": 2.25,
+          "width": 1.4752893080634137
+        }
+      ]
+    },
+    {
+      "worldZ": 5.16,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.6230377569471683
+        },
+        {
+          "height": 1.2,
+          "width": 1.623420523955883
+        },
+        {
+          "height": 2.0,
+          "width": 1.624235446690929
+        },
+        {
+          "height": 2.25,
+          "width": 1.5420336301669164
+        }
+      ]
+    },
+    {
+      "worldZ": 5.18,
+      "apertureSections": [
+        {
+          "height": 0.3,
+          "width": 1.6727437932688092
+        },
+        {
+          "height": 1.2,
+          "width": 1.672828558137494
+        },
+        {
+          "height": 2.0,
+          "width": 1.6728305210153487
+        },
+        {
+          "height": 2.25,
+          "width": 1.6142253610281019
+        }
+      ]
+    }
+  ],
+  "limits": "Finite rays at fixed Y,Z; no exhaustive collision, topology or gas seal acceptance."
+}

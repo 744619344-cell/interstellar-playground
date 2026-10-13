@@ -99,7 +99,10 @@ export class SystemMapEngine {
   start() { if (!this.destroyed) this.loop.start(this.tick) }
   stop() { this.loop.stop(); this.lastTime = 0 }
   setSimulationPaused(paused: boolean) { this.simulationPaused = paused; this.preview?.pause(paused) }
-  setInputEnabled(enabled: boolean) { this.inputEnabled = enabled; this.input.setEnabled(enabled); this.preview?.suspend(!enabled) }
+  setInputEnabled(enabled: boolean) {
+    this.inputEnabled = enabled; this.input.setEnabled(enabled); this.preview?.suspend(!enabled)
+    this.publish()
+  }
   clearInput() { this.input.clear(); this.preview?.clear() }
   previewAction(action: ShipPreviewAction) {
     if (!this.options.cameraPreview || this.destroyed || !this.world || !this.inputEnabled) return
@@ -111,7 +114,7 @@ export class SystemMapEngine {
       this.preview.pause(this.simulationPaused)
     } else if (action === 'reset') this.preview?.reset()
     else if (action === 'obstacle') this.preview?.toggleObstacle()
-    else if (action === 'follow' || action === 'cockpit' || action === 'free') this.preview?.mode(action)
+    else if (action === 'follow' || action === 'cockpit' || action === 'cabin' || action === 'free') this.preview?.mode(action)
     else this.preview?.navigate(action)
     this.clearInput(); this.publish()
   }
@@ -252,7 +255,8 @@ export class SystemMapEngine {
   private applyGestures(gestures: SystemMapGesture[]) {
     for (const gesture of gestures) {
       if (this.preview) {
-        if (gesture.type === 'orbit' || gesture.type === 'pan') this.preview.orbit(gesture.dx, gesture.dy)
+        if (gesture.type === 'orbit') this.preview.orbit(gesture.dx, gesture.dy)
+        if (gesture.type === 'pan') this.preview.pan(gesture.dx, gesture.dy)
         if (gesture.type === 'zoom') this.preview.zoom(gesture.deltaY)
         continue
       }
@@ -307,6 +311,7 @@ export class SystemMapEngine {
     if (this.destroyed || !this.world) return
     const dt = this.lastTime ? Math.min(0.05, (time - this.lastTime) / 1000) : 0
     this.lastTime = time
+    this.preview?.measureFrame(time)
     if (!this.simulationPaused) this.simulationTime += dt
     this.updateBodyMotion()
     this.updateTrackedTarget()

@@ -56,3 +56,17 @@ test('review lighting restores caller materials and never disposes shared textur
   lighting.dispose(); lighting.dispose(); assert.equal(mesh.material, material)
   assert.equal(disposed, false); mesh.geometry.dispose(); material.dispose(); texture.dispose()
 })
+
+test('shared fixture material cannot overwrite the window reveal coating and all variants restore on exit', () => {
+  const model=new Group(), adapted=new Group();adapted.name='Ship_Adapted';model.add(adapted)
+  const material=new MeshStandardMaterial({color:0xbebbae,metalness:.7,roughness:.4})
+  const reveal=new Mesh(geometry(),material),fixture=new Mesh(geometry(),material)
+  reveal.userData.module='window-liner';fixture.userData.module='mounting-fixture';adapted.add(reveal,fixture)
+  const lighting=new ShipReviewLighting([model]);lighting.apply('cockpit')
+  assert.notEqual(reveal.material,fixture.material)
+  assert.equal(reveal.material.color.r,.68);assert.equal(fixture.material.color.r,material.color.r)
+  assert.equal(reveal.material.metalness,.08);assert.equal(fixture.material.metalness,.45)
+  lighting.apply('exterior');assert(reveal.material.color.equals(material.color));assert.equal(reveal.material.metalness,.7)
+  lighting.dispose();assert.equal(reveal.material,material);assert.equal(fixture.material,material)
+  reveal.geometry.dispose();fixture.geometry.dispose();material.dispose()
+})

@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>驾驶围护 · 保留混元原件的局部调整</title>
+<style>body{margin:0;overflow:hidden;background:#17354c;color:#e6edf2;font:14px/1.5 system-ui}canvas{display:block}header{position:absolute;z-index:2;inset:12px auto auto 12px;background:#132331ed;border-radius:8px;padding:12px;max-width:calc(100% - 48px)}button{margin:3px;padding:7px;background:#273f50;color:white;border:1px solid #5a7484;border-radius:4px}button[aria-pressed=true]{background:#476d83;border-color:#a2d6ed}#status{white-space:pre-line}small{display:block}body.compact .info{display:none}</style>
+<header><b>驾驶围护 · 第九版局部修订</b><button id="fold">收起信息</button>
+<div><button id="original" aria-pressed="false">混元原件</button><button id="adjusted" aria-pressed="true">局部修订</button></div>
+<div class="info"><p>只修前段顶棚接口、两处变形把手与缺失顶灯；保留整舱结构和安装位置。</p>
+<div><button data-view="驾驶席">驾驶席</button><button data-view="背面">背面</button><button data-view="左接边">左接边</button><button data-view="右接边">右接边</button><button data-view="地面过渡">地面过渡</button><button data-view="顶棚过渡">顶棚过渡</button><button data-view="后舱接边">后舱接边</button><button data-view="侧面总览">侧面总览</button></div>
+<div><button data-move="前移">前移</button><button data-move="后移">后移</button><button data-move="左移">左移</button><button data-move="右移">右移</button><button data-move="拉近">拉近</button><button data-move="拉远">拉远</button></div>
+<label><input id="candidate" type="checkbox" checked>显示混元围护</label><label><input id="context" type="checkbox" checked>显示舱内参照</label>
+<div id="status">加载原始文件…</div><small>拖动旋转 · 滚轮缩放 · 右键平移；按钮为观察移动，无碰撞限制。本页为局部修订对照，整舱与用户美术尚未验收。</small></div></header>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="./驾驶围护局部调整.mjs"></script></html>

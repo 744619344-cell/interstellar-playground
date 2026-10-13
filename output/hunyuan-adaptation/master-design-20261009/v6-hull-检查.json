@@ -1,0 +1,10 @@
+{
+  "file": "整舱统一母版-v6.glb",
+  "sha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "hull": {
+    "contacts": 0,
+    "rows": [],
+    "hullTriangles": 89997
+  },
+  "limits": "Finite geometry and rigid-pose samples, not pressure tightness, continuous CCD or suited-avatar clearance."
+}

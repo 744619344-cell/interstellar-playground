@@ -1,0 +1,908 @@
+{
+  "frameSha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+  "leafSha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9",
+  "localGeometryMade": false,
+  "variants": [
+    {
+      "mode": "heightTarget",
+      "uniformScale": 2.353407005153866,
+      "placementCenter": [
+        0,
+        -0.3850000667572022,
+        5.06
+      ],
+      "checkedRows": 55,
+      "minimumSampledSideClearance": -0.0020213473807549898,
+      "negativeClearanceSamples": 14,
+      "samples": [
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.020217177071866654,
+            0.020955789890602983
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0003545352496612253,
+            0.0011763929389834171
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0007073252295007881,
+            0.0015003946290911285
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.00024624518946414486,
+            0.0012153641695451523
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.014288149806325423,
+            0.01514748067480931
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.020658810155073648,
+            0.021670708814155892
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0006292428201829514,
+            0.001575487577508028
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0008547271559049552,
+            0.001822469040124508
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0006112920783233333,
+            0.0016003092421817966
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.014023630082910188,
+            0.014661332390002335
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02109302711652772,
+            0.021789441357688788
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0006172167700974063,
+            0.001622925886991644
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0009423537051818087,
+            0.0018938805920132307
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0006176693388707521,
+            0.001584245064613632
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.014557975247522226,
+            0.015005393103265985
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 4.99,
+          "sideClearanceMeters": [
+            0.7219820062380702,
+            0.7214605521390485
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02105588295894434,
+            0.021579452489531192
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.000686234703416666,
+            0.0015693285897830922
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0010442934552415961,
+            0.0017928687746331384
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0007885775427025621,
+            0.0015608860605642594
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.014622368976406008,
+            0.014898794353856992
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.13,
+          "sideClearanceMeters": [
+            0.7211575817412803,
+            0.7208236792500234
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02120965677286535,
+            0.021792837516248942
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0007435677727350987,
+            0.0017927736769989266
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0010675627689636924,
+            0.00199989091320274
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0007929654654712515,
+            0.0017174078397437231
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.01465466680012395,
+            0.015199657280327572
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02107279299298981,
+            0.021887256351732276
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.000607994443658666,
+            0.0017257311635591188
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0009367049892455848,
+            0.002048358109093318
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.000647032903440703,
+            0.0017418341465013087
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.014560649964232564,
+            0.01520442662468291
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.027669245915376228,
+            0.031101772316498355
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0002956557515102487,
+            0.0024094776877769952
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0004982383313528738,
+            0.002751163922219302
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            -3.4823800078465084e-05,
+            0.002138585163694695
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.017990192690243156,
+            0.021196614030726257
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.027067168247771667,
+            0.028279907479247024
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            -1.4469320646082195e-06,
+            0.0009797662653675543
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.00025369427998800376,
+            0.0010390847751476917
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            -0.00029564912945179156,
+            0.0006101603379391474
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.018051122789695895,
+            0.020010566094040616
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.0265055472588136,
+            0.028459899123713273
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            -0.0015991666465591248,
+            0.00036991493918636653
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            -0.001195766017645039,
+            0.0007316144050255602
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            -0.001702274785301161,
+            0.00020467160250980942
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.017610961487230514,
+            0.019166117290612683
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.026467666687690516,
+            0.028520486035999326
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            -0.001993759415092611,
+            2.2231009026318915e-05
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            -0.0017389692294423886,
+            0.0002870533490844096
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            -0.001976146689818714,
+            -8.660179503894305e-05
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.017578140986118318,
+            0.01970555708659627
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            -0.0018539148002463257,
+            0.0001399439952814996
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            -0.0018286999290942907,
+            0.00015134415380357868
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            -0.0020213473807549898,
+            -0.00030680772234503717
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "widthTarget",
+      "uniformScale": 2.3481812388902483,
+      "placementCenter": [
+        0,
+        -0.38765354633331306,
+        5.06
+      ],
+      "checkedRows": 54,
+      "minimumSampledSideClearance": 0.0019558252804429133,
+      "negativeClearanceSamples": 0,
+      "samples": [
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.022076467163122837,
+            0.02281390076316947
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0020652534503969866,
+            0.002887343768665951
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.002416727510152983,
+            0.0032098652239407333
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0019558252804429133,
+            0.0029233043856005114
+          ]
+        },
+        {
+          "heightAboveFloor": 0.02,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.016163424190899223,
+            0.017022238419206914
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02252082221827545,
+            0.023528582356483363
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0023394327842479745,
+            0.003285525820338475
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0025651120254077675,
+            0.0035328465964403755
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.002320009348232621,
+            0.0033084569933649055
+          ]
+        },
+        {
+          "heightAboveFloor": 0.1,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.015908434909721048,
+            0.01654077542334964
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02295724909836816,
+            0.02366003271410455
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0023254395842984277,
+            0.003332523514951058
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.00265223735944331,
+            0.0036037936523446445
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0023265256010034374,
+            0.003293480321237996
+          ]
+        },
+        {
+          "heightAboveFloor": 0.5,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.016439354227121505,
+            0.01687969900070596
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 4.99,
+          "sideClearanceMeters": [
+            0.7225596664869838,
+            0.7222832840274511
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02292059738085539,
+            0.023463809677395697
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0023942509627882247,
+            0.003280476056120696
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0027523661830676227,
+            0.003504109796396815
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0024994717921011933,
+            0.003271282176989021
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.01649591747946111,
+            0.0167576957725728
+          ]
+        },
+        {
+          "heightAboveFloor": 1.2,
+          "worldZ": 5.13,
+          "sideClearanceMeters": [
+            0.7216716040408183,
+            0.7214771739837006
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02306666890182385,
+            0.023646810197028745
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0024601079028674366,
+            0.0035035460266997775
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.0027801177792075027,
+            0.003712230999821764
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.002502770596837678,
+            0.003426639222226524
+          ]
+        },
+        {
+          "heightAboveFloor": 2.0,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.01654851734314522,
+            0.01707794463741774
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.02293924778655354,
+            0.02379507499293576
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.00231384663798051,
+            0.0034271581334069934
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.002642213358452161,
+            0.003755875907384687
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0023526325531841863,
+            0.003451817714540062
+          ]
+        },
+        {
+          "heightAboveFloor": 2.15,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.016414190692689568,
+            0.017083749073722454
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.035246972021736545,
+            0.038068446815793244
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.007267064862233608,
+            0.00945195664628562
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.007508923134735057,
+            0.009728388400045973
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.006937652183101828,
+            0.009181520275289179
+          ]
+        },
+        {
+          "heightAboveFloor": 2.25,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.02581395229468264,
+            0.02942732619516386
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.03409686513459653,
+            0.03544449380597192
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.007061655474916662,
+            0.008006320404706058
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.007270986589510975,
+            0.008053516593917065
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.006773038841691892,
+            0.007692681190750172
+          ]
+        },
+        {
+          "heightAboveFloor": 2.3,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.025248960070266335,
+            0.02721436294968127
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.01,
+          "sideClearanceMeters": [
+            0.03392548196046663,
+            0.03582012972969362
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.005363511246945785,
+            0.007440918342593528
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.005815165841035808,
+            0.00773765419538841
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.0053056262073711835,
+            0.007216150439593116
+          ]
+        },
+        {
+          "heightAboveFloor": 2.35,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.025539646250820947,
+            0.02652230778514375
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.004998498696547893,
+            0.006976555076789848
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.005147128662572831,
+            0.0071930452340520645
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.00496214103681647,
+            0.006807903994130338
+          ]
+        },
+        {
+          "heightAboveFloor": 2.37,
+          "worldZ": 5.11,
+          "sideClearanceMeters": [
+            0.02495655764289806,
+            0.027231877419878536
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.03,
+          "sideClearanceMeters": [
+            0.0054136737871769425,
+            0.007456296090588177
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.06,
+          "sideClearanceMeters": [
+            0.005519451704249501,
+            0.007640588212887489
+          ]
+        },
+        {
+          "heightAboveFloor": 2.38,
+          "worldZ": 5.09,
+          "sideClearanceMeters": [
+            0.005082721133662815,
+            0.0069512918888192665
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": "Finite horizontal ray sections only; neither exhaustive collision nor watertightness/air seal/mechanism/art acceptance."
+}

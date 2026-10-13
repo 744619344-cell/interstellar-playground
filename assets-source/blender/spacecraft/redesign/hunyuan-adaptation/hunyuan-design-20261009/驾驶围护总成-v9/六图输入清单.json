@@ -1,0 +1,139 @@
+{
+  "component": "驾驶围护总成",
+  "version": "v9",
+  "inputCount": 6,
+  "inputs": [
+    {
+      "order": 1,
+      "name": "正面",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/正面.png",
+      "sha256": "f93472f59ef829322f1c910dd9a40bb0ebbd4c4c7ceb70022c6bfdf19d7f6b66",
+      "bytes": 1950770,
+      "resolution": [
+        1420,
+        1108
+      ],
+      "advisoryBodyBounds": [
+        70,
+        73,
+        1348,
+        1023
+      ],
+      "advisoryOuterRatio": 1.3449001051524712,
+      "byteExactReusedFrom": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v8/正面.png"
+    },
+    {
+      "order": 2,
+      "name": "背面",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/背面.png",
+      "sha256": "c6e3b41fa1789f465c1753b8f8be4a5bf4c16e0476d7df0275e9fd61637a2b31",
+      "bytes": 2063458,
+      "resolution": [
+        1420,
+        1108
+      ],
+      "advisoryBodyBounds": [
+        90,
+        46,
+        1330,
+        1017
+      ],
+      "advisoryOuterRatio": 1.2767489711934157,
+      "byteExactReusedFrom": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v8/背面.png"
+    },
+    {
+      "order": 3,
+      "name": "左侧",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/左侧.png",
+      "sha256": "185209129be11754048b7b2f0ba29a485a015c24c41586be3f99934242247872",
+      "bytes": 1523837,
+      "resolution": [
+        1419,
+        1109
+      ],
+      "advisoryBodyBounds": [
+        146,
+        113,
+        1259,
+        982
+      ],
+      "advisoryOuterRatio": 1.2804597701149425,
+      "byteExactReusedFrom": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v8/左侧.png"
+    },
+    {
+      "order": 4,
+      "name": "右侧",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/右侧.png",
+      "sha256": "a4932e0e5fa0859225c37742fa710b7f0c031f0e1bc73d6d54e066f7ae645d58",
+      "bytes": 1480448,
+      "resolution": [
+        1419,
+        1108
+      ],
+      "advisoryBodyBounds": [
+        165,
+        113,
+        1266,
+        980
+      ],
+      "advisoryOuterRatio": 1.2695852534562213,
+      "byteExactReusedFrom": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v8/右侧.png"
+    },
+    {
+      "order": 5,
+      "name": "前左",
+      "slot": "left-front",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前左.png",
+      "sha256": "16466ad59e9a520c2f7bef0a788f2e03361936ec3c145d23be8b6cc979f9fd22",
+      "bytes": 2053953,
+      "resolution": [
+        1420,
+        1108
+      ],
+      "prompt": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前左-提示词.md"
+    },
+    {
+      "order": 6,
+      "name": "前右",
+      "slot": "right-front",
+      "file": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前右.png",
+      "sha256": "b21d0b41e250b4dc6518edd5e7002bef050654d0c037a67579b4e7fba62a0b05",
+      "bytes": 1921611,
+      "resolution": [
+        1420,
+        1108
+      ],
+      "prompt": "assets-source/blender/spacecraft/redesign/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/前右-提示词.md"
+    }
+  ],
+  "model": "V3.1",
+  "faceTarget": "50k",
+  "functionalModules": [
+    "cockpit-sidewall",
+    "cockpit-ceiling",
+    "cockpit-floor"
+  ],
+  "bothEndsOpen": true,
+  "localGeometryMade": false,
+  "inputDesignApprovedByUser": false,
+  "designTargetsMeters": {
+    "innerWidth": 3.409705638885498,
+    "outerWidth": 3.49,
+    "length": 3.3,
+    "outerFrontHeight": 1.84,
+    "outerRearHeight": 2.72,
+    "layerThickness": 0.04
+  },
+  "mountingDatums": {
+    "walkingFloorY": -1.54485285282135,
+    "frontZ": -5.9,
+    "rearZ": -2.6,
+    "frontClearHeightIntent": 1.757,
+    "rearClearHeightIntent": 2.63906
+  },
+  "observations": "保留v8正背左右原字节，新增正确低前口前左/前右斜视。已实际观察两条顶灯、三块地板/两条导轨与内外壁连续；右前初稿多余后角把手已原生编辑移除并另存。前后透视和栅格尺寸仍不精密，不保证云端质量或接口。",
+  "limits": "尺寸意图不保证生成精度或无缝装配。只允许原件的刚性定位和等比展示；来源与实际舱内试装未完成。不得改网格或用遮挡使缺陷通过。",
+  "excluded": [
+    "前右-多把手未提交.png"
+  ]
+}

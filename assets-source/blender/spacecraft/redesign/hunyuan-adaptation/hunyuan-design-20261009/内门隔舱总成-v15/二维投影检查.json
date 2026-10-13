@@ -1,0 +1,68 @@
+{
+  "version": "v15",
+  "views": [
+    {
+      "view": "正面",
+      "canvas": [
+        1423,
+        1105
+      ],
+      "approxSubjectBoundsPixels": [
+        90,
+        56,
+        1331,
+        1015
+      ],
+      "approxSubjectWidthHeight": 1.29375,
+      "approxCanvasHeightFraction": 0.8687782805429864
+    },
+    {
+      "view": "背面",
+      "canvas": [
+        1423,
+        1105
+      ],
+      "approxSubjectBoundsPixels": [
+        90,
+        57,
+        1331,
+        1015
+      ],
+      "approxSubjectWidthHeight": 1.2950990615224192,
+      "approxCanvasHeightFraction": 0.8678733031674208
+    },
+    {
+      "view": "左侧",
+      "canvas": [
+        1423,
+        1105
+      ],
+      "approxSubjectBoundsPixels": [
+        653,
+        56,
+        762,
+        1019
+      ],
+      "approxSubjectWidthHeight": 0.11410788381742738,
+      "approxCanvasHeightFraction": 0.8723981900452489
+    },
+    {
+      "view": "右侧",
+      "canvas": [
+        1423,
+        1105
+      ],
+      "approxSubjectBoundsPixels": [
+        656,
+        56,
+        764,
+        1019
+      ],
+      "approxSubjectWidthHeight": 0.11307053941908714,
+      "approxCanvasHeightFraction": 0.8723981900452489
+    }
+  ],
+  "imagesEdited": false,
+  "geometryMade": false,
+  "limits": "Colour threshold silhouette includes small shadows; advisory observations only. No calibrated camera intrinsics, precise projection or model fit guarantee."
+}

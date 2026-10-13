@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-12",
+  "component": "前窗总成",
+  "version": "v2",
+  "sha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24",
+  "bytes": 43561088,
+  "sourceViewsObserved": 8,
+  "trialViewsObserved": 12,
+  "rawDownloaded": true,
+  "sourceInspectionAccepted": true,
+  "fitAccepted": true,
+  "fitAcceptedScope": "旧舱参照中的原件静态视觉接边候选；完整碰撞、窗玻璃、气密与用户美术未验收",
+  "userArtAccepted": false,
+  "runtimeAccepted": false,
+  "collisionAccepted": false,
+  "uniformScale": 3.0598953613985707,
+  "displayBounds": [
+    3.409705638885498,
+    1.798318862915039,
+    0.2257743775844574
+  ],
+  "placementCenter": [
+    0,
+    -0.6873405685424805,
+    -5.787112811207772
+  ],
+  "rotationYDegrees": 0,
+  "verticalRigidOffsetMeters": -0.0065,
+  "baselineContact": {
+    "aboveCeilingSamples": 1,
+    "maximumSampledPenetrationMeters": 0.00598160108319723
+  },
+  "chosenFiniteRoofCheck": {
+    "date": "2026-10-12",
+    "windowSha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24",
+    "roomSha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+    "placement": "rearMount",
+    "uniformScale": 3.0598953613985707,
+    "verticalRigidOffsetMeters": -0.0065,
+    "originalLowerEdgeY": -1.5865,
+    "selectedVertices": 6081,
+    "roofCheckedVertices": 6081,
+    "aboveCeilingSamples": 0,
+    "maximumSampledPenetrationMeters": 0,
+    "localGeometryMade": false,
+    "limits": "Finite original vertex samples against existing ceiling surfaces; no exhaustive triangle collision, manifold or art acceptance."
+  },
+  "existingFloorYRange": [
+    -1.6100000143051147,
+    -1.54485285282135
+  ],
+  "lowerEdgeY": -1.5865,
+  "lowerEdgeWithinExistingFloorLayer": true,
+  "observations": [
+    "左右接边及顶棚/地面六向视觉候选可保留",
+    "后安装边对准z=-5.9，竖向仅刚性下移6.5mm；下缘仍在现有地板层内",
+    "源贴图局部不规整且背面灯光未遵守输入差异，仍待美术确认"
+  ],
+  "localGeometryMade": false,
+  "originalModified": false,
+  "productReplaced": false,
+  "limits": "有限顶点检查没有穿入不等于完整三角面碰撞或可生产精密接口；不能称整舱无缝完成。"
+}

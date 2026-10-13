@@ -1,6 +1,6 @@
 import designReference from './assets/system-map-design-reference.png'
 
-export default function SystemMapExplorePanel() {
+export default function SystemMapExplorePanel({ onEnterCockpit }: { onEnterCockpit: () => void }) {
   return (
     <aside className='system-map-explore' aria-label='探索计划预览'>
       <section className='system-map-preview-card'>
@@ -12,7 +12,7 @@ export default function SystemMapExplorePanel() {
             <image href={designReference} width='1680' height='941' clipPath='url(#ship-preview-crop)' />
           </svg>
         </div>
-        <button className='system-map-preview-button' type='button' disabled>进入驾驶舱</button>
+        <button className='system-map-preview-button' type='button' onClick={onEnterCockpit}>进入驾驶舱</button>
       </section>
       <section className='system-map-preview-card'>
         <div className='system-map-preview-title'><h2>宇航员</h2></div>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>混元前窗总成原件试装</title>
+<style>body{margin:0;overflow:hidden;background:#17354c;color:#e6edf2;font:14px/1.5 system-ui}canvas{display:block}header{position:absolute;inset:12px auto auto 12px;background:#132331ed;border-radius:8px;padding:12px;max-width:calc(100% - 48px)}button,select{margin:3px;padding:7px;background:#273f50;color:white;border:1px solid #5a7484;border-radius:4px}#status{white-space:pre-line}small{display:block}body.compact .info{display:none}</style>
+<header><b>混元前窗 v2 · 旧舱只读对照</b><button id="fold">收起信息</button><div class="info">
+<label>等比尺度 <select id="fit" aria-label="前窗等比尺度"><option value="widthTarget">按内墙净宽3.410m</option><option value="heightTarget">按前端高度1.800m</option></select></label>
+<label>刚性定位 <select id="placement" aria-label="前窗刚性定位"><option value="frontSkin">正面采样面端部对照</option><option value="rearMount" selected>按后安装边接收端面</option></select></label>
+<label>竖向安装 <select id="vertical" aria-label="前窗竖向安装"><option value="0">原端墙下缘对照</option><option value="-0.0065" selected>顶棚接触校核：下移6.5mm</option></select></label>
+<button data-view="驾驶席">驾驶席</button><button data-view="背面">背面</button><button data-view="左接边">左接边</button><button data-view="右接边">右接边</button><button data-view="地面过渡">地面过渡</button><button data-view="顶棚过渡">顶棚过渡</button>
+<label><input id="candidate" type="checkbox" checked>显示前窗原件</label><label><input id="context" type="checkbox" checked>显示旧舱参照</label>
+<div id="status">加载原始文件…</div><small>拖动观察 · 滚轮缩放 · 右键平移。原件只作刚性定位和等比显示，无补几何、拉伸或改网格。完整接边、碰撞与用户美术尚未通过。</small></div></header>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="./前窗同舱试装-v2.mjs"></script></html>

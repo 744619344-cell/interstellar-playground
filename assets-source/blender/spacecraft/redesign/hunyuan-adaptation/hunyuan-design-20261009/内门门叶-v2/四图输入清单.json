@@ -1,0 +1,104 @@
+{
+  "component": "内门门叶",
+  "version": "v2",
+  "date": "2026-10-11",
+  "generationModel": "V3.0",
+  "inputCount": 4,
+  "inputs": [
+    {
+      "slot": "front",
+      "file": "正面.png",
+      "sha256": "0eee58b5e9f864feb1555eb3c129431322905ecc6894df0874bc66f522bb7615",
+      "bytes": 1444582,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "approxSubjectBoundsPixels": [
+        58,
+        60,
+        966,
+        1458
+      ],
+      "approxWidthHeight": 0.6497498213009293,
+      "silhouetteMethod": "blue background color threshold",
+      "nativeRaster": true,
+      "postProcessed": false
+    },
+    {
+      "slot": "back",
+      "file": "背面.png",
+      "sha256": "4f8aeb0fcedbe65dae01e5b414955fb42239f36a3e482c656a32a4979ef8a218",
+      "bytes": 1493445,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "approxSubjectBoundsPixels": [
+        60,
+        61,
+        963,
+        1458
+      ],
+      "approxWidthHeight": 0.6466380543633763,
+      "silhouetteMethod": "blue background color threshold",
+      "nativeRaster": true,
+      "postProcessed": false
+    },
+    {
+      "slot": "left",
+      "file": "左侧.png",
+      "sha256": "87c0399d9b4fe54b7a9ea00e4199c99c73c4d21de29c4aecff5f151e497da150",
+      "bytes": 1388886,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "approxSubjectBoundsPixels": [
+        479,
+        59,
+        543,
+        1461
+      ],
+      "approxWidthHeight": 0.04632929436920884,
+      "silhouetteMethod": "blue background color threshold",
+      "nativeRaster": true,
+      "postProcessed": false
+    },
+    {
+      "slot": "right",
+      "file": "右侧.png",
+      "sha256": "194679137e37acd7ba162af9037aefb0ee93cc8907d80085d5b61fbdfdc23219",
+      "bytes": 1339578,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "approxSubjectBoundsPixels": [
+        484,
+        60,
+        545,
+        1460
+      ],
+      "approxWidthHeight": 0.04425410421127766,
+      "silhouetteMethod": "blue background color threshold",
+      "nativeRaster": true,
+      "postProcessed": false
+    }
+  ],
+  "targetsMeters": [
+    1.538,
+    2.39,
+    0.08
+  ],
+  "baseFrame": "内门隔舱总成-v15",
+  "localGeometryMade": false,
+  "limits": "Native raster silhouettes are advisory, not calibrated orthographic measurements or a cloud fit guarantee.",
+  "reusedUnchangedSlots": [
+    "front",
+    "back",
+    "left",
+    "right"
+  ],
+  "inputChange": "Upload-recognition blocked new designs; repeat accepted v1 four-image input to inspect generation variation at new receiver-scale targets. No claim of changed uploaded shape."
+}

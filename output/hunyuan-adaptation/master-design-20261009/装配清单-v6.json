@@ -1,0 +1,364 @@
+{
+  "file": "整舱统一母版-v6.glb",
+  "sha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "bytes": 17732692,
+  "triangles": 251976,
+  "draws": 143,
+  "interiorTriangles": 147798,
+  "textureCount": 24,
+  "modules": [
+    "airlock-ceiling",
+    "airlock-door-frame",
+    "airlock-floor",
+    "airlock-handrail",
+    "airlock-inner-door",
+    "airlock-outer-door",
+    "airlock-pressure-panel",
+    "airlock-wall",
+    "center-console",
+    "cockpit-ceiling",
+    "cockpit-floor",
+    "cockpit-sidewall",
+    "dual-suit-locker",
+    "exterior-glass",
+    "exterior-hull",
+    "folding-berth",
+    "front-window-frame",
+    "joystick",
+    "main-console",
+    "pedals",
+    "rear-cabin-ceiling",
+    "rear-cabin-floor",
+    "rear-cabin-wall",
+    "rear-workbench",
+    "seat",
+    "storage-cabinet",
+    "throttle"
+  ],
+  "provenance": [
+    {
+      "source": "output/hunyuan-adaptation/integration-20261008/飞船通路修正-v6.glb",
+      "sha256": "f8307d567bcaad1473ed8ab8a85b1c2f719f05a3eb9f4cf0d745de504bff270e",
+      "modules": [
+        "exterior-glass",
+        "exterior-hull",
+        "seat"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/joystick.glb",
+      "sha256": "3544a3bec5f9409ea39d87260c3d9d1a310b77c6a811c89070709b505186bd05",
+      "modules": [
+        "joystick"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/joystick.glb",
+      "sha256": "3544a3bec5f9409ea39d87260c3d9d1a310b77c6a811c89070709b505186bd05",
+      "modules": [
+        "joystick"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/pedals.glb",
+      "sha256": "3a5013226da29e2347c5c09104ee95a74e061753a60f69b6c19c93287474a4b2",
+      "modules": [
+        "pedals"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/pedals.glb",
+      "sha256": "3a5013226da29e2347c5c09104ee95a74e061753a60f69b6c19c93287474a4b2",
+      "modules": [
+        "pedals"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/throttle.glb",
+      "sha256": "9f18677aa78aecf6d4c3c42acc75d95ed744fd5bc63d161a768b5a000b1edc4a",
+      "modules": [
+        "throttle"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/storage-cabinet.glb",
+      "sha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461",
+      "modules": [
+        "storage-cabinet"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/dual-suit-locker.glb",
+      "sha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375",
+      "modules": [
+        "dual-suit-locker"
+      ]
+    },
+    {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/airlock-pressure-panel.glb",
+      "sha256": "0d1da91aec2738b1a69c68d9963c9dcfecc106f27a3deb650dc8fa70a836514e",
+      "modules": [
+        "airlock-pressure-panel"
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "module": "joystick",
+      "position": [
+        -0.32999999999999996,
+        -0.861,
+        -4.14
+      ],
+      "uniformScale": 0.3596394819774751,
+      "rotationY": 0
+    },
+    {
+      "module": "joystick",
+      "position": [
+        0.9700000000000001,
+        -0.861,
+        -4.14
+      ],
+      "uniformScale": 0.3596394819774751,
+      "rotationY": 0
+    },
+    {
+      "module": "pedals",
+      "position": [
+        -0.65,
+        -1.4320000000000002,
+        -4.54
+      ],
+      "uniformScale": 0.4770320410404512,
+      "rotationY": 0
+    },
+    {
+      "module": "pedals",
+      "position": [
+        0.65,
+        -1.4320000000000002,
+        -4.54
+      ],
+      "uniformScale": 0.4770320410404512,
+      "rotationY": 0
+    },
+    {
+      "module": "throttle",
+      "position": [
+        0,
+        -0.753,
+        -3.96
+      ],
+      "uniformScale": 0.3711723154193983,
+      "rotationY": 0
+    },
+    {
+      "module": "storage-cabinet",
+      "position": [
+        1.43,
+        -1.317,
+        1.27
+      ],
+      "uniformScale": 1.0632303039232927,
+      "rotationY": -1.5707963267948966
+    },
+    {
+      "module": "dual-suit-locker",
+      "position": [
+        1.397,
+        -0.72,
+        3
+      ],
+      "uniformScale": 1.672198567018647,
+      "rotationY": -1.5707963267948966
+    },
+    {
+      "module": "airlock-pressure-panel",
+      "position": [
+        1.674,
+        -0.24,
+        5.74
+      ],
+      "uniformScale": 0.5724589687076483,
+      "rotationY": -1.5707963267948966
+    }
+  ],
+  "animations": [
+    "InnerDoorOpen",
+    "InnerDoorClose",
+    "OuterDoorOpen",
+    "OuterDoorClose",
+    "Berth_0Open",
+    "Berth_0Close",
+    "Berth_1Open",
+    "Berth_1Close",
+    "ConsoleActive"
+  ],
+  "sourceMethod": "Single parameterized mother; exact shared section vertices; rigid equipment mounted with uniform scale.",
+  "anchorNodes": [
+    "Anchor_CockpitCamera",
+    "Anchor_StandUp",
+    "Anchor_Console",
+    "Anchor_DoorInner",
+    "Anchor_Airlock",
+    "Anchor_EVA",
+    "Anchor_Tether"
+  ],
+  "geometryBitstreamIdenticalTo": "整舱统一母版-v5.glb",
+  "mountingAdjustments": [
+    {
+      "node": "joystick_0",
+      "module": "joystick",
+      "translation": [
+        0.09,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_1",
+      "module": "joystick",
+      "translation": [
+        0.09,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_2",
+      "module": "joystick",
+      "translation": [
+        0.09,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_3",
+      "module": "joystick",
+      "translation": [
+        0.09,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_0",
+      "module": "joystick",
+      "translation": [
+        0.05,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_1",
+      "module": "joystick",
+      "translation": [
+        0.05,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_2",
+      "module": "joystick",
+      "translation": [
+        0.05,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "joystick_3",
+      "module": "joystick",
+      "translation": [
+        0.05,
+        -0.171,
+        -0.26
+      ]
+    },
+    {
+      "node": "pedals_0",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_1",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_2",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_3",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_0",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_1",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_2",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "pedals_3",
+      "module": "pedals",
+      "translation": [
+        0,
+        -0.112,
+        0
+      ]
+    },
+    {
+      "node": "throttle_0",
+      "module": "throttle",
+      "translation": [
+        0,
+        0.012,
+        0
+      ]
+    }
+  ]
+}

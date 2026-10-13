@@ -1,0 +1,35 @@
+{
+  "version": "v2",
+  "status": "槽内静态接边候选保留，进入前窗总成",
+  "rawSha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9",
+  "sourceInspectionAccepted": true,
+  "fitAccepted": true,
+  "acceptanceScope": "八方向源观察及六角度静态接边视觉候选；有限截面辅助，不是完整碰撞/机构/气密或用户美术验收",
+  "userArtAccepted": false,
+  "runtimeAccepted": false,
+  "productReplaced": false,
+  "localGeometryMade": false,
+  "sourceViews": 8,
+  "trialViews": 6,
+  "displayBounds": [
+    1.537999988,
+    2.384692907,
+    0.155113801
+  ],
+  "selectedMode": "widthTarget",
+  "uniformScale": 2.3481812388902483,
+  "placementCenter": [
+    0,
+    -0.38765354633331306,
+    5.06
+  ],
+  "rotationYDegrees": 180,
+  "finiteSectionCheck": {
+    "checkedRows": 54,
+    "minimumSampledSideClearance": 0.0019558252804429133,
+    "negativeClearanceSamples": 0
+  },
+  "rejectedMode": "heightTarget：14个侧边负间隙采样，最差约2.02mm干涉",
+  "surfaceObservations": "原贴图有少量亮斑，白模亦有轻微表面起伏；底边贴图略黑，仍待整体美术确认。",
+  "inputProvenance": "四张v1独立图原字节复用；新v2二维候选识别拒绝未提交，不冒称返修输入成功。"
+}

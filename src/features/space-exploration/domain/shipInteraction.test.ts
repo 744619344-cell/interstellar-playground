@@ -9,7 +9,7 @@ test('seat anchors enter and leave the real cockpit view', () => {
   assert.equal(result.view, 'cockpit'); assert.equal(result.state.seated, true)
   state = selectShipInteraction(result.state, 'stand-up')
   result = activateShipInteraction(state)
-  assert.equal(result.view, 'follow'); assert.equal(result.state.seated, false)
+  assert.equal(result.view, 'cabin'); assert.equal(result.state.seated, false)
   assert.equal(setShipSeated(result.state, false), result.state)
 })
 

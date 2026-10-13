@@ -1,0 +1,12 @@
+{
+  "beforeReturn": {
+    "loaded": "true",
+    "released": null
+  },
+  "afterReturn": {
+    "loaded": "true",
+    "released": null
+  },
+  "errorCount": 0,
+  "limits": "Navigation and reload recovery verified; no measured memory-leak or long-duration acceptance."
+}

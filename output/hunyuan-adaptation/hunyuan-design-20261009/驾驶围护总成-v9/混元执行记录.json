@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-12",
+  "component": "驾驶围护总成",
+  "version": "v9",
+  "model": "V3.1",
+  "faceTarget": "50k",
+  "inputCount": 6,
+  "slots": [
+    "front",
+    "back",
+    "left",
+    "right",
+    "left-front",
+    "right-front"
+  ],
+  "status": "原件与八向实装拒绝：六图后整体高度接近旧舱、顶棚完整，前端低顶仍压到前窗上框；来源内壁和顶棚黑亮金属，顶灯完全丢失，把手大小形状和左右数量不一致，皱折边缘明显，来源与同舱整件视觉拒绝。",
+  "observedQuotaBefore": 11,
+  "observedQuotaAfter": 10,
+  "clickAttemptsThisRevision": 1,
+  "acceptedFreeJobsThisRevision": 1,
+  "cumulativeClickAttempts": 31,
+  "cumulativeAcceptedFreeJobs": 28,
+  "payment": false,
+  "localGeometryMade": false,
+  "rawDownloaded": true,
+  "sourceInspectionAccepted": false,
+  "fitAccepted": false,
+  "userArtAccepted": false,
+  "runtimeAccepted": false,
+  "functionalModules": [
+    "cockpit-sidewall",
+    "cockpit-ceiling",
+    "cockpit-floor"
+  ],
+  "productReplaced": false,
+  "evidence": [
+    "6图识别成功.png",
+    "任务受理额度10.png"
+  ],
+  "limits": "保留v8四张基础图原字节，新增正确前左/前右原生斜视；六槽成功、顶底为空，保持V3.1/50k。右斜视多把手初稿未提交，已原生修正并留存。工作区10及新资产生成中确认受理，仅点击一次。",
+  "sha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+  "bytes": 34017924,
+  "trialVerdict": "驾驶围护总成-v9/实装观察结论.json"
+}

@@ -1,5 +1,7 @@
 import { Group, HemisphereLight, DirectionalLight, PointLight, Mesh, MeshStandardMaterial, Matrix4 } from 'three'
 import { partitionInterior, type InteriorZone } from './shipInteriorPartition'
+import { adaptedShipVisible } from './adaptedShipVisibility'
+import { shipInteriorFinish, applyShipInteriorFinish, type InteriorFinish } from './shipInteriorFinish'
 
 export type ShipInteriorView = 'exterior' | 'cockpit' | 'cabin' | 'airlock' | 'cutaway'
 export interface VisibilityState { view: ShipInteriorView; outerOpen: boolean; innerOpen: boolean; conservativeInterior?: boolean }
@@ -35,6 +37,8 @@ export class ShipVisibility {
   apply(state: VisibilityState) {
     if (this.destroyed) return
     for (const item of this.meshes) {
+      const adapted = adaptedShipVisible(item.mesh, state)
+      if (adapted !== undefined) { item.mesh.visible = item.visible && adapted; continue }
       const name = item.mesh.name
       const inside = interior.test(name)
       let visible = true
@@ -73,28 +77,48 @@ export class ShipReviewLighting {
     const light = new PointLight(0xffebcb, 3, 6, 2)
     light.position.set(0, .65, z); return light
   })
-  private copies = new Map<MeshStandardMaterial, MeshStandardMaterial>()
-  private targets: { mesh: Mesh; material: MeshStandardMaterial }[] = []
+  private copies = new Map<MeshStandardMaterial, Map<string, MeshStandardMaterial>>()
+  private targets: { mesh: Mesh; material: MeshStandardMaterial; profile: InteriorFinish }[] = []
+  private adapted = false
+  private master = false
   constructor(models: Group[]) {
+    this.adapted = models.some(model => !!model.getObjectByName('Ship_Adapted'))
+    this.master = models.some(model => model.getObjectByName('Ship_Adapted')?.userData.masterInterior === true)
+    if (this.master) {
+      const extra = new PointLight(0xffebcb, 4, 7, 2); extra.position.set(0, .69, -1); this.cabin.push(extra)
+      this.cabin[1].position.z = 2
+      this.cabin.forEach(light => { light.position.y = .69; light.distance = 7 })
+    }
     this.sun.position.set(4, 8, 10)
     this.root.add(this.fill, this.sun, this.sun.target, ...this.cabin)
     for (const model of models) model.traverse(mesh => {
       if (!(mesh instanceof Mesh) || !(mesh.material instanceof MeshStandardMaterial)) return
       const original = mesh.material
-      if (!this.copies.has(original)) this.copies.set(original, original.clone())
-      this.targets.push({ mesh, material: original }); mesh.material = this.copies.get(original)!
+      const profile = shipInteriorFinish(mesh, original)
+      const variants = this.copies.get(original) ?? new Map<string, MeshStandardMaterial>()
+      if (!variants.has(profile)) variants.set(profile, original.clone())
+      this.copies.set(original, variants)
+      this.targets.push({ mesh, material: original, profile }); mesh.material = variants.get(profile)!
     })
   }
   apply(view: ShipInteriorView) {
     const inside = !['exterior', 'cutaway'].includes(view)
-    this.sun.intensity = inside ? 0 : 2
-    this.fill.intensity = inside ? .5 : 2
-    this.cabin.forEach(light => { light.visible = inside })
-    this.copies.forEach(material => { material.envMapIntensity = inside ? .25 : 1 })
+    this.sun.intensity = inside ? (this.master ? 0 : this.adapted ? .15 : 0) : 2
+    this.fill.intensity = inside ? (this.master ? .65 : this.adapted ? .8 : .5) : 2
+    this.cabin.forEach(light => { light.visible = inside; light.intensity = this.adapted ? 4 : 3 })
+    this.copies.forEach(variants => variants.forEach(material => {
+      material.envMapIntensity = inside ? (this.master ? .28 : this.adapted ? .2 : .25) : 1
+    }))
+    for (const { mesh, material: original, profile } of this.targets) {
+      if (!(mesh.material instanceof MeshStandardMaterial)) continue
+      const material = mesh.material
+      applyShipInteriorFinish(material, original, profile, inside, this.adapted)
+      if (mesh.userData.part === 'glass') material.opacity = inside ? .12 : .92
+    }
   }
   dispose() {
     this.root.removeFromParent()
     this.targets.forEach(({ mesh, material }) => { mesh.material = material })
-    this.copies.forEach(material => material.dispose()); this.copies.clear(); this.targets = []
+    this.copies.forEach(variants => variants.forEach(material => material.dispose())); this.copies.clear(); this.targets = []
   }
 }
