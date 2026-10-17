@@ -2566,3 +2566,18 @@ v8停止点：只读比较v5/v7原始地板纹理，v7的发白来自原始颜�
 本机及GitHub附件SHA256均为 `37852540eab5c00df71baf320624ac663824929935df488d9f4b4c7e9e92f947`；远端状态uploaded、大小一致。发布后不带登录访问下载入口，HEAD最终200且Content-Length为1,084,019,895；没有为验证重复下载整个文件。附件标签为 `integration-20261008-archive-20261017`，目标提交dcd678f。
 
 这是用户指定的历史整合素材包，不代表后续v7/v8全部本机未提交资产，也不是内舱/玻璃验收成品。前述本机素材保留说明仍有效；README和本节提供下载入口供接手者核对。只提交并推送这两处文档更新，不部署网站，不清理本机改动。
+
+
+#### AP 船壳构建依赖查找、打包与用户授权上传（2026-10-17）
+
+用户要求查找原版build_hull.py所需的两个目录和源GLB，超过25MB先告知；本轮先查找打包、未上传，告知源GLB为94,927,660字节（94.93MB）后，用户进一步明确要求“帮我提交推送”，据此上传准备好的依赖包并推送下载记录。没有恢复模型制作或执行构建。
+
+全项目含忽略目录检索（排除node_modules及.git）只找到一组：`output/hunyuan-adaptation/assembly-20261008/` 有asset_tools.py；`output/hunyuan-adaptation/assembly-repair-20261008/` 有shell_probe.py、center_rebake.py、surface_lookup.py。它们与integration目录平级，符合原版sys.path。源文件位于 `assets-source/blender/spacecraft/redesign/hunyuan-adaptation/exterior-reference.glb`，不是integration的直接同级文件；该位置符合shell_probe.py通过asset_tools.ROOT加载源文件的路径。
+
+静态核对原版导入链及符号，另收集 `output/hunyuan-adaptation/repair/mesh_asset_io.py` 和 `output/hunyuan-adaptation/integration-20261008/clip_surface.py`。NumPy/Pillow本机可发现；没有安装依赖。未找到build_hull.fixed.py，不能声称已核对修正版或实际构建成功；未导入/运行模型脚本、生成GLB或修改源几何和材质。
+
+依赖包路径：`output/hunyuan-adaptation/hull-build-dependencies-20261017.zip`。完整包含两个目录、源GLB及补充依赖，共498份原文件，另有DEPENDENCY-PACKAGE-README.md和manifest.json；每份原文件记录相对路径、字节数和SHA256。解压时保留output/和assets-source/层级合并到项目根，不把脚本平铺；asset_tools.py依赖parents[3]推导ROOT。
+
+压缩包1,108,198,243字节，原文件总计1,387,756,822字节；完整ZIP CRC通过。本机ZIP及GitHub附件SHA256一致：`b0225ae595dfc9bddc93c6d2057632e81ba6f3aad82db0c3f1fc7a092ba4726c`。源GLB原字节SHA256：`0d62b268b2ee5e96979fe8c2f5f783d5a5d33ffe7b6877b6a8b16ff62faa72df`。上传前扫描212个文本项，未发现所查常见密钥模式或本机绝对路径，属于有限模式检查。
+
+附件说明：https://github.com/744619344-cell/interstellar-playground/releases/tag/hull-build-dependencies-20261017 。直接下载：https://github.com/744619344-cell/interstellar-playground/releases/download/hull-build-dependencies-20261017/hull-build-dependencies-20261017.zip 。独立预发布附件目标提交e8a3c35，不标为最新产品版本；公开下载HEAD最终200、Content-Length为1,108,198,243，远端状态uploaded。大包不进入Git文件历史，README与本节记录下载信息；其余本机改动保留，不部署网站。前窗黑块仍未完成修复，等待接手者提供并核对修正版。

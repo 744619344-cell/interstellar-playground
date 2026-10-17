@@ -6,6 +6,8 @@
 
 用户指定的历史整合包已提供[交接附件下载](https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip)（1.084 GB，原包 SHA256 与远端一致）。归档说明和完整校验值见[附件页面](https://github.com/744619344-cell/interstellar-playground/releases/tag/integration-20261008-archive-20261017)；该历史包不代表包含后续 v7/v8 全部本机素材或已通过模型验收。
 
+船壳脚本缺失依赖已另提供[依赖包下载](https://github.com/744619344-cell/interstellar-playground/releases/download/hull-build-dependencies-20261017/hull-build-dependencies-20261017.zip)（1.108 GB，含两个完整 assembly 目录、exterior-reference.glb 及补充依赖）。保留 `output/` 与 `assets-source/` 层级解压至项目根目录，包内含说明及逐文件校验清单；[附件说明](https://github.com/744619344-cell/interstellar-playground/releases/tag/hull-build-dependencies-20261017)记录完整 SHA256。本机未找到 `build_hull.fixed.py`，本次没有运行模型构建或生成修复 GLB。
+
 在线体验：[GitHub Pages](https://744619344-cell.github.io/interstellar-playground/)
 
 当前能力：压缩视觉尺度的太阳系全景与星体聚焦（LOD2/LOD1）、太阳系中的飞船模型与驾驶视角（跟随 / 驾驶舱 / 自由观察）、W/S 前后与 A/D 横移、鼠标拖拽与滚轮缩放、目标锁定、航向辅助和防撞、地球/月球/土星手动航线、推进反馈与基础推进声，以及仅保存在当前浏览器的本地音乐。
