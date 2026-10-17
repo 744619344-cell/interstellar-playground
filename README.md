@@ -4,6 +4,8 @@
 
 2026-10-17：用户已停止当前飞船返修并要求换模型接手。未通过的新内舱及玻璃黑块仍未解决；接手状态、可复用代码、实测检查与本机未提交素材范围见[唯一任务末尾交接记录](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md)。下文 `output/` 和 `assets-source/` 中的实验入口可能只存在于本机，不能视为本次提交包含或验收通过的资产。
 
+用户指定的历史整合包已提供[交接附件下载](https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip)（1.084 GB，原包 SHA256 与远端一致）。归档说明和完整校验值见[附件页面](https://github.com/744619344-cell/interstellar-playground/releases/tag/integration-20261008-archive-20261017)；该历史包不代表包含后续 v7/v8 全部本机素材或已通过模型验收。
+
 在线体验：[GitHub Pages](https://744619344-cell.github.io/interstellar-playground/)
 
 当前能力：压缩视觉尺度的太阳系全景与星体聚焦（LOD2/LOD1）、太阳系中的飞船模型与驾驶视角（跟随 / 驾驶舱 / 自由观察）、W/S 前后与 A/D 横移、鼠标拖拽与滚轮缩放、目标锁定、航向辅助和防撞、地球/月球/土星手动航线、推进反馈与基础推进声，以及仅保存在当前浏览器的本地音乐。
