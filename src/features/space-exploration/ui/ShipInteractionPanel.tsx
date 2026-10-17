@@ -1,14 +1,14 @@
 import { SHIP_INTERACTION_ANCHORS, SHIP_INTERACTION_LABEL, shipDoorLabel,
   type ShipInteractionAnchor } from '../domain/shipInteraction'
 import type { SystemMapSnapshot } from '../rendering/solar-system/systemMapEngine'
-import type { ShipPreviewAction } from '../rendering/spacecraft/shipCameraPreview'
+import type { ShipFlightAction } from '../rendering/spacecraft/shipFlightRuntime'
 
-type Preview = NonNullable<SystemMapSnapshot['cameraPreview']>
+type Preview = NonNullable<SystemMapSnapshot['shipFlight']>
 
 export default function ShipInteractionPanel({ state, model, onAction }: {
   state: Preview['interaction']
   model: Preview['model']
-  onAction: (action: ShipPreviewAction) => void
+  onAction: (action: ShipFlightAction) => void
 }) {
   const ready = model.status === 'ready'
   const anchors = new Set<ShipInteractionAnchor>(model.anchors)

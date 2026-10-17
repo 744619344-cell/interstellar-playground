@@ -46,7 +46,6 @@ function Toolbar({ paused, onPause, onOverview, onHelp, helpOpen, musicPlaying, 
 
 export default function SystemMapHud(props: Props) {
   const { snapshot, onOverview, onZoom, onShip, onMoonRoute } = props
-  const earth = snapshot.labels.find((label) => label.id === 'earth')
   return (
     <div className='system-map-hud'>
       <Toolbar {...props} />
@@ -58,21 +57,14 @@ export default function SystemMapHud(props: Props) {
           <span className='system-map-selection-hint'>{snapshot.selectedId ? `视觉距离 ${Math.round(snapshot.visualDistance)} · ` : ''}{snapshot.mode === 'overview' ? '双击进入特写' : 'Ctrl+拖动平移 · 滚轮缩放'}</span>
         </div>
       </div>}
-      {snapshot.mode === 'overview' && earth && (
-        <div className='system-map-ship-marker' style={{ left: earth.x + 42, top: earth.y + 58 }} aria-label='我的飞船停泊于地球轨道'>
-          <span className='system-map-ship-orbit' />
-          <span className='system-map-ship-glyph'><SystemMapIcon name='ship' /></span>
-          <span className='system-map-ship-caption'>我的飞船</span>
-        </div>
-      )}
       <div className='system-map-destination' aria-label='目的地预览'>
         <div className='system-map-destination-orb' style={{ backgroundImage: `url(${moonSurface})` }} />
         <div className='system-map-destination-copy'><span>目的地</span><strong>月球</strong></div>
         <button type='button' className='system-map-destination-button' onClick={onMoonRoute}>设为目标</button>
       </div>
       <nav className='system-map-mode-nav' aria-label='探索模式'>
-        <button type='button' className={`system-map-mode-button${snapshot.mode === 'overview' ? ' is-active' : ''}`} onClick={onOverview} aria-label='太阳系全景'><SystemMapIcon name='map' /><span>全景</span></button>
-        <button type='button' className='system-map-mode-button' onClick={onShip} aria-label='飞船驾驶'><SystemMapIcon name='ship' /><span>飞船</span></button>
+        <button type='button' className={`system-map-mode-button${snapshot.mode === 'overview' && !snapshot.shipFlight ? ' is-active' : ''}`} onClick={onOverview} aria-label='太阳系全景'><SystemMapIcon name='map' /><span>全景</span></button>
+        <button type='button' className={`system-map-mode-button${snapshot.shipFlight ? ' is-active' : ''}`} onClick={onShip} aria-label='飞船驾驶'><SystemMapIcon name='ship' /><span>飞船</span></button>
         <button type='button' className='system-map-mode-button' disabled aria-label='宇航员功能筹备中'><SystemMapIcon name='crew' /><span>宇航员</span></button>
       </nav>
       <div className='system-map-zoom'>

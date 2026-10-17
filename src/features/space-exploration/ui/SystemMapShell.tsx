@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { getSystemBody, type SystemBodyId } from '../domain/registry'
 import SystemMapHud from './SystemMapHud'
-import ShipCameraPreviewPanel from './ShipCameraPreviewPanel'
+import ShipFlightPanel from './ShipFlightPanel'
+import SystemMapShipLabel from './SystemMapShipLabel'
 import SystemMapMusicPanel from './SystemMapMusicPanel'
 import SystemMapExplorePanel from './SystemMapExplorePanel'
 import { useSystemMapRuntime } from './useSystemMapRuntime'
@@ -16,12 +17,12 @@ export default function SystemMapShell() {
   const [musicOpen, setMusicOpen] = useState(false)
   const selected = runtime.snapshot.selectedId
   const enterCockpit = () => {
-    runtime.previewAction('enter')
-    runtime.previewAction('cockpit')
+    runtime.shipAction('enter')
+    runtime.shipAction('cockpit')
   }
   const startMoonRoute = () => {
     enterCockpit()
-    runtime.previewAction('route:moon')
+    runtime.shipAction('route:moon')
   }
 
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function SystemMapShell() {
   }, [helpOpen, musicOpen])
 
   return (
-    <div className={`system-map-page${runtime.snapshot.mode === 'focus' ? ' is-focus' : ''}${runtime.snapshot.cameraPreview ? ' is-camera-preview' : ''}`}>
+    <div className={`system-map-page${runtime.snapshot.mode === 'focus' ? ' is-focus' : ''}${runtime.snapshot.shipFlight ? ' is-ship-flight' : ''}`}>
       <div className='system-map-stage' ref={runtime.stageRef}>
         <canvas
           ref={runtime.canvasRef}
@@ -65,9 +66,12 @@ export default function SystemMapShell() {
             style={{ left: `${label.x}px`, top: `${label.y}px` }}
           >{getSystemBody(label.id as SystemBodyId).displayName}</span>
         ))}
+        {!runtime.snapshot.shipFlight && <SystemMapShipLabel ship={runtime.snapshot.ship}
+          onEnter={() => { runtime.shipAction('enter'); runtime.shipAction('follow') }}
+          onRetry={() => runtime.shipAction('retryModel')} />}
       </div>
-      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.cameraPreview && <SystemMapExplorePanel onEnterCockpit={enterCockpit} />}
-      <ShipCameraPreviewPanel state={runtime.snapshot.cameraPreview} onAction={runtime.previewAction} />
+      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.shipFlight && <SystemMapExplorePanel ship={runtime.snapshot.ship} onEnterCockpit={enterCockpit} />}
+      <ShipFlightPanel state={runtime.snapshot.shipFlight} onAction={runtime.shipAction} />
       <SystemMapHud
         snapshot={runtime.snapshot}
         paused={runtime.paused}

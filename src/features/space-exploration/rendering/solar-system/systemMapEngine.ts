@@ -1,5 +1,6 @@
 import { Line, TextureLoader } from 'three'
-import { ShipCameraPreview, type ShipPreviewAction } from '../spacecraft/shipCameraPreview'
+import { ShipFlightRuntime, type ShipFlightAction } from '../spacecraft/shipFlightRuntime'
+import { hitSystemShip, projectSystemShip, type SystemShipSnapshot } from './systemMapShip'
 import { nextShipView } from '../spacecraft/shipViewCamera'
 import {
   applyOrbitDrag, applyPan, applyZoom, cameraEye, cameraUp, focusPose, overviewPose,
@@ -30,7 +31,8 @@ export interface SystemMapSnapshot {
   visualDistance: number
   labels: LabelBox[]
   failed?: string
-  cameraPreview?: ReturnType<ShipCameraPreview['snapshot']>
+  shipFlight?: ReturnType<ShipFlightRuntime['snapshot']>
+  ship?: SystemShipSnapshot
 }
 
 interface Options {
@@ -41,7 +43,6 @@ interface Options {
   textures: VoyageTextureSet
   onSnapshot: (snapshot: SystemMapSnapshot) => void
   onFail?: (reason: string) => void
-  cameraPreview?: boolean
 }
 
 export class SystemMapEngine {
@@ -65,7 +66,8 @@ export class SystemMapEngine {
   private trackFocusedBody = false
   private width: number
   private height: number
-  private preview?: ShipCameraPreview
+  private ship?: ShipFlightRuntime
+  private flying = false
   private inputEnabled = true
 
   constructor(
@@ -87,6 +89,8 @@ export class SystemMapEngine {
       this.bodies = content.bodies
       this.orbits = content.orbits
       this.updateBodyMotion()
+      this.ship = new ShipFlightRuntime(this.world, this.bodies.get('earth')!.group.position)
+      this.updateShip(0)
       this.applyPose()
       options.canvas.addEventListener('webglcontextlost', this.onContextLost)
       this.publish()
@@ -98,37 +102,38 @@ export class SystemMapEngine {
 
   start() { if (!this.destroyed) this.loop.start(this.tick) }
   stop() { this.loop.stop(); this.lastTime = 0 }
-  setSimulationPaused(paused: boolean) { this.simulationPaused = paused; this.preview?.pause(paused) }
+  setSimulationPaused(paused: boolean) { this.simulationPaused = paused; this.ship?.pause(paused) }
   setInputEnabled(enabled: boolean) {
-    this.inputEnabled = enabled; this.input.setEnabled(enabled); this.preview?.suspend(!enabled)
+    this.inputEnabled = enabled; this.input.setEnabled(enabled); this.ship?.suspend(!enabled)
     this.publish()
   }
-  clearInput() { this.input.clear(); this.preview?.clear() }
-  previewAction(action: ShipPreviewAction) {
-    if (!this.options.cameraPreview || this.destroyed || !this.world || !this.inputEnabled) return
-    if (action === 'enter' && !this.preview) {
+  clearInput() { this.input.clear(); this.ship?.clear() }
+  shipAction(action: ShipFlightAction) {
+    if (this.destroyed || !this.ship || !this.inputEnabled) return
+    if (action === 'retryModel') this.ship.retryModel()
+    else if (action === 'enter' && !this.flying) {
       this.transition = undefined
+      this.selectedId = null; this.trackFocusedBody = false
       this.setFocus(null)
-      const earth = this.bodies.get('earth')!.group.position
-      this.preview = new ShipCameraPreview(this.world, { x: earth.x, y: earth.y + 20, z: earth.z + 30 })
-      this.preview.pause(this.simulationPaused)
-    } else if (action === 'reset') this.preview?.reset()
-    else if (action === 'obstacle') this.preview?.toggleObstacle()
-    else if (action === 'follow' || action === 'cockpit' || action === 'cabin' || action === 'free') this.preview?.mode(action)
-    else this.preview?.navigate(action)
+      this.flying = true; this.ship.setActive(true)
+    } else if (!this.flying) return
+    else if (action === 'reset') this.ship.reset()
+    else if (action === 'follow' || action === 'cockpit' || action === 'cabin' || action === 'free') this.ship.mode(action)
+    else this.ship.navigate(action)
+    this.updateShip(0)
     this.clearInput(); this.publish()
   }
-  previewKey(code: string, down: boolean) {
-    if (!this.preview || !this.inputEnabled) return false
+  shipKey(code: string, down: boolean) {
+    if (!this.flying || !this.ship || !this.inputEnabled) return false
     if (code === 'KeyC') {
-      if (down) this.preview.mode(nextShipView(this.preview.snapshot().mode))
+      if (down) this.ship.mode(nextShipView(this.ship.snapshot().mode))
       return true
     }
     if (code === 'KeyF') {
-      if (down) this.preview.interact()
+      if (down) this.ship.interact()
       return true
     }
-    return this.preview.key(code, down)
+    return this.ship.key(code, down)
   }
 
   resize(width: number, height: number, pixelRatio: number) {
@@ -151,7 +156,7 @@ export class SystemMapEngine {
     this.world.renderer.setSize(width, height, false)
     this.applyPose()
     this.world.renderer.render(this.world.scene, this.world.camera)
-    this.preview?.render()
+    this.ship?.render()
     this.publish()
   }
 
@@ -166,6 +171,7 @@ export class SystemMapEngine {
   }
 
   focus(id: SystemBodyId) {
+    this.leaveShip()
     this.selectedId = id
     this.trackFocusedBody = true
     const position = this.bodies.get(id)?.group.position
@@ -173,14 +179,14 @@ export class SystemMapEngine {
   }
 
   overview() {
-    this.preview?.destroy(); this.preview = undefined; this.clearInput()
+    this.leaveShip()
     this.selectedId = null
     this.trackFocusedBody = false
     this.beginTransition(overviewPose({ width: this.width, height: this.height }), null)
   }
 
   zoomBy(deltaY: number) {
-    if (this.preview) { this.preview.zoom(deltaY); return }
+    if (this.flying) { this.ship?.zoom(deltaY); return }
     this.transition = undefined
     this.pose = this.zoomPose(deltaY)
     this.applyPose()
@@ -194,6 +200,7 @@ export class SystemMapEngine {
     const eye = cameraEye(this.pose)
     const viewport = { width: this.width, height: this.height }
     const names = Object.fromEntries(SYSTEM_BODIES.map((item) => [item.id, item.displayName]))
+    const ship = this.ship?.snapshot()
     return {
       selectedId: selected,
       focusedId: this.lod.focusedId,
@@ -202,8 +209,9 @@ export class SystemMapEngine {
       name: body?.displayName ?? '太阳系',
       kind: body ? KIND_LABEL[body.kind] : '全景',
       visualDistance: target ? visualDistance(eye, { x: target.x, y: target.y, z: target.z }) : this.pose.distance,
-      labels: this.preview ? [] : placeLabels(this.projectCurrentBodies(), names, viewport),
-      cameraPreview: this.preview?.snapshot()
+      labels: this.flying ? [] : placeLabels(this.projectCurrentBodies(), names, viewport),
+      shipFlight: this.flying ? ship : undefined,
+      ship: projectSystemShip(ship, this.pose, viewport, this.simulationTime)
     }
   }
 
@@ -217,7 +225,7 @@ export class SystemMapEngine {
     this.loop.destroy()
     this.gate.destroy()
     this.input.clear()
-    this.preview?.destroy(); this.preview = undefined
+    this.ship?.destroy(); this.ship = undefined
     this.options.canvas.removeEventListener('webglcontextlost', this.onContextLost)
     if (!this.world) return
     disposeObject(this.world.scene)
@@ -254,10 +262,10 @@ export class SystemMapEngine {
 
   private applyGestures(gestures: SystemMapGesture[]) {
     for (const gesture of gestures) {
-      if (this.preview) {
-        if (gesture.type === 'orbit') this.preview.orbit(gesture.dx, gesture.dy)
-        if (gesture.type === 'pan') this.preview.pan(gesture.dx, gesture.dy)
-        if (gesture.type === 'zoom') this.preview.zoom(gesture.deltaY)
+      if (this.flying) {
+        if (gesture.type === 'orbit') this.ship?.orbit(gesture.dx, gesture.dy)
+        if (gesture.type === 'pan') this.ship?.pan(gesture.dx, gesture.dy)
+        if (gesture.type === 'zoom') this.ship?.zoom(gesture.deltaY)
         continue
       }
       if (gesture.type === 'orbit') {
@@ -270,7 +278,10 @@ export class SystemMapEngine {
       } else if (gesture.type === 'zoom') {
         this.transition = undefined
         this.pose = this.zoomPose(gesture.deltaY)
-      } else if (gesture.type === 'tap') this.select(this.pick(gesture.x, gesture.y))
+      } else if (gesture.type === 'tap') {
+        if (hitSystemShip(this.snapshot().ship, gesture.x, gesture.y)) this.shipAction('enter')
+        else this.select(this.pick(gesture.x, gesture.y))
+      }
       else this.focusFromTap(gesture.x, gesture.y)
     }
     this.applyPose()
@@ -298,7 +309,7 @@ export class SystemMapEngine {
 
   private applyPose() {
     if (!this.world) return
-    if (this.preview) { this.sky?.position.copy(this.world.camera.position); return }
+    if (this.flying) { this.sky?.position.copy(this.world.camera.position); return }
     const eye = cameraEye(this.pose)
     const up = cameraUp(this.pose)
     this.world.camera.position.set(eye.x, eye.y, eye.z)
@@ -311,13 +322,11 @@ export class SystemMapEngine {
     if (this.destroyed || !this.world) return
     const dt = this.lastTime ? Math.min(0.05, (time - this.lastTime) / 1000) : 0
     this.lastTime = time
-    this.preview?.measureFrame(time)
+    this.ship?.measureFrame(time)
     if (!this.simulationPaused) this.simulationTime += dt
     this.updateBodyMotion()
     this.updateTrackedTarget()
-    this.preview?.update(dt, SYSTEM_BODIES.map((body) => ({
-      id: body.id, center: this.bodies.get(body.id)!.group.position, radius: visualScale(body.id).ringOuter ?? visualScale(body.id).radius
-    })))
+    this.updateShip(dt)
     if (this.transition) {
       const stepped = stepTransition(this.transition, dt)
       this.pose = stepped.pose
@@ -325,13 +334,21 @@ export class SystemMapEngine {
     }
     this.applyPose()
     this.world.renderer.render(this.world.scene, this.world.camera)
-    this.preview?.render()
+    this.ship?.render()
     if (time - this.lastPublish > 120) this.publish(time)
   }
 
   private publish(time = 0) {
     this.lastPublish = time
     this.options.onSnapshot(this.snapshot())
+  }
+
+  private leaveShip() {
+    this.flying = false; this.ship?.setActive(false); this.clearInput(); this.updateShip(0)
+  }
+  private updateShip(dt: number) {
+    this.ship?.update(dt, SYSTEM_BODIES.map(body => ({ id: body.id, center: this.bodies.get(body.id)!.group.position,
+      radius: visualScale(body.id).ringOuter ?? visualScale(body.id).radius })))
   }
 
   private projectCurrentBodies() {
@@ -375,6 +392,7 @@ export class SystemMapEngine {
 
   private readonly onContextLost = (event: Event) => {
     event.preventDefault()
+    this.setInputEnabled(false)
     this.stop()
     this.options.onFail?.('context-lost')
   }

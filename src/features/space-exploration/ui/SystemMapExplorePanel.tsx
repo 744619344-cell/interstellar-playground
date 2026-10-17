@@ -1,11 +1,16 @@
 import designReference from './assets/system-map-design-reference.png'
+import type { SystemMapSnapshot } from '../rendering/solar-system/systemMapEngine'
 
-export default function SystemMapExplorePanel({ onEnterCockpit }: { onEnterCockpit: () => void }) {
+export default function SystemMapExplorePanel({ ship, onEnterCockpit }: {
+  ship: SystemMapSnapshot['ship']; onEnterCockpit: () => void
+}) {
+  const status = ship?.suspended ? '飞船已暂停' : ship?.status === 'failed' ? '飞船加载失败，可进入后重试'
+    : ship?.status !== 'ready' ? '飞船加载中…' : ship.parked ? '地球随行泊位' : '太阳系航行中'
   return (
     <aside className='system-map-explore' aria-label='探索计划预览'>
       <section className='system-map-preview-card'>
         <div className='system-map-preview-title'><h2>飞船</h2></div>
-        <p>停泊于地球轨道</p>
+        <p aria-live='polite'>{status}</p>
         <div className='system-map-preview-art is-ship' role='img' aria-label='白色探索飞船概念插图'>
           <svg viewBox='1238 180 376 266' preserveAspectRatio='xMidYMid meet' width='100%' height='100%'>
             <defs><clipPath id='ship-preview-crop'><rect x='1238' y='180' width='376' height='266' /></clipPath></defs>

@@ -165,11 +165,8 @@
 .system-map-destination-copy strong { margin-top: clamp(2px, .179vw, 3px); color: #f0f0f1; font-size: clamp(18px, 1.429vw, 24px); font-weight: 400; letter-spacing: .08em; }
 .system-map-destination-button { flex: none; min-width: clamp(100px, 7.798vw, 131px); margin: 0; padding: clamp(8px, .595vw, 10px) clamp(11px, .833vw, 14px); appearance: none; border: 1px solid #4c6673; border-radius: clamp(7px, .536vw, 9px); color: #bde1ea; background: rgba(7, 24, 34, .93); font-size: clamp(13px, 1.012vw, 17px); line-height: 1.2; white-space: nowrap; opacity: 1; }
 .system-map-destination-button::after { display: none; }
-.system-map-ship-marker { position: absolute; z-index: 7; width: clamp(66px, 5.119vw, 86px); height: clamp(44px, 3.452vw, 58px); transform: translate(-50%, calc(-50% - clamp(40px, 3.095vw, 52px))); color: #4aebfb; pointer-events: none; }
-.system-map-ship-orbit { position: absolute; left: 2px; top: 0; width: clamp(53px, 4.167vw, 70px); height: clamp(29px, 2.262vw, 38px); border: 1px dashed #00dff3; border-radius: 50%; transform: rotate(18deg); opacity: .92; }
-.system-map-ship-glyph { position: absolute; left: clamp(21px, 1.607vw, 27px); top: clamp(8px, .655vw, 11px); width: clamp(19px, 1.488vw, 25px); height: clamp(19px, 1.488vw, 25px); padding: 3px; box-sizing: border-box; color: #edf8fa; background: #061017; transform: rotate(-10deg); }
-.system-map-ship-glyph .system-map-icon { width: 100%; height: 100%; }
-.system-map-ship-caption { position: absolute; left: 2px; top: clamp(33px, 2.56vw, 43px); width: clamp(58px, 4.524vw, 76px); font-size: clamp(10px, .714vw, 12px); text-align: center; white-space: nowrap; text-shadow: 0 1px 5px #02070c, 0 0 8px #02070c; }
+.system-map-ship-label { position: absolute; z-index: 5; transform: translateX(-50%); margin: 0; padding: 4px 8px; border: 1px solid #315767; border-radius: 7px; color: #a9eff8; background: #06121edd; font-size: 12px; white-space: nowrap; cursor: pointer; }
+.system-map-ship-label:disabled { color: #9eafb8; cursor: wait; }
 .system-map-library { position: absolute; right: clamp(20px, 1.548vw, 26px); bottom: clamp(20px, 1.548vw, 26px); min-width: clamp(88px, 6.905vw, 116px); pointer-events: auto; }
 .system-map-page:not(.is-focus) .system-map-library { display: none; }
 .system-map-selection { left: clamp(20px, 1.548vw, 26px); bottom: clamp(79px, 6.19vw, 104px); }

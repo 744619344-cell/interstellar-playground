@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { VoyageRunController } from '../application/voyageRunController'
 import type { SystemBodyId } from '../domain/registry'
-import type { ShipPreviewAction } from '../rendering/spacecraft/shipCameraPreview'
+import type { ShipFlightAction } from '../rendering/spacecraft/shipFlightRuntime'
 import { SystemMapEngine, type SystemMapSnapshot } from '../rendering/solar-system/systemMapEngine'
 import { detectWebRenderQuality, limitWebPixelRatio } from '../../../engines/webRenderQuality'
 import { VOYAGE_TEXTURES } from './voyageTextures'
@@ -19,7 +19,6 @@ const EMPTY: SystemMapSnapshot = {
 }
 
 export function useSystemMapRuntime() {
-  const previewEnabled = true
   const stageRef = useRef<HTMLDivElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const engineRef = useRef<SystemMapEngine>()
@@ -63,8 +62,7 @@ export function useSystemMapRuntime() {
           pixelRatio,
           textures: VOYAGE_TEXTURES,
           onSnapshot: setSnapshot,
-          onFail: setFailed,
-          cameraPreview: previewEnabled
+          onFail: setFailed
         })
         lastSize = size
         setFailed(null)
@@ -82,11 +80,11 @@ export function useSystemMapRuntime() {
       controller.setHidden(hidden)
       effectsAudio.setSuspended(hidden)
     }
-    const onBlur = () => { controller.clearInput(); if (previewEnabled) { blurred = true; onVisibility() } }
+    const onBlur = () => { controller.clearInput(); blurred = true; onVisibility() }
     const onFocus = () => { blurred = false; onVisibility() }
     const onKey = (event: KeyboardEvent) => {
       if (event.type === 'keydown' && (event.repeat || document.activeElement !== canvas || event.ctrlKey || event.metaKey || event.altKey)) return
-      if (engineRef.current?.previewKey(event.code, event.type === 'keydown')) event.preventDefault()
+      if (engineRef.current?.shipKey(event.code, event.type === 'keydown')) event.preventDefault()
     }
     document.addEventListener('visibilitychange', onVisibility)
     window.addEventListener('blur', onBlur)
@@ -110,9 +108,9 @@ export function useSystemMapRuntime() {
   }, [])
 
   useEffect(() => {
-    const preview = snapshot.cameraPreview
+    const preview = snapshot.shipFlight
     effectsAudioRef.current?.setFeedback(preview?.feedback, !!preview && !paused && !preview.suspended)
-  }, [paused, snapshot.cameraPreview?.feedback.audioLevel, snapshot.cameraPreview?.suspended])
+  }, [paused, snapshot.shipFlight?.feedback.audioLevel, snapshot.shipFlight?.suspended])
 
   return {
     stageRef,
@@ -120,11 +118,10 @@ export function useSystemMapRuntime() {
     snapshot,
     paused,
     failed,
-    previewEnabled,
     clearInput: () => engineRef.current?.clearInput(),
-    previewAction: (action: ShipPreviewAction) => {
+    shipAction: (action: ShipFlightAction) => {
       void effectsAudioRef.current?.unlock()
-      engineRef.current?.previewAction(action)
+      engineRef.current?.shipAction(action)
       canvasRef.current?.focus({ preventScroll: true })
     },
     localPoint: (event: { clientX: number, clientY: number, currentTarget: HTMLCanvasElement }) => {
@@ -140,7 +137,7 @@ export function useSystemMapRuntime() {
     zoomBy: (delta: number) => engineRef.current?.zoomBy(delta),
     togglePaused: () => {
       const value = !paused
-      if (!value && snapshot.cameraPreview) void effectsAudioRef.current?.unlock()
+      if (!value && snapshot.shipFlight) void effectsAudioRef.current?.unlock()
       effectsAudioRef.current?.setFeedback(undefined, false)
       engineRef.current?.setSimulationPaused(value)
       setPaused(value)

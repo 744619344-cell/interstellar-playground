@@ -1,13 +1,13 @@
 import { SYSTEM_BODIES, getSystemBody, isSystemBodyId } from '../domain/registry'
 import { SHIP_ROUTE_IDS, SHIP_ROUTE_NAME, SHIP_ROUTE_PHASE_LABEL, shipRouteHint } from '../domain/shipRoute'
 import type { SystemMapSnapshot } from '../rendering/solar-system/systemMapEngine'
-import type { ShipPreviewAction } from '../rendering/spacecraft/shipCameraPreview'
+import type { ShipFlightAction } from '../rendering/spacecraft/shipFlightRuntime'
 import './ShipNavigationPanel.css'
 
-type NavigationState = NonNullable<SystemMapSnapshot['cameraPreview']>['navigation']
-const bodyName = (id: string) => isSystemBodyId(id) ? getSystemBody(id).displayName : '试验障碍'
+type NavigationState = NonNullable<SystemMapSnapshot['shipFlight']>['navigation']
+const bodyName = (id: string) => isSystemBodyId(id) ? getSystemBody(id).displayName : '障碍物'
 export default function ShipNavigationPanel({ state, onAction }: {
-  state: NavigationState; onAction: (action: ShipPreviewAction) => void
+  state: NavigationState; onAction: (action: ShipFlightAction) => void
 }) {
   const target = state.target
   const route = state.route
@@ -15,7 +15,7 @@ export default function ShipNavigationPanel({ state, onAction }: {
     : `${Math.abs(target.yaw) > 0.05 ? target.yaw > 0 ? '向左转' : '向右转' : ''} ${Math.abs(target.pitch) > 0.05 ? target.pitch > 0 ? '抬头' : '低头' : ''}`
   return <section className='ship-navigation-panel' aria-label='航行导航'>
     <strong>航行导航</strong>
-    <div className='ship-navigation-routes' role='group' aria-label='标杆航线'>
+    <div className='ship-navigation-routes' role='group' aria-label='目的地航线'>
       {SHIP_ROUTE_IDS.map((id) => (
         <button type='button' key={id} className='ship-camera-button' aria-pressed={route?.id === id}
           onClick={() => onAction(`route:${id}`)}>{SHIP_ROUTE_NAME[id]}航线</button>
@@ -47,6 +47,5 @@ export default function ShipNavigationPanel({ state, onAction }: {
         ? `自动制动 · ${bodyName(state.risk.id)} · 制动距离 ${state.risk.stoppingDistance.toFixed(1)} m` : '防撞保护就绪'}
     </output>
     <p className='ship-navigation-note'>航程需手动完成。辅助只修正船体朝向，不接管移动；空格会退出辅助并制动。W/S 前后、A/D 横移，方向随当前视线。抵达需停在安全净空并保持低相对速度。</p>
-    <button type='button' className='ship-camera-button' aria-pressed={state.safetyObstacle} onClick={() => onAction('safety')}>前方防撞试验</button>
   </section>
 }

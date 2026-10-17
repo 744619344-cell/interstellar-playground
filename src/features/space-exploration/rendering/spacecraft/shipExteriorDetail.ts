@@ -1,8 +1,7 @@
 import { Group, Mesh } from 'three'
 import { loadShipAsset } from './shipAssetLoader'
 import { ShipReviewLighting } from './shipVisibility'
-
-const exteriorUrl = new URL('../../../../assets/models/spacecraft-redesign-exterior-lod1.glb', import.meta.url).href
+import { SHIP_MODEL_ASSETS } from './shipModelAssets'
 
 /** Hysteresis prevents flicker; any interior or moving-door view keeps the real animated assembly. */
 export function distantExterior(distance: number, previous: boolean, cockpit: boolean, doorsOpen: boolean) {
@@ -24,7 +23,7 @@ export class ShipExteriorDetail {
   private failed = false
 
   constructor(private releaseModel: (model: Group) => void,
-    private load: (signal: AbortSignal) => Promise<Group> = signal => loadShipAsset(exteriorUrl, signal).then(gltf => gltf.scene)) {
+    private load: (signal: AbortSignal) => Promise<Group> = signal => loadShipAsset(SHIP_MODEL_ASSETS.exterior, signal).then(gltf => gltf.scene)) {
     this.root.visible = false
   }
 

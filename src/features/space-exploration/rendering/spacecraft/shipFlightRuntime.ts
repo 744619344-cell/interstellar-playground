@@ -1,4 +1,4 @@
-import { ConeGeometry, Group, Mesh, MeshStandardMaterial, SphereGeometry, Vector3 } from 'three'
+import type { Vector3 } from 'three'
 import { ShipViewCamera, type ShipViewMode } from './shipViewCamera'
 import { shipCabinOccupiesGate } from './shipCabinCamera'
 import { insideMasterInnerSweep } from './shipCabinVolume'
@@ -9,29 +9,27 @@ import { shipTargetInfo, type ShipNavigationBody } from '../../domain/shipNaviga
 import { stepNavigatedShip, shipBrakingRisk } from '../../domain/shipFlightSafety'
 import { createShipRoute, isShipRouteId, observeShipRoute, stepShipRoute, type ShipRouteId, type ShipRouteState } from '../../domain/shipRoute'
 import { isSystemBodyId, type SystemBodyId } from '../../domain/registry'
-import { rotateShipVector } from '../../domain/shipFlightMath'
 import { shipFeedback, type ShipFeedback } from '../../domain/shipFeedback'
-import { createThrusterVisuals, updateThrusterVisuals } from './shipThrusterVisuals'
-import { add3, length3, normalize3, scale3, sub3, type Vec3 } from '../../domain/vec3'
+import { add3, length3, scale3, sub3, type Vec3 } from '../../domain/vec3'
+import { shipBerthPosition } from '../../domain/shipBerth'
 import type { SystemMapWorld } from '../solar-system/systemMapWorld'
-import { disposeObject } from '../voyageResources'
 import { ShipModelRuntime } from './shipModelRuntime'
 import { ShipFrameStats } from './shipFrameStats'
 import { activateShipInteraction, createShipInteraction, isShipInteractionAnchor, selectShipInteraction,
   setShipSeated, stepShipInteraction, type ShipInteractionAnchor } from '../../domain/shipInteraction'
 
-export type ShipPreviewAction = 'enter' | 'follow' | 'cockpit' | 'cabin' | 'free' | 'reset' | 'obstacle'
+export type ShipFlightAction = 'enter' | 'follow' | 'cockpit' | 'cabin' | 'free' | 'reset' | 'retryModel'
   | 'zoomIn' | 'zoomOut' | 'cabinForward' | 'cabinBack' | 'cabinLeft' | 'cabinRight'
-  | 'assist' | 'clearTarget' | 'safety' | 'interact' | `anchor:${ShipInteractionAnchor}`
+  | 'assist' | 'clearTarget' | 'interact' | `anchor:${ShipInteractionAnchor}`
   | `target:${SystemBodyId}` | `route:${ShipRouteId}`
 interface WorldBody { id: SystemBodyId; center: Vec3; radius: number }
 
-export class ShipCameraPreview {
+export class ShipFlightRuntime {
   readonly input = new ShipPreviewInput()
   private flight = new ShipFlightSimulation()
   private rig = new ShipViewCamera(this.flight.snapshot().state)
-  private root = new Group()
-  private marker = new Group()
+  private active = false
+  private parked = true
   private seat = { x: 0, y: 0.8, z: -2 }
   private seatPitch = -0.35
   private standing?: Vec3
@@ -40,10 +38,7 @@ export class ShipCameraPreview {
     this.seat = seat; this.standing = standing; this.seatPitch = pitch ?? -0.35; this.rig.setSeat(seat, this.seatPitch, standing)
     this.rig.setCabinObstacles(this.model.cabinObstacles()); this.rig.setCabinVolume(this.model.cabinVolume()); this.frames.reset()
   })
-  private thrusters = createThrusterVisuals()
-  private obstacle = new Mesh(new SphereGeometry(2, 24, 16), new MeshStandardMaterial({ color: 0xefac55, wireframe: true }))
   private origin: Vec3
-  private obstacleCenter?: Vec3
   private userPaused = false
   private suspended = false
   private savedProjection: { fov: number; near: number }
@@ -52,33 +47,29 @@ export class ShipCameraPreview {
   private navigationBodies: ShipNavigationBody[] = []
   private contact?: string
   private contactSeconds = 0
-  private safetyObstacle = false
   private route?: ShipRouteState
   private interaction = createShipInteraction()
   private feedback: ShipFeedback = shipFeedback({}, this.flight.snapshot().state, false)
   private graphicsBackend?: string
 
-  constructor(private world: SystemMapWorld, origin: Vec3) {
+  constructor(private world: SystemMapWorld, earth: Vec3) {
     if (typeof window !== 'undefined' && import.meta.env.DEV) {
       const gl = world.renderer.getContext()
       const debug = gl.getExtension('WEBGL_debug_renderer_info')
       this.graphicsBackend = String(gl.getParameter(debug?.UNMASKED_RENDERER_WEBGL ?? gl.RENDERER))
     }
-    this.origin = { ...origin }
+    this.origin = shipBerthPosition(earth)
     this.savedProjection = { fov: world.camera.fov, near: world.camera.near }
-    const body = new Mesh(new SphereGeometry(1.5, 20, 12), new MeshStandardMaterial({ color: 0xbadce5, metalness: 0.4, roughness: 0.35 }))
-    const arrow = new Mesh(new ConeGeometry(1, 4, 12), new MeshStandardMaterial({ color: 0x21dff1, emissive: 0x053540 }))
-    arrow.rotation.x = -Math.PI / 2
-    arrow.position.z = -3
-    this.marker.add(body, arrow, this.thrusters.root)
-    this.root.add(this.marker, this.obstacle)
-    this.root.position.set(origin.x, origin.y, origin.z)
-    this.obstacle.visible = false
-    world.scene.add(this.root)
-    world.camera.fov = 55
-    world.camera.near = 0.05
-    world.camera.updateProjectionMatrix()
-    this.update(1 / 120, [])
+  }
+
+  setActive(active: boolean) {
+    this.active = active; this.clear()
+    Object.assign(this.world.camera, active ? { fov: 55, near: .05 } : this.savedProjection)
+    this.world.camera.updateProjectionMatrix()
+  }
+  retryModel() {
+    if (this.suspended || this.model.snapshot().status !== 'failed') return
+    this.model.suspend(true); this.model.suspend(false)
   }
 
   pause(paused: boolean) { this.userPaused = paused; this.flight.setPaused('user', paused); this.input.clear() }
@@ -110,7 +101,7 @@ export class ShipCameraPreview {
     if (down && handled && code === 'Space') this.assist = false
     return handled
   }
-  navigate(action: ShipPreviewAction) {
+  navigate(action: ShipFlightAction) {
     if (action === 'zoomIn' || action === 'zoomOut') this.zoom(action === 'zoomIn' ? -200 : 200)
     else if (['cabinForward', 'cabinBack', 'cabinLeft', 'cabinRight'].includes(action)) {
       if (this.canMoveCabin()) this.rig.moveCabin(action === 'cabinForward' ? .3 : action === 'cabinBack' ? -.3 : 0,
@@ -130,14 +121,6 @@ export class ShipCameraPreview {
     else if (action.startsWith('target:') && isSystemBodyId(action.slice(7))) {
       this.targetId = action.slice(7) as SystemBodyId
       if (this.route && this.route.id !== this.targetId) this.route = undefined
-    }
-    else if (action === 'safety') {
-      this.safetyObstacle = !this.safetyObstacle
-      const state = this.flight.snapshot().state
-      this.obstacleCenter = this.safetyObstacle
-        ? add3(state.position, scale3(rotateShipVector(state.orientation, { x: 0, y: 0, z: -1 }), 12)) : undefined
-      this.obstacle.visible = !!this.obstacleCenter
-      if (this.obstacleCenter) this.obstacle.position.copy(this.obstacleCenter as Vector3)
     }
   }
   interact() {
@@ -166,23 +149,11 @@ export class ShipCameraPreview {
     if (this.model.snapshot().status === 'ready') this.rig.setSeat(this.seat, this.seatPitch, this.standing)
     this.rig.setCabinObstacles(this.model.cabinObstacles()); this.rig.setCabinVolume(this.model.cabinVolume())
     this.clear()
-    this.obstacleCenter = undefined
-    this.obstacle.visible = false
+    this.parked = true
     this.targetId = undefined; this.assist = false; this.contact = undefined; this.contactSeconds = 0
-    this.safetyObstacle = false; this.route = undefined
+    this.route = undefined
     this.interaction = createShipInteraction()
   }
-  toggleObstacle() {
-    this.safetyObstacle = false
-    if (this.obstacleCenter) this.obstacleCenter = undefined
-    else {
-      const pose = this.rig.snapshot()
-      this.obstacleCenter = add3(pose.target, scale3(normalize3(sub3(pose.position, pose.target)), 10))
-    }
-    this.obstacle.visible = !!this.obstacleCenter
-    if (this.obstacleCenter) this.obstacle.position.copy(this.obstacleCenter as Vector3)
-  }
-
   private advanceNavigation(dt: number, worldBodies: readonly WorldBody[]) {
     const old = new Map(this.navigationBodies.map((b) => [b.id, b]))
     this.navigationBodies = worldBodies.map((b) => {
@@ -190,8 +161,6 @@ export class ShipCameraPreview {
       const prior = old.get(b.id)
       return { ...b, center, velocity: prior && dt > 0 ? scale3(sub3(center, prior.center), 1 / dt) : { x: 0, y: 0, z: 0 } }
     })
-    if (this.obstacleCenter) this.navigationBodies.push({ id: 'test-obstacle', center: this.obstacleCenter,
-      radius: 2, velocity: { x: 0, y: 0, z: 0 } })
     const fraction = this.flight.snapshot().alpha * SHIP_FLIGHT.stepSeconds
     let offset = -dt - fraction
     if (!this.userPaused && !this.suspended) this.contactSeconds = Math.max(0, this.contactSeconds - dt)
@@ -213,8 +182,11 @@ export class ShipCameraPreview {
 
   update(dt: number, worldObstacles: readonly WorldBody[]) {
     const moving = this.input.snapshot(), roaming = this.rig.snapshot().mode === 'cabin'
-    const command = roaming ? {} : moving
-    if (roaming && this.canMoveCabin() && Number.isFinite(dt) && dt > 0 && !moving.stabilize) {
+    const command = roaming || !this.active ? {} : moving
+    if (this.active && !this.userPaused && !this.suspended && (moving.throttle || moving.strafe) && !roaming) this.parked = false
+    const earth = worldObstacles.find(body => body.id === 'earth')
+    if (this.parked && earth) this.origin = shipBerthPosition(earth.center)
+    if (this.active && roaming && this.canMoveCabin() && Number.isFinite(dt) && dt > 0 && !moving.stabilize) {
       const time = Math.min(dt, .05), length = Math.max(1, Math.hypot(moving.throttle ?? 0, moving.strafe ?? 0))
       this.rig.moveCabin((moving.throttle ?? 0) * time / length, (moving.strafe ?? 0) * time / length, 0, this.innerOpen())
     }
@@ -224,19 +196,14 @@ export class ShipCameraPreview {
     const state = this.contact ? simulation.state : simulation.renderPose
     this.feedback = shipFeedback(command, simulation.state, !this.userPaused && !this.suspended)
     this.interaction = stepShipInteraction(this.interaction, dt, !this.userPaused && !this.suspended)
-    updateThrusterVisuals(this.thrusters, this.feedback)
-    this.marker.position.copy(state.position as Vector3)
-    this.marker.quaternion.set(state.orientation.x, state.orientation.y, state.orientation.z, state.orientation.w)
     const obstacles = worldObstacles.map((item) => ({ center: sub3(item.center, this.origin), radius: item.radius }))
-    if (this.obstacleCenter) obstacles.push({ center: this.obstacleCenter, radius: 2 })
     const pose = this.rig.update(state, dt, obstacles)
-    const inside = pose.mode === 'cockpit' || pose.mode === 'cabin'
+    const inside = this.active && (pose.mode === 'cockpit' || pose.mode === 'cabin')
     const fov = inside ? pose.interiorFov : 55
-    if (this.world.camera.fov !== fov) { this.world.camera.fov = fov; this.world.camera.updateProjectionMatrix() }
-    this.marker.visible = this.model.snapshot().status !== 'ready' && !pose.blocked && !inside && !pose.transitioning
-    this.model.update(state, this.origin, inside, !pose.blocked && !pose.transitioning,
+    if (this.active && this.world.camera.fov !== fov) { this.world.camera.fov = fov; this.world.camera.updateProjectionMatrix() }
+    this.model.update(state, this.origin, inside, !this.active || (!pose.blocked && !pose.transitioning),
       this.feedback.forward, this.interaction)
-    if (!pose.blocked) {
+    if (this.active && !pose.blocked) {
       this.world.camera.position.copy(add3(this.origin, pose.position) as Vector3)
       this.world.camera.up.copy(pose.up as Vector3)
       const target = add3(this.origin, pose.target)
@@ -248,8 +215,9 @@ export class ShipCameraPreview {
   snapshot() {
     const state = this.flight.snapshot().state
     return { ...this.rig.snapshot(), speed: length3(state.velocity), flightPosition: state.position,
-      orientation: state.orientation, obstacle: !!this.obstacleCenter, suspended: this.suspended,
-      navigation: { targetId: this.targetId, assist: this.assist, safetyObstacle: this.safetyObstacle,
+      worldPosition: add3(this.origin, state.position), parked: this.parked,
+      orientation: state.orientation, suspended: this.suspended,
+      navigation: { targetId: this.targetId, assist: this.assist,
         target: shipTargetInfo(state, this.navigationBodies.find((b) => b.id === this.targetId)),
         risk: shipBrakingRisk(state, this.navigationBodies), contact: this.contact,
         route: this.route ? { ...this.route } : undefined },
@@ -263,7 +231,7 @@ export class ShipCameraPreview {
   render() { this.model.render(this.world.renderer, this.world.camera) }
   destroy() {
     this.model.dispose()
-    this.clear(); this.flight.destroy(); this.root.removeFromParent(); disposeObject(this.root)
+    this.clear(); this.flight.destroy()
     Object.assign(this.world.camera, this.savedProjection)
     this.world.camera.updateProjectionMatrix()
   }

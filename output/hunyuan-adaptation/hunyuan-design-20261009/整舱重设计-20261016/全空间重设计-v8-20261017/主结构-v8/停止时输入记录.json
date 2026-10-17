@@ -1,0 +1,52 @@
+{
+  "status": "stopped_by_user",
+  "hunyuanSubmitted": false,
+  "totalAccepted": 46,
+  "images": [
+    {
+      "view": "Front",
+      "prompt": "Use case: precise-object-edit. This is the edit target, same complete spacecraft interior liner seen AXIALLY FROM FRONT. Make a targeted2D redesign of the existing high arch and floor material; keep the low lower walls, continuous floor, natural front canopy opening, rear closed roof, long hollow room and far EMPTY rear door.\nCROSS-SECTION: increase the deep curved arch height so the complete outer WIDTH/HEIGHT is about1.15, keeping width unchanged. Keep lower vertical walls LOW; all extra height belongs in smoothly curved shoulders/crown, not tall square walls. Raise the far rear arch/bulkhead consistently. Keep fore-aft LENGTH to HEIGHT about2.53; the far rear wall remains far down the continuous hollow room. The high arch and length are deliberate2D compensation cues, NOT frozen physical measurements.\nFLOOR MATERIAL: the entire floor TOP AND its exposed low nose lip must be unmistakably DARK MATTE GRAPHITE CHARCOAL, approximately sRGB35-55, with restrained fine nonslip texture and clear narrow dark metal panel seams. No ivory floor, no beige floor, no pale shiny reflections, no large white floor tiles. Keep warm ivory WALL and CEILING panels, graphite ribs/edges, restrained thin WARM-WHITE light strips, tiny cyan fasteners; lights should not bleach the dark floor. Clean precise seams, no torn/melted surfaces or grime. Far rear opening genuinely EMPTY to pale studio background, clipped upper corners, bottom flush at floor; preserve door size relative to its rear bulkhead and don't add door leaf/duplicate partition. Same level axial front framing, no outer sidewall visible, complete object with generous margin on a square canvas. Pale neutral studio background, no text, dimensions, furniture, seats, beds, consoles, engines, outer hull, glass or loose parts.",
+      "references": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/正视-门洞校正.png"
+      ],
+      "nativeFile": "exec-95003e1b-60cc-4d03-a6fc-fe7d68826a12.png",
+      "status": "generated_not_uploaded_unreviewed",
+      "sha256": "b4e4d1692c409da522b8e126fd5927e471a3fe73cb1750b8d95fdb635918cde4",
+      "savedFile": "exec-95003e1b-60cc-4d03-a6fc-fe7d68826a12.png"
+    },
+    {
+      "view": "Angle",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target, SAME complete hollow spacecraft liner, front-left45° view. Image2 is the SELECTED new high curved cross-section and dark floor reference. Match that same revised object. Keep width unchanged; increase full fore-aft length AND deep curved roof height by about15% relative to Image1. Preserve LENGTH/HEIGHT approximately2.53; front/rear WIDTH/HEIGHT approximately1.15 are2D generation-compensation ratios, not actual metric dimensions. Do not shorten the body when raising its roof. Keep low vertical lower walls, put added height in deep smooth curved shoulders/crown matching Image2, not straight tall square walls. Retain the natural open front canopy with low nose and sloped side rims, continuous full floor, rear60% intact closed roof, hollow room all the way to FAR rear wall and one genuinely EMPTY floor-flush clipped-corner doorway. No roof cutaway at rear and no new partition.\nUse unmistakable DARK MATTE GRAPHITE CHARCOAL across the ENTIRE floor, low exposed floor/nose lip and underside edge, sRGB35-55 diffuse with fine nonslip surface and precise restrained panel seams, no ivory/beige/pale floor and no broad bright reflections. Ivory wall/ceiling panels, graphite ribs, thin restrained warm-white strips and tiny cyan fasteners matching Image2. Clean manufacture, no grime/torn surfaces. Moderate-elevation left-front45° long-lens/near-isometric view of full isolated object, complete silhouette and ample margins, same neutral pale studio background. No furniture, cockpit equipment, glass, outer ship, engines, text/dimensions or grid. Keep rear door small relative to rear bulkhead, genuinely see studio background through it.",
+      "references": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左前45-门洞校正.png",
+        "generated-output:exec-95003e1b-60cc-4d03-a6fc-fe7d68826a12.png"
+      ],
+      "nativeFile": "exec-6dbae11f-d05d-4633-924f-433abcb0830d.png",
+      "status": "generated_not_uploaded_unreviewed",
+      "sha256": "921719302bd6150ceae20b619e04aea2f751688221c62d9b201f2f02300a6a04",
+      "savedFile": "exec-6dbae11f-d05d-4633-924f-433abcb0830d.png"
+    },
+    {
+      "view": "Rear",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target, the EXTERIOR REAR VIEW of the same complete spacecraft liner. Image2 supplies the selected revised deep-arch cross-section and charcoal floor of the SAME object. Keep level centered perpendicular rear camera, rear face only, no side or top surface visible. Raise the upper curved arch so the COMPLETE rear outer WIDTH/HEIGHT is approximately1.15, matching Image2; keep lower straight walls LOW, all extra height in deep smoothly curved shoulders and crown, no square box. Retain same full wall width, panel vocabulary, graphite narrow frame and restrained thin warm-white strips. Preserve the small rear doorway with clipped upper corners, opening aboutone-quarter wall width and45% of wall height, flush to floor. It is a genuine EMPTY passage, see the hollow room, dark interior floor and natural open front/studio background THROUGH it. No door leaf/gray panel/glass within portal, no duplicate wall. ENTIRE floor visible through doorway and low exposed floor/sill edge must be DARK MATTE GRAPHITE CHARCOAL sRGB35-55 like Image2, never pale ivory. Same ivory walls/roof, graphite ribs, clean crisp panel seams and small cyan fasteners. Full silhouette with generous margin on square canvas, neutral pale studio background and only subtle ground shadow. No text, grid, dimensions, furniture, engines, outer hull or loose parts. Ratio is2D compensation not a frozen metric drawing.",
+      "references": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/背面.png",
+        "generated-output:exec-95003e1b-60cc-4d03-a6fc-fe7d68826a12.png"
+      ],
+      "nativeFile": "exec-0f9fd2ec-3332-4616-bc7f-a0e3c1620732.png",
+      "status": "generated_not_uploaded_unreviewed",
+      "sha256": "3df7080aa5e2c29c415f27fcf89a8deee91e3cfaf3ce8c0a76e578035ffb4577",
+      "savedFile": "exec-0f9fd2ec-3332-4616-bc7f-a0e3c1620732.png"
+    },
+    {
+      "view": "Side",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target, SAME pure perpendicular side view of the spacecraft liner, low nose on LEFT and closed rear on RIGHT. Keep its outline, camera, LENGTH/HEIGHT about2.53, floor-to-roof height, sloped natural front canopy rim, rear roof, complete floor and panel bay arrangement UNCHANGED. Image2 is ONLY the updated material palette reference of this same liner. Make a local MATERIAL DESIGN change: the entire exposed low floor/plinth band and front nose lip, including the bottom edge, must be clearly dark matte graphite charcoal (sRGB35-55), matching the dark floor in Image2. Do not paint the ivory sidewall charcoal; retain ivory wall/roof panels, graphite narrow ribs, restrained warm-white strips and tiny cyan fasteners. Fine crisp clean panel seams, no torn edges, no grime. This is not a new object, not a cutaway or side door. True side view only, no visible top/front/back plane, no perspective foreshortening. Keep full silhouette and ample margin on the same pale neutral studio backdrop. No words, dimensions, furniture, glass, engines or outer ship.",
+      "references": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左面.png",
+        "generated-output:exec-95003e1b-60cc-4d03-a6fc-fe7d68826a12.png"
+      ],
+      "nativeFile": null,
+      "status": "interrupted_by_user_backend_unknown"
+    }
+  ]
+}
