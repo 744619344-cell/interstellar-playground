@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-18",
+  "server": "Vite 6.4.3 / port 5173",
+  "dependencies": "npm ci, existing lockfile, 85 packages, package files unchanged",
+  "root": {
+    "httpStatus": 200,
+    "title": "我们的宇宙",
+    "canvasCount": 1,
+    "pageErrors": [],
+    "consoleResource404Count": 1,
+    "resource404UrlIdentified": false
+  },
+  "interior": {
+    "httpStatus": 200,
+    "ready": true,
+    "bodyDataLoaded": "true",
+    "loadSeconds": 11.85,
+    "viewport": [
+      960,
+      720
+    ],
+    "deviceScaleFactor": 0.75,
+    "captureOnlyCanvasHeight": 520,
+    "viewScreenshots": [
+      "aft",
+      "cockpit",
+      "forward"
+    ],
+    "capturesShowAllGroupsEnabled": true,
+    "exposureTooBright": true,
+    "pageErrorsNotFullyCollected": true
+  },
+  "fullInteractionVerified": false,
+  "interactionCheck": "Stopped diagnostic after three successful view captures, before wheel/keyboard/drag/toggle checks; no interaction pass claimed.",
+  "firstCaptureAttempt": "1280x960 element screenshot timed out waiting for stability; retried as page captures at smaller desktop viewport.",
+  "publicUrlProvisioned": false,
+  "wholeCabinVisualAccepted": false,
+  "geometryOrMaterialModified": false
+}

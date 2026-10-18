@@ -1,0 +1,159 @@
+{
+  "baseCommit": "0f620b9b9623afbf86b4273e30f3d80407dfb94b",
+  "selectedAssembly": "assembly-v2.json",
+  "assemblyGroups": 7,
+  "uniqueOriginalFiles": 5,
+  "uniqueSourceBytes": 170467708,
+  "geometryOrMaterialModified": false,
+  "glassR10Preserved": true,
+  "glassLocalUserAccepted": true,
+  "wholeCabinVisualAccepted": false,
+  "productReplaced": false,
+  "committedOrPublished": false,
+  "staticViewpoints": 8,
+  "additionalLightingComparisons": 2,
+  "staticPageBrowserChecked": true,
+  "interactive3DVerified": false,
+  "remainingIssues": [
+    "v7 roof/hull first-surface gaps around 0.65-0.78 at three central samples",
+    "front/canopy interface coarse",
+    "source floor pale and joints rough",
+    "no full collision, human reach, folding animation or LOD acceptance",
+    "Live Three preview is overexposed; software renderer captures are slow, no performance acceptance"
+  ],
+  "files": [
+    {
+      "path": "assembled-v2-cockpit.png",
+      "bytes": 1263532,
+      "sha256": "b919d0739045250c69461bbe68e28997c22f1c3a9e8f8d709749d47d33157134"
+    },
+    {
+      "path": "assembled-v2-aft.png",
+      "bytes": 1307813,
+      "sha256": "e659d8b5eeecaa796e0a6bf122d194616929b16bdb505970775a3ee55f0f016e"
+    },
+    {
+      "path": "assembled-v2-forward.png",
+      "bytes": 1312401,
+      "sha256": "b18dbdea131f5c3b0a76e9a33039c42bd52961a76e60b29521e8174c96a4c40c"
+    },
+    {
+      "path": "assembled-v2-beds.png",
+      "bytes": 794822,
+      "sha256": "ba102a31ac38aca57d5ce648fc2bda1a984689ff52965690ee486220a638cf83"
+    },
+    {
+      "path": "assembled-v2-workbench.png",
+      "bytes": 750436,
+      "sha256": "bc1f359ede4cf5d0027b1deb13fe3a2a4e57f4b3009610b84d1f8f53504eae09"
+    },
+    {
+      "path": "assembled-v2-doorway.png",
+      "bytes": 679693,
+      "sha256": "8f870ee38cdcb756272e6ea8face709e38068215de32951a2c3f523714f97d2f"
+    },
+    {
+      "path": "assembled-v2-daylight-exterior.png",
+      "bytes": 393964,
+      "sha256": "066726979666924d8ebcd5da9a583d52d44f3966d2e81944aac2d047cea4f009"
+    },
+    {
+      "path": "assembled-v2-daylight-shell-side.png",
+      "bytes": 370816,
+      "sha256": "dfc9406749d227da669f703f83000e8e4c835061a0d1723a9b3958d5d5ad38ca"
+    },
+    {
+      "path": "review.html",
+      "bytes": 5450,
+      "sha256": "42c4728571bf7bef2fc1593b5469fdecc13da44b005cebc3a39214be730780e9"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 5090,
+      "sha256": "9f5c4b86e1279da3421b63bb81a95d25009534a7e69891c0146aa5b675e1bf99"
+    },
+    {
+      "path": "assembly-v2.json",
+      "bytes": 11223,
+      "sha256": "f787122ea093f870426bb1294115ad51ed57440ad0f2196e41a4ca9801546f50"
+    },
+    {
+      "path": "装配-v2-有限检查.json",
+      "bytes": 13355,
+      "sha256": "b5fc3a8f2c8f03daf09e836597dfa80923ba845029efc8a796f03c14324bb172"
+    },
+    {
+      "path": "已有来源与缺件.json",
+      "bytes": 9537,
+      "sha256": "01aac541bb15c1f7dab4e528574ba9d3a1895871bd395c31b1c90923fdfb7141"
+    },
+    {
+      "path": "静态审阅页-浏览器检查.json",
+      "bytes": 680,
+      "sha256": "71f0ab055ad25d33d58b04d728ce6866dc3db36e917687c318db856b78cd9533"
+    },
+    {
+      "path": "assembled-v2-render.json",
+      "bytes": 5260,
+      "sha256": "980e7ee579bbf03129f92f06122134a4dff8f3c2301677e9ad3e2ccee229e6c5"
+    },
+    {
+      "path": "assembled-v2-daylight-render.json",
+      "bytes": 3097,
+      "sha256": "f18380150c08a71bd808f249c6ed81096296317d5a4290aa0e4b132d6e6d7cdd"
+    },
+    {
+      "path": "review-static-desktop.png",
+      "bytes": 2195038,
+      "sha256": "032df84f8c53140da23c8085761e3bf2df1280a2c5c02c955a818ca176932945"
+    },
+    {
+      "path": "assembly_geometry.py",
+      "bytes": 2303,
+      "sha256": "5a05554636eadeb670eb1b4f845abd41147dfaea03fcace004b03db845fd2c96"
+    },
+    {
+      "path": "prepare_assembly.py",
+      "bytes": 5151,
+      "sha256": "cd3b9f1f3cb64e15b40b6fd787430af238a43e460ae1aa5221d4b819db1f651f"
+    },
+    {
+      "path": "check_assembly.py",
+      "bytes": 3666,
+      "sha256": "556893bec39ce0683635f3521652a76a772cfa918b7a5e5caf954b9108cb7ac2"
+    },
+    {
+      "path": "render_assembly.py",
+      "bytes": 5619,
+      "sha256": "80db002804f24e06effe575b2a8914b32d4b3b06c773e1689e88340e1c9eaf92"
+    },
+    {
+      "path": "project-running-desktop.png",
+      "bytes": 87823,
+      "sha256": "05ee8212ccc8f5ad87be38ba10ae8b86036ce2d78fd59f8058fae2663a8e4f3f"
+    },
+    {
+      "path": "live-3d-aft.png",
+      "bytes": 187075,
+      "sha256": "c17ff623a9e6e1064cb44f3c36a88ad743900002d30a01af967cbaa4f631564f"
+    },
+    {
+      "path": "live-3d-cockpit.png",
+      "bytes": 200835,
+      "sha256": "8059fc75f7c521f624bc947efc0910291da12f6f30d3077aa987e9d7c1f6f480"
+    },
+    {
+      "path": "live-3d-forward.png",
+      "bytes": 204850,
+      "sha256": "a581c0a7774ea6693b3f1dc6400e2baa629cf97c4bc0562f7db023086ae6afd2"
+    },
+    {
+      "path": "启动与实时3D-浏览器检查.json",
+      "bytes": 1202,
+      "sha256": "29e78a13903853a8790ce6b466183b5e33308577fe1396e4945d3c5b4cf9d796"
+    }
+  ],
+  "startup3DLoaded": true,
+  "liveViewCaptures": 3,
+  "fullInteractionVerified": false
+}

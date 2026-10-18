@@ -1,0 +1,39 @@
+{
+  "source": "前挡玻璃-清晰透光-r4.glb",
+  "sourceSha256": "f639fa2dd16380dacdbf2167fcd341202b0ef82163e7a0b447b6a2da11b4b489",
+  "candidate": "前挡玻璃-清晰透光-r5.glb",
+  "candidateSha256": "68424683c8f0fff3f64579d723bc75fa7f15b006c557f7e784e3219cb0e727fa",
+  "material": {
+    "name": "前挡与左右侧窗_清晰透光_r5",
+    "doubleSided": true,
+    "alphaMode": "BLEND",
+    "pbrMetallicRoughness": {
+      "baseColorFactor": [
+        0.008,
+        0.015,
+        0.02,
+        0.05
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.08
+    },
+    "extensions": {
+      "KHR_materials_ior": {
+        "ior": 1.46
+      },
+      "KHR_materials_specular": {
+        "specularFactor": 0.15,
+        "specularColorFactor": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "binaryAndGeometryUnchanged": true,
+  "initialScene": "Original complete assembly, including cabin furnishings",
+  "intent": "Clear interior visibility: remove r4 white diffuse veil; retain faint edge reflection.",
+  "physicalMultiPaneSimulation": false,
+  "visualAccepted": false
+}

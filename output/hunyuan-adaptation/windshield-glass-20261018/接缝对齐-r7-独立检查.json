@@ -1,0 +1,18 @@
+{
+  "candidateSha256": "c35091882cabef0f8c54023d22f8f6322cae4e26ca60c6147c77d32996bc1b64",
+  "r2Sha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "r2MaterialsExact": true,
+  "originalBinaryPrefixExact": true,
+  "other142MeshesExact": true,
+  "originalAccessorsExact": 585,
+  "originalIndicesAndUVExact": true,
+  "changedCanopyVertices": 2272,
+  "changedFaces": 2916,
+  "sourceCoincidentVerticesRemainCoincident": true,
+  "newDegenerateFaces": 0,
+  "reversedFacesAgainstTransportedReference": 0,
+  "minimumSignedAreaRatio": 0.030415891823061078,
+  "visualAccepted": false,
+  "browserInteractionVerified": false,
+  "exteriorReviewSha256": "a0ed16d6d8b9251083f1c6727f3450df80fad97e9099f17159e4931e7fd4ef60"
+}

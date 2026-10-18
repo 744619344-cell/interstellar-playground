@@ -1,0 +1,38 @@
+[
+  {
+    "image": "clear-r5-lit-cabin-detail-front.png",
+    "positionBlender": [
+      0,
+      12,
+      -0.25
+    ],
+    "targetBlender": [
+      0,
+      3.7,
+      -0.35
+    ],
+    "orthographicScale": 7.5,
+    "samples": 24,
+    "mode": "context",
+    "resolutionPercent": 75,
+    "cabinLight": true
+  },
+  {
+    "image": "clear-r5-lit-cabin-detail-left.png",
+    "positionBlender": [
+      -9,
+      11,
+      0.2
+    ],
+    "targetBlender": [
+      0,
+      3.7,
+      -0.5
+    ],
+    "orthographicScale": 8.25,
+    "samples": 24,
+    "mode": "context",
+    "resolutionPercent": 75,
+    "cabinLight": true
+  }
+]

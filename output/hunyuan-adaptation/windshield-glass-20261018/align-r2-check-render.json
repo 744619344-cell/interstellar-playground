@@ -1,0 +1,20 @@
+[
+  {
+    "image": "align-r2-check-front.png",
+    "positionBlender": [
+      0,
+      19,
+      3.8
+    ],
+    "targetBlender": [
+      0,
+      4,
+      0.4
+    ],
+    "orthographicScale": 10,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  }
+]

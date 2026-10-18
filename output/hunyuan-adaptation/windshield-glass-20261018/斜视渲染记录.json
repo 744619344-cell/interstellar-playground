@@ -1,0 +1,54 @@
+{
+  "renderer": "Blender 4.3.2 Cycles, actual GLB import; no image retouching",
+  "source": "output/hunyuan-adaptation/master-design-20261009/整舱统一母版-v6.glb",
+  "resolution": [
+    1200,
+    900
+  ],
+  "initialObliqueCameraBlender": {
+    "left": {
+      "position": [
+        -16,
+        6.1,
+        3.8
+      ],
+      "target": [
+        0,
+        4,
+        0.4
+      ],
+      "orthographicScale": 11
+    },
+    "right": {
+      "position": [
+        16,
+        6.1,
+        3.8
+      ],
+      "target": [
+        0,
+        4,
+        0.4
+      ],
+      "orthographicScale": 11
+    },
+    "quarter": {
+      "position": [
+        -12,
+        15,
+        7
+      ],
+      "target": [
+        0,
+        2,
+        0
+      ],
+      "orthographicScale": 11
+    }
+  },
+  "initialSamples": 24,
+  "diagnosticShellAndGlassSamples": 8,
+  "laterSameCameraSourceReview": "source-review-render.json",
+  "laterSameCameraGlassReview": "glass-review-render.json",
+  "postProcessing": "None; initial denoise failed because this Blender build lacks OpenImageDenoise, then disabled; no denoised output used."
+}

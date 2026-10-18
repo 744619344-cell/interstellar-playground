@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前挡玻璃 · 清晰透光 r5</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101923;color:#e3edf5;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:32px}h1{font-size:28px;margin:0 0 8px}p{color:#aebfce;margin:8px 0 20px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button,a{font:inherit;color:#c7e8ff;background:#22384a;border:1px solid #46647b;padding:9px 18px;border-radius:8px;text-decoration:none;cursor:pointer}
+button[aria-pressed=true]{background:#28628b;color:white}figure{margin:0;min-width:0}figcaption{padding:10px;background:#20303f}img{display:block;width:100%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notes{padding:18px;border:1px solid #3b5367;border-radius:10px;margin:24px 0}
+#interactive{height:720px;position:relative;display:none}#interactive canvas{display:block}#tools{display:none}#status{white-space:pre-wrap}
+</style>
+<main>
+<h1>前挡玻璃 · 清晰透光 r5</h1>
+<p>以看清舱内为首要目标：低遮盖、低反射，去掉上一版的白雾和明显折射遮挡。玻璃仍保留在模型中，船壳、窗框及内舱形状保留。</p>
+<nav><button data-side="cabin-detail-front" aria-pressed="true">正前方</button><button data-side="cabin-detail-left" aria-pressed="false">左前方</button>
+<a href="前挡玻璃-清晰透光-r5.glb" download>下载 r5（含内舱）</a><button id="start">打开 3D 对照</button></nav>
+<section class="pair" aria-label="同一实际内舱，有无玻璃对照">
+<figure><figcaption>无外窗玻璃参考：同一内舱与照明</figcaption><img id="before" src="clear-open-lit-cabin-detail-front.png" alt="同机位临时关闭外窗玻璃的参考图"></figure>
+<figure><figcaption>r5：保留清晰玻璃，查看舱内</figcaption><img id="after" src="clear-r5-lit-cabin-detail-front.png" alt="隔着r5玻璃观察原内舱的实际模型渲染"></figure>
+</section>
+<div class="notes">
+<p>右图是真实 GLB 合显，保留船壳、外窗和仓库现有完整内舱；没有移除顶棚、侧墙或设备来假装视线通畅。两图使用相同机位和舱内照明，左图仅为关闭外窗玻璃的诊断参考。</p>
+<p>其他方向仍可能被原内舱的顶棚、墙面或设备挡住，玻璃透明不能使这些实体也透明。这版只调整窗面材质，等待你判断。</p>
+<p>对照灯光属于审阅场景；GLB 内舱、几何与原件保持。<a href="review-r3.html">保留的 r3 对照</a> · <a href="review-r2.html">原黑块修复对照</a></p>
+<p>静态图可直接打开；3D 对照需从项目开发服务打开并使用项目已有 Three.js 依赖。</p>
+</div>
+<details class="notes"><summary>无额外舱内照明的观察</summary>
+<p>保留初查画面：偏暗和内部结构遮挡仍存在，不将玻璃透光等同于所有方向都能看见所有设备。</p>
+<section class="pair"><figure><figcaption>r4 诊断：白雾未通过</figcaption><img src="clear-r4-probe-cabin-front.png" alt="初始照明下的前窗透明检查" loading="lazy"></figure>
+<figure><figcaption>r4 诊断：内部结构遮挡</figcaption><img src="clear-r4-probe-cabin-left.png" alt="初始照明下的左前窗透明检查" loading="lazy"></figure></section></details>
+<nav id="tools"><button data-version="candidate" aria-pressed="true">清晰透光 r5</button><button data-version="source" aria-pressed="false">上一版 r3</button>
+<button data-view="cabin-detail-front">正前方</button><button data-view="cabin-detail-left">左前方</button><button data-view="quarter">前斜视</button>
+<label><input type="checkbox" id="shell" checked>船壳</label><label><input type="checkbox" id="glass" checked>外窗玻璃</label>
+<label><input type="checkbox" id="context" checked>原内舱</label></nav>
+<p id="status" role="status">拖拽旋转、右键平移、滚轮缩放；WASD / 方向键移动，Q / E 升降。</p>
+<section id="interactive" aria-label="完整内舱与玻璃三维对照"></section>
+</main>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+for(const button of document.querySelectorAll('[data-side]'))button.onclick=()=>{
+ const side=button.dataset.side;
+ document.querySelector('#before').src=`clear-open-lit-${side}.png`;
+ document.querySelector('#after').src=`clear-r5-lit-${side}.png`;
+ document.querySelectorAll('[data-side]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+};
+document.querySelector('#start').onclick=async event=>{
+ const button=event.currentTarget;button.disabled=true;
+ document.querySelector('#status').textContent='正在打开 3D 对照…';
+ try{await (await import('./viewer-r5.mjs')).start();button.hidden=true;}
+ catch(error){button.disabled=false;document.querySelector('#status').textContent='3D 对照未能打开：'+error.message+'。上方实际模型渲染仍可查看。';}
+};
+</script>
+</html>

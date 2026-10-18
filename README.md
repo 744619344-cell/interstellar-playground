@@ -2,6 +2,8 @@
 
 “我们的宇宙”是一套面向桌面 Web 的单画布太阳系探索项目。打开项目根地址即进入新版太阳系，不依赖查询参数、旧版航行入口或微信小程序。
 
+2026-10-18 本地接续：玻璃局部 r10 已获用户确认，四件混元原件已完成独立等比试装，产品尚未替换、整舱未验收。最新入口为 [内舱试装](output/hunyuan-adaptation/interior-assembly-20261018/review.html)，真实限制、复现步骤与提交推送授权见[唯一任务 AY 节](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md#ay-2026-10-18-用户授权提交推送并交回本地开发)，文件清单见 [本地交接清单](docs/local-handoff-20261018.json)。下方早期停止、玻璃黑块未修复等描述保留为历史，以最新任务节为准。
+
 2026-10-17：用户已停止当前飞船返修并要求换模型接手。未通过的新内舱及玻璃黑块仍未解决；接手状态、可复用代码、实测检查与本机未提交素材范围见[唯一任务末尾交接记录](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md)。下文 `output/` 和 `assets-source/` 中的实验入口可能只存在于本机，不能视为本次提交包含或验收通过的资产。
 
 用户指定的历史整合包已提供[交接附件下载](https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip)（1.084 GB，原包 SHA256 与远端一致）。归档说明和完整校验值见[附件页面](https://github.com/744619344-cell/interstellar-playground/releases/tag/integration-20261008-archive-20261017)；该历史包不代表包含后续 v7/v8 全部本机素材或已通过模型验收。

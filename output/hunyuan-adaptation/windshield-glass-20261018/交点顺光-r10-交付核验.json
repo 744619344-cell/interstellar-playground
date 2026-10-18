@@ -1,0 +1,111 @@
+{
+  "selected": "前挡玻璃-r2交点顺光-r10.glb",
+  "status": "changes_requested",
+  "visualAccepted": true,
+  "staticViews": 8,
+  "baseline": "r9 geometry and r2 material",
+  "onlyChange": "795 junction vertex normals",
+  "browserInteractionVerified": false,
+  "remainingIssue": "右侧强反光与原边缘/交点细小粗糙仍在",
+  "productReplaced": false,
+  "committedOrPublished": false,
+  "files": [
+    {
+      "path": "junction-r10-final-left.png",
+      "bytes": 1513620,
+      "sha256": "6d07ea623bbeead9433f89a9d4b6de9439b8e59df837f24825321996313e68ea"
+    },
+    {
+      "path": "junction-r10-final-right.png",
+      "bytes": 1486829,
+      "sha256": "ac60090c495e800711a7c44e553b840458203fa07807e0ebc33e681badfe37da"
+    },
+    {
+      "path": "junction-r10-extra-quarter.png",
+      "bytes": 545577,
+      "sha256": "a3d79482f3f4bb0e1fca7bacd4a4e19817c30d64c3eccbae645c01a7e992ef85"
+    },
+    {
+      "path": "junction-r10-extra-quarter-right.png",
+      "bytes": 537870,
+      "sha256": "82d3eb46a3178f5a14b6519746114477e3fab91fce8e424bbd4be62516ecbbae"
+    },
+    {
+      "path": "junction-r10-extra-front.png",
+      "bytes": 566779,
+      "sha256": "e91727a40c6f279e47649977879ef933c5c32a572c193791894e4a2aa766fee5"
+    },
+    {
+      "path": "junction-r10-extra-top.png",
+      "bytes": 505745,
+      "sha256": "3c1e5cb82bee25fa96e155e801ec0f679017a2a8c5be86c118799eee37f286e8"
+    },
+    {
+      "path": "junction-r10-extra-back.png",
+      "bytes": 357549,
+      "sha256": "12ac1fab869504b46565c6546ef37c52d9d39e6cc590c09ecb6b3290a19ab7c6"
+    },
+    {
+      "path": "junction-r10-extra-bottom.png",
+      "bytes": 393209,
+      "sha256": "8cfc363ecbe7704db2f39ab58c2dbd5d0ee2abe3b89a8ae7610314c425bcd1c6"
+    },
+    {
+      "path": "前挡玻璃-r2交点顺光-r10.glb",
+      "bytes": 19413276,
+      "sha256": "8a5cbaf4d60a92d348326c872e5145646525a131006ae7d79fd0b6f7882ab066"
+    },
+    {
+      "path": "前挡玻璃-r2交点顺光-外观审阅-r10.glb",
+      "bytes": 19413340,
+      "sha256": "17f70f7906c9e067835819e87ebcc74d88555045bc84d5e5fa8f2bf56eb38bed"
+    },
+    {
+      "path": "前挡玻璃-r2交点顺光-r10-记录.json",
+      "bytes": 945,
+      "sha256": "461c691829215e6e1c368e82bae59371ccc80b2f1b6ab96535fb6434d291cef6"
+    },
+    {
+      "path": "交点顺光-r10-独立检查.json",
+      "bytes": 551,
+      "sha256": "170bb3dcb2fba9180c58010f76db67b94153bf662c14341a60e151d867da58db"
+    },
+    {
+      "path": "junction-r10-final-render.json",
+      "bytes": 600,
+      "sha256": "780cd67c026258d3852337eb37e58fdb9a60f4508293268c5295f7910a0c123c"
+    },
+    {
+      "path": "junction-r10-extra-render.json",
+      "bytes": 1779,
+      "sha256": "60c7bf7756aa7d2a0c12448f55b55af108cead841df65557d4bdd636663d54bf"
+    },
+    {
+      "path": "review.html",
+      "bytes": 5008,
+      "sha256": "8f5bae5d9408d132ab7d4be4673148088ea79a27155dc0093b7b8d2a0d91fbe6"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 4421,
+      "sha256": "6cd6a914667174991b56e3780cf53678efabac532ff9b6420087455828b0e2b1"
+    },
+    {
+      "path": "repair_junction_normals.py",
+      "bytes": 2911,
+      "sha256": "45e67664e6d9a17c871a0e41007cfc92a7e75c75649e3452bedef429c4d504ed"
+    },
+    {
+      "path": "verify_junction_r10.py",
+      "bytes": 2620,
+      "sha256": "f749e9a756fdfcfb8981df171ed332aafac2dbb37251e12062c488a18b4145fd"
+    },
+    {
+      "path": "junction-r10-six-view-diagnostic-sheet.png",
+      "bytes": 1011565,
+      "sha256": "40007fca0a3becf7382da1c9b5baedfe0bf5fc9f0c14c9ca3cc15116e706ad7f"
+    }
+  ],
+  "userDecision": "2026-10-18 用户：可以了；玻璃局部确认保留，开始已有混元内舱组装",
+  "acceptanceScope": "仅r10玻璃局部，不代表整舱或运行时通过"
+}

@@ -1,0 +1,135 @@
+{
+  "stage": "pressure-window-material-r3",
+  "htmlLocalReferencesChecked": 9,
+  "reviewImages": {
+    "pressure-r3-left.png": [
+      1200,
+      900
+    ],
+    "pressure-r3-right.png": [
+      1200,
+      900
+    ],
+    "pressure-r3-quarter.png": [
+      1200,
+      900
+    ],
+    "pressure-r3-isolated-glass-left.png": [
+      1200,
+      900
+    ],
+    "pressure-r3-inside-check-eye-left.png": [
+      600,
+      450
+    ],
+    "pressure-r3-inside-check-eye-right.png": [
+      600,
+      450
+    ]
+  },
+  "imagesEdited": false,
+  "browserInteractionVerified": false,
+  "applicationChecksRun": false,
+  "files": [
+    {
+      "path": "build_pressure_glass_r3.py",
+      "bytes": 3126,
+      "sha256": "1308ccdb13e70aab4570de1c48947468b62ecacb7fbaa20167589a4dabfecdae"
+    },
+    {
+      "path": "pressure-r3-glass-left.png",
+      "bytes": 1198397,
+      "sha256": "2868e48b17b97d9dd0e1c8021cd05c3432165983f5afeb68bf1dfc10a4cdf40e"
+    },
+    {
+      "path": "pressure-r3-glass-render.json",
+      "bytes": 242,
+      "sha256": "30d2181c613caff61ded43a7ff751a676744cb28045bb02052e2e6cd5080cf35"
+    },
+    {
+      "path": "pressure-r3-inside-check-eye-left.png",
+      "bytes": 576822,
+      "sha256": "d6aa7aa1eb5e601d1f63589a459f45ad26866b9a9ac559849300960f0c63dcef"
+    },
+    {
+      "path": "pressure-r3-inside-check-eye-right.png",
+      "bytes": 571526,
+      "sha256": "52713f51f2b712402a6962398421a9da6587797e9ca6ac123d8ba3c374535600"
+    },
+    {
+      "path": "pressure-r3-inside-check-render.json",
+      "bytes": 577,
+      "sha256": "ca3ff05a3cf0784e61d152c484f800b62231571777c90d4bb4382eac1faad122"
+    },
+    {
+      "path": "pressure-r3-isolated-glass-left.png",
+      "bytes": 1192644,
+      "sha256": "600c9a0f28da0fae2034ef98382d866c9a2de2b6364e5fd8b0d7678632168751"
+    },
+    {
+      "path": "pressure-r3-isolated-glass-render.json",
+      "bytes": 281,
+      "sha256": "7ad0c72c5f39134ccd5e23f745fcc70086712cce809724a0a7af6d065f8a227c"
+    },
+    {
+      "path": "pressure-r3-left.png",
+      "bytes": 1622800,
+      "sha256": "573f684f786c557d4d390e2ea222f1b9da7ba3ba73d7aea671709ad53ce3e5f3"
+    },
+    {
+      "path": "pressure-r3-quarter.png",
+      "bytes": 1807669,
+      "sha256": "de9c54c70f71190ee41c212567227977b7d4ffb0fabdffbd023270ed2ce57b58"
+    },
+    {
+      "path": "pressure-r3-render.json",
+      "bytes": 713,
+      "sha256": "1277f9df1edb153018f3068e1d3676bb7f99db37684651a0635fad24c2c77af6"
+    },
+    {
+      "path": "pressure-r3-right.png",
+      "bytes": 1579621,
+      "sha256": "eb7bc044f153fcc29296853995e914fb75feece7f5f6f9e334bb6c5e954f9e0b"
+    },
+    {
+      "path": "render_review.py",
+      "bytes": 4516,
+      "sha256": "60fbea273ce7072b4fba4ebfc71eb591f4f9df570fab030111cbf0db6c8c7fb3"
+    },
+    {
+      "path": "review.html",
+      "bytes": 5849,
+      "sha256": "e28743295a178d6c0087a81bebdd1f8f99d02f6184c0076d39c832af66711588"
+    },
+    {
+      "path": "verify_pressure_glass_r3.py",
+      "bytes": 2472,
+      "sha256": "8c0925ef8c2a592b819959611a6f7a97ab88055b76622df143bb08a626c53f5c"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 4492,
+      "sha256": "a3e64e9fa3c11a71292d3f914c77605c6a6caa8c4dc11ff90eddf8d90f70445b"
+    },
+    {
+      "path": "前挡玻璃-航天舷窗审阅-r3.glb",
+      "bytes": 18813868,
+      "sha256": "3adbc53714ccebae56c09896c021f415e402c4f7e145759809bc3e0269a1e60e"
+    },
+    {
+      "path": "前挡玻璃-航天舷窗材质-r3.glb",
+      "bytes": 18813804,
+      "sha256": "53a734bdde12a0a5ce51b2139619d8818459ebb13c4e8a87f847fc307c788a1c"
+    },
+    {
+      "path": "航天舷窗-r3-材质记录.json",
+      "bytes": 1631,
+      "sha256": "822952f30c33a9841e13e7b428670fb4d5ac248b7535cab9aaf0cd991881748d"
+    },
+    {
+      "path": "航天舷窗-r3-独立核验.json",
+      "bytes": 584,
+      "sha256": "ec6704e6898342ab9e50ef6fb9c189a312a1708b42d708cee7eb7745830760b1"
+    }
+  ]
+}

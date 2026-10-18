@@ -1,0 +1,30 @@
+{
+  "constraintIterations": 572,
+  "maxConstraintCorrection": 0.18333027290621812,
+  "source": "前挡玻璃-材质分离候选-r2.glb",
+  "sourceSha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "candidate": "前挡玻璃-r2接缝对齐-r8.glb",
+  "candidateSha256": "997ee5e842127067f00ab06c4a207ae1ae4babbc658531ef58459d3f138c8a51",
+  "changedCanopyVertices": 5658,
+  "totalCanopyVertices": 12468,
+  "changedSourceBounds": [
+    [
+      -2.3310883045196533,
+      -1.0373337268829346,
+      -7.804195880889893
+    ],
+    [
+      2.3343145847320557,
+      3.007986068725586,
+      -1.406581997871399
+    ]
+  ],
+  "maxDisplacement": 0.6071973032302119,
+  "materialRestoredExactlyFromR2": true,
+  "trianglesAddedOrRemoved": false,
+  "hullChanged": false,
+  "visualAccepted": false,
+  "status": "diagnostic-superseded",
+  "reason": "交点位置已补齐，但仍沿用早期形变法线；实际存储POSITION仅2376点局部变化，制作记录5658包含双精度计算噪声，未作为最终候选。",
+  "supersededBy": "前挡玻璃-r2接缝对齐-r9.glb"
+}

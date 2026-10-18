@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip",
+    "archiveBytes": 1084019895,
+    "directoryEntries": 471,
+    "glbEntries": 47,
+    "exactByteSizeMatchesForV7OrConsoleV2": [],
+    "newSourcePathMatches": [],
+    "inspection": "HTTP206 archive directory only; original model bytes not downloaded or validated"
+  },
+  {
+    "url": "https://github.com/744619344-cell/interstellar-playground/releases/download/hull-build-dependencies-20261017/hull-build-dependencies-20261017.zip",
+    "archiveBytes": 1108198243,
+    "directoryEntries": 500,
+    "glbEntries": 220,
+    "exactByteSizeMatchesForV7OrConsoleV2": [],
+    "newSourcePathMatches": [],
+    "inspection": "HTTP206 archive directory only; original model bytes not downloaded or validated"
+  }
+]

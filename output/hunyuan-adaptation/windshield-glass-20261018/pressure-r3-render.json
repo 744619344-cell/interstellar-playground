@@ -1,0 +1,50 @@
+[
+  {
+    "image": "pressure-r3-left.png",
+    "positionBlender": [
+      -16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 48,
+    "mode": "exterior"
+  },
+  {
+    "image": "pressure-r3-right.png",
+    "positionBlender": [
+      16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 48,
+    "mode": "exterior"
+  },
+  {
+    "image": "pressure-r3-quarter.png",
+    "positionBlender": [
+      -12,
+      15,
+      7
+    ],
+    "targetBlender": [
+      0,
+      2,
+      0
+    ],
+    "orthographicScale": 11,
+    "samples": 48,
+    "mode": "exterior"
+  }
+]

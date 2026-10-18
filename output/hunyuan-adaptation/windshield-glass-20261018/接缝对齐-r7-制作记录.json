@@ -1,0 +1,30 @@
+{
+  "constraintIterations": 8,
+  "maxConstraintCorrection": 0.024609461813334104,
+  "source": "前挡玻璃-材质分离候选-r2.glb",
+  "sourceSha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "candidate": "前挡玻璃-r2接缝对齐-r7.glb",
+  "candidateSha256": "c35091882cabef0f8c54023d22f8f6322cae4e26ca60c6147c77d32996bc1b64",
+  "changedCanopyVertices": 2272,
+  "totalCanopyVertices": 12468,
+  "changedSourceBounds": [
+    [
+      -2.048548936843872,
+      1.4294066429138184,
+      -5.349804878234863
+    ],
+    [
+      2.045748472213745,
+      2.787782669067383,
+      -3.253399133682251
+    ]
+  ],
+  "maxDisplacement": 0.6071925941031957,
+  "materialRestoredExactlyFromR2": true,
+  "trianglesAddedOrRemoved": false,
+  "hullChanged": false,
+  "visualAccepted": false,
+  "status": "diagnostic-superseded",
+  "reason": "上下竖线纵向位置改善，但完整尺寸同机位图仍有横梁交点折线，未作为最终候选。",
+  "supersededBy": "前挡玻璃-r2接缝对齐-r9.glb"
+}

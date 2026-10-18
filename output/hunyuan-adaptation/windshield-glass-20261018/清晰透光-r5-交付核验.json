@@ -1,0 +1,92 @@
+{
+  "stage": "clear-glass-r5",
+  "htmlLocalReferencesChecked": 7,
+  "actualRenderImages": {
+    "clear-r5-lit-cabin-detail-front.png": [
+      900,
+      675
+    ],
+    "clear-r5-lit-cabin-detail-left.png": [
+      900,
+      675
+    ],
+    "clear-open-lit-cabin-detail-front.png": [
+      1200,
+      900
+    ],
+    "clear-open-lit-cabin-detail-left.png": [
+      1200,
+      900
+    ]
+  },
+  "geometryHiddenForCandidate": false,
+  "fullCabinIncluded": true,
+  "temporaryReviewCabinLighting": true,
+  "lightsExportedToGlb": false,
+  "browserInteractionVerified": false,
+  "applicationChecksRun": false,
+  "files": [
+    {
+      "path": "前挡玻璃-清晰透光-r5.glb",
+      "bytes": 18813716,
+      "sha256": "68424683c8f0fff3f64579d723bc75fa7f15b006c557f7e784e3219cb0e727fa"
+    },
+    {
+      "path": "清晰透光-r5-材质记录.json",
+      "bytes": 1111,
+      "sha256": "a5c09202c51170e1895f745de81b9d7d47ad56cce666c0ae4de239e833d366b4"
+    },
+    {
+      "path": "清晰透光-r5-独立核验.json",
+      "bytes": 353,
+      "sha256": "c6f6b091eb43bf5362d18766b6bbf77d7828f8edcc608f7919b03696fa60a22a"
+    },
+    {
+      "path": "build_clear_glass_r5.py",
+      "bytes": 2130,
+      "sha256": "9c9e22f2807e96df5aad7d2216a0f8fbab2c7807f26fb7ac53d4ca1903c2597d"
+    },
+    {
+      "path": "verify_clear_glass_r4.py",
+      "bytes": 1721,
+      "sha256": "a418060cb52a57283e4552875168b1180f41425ff847d92c5935c020c1688f61"
+    },
+    {
+      "path": "render_review.py",
+      "bytes": 5285,
+      "sha256": "42f8e8a56f95cf56a83c3127d724c0c75bedc8ae0e9c2f3ada7c0327b5a200e0"
+    },
+    {
+      "path": "review.html",
+      "bytes": 5113,
+      "sha256": "e507441c4036063d4263c447a86544c3080e1063b267899fdc6b59693f9199a8"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 4684,
+      "sha256": "0fb97f779661a9627855c11f7a1ced34c687c305dd740530ec7d0bb912a3cbc6"
+    },
+    {
+      "path": "clear-r5-lit-cabin-detail-front.png",
+      "bytes": 1211337,
+      "sha256": "43630128682da66bc9ff89bfe70943b2885b64e4f85ed977038abd56afaf1108"
+    },
+    {
+      "path": "clear-r5-lit-cabin-detail-left.png",
+      "bytes": 1096457,
+      "sha256": "99314c0ab82e2cef93cca27392791876d4bc763bb90d9fdec2857663c39c7ca7"
+    },
+    {
+      "path": "clear-open-lit-cabin-detail-front.png",
+      "bytes": 2090047,
+      "sha256": "0142df70ac6a709a59c98a08bebbfffd79b8b8303b00f64cee4a61fad9ad6e49"
+    },
+    {
+      "path": "clear-open-lit-cabin-detail-left.png",
+      "bytes": 1875555,
+      "sha256": "926c768215378945b3c9906d2cbb52f80eb1fd6f57948d4381bef1e2221b2921"
+    }
+  ],
+  "latestUserDecision": "rejected-too-transparent",
+  "supersededBy": "前挡玻璃-r2接缝对齐-r7.glb"
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>混元内舱 · 实际装船试装</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111c27;color:#e2edf5;font:16px/1.7 system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:28px}h1{font-size:28px;margin:0 0 8px}p{color:#b8c9d5}nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+button,a{font:inherit;color:#d7efff;background:#244059;border:1px solid #55788e;border-radius:8px;padding:8px 16px;text-decoration:none;cursor:pointer}button[aria-pressed=true]{background:#28688e}
+figure{margin:0}img{display:block;width:100%}figcaption,.notes{padding:14px;background:#1c3041}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notes{margin:20px 0;border-radius:8px}.notes p{margin:6px 0}
+#interactive{display:none;height:740px}#interactive canvas{display:block}#tools{display:none}#status{white-space:pre-wrap}summary{cursor:pointer}
+</style>
+<main><h1>混元内舱 · 实际装船试装</h1>
+<p>已确认的玻璃 r10 + 主结构 v7 + 主仪表台 v2 + 原双座椅 + 两件折叠床 v1 + 工作台 v1。仅整件摆放与等比缩放，当前为待审阅试装。</p>
+<nav><button data-image="aft" aria-pressed="true">后舱向后看</button><button data-image="cockpit" aria-pressed="false">驾驶区</button><button data-image="forward" aria-pressed="false">后舱向前看</button><button id="start">打开 3D 试装</button></nav>
+<figure><img id="main-image" src="assembled-v2-aft.png" alt="主结构、玻璃及全部家具同时存在的实际模型渲染"><figcaption id="caption">向后看：右舷工作台在画面左，左舷前后两件折叠床在画面右。两床同高，中央通道留空。</figcaption></figure>
+<div class="notes"><p>画面直接来自真实 GLB，保留所有试装部件和原玻璃。床使用同一个静态来源的两个实例；当前没有展开或机械动作。</p>
+<p>仍待解决：v7 壳顶余量、前窗/主结构衔接、源地板发白及接缝粗糙。技术检查不代表整舱美术、完整碰撞或人体可达性通过。</p>
+<p>静态图可直接审阅；3D 需通过项目开发服务打开。<a href="assembly-v2.json" download>下载装配参数</a> <a href="装配-v2-有限检查.json">有限检查记录</a></p></div>
+<details class="notes"><summary>家具、后门与外观检查</summary>
+<section class="pair"><figure><img src="assembled-v2-beds.png" alt="两件折叠床真实静态来源" loading="lazy"><figcaption>左舷折叠床原件，前后同高。</figcaption></figure>
+<figure><img src="assembled-v2-workbench.png" alt="右舷工作台真实来源" loading="lazy"><figcaption>右舷工作台朝向通道。</figcaption></figure>
+<figure><img src="assembled-v2-doorway.png" alt="主结构原有后门开口" loading="lazy"><figcaption>主结构原有后门开口，未重复叠放旧隔舱。</figcaption></figure>
+<figure><img src="assembled-v2-daylight-exterior.png" alt="保留r10外观与玻璃的整船试装" loading="lazy"><figcaption>原船壳与玻璃保留；外观日光对照关闭临时舱内审阅灯。</figcaption></figure></section>
+<a href="assembled-v2-daylight-shell-side.png">原壳侧面</a></details>
+<nav id="tools"><button data-view="aft">后舱向后</button><button data-view="forward">后舱向前</button><button data-view="cockpit">驾驶区</button><button data-view="beds">折叠床</button><button data-view="workbench">工作台</button><button data-view="exterior">整船</button>
+<label><input id="shell" type="checkbox" checked>外壳</label><label><input id="glass" type="checkbox" checked>玻璃</label><label><input id="cabin" type="checkbox" checked>主结构</label><label><input id="furniture" type="checkbox" checked>设备与家具</label></nav>
+<p id="status" role="status">先查看上方真实模型图片。3D 开关用于显式观察来源，不代表关掉部件后的画面就是完整试装。</p><section id="interactive" aria-label="实际装船交互预览"></section></main>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+const captions={aft:'向后看：右舷工作台在画面左，左舷前后两件折叠床在画面右。两床同高，中央通道留空。',
+ cockpit:'驾驶区：原双座椅、主仪表台 v2 和已确认玻璃 r10 合显，侧通路未加落地操纵台。',
+ forward:'向前看：左舷双床、右舷工作台、驾驶区与前窗同时存在；源接缝和粗糙保留供判断。'};
+for(const button of document.querySelectorAll('[data-image]'))button.onclick=()=>{
+ document.querySelector('#main-image').src=`assembled-v2-${button.dataset.image}.png`;
+ document.querySelector('#caption').textContent=captions[button.dataset.image];
+ document.querySelectorAll('[data-image]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+};
+document.querySelector('#start').onclick=async event=>{
+ const button=event.currentTarget;button.disabled=true;document.querySelector('#status').textContent='正在打开实际试装…';
+ try{await(await import('./viewer.mjs')).start();button.hidden=true;}
+ catch(error){button.disabled=false;document.querySelector('#status').textContent='3D 试装未能打开：'+error.message+'。上方实模图片仍可查看。';}
+};
+</script></html>

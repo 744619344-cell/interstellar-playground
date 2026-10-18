@@ -1,0 +1,24 @@
+{
+  "viewport": [
+    1440,
+    1000
+  ],
+  "httpStatus": 200,
+  "staticImagesLoaded": 5,
+  "viewSwitches": [
+    {
+      "view": "cockpit",
+      "caption": "驾驶区：原双座椅、主仪表台 v2 和已确认玻璃 r10 合显，侧通路未加落地操纵台。"
+    },
+    {
+      "view": "forward",
+      "caption": "向前看：左舷双床、右舷工作台、驾驶区与前窗同时存在；源接缝和粗糙保留供判断。"
+    },
+    {
+      "view": "aft",
+      "caption": "向后看：右舷工作台在画面左，左舷前后两件折叠床在画面右。两床同高，中央通道留空。"
+    }
+  ],
+  "pageErrors": [],
+  "interactive3DVerified": false
+}

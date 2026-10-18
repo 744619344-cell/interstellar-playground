@@ -1,0 +1,1061 @@
+{
+  "branch": "codex/cloud-handoff-20261013",
+  "baseCommit": "0f620b9b9623afbf86b4273e30f3d80407dfb94b",
+  "activeTask": "docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md",
+  "handoffSection": "AY",
+  "selectedAssembly": "output/hunyuan-adaptation/interior-assembly-20261018/assembly-v2.json",
+  "selectedGlass": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2交点顺光-r10.glb",
+  "glassLocalUserAccepted": true,
+  "wholeCabinVisualAccepted": false,
+  "productReplaced": false,
+  "deliveryAuthorization": "User requested commit and push for local development; no deployment or additional asset changes.",
+  "fullInteractionVerified": false,
+  "live3DViewsCaptured": [
+    "aft",
+    "cockpit",
+    "forward"
+  ],
+  "remainingIssues": [
+    "Overexposed live interior preview",
+    "v7 roof/hull and front/canopy interface",
+    "Pale source floor and rough seams",
+    "Full movement/zoom/visibility restoration, collision/human clearance and performance not accepted"
+  ],
+  "historicalManifests": [
+    "docs/cloud-handoff-manifest.json",
+    "docs/cloud-interior-assets-20261018.json"
+  ],
+  "runtimeDependencies": [
+    "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶预览资源.mjs",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶预览运行.mjs",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护观察移动.mjs"
+  ],
+  "hashScope": "Raw UTF-8/LF working files and binary bytes; manifest excludes itself.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 19866,
+      "sha256": "c757a0d493259d684471473610950b32974697a32fce90ee3b63fe0b4fdffc76"
+    },
+    {
+      "path": "docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md",
+      "bytes": 652569,
+      "sha256": "c658d0e2ac1e43cf6c38458f10d5331574f7177735eeb44a89351c2c23e551b6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元原始模型.glb",
+      "bytes": 44098852,
+      "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元原始模型.glb",
+      "bytes": 33411084,
+      "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元原始模型.glb",
+      "bytes": 34845712,
+      "sha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/混元原始模型.glb",
+      "bytes": 38698784,
+      "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护观察移动.mjs",
+      "bytes": 3211,
+      "sha256": "59c0b177c8b38e9097d65ef29cb83f1d043a10f581d2631c26ddaccc05d940fe"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶预览资源.mjs",
+      "bytes": 2402,
+      "sha256": "8f41ce7953107c931a6ddb92ee3ded88a6b4f5c4d9a4d11d0b4d51ee4ec6cc44"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶预览运行.mjs",
+      "bytes": 2188,
+      "sha256": "801a45906eae04f6d5adb0d85a79825063b0a322b6f1806ecaf204fe79ca185d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-aft.png",
+      "bytes": 1307813,
+      "sha256": "e659d8b5eeecaa796e0a6bf122d194616929b16bdb505970775a3ee55f0f016e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-beds.png",
+      "bytes": 794822,
+      "sha256": "ba102a31ac38aca57d5ce648fc2bda1a984689ff52965690ee486220a638cf83"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-cockpit.png",
+      "bytes": 1263532,
+      "sha256": "b919d0739045250c69461bbe68e28997c22f1c3a9e8f8d709749d47d33157134"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-daylight-exterior.png",
+      "bytes": 393964,
+      "sha256": "066726979666924d8ebcd5da9a583d52d44f3966d2e81944aac2d047cea4f009"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-daylight-render.json",
+      "bytes": 3097,
+      "sha256": "f18380150c08a71bd808f249c6ed81096296317d5a4290aa0e4b132d6e6d7cdd"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-daylight-shell-side.png",
+      "bytes": 370816,
+      "sha256": "dfc9406749d227da669f703f83000e8e4c835061a0d1723a9b3958d5d5ad38ca"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-diagnostics-sheet.png",
+      "bytes": 1099428,
+      "sha256": "0205bccfc93a431a302cc79a18ed80076a87e08e84944b95f40499e6539e07d5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-doorway.png",
+      "bytes": 679693,
+      "sha256": "8f870ee38cdcb756272e6ea8face709e38068215de32951a2c3f523714f97d2f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-exterior.png",
+      "bytes": 405333,
+      "sha256": "f893e0a31647f505a33852d06a8421a9450cd8805f7290bfa4dd554194312d92"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-forward.png",
+      "bytes": 1312401,
+      "sha256": "b18dbdea131f5c3b0a76e9a33039c42bd52961a76e60b29521e8174c96a4c40c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-render.json",
+      "bytes": 5260,
+      "sha256": "980e7ee579bbf03129f92f06122134a4dff8f3c2301677e9ad3e2ccee229e6c5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-shell-side.png",
+      "bytes": 376312,
+      "sha256": "3b0d9cb157d0a1dd7ec07f6722c6c2ebc78250fc0f05c7df26606e88fdb0b314"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembled-v2-workbench.png",
+      "bytes": 750436,
+      "sha256": "bc1f359ede4cf5d0027b1deb13fe3a2a4e57f4b3009610b84d1f8f53504eae09"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembly-v1.json",
+      "bytes": 10729,
+      "sha256": "86df1e6414ef57c3f3859516acd0f468086a1b9a2f730ad0421ddbe3026e2080"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembly-v2.json",
+      "bytes": 11223,
+      "sha256": "f787122ea093f870426bb1294115ad51ed57440ad0f2196e41a4ca9801546f50"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/assembly_geometry.py",
+      "bytes": 2303,
+      "sha256": "5a05554636eadeb670eb1b4f845abd41147dfaea03fcace004b03db845fd2c96"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/check_assembly.py",
+      "bytes": 3666,
+      "sha256": "556893bec39ce0683635f3521652a76a772cfa918b7a5e5caf954b9108cb7ac2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/interior-probe-aft.png",
+      "bytes": 1561210,
+      "sha256": "e8c9ddeed63d4156f4f08eb872bc44629b1057c79903f2b08e6049ca69b75c4f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/interior-probe-cockpit.png",
+      "bytes": 1414300,
+      "sha256": "6942e9a89d392e2ddb24d37dd022ca2406793bda0aa50476b57b0853ecd41a82"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/interior-probe-forward.png",
+      "bytes": 1532024,
+      "sha256": "5309a47857eb9951383416fcf9eb52047f58af55ecfe20d881ece524fd7ef970"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/interior-probe-render.json",
+      "bytes": 3328,
+      "sha256": "96feab650553ecafb5df39738a609d91760e0437a817b138da63636e24ee3ae8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/inventory_existing_sources.py",
+      "bytes": 5228,
+      "sha256": "5c36c3cb7ac07798e948f10db647d0dea54110c06d41e6b4008c2ca5c3e454b3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/live-3d-aft.png",
+      "bytes": 187075,
+      "sha256": "c17ff623a9e6e1064cb44f3c36a88ad743900002d30a01af967cbaa4f631564f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/live-3d-cockpit.png",
+      "bytes": 200835,
+      "sha256": "8059fc75f7c521f624bc947efc0910291da12f6f30d3077aa987e9d7c1f6f480"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/live-3d-forward.png",
+      "bytes": 204850,
+      "sha256": "a581c0a7774ea6693b3f1dc6400e2baa629cf97c4bc0562f7db023086ae6afd2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/prepare_assembly.py",
+      "bytes": 5151,
+      "sha256": "cd3b9f1f3cb64e15b40b6fd787430af238a43e460ae1aa5221d4b819db1f651f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/project-running-desktop.png",
+      "bytes": 87823,
+      "sha256": "05ee8212ccc8f5ad87be38ba10ae8b86036ce2d78fd59f8058fae2663a8e4f3f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/render_assembly.py",
+      "bytes": 5619,
+      "sha256": "80db002804f24e06effe575b2a8914b32d4b3b06c773e1689e88340e1c9eaf92"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/review-static-desktop.png",
+      "bytes": 2195038,
+      "sha256": "032df84f8c53140da23c8085761e3bf2df1280a2c5c02c955a818ca176932945"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/review.html",
+      "bytes": 5450,
+      "sha256": "42c4728571bf7bef2fc1593b5469fdecc13da44b005cebc3a39214be730780e9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/viewer.mjs",
+      "bytes": 5090,
+      "sha256": "9f5c4b86e1279da3421b63bb81a95d25009534a7e69891c0146aa5b675e1bf99"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/启动与实时3D-浏览器检查.json",
+      "bytes": 1202,
+      "sha256": "29e78a13903853a8790ce6b466183b5e33308577fe1396e4945d3c5b4cf9d796"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/已有来源与缺件.json",
+      "bytes": 9537,
+      "sha256": "01aac541bb15c1f7dab4e528574ba9d3a1895871bd395c31b1c90923fdfb7141"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/装船试装-v2-交付核验.json",
+      "bytes": 5144,
+      "sha256": "2c2575cfd0c82eb1f94fb221a222f7700c5db0c12b9d080ee6646617e33e580a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/装配-v2-有限检查.json",
+      "bytes": 13355,
+      "sha256": "b5fc3a8f2c8f03daf09e836597dfa80923ba845029efc8a796f03c14324bb172"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/远端交接核对.json",
+      "bytes": 1653,
+      "sha256": "2833f182853d25e511a856ec3b1892686a595e6bbffd44fe6ad4dd64e6d1d2f2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/附件目录核对.json",
+      "bytes": 862,
+      "sha256": "5f20c8c562686a204881663481cb33621776b646a7058903549b61670fdb932c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/interior-assembly-20261018/静态审阅页-浏览器检查.json",
+      "bytes": 680,
+      "sha256": "71f0ab055ad25d33d58b04d728ce6866dc3db36e917687c318db856b78cd9533"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r2-check-front.png",
+      "bytes": 566562,
+      "sha256": "1d04875268ebf66025e18a1d9c665966ec64b4183098bf1eb0aed293050f94a7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r2-check-render.json",
+      "bytes": 295,
+      "sha256": "139c81125d355d724f6ae4d544fd0defc093a001828ba714f1968c28cc916e13"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r6-probe-left.png",
+      "bytes": 931779,
+      "sha256": "77043c4d6092f74778ffb79997b6292c1b6d4df25016f713fc96af398b3e6c3a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r6-probe-render.json",
+      "bytes": 590,
+      "sha256": "d11628c0bda5ed36c4471a81ccb0d7fadb1648b32e2c11845ef87fbc78044985"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r6-probe-right.png",
+      "bytes": 927432,
+      "sha256": "40b9c069fb4aaf118c0e256e8cc32b3a206c985d3e2256c60013b01f7397d751"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-extra-back.png",
+      "bytes": 766194,
+      "sha256": "8a236751ed1211db0bbefcc2449347c9e68ce5eed8cf8cc3a1284d62326cecf1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-extra-front.png",
+      "bytes": 1183614,
+      "sha256": "6f9e2f144ad3f0bb6cd39cb692161e034f6cf1a23e20313585ca722afcfa8cf3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-extra-quarter-right.png",
+      "bytes": 1121023,
+      "sha256": "91afff213e57a33bbd530659c379a93dbad8d476d704efab58377b467db09293"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-extra-quarter.png",
+      "bytes": 1149206,
+      "sha256": "225c6d9b3a2bf0c5ec3f36594b56f5f5292aa3dbeada92b387976f5046a48e35"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-extra-top.png",
+      "bytes": 1057937,
+      "sha256": "59ca5c1488cd261570ee148bb282b5a82006cd93ea7bc62e1bc8c6b7761666bf"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-final-left.png",
+      "bytes": 1516189,
+      "sha256": "99fd6003ed1d8a7d1c27bf4681f8a2cd8f0f4a6f1bbd2d3f39ae34bf4d4fcb4b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-final-render.json",
+      "bytes": 592,
+      "sha256": "93368208a6981516f8948151886fc8304eaac9aaabbe8cf8d0d6476a6fbc62b5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r7-final-right.png",
+      "bytes": 1487490,
+      "sha256": "eeb07a5cb98e893eb1eb26d635ba230844bc25321a87b14d10083efa800fc86d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r8-probe-left.png",
+      "bytes": 931487,
+      "sha256": "8143e18247477d30bcf8c7e87acd6e88ca94d87edfbf9ec38e1f8a961dafd854"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r8-probe-render.json",
+      "bytes": 590,
+      "sha256": "b805f9a9ce9e122d6da9b89d8a32388992ff5de80ec6aac494087edf957d22e2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r8-probe-right.png",
+      "bytes": 927628,
+      "sha256": "11824458858dfa9a3e298628c32e4588f46d4a0b696ae4a694ad8b176bf7e286"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-back.png",
+      "bytes": 357626,
+      "sha256": "802f72e85467f9c6b2cc4f9ea5e01e8c55042bc804d083d8a476749466a88a67"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-bottom.png",
+      "bytes": 393209,
+      "sha256": "d8d95023e0bea94a428c8c6e9004a6c03c3be706d4b7f5ea72b6ed6c23d1c25e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-front.png",
+      "bytes": 566794,
+      "sha256": "b38d1ce3e81b0532edbc578a62b4d068df636657938968616716fc583bd0dce4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-quarter-right.png",
+      "bytes": 537927,
+      "sha256": "82dd015bc789af81608cde34f5fac27e098c2a236bd5231976676c68387221f2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-quarter.png",
+      "bytes": 545823,
+      "sha256": "10dabaf005353157853d01dd14f3e097dce612396a7b50029f415d8aa4354274"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-render.json",
+      "bytes": 1779,
+      "sha256": "55e231b59728b4c61899e15011542e18e55833946f91a2919165f46af698a557"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-extra-low-top.png",
+      "bytes": 505919,
+      "sha256": "a55c3d0a0b54a12c5f4b3079ced42b36946d7229b2def0d6f0b79e0d54c0a4b5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-final-left.png",
+      "bytes": 1515299,
+      "sha256": "c5378f64bc61d81c60f0b869453ec4c1c81d46a690cc901e30ae320d134a2816"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-final-render.json",
+      "bytes": 592,
+      "sha256": "9d5d947dcad4269ad1ec6b0af05b2c576e49dbdd41c9af9dccaf268efe7fb91d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-final-right.png",
+      "bytes": 1487606,
+      "sha256": "4022363bb4639a9aaa10cb2ab851b11962e592e4e0d0575527f9a6d5c27aebf5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-probe-left.png",
+      "bytes": 931286,
+      "sha256": "b684d63314d63a9ba091ea7bbe89ec128c6f3c8fce1e8c4bdf30ac5f51814fd5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-probe-render.json",
+      "bytes": 590,
+      "sha256": "b8dce34595c60d97c7914f44c03171c56ccf39234d44392edd77f175e062379a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/align-r9-probe-right.png",
+      "bytes": 927715,
+      "sha256": "96a0461f386be3bd1c0b9cd8fb7cbfe03ece165fd630ae0df219fc800662bf1b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/alignment-r7-orientation-reference.npz",
+      "bytes": 340612,
+      "sha256": "5df18f118b781b76fc131b54487779420bbc015383e2288a14722d06d92404e7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/alignment-r8-orientation-reference.npz",
+      "bytes": 340612,
+      "sha256": "5df18f118b781b76fc131b54487779420bbc015383e2288a14722d06d92404e7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_aligned_glass_r6.py",
+      "bytes": 3921,
+      "sha256": "91e422e35e8ab1b4b2f5565323a5c1ee62b57cda1ccffd50a15cd8c7880a4ecd"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_aligned_glass_r7.py",
+      "bytes": 4315,
+      "sha256": "a5e95eba4c59db70a048fd99f16fc3ead807cc9ff752a49890d74f9a463bb7db"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_aligned_glass_r8.py",
+      "bytes": 2519,
+      "sha256": "67166ca5a68753c0dae0279bc530bcc6e5941d59b90973c512ffa95786079edc"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_aligned_glass_r9.py",
+      "bytes": 2424,
+      "sha256": "2aca2ff87996eed3c3a8abe3fb7d4cf72e97a3bcab71ce10cae4f210d559d8a9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_clear_glass_r4.py",
+      "bytes": 2138,
+      "sha256": "c425f9c7f6f77ff28f3dcb49e08fbb2e325a37b1929391f36477c8c54e8adfea"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_clear_glass_r5.py",
+      "bytes": 2130,
+      "sha256": "9c9e22f2807e96df5aad7d2216a0f8fbab2c7807f26fb7ac53d4ca1903c2597d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_glass_candidate.py",
+      "bytes": 4230,
+      "sha256": "f456e8747798b82d0f2cb658c037061674fffbdf554daafb0634dc99b8142dcf"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/build_pressure_glass_r3.py",
+      "bytes": 3126,
+      "sha256": "1308ccdb13e70aab4570de1c48947468b62ecacb7fbaa20167589a4dabfecdae"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r1-left.png",
+      "bytes": 1744451,
+      "sha256": "7a7e094e7863a7f49eaa55f1c7b1ceefe20d378c5dc52a58d60def843a701b6e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r1-quarter.png",
+      "bytes": 1928028,
+      "sha256": "af994cb2c35d232187b3a9d78805817260bf60b084d86b912b78b6194f21790f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r1-right.png",
+      "bytes": 1762652,
+      "sha256": "07db4c1fa8c372647aeea2c2e4b5a3fe680cfb243730353db268248b26d0ac47"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r2-left.png",
+      "bytes": 1740918,
+      "sha256": "0e8e424c024c62b09e23b033adb2222d331685116bac383c8ab7ea320bb60afa"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r2-quarter.png",
+      "bytes": 1977672,
+      "sha256": "74501ca70f2f307e8a0f5237279ef8560f5d457d614b8336cd0baf68e7e7777e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/candidate-r2-right.png",
+      "bytes": 1694836,
+      "sha256": "84a55f86d5af48ff1f2675badd3a94ca343bc1b559b5f182f381dd7ab172ac03"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-no-glass-cabin-front.png",
+      "bytes": 1123216,
+      "sha256": "e6539d0ddc56998941c53ba9114e55b6de42d53bc23f3efeed215bf1ee45bd3f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-open-lit-cabin-detail-front.png",
+      "bytes": 2090047,
+      "sha256": "0142df70ac6a709a59c98a08bebbfffd79b8b8303b00f64cee4a61fad9ad6e49"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-open-lit-cabin-detail-left.png",
+      "bytes": 1875555,
+      "sha256": "926c768215378945b3c9906d2cbb52f80eb1fd6f57948d4381bef1e2221b2921"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-open-lit-render.json",
+      "bytes": 644,
+      "sha256": "ae905ede38736246026a8ae2a4c3d5b7ac0907cc65e73715450c7cd96d4280b3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r3-context-cabin-front.png",
+      "bytes": 1198514,
+      "sha256": "c174f4d0bbaa8d2f6e538e4244c288f6f7bb71bc388f4f867910d6d1be396d3f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r4-lit-cabin-detail-front.png",
+      "bytes": 1930135,
+      "sha256": "017e5c7ce755f52efcc7812d0f10de44a4a32b3cc414e4e618aabbd5176c470b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r4-probe-cabin-front.png",
+      "bytes": 1076601,
+      "sha256": "6ed6dd694916e7b587e869a99ec0a97488084f2858e2e031f26122d9020b6a63"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r4-probe-cabin-left.png",
+      "bytes": 1037673,
+      "sha256": "963316acb8f65418b7b92a89e98cd8ba2b9eaf9429383e484ef3126ec2acfce2"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r4-probe-render.json",
+      "bytes": 555,
+      "sha256": "7774b24c124b900df551de71d09633cbb35d752e40ae5ae34bac83a26cfe8510"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r5-lit-cabin-detail-front.png",
+      "bytes": 1211337,
+      "sha256": "43630128682da66bc9ff89bfe70943b2885b64e4f85ed977038abd56afaf1108"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r5-lit-cabin-detail-left.png",
+      "bytes": 1096457,
+      "sha256": "99314c0ab82e2cef93cca27392791876d4bc763bb90d9fdec2857663c39c7ca7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/clear-r5-lit-render.json",
+      "bytes": 620,
+      "sha256": "33d94e2c367f9d2b762f33cd0aee4542c12fd2abfefce806aba9fc72ca449a5a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/diagnostic-glass-left.png",
+      "bytes": 1196746,
+      "sha256": "9a49013a7a640ff89eeef67648ecfb923b4bf022dac404819307694453b8baac"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/diagnostic-glass-render.json",
+      "bytes": 242,
+      "sha256": "1da48640d25be93e05bfc86294425f0bc51efc3c4d1386fbd2bee73983eed12b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/diagnostic-shell-left.png",
+      "bytes": 1750391,
+      "sha256": "404382d210e54afa92f7f2298e6fcfd3dddc37652c802a461a4129c128c63133"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/diagnostic-shell-render.json",
+      "bytes": 242,
+      "sha256": "c52ce3f7303cb94eb6b33f996d78c5c1432418bfb82e9c673389148c123bfce1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/export_exterior_review.py",
+      "bytes": 1176,
+      "sha256": "a694fa442da3ef75b82e829cdd606b389b47d6f68864fb276d4f427790b090bc"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/glass-review-left.png",
+      "bytes": 1515964,
+      "sha256": "ef38ce8736e1e228997e501093500832e838e2df3a7cb24a0fc365778707a9b8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/glass-review-render.json",
+      "bytes": 478,
+      "sha256": "1b1cae9d4b84d09ea0b56559e4d23fcb48f281aab5a74ce605bf002edb33f9b0"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/glass-review-right.png",
+      "bytes": 1487817,
+      "sha256": "d6b26285be4995f6c65c249a7f34b73de7edd1ef3fa558d9a6a5b58c1e1ebf0a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/glb_surface_io.py",
+      "bytes": 2482,
+      "sha256": "1e952421b44d342327adb2034bbbfbaaa8973e0e500f8905988c3e32151c1a06"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-normal-probe-left.png",
+      "bytes": 931495,
+      "sha256": "11a02437cb2a19977760a2190c8645943155946ee1449f3bdcedfc713e10748b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-normal-probe-render.json",
+      "bytes": 604,
+      "sha256": "260a9e8090515c36863c9954b3af48211dea6dcb9fb1f93d5bfe8c475c7f628b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-normal-probe-right.png",
+      "bytes": 927628,
+      "sha256": "f0e665638f911b90a25ed24c90962eee3a3602b72106bc884c3a36690d50ff7a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-back.png",
+      "bytes": 357549,
+      "sha256": "12ac1fab869504b46565c6546ef37c52d9d39e6cc590c09ecb6b3290a19ab7c6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-bottom.png",
+      "bytes": 393209,
+      "sha256": "8cfc363ecbe7704db2f39ab58c2dbd5d0ee2abe3b89a8ae7610314c425bcd1c6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-front.png",
+      "bytes": 566779,
+      "sha256": "e91727a40c6f279e47649977879ef933c5c32a572c193791894e4a2aa766fee5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-quarter-right.png",
+      "bytes": 537870,
+      "sha256": "82d3eb46a3178f5a14b6519746114477e3fab91fce8e424bbd4be62516ecbbae"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-quarter.png",
+      "bytes": 545577,
+      "sha256": "a3d79482f3f4bb0e1fca7bacd4a4e19817c30d64c3eccbae645c01a7e992ef85"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-render.json",
+      "bytes": 1779,
+      "sha256": "60c7bf7756aa7d2a0c12448f55b55af108cead841df65557d4bdd636663d54bf"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-extra-top.png",
+      "bytes": 505745,
+      "sha256": "3c1e5cb82bee25fa96e155e801ec0f679017a2a8c5be86c118799eee37f286e8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-final-left.png",
+      "bytes": 1513620,
+      "sha256": "6d07ea623bbeead9433f89a9d4b6de9439b8e59df837f24825321996313e68ea"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-final-render.json",
+      "bytes": 600,
+      "sha256": "780cd67c026258d3852337eb37e58fdb9a60f4508293268c5295f7910a0c123c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-final-right.png",
+      "bytes": 1486829,
+      "sha256": "ac60090c495e800711a7c44e553b840458203fa07807e0ebc33e681badfe37da"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/junction-r10-six-view-diagnostic-sheet.png",
+      "bytes": 1011565,
+      "sha256": "40007fca0a3becf7382da1c9b5baedfe0bf5fc9f0c14c9ca3cc15116e706ad7f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/original-left.png",
+      "bytes": 1680006,
+      "sha256": "1a495ee84d060b122449289e0f84e527d5d0ee1fb933faa9b40bb22732e0ed17"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/original-quarter.png",
+      "bytes": 1943221,
+      "sha256": "611496ba6300915c08bb8b3df7008ecbe67cea4a63a278dc7996f536630ecd82"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/original-right.png",
+      "bytes": 1623859,
+      "sha256": "04a304928926fb2bb300034999e811d8c97f7905ae31d858afb16197e0015e6c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-glass-left.png",
+      "bytes": 1198397,
+      "sha256": "2868e48b17b97d9dd0e1c8021cd05c3432165983f5afeb68bf1dfc10a4cdf40e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-glass-render.json",
+      "bytes": 242,
+      "sha256": "30d2181c613caff61ded43a7ff751a676744cb28045bb02052e2e6cd5080cf35"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-inside-check-eye-left.png",
+      "bytes": 576822,
+      "sha256": "d6aa7aa1eb5e601d1f63589a459f45ad26866b9a9ac559849300960f0c63dcef"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-inside-check-eye-right.png",
+      "bytes": 571526,
+      "sha256": "52713f51f2b712402a6962398421a9da6587797e9ca6ac123d8ba3c374535600"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-inside-check-render.json",
+      "bytes": 577,
+      "sha256": "ca3ff05a3cf0784e61d152c484f800b62231571777c90d4bb4382eac1faad122"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-isolated-glass-left.png",
+      "bytes": 1192644,
+      "sha256": "600c9a0f28da0fae2034ef98382d866c9a2de2b6364e5fd8b0d7678632168751"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-isolated-glass-render.json",
+      "bytes": 281,
+      "sha256": "7ad0c72c5f39134ccd5e23f745fcc70086712cce809724a0a7af6d065f8a227c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-left.png",
+      "bytes": 1622800,
+      "sha256": "573f684f786c557d4d390e2ea222f1b9da7ba3ba73d7aea671709ad53ce3e5f3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-quarter.png",
+      "bytes": 1807669,
+      "sha256": "de9c54c70f71190ee41c212567227977b7d4ffb0fabdffbd023270ed2ce57b58"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-render.json",
+      "bytes": 713,
+      "sha256": "1277f9df1edb153018f3068e1d3676bb7f99db37684651a0635fad24c2c77af6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/pressure-r3-right.png",
+      "bytes": 1579621,
+      "sha256": "eb7bc044f153fcc29296853995e914fb75feece7f5f6f9e334bb6c5e954f9e0b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/render_alignment_review.py",
+      "bytes": 393,
+      "sha256": "84809ef2f23c7670b469e6d900122a0c94cab086546614121c40a28cfc175adf"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/render_review.py",
+      "bytes": 5285,
+      "sha256": "42f8e8a56f95cf56a83c3127d724c0c75bedc8ae0e9c2f3ada7c0327b5a200e0"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/repair_junction_normals.py",
+      "bytes": 2911,
+      "sha256": "45e67664e6d9a17c871a0e41007cfc92a7e75c75649e3452bedef429c4d504ed"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/review-r2.html",
+      "bytes": 5008,
+      "sha256": "c7b5bb48bc3ffb491b4e65288351e1e6c3762e4a8772e5497203099fd4b30bb8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/review-r3.html",
+      "bytes": 5852,
+      "sha256": "c52ca26b2397cd98e8305582d55e67fdc2b32f735bc8b3bb30a97b959cc9d69f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/review-r5.html",
+      "bytes": 5116,
+      "sha256": "76714e3a308033b9baa56ef7cf98365498ec529b2286e47569447bb93b45e694"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/review-r9.html",
+      "bytes": 4895,
+      "sha256": "27e5a3b99c902460ba5d3eb2ab05e6e17ed5c8a9ee9506e9bd24bb8fc4602ed7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/review.html",
+      "bytes": 5008,
+      "sha256": "8f5bae5d9408d132ab7d4be4673148088ea79a27155dc0093b7b8d2a0d91fbe6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/source-review-left.png",
+      "bytes": 1508169,
+      "sha256": "2b601692835a4fb185676417aab5a7b490c402993eda76febeb392179ee9e4f0"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/source-review-render.json",
+      "bytes": 480,
+      "sha256": "b542a1514929adf77d5ebe32f6269783cd0543a2c0c2cec58b555a6999bde519"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/source-review-right.png",
+      "bytes": 1490432,
+      "sha256": "fdc9b05738a0b04c5412b23bfb16782c322ae799074cc3e8629bab6c3c52f406"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_aligned_glass_r7.py",
+      "bytes": 4116,
+      "sha256": "610594cc7de168ca59deba34c650d7757bc3bef548d250c2d4d0fe7e52b6f4cc"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_aligned_glass_r9.py",
+      "bytes": 4116,
+      "sha256": "ed376efb20ae9fe41d121cfbf30705552ca5336cc07e1030836598f7cae00a86"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_clear_glass_r4.py",
+      "bytes": 1721,
+      "sha256": "a418060cb52a57283e4552875168b1180f41425ff847d92c5935c020c1688f61"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_glass_candidate.py",
+      "bytes": 4088,
+      "sha256": "29ce11cf3c048b301eeb0ae9c215b73fb61492bb7e08690689a0af3d4cfb2862"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_junction_r10.py",
+      "bytes": 2620,
+      "sha256": "f749e9a756fdfcfb8981df171ed332aafac2dbb37251e12062c488a18b4145fd"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/verify_pressure_glass_r3.py",
+      "bytes": 2472,
+      "sha256": "8c0925ef8c2a592b819959611a6f7a97ab88055b76622df143bb08a626c53f5c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/viewer-r2.mjs",
+      "bytes": 4439,
+      "sha256": "897d0ca80ef58bdb593113b159529f983bf38256b8795ecc5504d59e09b792e9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/viewer-r3.mjs",
+      "bytes": 4492,
+      "sha256": "a3e64e9fa3c11a71292d3f914c77605c6a6caa8c4dc11ff90eddf8d90f70445b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/viewer-r5.mjs",
+      "bytes": 4684,
+      "sha256": "0fb97f779661a9627855c11f7a1ced34c687c305dd740530ec7d0bb912a3cbc6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/viewer-r9.mjs",
+      "bytes": 4424,
+      "sha256": "42e5fdae1eb6812b05b648f239e54dea10069f91b4322e4fba6ac5b5fe081f84"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/viewer.mjs",
+      "bytes": 4421,
+      "sha256": "6cd6a914667174991b56e3780cf53678efabac532ff9b6420087455828b0e2b1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/交付核验.json",
+      "bytes": 5731,
+      "sha256": "619456125696ac1da9dddd3ec33ba71bcf1cf619b71c75f49bcec7bc031aef9f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/交点法线-诊断-记录.json",
+      "bytes": 933,
+      "sha256": "f252e98682e2b42be115701c0eb6c25aa5c29a823af5fdc3a307273dec445838"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/交点法线-诊断.glb",
+      "bytes": 19413276,
+      "sha256": "8a5cbaf4d60a92d348326c872e5145646525a131006ae7d79fd0b6f7882ab066"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/交点顺光-r10-交付核验.json",
+      "bytes": 3762,
+      "sha256": "dd8ae1038547b74eba3683f22c8f375e2a786778c5cacca23f27ac90d5977284"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/交点顺光-r10-独立检查.json",
+      "bytes": 551,
+      "sha256": "170bb3dcb2fba9180c58010f76db67b94153bf662c14341a60e151d867da58db"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2交点顺光-r10-记录.json",
+      "bytes": 945,
+      "sha256": "461c691829215e6e1c368e82bae59371ccc80b2f1b6ab96535fb6434d291cef6"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2交点顺光-r10.glb",
+      "bytes": 19413276,
+      "sha256": "8a5cbaf4d60a92d348326c872e5145646525a131006ae7d79fd0b6f7882ab066"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2交点顺光-外观审阅-r10.glb",
+      "bytes": 19413340,
+      "sha256": "17f70f7906c9e067835819e87ebcc74d88555045bc84d5e5fa8f2bf56eb38bed"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-r6.glb",
+      "bytes": 19113500,
+      "sha256": "9a3c10cb2152c627b576a82da5a52d75d65243b27c2fff2cc3b6068a2490c19e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-r7.glb",
+      "bytes": 19113500,
+      "sha256": "c35091882cabef0f8c54023d22f8f6322cae4e26ca60c6147c77d32996bc1b64"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-r8.glb",
+      "bytes": 19113500,
+      "sha256": "997ee5e842127067f00ab06c4a207ae1ae4babbc658531ef58459d3f138c8a51"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-r9.glb",
+      "bytes": 19263388,
+      "sha256": "51bf079d26bab46db0c640b5f53fa34d78b7e03b85f4a3a8466857d1fd777005"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-外观审阅-r7.glb",
+      "bytes": 19113576,
+      "sha256": "a0ed16d6d8b9251083f1c6727f3450df80fad97e9099f17159e4931e7fd4ef60"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2接缝对齐-外观审阅-r9.glb",
+      "bytes": 19263460,
+      "sha256": "bc3b7a09f23649f1d5fe9fe2f78bfbaf32c4f49859b1fbf8e1f2382f9805eed5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-外观审阅.glb",
+      "bytes": 18813780,
+      "sha256": "e92744966b3d5e3162cf4a64cd07961d0a87ab4f998e6356ba42ea22fc65cc82"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-材质分离候选-r1.glb",
+      "bytes": 18813704,
+      "sha256": "89ba739f27a8d39e7aa9895411b7fbe6f11d7bc95bdfa8da34be52cadc030166"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-材质分离候选-r2.glb",
+      "bytes": 18813728,
+      "sha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-清晰透光-r4.glb",
+      "bytes": 18813712,
+      "sha256": "f639fa2dd16380dacdbf2167fcd341202b0ef82163e7a0b447b6a2da11b4b489"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-清晰透光-r5.glb",
+      "bytes": 18813716,
+      "sha256": "68424683c8f0fff3f64579d723bc75fa7f15b006c557f7e784e3219cb0e727fa"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-航天舷窗审阅-r3.glb",
+      "bytes": 18813868,
+      "sha256": "3adbc53714ccebae56c09896c021f415e402c4f7e145759809bc3e0269a1e60e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-航天舷窗材质-r3.glb",
+      "bytes": 18813804,
+      "sha256": "53a734bdde12a0a5ce51b2139619d8818459ebb13c4e8a87f847fc307c788a1c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/外观审阅文件.json",
+      "bytes": 446,
+      "sha256": "01508c9f8ba688f5b21affef8a6aef9d2426e5862dc2ea13217927c0a32c49c7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r6-制作记录.json",
+      "bytes": 1372,
+      "sha256": "01ef8f019dcfacbeabac66b4d5a4bb0d042afae727d8fd11da7a8f6696982a1d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r7-制作记录.json",
+      "bytes": 1027,
+      "sha256": "5ce95aca2aaf707b0e7698c4493e8f248c1545a481d59fb6deea8acb441725ed"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r7-独立检查.json",
+      "bytes": 734,
+      "sha256": "1cda59ef60161703ff4a970b04f1403255fbc34208d207ecdd5d09f67d045993"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r8-制作记录.json",
+      "bytes": 1092,
+      "sha256": "fd74ea23fd045f788373a9a1bd212b5ef9b7a78e316969da595c6590a50524f1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r9-交付核验.json",
+      "bytes": 3001,
+      "sha256": "b9521ab4338cafeb7c536370ec7ea8b755078446e9d7edaf724a456e9e4252eb"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r9-制作记录.json",
+      "bytes": 777,
+      "sha256": "3376c2e1a6ab9ccb66404e7b261e3bd08c50f5b31e9d4bca0b5886c988040dff"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/接缝对齐-r9-独立检查.json",
+      "bytes": 734,
+      "sha256": "f47de22980fe777a900c61bfc889c161404dae8a28e32ee364b8db05d8eea2d7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/斜视渲染记录.json",
+      "bytes": 1113,
+      "sha256": "6d4f797564b1f4b0c25d76bf1a6d19d603cf1395720e10d46518b61ba09eba31"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/材质分离-r1-检查.json",
+      "bytes": 1538,
+      "sha256": "4c77a02f0092422884a89a041c3368dcc5bdc03f2e92347707d2cb948109b143"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/材质分离-r2-检查.json",
+      "bytes": 1405,
+      "sha256": "28d7ee92e6833ba1ad1257d7a7182815933fc9c8c410c47bd483408bbc59bf60"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/清晰透光-r4-材质记录.json",
+      "bytes": 1275,
+      "sha256": "33efb89e51c737f70a749b5a73253f39a9a2e5ef1a4a6b70986fe5ee3fb18d24"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/清晰透光-r4-独立核验.json",
+      "bytes": 353,
+      "sha256": "c6f6b091eb43bf5362d18766b6bbf77d7828f8edcc608f7919b03696fa60a22a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/清晰透光-r5-交付核验.json",
+      "bytes": 2688,
+      "sha256": "499673a1a5c4ac9008a8d92bea59188924fd94b7d26b2542961c12aa681ea73a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/清晰透光-r5-材质记录.json",
+      "bytes": 1111,
+      "sha256": "a5c09202c51170e1895f745de81b9d7d47ad56cce666c0ae4de239e833d366b4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/清晰透光-r5-独立核验.json",
+      "bytes": 353,
+      "sha256": "c6f6b091eb43bf5362d18766b6bbf77d7828f8edcc608f7919b03696fa60a22a"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/独立保留与视线检查.json",
+      "bytes": 849,
+      "sha256": "b694fc2952e73cb4929364222acb2ba0d41cd4f7fc87452558c91248ac5721d3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/航天舷窗-r3-交付核验.json",
+      "bytes": 3903,
+      "sha256": "0a17e8e6910fc7df0d42edf27b4fa0d6bd39d265aa83271affb0ee3c5c310174"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/航天舷窗-r3-材质记录.json",
+      "bytes": 1631,
+      "sha256": "822952f30c33a9841e13e7b428670fb4d5ac248b7535cab9aaf0cd991881748d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/航天舷窗-r3-独立核验.json",
+      "bytes": 584,
+      "sha256": "ec6704e6898342ab9e50ef6fb9c189a312a1708b42d708cee7eb7745830760b1"
+    },
+    {
+      "path": "tools/verify_local_handoff.py",
+      "bytes": 2003,
+      "sha256": "d196b3eaef9ab2c5dc856e08dbe4e108e151cf7f226737e7ade8602992b9e5e9"
+    }
+  ]
+}

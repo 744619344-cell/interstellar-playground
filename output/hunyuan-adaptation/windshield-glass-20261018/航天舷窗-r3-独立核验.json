@@ -1,0 +1,27 @@
+{
+  "sourceAndRevisionShaMatch": true,
+  "binaryExact": true,
+  "allMeshAndMaterialAssignmentsExact": true,
+  "onlyGlassMaterialChanged": true,
+  "allOtherDocumentFieldsExact": true,
+  "allOtherMaterialsExact": true,
+  "activeReviewSceneOnlyDifference": true,
+  "glassPrimitives": [
+    {
+      "mesh": 109,
+      "triangles": 1227
+    },
+    {
+      "mesh": 109,
+      "triangles": 1055
+    },
+    {
+      "mesh": 110,
+      "triangles": 14181
+    }
+  ],
+  "physicalThicknessAdded": false,
+  "visualAccepted": false,
+  "khronosValidatorRun": false,
+  "browserInteractionRun": false
+}

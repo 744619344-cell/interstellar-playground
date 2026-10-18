@@ -1,0 +1,18 @@
+[
+  {
+    "image": "pressure-r3-glass-left.png",
+    "positionBlender": [
+      -16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 16,
+    "mode": "glass"
+  }
+]

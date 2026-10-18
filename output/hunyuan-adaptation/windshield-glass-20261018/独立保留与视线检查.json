@@ -1,0 +1,41 @@
+{
+  "sourceAndCandidateShaMatch": true,
+  "originalBinaryPrefixExact": true,
+  "allOriginalAccessorsExact": 582,
+  "hullTriangleMultisetAndWindingExact": 89997,
+  "otherMeshesUnchanged": 141,
+  "nodesScenesAnimationsUnchanged": true,
+  "finiteSidePaneRays": [
+    {
+      "z": -4.6,
+      "y": 0.45,
+      "hullHits": 2,
+      "allAssignedGlass": true
+    },
+    {
+      "z": -4.2,
+      "y": 0.7,
+      "hullHits": 2,
+      "allAssignedGlass": true
+    },
+    {
+      "z": -3.8,
+      "y": 0.9,
+      "hullHits": 2,
+      "allAssignedGlass": true
+    },
+    {
+      "z": -3.4,
+      "y": 1.1,
+      "hullHits": 2,
+      "allAssignedGlass": true
+    },
+    {
+      "z": -3.2,
+      "y": 1.4,
+      "hullHits": 2,
+      "allAssignedGlass": true
+    }
+  ],
+  "limitations": "Limited exterior rays; not a topology, full visibility or art acceptance."
+}

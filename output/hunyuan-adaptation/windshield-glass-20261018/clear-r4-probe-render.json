@@ -1,0 +1,36 @@
+[
+  {
+    "image": "clear-r4-probe-cabin-front.png",
+    "positionBlender": [
+      0,
+      15,
+      0.4
+    ],
+    "targetBlender": [
+      0,
+      3.7,
+      -0.55
+    ],
+    "orthographicScale": 9,
+    "samples": 24,
+    "mode": "context",
+    "resolutionPercent": 75
+  },
+  {
+    "image": "clear-r4-probe-cabin-left.png",
+    "positionBlender": [
+      -11,
+      12,
+      1
+    ],
+    "targetBlender": [
+      0,
+      3.7,
+      -0.55
+    ],
+    "orthographicScale": 9,
+    "samples": 24,
+    "mode": "context",
+    "resolutionPercent": 75
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "image": "source-review-left.png",
+    "positionBlender": [
+      -16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 32,
+    "mode": "exterior"
+  },
+  {
+    "image": "source-review-right.png",
+    "positionBlender": [
+      16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 32,
+    "mode": "exterior"
+  }
+]

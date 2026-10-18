@@ -1,0 +1,47 @@
+{
+  "checkedOn": "2026-10-18",
+  "branches": [
+    {
+      "name": "codex/cloud-handoff-20261013",
+      "sha": "01f7e825b38473fb3a9600cb9ee0a997620bf98c"
+    },
+    {
+      "name": "gh-pages",
+      "sha": "0de73e652d7bbc6d80211bd34db6a09a08b691a0"
+    },
+    {
+      "name": "main",
+      "sha": "af7452886ebab48ecae05da024d96a8d8d2e483b"
+    }
+  ],
+  "releases": [
+    {
+      "tag": "integration-20261008-archive-20261017",
+      "assets": [
+        {
+          "name": "integration-20261008.zip",
+          "bytes": 1084019895,
+          "url": "https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip",
+          "serverDeclaredDigest": "sha256:37852540eab5c00df71baf320624ac663824929935df488d9f4b4c7e9e92f947"
+        }
+      ]
+    },
+    {
+      "tag": "hull-build-dependencies-20261017",
+      "assets": [
+        {
+          "name": "hull-build-dependencies-20261017.zip",
+          "bytes": 1108198243,
+          "url": "https://github.com/744619344-cell/interstellar-playground/releases/download/hull-build-dependencies-20261017/hull-build-dependencies-20261017.zip",
+          "serverDeclaredDigest": "sha256:b0225ae595dfc9bddc93c6d2057632e81ba6f3aad82db0c3f1fc7a092ba4726c"
+        }
+      ]
+    }
+  ],
+  "mainTreeTruncated": false,
+  "newHunyuanSourcePathsFoundInMain": false,
+  "archiveInspection": "central directory only via HTTP Range; not full archive download, CRC or SHA verification",
+  "missingSourceQuestionPending": false,
+  "snapshotStatus": "historical-pre-update-inventory",
+  "resolvedByCommit": "0f620b9b9623afbf86b4273e30f3d80407dfb94b"
+}

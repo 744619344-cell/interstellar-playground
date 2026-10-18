@@ -1,0 +1,36 @@
+[
+  {
+    "image": "pressure-r3-inside-check-eye-left.png",
+    "positionBlender": [
+      -0.72,
+      3.2,
+      -0.15
+    ],
+    "targetBlender": [
+      -3,
+      4.2,
+      1
+    ],
+    "orthographicScale": 0,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50
+  },
+  {
+    "image": "pressure-r3-inside-check-eye-right.png",
+    "positionBlender": [
+      0.72,
+      3.2,
+      -0.15
+    ],
+    "targetBlender": [
+      3,
+      4.2,
+      1
+    ],
+    "orthographicScale": 0,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "image": "junction-r10-extra-quarter.png",
+    "positionBlender": [
+      -12,
+      15,
+      7
+    ],
+    "targetBlender": [
+      0,
+      2,
+      0
+    ],
+    "orthographicScale": 11,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  },
+  {
+    "image": "junction-r10-extra-quarter-right.png",
+    "positionBlender": [
+      12,
+      15,
+      7
+    ],
+    "targetBlender": [
+      0,
+      2,
+      0
+    ],
+    "orthographicScale": 11,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  },
+  {
+    "image": "junction-r10-extra-front.png",
+    "positionBlender": [
+      0,
+      19,
+      3.8
+    ],
+    "targetBlender": [
+      0,
+      4,
+      0.4
+    ],
+    "orthographicScale": 10,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  },
+  {
+    "image": "junction-r10-extra-top.png",
+    "positionBlender": [
+      0,
+      5,
+      18
+    ],
+    "targetBlender": [
+      0,
+      4,
+      0.4
+    ],
+    "orthographicScale": 11,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  },
+  {
+    "image": "junction-r10-extra-back.png",
+    "positionBlender": [
+      0,
+      -22,
+      5
+    ],
+    "targetBlender": [
+      0,
+      0,
+      0
+    ],
+    "orthographicScale": 19,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  },
+  {
+    "image": "junction-r10-extra-bottom.png",
+    "positionBlender": [
+      0,
+      3,
+      -21
+    ],
+    "targetBlender": [
+      0,
+      1,
+      0
+    ],
+    "orthographicScale": 19,
+    "samples": 8,
+    "mode": "exterior",
+    "resolutionPercent": 50,
+    "cabinLight": false
+  }
+]

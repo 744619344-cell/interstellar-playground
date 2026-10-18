@@ -1,0 +1,93 @@
+{
+  "selected": "前挡玻璃-r2接缝对齐-r9.glb",
+  "appearanceBaseline": "r2",
+  "status": "changes_requested",
+  "visualAccepted": false,
+  "remainingIssue": "横梁交点仍有尖角反光与不平顺，非最终视觉通过",
+  "staticViews": 8,
+  "browserInteractionVerified": false,
+  "productReplaced": false,
+  "committedOrPublished": false,
+  "files": [
+    {
+      "path": "align-r9-final-left.png",
+      "bytes": 1515299,
+      "sha256": "c5378f64bc61d81c60f0b869453ec4c1c81d46a690cc901e30ae320d134a2816"
+    },
+    {
+      "path": "align-r9-final-right.png",
+      "bytes": 1487606,
+      "sha256": "4022363bb4639a9aaa10cb2ab851b11962e592e4e0d0575527f9a6d5c27aebf5"
+    },
+    {
+      "path": "align-r9-extra-low-quarter.png",
+      "bytes": 545823,
+      "sha256": "10dabaf005353157853d01dd14f3e097dce612396a7b50029f415d8aa4354274"
+    },
+    {
+      "path": "align-r9-extra-low-quarter-right.png",
+      "bytes": 537927,
+      "sha256": "82dd015bc789af81608cde34f5fac27e098c2a236bd5231976676c68387221f2"
+    },
+    {
+      "path": "align-r9-extra-low-front.png",
+      "bytes": 566794,
+      "sha256": "b38d1ce3e81b0532edbc578a62b4d068df636657938968616716fc583bd0dce4"
+    },
+    {
+      "path": "align-r9-extra-low-top.png",
+      "bytes": 505919,
+      "sha256": "a55c3d0a0b54a12c5f4b3079ced42b36946d7229b2def0d6f0b79e0d54c0a4b5"
+    },
+    {
+      "path": "align-r9-extra-low-back.png",
+      "bytes": 357626,
+      "sha256": "802f72e85467f9c6b2cc4f9ea5e01e8c55042bc804d083d8a476749466a88a67"
+    },
+    {
+      "path": "align-r9-extra-low-bottom.png",
+      "bytes": 393209,
+      "sha256": "d8d95023e0bea94a428c8c6e9004a6c03c3be706d4b7f5ea72b6ed6c23d1c25e"
+    },
+    {
+      "path": "前挡玻璃-r2接缝对齐-r9.glb",
+      "bytes": 19263388,
+      "sha256": "51bf079d26bab46db0c640b5f53fa34d78b7e03b85f4a3a8466857d1fd777005"
+    },
+    {
+      "path": "前挡玻璃-r2接缝对齐-外观审阅-r9.glb",
+      "bytes": 19263460,
+      "sha256": "bc3b7a09f23649f1d5fe9fe2f78bfbaf32c4f49859b1fbf8e1f2382f9805eed5"
+    },
+    {
+      "path": "接缝对齐-r9-制作记录.json",
+      "bytes": 777,
+      "sha256": "3376c2e1a6ab9ccb66404e7b261e3bd08c50f5b31e9d4bca0b5886c988040dff"
+    },
+    {
+      "path": "接缝对齐-r9-独立检查.json",
+      "bytes": 734,
+      "sha256": "f47de22980fe777a900c61bfc889c161404dae8a28e32ee364b8db05d8eea2d7"
+    },
+    {
+      "path": "review.html",
+      "bytes": 4892,
+      "sha256": "9e2f2328579eec7333569d0c56135c5900b29656f703904dda37bfdfb0431363"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 4424,
+      "sha256": "42e5fdae1eb6812b05b648f239e54dea10069f91b4322e4fba6ac5b5fe081f84"
+    },
+    {
+      "path": "align-r9-final-render.json",
+      "bytes": 592,
+      "sha256": "9d5d947dcad4269ad1ec6b0af05b2c576e49dbdd41c9af9dccaf268efe7fb91d"
+    },
+    {
+      "path": "align-r9-extra-low-render.json",
+      "bytes": 1779,
+      "sha256": "55e231b59728b4c61899e15011542e18e55833946f91a2919165f46af698a557"
+    }
+  ]
+}

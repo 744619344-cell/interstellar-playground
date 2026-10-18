@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前挡玻璃 · 航天舷窗材质对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101923;color:#e3edf5;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:32px}h1{font-size:28px;margin:0 0 8px}p{color:#aebfce;margin:8px 0 20px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button,a{font:inherit;color:#c7e8ff;background:#22384a;border:1px solid #46647b;padding:9px 18px;border-radius:8px;text-decoration:none;cursor:pointer}
+button[aria-pressed=true]{background:#28628b;color:white}figure{margin:0;min-width:0}figcaption{padding:10px;background:#20303f}img{display:block;width:100%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notes{padding:18px;border:1px solid #3b5367;border-radius:10px;margin:24px 0}.notes p{margin:8px 0}
+#interactive{height:720px;position:relative;display:none}#interactive canvas{display:block}#tools{display:none}#status{white-space:pre-wrap}
+</style>
+<main>
+<h1>前挡玻璃 · 航天舷窗材质 r3</h1>
+<p>改用完整的玻璃反射与透射，减少上一版的轻薄感。仅调整材质，上一版与船壳形状保留；当前等待你判断。</p>
+<nav><button data-side="left" aria-pressed="true">左侧同机位</button><button data-side="right" aria-pressed="false">右侧同机位</button>
+<a href="前挡玻璃-航天舷窗审阅-r3.glb" download>下载修订 GLB</a><button id="start">打开 3D 对照</button></nav>
+<section class="pair" aria-label="实际模型同机位渲染">
+<figure><figcaption>上一版 r2：半透明玻璃</figcaption><img id="before" src="glass-review-left.png" alt="上一版玻璃左侧模型渲染"></figure>
+<figure><figcaption>新候选 r3：航天舷窗材质观感</figcaption><img id="after" src="pressure-r3-left.png" alt="航天舷窗材质左侧模型渲染"></figure>
+</section>
+<div class="notes"><p>这些是实际 GLB 的离线渲染，没有用效果图替代模型。两侧均使用相同机位和灯光对照。</p>
+<p>斜向下观察时仍可能看到舱内背面的阴影；“只看船壳 / 只看玻璃”可用于区分真实遮挡与玻璃反射。玻璃反射、灰蓝色调与厚重感仍由你判断。</p>
+<p>参照 <a href="https://www.nasa.gov/missions/artemis/orion/orion-window-testing-brings-artemis-1-closer-into-view/">NASA 多层舷窗资料</a>，本版只近似其材质观感，未建立真实多层结构。<a href="review-r2.html">保留的黑块修复对照</a></p>
+<p>3D 对照需从项目开发服务打开，并使用项目已有的 Three.js 依赖。静态对照可直接打开查看。</p></div>
+<details class="notes"><summary>斜视与拆分诊断：检查真实暗部和反射</summary>
+<p>斜俯视仍能看到船壳内面的暗部；右侧的大面积白色是灯光反射。这里保留这些画面供判断，没有把整个船壳隐藏后当作最终合显效果。</p>
+<section class="pair"><figure><figcaption>r3：前斜俯视</figcaption><img src="pressure-r3-quarter.png" alt="实际修订模型斜俯视，内面暗部仍可见" loading="lazy"></figure>
+<figure><figcaption>r2 几何诊断：仅船壳，玻璃临时不可见</figcaption><img src="diagnostic-shell-left.png" alt="船壳独显，窗面已分离，仍可见背面的船壳" loading="lazy"></figure></section>
+<figure><figcaption>r3 诊断：仅玻璃，检查透光</figcaption><img src="pressure-r3-isolated-glass-left.png" alt="玻璃独显透光检查" loading="lazy"></figure>
+<p>下方为仅加载外壳与玻璃的舱内观察位，检查能否向外看；不是完整驾驶舱或人体视野验收。诊断图采样较低，保留噪点。</p>
+<section class="pair"><figure><figcaption>向左窗外看</figcaption><img src="pressure-r3-inside-check-eye-left.png" alt="从内侧观察左窗透光" loading="lazy"></figure>
+<figure><figcaption>向右窗外看</figcaption><img src="pressure-r3-inside-check-eye-right.png" alt="从内侧观察右窗透光" loading="lazy"></figure></section></details>
+<nav id="tools"><button data-version="candidate" aria-pressed="true">航天舷窗 r3</button><button data-version="source" aria-pressed="false">上一版 r2</button>
+<button data-view="left">左窗</button><button data-view="right">右窗</button><button data-view="quarter">前斜视</button><button data-view="front">正面</button>
+<label><input type="checkbox" id="shell" checked>船壳</label><label><input type="checkbox" id="glass" checked>玻璃</label>
+<label><input type="checkbox" id="context">原内舱对照</label></nav>
+<p id="status" role="status">可以先看上方对照。拖拽旋转、右键平移、滚轮缩放；WASD / 方向键移动，Q / E 升降。</p>
+<section id="interactive" aria-label="模型三维对照"></section>
+</main>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+for(const button of document.querySelectorAll('[data-side]'))button.onclick=()=>{
+ const side=button.dataset.side;
+ document.querySelector('#before').src=`glass-review-${side}.png`;
+ document.querySelector('#after').src=`pressure-r3-${side}.png`;
+ document.querySelectorAll('[data-side]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+};
+document.querySelector('#start').onclick=async event=>{
+ const button=event.currentTarget;button.disabled=true;
+ document.querySelector('#status').textContent='正在打开 3D 对照…';
+ try{await (await import('./viewer-r3.mjs')).start();button.hidden=true;}
+ catch(error){button.disabled=false;document.querySelector('#status').textContent='3D 对照未能打开：'+error.message+'。上方实际模型渲染仍可查看。';}
+};
+</script>
+</html>

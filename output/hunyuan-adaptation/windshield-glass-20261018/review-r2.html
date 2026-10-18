@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前挡玻璃 · 原件与修订对照</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101923;color:#e3edf5;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:32px}h1{font-size:28px;margin:0 0 8px}p{color:#aebfce;margin:8px 0 20px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button,a{font:inherit;color:#c7e8ff;background:#22384a;border:1px solid #46647b;padding:9px 18px;border-radius:8px;text-decoration:none;cursor:pointer}
+button[aria-pressed=true]{background:#28628b;color:white}figure{margin:0;min-width:0}figcaption{padding:10px;background:#20303f}img{display:block;width:100%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notes{padding:18px;border:1px solid #3b5367;border-radius:10px;margin:24px 0}.notes p{margin:8px 0}
+#interactive{height:720px;position:relative;display:none}#interactive canvas{display:block}#tools{display:none}#status{white-space:pre-wrap}
+</style>
+<main>
+<h1>前挡玻璃 · 原件 / 局部修订</h1>
+<p>左右窗面改为独立透射玻璃；保留原船壳形状、窗框和原件。当前为待你确认的候选，未替换产品。</p>
+<nav><button data-side="left" aria-pressed="true">左侧同机位</button><button data-side="right" aria-pressed="false">右侧同机位</button>
+<a href="前挡玻璃-外观审阅.glb" download>下载修订 GLB</a><button id="start">打开 3D 对照</button></nav>
+<section class="pair" aria-label="实际模型同机位渲染">
+<figure><figcaption>原件：窗内有不透明黑色表面</figcaption><img id="before" src="source-review-left.png" alt="原件左侧模型渲染"></figure>
+<figure><figcaption>修订：窗面透光，保留淡蓝反射</figcaption><img id="after" src="glass-review-left.png" alt="修订左侧模型渲染"></figure>
+</section>
+<div class="notes"><p>这些是实际 GLB 的离线渲染，没有用效果图替代模型。两侧均使用相同机位和灯光对照。</p>
+<p>斜向下观察时仍可能看到舱内背面的阴影；“只看船壳 / 只看玻璃”可用于区分真实遮挡与玻璃反射。玻璃高光和边缘粗糙度仍由你判断。</p>
+<p>3D 对照需从项目开发服务打开，并使用项目已有的 Three.js 依赖。静态对照可直接打开查看。</p></div>
+<details class="notes"><summary>斜视与拆分诊断：检查真实暗部和反射</summary>
+<p>斜俯视仍能看到船壳内面的暗部；右侧的大面积白色是灯光反射。这里保留这些画面供判断，没有把整个船壳隐藏后当作最终合显效果。</p>
+<section class="pair"><figure><figcaption>修订：前斜俯视</figcaption><img src="candidate-r2-quarter.png" alt="实际修订模型斜俯视，内面暗部仍可见" loading="lazy"></figure>
+<figure><figcaption>诊断：仅船壳，玻璃临时不可见</figcaption><img src="diagnostic-shell-left.png" alt="船壳独显，窗面已分离，仍可见背面的船壳" loading="lazy"></figure></section>
+<figure><figcaption>诊断：仅玻璃，能看到背景透过窗面</figcaption><img src="diagnostic-glass-left.png" alt="玻璃独显透光检查" loading="lazy"></figure></details>
+<nav id="tools"><button data-version="candidate" aria-pressed="true">修订</button><button data-version="source" aria-pressed="false">原件</button>
+<button data-view="left">左窗</button><button data-view="right">右窗</button><button data-view="quarter">前斜视</button><button data-view="front">正面</button>
+<label><input type="checkbox" id="shell" checked>船壳</label><label><input type="checkbox" id="glass" checked>玻璃</label>
+<label><input type="checkbox" id="context">原内舱对照</label></nav>
+<p id="status" role="status">可以先看上方对照。拖拽旋转、右键平移、滚轮缩放；WASD / 方向键移动，Q / E 升降。</p>
+<section id="interactive" aria-label="模型三维对照"></section>
+</main>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+for(const button of document.querySelectorAll('[data-side]'))button.onclick=()=>{
+ const side=button.dataset.side;
+ document.querySelector('#before').src=`source-review-${side}.png`;
+ document.querySelector('#after').src=`glass-review-${side}.png`;
+ document.querySelectorAll('[data-side]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+};
+document.querySelector('#start').onclick=async event=>{
+ const button=event.currentTarget;button.disabled=true;
+ document.querySelector('#status').textContent='正在打开 3D 对照…';
+ try{await (await import('./viewer-r2.mjs')).start();button.hidden=true;}
+ catch(error){button.disabled=false;document.querySelector('#status').textContent='3D 对照未能打开：'+error.message+'。上方实际模型渲染仍可查看。';}
+};
+</script>
+</html>

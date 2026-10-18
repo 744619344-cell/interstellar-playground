@@ -1,0 +1,271 @@
+{
+  "manifest": "assembly-v2.json",
+  "groups": [
+    {
+      "id": "exterior",
+      "bounds": [
+        [
+          -7.230752468109131,
+          -3.4979801177978516,
+          -7.998338222503662
+        ],
+        [
+          7.2316484451293945,
+          3.451162815093994,
+          7.999755859375
+        ]
+      ],
+      "maxBoundsError": 0.0
+    },
+    {
+      "id": "cabin",
+      "bounds": [
+        [
+          -3.5500006675720215,
+          -1.6251881122589111,
+          -6.8000006675720215
+        ],
+        [
+          3.5500009059906006,
+          2.7225418090820312,
+          4.717731475830078
+        ]
+      ],
+      "maxBoundsError": 1.1744582328887532e-06
+    },
+    {
+      "id": "seats",
+      "bounds": [
+        [
+          -1.0156099796295166,
+          -1.5375657081604004,
+          -4.43729305267334
+        ],
+        [
+          1.0156099796295166,
+          -0.2823815941810608,
+          -3.6627070903778076
+        ]
+      ],
+      "maxBoundsError": 5.864991736714842e-08
+    },
+    {
+      "id": "console",
+      "bounds": [
+        [
+          -1.149999976158142,
+          -1.535959005355835,
+          -5.3324079513549805
+        ],
+        [
+          1.149999976158142,
+          -0.37911373376846313,
+          -4.6075921058654785
+        ]
+      ],
+      "maxBoundsError": 1.270553466881097e-07
+    },
+    {
+      "id": "bed-front",
+      "bounds": [
+        [
+          -3.1375787258148193,
+          -1.5256991386413574,
+          -0.6650000810623169
+        ],
+        [
+          -2.503772020339966,
+          -0.9833943843841553,
+          1.2650001049041748
+        ]
+      ],
+      "maxBoundsError": 2.7299937599423174e-07
+    },
+    {
+      "id": "bed-rear",
+      "bounds": [
+        [
+          -3.1375787258148193,
+          -1.5256991386413574,
+          1.5349998474121094
+        ],
+        [
+          -2.503772020339966,
+          -0.9833943843841553,
+          3.4649999141693115
+        ]
+      ],
+      "maxBoundsError": 2.7299937599423174e-07
+    },
+    {
+      "id": "workbench",
+      "bounds": [
+        [
+          2.4293265342712402,
+          -1.5256201028823853,
+          0.6399999260902405
+        ],
+        [
+          3.126323699951172,
+          -0.7436240315437317,
+          1.9600000381469727
+        ]
+      ],
+      "maxBoundsError": 9.98904114979382e-08
+    }
+  ],
+  "views": [
+    {
+      "view": "cockpit",
+      "image": "assembled-v2-cockpit.png",
+      "positionGLTF": [
+        0,
+        0.1,
+        -1.65
+      ],
+      "targetGLTF": [
+        0,
+        -0.5,
+        -5.25
+      ],
+      "lensMM": 24,
+      "samples": 36,
+      "percent": 75,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "aft",
+      "image": "assembled-v2-aft.png",
+      "positionGLTF": [
+        0,
+        -0.12,
+        -2.6
+      ],
+      "targetGLTF": [
+        0,
+        -0.3,
+        4.2
+      ],
+      "lensMM": 19,
+      "samples": 36,
+      "percent": 75,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "forward",
+      "image": "assembled-v2-forward.png",
+      "positionGLTF": [
+        0,
+        -0.05,
+        3.9
+      ],
+      "targetGLTF": [
+        0,
+        -0.35,
+        -4.5
+      ],
+      "lensMM": 19,
+      "samples": 36,
+      "percent": 75,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "beds",
+      "image": "assembled-v2-beds.png",
+      "positionGLTF": [
+        0.5,
+        -0.1,
+        1.7
+      ],
+      "targetGLTF": [
+        -2.85,
+        -1.02,
+        1.4
+      ],
+      "lensMM": 23,
+      "samples": 8,
+      "percent": 50,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "workbench",
+      "image": "assembled-v2-workbench.png",
+      "positionGLTF": [
+        -0.3,
+        -0.1,
+        1.8
+      ],
+      "targetGLTF": [
+        2.75,
+        -1.08,
+        1.3
+      ],
+      "lensMM": 30,
+      "samples": 8,
+      "percent": 50,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "doorway",
+      "image": "assembled-v2-doorway.png",
+      "positionGLTF": [
+        0,
+        -0.1,
+        2.65
+      ],
+      "targetGLTF": [
+        0,
+        -0.12,
+        5.5
+      ],
+      "lensMM": 24,
+      "samples": 8,
+      "percent": 50,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "exterior",
+      "image": "assembled-v2-exterior.png",
+      "positionGLTF": [
+        14,
+        8,
+        -18
+      ],
+      "targetGLTF": [
+        0,
+        0,
+        0
+      ],
+      "lensMM": 0,
+      "samples": 8,
+      "percent": 50,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    },
+    {
+      "view": "shell-side",
+      "image": "assembled-v2-shell-side.png",
+      "positionGLTF": [
+        18,
+        2,
+        0
+      ],
+      "targetGLTF": [
+        0,
+        0,
+        0
+      ],
+      "lensMM": 0,
+      "samples": 8,
+      "percent": 50,
+      "allAssemblyPartsVisible": true,
+      "interiorReviewLightsEnabled": true
+    }
+  ]
+}

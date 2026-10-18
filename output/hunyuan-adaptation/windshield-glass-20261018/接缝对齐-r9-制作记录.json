@@ -1,0 +1,25 @@
+{
+  "source": "前挡玻璃-r2接缝对齐-r8.glb",
+  "sourceSha256": "997ee5e842127067f00ab06c4a207ae1ae4babbc658531ef58459d3f138c8a51",
+  "candidate": "前挡玻璃-r2接缝对齐-r9.glb",
+  "candidateSha256": "51bf079d26bab46db0c640b5f53fa34d78b7e03b85f4a3a8466857d1fd777005",
+  "changedCanopyVertices": 2376,
+  "totalCanopyVertices": 12468,
+  "changedSourceBounds": [
+    [
+      -2.089139699935913,
+      1.4294066429138184,
+      -5.349804878234863
+    ],
+    [
+      2.1141273975372314,
+      2.787782669067383,
+      -3.253399133682251
+    ]
+  ],
+  "normalMethod": "area-weighted actual faces, original split-normal groups",
+  "positionsExactFromR8": true,
+  "normalsOutsideChangedPositionsExactFromR2": true,
+  "materialsExactFromR2": true,
+  "visualAccepted": false
+}

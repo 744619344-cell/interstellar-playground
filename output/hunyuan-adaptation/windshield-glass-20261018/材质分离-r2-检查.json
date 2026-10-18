@@ -1,0 +1,58 @@
+{
+  "source": "output/hunyuan-adaptation/master-design-20261009/整舱统一母版-v6.glb",
+  "sourceSha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "hullTriangles": 89997,
+  "groups": {
+    "retained-hull": {
+      "triangles": 87715,
+      "centroidBounds": [
+        [
+          -7.229520320892334,
+          -3.495102643966675,
+          -7.993044376373291
+        ],
+        [
+          7.231464385986328,
+          3.443849563598633,
+          7.99951696395874
+        ]
+      ]
+    },
+    "left-pane": {
+      "triangles": 1227,
+      "centroidBounds": [
+        [
+          -3.01354718208313,
+          -0.14594237506389618,
+          -5.346525192260742
+        ],
+        [
+          -2.3176939487457275,
+          1.9404840469360352,
+          -2.883054494857788
+        ]
+      ]
+    },
+    "right-pane": {
+      "triangles": 1055,
+      "centroidBounds": [
+        [
+          2.3195574283599854,
+          -0.1775473803281784,
+          -5.349635601043701
+        ],
+        [
+          2.982942581176758,
+          1.9444149732589722,
+          -2.8832929134368896
+        ]
+      ]
+    }
+  },
+  "vertexAttributesUnchanged": true,
+  "candidate": "前挡玻璃-材质分离候选-r2.glb",
+  "candidateSha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "geometryAdded": false,
+  "sourceOverwritten": false,
+  "visualAccepted": false
+}

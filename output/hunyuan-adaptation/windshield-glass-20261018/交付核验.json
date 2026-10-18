@@ -1,0 +1,179 @@
+{
+  "htmlLocalReferencesChecked": 6,
+  "reviewImagesChecked": 7,
+  "downloadCopyOnlyChangesActiveScene": true,
+  "browserInteractionVerified": false,
+  "nodeDependencyLimitation": "Project node_modules absent; Three.js movement test cannot start. No dependencies installed.",
+  "files": [
+    {
+      "path": "build_glass_candidate.py",
+      "bytes": 4230,
+      "sha256": "f456e8747798b82d0f2cb658c037061674fffbdf554daafb0634dc99b8142dcf"
+    },
+    {
+      "path": "candidate-r1-left.png",
+      "bytes": 1744451,
+      "sha256": "7a7e094e7863a7f49eaa55f1c7b1ceefe20d378c5dc52a58d60def843a701b6e"
+    },
+    {
+      "path": "candidate-r1-quarter.png",
+      "bytes": 1928028,
+      "sha256": "af994cb2c35d232187b3a9d78805817260bf60b084d86b912b78b6194f21790f"
+    },
+    {
+      "path": "candidate-r1-right.png",
+      "bytes": 1762652,
+      "sha256": "07db4c1fa8c372647aeea2c2e4b5a3fe680cfb243730353db268248b26d0ac47"
+    },
+    {
+      "path": "candidate-r2-left.png",
+      "bytes": 1740918,
+      "sha256": "0e8e424c024c62b09e23b033adb2222d331685116bac383c8ab7ea320bb60afa"
+    },
+    {
+      "path": "candidate-r2-quarter.png",
+      "bytes": 1977672,
+      "sha256": "74501ca70f2f307e8a0f5237279ef8560f5d457d614b8336cd0baf68e7e7777e"
+    },
+    {
+      "path": "candidate-r2-right.png",
+      "bytes": 1694836,
+      "sha256": "84a55f86d5af48ff1f2675badd3a94ca343bc1b559b5f182f381dd7ab172ac03"
+    },
+    {
+      "path": "diagnostic-glass-left.png",
+      "bytes": 1196746,
+      "sha256": "9a49013a7a640ff89eeef67648ecfb923b4bf022dac404819307694453b8baac"
+    },
+    {
+      "path": "diagnostic-glass-render.json",
+      "bytes": 242,
+      "sha256": "1da48640d25be93e05bfc86294425f0bc51efc3c4d1386fbd2bee73983eed12b"
+    },
+    {
+      "path": "diagnostic-shell-left.png",
+      "bytes": 1750391,
+      "sha256": "404382d210e54afa92f7f2298e6fcfd3dddc37652c802a461a4129c128c63133"
+    },
+    {
+      "path": "diagnostic-shell-render.json",
+      "bytes": 242,
+      "sha256": "c52ce3f7303cb94eb6b33f996d78c5c1432418bfb82e9c673389148c123bfce1"
+    },
+    {
+      "path": "export_exterior_review.py",
+      "bytes": 1176,
+      "sha256": "a694fa442da3ef75b82e829cdd606b389b47d6f68864fb276d4f427790b090bc"
+    },
+    {
+      "path": "glass-review-left.png",
+      "bytes": 1515964,
+      "sha256": "ef38ce8736e1e228997e501093500832e838e2df3a7cb24a0fc365778707a9b8"
+    },
+    {
+      "path": "glass-review-render.json",
+      "bytes": 478,
+      "sha256": "1b1cae9d4b84d09ea0b56559e4d23fcb48f281aab5a74ce605bf002edb33f9b0"
+    },
+    {
+      "path": "glass-review-right.png",
+      "bytes": 1487817,
+      "sha256": "d6b26285be4995f6c65c249a7f34b73de7edd1ef3fa558d9a6a5b58c1e1ebf0a"
+    },
+    {
+      "path": "glb_surface_io.py",
+      "bytes": 2482,
+      "sha256": "1e952421b44d342327adb2034bbbfbaaa8973e0e500f8905988c3e32151c1a06"
+    },
+    {
+      "path": "original-left.png",
+      "bytes": 1680006,
+      "sha256": "1a495ee84d060b122449289e0f84e527d5d0ee1fb933faa9b40bb22732e0ed17"
+    },
+    {
+      "path": "original-quarter.png",
+      "bytes": 1943221,
+      "sha256": "611496ba6300915c08bb8b3df7008ecbe67cea4a63a278dc7996f536630ecd82"
+    },
+    {
+      "path": "original-right.png",
+      "bytes": 1623859,
+      "sha256": "04a304928926fb2bb300034999e811d8c97f7905ae31d858afb16197e0015e6c"
+    },
+    {
+      "path": "render_review.py",
+      "bytes": 4220,
+      "sha256": "77bff900422a010bdd7cf7601581e576cccf6e5f8022d01b9a017a213006dbe1"
+    },
+    {
+      "path": "review.html",
+      "bytes": 5005,
+      "sha256": "585dd4c90974c027e06b5f5407c6351df6983440db2eb9586c71defb51b576ba"
+    },
+    {
+      "path": "source-review-left.png",
+      "bytes": 1508169,
+      "sha256": "2b601692835a4fb185676417aab5a7b490c402993eda76febeb392179ee9e4f0"
+    },
+    {
+      "path": "source-review-render.json",
+      "bytes": 480,
+      "sha256": "b542a1514929adf77d5ebe32f6269783cd0543a2c0c2cec58b555a6999bde519"
+    },
+    {
+      "path": "source-review-right.png",
+      "bytes": 1490432,
+      "sha256": "fdc9b05738a0b04c5412b23bfb16782c322ae799074cc3e8629bab6c3c52f406"
+    },
+    {
+      "path": "verify_glass_candidate.py",
+      "bytes": 4088,
+      "sha256": "29ce11cf3c048b301eeb0ae9c215b73fb61492bb7e08690689a0af3d4cfb2862"
+    },
+    {
+      "path": "viewer.mjs",
+      "bytes": 4439,
+      "sha256": "897d0ca80ef58bdb593113b159529f983bf38256b8795ecc5504d59e09b792e9"
+    },
+    {
+      "path": "前挡玻璃-外观审阅.glb",
+      "bytes": 18813780,
+      "sha256": "e92744966b3d5e3162cf4a64cd07961d0a87ab4f998e6356ba42ea22fc65cc82"
+    },
+    {
+      "path": "前挡玻璃-材质分离候选-r1.glb",
+      "bytes": 18813704,
+      "sha256": "89ba739f27a8d39e7aa9895411b7fbe6f11d7bc95bdfa8da34be52cadc030166"
+    },
+    {
+      "path": "前挡玻璃-材质分离候选-r2.glb",
+      "bytes": 18813728,
+      "sha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0"
+    },
+    {
+      "path": "外观审阅文件.json",
+      "bytes": 446,
+      "sha256": "01508c9f8ba688f5b21affef8a6aef9d2426e5862dc2ea13217927c0a32c49c7"
+    },
+    {
+      "path": "斜视渲染记录.json",
+      "bytes": 1113,
+      "sha256": "6d4f797564b1f4b0c25d76bf1a6d19d603cf1395720e10d46518b61ba09eba31"
+    },
+    {
+      "path": "材质分离-r1-检查.json",
+      "bytes": 1538,
+      "sha256": "4c77a02f0092422884a89a041c3368dcc5bdc03f2e92347707d2cb948109b143"
+    },
+    {
+      "path": "材质分离-r2-检查.json",
+      "bytes": 1405,
+      "sha256": "28d7ee92e6833ba1ad1257d7a7182815933fc9c8c410c47bd483408bbc59bf60"
+    },
+    {
+      "path": "独立保留与视线检查.json",
+      "bytes": 849,
+      "sha256": "b694fc2952e73cb4929364222acb2ba0d41cd4f7fc87452558c91248ac5721d3"
+    }
+  ]
+}

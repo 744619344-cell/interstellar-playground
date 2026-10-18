@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前挡玻璃 · 恢复 r2 / 线条对齐 r9</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101923;color:#e3edf5;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1400px;margin:auto;padding:32px}h1{font-size:28px;margin:0 0 8px}p{color:#aebfce;margin:8px 0 20px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}button,a{font:inherit;color:#c7e8ff;background:#22384a;border:1px solid #46647b;padding:9px 18px;border-radius:8px;text-decoration:none;cursor:pointer}
+button[aria-pressed=true]{background:#28628b;color:white}figure{margin:0;min-width:0}figcaption{padding:10px;background:#20303f}img{display:block;width:100%}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.notes{padding:18px;border:1px solid #3b5367;border-radius:10px;margin:24px 0}.notes p{margin:8px 0}
+#interactive{height:720px;position:relative;display:none}#interactive canvas{display:block}#tools{display:none}#status{white-space:pre-wrap}
+</style>
+<main>
+<h1>前挡玻璃 · 恢复 r2 / 线条对齐 r9</h1>
+<p>恢复截图对应的 r2 玻璃参数，仅将标记的上方竖线与下方侧窗线接齐。保留原件及旧版，当前待你确认。</p>
+<nav><button data-side="left" aria-pressed="true">左侧同机位</button><button data-side="right" aria-pressed="false">右侧同机位</button>
+<a href="前挡玻璃-r2接缝对齐-外观审阅-r9.glb" download>下载线条修订 r9</a><button id="start">打开 3D 对照</button></nav>
+<section class="pair" aria-label="实际模型同机位渲染">
+<figure><figcaption>r2：原有上下竖线错位</figcaption><img id="before" src="glass-review-left.png" alt="r2左侧模型渲染"></figure>
+<figure><figcaption>r9：恢复 r2 玻璃，局部线条对齐</figcaption><img id="after" src="align-r9-final-left.png" alt="r9左侧模型渲染"></figure>
+</section>
+<div class="notes"><p>左右均为实际 GLB 离线渲染，r2 与 r9 使用相同机位、灯光、1200×900 和64采样。修正源线条仍有粗糙，不等同于整船视觉验收。</p>
+<p>斜向下观察时仍可能看到舱内背面的阴影；“只看船壳 / 只看玻璃”可用于区分真实遮挡与玻璃反射。玻璃高光和边缘粗糙度仍由你判断。</p>
+<p>3D 对照需从项目开发服务打开，并使用项目已有的 Three.js 依赖。静态对照可直接打开查看。<a href="review-r5.html">保留被否决的 r5</a>。</p></div>
+<details class="notes"><summary>其他方向的实际模型检查</summary>
+<section class="pair"><figure><figcaption>左前斜视</figcaption><img src="align-r9-extra-low-quarter.png" alt="r9左前斜视" loading="lazy"></figure>
+<figure><figcaption>右前斜视</figcaption><img src="align-r9-extra-low-quarter-right.png" alt="r9右前斜视" loading="lazy"></figure></section>
+<p>其他视角：<a href="align-r9-extra-low-front.png">正前</a> · <a href="align-r9-extra-low-top.png">俯视</a> · <a href="align-r9-extra-low-back.png">后视</a> · <a href="align-r9-extra-low-bottom.png">底视</a></p></details>
+<nav id="tools"><button data-version="candidate" aria-pressed="true">线条对齐 r9</button><button data-version="source" aria-pressed="false">原版 r2</button>
+<button data-view="left">左窗</button><button data-view="right">右窗</button><button data-view="quarter">前斜视</button><button data-view="front">正面</button>
+<label><input type="checkbox" id="shell" checked>船壳</label><label><input type="checkbox" id="glass" checked>玻璃</label>
+<label><input type="checkbox" id="context">原内舱对照</label></nav>
+<p id="status" role="status">可以先看上方对照。拖拽旋转、右键平移、滚轮缩放；WASD / 方向键移动，Q / E 升降。</p>
+<section id="interactive" aria-label="模型三维对照"></section>
+</main>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+for(const button of document.querySelectorAll('[data-side]'))button.onclick=()=>{
+ const side=button.dataset.side;
+ document.querySelector('#before').src=`glass-review-${side}.png`;
+ document.querySelector('#after').src=`align-r9-final-${side}.png`;
+ document.querySelectorAll('[data-side]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+};
+document.querySelector('#start').onclick=async event=>{
+ const button=event.currentTarget;button.disabled=true;
+ document.querySelector('#status').textContent='正在打开 3D 对照…';
+ try{await (await import('./viewer-r9.mjs')).start();button.hidden=true;}
+ catch(error){button.disabled=false;document.querySelector('#status').textContent='3D 对照未能打开：'+error.message+'。上方实际模型渲染仍可查看。';}
+};
+</script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "file": "前挡玻璃-外观审阅.glb",
+  "sha256": "e92744966b3d5e3162cf4a64cd07961d0a87ab4f998e6356ba42ea22fc65cc82",
+  "basedOn": "前挡玻璃-材质分离候选-r2.glb",
+  "basedOnSha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "initialScene": "Exterior glass review",
+  "activeNodes": [
+    110,
+    111
+  ],
+  "change": "Only add and select the exterior review scene; keep all mesh and material data."
+}

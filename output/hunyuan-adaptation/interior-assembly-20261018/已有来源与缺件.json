@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-18",
+  "branch": "codex/cloud-handoff-20261013",
+  "glassLocalUserAccepted": true,
+  "wholeCabinAccepted": false,
+  "available": [
+    {
+      "name": "玻璃r10及外壳",
+      "path": "output/hunyuan-adaptation/windshield-glass-20261018/前挡玻璃-r2交点顺光-r10.glb",
+      "bytes": 19413276,
+      "sha256": "8a5cbaf4d60a92d348326c872e5145646525a131006ae7d79fd0b6f7882ab066",
+      "referenceHashMatched": true,
+      "classification": "user-accepted-exterior-glazing",
+      "sceneTrianglesIncludingInstances": 251976,
+      "boundsSourceUnits": [
+        [
+          -7.230752468109131,
+          -3.4979801177978516,
+          -7.998338222503662
+        ],
+        [
+          7.2316484451293945,
+          3.451162815093994,
+          7.999755859375
+        ]
+      ],
+      "sizeSourceUnits": [
+        14.462400913238525,
+        6.949142932891846,
+        15.998094081878662
+      ],
+      "imageCount": 24,
+      "animations": 9,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "隔舱v15",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门隔舱总成-v15/混元原始模型.glb",
+      "bytes": 31488976,
+      "sha256": "4a2c3f8c91b7d7d7544de31ffecb8002a3f588d67d4aef8fc331cb33edd375d7",
+      "referenceHashMatched": true,
+      "classification": "conditional-reuse-requires-new-main-structure",
+      "sceneTrianglesIncludingInstances": 50000,
+      "boundsSourceUnits": [
+        [
+          -0.47000300884246826,
+          3.2755345713466054e-09,
+          -0.04211791666625158
+        ],
+        [
+          0.47306498885154724,
+          0.7454530989235962,
+          0.041340072068178406
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.9430679976940155,
+        0.7454530956480616,
+        0.08345798873442999
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "门叶v2",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内门门叶-v2/混元原始模型.glb",
+      "bytes": 28023856,
+      "sha256": "69c05d08b54ef36cacf2f0ed3b5fbcf820d71160bab40b07043534012a0c0da9",
+      "referenceHashMatched": true,
+      "classification": "conditional-reuse-requires-new-opening",
+      "sceneTrianglesIncludingInstances": 49974,
+      "boundsSourceUnits": [
+        [
+          -0.3315419852733612,
+          1.817337903900437e-09,
+          -0.03369293715367671
+        ],
+        [
+          0.3234330117702484,
+          1.0155490831870893,
+          0.03236407214294891
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.6549749970436096,
+        1.0155490813697514,
+        0.06605700929662561
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "围护v9原件",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/驾驶围护总成-v9/混元原始模型.glb",
+      "bytes": 34017924,
+      "sha256": "c69f8a15369ca2e18546a66748d9c50d3752bd400b883ae98fab3845eeef66e0",
+      "referenceHashMatched": true,
+      "classification": "legacy-reference-not-current-main-structure",
+      "sceneTrianglesIncludingInstances": 50000,
+      "boundsSourceUnits": [
+        [
+          -0.3993909955024719,
+          -2.354262681463405e-08,
+          -0.3855839744992904
+        ],
+        [
+          0.3617030084133148,
+          0.5895451424299831,
+          0.37515608616697615
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.7610940039157867,
+        0.58954516597261,
+        0.7607400606662665
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "围护v9局部r9",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/围护v9-局部修订-r9.glb",
+      "bytes": 36194972,
+      "sha256": "da9a6c56a79979ba11588fa06c01057bfbbce2be34a88f929c28eda46af4903e",
+      "referenceHashMatched": true,
+      "classification": "legacy-reference-not-current-main-structure",
+      "sceneTrianglesIncludingInstances": 51840,
+      "boundsSourceUnits": [
+        [
+          -0.3993909955024719,
+          -2.354262681463405e-08,
+          -0.3855839744992904
+        ],
+        [
+          0.3617030084133148,
+          0.5895451424299831,
+          0.3751560925408712
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.7610940039157867,
+        0.58954516597261,
+        0.7607400670401616
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "前窗v2",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/前窗总成-v2/混元原始模型.glb",
+      "bytes": 43561088,
+      "sha256": "8295834265f322a42658d5941430d356647a3e02289d8b1d8285189dee075d24",
+      "referenceHashMatched": false,
+      "classification": "legacy-reference-current-glass-is-r10",
+      "sceneTrianglesIncludingInstances": 50000,
+      "boundsSourceUnits": [
+        [
+          -0.5610020160675049,
+          -1.8138446095976036e-10,
+          -0.03671400123400025
+        ],
+        [
+          0.553318977355957,
+          0.5877061051602086,
+          0.037071008231206556
+        ]
+      ],
+      "sizeSourceUnits": [
+        1.114320993423462,
+        0.5877061053415931,
+        0.0737850094652068
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "主结构v7",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/混元原始模型.glb",
+      "bytes": 38698784,
+      "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f",
+      "referenceHashMatched": true,
+      "classification": "current-assembly-candidate-not-accepted",
+      "sceneTrianglesIncludingInstances": 59243,
+      "boundsSourceUnits": [
+        [
+          -0.25398799777030945,
+          2.0457614364805907e-08,
+          -0.3915220406021045
+        ],
+        [
+          0.3542659878730774,
+          0.3724680217009073,
+          0.5951971031372086
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.6082539856433868,
+        0.37246800124329293,
+        0.9867191437393131
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "主仪表台v2",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元原始模型.glb",
+      "bytes": 44098852,
+      "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+      "referenceHashMatched": true,
+      "classification": "current-assembly-source",
+      "sceneTrianglesIncludingInstances": 50006,
+      "boundsSourceUnits": [
+        [
+          -0.5391470193862915,
+          8.520635945497563e-09,
+          -0.16228098228268284
+        ],
+        [
+          0.5296729803085327,
+          0.537591062882356,
+          0.17454407582133047
+        ]
+      ],
+      "sizeSourceUnits": [
+        1.0688199996948242,
+        0.53759105436172,
+        0.3368250581040133
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "折叠床v1",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元原始模型.glb",
+      "bytes": 34845712,
+      "sha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26",
+      "referenceHashMatched": true,
+      "classification": "current-assembly-shared-two-instances",
+      "sceneTrianglesIncludingInstances": 49916,
+      "boundsSourceUnits": [
+        [
+          -0.5690829753875732,
+          1.570359481548248e-08,
+          -0.15837598283310897
+        ],
+        [
+          0.5668990015983582,
+          0.31919604438446986,
+          0.21467706364619096
+        ]
+      ],
+      "sizeSourceUnits": [
+        1.1359819769859314,
+        0.31919602868087504,
+        0.37305304647929993
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    },
+    {
+      "name": "工作台v1",
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元原始模型.glb",
+      "bytes": 33411084,
+      "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e",
+      "referenceHashMatched": true,
+      "classification": "current-assembly-source",
+      "sceneTrianglesIncludingInstances": 50050,
+      "boundsSourceUnits": [
+        [
+          -0.5009949803352356,
+          -2.3094406010366067e-08,
+          -0.3077820327139459
+        ],
+        [
+          0.481344997882843,
+          0.5819590804665825,
+          0.21092106106468683
+        ]
+      ],
+      "sizeSourceUnits": [
+        0.9823399782180786,
+        0.5819591035609886,
+        0.5187030937786328
+      ],
+      "imageCount": 3,
+      "animations": 0,
+      "sourceBytesUnchanged": true,
+      "installationAccepted": false
+    }
+  ],
+  "missing": [],
+  "assemblyBlockedBy": null,
+  "resolvedByCommit": "0f620b9b9623afbf86b4273e30f3d80407dfb94b",
+  "productReplaced": false,
+  "geometryModified": false
+}

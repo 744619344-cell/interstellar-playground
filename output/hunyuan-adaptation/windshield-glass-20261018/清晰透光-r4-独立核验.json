@@ -1,0 +1,12 @@
+{
+  "sourceAndCandidateShaMatch": true,
+  "binaryExact": true,
+  "allGeometryAndMeshAssignmentsExact": true,
+  "nodesScenesAnimationsExact": true,
+  "allOtherMaterialsExact": true,
+  "fullCabinIncludedInDefaultScene": true,
+  "onlyGlassMaterialChanged": true,
+  "visualAccepted": false,
+  "browserInteractionRun": false,
+  "khronosValidatorRun": false
+}

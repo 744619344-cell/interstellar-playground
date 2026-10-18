@@ -1,0 +1,41 @@
+{
+  "source": "前挡玻璃-航天舷窗材质-r3.glb",
+  "sourceSha256": "53a734bdde12a0a5ce51b2139619d8818459ebb13c4e8a87f847fc307c788a1c",
+  "candidate": "前挡玻璃-清晰透光-r4.glb",
+  "candidateSha256": "f639fa2dd16380dacdbf2167fcd341202b0ef82163e7a0b447b6a2da11b4b489",
+  "material": {
+    "name": "前挡与左右侧窗_清晰透光_r4",
+    "doubleSided": true,
+    "alphaMode": "BLEND",
+    "pbrMetallicRoughness": {
+      "baseColorFactor": [
+        0.88,
+        0.96,
+        1,
+        0.12
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.08
+    },
+    "extensions": {
+      "KHR_materials_ior": {
+        "ior": 1.46
+      },
+      "KHR_materials_specular": {
+        "specularFactor": 0.15,
+        "specularColorFactor": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "binaryAndGeometryUnchanged": true,
+  "initialScene": "Original complete assembly, including cabin furnishings",
+  "intent": "Clear interior visibility takes priority over r3 dark reflections; no refractive distortion.",
+  "physicalMultiPaneSimulation": false,
+  "visualAccepted": false,
+  "reviewState": "rejected-white-diffuse-veil",
+  "reason": "Actual full-cabin comparison still showed a white veil; not delivered as visually sufficient."
+}

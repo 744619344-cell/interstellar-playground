@@ -1,0 +1,38 @@
+[
+  {
+    "image": "align-r8-probe-left.png",
+    "positionBlender": [
+      -16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 16,
+    "mode": "exterior",
+    "resolutionPercent": 75,
+    "cabinLight": false
+  },
+  {
+    "image": "align-r8-probe-right.png",
+    "positionBlender": [
+      16,
+      4,
+      1.1
+    ],
+    "targetBlender": [
+      0,
+      4,
+      1.1
+    ],
+    "orthographicScale": 10,
+    "samples": 16,
+    "mode": "exterior",
+    "resolutionPercent": 75,
+    "cabinLight": false
+  }
+]

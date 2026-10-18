@@ -1,0 +1,41 @@
+{
+  "source": "前挡玻璃-材质分离候选-r2.glb",
+  "sourceSha256": "327f635e0df8a573d87d2626e10c459b43968d765bc255db2d5241ae071de5b0",
+  "candidate": "前挡玻璃-r2接缝对齐-r6.glb",
+  "candidateSha256": "9a3c10cb2152c627b576a82da5a52d75d65243b27c2fff2cc3b6068a2490c19e",
+  "changedCanopyVertices": 2272,
+  "totalCanopyVertices": 12468,
+  "changedSourceBounds": [
+    [
+      -2.048548936843872,
+      1.4294066429138184,
+      -5.349804878234863
+    ],
+    [
+      2.045748472213745,
+      2.787782669067383,
+      -3.253399133682251
+    ]
+  ],
+  "maxDisplacement": 0.6071973032302119,
+  "minimumJacobianDeterminant": 0.19161502219667087,
+  "surfaceFitMedianResidual": 0.0204512050817256,
+  "surfaceFitCoefficients": [
+    2.431813410356197,
+    0.5376229593120556,
+    -0.1631398215518433,
+    0.0071086334416621344,
+    -0.13626567081154978,
+    -0.002402458369045476,
+    -0.0058117115999956875,
+    -0.010326309853059169,
+    0.006358735356470511,
+    -0.0006533798542289256
+  ],
+  "materialsRestoredExactlyFromR2": true,
+  "trianglesAddedOrRemoved": false,
+  "hullChanged": false,
+  "visualAccepted": false,
+  "status": "rejected-diagnostic-only",
+  "rejectionReason": "局部非线性滑移导致17个细小三角面相对运输参考反向；不能只凭左右低采样渲染交付。r7加原位置重合点约束及局部面朝向约束，另存。"
+}
