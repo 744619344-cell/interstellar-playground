@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-13",
+  "module": "rear-workbench",
+  "model": "V3.1",
+  "requestedFaces": "50k",
+  "uploadedImages": 4,
+  "submitClicks": 1,
+  "acceptedJobs": 1,
+  "newAcceptedTotal": 33,
+  "freeQuotaBefore": 17,
+  "freeQuotaAfter": 16,
+  "paymentMade": false,
+  "status": "local_trial_candidate",
+  "originalDownloaded": true,
+  "localGeometryMade": false,
+  "originalSha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e",
+  "triangles": 50050,
+  "bytes": 33411084
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-16",
+  "status": "retained-for-whole-cabin-trial-browser-initialization-blocks-live-review",
+  "sourceSha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+  "sourceViewsReviewed": [
+    "official-front",
+    "local-front-oblique",
+    "back",
+    "left",
+    "top"
+  ],
+  "visibleGripCount": 2,
+  "visibleSupports": 2,
+  "feetVisible": true,
+  "openKneeRegionVisible": true,
+  "gripsIntegratedIntoFrontLip": true,
+  "localGeometryMade": false,
+  "sourceGeometryChanged": false,
+  "sourceTexturesChanged": false,
+  "trial": "刚性试装参数.json",
+  "views": [
+    "舱内试装总览-20261016.png",
+    "腿部侧看-20261016.png",
+    "驾驶眼位-20261016.png",
+    "座椅通路-剖视-20261016.png",
+    "同机位-v1-舱内-20261016.png",
+    "同机位-v2-舱内-20261016.png"
+  ],
+  "visualConcerns": [
+    "Screen patterns, button boundaries and panel edges retain warped/soft generative detail.",
+    "No astronaut or hand-reach rig used. Envelope gap does not certify knee space.",
+    "Source trial omits exterior hull and glazing; forward sight is not certified."
+  ],
+  "formatNotes": {
+    "triangles": 50006,
+    "degenerateFaces": 0,
+    "opposedFaceNormals": 62,
+    "embeddedTextures": "3 x 4096x4096 RGB",
+    "scope": "Read-only basic container/accessor/scene/image check, not full Khronos or collision validation."
+  },
+  "previewTests": {
+    "resourceAndLifecycleTestsPassed": 16,
+    "browserConsoleErrors": 0,
+    "v1v2SameCameraSwitchVerified": true
+  },
+  "runtimeReplaced": false,
+  "overallTaskStatus": "changes_requested",
+  "codexSelection": {
+    "source": "v2",
+    "decision": "provisionally retain for whole-cabin trial",
+    "finalArtAccepted": false
+  },
+  "wholeCabinContinuation": "整舱接入复验-20261016.json"
+}

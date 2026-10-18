@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-15",
+  "scope": "read-only source bounds versus intended v2 envelope, not generated-source fitting",
+  "inputs": [
+    {
+      "file": "正面.png",
+      "bytes": 394808,
+      "sha256": "164f9e2c241a54c6b939fd35d522986690f00db841b3918ae6e1a373cca07359",
+      "matchesPreparedInput": true
+    },
+    {
+      "file": "背面.png",
+      "bytes": 325276,
+      "sha256": "3972a786b72b7cafc1e654aa7780ffef89c50f08d95a7b7167c332a02e3c9b94",
+      "matchesPreparedInput": true
+    },
+    {
+      "file": "左面.png",
+      "bytes": 271906,
+      "sha256": "b8a1b1e624db669937629a0ab52fd5c7ec9d33b6700ea618544102399a99dfe7",
+      "matchesPreparedInput": true
+    },
+    {
+      "file": "右面.png",
+      "bytes": 266428,
+      "sha256": "f683b9449d26174422e6b58b906efd3fe24f9dfa3d75a1d6a99f2314279951dd",
+      "matchesPreparedInput": true
+    }
+  ],
+  "sources": [
+    {
+      "file": "output/hunyuan-adaptation/master-design-20261009/整舱统一母版-v6.glb",
+      "sha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2"
+    },
+    {
+      "file": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/围护v9-局部修订-r13.glb",
+      "sha256": "1be1a3a789d1645a51fab9496c531e8381366338f7ca67e16da2b92eae832b4f"
+    },
+    {
+      "file": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v1/混元原始模型.glb",
+      "sha256": "6a3e8b132b07b5f5a68a616479ecca5e72735caa0f2ce5e4bdd99b1f3e80e305"
+    }
+  ],
+  "actualSeatFrontZ": -4.43729305267334,
+  "plannedConsoleBounds": [
+    [
+      -1.15,
+      -1.541,
+      -5.42
+    ],
+    [
+      1.15,
+      -0.381,
+      -4.52
+    ]
+  ],
+  "plannedRearEdgeToSeatFrontGap": 0.08270694732665973,
+  "floorDatumY": -1.541,
+  "plannedConsoleBottomY": -1.541,
+  "modelSourceV2Exists": false,
+  "limits": [
+    "The approximately 0.083m gap is between object envelopes, not knee clearance or hand reach.",
+    "No v2 generated geometry exists; supports, grips, knee openings and actual proportions cannot be certified.",
+    "Outer seat aisles must stay empty; no floor console or chair-armrest mount may return.",
+    "Uniform source fitting and actual cockpit/sight/hand/knee comparison are required before replacement."
+  ],
+  "geometryCreatedOrChanged": false,
+  "replacedRuntime": false
+}

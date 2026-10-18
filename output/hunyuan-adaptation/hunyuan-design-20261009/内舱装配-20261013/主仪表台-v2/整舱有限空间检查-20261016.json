@@ -1,0 +1,628 @@
+{
+  "date": "2026-10-16",
+  "scope": "Finite source geometry measurements for current uniform trial",
+  "consoleSha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+  "masterSha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+  "r13Sha256": "1be1a3a789d1645a51fab9496c531e8381366338f7ca67e16da2b92eae832b4f",
+  "consoleBounds": [
+    [
+      -1.15,
+      -1.540999920560314,
+      -5.332407856557146
+    ],
+    [
+      1.15,
+      -0.3841547496507626,
+      -4.6075921434428535
+    ]
+  ],
+  "seats": [
+    {
+      "name": "左驾驶座_0_6_0",
+      "bounds": [
+        [
+          -1.0156099796295166,
+          -1.563000023841858,
+          -4.414311408996582
+        ],
+        [
+          -0.28439000248908997,
+          -0.6449157600402832,
+          -3.687087297439575
+        ]
+      ],
+      "consoleToSeatEnvelopeZ": 0.19328073444627147,
+      "aabbOverlap": false
+    },
+    {
+      "name": "左驾驶座_1_7_0",
+      "bounds": [
+        [
+          -0.9336591362953186,
+          -1.1901902561187745,
+          -4.43729305267334
+        ],
+        [
+          -0.3704109489917755,
+          -0.3078159694671631,
+          -3.6627070903778076
+        ]
+      ],
+      "consoleToSeatEnvelopeZ": 0.17029909076951366,
+      "aabbOverlap": false
+    },
+    {
+      "name": "右驾驶座_0_17_0",
+      "bounds": [
+        [
+          0.28439000248908997,
+          -1.563000023841858,
+          -4.414311408996582
+        ],
+        [
+          1.0156099796295166,
+          -0.6449157600402832,
+          -3.687087297439575
+        ]
+      ],
+      "consoleToSeatEnvelopeZ": 0.19328073444627147,
+      "aabbOverlap": false
+    },
+    {
+      "name": "右驾驶座_1_18_0",
+      "bounds": [
+        [
+          0.36634087562561035,
+          -1.1901902561187745,
+          -4.43729305267334
+        ],
+        [
+          0.929589033126831,
+          -0.3078159694671631,
+          -3.6627070903778076
+        ]
+      ],
+      "consoleToSeatEnvelopeZ": 0.17029909076951366,
+      "aabbOverlap": false
+    }
+  ],
+  "consoleEntirelyForwardOfSeatSideAisle": true,
+  "underConsoleVerticalSamples": [
+    {
+      "x": -0.85,
+      "z": -4.65,
+      "surfaceY": [
+        -0.856789,
+        -0.788396
+      ],
+      "firstSurfaceAboveFloor": 0.684211
+    },
+    {
+      "x": -0.85,
+      "z": -4.8,
+      "surfaceY": [
+        -1.523193,
+        -1.505365,
+        -0.945292,
+        -0.745293
+      ],
+      "firstSurfaceAboveFloor": 0.017807
+    },
+    {
+      "x": -0.85,
+      "z": -4.95,
+      "surfaceY": [
+        -1.404815,
+        -0.688019
+      ],
+      "firstSurfaceAboveFloor": 0.136185
+    },
+    {
+      "x": -0.85,
+      "z": -5.1,
+      "surfaceY": [
+        -1.404783,
+        -0.485273,
+        -0.476614,
+        -0.457546
+      ],
+      "firstSurfaceAboveFloor": 0.136217
+    },
+    {
+      "x": -0.65,
+      "z": -4.65,
+      "surfaceY": [
+        -0.856686,
+        -0.788117
+      ],
+      "firstSurfaceAboveFloor": 0.684314
+    },
+    {
+      "x": -0.65,
+      "z": -4.8,
+      "surfaceY": [
+        -0.899076,
+        -0.738229
+      ],
+      "firstSurfaceAboveFloor": 0.641924
+    },
+    {
+      "x": -0.65,
+      "z": -4.95,
+      "surfaceY": [
+        -0.887549,
+        -0.686578
+      ],
+      "firstSurfaceAboveFloor": 0.653451
+    },
+    {
+      "x": -0.65,
+      "z": -5.1,
+      "surfaceY": [
+        -0.887501,
+        -0.492582,
+        -0.477202,
+        -0.457512
+      ],
+      "firstSurfaceAboveFloor": 0.653499
+    },
+    {
+      "x": -0.45,
+      "z": -4.65,
+      "surfaceY": [],
+      "firstSurfaceAboveFloor": null
+    },
+    {
+      "x": -0.45,
+      "z": -4.8,
+      "surfaceY": [
+        -0.898584,
+        -0.733784
+      ],
+      "firstSurfaceAboveFloor": 0.642416
+    },
+    {
+      "x": -0.45,
+      "z": -4.95,
+      "surfaceY": [
+        -0.887527,
+        -0.677003
+      ],
+      "firstSurfaceAboveFloor": 0.653473
+    },
+    {
+      "x": -0.45,
+      "z": -5.1,
+      "surfaceY": [
+        -0.887498,
+        -0.457562
+      ],
+      "firstSurfaceAboveFloor": 0.653502
+    },
+    {
+      "x": 0.45,
+      "z": -4.65,
+      "surfaceY": [],
+      "firstSurfaceAboveFloor": null
+    },
+    {
+      "x": 0.45,
+      "z": -4.8,
+      "surfaceY": [
+        -0.89857,
+        -0.733796
+      ],
+      "firstSurfaceAboveFloor": 0.64243
+    },
+    {
+      "x": 0.45,
+      "z": -4.95,
+      "surfaceY": [
+        -0.887556,
+        -0.67866
+      ],
+      "firstSurfaceAboveFloor": 0.653444
+    },
+    {
+      "x": 0.45,
+      "z": -5.1,
+      "surfaceY": [
+        -0.887513,
+        -0.457575
+      ],
+      "firstSurfaceAboveFloor": 0.653487
+    },
+    {
+      "x": 0.65,
+      "z": -4.65,
+      "surfaceY": [
+        -0.856676,
+        -0.788228
+      ],
+      "firstSurfaceAboveFloor": 0.684324
+    },
+    {
+      "x": 0.65,
+      "z": -4.8,
+      "surfaceY": [
+        -0.899924,
+        -0.737903
+      ],
+      "firstSurfaceAboveFloor": 0.641076
+    },
+    {
+      "x": 0.65,
+      "z": -4.95,
+      "surfaceY": [
+        -0.887586,
+        -0.686671
+      ],
+      "firstSurfaceAboveFloor": 0.653414
+    },
+    {
+      "x": 0.65,
+      "z": -5.1,
+      "surfaceY": [
+        -0.887543,
+        -0.492559,
+        -0.477019,
+        -0.457549
+      ],
+      "firstSurfaceAboveFloor": 0.653457
+    },
+    {
+      "x": 0.85,
+      "z": -4.65,
+      "surfaceY": [
+        -0.856636,
+        -0.78823
+      ],
+      "firstSurfaceAboveFloor": 0.684364
+    },
+    {
+      "x": 0.85,
+      "z": -4.8,
+      "surfaceY": [
+        -1.523072,
+        -1.505257,
+        -0.94508,
+        -0.746069
+      ],
+      "firstSurfaceAboveFloor": 0.017928
+    },
+    {
+      "x": 0.85,
+      "z": -4.95,
+      "surfaceY": [
+        -1.404785,
+        -0.687577
+      ],
+      "firstSurfaceAboveFloor": 0.136215
+    },
+    {
+      "x": 0.85,
+      "z": -5.1,
+      "surfaceY": [
+        -1.404754,
+        -0.48476,
+        -0.476802,
+        -0.457525
+      ],
+      "firstSurfaceAboveFloor": 0.136246
+    }
+  ],
+  "sightSamples": [
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.95,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.95,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.95,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.65,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.65,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.65,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.35000000000000003,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.35000000000000003,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        -0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        -0.35000000000000003,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.35000000000000003,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.35000000000000003,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.35000000000000003,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.65,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.65,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.65,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.95,
+        -0.3,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.95,
+        -0.18,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    },
+    {
+      "eye": [
+        0.65,
+        -0.18,
+        -3.84
+      ],
+      "target": [
+        0.95,
+        -0.1,
+        -6.05
+      ],
+      "hitsBeforeTarget": {
+        "console": [],
+        "r13": [],
+        "opaqueHull": []
+      }
+    }
+  ],
+  "geometryOrTextureModified": false,
+  "limits": [
+    "AABB separation and finite rays do not certify knees, hand reach or continuous collision.",
+    "Sight rays sample console/r13/opaque hull only; glazing and the complete frame are not certified.",
+    "No new model geometry, human rig or collision fixture was constructed."
+  ]
+}

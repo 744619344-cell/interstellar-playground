@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-16",
+  "status": "retained-for-whole-cabin-trial-browser-initialization-blocks-live-review",
+  "destination": "https://3d.hunyuan.tencent.com/creation",
+  "model": "V3.1",
+  "faceSelectionVerified": "50k",
+  "visibleQuotaBefore": 20,
+  "freeSubmissionTermsVerified": true,
+  "inputManifest": "八视图补充-20261016/八视图候选清单.json",
+  "eightSha256Matches": true,
+  "review": "Eight views inspected individually. Two front-lip grips and two supports/feet are consistent in broad layout. Side and front-oblique camera directions correspond. Top has the front lip at the image bottom; the selected underside image has the front lip at the image top. Independent raster details are not shared-mesh or ergonomic proof.",
+  "plannedInputs": [
+    {
+      "slot": "front",
+      "file": "正面.png"
+    },
+    {
+      "slot": "back",
+      "file": "背面.png"
+    },
+    {
+      "slot": "left",
+      "file": "左面.png"
+    },
+    {
+      "slot": "right",
+      "file": "右面.png"
+    },
+    {
+      "slot": "top",
+      "file": "八视图补充-20261016/顶面-候选-v2.png"
+    },
+    {
+      "slot": "bottom",
+      "file": "八视图补充-20261016/底面-候选-v3.png"
+    },
+    {
+      "slot": "left_front_45",
+      "file": "八视图补充-20261016/左前45度-候选-v1.png"
+    },
+    {
+      "slot": "right_front_45",
+      "file": "八视图补充-20261016/右前45度-候选-v1.png"
+    }
+  ],
+  "realWebSlotCount": 8,
+  "settingsScreenshot": "八图生成前-待授权-20261016.png",
+  "automaticReview": {
+    "action": "Official file chooser upload of front image as first step of this eight-image input set",
+    "decision": "rejected due to unacceptable risk",
+    "reason": "Reviewer classified this as a private project image upload to external Tencent Hunyuan; the general model-continuation request was not considered explicit approval of the specific payload and destination.",
+    "entireJsCallExecuted": false,
+    "verifiedAfterRejection": "No execution record created by that call, no round binding defined, all eight website slots still empty",
+    "retryOrWorkaroundAttempted": false,
+    "specificUserApprovalRequested": true
+  },
+  "uploadedImages": 8,
+  "setFilesCalls": 8,
+  "submitClicks": 1,
+  "acceptedJobs": 1,
+  "acceptedHistoricalTotal": 38,
+  "paymentMade": false,
+  "sourceV2Exists": true,
+  "r13AndOriginalInputsRetained": true,
+  "geometryCreatedOrChanged": false,
+  "runtimeReplaced": false,
+  "nextStep": "Obtain explicit approval for these eight design images to Tencent Hunyuan, then use official upload flow. Verify uploaded thumbnails and free V3.1/50k conditions before a single authorized submission; do not pay or submit twice.",
+  "explicitAuthorization": "User replied 继续处理 to the immediately preceding question naming these eight images, Tencent Hunyuan, V3.1/50k and a single free generation",
+  "selectedSlots": [
+    {
+      "slot": "front",
+      "file": "正面.png"
+    },
+    {
+      "slot": "back",
+      "file": "背面.png"
+    },
+    {
+      "slot": "left",
+      "file": "左面.png"
+    },
+    {
+      "slot": "right",
+      "file": "右面.png"
+    },
+    {
+      "slot": "top",
+      "file": "八视图补充-20261016/顶面-候选-v2.png"
+    },
+    {
+      "slot": "bottom",
+      "file": "八视图补充-20261016/底面-候选-v3.png"
+    },
+    {
+      "slot": "left_front_45",
+      "file": "八视图补充-20261016/左前45度-候选-v1.png"
+    },
+    {
+      "slot": "right_front_45",
+      "file": "八视图补充-20261016/右前45度-候选-v1.png"
+    }
+  ],
+  "setFilesAttempts": 9,
+  "uploadBlock": {
+    "stage": "fileChooser.setFiles",
+    "message": "Allow access to file URLs is required for the ChatGPT Chrome extension.",
+    "frontChooserOpened": true,
+    "verifiedAllSlotsEmpty": true,
+    "quotaAfter": 20,
+    "requiresUserAction": true
+  },
+  "uploadBlockResolved": true,
+  "uploadScreenshot": "八图上传成功-20261016.png",
+  "freeTermsEvidence": {
+    "dailyRemaining": "今日剩余生成次数：20",
+    "pricePromptPresent": false,
+    "model": "V3.1",
+    "faceSelection": "50k",
+    "screenshot": "生成前额度与参数-20261016.png"
+  },
+  "freeQuotaAfter": 19,
+  "acceptanceEvidence": "几何 纹理 生成中；每日次数20→19；资产进行中1",
+  "original": {
+    "file": "混元原始模型.glb",
+    "bytes": 44098852,
+    "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+    "webTriangles": 50006,
+    "webVertices": 38387,
+    "downloadMethod": "official GLB menu and browser download event"
+  },
+  "acceptedTotalBefore": 37,
+  "acceptedTotalAfter": 38,
+  "sourceReport": "原始模型检查.json",
+  "trialReport": "来源与试装检查-20261016.json",
+  "wholeCabinContinuation": "整舱接入复验-20261016.json",
+  "userDelegatedQualityJudgment": true
+}

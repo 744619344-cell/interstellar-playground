@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+  "uniformScale": 2.151905840699752,
+  "rotationYDegrees": 0,
+  "placementCenter": [
+    0.0,
+    -0.9625773351055382,
+    -4.97
+  ],
+  "floorY": -1.541,
+  "displayedDimensions": [
+    2.3,
+    1.1568453297889234,
+    0.7248158098280596
+  ],
+  "displayedBounds": [
+    [
+      -1.15,
+      -1.541,
+      -5.33240790491403
+    ],
+    [
+      1.15,
+      -0.3841546702110765,
+      -4.60759209508597
+    ]
+  ],
+  "seatFrontZ": -4.43729305267334,
+  "envelopeGapToSeatFront": 0.17029904241262983,
+  "geometryModified": false,
+  "textureModified": false,
+  "status": "uniform-transform-candidate-visual-and-human-clearance-pending",
+  "limits": "Envelope gap is not knee clearance; no full collision or hand-reach acceptance."
+}

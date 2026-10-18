@@ -1,0 +1,1453 @@
+{
+  "status": "doorway_and_arched_enclosure_improved_but_fit_and_visual_rejected",
+  "cabinPose": {
+    "rotationY": 3.141592653589793,
+    "uniformScale": 11.672755407414064,
+    "placementCenter": [
+      0,
+      0.5486770000000001,
+      -1.0411343896589784
+    ],
+    "orientedCenter": [
+      -0.05013899505138392,
+      0.18623402107926085,
+      -0.10183753126755207
+    ],
+    "displayDimensions": [
+      7.1,
+      4.347727875601356,
+      11.517731220682043
+    ],
+    "frontZ": -6.8,
+    "floorReference": -1.541,
+    "pilotFloorSamplesBefore": [
+      -2.089291,
+      -2.0918829999999997,
+      -2.089677
+    ],
+    "floorAlignmentReliable": true,
+    "sourceNoseAxis": "+Z",
+    "method": "Whole-source yaw180.0deg; width7.1m reference; bow boundz-6.8. Three pilot floor rays align median. Not a fit guarantee."
+  },
+  "candidatePoses": {
+    "width": {
+      "rotationY": 3.141592653589793,
+      "uniformScale": 11.672755407414064,
+      "placementCenter": [
+        0,
+        0.5486770000000001,
+        -1.0411343896589784
+      ],
+      "orientedCenter": [
+        -0.05013899505138392,
+        0.18623402107926085,
+        -0.10183753126755207
+      ],
+      "displayDimensions": [
+        7.1,
+        4.347727875601356,
+        11.517731220682043
+      ],
+      "frontZ": -6.8,
+      "floorReference": -1.541,
+      "pilotFloorSamplesBefore": [
+        -2.089291,
+        -2.0918829999999997,
+        -2.089677
+      ],
+      "floorAlignmentReliable": true,
+      "sourceNoseAxis": "+Z",
+      "method": "Whole-source yaw180.0deg; width7.1m reference; bow boundz-6.8. Three pilot floor rays align median. Not a fit guarantee."
+    },
+    "length": {
+      "rotationY": 3.141592653589793,
+      "uniformScale": 13.377666870814641,
+      "placementCenter": [
+        0,
+        0.8538169999999998,
+        -0.20000000000000018
+      ],
+      "orientedCenter": [
+        -0.05013899505138392,
+        0.18623402107926085,
+        -0.10183753126755207
+      ],
+      "displayDimensions": [
+        8.1370191927825,
+        4.982752840670947,
+        13.2
+      ],
+      "frontZ": -6.8,
+      "floorReference": -1.541,
+      "pilotFloorSamplesBefore": [
+        -2.3946769999999997,
+        -2.3972339999999996,
+        -2.3948169999999998
+      ],
+      "floorAlignmentReliable": true,
+      "sourceNoseAxis": "+Z",
+      "method": "Whole-source yaw180.0deg; length13.2m reference; bow boundz-6.8. Three pilot floor rays align median. Not a fit guarantee."
+    }
+  },
+  "finiteVerticalSamples": [
+    {
+      "x": -2,
+      "z": -5.5,
+      "hullUp": 0.837252,
+      "linerUp": null,
+      "hullDown": 2.821732,
+      "linerDown": 1.3395,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.482232
+    },
+    {
+      "x": -1,
+      "z": -5.5,
+      "hullUp": 1.782931,
+      "linerUp": null,
+      "hullDown": 3.021541,
+      "linerDown": 1.339366,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.682175
+    },
+    {
+      "x": 0,
+      "z": -5.5,
+      "hullUp": 1.943048,
+      "linerUp": null,
+      "hullDown": 3.017524,
+      "linerDown": 1.343576,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.6739479999999998
+    },
+    {
+      "x": 1,
+      "z": -5.5,
+      "hullUp": 1.783097,
+      "linerUp": null,
+      "hullDown": 3.006159,
+      "linerDown": 1.33968,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.6664789999999998
+    },
+    {
+      "x": 2,
+      "z": -5.5,
+      "hullUp": 0.858363,
+      "linerUp": null,
+      "hullDown": 2.820282,
+      "linerDown": 1.340451,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.4798310000000001
+    },
+    {
+      "x": -2,
+      "z": -4,
+      "hullUp": 2.08726,
+      "linerUp": null,
+      "hullDown": 3.14669,
+      "linerDown": 1.341317,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.805373
+    },
+    {
+      "x": -1,
+      "z": -4,
+      "hullUp": 2.688345,
+      "linerUp": null,
+      "hullDown": 3.172391,
+      "linerDown": 1.340573,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.8318180000000002
+    },
+    {
+      "x": 0,
+      "z": -4,
+      "hullUp": 2.834134,
+      "linerUp": null,
+      "hullDown": 3.171028,
+      "linerDown": 1.343206,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.8278220000000003
+    },
+    {
+      "x": 1,
+      "z": -4,
+      "hullUp": 2.691716,
+      "linerUp": null,
+      "hullDown": 3.171538,
+      "linerDown": 1.341226,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.830312
+    },
+    {
+      "x": 2,
+      "z": -4,
+      "hullUp": 2.090327,
+      "linerUp": null,
+      "hullDown": 3.14358,
+      "linerDown": 1.341673,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.8019070000000001
+    },
+    {
+      "x": -2,
+      "z": -2,
+      "hullUp": 2.680937,
+      "linerUp": 2.401312,
+      "hullDown": 3.244191,
+      "linerDown": 1.341253,
+      "roofSurfaceSeparation": 0.27962500000000023,
+      "floorBelowHull": -1.9029379999999998
+    },
+    {
+      "x": -1,
+      "z": -2,
+      "hullUp": 3.145709,
+      "linerUp": null,
+      "hullDown": 3.276716,
+      "linerDown": 1.340562,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.936154
+    },
+    {
+      "x": 0,
+      "z": -2,
+      "hullUp": 3.181011,
+      "linerUp": null,
+      "hullDown": 3.278792,
+      "linerDown": 1.3443,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.934492
+    },
+    {
+      "x": 1,
+      "z": -2,
+      "hullUp": 3.14695,
+      "linerUp": null,
+      "hullDown": 3.276014,
+      "linerDown": 1.340863,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.935151
+    },
+    {
+      "x": 2,
+      "z": -2,
+      "hullUp": 2.673617,
+      "linerUp": 2.399696,
+      "hullDown": 3.241671,
+      "linerDown": 1.341218,
+      "roofSurfaceSeparation": 0.2739210000000001,
+      "floorBelowHull": -1.9004530000000002
+    },
+    {
+      "x": -2,
+      "z": 0,
+      "hullUp": 2.821169,
+      "linerUp": 2.391145,
+      "hullDown": 3.251801,
+      "linerDown": 1.344293,
+      "roofSurfaceSeparation": 0.43002399999999996,
+      "floorBelowHull": -1.907508
+    },
+    {
+      "x": -1,
+      "z": 0,
+      "hullUp": 3.38653,
+      "linerUp": 2.758246,
+      "hullDown": 3.282516,
+      "linerDown": 1.344334,
+      "roofSurfaceSeparation": 0.6282839999999998,
+      "floorBelowHull": -1.9381820000000003
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "hullUp": 3.497431,
+      "linerUp": 2.849752,
+      "hullDown": 3.282103,
+      "linerDown": 1.344944,
+      "roofSurfaceSeparation": 0.6476790000000001,
+      "floorBelowHull": -1.9371590000000003
+    },
+    {
+      "x": 1,
+      "z": 0,
+      "hullUp": 3.384764,
+      "linerUp": 2.757032,
+      "hullDown": 3.281488,
+      "linerDown": 1.345037,
+      "roofSurfaceSeparation": 0.627732,
+      "floorBelowHull": -1.936451
+    },
+    {
+      "x": 2,
+      "z": 0,
+      "hullUp": 2.818968,
+      "linerUp": 2.388851,
+      "hullDown": 3.25461,
+      "linerDown": 1.345177,
+      "roofSurfaceSeparation": 0.4301170000000001,
+      "floorBelowHull": -1.909433
+    },
+    {
+      "x": -2,
+      "z": 2,
+      "hullUp": 2.960431,
+      "linerUp": 2.387431,
+      "hullDown": 3.235645,
+      "linerDown": 1.341269,
+      "roofSurfaceSeparation": 0.573,
+      "floorBelowHull": -1.8943759999999998
+    },
+    {
+      "x": -1,
+      "z": 2,
+      "hullUp": 3.53744,
+      "linerUp": 2.757346,
+      "hullDown": 3.234055,
+      "linerDown": 1.341414,
+      "roofSurfaceSeparation": 0.7800940000000001,
+      "floorBelowHull": -1.892641
+    },
+    {
+      "x": 0,
+      "z": 2,
+      "hullUp": 3.632893,
+      "linerUp": 2.851052,
+      "hullDown": 3.233097,
+      "linerDown": 1.344655,
+      "roofSurfaceSeparation": 0.781841,
+      "floorBelowHull": -1.888442
+    },
+    {
+      "x": 1,
+      "z": 2,
+      "hullUp": 3.535625,
+      "linerUp": 2.756702,
+      "hullDown": 3.235059,
+      "linerDown": 1.341498,
+      "roofSurfaceSeparation": 0.7789229999999998,
+      "floorBelowHull": -1.893561
+    },
+    {
+      "x": 2,
+      "z": 2,
+      "hullUp": 2.957955,
+      "linerUp": 2.388145,
+      "hullDown": 3.235536,
+      "linerDown": 1.342028,
+      "roofSurfaceSeparation": 0.5698099999999999,
+      "floorBelowHull": -1.8935080000000002
+    },
+    {
+      "x": -2,
+      "z": 4,
+      "hullUp": 2.85466,
+      "linerUp": 2.386911,
+      "hullDown": 3.16418,
+      "linerDown": 1.34216,
+      "roofSurfaceSeparation": 0.46774899999999997,
+      "floorBelowHull": -1.82202
+    },
+    {
+      "x": -1,
+      "z": 4,
+      "hullUp": 3.322011,
+      "linerUp": 2.757334,
+      "hullDown": 3.175012,
+      "linerDown": 1.341328,
+      "roofSurfaceSeparation": 0.5646769999999997,
+      "floorBelowHull": -1.833684
+    },
+    {
+      "x": 0,
+      "z": 4,
+      "hullUp": 3.541584,
+      "linerUp": 2.852386,
+      "hullDown": 3.176127,
+      "linerDown": 1.344836,
+      "roofSurfaceSeparation": 0.6891979999999998,
+      "floorBelowHull": -1.8312910000000002
+    },
+    {
+      "x": 1,
+      "z": 4,
+      "hullUp": 3.322039,
+      "linerUp": 2.757001,
+      "hullDown": 3.174549,
+      "linerDown": 1.34173,
+      "roofSurfaceSeparation": 0.5650380000000004,
+      "floorBelowHull": -1.8328189999999998
+    },
+    {
+      "x": 2,
+      "z": 4,
+      "hullUp": 2.848054,
+      "linerUp": 2.387969,
+      "hullDown": 3.164811,
+      "linerDown": 1.342266,
+      "roofSurfaceSeparation": 0.46008499999999986,
+      "floorBelowHull": -1.8225449999999999
+    },
+    {
+      "x": -2,
+      "z": 5.8,
+      "hullUp": 2.37043,
+      "linerUp": null,
+      "hullDown": 2.931307,
+      "linerDown": null,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": null
+    },
+    {
+      "x": -1,
+      "z": 5.8,
+      "hullUp": 3.084041,
+      "linerUp": null,
+      "hullDown": 2.960373,
+      "linerDown": null,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": null
+    },
+    {
+      "x": 0,
+      "z": 5.8,
+      "hullUp": 3.153053,
+      "linerUp": null,
+      "hullDown": 2.979679,
+      "linerDown": null,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": null
+    },
+    {
+      "x": 1,
+      "z": 5.8,
+      "hullUp": 3.071364,
+      "linerUp": null,
+      "hullDown": 2.95897,
+      "linerDown": null,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": null
+    },
+    {
+      "x": 2,
+      "z": 5.8,
+      "hullUp": 2.368569,
+      "linerUp": null,
+      "hullDown": 2.930766,
+      "linerDown": null,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": null
+    }
+  ],
+  "finiteLateralSamples": [
+    {
+      "y": -1,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 3.186974,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 3.185493,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 3.096963,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 3.082554,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 2.591507,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 2.595238,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.681912,
+      "linerDistance": 3.47901,
+      "firstSurfaceSeparation": 0.20290199999999992
+    },
+    {
+      "y": -1,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.67882,
+      "linerDistance": 3.47824,
+      "firstSurfaceSeparation": 0.20057999999999998
+    },
+    {
+      "y": 0,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.665113,
+      "linerDistance": 3.480637,
+      "firstSurfaceSeparation": 0.18447599999999964
+    },
+    {
+      "y": 0,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.66659,
+      "linerDistance": 3.477791,
+      "firstSurfaceSeparation": 0.18879899999999994
+    },
+    {
+      "y": 1,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.194839,
+      "linerDistance": 3.13581,
+      "firstSurfaceSeparation": 0.059028999999999776
+    },
+    {
+      "y": 1,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.194528,
+      "linerDistance": 3.133121,
+      "firstSurfaceSeparation": 0.06140699999999999
+    },
+    {
+      "y": -1,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.593726,
+      "linerDistance": 3.480574,
+      "firstSurfaceSeparation": 0.11315200000000036
+    },
+    {
+      "y": -1,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.594961,
+      "linerDistance": 3.481007,
+      "firstSurfaceSeparation": 0.11395400000000011
+    },
+    {
+      "y": 0,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.761203,
+      "linerDistance": 3.480425,
+      "firstSurfaceSeparation": 0.2807780000000002
+    },
+    {
+      "y": 0,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.759036,
+      "linerDistance": 3.257977,
+      "firstSurfaceSeparation": 0.5010590000000001
+    },
+    {
+      "y": 1,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.349988,
+      "linerDistance": 3.137262,
+      "firstSurfaceSeparation": 0.21272599999999997
+    },
+    {
+      "y": 1,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.358224,
+      "linerDistance": 3.134334,
+      "firstSurfaceSeparation": 0.22388999999999992
+    },
+    {
+      "y": -1,
+      "z": 2,
+      "side": -1,
+      "hullDistance": null,
+      "linerDistance": 3.478885,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": 2,
+      "side": 1,
+      "hullDistance": null,
+      "linerDistance": 3.478009,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 2,
+      "side": -1,
+      "hullDistance": 3.766172,
+      "linerDistance": 3.478127,
+      "firstSurfaceSeparation": 0.2880449999999999
+    },
+    {
+      "y": 0,
+      "z": 2,
+      "side": 1,
+      "hullDistance": 3.765546,
+      "linerDistance": 3.263807,
+      "firstSurfaceSeparation": 0.5017390000000002
+    },
+    {
+      "y": 1,
+      "z": 2,
+      "side": -1,
+      "hullDistance": 3.572464,
+      "linerDistance": 3.137222,
+      "firstSurfaceSeparation": 0.43524200000000013
+    },
+    {
+      "y": 1,
+      "z": 2,
+      "side": 1,
+      "hullDistance": 3.570129,
+      "linerDistance": 3.133997,
+      "firstSurfaceSeparation": 0.4361320000000002
+    },
+    {
+      "y": -1,
+      "z": 4,
+      "side": -1,
+      "hullDistance": null,
+      "linerDistance": 3.479243,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": 4,
+      "side": 1,
+      "hullDistance": null,
+      "linerDistance": 3.478668,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 4,
+      "side": -1,
+      "hullDistance": 3.758771,
+      "linerDistance": 3.477603,
+      "firstSurfaceSeparation": 0.28116799999999964
+    },
+    {
+      "y": 0,
+      "z": 4,
+      "side": 1,
+      "hullDistance": 3.759109,
+      "linerDistance": 3.476931,
+      "firstSurfaceSeparation": 0.28217800000000004
+    },
+    {
+      "y": 1,
+      "z": 4,
+      "side": -1,
+      "hullDistance": 3.443124,
+      "linerDistance": 3.136051,
+      "firstSurfaceSeparation": 0.30707299999999993
+    },
+    {
+      "y": 1,
+      "z": 4,
+      "side": 1,
+      "hullDistance": 3.443279,
+      "linerDistance": 3.133646,
+      "firstSurfaceSeparation": 0.3096329999999998
+    },
+    {
+      "y": -1,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 2.70791,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 2.708721,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 3.145181,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 3.14692,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 2.805031,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 2.805306,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    }
+  ],
+  "lengthFitFiniteVerticalSamples": [
+    {
+      "x": -2,
+      "z": -5.5,
+      "hullUp": 0.837252,
+      "linerUp": null,
+      "hullDown": 2.821732,
+      "linerDown": 1.338556,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.4831759999999998
+    },
+    {
+      "x": -1,
+      "z": -5.5,
+      "hullUp": 1.782931,
+      "linerUp": null,
+      "hullDown": 3.021541,
+      "linerDown": 1.339188,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.682353
+    },
+    {
+      "x": 0,
+      "z": -5.5,
+      "hullUp": 1.943048,
+      "linerUp": null,
+      "hullDown": 3.017524,
+      "linerDown": 1.344316,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.6732079999999998
+    },
+    {
+      "x": 1,
+      "z": -5.5,
+      "hullUp": 1.783097,
+      "linerUp": null,
+      "hullDown": 3.006159,
+      "linerDown": 1.339645,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.6665139999999998
+    },
+    {
+      "x": 2,
+      "z": -5.5,
+      "hullUp": 0.858363,
+      "linerUp": null,
+      "hullDown": 2.820282,
+      "linerDown": 1.338919,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.4813630000000002
+    },
+    {
+      "x": -2,
+      "z": -4,
+      "hullUp": 2.08726,
+      "linerUp": null,
+      "hullDown": 3.14669,
+      "linerDown": 1.341049,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.805641
+    },
+    {
+      "x": -1,
+      "z": -4,
+      "hullUp": 2.688345,
+      "linerUp": null,
+      "hullDown": 3.172391,
+      "linerDown": 1.340256,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.8321350000000003
+    },
+    {
+      "x": 0,
+      "z": -4,
+      "hullUp": 2.834134,
+      "linerUp": null,
+      "hullDown": 3.171028,
+      "linerDown": 1.343417,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.827611
+    },
+    {
+      "x": 1,
+      "z": -4,
+      "hullUp": 2.691716,
+      "linerUp": null,
+      "hullDown": 3.171538,
+      "linerDown": 1.340831,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.8307069999999999
+    },
+    {
+      "x": 2,
+      "z": -4,
+      "hullUp": 2.090327,
+      "linerUp": null,
+      "hullDown": 3.14358,
+      "linerDown": 1.34181,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.80177
+    },
+    {
+      "x": -2,
+      "z": -2,
+      "hullUp": 2.680937,
+      "linerUp": null,
+      "hullDown": 3.244191,
+      "linerDown": 1.341251,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.9029399999999999
+    },
+    {
+      "x": -1,
+      "z": -2,
+      "hullUp": 3.145709,
+      "linerUp": null,
+      "hullDown": 3.276716,
+      "linerDown": 1.340884,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.935832
+    },
+    {
+      "x": 0,
+      "z": -2,
+      "hullUp": 3.181011,
+      "linerUp": null,
+      "hullDown": 3.278792,
+      "linerDown": 1.344456,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.934336
+    },
+    {
+      "x": 1,
+      "z": -2,
+      "hullUp": 3.14695,
+      "linerUp": null,
+      "hullDown": 3.276014,
+      "linerDown": 1.341302,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.934712
+    },
+    {
+      "x": 2,
+      "z": -2,
+      "hullUp": 2.673617,
+      "linerUp": null,
+      "hullDown": 3.241671,
+      "linerDown": 1.341595,
+      "roofSurfaceSeparation": null,
+      "floorBelowHull": -1.900076
+    },
+    {
+      "x": -2,
+      "z": 0,
+      "hullUp": 2.821169,
+      "linerUp": 3.158033,
+      "hullDown": 3.251801,
+      "linerDown": 1.341032,
+      "roofSurfaceSeparation": -0.3368640000000003,
+      "floorBelowHull": -1.910769
+    },
+    {
+      "x": -1,
+      "z": 0,
+      "hullUp": 3.38653,
+      "linerUp": 3.37106,
+      "hullDown": 3.282516,
+      "linerDown": 1.340759,
+      "roofSurfaceSeparation": 0.015470000000000095,
+      "floorBelowHull": -1.9417570000000002
+    },
+    {
+      "x": 0,
+      "z": 0,
+      "hullUp": 3.497431,
+      "linerUp": 3.46278,
+      "hullDown": 3.282103,
+      "linerDown": 1.344881,
+      "roofSurfaceSeparation": 0.03465100000000021,
+      "floorBelowHull": -1.9372220000000002
+    },
+    {
+      "x": 1,
+      "z": 0,
+      "hullUp": 3.384764,
+      "linerUp": 3.370512,
+      "hullDown": 3.281488,
+      "linerDown": 1.341103,
+      "roofSurfaceSeparation": 0.014251999999999931,
+      "floorBelowHull": -1.940385
+    },
+    {
+      "x": 2,
+      "z": 0,
+      "hullUp": 2.818968,
+      "linerUp": 3.157101,
+      "hullDown": 3.25461,
+      "linerDown": 1.341117,
+      "roofSurfaceSeparation": -0.338133,
+      "floorBelowHull": -1.913493
+    },
+    {
+      "x": -2,
+      "z": 2,
+      "hullUp": 2.960431,
+      "linerUp": 3.157772,
+      "hullDown": 3.235645,
+      "linerDown": 1.340896,
+      "roofSurfaceSeparation": -0.1973410000000002,
+      "floorBelowHull": -1.8947489999999998
+    },
+    {
+      "x": -1,
+      "z": 2,
+      "hullUp": 3.53744,
+      "linerUp": 3.370973,
+      "hullDown": 3.234055,
+      "linerDown": 1.340983,
+      "roofSurfaceSeparation": 0.16646699999999992,
+      "floorBelowHull": -1.893072
+    },
+    {
+      "x": 0,
+      "z": 2,
+      "hullUp": 3.632893,
+      "linerUp": 3.464287,
+      "hullDown": 3.233097,
+      "linerDown": 1.344815,
+      "roofSurfaceSeparation": 0.16860600000000003,
+      "floorBelowHull": -1.8882819999999998
+    },
+    {
+      "x": 1,
+      "z": 2,
+      "hullUp": 3.535625,
+      "linerUp": 3.370641,
+      "hullDown": 3.235059,
+      "linerDown": 1.341263,
+      "roofSurfaceSeparation": 0.16498400000000002,
+      "floorBelowHull": -1.893796
+    },
+    {
+      "x": 2,
+      "z": 2,
+      "hullUp": 2.957955,
+      "linerUp": 3.156967,
+      "hullDown": 3.235536,
+      "linerDown": 1.341143,
+      "roofSurfaceSeparation": -0.19901199999999974,
+      "floorBelowHull": -1.8943930000000002
+    },
+    {
+      "x": -2,
+      "z": 4,
+      "hullUp": 2.85466,
+      "linerUp": 3.158299,
+      "hullDown": 3.16418,
+      "linerDown": 1.341153,
+      "roofSurfaceSeparation": -0.303639,
+      "floorBelowHull": -1.823027
+    },
+    {
+      "x": -1,
+      "z": 4,
+      "hullUp": 3.322011,
+      "linerUp": 3.370519,
+      "hullDown": 3.175012,
+      "linerDown": 1.340916,
+      "roofSurfaceSeparation": -0.048507999999999996,
+      "floorBelowHull": -1.8340960000000002
+    },
+    {
+      "x": 0,
+      "z": 4,
+      "hullUp": 3.541584,
+      "linerUp": 3.463201,
+      "hullDown": 3.176127,
+      "linerDown": 1.344128,
+      "roofSurfaceSeparation": 0.07838299999999965,
+      "floorBelowHull": -1.8319990000000002
+    },
+    {
+      "x": 1,
+      "z": 4,
+      "hullUp": 3.322039,
+      "linerUp": 3.370532,
+      "hullDown": 3.174549,
+      "linerDown": 1.341273,
+      "roofSurfaceSeparation": -0.048492999999999675,
+      "floorBelowHull": -1.833276
+    },
+    {
+      "x": 2,
+      "z": 4,
+      "hullUp": 2.848054,
+      "linerUp": 3.156965,
+      "hullDown": 3.164811,
+      "linerDown": 1.341233,
+      "roofSurfaceSeparation": -0.30891100000000016,
+      "floorBelowHull": -1.823578
+    },
+    {
+      "x": -2,
+      "z": 5.8,
+      "hullUp": 2.37043,
+      "linerUp": 3.161652,
+      "hullDown": 2.931307,
+      "linerDown": 1.346044,
+      "roofSurfaceSeparation": -0.7912220000000003,
+      "floorBelowHull": -1.5852629999999999
+    },
+    {
+      "x": -1,
+      "z": 5.8,
+      "hullUp": 3.084041,
+      "linerUp": 3.371236,
+      "hullDown": 2.960373,
+      "linerDown": 1.347424,
+      "roofSurfaceSeparation": -0.2871950000000001,
+      "floorBelowHull": -1.6129490000000002
+    },
+    {
+      "x": 0,
+      "z": 5.8,
+      "hullUp": 3.153053,
+      "linerUp": 3.46069,
+      "hullDown": 2.979679,
+      "linerDown": 1.345978,
+      "roofSurfaceSeparation": -0.30763700000000016,
+      "floorBelowHull": -1.633701
+    },
+    {
+      "x": 1,
+      "z": 5.8,
+      "hullUp": 3.071364,
+      "linerUp": 3.372232,
+      "hullDown": 2.95897,
+      "linerDown": 1.34772,
+      "roofSurfaceSeparation": -0.3008679999999999,
+      "floorBelowHull": -1.6112499999999998
+    },
+    {
+      "x": 2,
+      "z": 5.8,
+      "hullUp": 2.368569,
+      "linerUp": 3.163387,
+      "hullDown": 2.930766,
+      "linerDown": 1.347818,
+      "roofSurfaceSeparation": -0.7948180000000002,
+      "floorBelowHull": -1.5829480000000002
+    }
+  ],
+  "lengthFitFiniteLateralSamples": [
+    {
+      "y": -1,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 3.186974,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 3.185493,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 3.096963,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 3.082554,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": -4,
+      "side": -1,
+      "hullDistance": 2.591507,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 1,
+      "z": -4,
+      "side": 1,
+      "hullDistance": 2.595238,
+      "linerDistance": null,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.681912,
+      "linerDistance": 3.987259,
+      "firstSurfaceSeparation": -0.3053469999999998
+    },
+    {
+      "y": -1,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.67882,
+      "linerDistance": 3.986026,
+      "firstSurfaceSeparation": -0.30720599999999987
+    },
+    {
+      "y": 0,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.665113,
+      "linerDistance": 3.987035,
+      "firstSurfaceSeparation": -0.32192200000000026
+    },
+    {
+      "y": 0,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.66659,
+      "linerDistance": 3.986184,
+      "firstSurfaceSeparation": -0.3195940000000004
+    },
+    {
+      "y": 1,
+      "z": -2,
+      "side": -1,
+      "hullDistance": 3.194839,
+      "linerDistance": 3.758997,
+      "firstSurfaceSeparation": -0.5641579999999999
+    },
+    {
+      "y": 1,
+      "z": -2,
+      "side": 1,
+      "hullDistance": 3.194528,
+      "linerDistance": 3.755052,
+      "firstSurfaceSeparation": -0.560524
+    },
+    {
+      "y": -1,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.593726,
+      "linerDistance": 3.987071,
+      "firstSurfaceSeparation": -0.3933449999999996
+    },
+    {
+      "y": -1,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.594961,
+      "linerDistance": 3.986661,
+      "firstSurfaceSeparation": -0.3916999999999997
+    },
+    {
+      "y": 0,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.761203,
+      "linerDistance": 3.987123,
+      "firstSurfaceSeparation": -0.2259199999999999
+    },
+    {
+      "y": 0,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.759036,
+      "linerDistance": 3.986851,
+      "firstSurfaceSeparation": -0.2278150000000001
+    },
+    {
+      "y": 1,
+      "z": 0,
+      "side": -1,
+      "hullDistance": 3.349988,
+      "linerDistance": 3.757021,
+      "firstSurfaceSeparation": -0.40703299999999976
+    },
+    {
+      "y": 1,
+      "z": 0,
+      "side": 1,
+      "hullDistance": 3.358224,
+      "linerDistance": 3.753302,
+      "firstSurfaceSeparation": -0.39507800000000026
+    },
+    {
+      "y": -1,
+      "z": 2,
+      "side": -1,
+      "hullDistance": null,
+      "linerDistance": 3.986813,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": 2,
+      "side": 1,
+      "hullDistance": null,
+      "linerDistance": 3.986564,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 2,
+      "side": -1,
+      "hullDistance": 3.766172,
+      "linerDistance": 3.987163,
+      "firstSurfaceSeparation": -0.22099099999999972
+    },
+    {
+      "y": 0,
+      "z": 2,
+      "side": 1,
+      "hullDistance": 3.765546,
+      "linerDistance": 3.986898,
+      "firstSurfaceSeparation": -0.221352
+    },
+    {
+      "y": 1,
+      "z": 2,
+      "side": -1,
+      "hullDistance": 3.572464,
+      "linerDistance": 3.756989,
+      "firstSurfaceSeparation": -0.18452499999999983
+    },
+    {
+      "y": 1,
+      "z": 2,
+      "side": 1,
+      "hullDistance": 3.570129,
+      "linerDistance": 3.75343,
+      "firstSurfaceSeparation": -0.18330099999999971
+    },
+    {
+      "y": -1,
+      "z": 4,
+      "side": -1,
+      "hullDistance": null,
+      "linerDistance": 3.986814,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": -1,
+      "z": 4,
+      "side": 1,
+      "hullDistance": null,
+      "linerDistance": 3.986946,
+      "firstSurfaceSeparation": null
+    },
+    {
+      "y": 0,
+      "z": 4,
+      "side": -1,
+      "hullDistance": 3.758771,
+      "linerDistance": 3.986899,
+      "firstSurfaceSeparation": -0.22812800000000033
+    },
+    {
+      "y": 0,
+      "z": 4,
+      "side": 1,
+      "hullDistance": 3.759109,
+      "linerDistance": 3.987021,
+      "firstSurfaceSeparation": -0.2279119999999999
+    },
+    {
+      "y": 1,
+      "z": 4,
+      "side": -1,
+      "hullDistance": 3.443124,
+      "linerDistance": 3.75666,
+      "firstSurfaceSeparation": -0.31353600000000004
+    },
+    {
+      "y": 1,
+      "z": 4,
+      "side": 1,
+      "hullDistance": 3.443279,
+      "linerDistance": 3.753569,
+      "firstSurfaceSeparation": -0.3102900000000002
+    },
+    {
+      "y": -1,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 2.70791,
+      "linerDistance": 3.712018,
+      "firstSurfaceSeparation": -1.004108
+    },
+    {
+      "y": -1,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 2.708721,
+      "linerDistance": 3.713305,
+      "firstSurfaceSeparation": -1.004584
+    },
+    {
+      "y": 0,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 3.145181,
+      "linerDistance": 3.733935,
+      "firstSurfaceSeparation": -0.5887539999999998
+    },
+    {
+      "y": 0,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 3.14692,
+      "linerDistance": 3.71145,
+      "firstSurfaceSeparation": -0.56453
+    },
+    {
+      "y": 1,
+      "z": 5.8,
+      "side": -1,
+      "hullDistance": 2.805031,
+      "linerDistance": 3.759004,
+      "firstSurfaceSeparation": -0.953973
+    },
+    {
+      "y": 1,
+      "z": 5.8,
+      "side": 1,
+      "hullDistance": 2.805306,
+      "linerDistance": 3.755018,
+      "firstSurfaceSeparation": -0.9497120000000003
+    }
+  ],
+  "sourceHashes": {
+    "master": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+    "liner": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f"
+  },
+  "geometryModified": false,
+  "sourceMaterialsModified": false,
+  "installationAccepted": false,
+  "limits": "Finite nearest surfaces only. Exterior hull+original glass, not measured inner shell. Negative separation is potential intersection at a sample; positive is observed separation, not universal empty space. No continuous collision, wall thickness, structure, equipment/human clearance or visual acceptance. Design4.9m target is not measured hull height.",
+  "browserReviewCompleted": true,
+  "visualFindingsZh": [
+    "按宽7.1m为7.10×4.35×11.52m，后门恢复贯通，驾驶区向后合显未再明显露出前轮第二层原顶棚；这是机位观察，不能推为完整包络通过。",
+    "侧面/俯视可见按宽仍留上部余量、后壁提前结束；有限屋顶首表面差0.274–0.782m，包含壳厚/服务层，不等于精密空隙。",
+    "按长13.2m后为8.14×4.98×13.20m；侧向有限差均为负，实际向后合显可见原壳切入新舱顶/肩部与两侧，拒绝该姿态。",
+    "按宽后舱向前可见鼻沿/前窗旧壳衔接仍粗糙，原不透明黑色窗侧仍存在；没有修玻璃或窗面。",
+    "来源地板大面积发白，暖白灯带和细接缝大量丢失，框边残留/扭曲明显；结构开口改善不代表美术通过。",
+    "本轮不放家具遮挡，保留完整开口和圆弧结构参考；安装与美术仍未通过，不自动再生成或替换产品。"
+  ],
+  "screenshots": [
+    {
+      "file": "试装-按宽-向后合显.png",
+      "caption": "按宽7.1m：原壳合显，后门贯通，向后覆盖较前轮改善。",
+      "sha256": "394df305de34b07927284e8fec7200f9f2b8b431b2d3cc45865b08ad5fdb21b8"
+    },
+    {
+      "file": "试装-按宽-向后主结构独显.png",
+      "caption": "同机位新主结构独显；白地板、接缝和边框粗糙保留。",
+      "sha256": "ad4857c1e58f4b843e98836c44e99531e82d29c5a0742e82b1afc9e1e36f83c5"
+    },
+    {
+      "file": "试装-向后原壳独显.png",
+      "caption": "同机位原壳独显，核对真实后段空间。",
+      "sha256": "4165682db61abfc2aa8f33b1110f593a0aad28edae44a57016a5720b1ccc81d3"
+    },
+    {
+      "file": "试装-按宽-侧面线框.png",
+      "caption": "按宽侧面诊断：上部余量和后段边界仍需核对。",
+      "sha256": "b136cf1944b72f05f9f54e31bb7ab1d75af4fcbd2143bb76d08c56360fa393df"
+    },
+    {
+      "file": "试装-按宽-俯视线框.png",
+      "caption": "按宽俯视：不是把引擎总包围盒当舱内宽度。",
+      "sha256": "504a1225a3157fae9b687016f214529014c34b1c68facc392afd6507d6a509f7"
+    },
+    {
+      "file": "试装-按长-侧面线框.png",
+      "caption": "按长13.2m侧面，仅作等比诊断。",
+      "sha256": "f497478eb69abce7532788f0c61696f2d925759426b317d22a756a910e8ee733"
+    },
+    {
+      "file": "试装-按长-俯视线框.png",
+      "caption": "按长俯视：两侧超出局部主壳表面。",
+      "sha256": "baa694694f721e7b8b052fc03298907f34d3b9a8f26781bf09e0030fbf80d4ed"
+    },
+    {
+      "file": "试装-按长-向后合显.png",
+      "caption": "按长恢复原材质，可见原壳切入顶/肩部与侧墙。",
+      "sha256": "b1e413e686a9c20ac5b19413d4332c89b6f627b086eab71b27297e22b83ad0ec"
+    },
+    {
+      "file": "试装-按宽-后舱向前合显.png",
+      "caption": "按宽向前：前口衔接和不透明黑色侧窗仍未修复。",
+      "sha256": "b62bc3a3ed1e691be737efc867ccc5f976adc8c5c00d5e272654778dd1040d98"
+    }
+  ],
+  "consoleErrorsWarnings": [],
+  "finalBrowserState": {
+    "camera": "0.00000,0.10000,-4.70000",
+    "fitMode": "width",
+    "glassVisible": "true",
+    "hullMode": "original",
+    "hullVisible": "true",
+    "linerVisible": "true",
+    "loaded": "true",
+    "released": "false",
+    "target": "0.00000,0.10000,4.80000",
+    "view": "aft"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "file": "混元原始模型.glb",
+  "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f",
+  "bytes": 38698784,
+  "sceneTrianglesIncludingInstances": 59243,
+  "meshes": [
+    {
+      "triangles": 59243,
+      "degenerateFaces": 2,
+      "opposedFaceNormals": 2094,
+      "maxNormalLengthError": 1.1920928955078125e-07
+    }
+  ],
+  "images": [
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "status": "container/accessor/index/material/scene/image checks passed",
+  "limits": "Not Khronos Validator; no self-intersection, collision, visual or runtime acceptance. No hull fitting, hollow interior or glass optical acceptance.",
+  "bounds": [
+    [
+      -0.25398799777030945,
+      2.0457614364805907e-08,
+      -0.3915220406021045
+    ],
+    [
+      0.3542659878730774,
+      0.3724680217009073,
+      0.5951971031372086
+    ]
+  ],
+  "dimensions": [
+    0.6082539856433868,
+    0.37246800124329293,
+    0.9867191437393131
+  ],
+  "materials": [
+    {
+      "name": "Material.001",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            2.0,
+            2.0,
+            2.0
+          ]
+        }
+      }
+    }
+  ],
+  "animations": 0,
+  "skins": 0,
+  "geometryOrTextureModified": false,
+  "installationAccepted": false
+}

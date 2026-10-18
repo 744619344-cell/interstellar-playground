@@ -1,0 +1,56 @@
+{
+  "file": "混元原始模型.glb",
+  "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e",
+  "bytes": 33411084,
+  "sceneTrianglesIncludingInstances": 50050,
+  "meshes": [
+    {
+      "triangles": 50050,
+      "degenerateFaces": 1,
+      "opposedFaceNormals": 23,
+      "maxNormalLengthError": 1.1920928955078125e-07
+    }
+  ],
+  "images": [
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    },
+    {
+      "size": [
+        4096,
+        4096
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "status": "container/accessor/index/material/scene/image checks passed",
+  "limits": "Not Khronos Validator; no self-intersection, collision, visual or runtime acceptance.",
+  "bounds": [
+    [
+      -0.5009949803352356,
+      3.816635830865801e-17,
+      -0.3077819943428039
+    ],
+    [
+      0.481344997882843,
+      0.5819590091705321,
+      0.2109210044145583
+    ]
+  ],
+  "dimensions": [
+    0.9823399782180786,
+    0.5819590091705321,
+    0.5187029987573621
+  ]
+}

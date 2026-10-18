@@ -1,0 +1,14 @@
+{
+  "sourceNoseAxis": "+Z",
+  "rotationY": 3.141592653589793,
+  "evidence": [
+    "原件-斜视.png",
+    "原件-正Z.png",
+    "原件-负Z.png",
+    "原件-正X.png",
+    "原件-负X.png",
+    "原件-舱内.png"
+  ],
+  "methodZh": "八方向实看确认+Z为低前端/自然开口，−Z为后壁；后门可见蓝色背景。仅整件Y转pi以对齐原船壳−Z。",
+  "geometryModified": false
+}

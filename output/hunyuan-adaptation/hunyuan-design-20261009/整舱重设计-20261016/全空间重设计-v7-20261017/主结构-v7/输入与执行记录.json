@@ -1,0 +1,247 @@
+{
+  "version": "M01v7",
+  "date": "2026-10-17",
+  "status": "doorway_and_arch_improved_fit_and_visual_not_accepted",
+  "geometryModified": false,
+  "productReplaced": false,
+  "installationAccepted": false,
+  "imagegenCalls": 8,
+  "designReferenceLWH": [
+    13.2,
+    7.1,
+    4.9
+  ],
+  "twoDProbeRatios": {
+    "lengthWidth": 1.86,
+    "heightWidth": 0.76,
+    "notFrozenPhysicalDimensions": true
+  },
+  "variants": [
+    {
+      "file": "正视-初稿未选.png",
+      "native": "exec-3843273f-90a6-417a-98ec-5579be9b0ac7.png",
+      "prompt": "Use case: precise-object-edit. Asset type: front-view image for a complete spacecraft interior liner. Image1 is the edit target: preserve its full continuous floor, open low nose lip, natural front canopy opening, closed rear roof, hollow room and single far rear doorway. Image2 is a TWO-DIMENSIONAL silhouette guide only: match its broad rounded-arch height/width and low vertical wall proportion; do NOT render the diagram, its flat gray fill or text.\nRedesign the CROSS SECTION: full outer width to total height about1.45:1, low upright lower sidewalls occupying about35-38% of full height, then a deep smoothly rounded arch up to a high central crown. No tall straight-sided square tunnel. Keep total length about1.86 times maximum width, with the rear bulkhead at the far end, not immediately behind the front arch. Natural front canopy remains open; rear60% of roof remains closed. Show all original floor and complete object. Centered AXIAL FRONT view, level camera, no exterior sidewall visible, mild internal depth perspective only. At the FAR REAR wall make one clean EMPTY walk-through opening with clipped upper corners: opening height about43% of rear wall height, width about21% of rear wall width, floor flush. The plain studio background must be visibly seen THROUGH this hole, no gray panel or door leaf within it, no duplicate partitions. Ivory panels / graphite floor and ribs / restrained warm-white light strips / tiny cyan accents, coherent clean industrial panel seams, no grime, no shiny melted edges. Pale neutral studio background, full isolated object and generous margins. No furniture, seats, consoles, beds, glass, engines, outer hull, labels, dimensions or grid. This is one candidate2D input, not an engineered mesh or physical fit guarantee.",
+      "references": [
+        "../../全空间重设计-v5-20261017/主结构-v5/正视.png",
+        "../../全空间重设计-v4-20261017/主结构-v4/正视比例二维线稿.png"
+      ],
+      "review": "Low wall/curved shoulder improved but arch still wide/low; not selected.",
+      "sha256": "5782bac0dfcf4c53144de302bccdd887057625daa9df8c519d607c62fcf9dd77"
+    },
+    {
+      "file": "正视.png",
+      "native": "exec-dfa447c8-719c-416f-89cc-9b176bf41e72.png",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target. Keep this SAME object, front camera, full length, low lower walls, panels, gray floor, lighting, empty far rear doorway and natural open front. Make ONE targeted cross-section change: raise the curved arch/crown so the COMPLETE outer silhouette is1.43 to1.46 times as wide as it is tall, instead of the current approximately1.60. Do not add tall straight wall height; keep the lower vertical walls at the same low height, and put all the extra height into the smooth curved shoulders and crown. Image2 is a 2D outer silhouette GUIDE to the required width-to-height proportion and low spring line, not a flat panel to copy. The roof is a full deep arch, no flat top, no square tunnel, no extra partition. Move the far rear crown up consistently; rear doorway remains visibly EMPTY to the studio background, floor flush, no door leaf/panel. Keep the full long hollow liner, continuous floor and rear closed roof. Render the full isolated object centered with a SQUARE canvas and generous margin so its high roof is not squeezed to fit a landscape frame. Maintain ivory/graphite/warm-white industrial style and precise seams. No labels, furniture, outer ship, glass or extra objects. Only a2D candidate; do not imply metric precision.",
+      "references": [
+        "正视-初稿未选.png",
+        "../../全空间重设计-v4-20261017/主结构-v4/正视比例二维线稿.png"
+      ],
+      "review": "Selected deep arch and low walls; actual projectedW/H near1.30, not prompt1.45. Explicit2D compensation, not metric proof.",
+      "sha256": "afa71d4a0de57e92a35fc961425292811a15c307573b53d11680c0a50128d903"
+    },
+    {
+      "file": "左前45.png",
+      "native": "exec-dcd92e3d-4faa-4b63-ac99-0f7b58c43dac.png",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: preserve this complete long spacecraft interior liner's floor footprint, natural open canopy at the front, rear60% closed roof, panel style and single empty far rear doorway. Image2 is the SELECTED NEW cross-section reference: replace the low arch with its deeper high rounded arch and LOW vertical wall proportion. Use that SAME new arched room, not a tall rectangular box. Keep the complete object LENGTH at about1.86 times its max WIDTH; do not compress the fore-aft length when raising the roof. Approximate full body width:height: length=1:0.76:1.86 is an intentional2D test ratio, not metric drafting.\nLOWER sidewalls should stay low, about35% of total height; the remaining height must come from a deep smoothly curved shoulder/crown matching Image2. Front canopy opening has the same full continuous gray floor, low nose lip and sloping side rims; all roof behind the natural canopy aperture stays closed and intact. No section cuts in rear roof or exterior sidewall. One empty room extends the full length to a rear bulkhead at the FAR END, with ONE genuinely EMPTY doorway, clipped upper corners, floor flush; pale studio background visible through the opening, no door leaf or solid gray patch.\nShow complete isolated object at LEFT FRONT45°, moderately elevated, a near-isometric long-lens view with minimal distortion. Full silhouette and margin. Match ivory/graphite and restrained warm-white strips/tiny cyan detail; clean crisp industrial panels, no melted edges or damage. Neutral pale studio background. No furniture, seats, beds, consoles, glass, engine pods, full outer ship, labels, grids or dimensions.",
+      "references": [
+        "../../全空间重设计-v5-20261017/主结构-v5/左前45.png",
+        "正视.png"
+      ],
+      "review": "Same low walls/deep rounded roof and complete rear roof; natural front opening, continuous floor, far doorway. Not shared geometry.",
+      "sha256": "890cca789f048730da1325295672254e9cd7a4653ff28bf6613fc544098a9393"
+    },
+    {
+      "file": "左面-偏长矮未选.png",
+      "native": "exec-8dfcf583-44cc-43f7-9ec3-5f2c08c4eb38.png",
+      "prompt": "Use case: precise-object-edit. Image1 is the matching liner design reference at left-front45°. Image2 is the selected deep-arch/low-wall front reference. Image3 is a native2D PURE SIDE silhouette guide only; preserve its full length-to-height silhouette ratio about2.45 and natural low nose-to-roof slope. This is the SAME complete hollow interior liner seen from its LEFT side, nose on the LEFT, rear on the RIGHT. True perpendicular pure side view, level long-lens orthographic-style, no front/back face or top surface visible. Full silhouette and margin, pale neutral studio background.\nKeep total LENGTH about1.86 times max WIDTH and HEIGHT about0.76 of width as2D probe ratios (not metric drafting). Do NOT elongate into a long bus and do NOT shorten to a squat box. Lower vertical walls low; deep rounded shoulders/crown match Image2. From side the intact rear roof is level, spans rear60%; natural front canopy opening has a sloped upper side rim from low nose at left to roof near35% along length. Full gray floor from nose to rear, complete exterior side panels not cut away; closed rear roof and far-end rear bulkhead with a true empty doorway (hidden from this pure side is fine; do not add a visible side door). Warm ivory broad panel bays, graphite low sill/seams, restrained warm-white thin strips and tiny cyan details match Image1. No new seam vocabulary, furniture, control equipment, legs, engines, outer ship, glass or words. Avoid a top view or cutaway, no roof missing, no crop.",
+      "references": [
+        "左前45.png",
+        "正视.png",
+        "侧面比例二维线稿.png"
+      ],
+      "review": "Rejected projectedL/H around3.4 versus2D guide2.45; no upload.",
+      "sha256": "f913db2d519e7e4325cf86a25be11a40fb8177b966bf327b004350f89fc2b5c8"
+    },
+    {
+      "file": "左面.png",
+      "native": "exec-1fee9652-9658-46ab-8c9b-ce57869bef4c.png",
+      "prompt": "Use case: sketch-to-render. Image1 is the PRIMARY2D geometry silhouette to render faithfully, not just inspiration. Fill that EXACT tall, short side silhouette with realistic spacecraft liner panel materials from Image2. Image2 is ONLY a material/panel reference; its low long silhouette is WRONG and MUST NOT be copied.\nThe resulting full LEFT SIDE object must have LENGTH/HEIGHT about2.45, matching Image1's outline. Preserve the low nose on LEFT, sloped natural canopy side rim up to roof at aboutone-third length, roofline behind that level and intact, complete flat floor, rounded slight rear corner on RIGHT. Make it visibly TALLER than Image2 without adding length. Image1's overall width on canvas and height on canvas are the contour authority. No extra visible face, no perspective foreshortening, NO inside cutaway, no detached wall, no side doorway. Full complete liner side, deep curved shoulder in the cross-section although seen perpendicular here. Keep ivory panel bays, graphite seams/sill, restrained warm-white strips and tiny cyan fasteners, clean coherent precise material finish. Pale neutral studio backdrop; full object and ample margins. No text/dimensions/grid, furniture, equipment, engines, glass, top view or outer hull. This2D proportion sketch does not establish real metric dimensions.",
+      "references": [
+        "侧面比例二维线稿.png",
+        "左面-偏长矮未选.png"
+      ],
+      "review": "Selected pure side corrected to approxL/H2.5. Nose on left, intact side/floor/roof. No side door.",
+      "sha256": "28cedf6f31e82074699bb4d744c2ea75b0130563e6e780a23bc4c831c967b16d"
+    },
+    {
+      "file": "背面.png",
+      "native": "exec-8a269135-403d-4250-b5d6-7514f955c7c7.png",
+      "prompt": "Use case: sketch-to-render. Image1 is the PRIMARY native2D rear silhouette guide: faithfully render that exact wide/high rounded arch with low vertical lower walls and an EMPTY central opening that reaches the floor. Image2 is the selected front design of the SAME complete liner, supplying panel style and cross-section. Image3 supplies complete-object material vocabulary only. Create the PURE EXTERIOR REAR VIEW, opposite the natural front opening, eye perpendicular/centered/level, no outside sidewall or roof top plane visible.\nPreserve Image1's WIDTH/HEIGHT about1.30, low vertical lower walls occupying35-38% of full height, and deep smoothly rounded upper arch. Rear bulkhead is an ivory panel surface inside a graphite narrow perimeter frame, appropriate matching broad panel bays and restrained warm-white side strips. ONE empty clipped-corner walk-through hole, about21% of wall width and43% of height, starts flush at the floor. You must visibly see the hollow liner interior and open front studio background THROUGH this opening; the opening is not a gray door/panel, no door leaf, no glazing, no grill, no blue glowing screen. Side reveal and slight interior floor strip through the real aperture can clarify depth. Complete rear wall and source object silhouette, ground contact soft shadow, neutral pale background, full margin. No dimensions/labels, furnishings, seats, beds, consoles, engines, outer hull, dangling objects or missing roof. A single2D candidate, not a precision engineering projection.",
+      "references": [
+        "背面比例二维线稿.png",
+        "正视.png",
+        "左前45.png"
+      ],
+      "review": "Selected exterior rear; projectedW/H near1.45 rather than guide1.30, real-looking visible-through portal; approx independent2D view, not engineered common projection.",
+      "sha256": "e6c74710a89ccb7aaf2571fface1b81a40223d681d6dffac51e6ae1ffacd1059"
+    },
+    {
+      "file": "正视-门洞校正.png",
+      "native": "exec-858dbb4e-fea4-497b-8ab6-e693c524f2fa.png",
+      "prompt": "Use case: precise-object-edit. Make ONLY one local change in Image1: shrink the EMPTY doorway at the FAR REAR bulkhead to60% of its current width AND60% of its current height, anchoring its bottom exactly on the existing rear floor. This brings that distant opening to roughlyone-quarter of rear wall width and45% of rear wall height, matching Image2's rear bulkhead. The cropped-corner portal must still be a genuine EMPTY opening, studio background visible through it, no door leaf, solid panel or glazing. Extend the surrounding ivory rear wall paneling into the former oversized aperture area cleanly. Keep all other image geometry, full outer silhouette, deep curved arch, low vertical walls, long hollow room, roof, floor, materials, lights, camera framing and pale background unchanged. Do not move the rear bulkhead forward, do not add a new front partition, do not change the natural front canopy opening. Image2 is ONLY the portal-to-bulkhead proportion reference as seen from the other end. No text or extra objects.",
+      "references": [
+        "正视.png",
+        "背面.png"
+      ],
+      "review": "Selected. Far portal reduced, still larger proportion than rear view; requested60% not achieved exactly. Remains an empty opening, low wall/deep arch retained.",
+      "sha256": "db928d72913e554177e09d852ea7124f1a8ec18d47be1e48863f6890e2ce0da9"
+    },
+    {
+      "file": "左前45-门洞校正.png",
+      "native": "exec-c7dd9216-edcd-4362-823c-b79940eb87c2.png",
+      "prompt": "Use case: precise-object-edit. Make ONLY one local change in Image1: shrink the EMPTY doorway at the FAR REAR bulkhead to60% of its current width AND60% of its current height, anchoring its bottom exactly on the existing rear floor. This brings that distant opening to roughlyone-quarter of rear wall width and45% of rear wall height, matching Image2's rear bulkhead. The cropped-corner portal must still be a genuine EMPTY opening, studio background visible through it, no door leaf, solid panel or glazing. Extend the surrounding ivory rear wall paneling into the former oversized aperture area cleanly. Keep all other image geometry, full outer silhouette, deep curved arch, low vertical walls, long hollow room, roof, floor, materials, lights, camera framing and pale background unchanged. Do not move the rear bulkhead forward, do not add a new front partition, do not change the natural front canopy opening. Image2 is ONLY the portal-to-bulkhead proportion reference as seen from the other end. No text or extra objects.",
+      "references": [
+        "左前45.png",
+        "背面.png"
+      ],
+      "review": "Selected complete object, smaller empty rear portal, original floor/closed rear roof/natural canopy retained. Aperture details approximate.",
+      "sha256": "c7811c6129946d5a00a1a765d5dd6c34b04ae0ba7ff3da9d921c72a78d03eb53"
+    }
+  ],
+  "inputs": [
+    {
+      "slot": "front",
+      "file": "正视-门洞校正.png",
+      "bytes": 1823152,
+      "sha256": "db928d72913e554177e09d852ea7124f1a8ec18d47be1e48863f6890e2ce0da9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "approximateDarkEdgeBounds": [
+        25,
+        149,
+        1230,
+        1079
+      ],
+      "approximateProjectedWidthHeight": 1.2956989247311828
+    },
+    {
+      "slot": "left-front",
+      "file": "左前45-门洞校正.png",
+      "bytes": 1965807,
+      "sha256": "c7811c6129946d5a00a1a765d5dd6c34b04ae0ba7ff3da9d921c72a78d03eb53",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "approximateDarkEdgeBounds": [
+        41,
+        40,
+        1627,
+        895
+      ],
+      "approximateProjectedWidthHeight": 1.854970760233918
+    },
+    {
+      "slot": "right",
+      "file": "左面.png",
+      "bytes": 1514351,
+      "sha256": "28cedf6f31e82074699bb4d744c2ea75b0130563e6e780a23bc4c831c967b16d",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "approximateDarkEdgeBounds": [
+        87,
+        123,
+        1690,
+        756
+      ],
+      "approximateProjectedWidthHeight": 2.5323854660347553
+    },
+    {
+      "slot": "back",
+      "file": "背面.png",
+      "bytes": 1686687,
+      "sha256": "e6c74710a89ccb7aaf2571fface1b81a40223d681d6dffac51e6ae1ffacd1059",
+      "dimensions": [
+        1429,
+        1100
+      ],
+      "approximateDarkEdgeBounds": [
+        83,
+        70,
+        1347,
+        945
+      ],
+      "approximateProjectedWidthHeight": 1.4445714285714286
+    }
+  ],
+  "execution": {
+    "uploadCount": 5,
+    "submitClicks": 1,
+    "accepted": 1,
+    "historicalAcceptedBefore": 45,
+    "model": "V3.1",
+    "faces": "50k",
+    "freeOnly": true,
+    "maxAccepted": 1,
+    "paymentAuthorized": false,
+    "selectedInputCount": 4,
+    "removedWrongSideDraft": 1,
+    "quotaBefore": 16,
+    "quotaAfter": 15,
+    "historicalAcceptedAfter": 46,
+    "completed": true
+  },
+  "inputReviewZh": [
+    "正视低直墙/深圆弧顶，斜视保留整段长度、地板/闭合后顶与自然前开口；背面强调空门洞。",
+    "偏长低侧图已排除，选定纯侧图长高比约2.5；所有输入为独立二维图而非共用网格。",
+    "正面/背面投影宽高比仍有差异，后门局部尺寸纠正未精确达到60%；只作来源试验，不能称物理包络冻结或保证安装。"
+  ],
+  "statusZh": "v7后门贯通、圆弧舱体恢复，按宽向后覆盖改善；前口/后段/上部余量及材质仍未通过，按长存在穿壳，未替换产品。",
+  "directionCorrectionZh": "按历史+Z前端基准，纯侧图鼻在画面左对应右观察；初放left的草稿已移除，原图不改字节重新放right；斜视仍沿v5/v6已用left-front槽，文件原名仅记录生成提示不是坐标保证。",
+  "source": {
+    "file": "混元原始模型.glb",
+    "bytes": 38698784,
+    "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f",
+    "officialTriangles": 59243,
+    "officialVertices": 57837,
+    "rawUnmodified": true
+  },
+  "sourceFindingsZh": [
+    "实际+Z及舱内可见蓝色背景穿过后门，贯通开口恢复；门口下缘仍有生成残留毛边，不作完整通行/机构通过。",
+    "低直墙和圆弧肩顶、连续地板及后部闭顶保留；源文件没有本地补洞或拉伸。",
+    "灰色地板/暖白灯带未按输入完整保留，实际地板大面积发白；壁面/顶面接缝拉伸，部分框边和鼻沿毛糙。",
+    "来源船头+Z已实际确认，长度/高度和原壳包含关系仍须整件试装；基本文件检查不等于美术通过。"
+  ],
+  "sourceConsoleErrorsWarnings": [],
+  "browserReviewCompleted": true,
+  "hullTrialFindingsZh": [
+    "按宽7.1m为7.10×4.35×11.52m，后门恢复贯通，驾驶区向后合显未再明显露出前轮第二层原顶棚；这是机位观察，不能推为完整包络通过。",
+    "侧面/俯视可见按宽仍留上部余量、后壁提前结束；有限屋顶首表面差0.274–0.782m，包含壳厚/服务层，不等于精密空隙。",
+    "按长13.2m后为8.14×4.98×13.20m；侧向有限差均为负，实际向后合显可见原壳切入新舱顶/肩部与两侧，拒绝该姿态。",
+    "按宽后舱向前可见鼻沿/前窗旧壳衔接仍粗糙，原不透明黑色窗侧仍存在；没有修玻璃或窗面。",
+    "来源地板大面积发白，暖白灯带和细接缝大量丢失，框边残留/扭曲明显；结构开口改善不代表美术通过。",
+    "本轮不放家具遮挡，保留完整开口和圆弧结构参考；安装与美术仍未通过，不自动再生成或替换产品。"
+  ],
+  "validation": {
+    "sourceAndTrialJsSyntaxPassed": true,
+    "previewResourceRuntime16TestsPassedThisTurn": true,
+    "applicationTestsRerun": false,
+    "reason": "仅新来源、复用查看框架及静态评审；未改业务或生命周期实现，未沿用旧应用219项作为本轮结果。",
+    "all15OriginalGlbsUnchanged": true,
+    "all8GeneratedImagesMatchNativeBytes": true,
+    "htmlReferencesSvgAndSizeChecksPassed": true
+  },
+  "review": {
+    "file": "主结构审查.html",
+    "proof": "最终评审-浏览器复验.png",
+    "all30ImagesLoaded": true,
+    "sourceEvidenceCount": 8,
+    "trialEvidenceCount": 9,
+    "sourceConsoleErrorsWarnings": [],
+    "trialConsoleErrorsWarnings": []
+  }
+}

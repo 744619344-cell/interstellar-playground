@@ -1,0 +1,88 @@
+{
+  "all15OriginalModelsUnchanged": true,
+  "originals": [
+    {
+      "source": "output/hunyuan-adaptation/master-design-20261009/整舱统一母版-v6.glb",
+      "sha256": "e81ca576556f5cdcd74a18d52d6f8b8feb1a7ecd80a5b3341b5273278ac372e2",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/局部调整-v9-20261012/围护v9-局部修订-r13.glb",
+      "sha256": "1be1a3a789d1645a51fab9496c531e8381366338f7ca67e16da2b92eae832b4f",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v1/混元原始模型.glb",
+      "sha256": "6a3e8b132b07b5f5a68a616479ecca5e72735caa0f2ce5e4bdd99b1f3e80e305",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元原始模型.glb",
+      "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/整舱-混元-v1/混元原始模型.glb",
+      "sha256": "5584225d747227de136dadfee8ee64a0a35012dfb4e7a1fc286c55a6ea1eb2ef",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/前窗-混元-v1/混元原始模型.glb",
+      "sha256": "a914ed0e5f8c6ae2633aae63978f0d39f62d114d3a49bd567501f1c604add7d1",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/中央台-v1/混元原始模型.glb",
+      "sha256": "0c4f313417145735a2dc3458841cb039903c189cf7fe972d43ff7ef22f04edb4",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元原始模型.glb",
+      "sha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26",
+      "unchanged": true
+    },
+    {
+      "source": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元原始模型.glb",
+      "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e",
+      "unchanged": true
+    },
+    {
+      "source": "M01v2raw",
+      "sha256": "3f71b38dff66033acfa5724c30ac2696a7bcdc72b1ad339fbd2f1d7f9a20afbd",
+      "unchanged": true
+    },
+    {
+      "source": "M01v3raw",
+      "sha256": "20d59547cd9850b1ea9fa119f04921426f679f0b3433dc39a6039d6e747c111e",
+      "unchanged": true
+    },
+    {
+      "source": "M01v4raw",
+      "sha256": "561bb2294ded785dff92796b383ff9ae3655a6890ce28d358ea3987a8c2e531d",
+      "unchanged": true
+    },
+    {
+      "source": "M01v5raw",
+      "sha256": "3714eef97ac51e95375ca4af1c042e4d9031a11b26187d274119f9fa582119e0",
+      "unchanged": true
+    },
+    {
+      "source": "M01v6raw",
+      "sha256": "7b83a244c544b3cc9828e24f3cbc145b929543ee93d4da9553939f1217093497",
+      "unchanged": true
+    },
+    {
+      "source": "M01v7raw",
+      "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f",
+      "unchanged": true
+    }
+  ],
+  "all8ImagegenCopiesMatchNativeBytes": true,
+  "fourInputsMatchRecordedHashes": true,
+  "htmlLocalReferencesExist": true,
+  "sampledSvgParsed": true,
+  "fileAndFunctionSizesPassed": true,
+  "geometryModified": false,
+  "productReplaced": false,
+  "installationAccepted": false
+}

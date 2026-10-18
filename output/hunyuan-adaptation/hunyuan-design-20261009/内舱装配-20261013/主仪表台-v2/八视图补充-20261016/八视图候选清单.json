@@ -1,0 +1,77 @@
+{
+  "Date": "2026-10-16",
+  "TargetModel": "V3.1",
+  "TargetViews": 8,
+  "AllCandidatesExist": true,
+  "ReadyForUpload": false,
+  "Reason": "Eight design-view candidates are saved. Verify actual website V3.1 slots, canonical view orientation, 50k and free quota before uploading. Independent raster views do not prove shared geometry; user visual acceptance is pending.",
+  "Views": [
+    {
+      "View": "front",
+      "File": "正面.png",
+      "Width": 848,
+      "Height": 592,
+      "Bytes": 394808,
+      "SHA256": "164f9e2c241a54c6b939fd35d522986690f00db841b3918ae6e1a373cca07359"
+    },
+    {
+      "View": "back",
+      "File": "背面.png",
+      "Width": 848,
+      "Height": 592,
+      "Bytes": 325276,
+      "SHA256": "3972a786b72b7cafc1e654aa7780ffef89c50f08d95a7b7167c332a02e3c9b94"
+    },
+    {
+      "View": "left",
+      "File": "左面.png",
+      "Width": 848,
+      "Height": 592,
+      "Bytes": 271906,
+      "SHA256": "b8a1b1e624db669937629a0ab52fd5c7ec9d33b6700ea618544102399a99dfe7"
+    },
+    {
+      "View": "right",
+      "File": "右面.png",
+      "Width": 848,
+      "Height": 592,
+      "Bytes": 266428,
+      "SHA256": "f683b9449d26174422e6b58b906efd3fe24f9dfa3d75a1d6a99f2314279951dd"
+    },
+    {
+      "View": "top",
+      "File": "八视图补充-20261016/顶面-候选-v2.png",
+      "Width": 1983,
+      "Height": 793,
+      "Bytes": 1683675,
+      "SHA256": "e211bc682b8f13010ab9b453c281b96b273e46d13cb58a2d6e7f67ffa3664471"
+    },
+    {
+      "View": "bottom",
+      "File": "八视图补充-20261016/底面-候选-v3.png",
+      "Width": 2007,
+      "Height": 784,
+      "Bytes": 1451341,
+      "SHA256": "c8b91049d41ab723a217d1d1049c5696db7710cc883a235886a868ff7d6af931"
+    },
+    {
+      "View": "left_front",
+      "File": "八视图补充-20261016/左前45度-候选-v1.png",
+      "Width": 1536,
+      "Height": 1024,
+      "Bytes": 1969634,
+      "SHA256": "e513d2f13347635fd422736cfb04800d9af93a4730e4c1022adf9eb96327346f"
+    },
+    {
+      "View": "right_front",
+      "File": "八视图补充-20261016/右前45度-候选-v1.png",
+      "Width": 1536,
+      "Height": 1024,
+      "Bytes": 2075211,
+      "SHA256": "41cde6988a4f4f42250fc7cd175dab1547f8c106bb74c43084899a210c0c73a3"
+    }
+  ],
+  "ImagePreparationComplete": true,
+  "SharedGeometryProven": false,
+  "UserVisualAccepted": false
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-16",
+  "page": "八视图候选检查.html",
+  "browser": "in-app-browser-dedicated-cua-repl",
+  "actualImagesLoaded": 8,
+  "brokenImages": 0,
+  "screenshot": "八视图候选检查.jpg",
+  "promptFiles": ["完整提示词集.json", "顶底修图完整提示词.json", "底面第三次提示词.txt"],
+  "viewportOverrideApplied": false,
+  "originalFourOverwritten": false,
+  "hunyuanUploaded": false,
+  "hunyuanSubmitted": false,
+  "newGlb": false,
+  "geometryMade": false,
+  "limits": "This verifies only the local design-candidate gallery and its eight images. It does not verify Hunyuan web slots, quota, cross-view shared geometry, assembly or user visual acceptance."
+}

@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-18",
+  "branch": "codex/cloud-handoff-20261013",
+  "activeTask": "docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md",
+  "scope": "Four missing Hunyuan source models plus local design inputs and historical installation records. No model edits.",
+  "hashScope": "Original binary GLB and PNG bytes; text records use Git line-ending normalization.",
+  "remoteGlassR10": "Not present on this local branch; preserve the accepted remote version.",
+  "models": [
+    {
+      "id": "main-structure-v7",
+      "model": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/混元原始模型.glb",
+      "bytes": 38698784,
+      "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f",
+      "externalResources": [],
+      "historicalMetadata": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原始模型检查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/同位置横向有限采样.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/最终来源与静态核验.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/本轮追加图像记录.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/来源朝向实查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/真实船壳试装检查-20261017.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/输入与执行记录.json"
+      ],
+      "acceptance": "source candidate; assembly and visual acceptance pending"
+    },
+    {
+      "id": "main-console-v2",
+      "model": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元原始模型.glb",
+      "bytes": 44098852,
+      "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+      "externalResources": [],
+      "historicalMetadata": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图执行-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/刚性试装参数.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原件保留检查-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原件格式检查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原始模型检查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/安装约束.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱复验受阻续查-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱接入复验-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱有限空间检查-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/来源与试装检查-20261016.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元执行记录.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/生成前安装复核.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/设计提示词.txt",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/输入图检查.json"
+      ],
+      "acceptance": "source candidate; assembly and visual acceptance pending"
+    },
+    {
+      "id": "folding-berth-v1",
+      "model": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元原始模型.glb",
+      "bytes": 34845712,
+      "sha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26",
+      "externalResources": [],
+      "historicalMetadata": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/原始模型检查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/实装姿态.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元执行记录.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/设计提示词.txt"
+      ],
+      "acceptance": "source candidate; assembly and visual acceptance pending"
+    },
+    {
+      "id": "workbench-v1",
+      "model": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元原始模型.glb",
+      "bytes": 33411084,
+      "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e",
+      "externalResources": [],
+      "historicalMetadata": [
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/原始模型检查.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/实装姿态.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元执行记录.json",
+        "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/设计提示词.txt"
+      ],
+      "acceptance": "source candidate; assembly and visual acceptance pending"
+    }
+  ],
+  "files": [
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/一致四视图.png",
+      "bytes": 1500261,
+      "sha256": "4ab225224663fc072b5709bdcbbeecdd6df39367e00b3910e746d7ca1f8b2616"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/右前45度-候选-v1.png",
+      "bytes": 2075211,
+      "sha256": "41cde6988a4f4f42250fc7cd175dab1547f8c106bb74c43084899a210c0c73a3"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/左前45度-候选-v1.png",
+      "bytes": 1969634,
+      "sha256": "e513d2f13347635fd422736cfb04800d9af93a4730e4c1022adf9eb96327346f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/底面-候选-v3.png",
+      "bytes": 1451341,
+      "sha256": "c8b91049d41ab723a217d1d1049c5696db7710cc883a235886a868ff7d6af931"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/顶面-候选-v2.png",
+      "bytes": 1683675,
+      "sha256": "e211bc682b8f13010ab9b453c281b96b273e46d13cb58a2d6e7f67ffa3664471"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/右面.png",
+      "bytes": 266428,
+      "sha256": "f683b9449d26174422e6b58b906efd3fe24f9dfa3d75a1d6a99f2314279951dd"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/左面.png",
+      "bytes": 271906,
+      "sha256": "b8a1b1e624db669937629a0ab52fd5c7ec9d33b6700ea618544102399a99dfe7"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/正面.png",
+      "bytes": 394808,
+      "sha256": "164f9e2c241a54c6b939fd35d522986690f00db841b3918ae6e1a373cca07359"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元原始模型.glb",
+      "bytes": 44098852,
+      "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/背面.png",
+      "bytes": 325276,
+      "sha256": "3972a786b72b7cafc1e654aa7780ffef89c50f08d95a7b7167c332a02e3c9b94"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/一致四视图.png",
+      "bytes": 1447280,
+      "sha256": "5c3c1f0ca9d923a9fc6236f3dc9e21fed3abbf4519a53b3e08249079b78fc32b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/右面.png",
+      "bytes": 268393,
+      "sha256": "3b2a57ea8e29ef4d22405f55f18c0a03ceac9b25e9ef9608c4b3a92af269f0ea"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/左面.png",
+      "bytes": 267176,
+      "sha256": "d03e4b4eb30d452f95d7163f4e550368a137281a56188309c1a9f3e9b1be9d6f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/正面.png",
+      "bytes": 345532,
+      "sha256": "2935d0866ee07de551e5cccb7b7c5fa0acb1fa8de394296259a439d732bdacdb"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元原始模型.glb",
+      "bytes": 33411084,
+      "sha256": "4a03a5bbc05902c35411020a3c536cec94822a25a2db56a919e861cb7e86643e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/背面.png",
+      "bytes": 332215,
+      "sha256": "12e62ba5dce04208bec8db00f8ed4a63068b00b9fb82fe13fb8474a29e216e62"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/一致四视图.png",
+      "bytes": 1459158,
+      "sha256": "cc23afa18fca822c4b44fe1f689630312ed37f135f4e375ff082e342558d4c2b"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/左面.png",
+      "bytes": 294905,
+      "sha256": "85f7f3721b3bae3565bd815aca200857a658e701f0861942506f00f9d5033780"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/正面.png",
+      "bytes": 255971,
+      "sha256": "1728ba6076936d5c8ebe227a2db0d2d835f328999ce34e985e7323468fcaa226"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元原始模型.glb",
+      "bytes": 34845712,
+      "sha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/背面.png",
+      "bytes": 266457,
+      "sha256": "582a8237fe78e4c66af38953e8239bbd613bf142c8aa15c94aaabc18cb1a9cb5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/顶面.png",
+      "bytes": 349709,
+      "sha256": "5134c279ad120438dd1aa0b87f17651628684590f2dc22082f2dd21c5fe26216"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/侧面比例二维线稿.png",
+      "bytes": 9452,
+      "sha256": "f61b7c1d3caaa75dbda8b47281bc5db7e68bc942cab21c2545a2c468823d1b61"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-底面.png",
+      "bytes": 12642,
+      "sha256": "f4a7ad88fa8a6b5ccdb1cea17094a1511f538987058b3da7fecb6e0adbe6d28c"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-斜视.png",
+      "bytes": 22636,
+      "sha256": "aff56269a8b0c2f84ec3a0b1ec90c23bbdf97db2548dd022e040df487bc3d39d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-正X.png",
+      "bytes": 15696,
+      "sha256": "036149d0293ea19767626d5e1cdac66ac2f89c862f48042eb8ec2b5edb3b0683"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-正Z.png",
+      "bytes": 17325,
+      "sha256": "1765f41bc8d8c0f23ba0147eb3ab0f4a95eecccf46cc3c1b3debc87e763a2ba1"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-舱内.png",
+      "bytes": 30296,
+      "sha256": "e4fab3d5e938858ee535a3a7308ea8532cf3dabb7db9ab590084b02504a46f7f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-负X.png",
+      "bytes": 15670,
+      "sha256": "10990b966683e28f859cb639fd7c49f345e5f19d20016d2f01926827454125e5"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-负Z.png",
+      "bytes": 15306,
+      "sha256": "56969eed5fe61a610f494dc72c71b1413f937c82cae7ddff44556cf8ba60da7e"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原件-顶面.png",
+      "bytes": 18297,
+      "sha256": "cf851e69f596fe8cb1280471424eb3b4345c02f169366da409e150015cbe4ee4"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左前45-门洞校正.png",
+      "bytes": 1965807,
+      "sha256": "c7811c6129946d5a00a1a765d5dd6c34b04ae0ba7ff3da9d921c72a78d03eb53"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左前45.png",
+      "bytes": 2030071,
+      "sha256": "890cca789f048730da1325295672254e9cd7a4653ff28bf6613fc544098a9393"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左面-偏长矮未选.png",
+      "bytes": 1677084,
+      "sha256": "f913db2d519e7e4325cf86a25be11a40fb8177b966bf327b004350f89fc2b5c8"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/左面.png",
+      "bytes": 1514351,
+      "sha256": "28cedf6f31e82074699bb4d744c2ea75b0130563e6e780a23bc4c831c967b16d"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/正视-初稿未选.png",
+      "bytes": 1894289,
+      "sha256": "5782bac0dfcf4c53144de302bccdd887057625daa9df8c519d607c62fcf9dd77"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/正视-门洞校正.png",
+      "bytes": 1823152,
+      "sha256": "db928d72913e554177e09d852ea7124f1a8ec18d47be1e48863f6890e2ce0da9"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/正视.png",
+      "bytes": 1874558,
+      "sha256": "afa71d4a0de57e92a35fc961425292811a15c307573b53d11680c0a50128d903"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/混元原始模型.glb",
+      "bytes": 38698784,
+      "sha256": "25be9a6be9dfca5ada4cf3f6ef45862e0c4750f1bb7b2ecef9e76681ab968f4f"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/背面.png",
+      "bytes": 1686687,
+      "sha256": "e6c74710a89ccb7aaf2571fface1b81a40223d681d6dffac51e6ae1ffacd1059"
+    },
+    {
+      "path": "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/背面比例二维线稿.png",
+      "bytes": 10845,
+      "sha256": "ce71f9a8a1a4edcef0c813e86e04954ac0fa936842f63909bba60308da4b1d27"
+    }
+  ],
+  "historicalMetadataWarning": "Records describe different historical steps and may reference omitted experiments/screenshots. They are not fresh acceptance results or executable dependency closure.",
+  "textRecords": [
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图执行-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/候选检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/八视图候选清单.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/完整提示词集.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/本机检查页复验.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/八视图补充-20261016/顶底修图完整提示词.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/刚性试装参数.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原件保留检查-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原件格式检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/原始模型检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/安装约束.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱复验受阻续查-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱接入复验-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/整舱有限空间检查-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/来源与试装检查-20261016.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/混元执行记录.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/生成前安装复核.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/设计提示词.txt",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/主仪表台-v2/输入图检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/原始模型检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/实装姿态.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/混元执行记录.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/工作台-v1/设计提示词.txt",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/原始模型检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/实装姿态.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/混元执行记录.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/内舱装配-20261013/折叠床-v1/设计提示词.txt",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/原始模型检查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/同位置横向有限采样.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/最终来源与静态核验.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/本轮追加图像记录.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/来源朝向实查.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/真实船壳试装检查-20261017.json",
+    "output/hunyuan-adaptation/hunyuan-design-20261009/整舱重设计-20261016/全空间重设计-v7-20261017/主结构-v7/输入与执行记录.json"
+  ]
+}

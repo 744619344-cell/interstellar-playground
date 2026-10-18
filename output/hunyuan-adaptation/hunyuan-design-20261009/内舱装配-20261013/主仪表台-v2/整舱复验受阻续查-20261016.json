@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-16",
+  "status": "live-whole-cabin-review-blocked-before-tab-access",
+  "browserAttemptsThisTurn": 2,
+  "browserError": "Unable to load browser feature gates",
+  "selectedBrowserReused": true,
+  "tabListObtained": false,
+  "pageNavigated": false,
+  "screenshotSaved": false,
+  "tunReadOnlyCheck": {
+    "adapter": "Meta",
+    "description": "Meta Tunnel",
+    "status": "Up",
+    "defaultRoutes": [
+      {
+        "interface": "Meta",
+        "routeMetric": 0
+      },
+      {
+        "interface": "WLAN",
+        "routeMetric": 0
+      }
+    ],
+    "allControlTrafficVerifiedThroughTun": false
+  },
+  "applicationLogReview": {
+    "date": "2026-10-16",
+    "exactFeatureGateErrorFound": false,
+    "matchingOlderDurableRecordsLatestUtc": "2026-10-16T04:37:11.214Z",
+    "currentFailureObservationAfterUtc": "2026-10-16T07:00:00Z",
+    "causalEvidence": false,
+    "rawLogsCopied": false
+  },
+  "officialSources": [
+    "https://learn.chatgpt.com/docs/chrome-extension",
+    "https://learn.chatgpt.com/docs/reference/troubleshooting"
+  ],
+  "rootCauseConfirmed": false,
+  "userActionPending": "Read-only confirmation whether Chrome ChatGPT extension side chat loads normally",
+  "networkOrPermissionsChanged": false,
+  "reinstallOrRestartPerformed": false,
+  "sourceHashesUnchanged": 4,
+  "newGenerationSubmissions": 0,
+  "paymentMade": false,
+  "productAssetChanged": false,
+  "remaining": "Complete current full-cabin preview eye/aisle/whole-ship review after supported browser control recovers; no art acceptance implied."
+}

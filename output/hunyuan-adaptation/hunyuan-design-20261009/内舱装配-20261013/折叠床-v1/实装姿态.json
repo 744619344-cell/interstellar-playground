@@ -1,0 +1,18 @@
+{
+  "uniformScale": 1.6989706167001117,
+  "placementCenters": [
+    [
+      -1.385,
+      -1.1,
+      -0.25
+    ],
+    [
+      -1.385,
+      -1.1,
+      2.05
+    ]
+  ],
+  "rotationYDegrees": 90,
+  "sharedSourceInstances": 2,
+  "notes": "Original geometry/materials shared; long hinge side placed against left wall. No support or local geometry added. Visual/collision/hinge operation not accepted."
+}

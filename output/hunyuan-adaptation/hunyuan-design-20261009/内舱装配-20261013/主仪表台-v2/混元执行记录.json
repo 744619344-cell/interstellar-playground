@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-15",
+  "destination": "https://3d.hunyuan.tencent.com/creation",
+  "module": "integrated-twin-pilot-main-console-v2",
+  "status": "retained-for-whole-cabin-trial-browser-initialization-blocks-live-review",
+  "plannedModel": "V3.1",
+  "plannedTotalViews": 8,
+  "viewCountExplanation": "One front primary image plus seven auxiliary views. The previous V3.0 four-slot observation is historical, not the V3.1 maximum.",
+  "supplementManifest": "八视图补充-20261016/八视图候选清单.json",
+  "eightViewInputReady": true,
+  "eightViewCandidatesPrepared": true,
+  "remainingInputIssue": "One source generation accepted; original download, source integrity, visual quality and rigid/uniform trial fitting remain pending.",
+  "modelObservedSelected": "V3.1",
+  "plannedFaces": "50k",
+  "faceSelectionVerified": true,
+  "observedInputSlots": [
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "left_front_45",
+    "right_front_45"
+  ],
+  "inputFiles": [
+    "正面.png",
+    "背面.png",
+    "左面.png",
+    "右面.png",
+    "八视图补充-20261016/顶面-候选-v2.png",
+    "八视图补充-20261016/底面-候选-v3.png",
+    "八视图补充-20261016/左前45度-候选-v1.png",
+    "八视图补充-20261016/右前45度-候选-v1.png"
+  ],
+  "inputsByteHashesVerified": 8,
+  "uploadedImages": 8,
+  "setFilesCalls": 8,
+  "submitClicks": 1,
+  "acceptedJobs": 1,
+  "acceptedTotalStill": 38,
+  "lastObservedFreeQuota": 20,
+  "freeQuotaAfter": 19,
+  "paymentMade": false,
+  "originalDownloaded": true,
+  "localGeometryMade": false,
+  "runtimeReplaced": false,
+  "sourceV1AndR13Retained": true,
+  "browserEvidence": {
+    "inApp": "Official Oops error page, code 193765948; refresh did not restore reliable control.",
+    "chrome": "Read quota 20, changed multi-image mode and selected V3.0; four direction slots observed. File chooser wait/click timed out before any setFiles call; later claim, DOM and screenshot returned Debugger unattached.",
+    "screenshotSaved": false,
+    "browserIdsMayChangeAfterKernelReset": true,
+    "rootCauseConfirmed": false
+  },
+  "restartRetest": {
+    "date": "2026-10-15",
+    "chromeRestartExplicitlyApprovedAndCompleted": true,
+    "ordinaryClickAndFileChooserPassed": true,
+    "hunyuanPageReadAndQuota20Observed": true,
+    "hunyuanModeInteractionAndLaterTabReadTimedOut": true,
+    "controlRecovered": false,
+    "newSetFilesCalls": 0,
+    "newSubmitClicks": 0,
+    "diagnosis": "../../浏览器连接诊断-20261015/诊断结果.json"
+  },
+  "nextStep": "Retain v2 as provisional whole-cabin trial source. Live hull/glazing cockpit and aisle views completed; final source detail, human reach/clearance and roof/canopy compatibility remain unaccepted. No duplicate generation or autonomous geometry edits authorized.",
+  "installationReview": "生成前安装复核.json",
+  "dedicatedInterfaceRetest20261016": {
+    "localPageClickAndScreenshotPassed": true,
+    "localFileChooserPassed": true,
+    "missingInterfaceInferenceWithdrawn": true,
+    "hunyuanCreationPageStillTimesOut": true,
+    "newSetFilesCalls": 0,
+    "newSubmitClicks": 0,
+    "newAcceptedJobs": 0,
+    "diagnosis": "../../浏览器连接诊断-20261015/修复复查-20261016.json"
+  },
+  "limits": [
+    "Screen patterns, button boundaries and panel edges retain warped/soft generative detail.",
+    "No astronaut or hand-reach rig used. Envelope gap does not certify knee space.",
+    "Source trial omits exterior hull and glazing; forward sight is not certified."
+  ],
+  "chromeEightViewAttempt20261016": {
+    "observedModel": "V3.1",
+    "observedQuota": 20,
+    "multiModeChangeVerified": false,
+    "controlTimedOutBeforeFileSelection": true,
+    "newSetFilesCalls": 0,
+    "newSubmitClicks": 0,
+    "diagnosis": "../../浏览器连接诊断-20261015/Chrome模型续查-20261016.json"
+  },
+  "resume20261016": {
+    "explicitAuthorization": true,
+    "fileUrlPermissionResolved": true,
+    "uploadedImages": 8,
+    "submitClicks": 1,
+    "acceptedJobs": 1,
+    "quotaBefore": 20,
+    "quotaAfter": 19,
+    "evidence": "八视图执行-20261016.json"
+  },
+  "original": {
+    "file": "混元原始模型.glb",
+    "bytes": 44098852,
+    "sha256": "5cfc76c2c01da05a40b58d4ed8fc1a684d181a1e2a0e093f2e5ad442e9feddc5",
+    "webTriangles": 50006,
+    "webVertices": 38387,
+    "downloadMethod": "official GLB menu and browser download event"
+  },
+  "wholeCabinContinuation": "整舱接入复验-20261016.json",
+  "userDelegatedQualityJudgment": true,
+  "liveWholeCabinReview20261016": {
+    "report": "整舱接入复验-20261016.json",
+    "inAppBrowserReadClickReadPassed": true,
+    "finalArtAccepted": false,
+    "sourceHashesRechecked": 4
+  }
+}

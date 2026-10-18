@@ -1,0 +1,42 @@
+{
+  "method": "Equal quadrants plus 40px white padding; no resampling or retouching",
+  "views": [
+    {
+      "file": "正面.png",
+      "size": [
+        848,
+        592
+      ],
+      "contentPixelsChanged": 0,
+      "sha256": "164f9e2c241a54c6b939fd35d522986690f00db841b3918ae6e1a373cca07359"
+    },
+    {
+      "file": "背面.png",
+      "size": [
+        848,
+        592
+      ],
+      "contentPixelsChanged": 0,
+      "sha256": "3972a786b72b7cafc1e654aa7780ffef89c50f08d95a7b7167c332a02e3c9b94"
+    },
+    {
+      "file": "左面.png",
+      "size": [
+        848,
+        592
+      ],
+      "contentPixelsChanged": 0,
+      "sha256": "b8a1b1e624db669937629a0ab52fd5c7ec9d33b6700ea618544102399a99dfe7"
+    },
+    {
+      "file": "右面.png",
+      "size": [
+        848,
+        592
+      ],
+      "contentPixelsChanged": 0,
+      "sha256": "f683b9449d26174422e6b58b906efd3fe24f9dfa3d75a1d6a99f2314279951dd"
+    }
+  ],
+  "limits": "Image preparation only. No source model, true orthographic or geometric consistency certification."
+}

@@ -1,0 +1,42 @@
+{
+  "status": "whole-cabin-live-review-complete-provisional-source-retained-final-art-unaccepted",
+  "targetModel": "V3.1",
+  "targetViewCount": 8,
+  "supplementManifest": "八视图补充-20261016/八视图候选清单.json",
+  "readyForUpload": true,
+  "inputImages": [
+    "正面.png",
+    "背面.png",
+    "左面.png",
+    "右面.png",
+    "八视图补充-20261016/顶面-候选-v2.png",
+    "八视图补充-20261016/底面-候选-v3.png",
+    "八视图补充-20261016/左前45度-候选-v1.png",
+    "八视图补充-20261016/右前45度-候选-v1.png"
+  ],
+  "uploadedImages": 8,
+  "observation": "Two grips in front lip, intact feet and supports, open knee areas. Front/back mildly elevated; not geometry-derived strict orthographic views.",
+  "newHunyuanJobSubmitted": true,
+  "sourceV1Retained": true,
+  "runtimeReplaced": false,
+  "intentWidthHeightDepth": [
+    2.3,
+    1.16,
+    0.9
+  ],
+  "intentCenter": [
+    0,
+    -0.961,
+    -4.97
+  ],
+  "seatFrontZ": -4.43729305267334,
+  "intentDeskRearZ": -4.52,
+  "aislePolicy": "No floor-mounted joystick stands outside either seat; keep existing outer aisles free.",
+  "sourcePolicy": "Whole console including integrated joystick mounts must come from Hunyuan. No locally modeled shelves, brackets, poles or geometry repairs.",
+  "limits": "Whole source fitted uniformly and inspected live with hull/glazing. Human knee/hand reach, continuous collision, final source detail and roof/canopy compatibility remain unaccepted.",
+  "sourceV2Exists": true,
+  "actualTrial": "刚性试装参数.json",
+  "visualReview": "来源与试装检查-20261016.json",
+  "wholeCabinContinuation": "整舱接入复验-20261016.json",
+  "userDelegatedQualityJudgment": true
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-16",
+  "targetModel": "V3.1",
+  "targetViews": 8,
+  "officialViewOrder": [
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "left_front",
+    "right_front"
+  ],
+  "modelWebSlotsVerified": false,
+  "officialSources": [
+    "https://cloud.tencent.com/document/product/1823/137181",
+    "https://cloud.tencent.com/document/product/1804/123447"
+  ],
+  "originalFourRetained": true,
+  "newGeneratedCandidates": 4,
+  "top": {
+    "file": "顶面-候选-v1.png",
+    "status": "rejected-angle",
+    "observation": "Visible full rear vertical vent panels and nearly full display faces; not a reliable true vertical top projection.",
+    "correction": {
+      "file": "顶面-候选-v2.png",
+      "status": "provisional-design-view",
+      "observation": "Large vertical rear vent wall removed, grips foreshortened, shallow overhead footprint. Not a geometry-derived orthographic render."
+    }
+  },
+  "bottom": {
+    "file": "底面-候选-v1.png",
+    "status": "rejected-angle",
+    "observation": "Still shows full vertical support side faces and rear-elevated composition; not a true upward underside projection.",
+    "corrections": [
+      {
+        "file": "底面-候选-v2.png",
+        "status": "rejected-angle",
+        "observation": "Leg shafts shortened but still an oblique underside composition."
+      },
+      {
+        "file": "底面-候选-v3.png",
+        "status": "provisional-design-view",
+        "observation": "Two flat foot soles dominate and tall shafts no longer form a standing U silhouette; planar underside view improved. Canonical upload orientation and exact part correspondence remain unverified."
+      }
+    ]
+  },
+  "left_front": {
+    "file": "左前45度-候选-v1.png",
+    "status": "candidate-pending-cross-view-check",
+    "observation": "Operator screens and left outside face visible, two grips and two supports/feet; exact cross-view geometry cannot be established by independent 2D generation."
+  },
+  "right_front": {
+    "file": "右前45度-候选-v1.png",
+    "status": "candidate-pending-cross-view-check",
+    "observation": "Operator screens and right outside face visible, two grips and two supports/feet; not a mirrored-image preprocessing operation."
+  },
+  "inputSetReady": false,
+  "uploads": 0,
+  "acceptedJobs": 0,
+  "geometryMade": false,
+  "generatedImageCalls": 7,
+  "selectedCandidates": {
+    "top": "顶面-候选-v2.png",
+    "bottom": "底面-候选-v3.png",
+    "left_front": "左前45度-候选-v1.png",
+    "right_front": "右前45度-候选-v1.png"
+  },
+  "inputImagesExist": 8,
+  "imagePreparationComplete": true,
+  "blockingConditions": [
+    "Actual website V3.1 slots/canonical orientation, 50k and free quota unverified",
+    "Shared 3D geometry and user visual acceptance not proven"
+  ],
+  "prompts": [
+    "完整提示词集.json",
+    "顶底修图完整提示词.json",
+    "底面第三次提示词.txt"
+  ]
+}

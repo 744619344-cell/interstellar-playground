@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "status": "whole-cabin-live-review-complete-provisional-source-retained-final-art-unaccepted",
+  "userDelegatedQualityJudgment": true,
+  "selection": {
+    "source": "v2",
+    "decision": "provisionally retain for whole-cabin trial",
+    "finalArtAccepted": false
+  },
+  "preview": {
+    "entry": "../../驾驶围护局部调整.html",
+    "defaultConsole": "v2",
+    "legacyComparisonQuery": "?console=v1",
+    "productAssetChanged": false,
+    "liveReloadObserved": true,
+    "newScreenshotSaved": true,
+    "liveReloadSource": "User manually reloaded; current live DOM reports loaded=true, mainConsole=v2, revision=r13."
+  },
+  "sourceHashesUnchanged": 4,
+  "measurements": "整舱有限空间检查-20261016.json",
+  "checks": {
+    "typecheckPassed": true,
+    "applicationTestsPassed": 219,
+    "previewTestsPassed": 20,
+    "buildPassed": true,
+    "buildWarning": "Existing main bundle exceeds 500kB guidance",
+    "context": "Previously executed checks retained as historical evidence; no code edits or repeat test run in this live review."
+  },
+  "browser": {
+    "surface": "in-app browser",
+    "existingTabReused": true,
+    "successfulTabListing": true,
+    "pageReadClickReadPassed": true,
+    "screenshotsSaved": true,
+    "consoleErrorsAndWarnings": 0,
+    "chromeOrComputerUseRecoveryProven": false,
+    "longTermStabilityProven": false
+  },
+  "remaining": [
+    "Hand reach, knee clearance and continuous collision validation",
+    "Warped screen/button detail and final art acceptance",
+    "Interior roof versus external canopy mismatch"
+  ],
+  "generationCountThisContinuation": 0,
+  "paymentMade": false,
+  "geometryOrTextureModified": false,
+  "overallTaskStatus": "changes_requested",
+  "latestAttempt": "整舱复验受阻续查-20261016.json",
+  "priorBrowserAttempt": {
+    "error": "Unable to load browser feature gates",
+    "successfulTabListing": false,
+    "nameOrListingAttempts": 3,
+    "chromeRunning": true,
+    "extensionInstalled": true,
+    "extensionEnabled": true,
+    "nativeHostManifestCorrect": true,
+    "officialChecksRunInRealUserContext": true,
+    "sandboxOnlyChecksNotAuthoritative": true,
+    "rootCauseConfirmed": false,
+    "reinstallOrRestartPerformed": false,
+    "networkSettingsChanged": false,
+    "tunAdapterObservedUp": true
+  },
+  "liveReview": {
+    "views": [
+      "整船外观",
+      "驾驶眼位",
+      "驾驶席",
+      "左侧过道",
+      "右侧过道",
+      "地面过渡"
+    ],
+    "hullAndGlazingEnabled": true,
+    "viewport": {
+      "width": 565,
+      "height": 668
+    },
+    "observations": [
+      "Both integrated main-console grips visible from cockpit view.",
+      "Both seat-side aisle views show open floor without external joystick stands.",
+      "Under-console floor observed; screenshot does not establish human knee clearance.",
+      "Console screens, controls and edges retain warped or soft generative detail.",
+      "Interior roof does not follow curved external canopy; full ship art remains unaccepted."
+    ],
+    "interactionAnomaly": {
+      "firstRightAislePoseDrifted": true,
+      "initialScreenshot": "整舱复验-右侧过道-20261016.png",
+      "singleStepAxRepeatMatchedPreset": true,
+      "verifiedCamera": [
+        1.35,
+        -0.1,
+        -3.05
+      ],
+      "verifiedTarget": [
+        1.35,
+        -1.15,
+        -4.4
+      ],
+      "rootCauseConfirmed": false,
+      "previewCodeChanged": false
+    },
+    "screenshots": [
+      "整舱复验-外观-20261016.png",
+      "整舱复验-驾驶眼位-20261016.png",
+      "整舱复验-驾驶席-20261016.png",
+      "整舱复验-左侧过道-20261016.png",
+      "整舱复验-右侧过道-预设机位-20261016.png",
+      "整舱复验-台下观察-20261016.png"
+    ]
+  },
+  "sourceHashesRecheckedThisLiveReview": 4
+}

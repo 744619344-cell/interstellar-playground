@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-13",
+  "module": "folding-berth",
+  "model": "V3.1",
+  "requestedFaces": "50k",
+  "inputSlots": [
+    "front",
+    "back",
+    "top",
+    "left"
+  ],
+  "uploadedImages": 4,
+  "submitClicks": 1,
+  "acceptedJobs": 1,
+  "newAcceptedTotal": 32,
+  "freeQuotaBefore": 18,
+  "freeQuotaAfter": 17,
+  "paymentMade": false,
+  "originalDownloaded": true,
+  "status": "local_trial_candidate",
+  "localGeometryMade": false,
+  "originalSha256": "d51982853187c866f4e581f98d9658f981295f734acb668392924a5fd5d12d26",
+  "bytes": 34845712,
+  "triangles": 49916
+}
