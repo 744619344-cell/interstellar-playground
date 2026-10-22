@@ -1,13 +1,13 @@
 {
-  "version": "ship-exterior-view-20261022",
-  "builtAtUtc": "2026-10-22T03:29:59.8341384Z",
+  "version": "ship-load-progress-20261022",
+  "builtAtUtc": "2026-10-22T04:07:27.6892631Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "2f6ecb36788dae5e042f4e61f8ee6913fc5571bb709d0d9f948350513ba7c4b2"
+      "sha256": "17d6e354dbec8d7679914d4598211eaa2cc021a9a143838b787ccc45b6166f34"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -40,14 +40,14 @@
       "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
     },
     {
-      "path": "assets/index-9aanN3Hq.css",
-      "bytes": 17601,
-      "sha256": "6beb7cc7ccac9dab3a9f18f92a836527ff2b735dab9400cffce00e180f7d0cd4"
+      "path": "assets/index-9mtGDGbk.css",
+      "bytes": 17612,
+      "sha256": "c0a2546017a62475eac10d43fcef6e8fe72b01f6cbd786fba5fcfa48396d8923"
     },
     {
-      "path": "assets/index-AUIY05aZ.js",
-      "bytes": 1005237,
-      "sha256": "84f408b0ed10c1bfb5d0c5da21bfedca1000aa761f9f8cea26c7449495317e90"
+      "path": "assets/index-VU70k2-O.js",
+      "bytes": 1010603,
+      "sha256": "57fabe27ce0aef2228e44afafa57efbe1c713d2f61c2189fdf16ef38967973a9"
     },
     {
       "path": "assets/main-console-BpUhlZor.glb",
