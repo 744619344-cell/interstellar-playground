@@ -1,13 +1,13 @@
 {
-  "version": "canvas-visibility-fixed-20261022",
-  "builtAtUtc": "2026-10-22T03:04:47.8981959Z",
+  "version": "ship-exterior-view-20261022",
+  "builtAtUtc": "2026-10-22T03:29:59.8341384Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "b37f13722c8534130e7598c526f5e4f579b5391de1fa3593c9cb27c56169178d"
+      "sha256": "2f6ecb36788dae5e042f4e61f8ee6913fc5571bb709d0d9f948350513ba7c4b2"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -40,14 +40,14 @@
       "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
     },
     {
-      "path": "assets/index-DA41rsKk.js",
-      "bytes": 1004897,
-      "sha256": "57e8a0df5c6b357946ffed1bb1364b72ea4bdbbb4484f71105779360430ce488"
+      "path": "assets/index-9aanN3Hq.css",
+      "bytes": 17601,
+      "sha256": "6beb7cc7ccac9dab3a9f18f92a836527ff2b735dab9400cffce00e180f7d0cd4"
     },
     {
-      "path": "assets/index-SlgLRVYE.css",
-      "bytes": 17365,
-      "sha256": "a032520803109d1f2dab5c0a36f18207a2c68fad0070d34b6a4f08f49bd37bae"
+      "path": "assets/index-AUIY05aZ.js",
+      "bytes": 1005237,
+      "sha256": "84f408b0ed10c1bfb5d0c5da21bfedca1000aa761f9f8cea26c7449495317e90"
     },
     {
       "path": "assets/main-console-BpUhlZor.glb",
