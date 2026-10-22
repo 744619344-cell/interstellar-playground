@@ -1,0 +1,158 @@
+{
+  "version": "transparent-canopy-seated-20261022",
+  "builtAtUtc": "2026-10-22T02:08:56.8806645Z",
+  "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
+  "includesWorkingTreeChanges": true,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 424,
+      "sha256": "e2ae79d2d732e57023f7799ce53f7a1ace2b330e7245b54075319735f266bd84"
+    },
+    {
+      "path": "assets/aft-bulkhead-DkR8L15e.glb",
+      "bytes": 31543368,
+      "sha256": "1da4616850eadfbd3eedbc08fd666c4e09b63d1fda5e3a2601a01a6fe66a06f1"
+    },
+    {
+      "path": "assets/crew-ZVaFSfo3.glb",
+      "bytes": 60165248,
+      "sha256": "e218554e4de456f6000caef71b174517407a8070e346cccfda38a870f497c1f8"
+    },
+    {
+      "path": "assets/dual-suit-locker-CBWzVxeT.glb",
+      "bytes": 1001964,
+      "sha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375"
+    },
+    {
+      "path": "assets/floor-DOnJD3JD.glb",
+      "bytes": 101140,
+      "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9"
+    },
+    {
+      "path": "assets/folding-berth-DS9Xrwyp.glb",
+      "bytes": 1788912,
+      "sha256": "41fad8b02986f2e72b3445c1bcecf6e0f73320381bf5579f010e4c07b30753ea"
+    },
+    {
+      "path": "assets/hull-C-o3ktyV.glb",
+      "bytes": 29191280,
+      "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
+    },
+    {
+      "path": "assets/index-CAwl3WeY.js",
+      "bytes": 1004927,
+      "sha256": "8e8356b6123539b26653f1c1eb5a425c09f94bb9aeddb862358fb62623167077"
+    },
+    {
+      "path": "assets/index-SlgLRVYE.css",
+      "bytes": 17365,
+      "sha256": "a032520803109d1f2dab5c0a36f18207a2c68fad0070d34b6a4f08f49bd37bae"
+    },
+    {
+      "path": "assets/main-console-BpUhlZor.glb",
+      "bytes": 1042820,
+      "sha256": "d3965e3b490cab12957103b9061a484d6e88c13079ea59b2b19d0c63c8c01d38"
+    },
+    {
+      "path": "assets/moon-surface-qnR7F9yB.jpg",
+      "bytes": 116729,
+      "sha256": "a42b4302207f38bc4ab497868ac13f7e67b36cf2f7ec2b1a7df5efa1e9f1d9b2"
+    },
+    {
+      "path": "assets/rear-workbench-hXTd8m8f.glb",
+      "bytes": 966604,
+      "sha256": "b408bea04b685c7a0a9c66cd3cede47d4ad6c52ff80b57b20f3c37ff776f59d8"
+    },
+    {
+      "path": "assets/seat-Dgn79EoF.glb",
+      "bytes": 3536020,
+      "sha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc"
+    },
+    {
+      "path": "assets/spacecraft-master-lod0-BkGpakP_.glb",
+      "bytes": 13203856,
+      "sha256": "bdb0f761d6960019f37b6cb227ea5c59f839c3e986045579227d7a909aa12a3b"
+    },
+    {
+      "path": "assets/storage-cabinet-DeuYQS5W.glb",
+      "bytes": 1092580,
+      "sha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461"
+    },
+    {
+      "path": "assets/system-map-design-reference-D69BbqHh.png",
+      "bytes": 2036154,
+      "sha256": "948edc479e68e68a061e32da075b68df1782550fea5aea939741b25193b3853f"
+    },
+    {
+      "path": "assets/voyage-earth_clouds-BLvBNlAM.jpg",
+      "bytes": 695506,
+      "sha256": "71ea0c2eeff758dd25f9ce768c90beeb6bc160d52d5cf2fe4972a495ce835dac"
+    },
+    {
+      "path": "assets/voyage-earth_day-aPUuyrK8.jpg",
+      "bytes": 262698,
+      "sha256": "f04c0eff2f3c01ec6bbad4d6b05070a07f964c1d8826569e08dce4487bb7f3fb"
+    },
+    {
+      "path": "assets/voyage-earth_night-BDGHd72D.jpg",
+      "bytes": 144621,
+      "sha256": "9554d16e45ac1665ea8165db47115957d1c07540fd31aa460e66033d68f3f73f"
+    },
+    {
+      "path": "assets/voyage-jupiter-DjTWwfAG.jpg",
+      "bytes": 280756,
+      "sha256": "6b8ca074a98a71a7d18b9dd2bfab87230124ff18167878e8ac9a3280352dde9f"
+    },
+    {
+      "path": "assets/voyage-mars-hD6GOW_r.jpg",
+      "bytes": 387177,
+      "sha256": "8ef6fdeb43635c28af9b56c457fc76f6b3d26343e29b9f88aa4bb15fb1598a6e"
+    },
+    {
+      "path": "assets/voyage-mercury-CyNjFvzP.jpg",
+      "bytes": 569514,
+      "sha256": "db7437245b4ba27188faabcb1b0535da96d5afc0495636de844598c815355174"
+    },
+    {
+      "path": "assets/voyage-milkyway-DIBZFMHH.jpg",
+      "bytes": 95756,
+      "sha256": "c4dcec62ca27777374e4a3d2a462e8b8bf9654ce3be3fad86131ebb1795d3c3b"
+    },
+    {
+      "path": "assets/voyage-moon-VZJYFaII.jpg",
+      "bytes": 705478,
+      "sha256": "8d9d3c5d64d9850271f8c5a0a6f72b01a712842641c869a617546db9a5a5ed2a"
+    },
+    {
+      "path": "assets/voyage-neptune-5QkQv0_J.jpg",
+      "bytes": 81652,
+      "sha256": "7c302524b6ba0b83d0938f21a7cd0815eaa5f40f29e0e9d2490e111cefa17fb2"
+    },
+    {
+      "path": "assets/voyage-saturn-BWKhWwl_.jpg",
+      "bytes": 125497,
+      "sha256": "f9bb7a2ad0a2e9cb1f391955369423fc7779c1ea61be2d18cf2e927cdf17b03b"
+    },
+    {
+      "path": "assets/voyage-saturn-ring-DM6tXxQg.png",
+      "bytes": 38460,
+      "sha256": "9fddac75f0f1ab108ba2e1754d5ce9cb9b41dcc95d0b2f01c969dea13494848a"
+    },
+    {
+      "path": "assets/voyage-sun-C9Tsp2zj.jpg",
+      "bytes": 403576,
+      "sha256": "2809cc45fd6e643c4e134285a6da72b515e8cfd135792d146ff853a77ea3dcb4"
+    },
+    {
+      "path": "assets/voyage-uranus-CiZGhsqp.jpg",
+      "bytes": 51921,
+      "sha256": "eedcda8c648233aeb2ba439adada644a0e7471ec6bc95be10ca31c12bf38bf7e"
+    },
+    {
+      "path": "assets/voyage-venus_surface-BpUMZc2k.jpg",
+      "bytes": 477650,
+      "sha256": "b56808d31ba82df5dc329cf119bbcc6e1998333c5b80bb2cf123816be1e17fa7"
+    }
+  ]
+}
