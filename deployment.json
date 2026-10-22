@@ -1,13 +1,13 @@
 {
-  "version": "transparent-canopy-seated-20261022",
-  "builtAtUtc": "2026-10-22T02:08:56.8806645Z",
+  "version": "canvas-visibility-fixed-20261022",
+  "builtAtUtc": "2026-10-22T03:04:47.8981959Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "e2ae79d2d732e57023f7799ce53f7a1ace2b330e7245b54075319735f266bd84"
+      "sha256": "b37f13722c8534130e7598c526f5e4f579b5391de1fa3593c9cb27c56169178d"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -40,9 +40,9 @@
       "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
     },
     {
-      "path": "assets/index-CAwl3WeY.js",
-      "bytes": 1004927,
-      "sha256": "8e8356b6123539b26653f1c1eb5a425c09f94bb9aeddb862358fb62623167077"
+      "path": "assets/index-DA41rsKk.js",
+      "bytes": 1004897,
+      "sha256": "57e8a0df5c6b357946ffed1bb1364b72ea4bdbbb4484f71105779360430ce488"
     },
     {
       "path": "assets/index-SlgLRVYE.css",
