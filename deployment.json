@@ -1,13 +1,13 @@
 {
-  "version": "ship-load-progress-20261022",
-  "builtAtUtc": "2026-10-22T04:07:27.6892631Z",
+  "version": "ship-mouse-steering-20261022",
+  "builtAtUtc": "2026-10-22T04:37:09.0420133Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "17d6e354dbec8d7679914d4598211eaa2cc021a9a143838b787ccc45b6166f34"
+      "sha256": "4593a35df3d67914abaea6f4864d9f437b694f1c1ec25136fb0ee30494090714"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -45,9 +45,9 @@
       "sha256": "c0a2546017a62475eac10d43fcef6e8fe72b01f6cbd786fba5fcfa48396d8923"
     },
     {
-      "path": "assets/index-VU70k2-O.js",
-      "bytes": 1010603,
-      "sha256": "57fabe27ce0aef2228e44afafa57efbe1c713d2f61c2189fdf16ef38967973a9"
+      "path": "assets/index-hsTw-wHN.js",
+      "bytes": 1011990,
+      "sha256": "3f5ad63dbc6af68612f920d7e4151574af96c32a1e33980061558f324ebb7748"
     },
     {
       "path": "assets/main-console-BpUhlZor.glb",
