@@ -1,13 +1,13 @@
 {
-  "version": "ship-memory-budget-20261022",
-  "builtAtUtc": "2026-10-22T06:04:24.6050393Z",
+  "version": "ship-staged-loading-20261022",
+  "builtAtUtc": "2026-10-22T08:33:31.8673945Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "37f89d4ff1df4dd04adb07a67b8643b308512f0ce69f798bbd7121004d77660a"
+      "sha256": "7b0dd2735635a7245872dda51ca11e7d885597f47ba77e1cf21f3bc0e43a1557"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -15,9 +15,19 @@
       "sha256": "1da4616850eadfbd3eedbc08fd666c4e09b63d1fda5e3a2601a01a6fe66a06f1"
     },
     {
+      "path": "assets/aft-bulkhead.glb-DC2BKg9X.gz",
+      "bytes": 29734997,
+      "sha256": "a3c4eb58b70fbc3f3981edba994248f3cd6e07126119a8c0cfa96de4239afc2b"
+    },
+    {
       "path": "assets/crew-ZVaFSfo3.glb",
       "bytes": 60165248,
       "sha256": "e218554e4de456f6000caef71b174517407a8070e346cccfda38a870f497c1f8"
+    },
+    {
+      "path": "assets/crew.glb-BL314ZGB.gz",
+      "bytes": 34437242,
+      "sha256": "263320330e88a1a7a3e2d9bb704236c7836d4df96fa401d06c83c7b0b2300886"
     },
     {
       "path": "assets/dual-suit-locker-CBWzVxeT.glb",
@@ -25,9 +35,19 @@
       "sha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375"
     },
     {
+      "path": "assets/dual-suit-locker.glb-BFIGjFFV.gz",
+      "bytes": 771125,
+      "sha256": "0688404cac1992591a2f18dbfcebe36332bb1800acef7f461e57afb37fabe1aa"
+    },
+    {
       "path": "assets/floor-DOnJD3JD.glb",
       "bytes": 101140,
       "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9"
+    },
+    {
+      "path": "assets/floor.glb-DwccUSxo.gz",
+      "bytes": 17830,
+      "sha256": "009c8c78c614ea249ffeeb089660f2994103845263e415b57e200497476b7081"
     },
     {
       "path": "assets/folding-berth-DS9Xrwyp.glb",
@@ -35,9 +55,19 @@
       "sha256": "41fad8b02986f2e72b3445c1bcecf6e0f73320381bf5579f010e4c07b30753ea"
     },
     {
+      "path": "assets/folding-berth.glb-D0uiNpOr.gz",
+      "bytes": 1676255,
+      "sha256": "57850fde3228040f2d4e54d15b25d438d3e097db9d495769d4bad32d113aa8f9"
+    },
+    {
       "path": "assets/hull-C-o3ktyV.glb",
       "bytes": 29191280,
       "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
+    },
+    {
+      "path": "assets/hull.glb-BD4QWHj9.gz",
+      "bytes": 18966610,
+      "sha256": "c25ece080b898ccbfc86f92722ab56355fc4e17e26b0d81e2f91aeab5b6e7f38"
     },
     {
       "path": "assets/index-9mtGDGbk.css",
@@ -45,14 +75,19 @@
       "sha256": "c0a2546017a62475eac10d43fcef6e8fe72b01f6cbd786fba5fcfa48396d8923"
     },
     {
-      "path": "assets/index-CL9QHeRf.js",
-      "bytes": 1015083,
-      "sha256": "602148b369276081c33783297bad1a2dcaa6015e339f39ef09d4c0187e60d45d"
+      "path": "assets/index-T0w_ytSE.js",
+      "bytes": 1020371,
+      "sha256": "0edd463f538b92595168ef2ab4eed8a809aa14954ca0c6d7aa4ccd79687cdf73"
     },
     {
       "path": "assets/main-console-BpUhlZor.glb",
       "bytes": 1042820,
       "sha256": "d3965e3b490cab12957103b9061a484d6e88c13079ea59b2b19d0c63c8c01d38"
+    },
+    {
+      "path": "assets/main-console.glb-sE2P_2rp.gz",
+      "bytes": 810883,
+      "sha256": "22ecd7b2163cb8096419ca43d79e18ee0ac78979a36865adc4ad0dd47d084474"
     },
     {
       "path": "assets/moon-surface-qnR7F9yB.jpg",
@@ -65,9 +100,19 @@
       "sha256": "b408bea04b685c7a0a9c66cd3cede47d4ad6c52ff80b57b20f3c37ff776f59d8"
     },
     {
+      "path": "assets/rear-workbench.glb-fstS9Arc.gz",
+      "bytes": 726050,
+      "sha256": "1576a4cf0a713f2002258b42d4da645992170d26ad325be2ff94f445fb16656b"
+    },
+    {
       "path": "assets/seat-Dgn79EoF.glb",
       "bytes": 3536020,
       "sha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc"
+    },
+    {
+      "path": "assets/seat.glb-D-pAnaRc.gz",
+      "bytes": 3256550,
+      "sha256": "c9c178979e9edd5118f95ee6e85bcb05d511014898f9ed107dfad18e71a12fd8"
     },
     {
       "path": "assets/spacecraft-master-lod0-BkGpakP_.glb",
@@ -78,6 +123,11 @@
       "path": "assets/storage-cabinet-DeuYQS5W.glb",
       "bytes": 1092580,
       "sha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461"
+    },
+    {
+      "path": "assets/storage-cabinet.glb-CtE3WWh4.gz",
+      "bytes": 1014167,
+      "sha256": "675fd7fcfcf8835f599cd3f0f2f05ba49f3e31b57acc2856ba8ea4314fcdf2c5"
     },
     {
       "path": "assets/system-map-design-reference-D69BbqHh.png",
