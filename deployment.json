@@ -1,13 +1,13 @@
 {
-  "version": "ship-staged-loading-20261022",
-  "builtAtUtc": "2026-10-22T08:33:31.8673945Z",
+  "version": "ship-staged-loading-focus-20261022",
+  "builtAtUtc": "2026-10-22T08:43:43.5694635Z",
   "sourceBase": "b2b7504c180db0735aef7d549fe18dd3aa632793",
   "includesWorkingTreeChanges": true,
   "files": [
     {
       "path": "index.html",
       "bytes": 424,
-      "sha256": "7b0dd2735635a7245872dda51ca11e7d885597f47ba77e1cf21f3bc0e43a1557"
+      "sha256": "6559f0b449d145369585ab6aed5ed633f73b4986e30c0b9b3204c5497e984557"
     },
     {
       "path": "assets/aft-bulkhead-DkR8L15e.glb",
@@ -75,9 +75,9 @@
       "sha256": "c0a2546017a62475eac10d43fcef6e8fe72b01f6cbd786fba5fcfa48396d8923"
     },
     {
-      "path": "assets/index-T0w_ytSE.js",
-      "bytes": 1020371,
-      "sha256": "0edd463f538b92595168ef2ab4eed8a809aa14954ca0c6d7aa4ccd79687cdf73"
+      "path": "assets/index-BqdXTSSl.js",
+      "bytes": 1020598,
+      "sha256": "0e581834b63eea41d6f8a18e4de9a869c7617b2525e1c381e0dc7621431fd27f"
     },
     {
       "path": "assets/main-console-BpUhlZor.glb",
