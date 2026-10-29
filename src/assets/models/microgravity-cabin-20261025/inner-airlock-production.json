@@ -1,0 +1,41 @@
+{
+  "sourceSha256": "3312341ff82d3685f4079e68b48e95d9628a1a771037dc545cb86aa97346aff3",
+  "authorization": "User explicitly authorized the displayed outer edge band, maximum .45m, on 2026-10-26",
+  "maximumConfirmedBandDistance": 0.43796560361056414,
+  "placement": {
+    "scale": 6.369435803173212,
+    "yaw": 3.141592653589793,
+    "offset": [
+      0.07496186904742443,
+      -1.5100000216343745,
+      4.1983058639212025
+    ],
+    "height": 4.14,
+    "center": [
+      0,
+      0.56,
+      4.2
+    ],
+    "moduleShiftZ": -0.82
+  },
+  "repairedOriginalCrownFaces": 1,
+  "accepted": false,
+  "objects": [
+    {
+      "name": "InnerDoorFrame",
+      "vertices": 25851,
+      "faces": 43337,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0
+    },
+    {
+      "name": "InnerDoorLeaf",
+      "vertices": 3032,
+      "faces": 5518,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0
+    }
+  ],
+  "candidateSha256": "089f763a67afa334ddf3d95dd30c3b386bff1813c63220a17edf44c9fdcb1c0a",
+  "bytes": 27251848
+}
