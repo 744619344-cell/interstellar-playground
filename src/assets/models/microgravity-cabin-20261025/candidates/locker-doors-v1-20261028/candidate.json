@@ -1,0 +1,21 @@
+{
+  "candidate": "locker-doors-v1",
+  "authorization": "2026-10-28 four leaves and necessary hinges/local edging",
+  "fit": {
+    "x": 1.055,
+    "y": -0.34,
+    "zMin": 1.96,
+    "zMax": 2.9,
+    "height": 2.02,
+    "width": 0.235,
+    "thickness": 0.014,
+    "angle": 1.4835298641951802
+  },
+  "bytes": 10888,
+  "sha256": "e3fe4b25dbd5f7ec3205c6933461d0e8ed586a8610d385def76d6975c2f9b950",
+  "closed": {
+    "x": 0.014000000432133675,
+    "y": 2.0199999809265137,
+    "z": 0.9509999999403953
+  }
+}

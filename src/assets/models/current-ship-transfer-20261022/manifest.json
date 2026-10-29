@@ -1,0 +1,85 @@
+{
+  "encoding": "gzip",
+  "assets": {
+    "hull": {
+      "file": "hull-g12.glb.gz",
+      "sourceFile": "hull-g12.glb",
+      "bytes": 34421642,
+      "originalBytes": 59312672,
+      "sha256": "146f711f24dc7f8ecc78c8c8caf902685b3c7258e1a94a25afe3c8aab99ccc5c",
+      "originalSha256": "b2a0f9e9c57ec0ba95f5272c2772bc99b4be77349267bb4ad43fb16aa407a2e0"
+    },
+    "crew": {
+      "file": "crew.glb.gz",
+      "bytes": 34437242,
+      "originalBytes": 60165248,
+      "sha256": "263320330e88a1a7a3e2d9bb704236c7836d4df96fa401d06c83c7b0b2300886",
+      "originalSha256": "e218554e4de456f6000caef71b174517407a8070e346cccfda38a870f497c1f8",
+      "sourceFile": "crew.glb"
+    },
+    "floor": {
+      "file": "floor.glb.gz",
+      "bytes": 17830,
+      "originalBytes": 101140,
+      "sha256": "009c8c78c614ea249ffeeb089660f2994103845263e415b57e200497476b7081",
+      "originalSha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9",
+      "sourceFile": "floor.glb"
+    },
+    "folding-berth": {
+      "file": "folding-berth.glb.gz",
+      "bytes": 1676255,
+      "originalBytes": 1788912,
+      "sha256": "57850fde3228040f2d4e54d15b25d438d3e097db9d495769d4bad32d113aa8f9",
+      "originalSha256": "41fad8b02986f2e72b3445c1bcecf6e0f73320381bf5579f010e4c07b30753ea",
+      "sourceFile": "folding-berth.glb"
+    },
+    "rear-workbench": {
+      "file": "rear-workbench.glb.gz",
+      "bytes": 726050,
+      "originalBytes": 966604,
+      "sha256": "1576a4cf0a713f2002258b42d4da645992170d26ad325be2ff94f445fb16656b",
+      "originalSha256": "b408bea04b685c7a0a9c66cd3cede47d4ad6c52ff80b57b20f3c37ff776f59d8",
+      "sourceFile": "rear-workbench.glb"
+    },
+    "storage-cabinet": {
+      "file": "storage-cabinet.glb.gz",
+      "bytes": 1014167,
+      "originalBytes": 1092580,
+      "sha256": "675fd7fcfcf8835f599cd3f0f2f05ba49f3e31b57acc2856ba8ea4314fcdf2c5",
+      "originalSha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461",
+      "sourceFile": "storage-cabinet.glb"
+    },
+    "dual-suit-locker": {
+      "file": "dual-suit-locker.glb.gz",
+      "bytes": 771125,
+      "originalBytes": 1001964,
+      "sha256": "0688404cac1992591a2f18dbfcebe36332bb1800acef7f461e57afb37fabe1aa",
+      "originalSha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375",
+      "sourceFile": "dual-suit-locker.glb"
+    },
+    "seat": {
+      "file": "seat.glb.gz",
+      "bytes": 3256550,
+      "originalBytes": 3536020,
+      "sha256": "c9c178979e9edd5118f95ee6e85bcb05d511014898f9ed107dfad18e71a12fd8",
+      "originalSha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc",
+      "sourceFile": "seat.glb"
+    },
+    "main-console": {
+      "file": "main-console.glb.gz",
+      "bytes": 810883,
+      "originalBytes": 1042820,
+      "sha256": "22ecd7b2163cb8096419ca43d79e18ee0ac78979a36865adc4ad0dd47d084474",
+      "originalSha256": "d3965e3b490cab12957103b9061a484d6e88c13079ea59b2b19d0c63c8c01d38",
+      "sourceFile": "main-console.glb"
+    },
+    "aft-bulkhead": {
+      "file": "aft-door-d2.glb.gz",
+      "sourceFile": "aft-door-d2.glb",
+      "bytes": 30843555,
+      "originalBytes": 33407652,
+      "sha256": "0261f93824893a28307b694c4c7f8645b026cb06777a9deb09147d714418ec70",
+      "originalSha256": "6b27ee144d19308dc78160df3c8bef6f3e032a2bf4804ddf6a780cc1c2f9ce21"
+    }
+  }
+}
