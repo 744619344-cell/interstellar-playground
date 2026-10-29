@@ -8,7 +8,7 @@ type Loader = (url: string, signal: AbortSignal) => Promise<Asset>
 /** The master contains its fitted structure. No legacy repair asset is requested or installed. */
 export async function loadShipMaster(signal: AbortSignal, release: (scene: Group) => void,
   load: Loader = loadShipAsset): Promise<Asset> {
-  const asset = await load(SHIP_MODEL_ASSETS.assembly, signal)
+  const asset = await load(SHIP_MODEL_ASSETS.legacyAssembly, signal)
   try {
     signal.throwIfAborted()
     if (asset.scene.getObjectByName('Ship_Adapted')?.userData.masterInterior !== true)

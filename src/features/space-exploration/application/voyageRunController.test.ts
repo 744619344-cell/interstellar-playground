@@ -7,10 +7,11 @@ class FakeRunner {
   stops = 0
   clears = 0
   inputEnabled: boolean[] = []
+  resourceRelease: boolean[] = []
   start() { this.starts += 1 }
   stop() { this.stops += 1 }
   clearInput() { this.clears += 1 }
-  setInputEnabled(enabled: boolean) { this.inputEnabled.push(enabled) }
+  setInputEnabled(enabled: boolean, release = true) { this.inputEnabled.push(enabled); this.resourceRelease.push(release) }
 }
 
 test('initial hidden state does not start the loop', () => {
@@ -100,4 +101,17 @@ test('destroy is idempotent and leaves the runner stopped', () => {
   controller.setOverlayPaused(false)
   assert.equal(runner.starts, 1)
   assert.equal(controller.getSnapshot().destroyed, true)
+})
+
+test('brief blur and overlays pause without releasing downloads; real hiding and destruction still release', () => {
+  const runner = new FakeRunner(), controller = new VoyageRunController(runner)
+  controller.mount(false); controller.setBlurred(true)
+  assert.equal(controller.getSnapshot().running, false); assert.equal(runner.inputEnabled.at(-1), false)
+  assert.equal(runner.resourceRelease.at(-1), false)
+  controller.setOverlayPaused(true); controller.setBlurred(false)
+  assert.equal(controller.getSnapshot().running, false); assert.equal(runner.resourceRelease.at(-1), false)
+  controller.setHidden(true); assert.equal(runner.resourceRelease.at(-1), true)
+  controller.setHidden(false); assert.equal(controller.getSnapshot().running, false)
+  controller.setOverlayPaused(false); assert.equal(controller.getSnapshot().running, true)
+  controller.destroy(); assert.equal(runner.resourceRelease.at(-1), true)
 })

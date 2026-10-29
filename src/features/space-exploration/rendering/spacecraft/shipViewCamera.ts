@@ -5,6 +5,9 @@ import { normalize3, sub3 } from '../../domain/vec3'
 import { ShipCabinCamera } from './shipCabinCamera'
 import type { Box3 } from 'three'
 import type { ShipCabinVolume } from './shipCabinVolume'
+import type { Vec3 } from '../../domain/vec3'
+
+export interface CabinCameraPose { position: Vec3; target: Vec3; feet: Vec3; blocked: boolean }
 
 export type ShipViewMode = 'follow' | 'cockpit' | 'cabin' | 'free'
 export const nextShipView = (mode: ShipViewMode): ShipViewMode =>
@@ -27,6 +30,8 @@ export class ShipViewCamera {
   private cabin = new ShipCabinCamera()
   private interiorFov = 55
   private seatResolved = false
+  private crewPose?: CabinCameraPose
+  private interiorTransition=false
   constructor(subject: ShipCameraSubject, private seat = { x: 0, y: 0.8, z: -2 }) {
     this.rig = new ShipCameraRig(subject)
     this.cabin.setSeat(seat)
@@ -36,12 +41,17 @@ export class ShipViewCamera {
   }
   setMode(mode: ShipViewMode) {
     if (mode === this.mode) return
+    this.interiorTransition=['cockpit','cabin'].includes(this.mode)&&['cockpit','cabin'].includes(mode)
     this.transition = { offset: this.pose.position.clone().sub(this.subjectPosition),
       rotation: rotation(this.pose), elapsed: 0 }
     this.mode = mode
     this.rig.setMode(mode === 'cockpit' || mode === 'cabin' ? 'follow' : mode)
+    if(mode==='cockpit')this.rig.resetLook()
   }
   orbit(dx: number, dy: number) { this.rig.orbit(dx, dy) }
+  centerLook() { this.rig.resetLook() }
+  lookAft() { const look=this.rig.snapshot(); this.rig.orbit(Math.PI-look.yaw,.22-look.pitch) }
+  setCrewPose(pose?: CabinCameraPose) { this.crewPose=pose }
   setSeat(seat: { x: number; y: number; z: number }, pitchOffset = 0, standing?: { x: number; y: number; z: number }) {
     this.seat = { ...seat }
     // The real anchor replaces the initial placeholder; roaming positions survive a resource reload.
@@ -74,6 +84,10 @@ export class ShipViewCamera {
     let destination = interior
       ? { position: seat, target: cockpitDirection.add(seat), up: new Vector3(0, 1, 0).applyQuaternion(q) }
       : { position: vector(exterior.position), target: vector(exterior.target), up: vector(exterior.up) }
+    if (interior && this.crewPose) destination = {
+      position: vector(this.crewPose.position).applyQuaternion(q).add(this.subjectPosition),
+      target: vector(this.crewPose.target).applyQuaternion(q).add(this.subjectPosition), up: new Vector3(0,1,0).applyQuaternion(q)
+    }
     if (this.transition) {
       this.transition.elapsed += Math.min(dt, 0.25)
       const t = Math.min(1, this.transition.elapsed / 0.6)
@@ -95,8 +109,10 @@ export class ShipViewCamera {
   snapshot() {
     return { ...this.rig.snapshot(), position: plain(this.pose.position), target: plain(this.pose.target),
       up: plain(this.pose.up), mode: this.mode, transitioning: !!this.transition, blocked: this.blocked,
+      interiorTransition:this.interiorTransition&&!!this.transition,
       occluded: this.occluded, distance: this.pose.position.distanceTo(this.subjectPosition),
-      interiorFov: this.interiorFov, cabinPosition: this.cabin.snapshot(), cabinBlocked: this.cabin.blocked }
+      interiorFov: this.interiorFov, cabinPosition: this.crewPose?.feet ?? this.cabin.snapshot(),
+      cabinBlocked: this.crewPose?.blocked ?? this.cabin.blocked }
   }
   movementBasis() {
     const forward = normalize3(sub3(plain(this.pose.target), plain(this.pose.position)))

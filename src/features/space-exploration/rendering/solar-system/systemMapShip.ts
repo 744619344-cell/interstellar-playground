@@ -5,9 +5,14 @@ import { bodyPositionsAt } from '../../domain/orbitMotion'
 import { SHIP_PROTECTION } from '../../domain/shipNavigation'
 import { visualScale } from '../../domain/visualScale'
 import { dot3, length3, normalize3, sub3, type Vec3 } from '../../domain/vec3'
+import type { ShipLoadProgress } from '../spacecraft/shipLoadProgress'
 
 export interface SystemShipSnapshot {
   position: Vec3; projected: ProjectedBody; status: 'loading' | 'ready' | 'failed'; suspended: boolean; parked: boolean
+  loadProgress?: ShipLoadProgress; loadError?: string
+  previewReady?: boolean
+  crewReady?: boolean
+  microgravity?: boolean
 }
 
 export function projectSystemShip(ship: ReturnType<ShipFlightRuntime['snapshot']> | undefined,
@@ -20,10 +25,13 @@ export function projectSystemShip(ship: ReturnType<ShipFlightRuntime['snapshot']
     if (depth <= 0 || depth >= distance) continue
     if (dot3(relative, relative) - depth * depth < radius * radius) { projected.visible = false; break }
   }
-  return { position: ship.worldPosition, projected, status: ship.model.status, suspended: ship.suspended, parked: ship.parked }
+  return { position: ship.worldPosition, projected, status: ship.model.status, suspended: ship.suspended, parked: ship.parked,
+    loadProgress: ship.model.loadProgress, loadError: ship.model.loadError, previewReady: ship.model.previewReady,
+    crewReady: !!ship.model.cabin && ship.model.status === 'ready' && !ship.suspended,
+    microgravity: !!ship.model.cabin && 'microgravity' in ship.model.cabin }
 }
 
 export function hitSystemShip(ship: SystemShipSnapshot | undefined, x: number, y: number) {
-  return ship?.status === 'ready' && !ship.suspended && ship.projected.visible
+  return !!ship && (ship.status === 'ready' || (ship.status === 'loading' && ship.previewReady === true)) && !ship.suspended && ship.projected.visible
     && Math.hypot(x - ship.projected.x, y - ship.projected.y) <= Math.max(12, ship.projected.radius)
 }

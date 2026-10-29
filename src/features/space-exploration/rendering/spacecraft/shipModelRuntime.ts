@@ -1,6 +1,6 @@
-import { Group, Mesh, Scene, Texture, Vector3,
+import { Group, Mesh, SkinnedMesh, Scene, Texture, Vector3,
   type AnimationClip, type Material, type WebGLRenderer, type Camera } from 'three'
-import { loadShipMaster } from './shipMasterLoader'
+import { loadCurrentShipAssembly, CURRENT_SHIP_ANCHORS, type ShipPreviewObserver } from './currentShipAssembly'
 import { ShipReviewLighting, ShipVisibility } from './shipVisibility'
 import { SHIP_PROTECTION } from '../../domain/shipNavigation'
 import type { ShipCameraSubject } from '../../application/shipCameraRig'
@@ -17,6 +17,17 @@ import { addShipInteriorJoinery } from './shipInteriorJoinery'
 import { shipCabinObstacles } from './shipCabinCamera'
 import { shipMasterCabinVolume } from './shipCabinVolume'
 import { ShipContactShading } from './shipContactShading'
+import { ShipWorldBackdrop } from './shipWorldBackdrop'
+import type { ShipLoadObserver, ShipLoadProgress } from './shipLoadProgress'
+import { CurrentCabinRuntime, type CabinHandAction, type CabinSavedState } from './currentCabinRuntime'
+import type { CabinMove } from '../../domain/cabinCrewMotion'
+import type { CabinFloatFrame } from '../../domain/cabinFloatMotion'
+import { loadMicrogravityAssembly } from './microgravityAssembly'
+import { MicrogravityCabinRuntime, type MicrogravitySaved } from './microgravityCabinRuntime'
+import type { CabinEvaAction } from '../../domain/cabinEvaControls'
+import type { CabinEquipmentAction } from '../../domain/cabinEquipmentCatalog'
+import { useMicrogravityCabin } from '../../domain/cabinMode'
+import { useRefinedCabin } from './microgravitySurfaceFinish'
 
 export interface ShipModelAsset { scene: Group; animations: readonly AnimationClip[] }
 /** The protection sphere contains geometry, including child transforms, rather than empty box corners. */
@@ -41,7 +52,9 @@ const modelAsset = (source: ShipModelSource): ShipModelAsset => source instanceo
 /** Asset owner: derived resources are restored before this releases original resources. */
 export function disposeShipModel(model: Group) {
   const geometries = new Set<Mesh['geometry']>(), materials = new Set<Material>(), textures = new Set<Texture>()
+  const skeletons = new Set<SkinnedMesh['skeleton']>()
   model.traverse(item => {
+    if (item instanceof SkinnedMesh) skeletons.add(item.skeleton)
     if (!(item instanceof Mesh)) return
     geometries.add(item.geometry)
     for (const material of Array.isArray(item.material) ? item.material : [item.material]) materials.add(material)
@@ -51,6 +64,7 @@ export function disposeShipModel(model: Group) {
   for (const texture of textures) { if (texture.image) images.add(texture.image); texture.dispose() }
   for (const image of images) (image as { close?: () => void }).close?.()
   geometries.forEach(item => item.dispose()); materials.forEach(item => item.dispose())
+  skeletons.forEach(item => item.dispose())
   model.removeFromParent()
 }
 
@@ -65,13 +79,20 @@ export class ShipModelRuntime {
   readonly root = new Group()
   private environment = new ShipModelEnvironment(this.scene)
   private contact = new ShipContactShading(this.scene)
+  private backdrop = new ShipWorldBackdrop(this.scene)
   private model?: Group
+  private ownsModel = true
   private visibility?: ShipVisibility
   private lighting?: ShipReviewLighting
   private mechanisms?: ShipMechanisms
+  private cabin?: CurrentCabinRuntime
+  private micro?: MicrogravityCabinRuntime
+  private microSaved?: MicrogravitySaved
+  private cabinSaved?: CabinSavedState
   private highPoly?: ShipHighPolyPreview
   private exterior?: ShipExteriorDetail
   private cockpit = false
+  private refined = false
   private doorsOpen = false
   private suspended = false
   private generation = 0
@@ -80,9 +101,16 @@ export class ShipModelRuntime {
   private status: 'loading' | 'ready' | 'failed' = 'loading'
   private plumes: Mesh[] = []
   private anchors: ShipInteractionAnchor[] = []
+  private loadProgress?: ShipLoadProgress
+  private loadError?: string
+  private loadingTimer?: ReturnType<typeof setTimeout>
 
   constructor(private seatLoaded: (seat: Vec3, pitchOffset?: number, standing?: Vec3) => void,
-    private load: (signal: AbortSignal) => Promise<ShipModelSource> = signal => loadShipMaster(signal, disposeShipModel)) {
+    private load: (signal: AbortSignal, observe?: ShipLoadObserver, preview?: ShipPreviewObserver) => Promise<ShipModelSource> =
+      (signal, observe, preview) => useMicrogravityCabin()
+        ? loadMicrogravityAssembly(signal, disposeShipModel, undefined, observe, preview)
+        : loadCurrentShipAssembly(signal, disposeShipModel, undefined, observe, preview),
+    private stallMs = 90_000) {
     this.scene.add(this.root)
     this.startLoading()
   }
@@ -91,19 +119,47 @@ export class ShipModelRuntime {
     const generation = ++this.generation
     this.aborter = new AbortController()
     this.status = 'loading'
-    void this.load(this.aborter.signal).then(source => {
+    this.loadError = undefined; this.loadProgress = undefined
+    const observe: ShipLoadObserver = progress => {
+      if (generation !== this.generation || this.destroyed || this.suspended) return
+      this.loadProgress = { ...progress }; this.watchLoading(generation)
+    }
+    this.watchLoading(generation)
+    const preview: ShipPreviewObserver = asset => {
+      if (generation !== this.generation || this.destroyed || this.suspended) return
+      if (asset) this.install(asset, false)
+      else this.release()
+    }
+    void this.load(this.aborter.signal, observe, preview).then(source => {
       const asset = modelAsset(source)
       if (this.destroyed || this.suspended || generation !== this.generation) { disposeShipModel(asset.scene); return }
+      this.stopWatching()
       this.install(asset)
     }).catch(() => {
-      if (!this.destroyed && !this.suspended && generation === this.generation) { this.release(); this.status = 'failed' }
+      if (!this.destroyed && !this.suspended && generation === this.generation) {
+        this.stopWatching(); this.aborter?.abort(); this.release(); this.status = 'failed'
+        this.loadError = '下载连接中断或模型解析失败，请重试'
+      }
     })
   }
 
-  private install(asset: ShipModelAsset) {
+  private stopWatching() { clearTimeout(this.loadingTimer); this.loadingTimer = undefined }
+  private watchLoading(generation: number) {
+    this.stopWatching()
+    this.loadingTimer = setTimeout(() => {
+      if (generation !== this.generation || this.destroyed || this.suspended) return
+      this.generation++; this.aborter?.abort(); this.release(); this.status = 'failed'; this.root.visible = false
+      this.loadError = '加载已长时间没有进展，请重试或检查网络连接'
+      this.loadingTimer = undefined
+    }, this.stallMs)
+    this.loadingTimer.unref?.()
+  }
+
+  private install(asset: ShipModelAsset, owned = true) {
     const model = asset.scene
     if (this.destroyed) { disposeShipModel(model); return }
     this.model = model
+    this.ownsModel = owned
     if (!model.getObjectByName('Ship_Adapted')?.userData.masterInterior) {
       fitShipInteriorModules(model)
       addShipPressureBoundaries(model)
@@ -113,18 +169,24 @@ export class ShipModelRuntime {
     const radius = shipModelRadius(model)
     if (radius > SHIP_PROTECTION.radius) throw new Error('Ship exceeds protection envelope')
     this.anchors = SHIP_INTERACTION_ANCHORS.filter(id => !!model.getObjectByName(SHIP_INTERACTION_NODE[id]))
-    if (this.anchors.length !== SHIP_INTERACTION_ANCHORS.length) throw new Error('Missing ship interaction anchor')
+    const required = model.userData.currentFittedAssembly ? CURRENT_SHIP_ANCHORS : SHIP_INTERACTION_ANCHORS
+    if (required.some(id => !this.anchors.includes(id))) throw new Error('Missing ship interaction anchor')
     const anchor = model.getObjectByName(SHIP_INTERACTION_NODE.cockpit)!
     const seat = model.worldToLocal(anchor.getWorldPosition(new Vector3()))
-    this.mechanisms = new ShipMechanisms(model, asset.animations)
+    if (!model.userData.currentFittedAssembly) this.mechanisms = new ShipMechanisms(model, asset.animations)
     this.visibility = new ShipVisibility(model)
     this.lighting = new ShipReviewLighting([model])
+    this.refined = model.userData.microgravityCandidate === true && useRefinedCabin()
+    if (owned && model.userData.microgravityCandidate) this.micro = new MicrogravityCabinRuntime(model, this.microSaved)
+    else if (owned && model.userData.currentFittedAssembly && model.getObjectByName('InteractiveAftBulkhead'))
+      this.cabin = new CurrentCabinRuntime(model,this.cabinSaved)
     model.traverse(item => { if (item instanceof Mesh && item.name.startsWith('ThrusterPlume')) this.plumes.push(item) })
     this.root.add(model, this.lighting.root)
-    if (model.getObjectByName('Ship_Adapted')) {
+    // The current exterior URL is the very same hull already resident in this assembly.
+    if (model.getObjectByName('Ship_Adapted') && !model.userData.currentFittedAssembly) {
       this.exterior = new ShipExteriorDetail(disposeShipModel); this.root.add(this.exterior.root)
     }
-    if (typeof window !== 'undefined' && import.meta.env.DEV
+    if (!model.userData.currentFittedAssembly && typeof window !== 'undefined' && import.meta.env.DEV
       && new URLSearchParams(window.location.search).has('hunyuanPreview')) {
       this.highPoly = new ShipHighPolyPreview()
       this.root.add(this.highPoly.root)
@@ -135,7 +197,7 @@ export class ShipModelRuntime {
       ? model.worldToLocal(model.getObjectByName(SHIP_INTERACTION_NODE['stand-up'])!.getWorldPosition(new Vector3())) : undefined
     this.seatLoaded({ x: seat.x, y: seat.y, z: seat.z }, typeof pitch === 'number' ? pitch : undefined,
       standing ? { x: standing.x, y: standing.y, z: standing.z } : undefined)
-    this.status = 'ready'
+    this.status = owned ? 'ready' : 'loading'
   }
 
   update(subject: ShipCameraSubject, origin: Vec3, cockpit: boolean, visible: boolean, thrust: number,
@@ -144,32 +206,67 @@ export class ShipModelRuntime {
     this.root.quaternion.copy(subject.orientation)
     this.root.visible = visible && !this.suspended
     this.cockpit = cockpit
-    this.doorsOpen = interaction.doors.outer.progress > 0 || interaction.doors.inner.progress > 0
+    const innerOpen = this.micro ? this.micro.snapshot().door.progress > 0 : this.cabin ? this.cabin.snapshot().door.progress > 0 : interaction.doors.inner.progress > 0
+    this.doorsOpen = interaction.doors.outer.progress > 0 || innerOpen
     const view = cockpit ? 'cockpit' : 'exterior'
     this.mechanisms?.apply(interaction)
     this.visibility?.apply({ view, outerOpen: interaction.doors.outer.progress > 0,
-      innerOpen: interaction.doors.inner.progress > 0, conservativeInterior: cockpit })
+      innerOpen, conservativeInterior: cockpit })
     this.highPoly?.setCockpit(cockpit)
     if (cockpit && this.highPoly?.snapshot().status === 'ready') modelCockpitHidden(this.model)
-    this.lighting?.apply(view)
+    this.lighting?.apply(view, this.micro?.cabinLight)
     this.plumes.forEach(mesh => mesh.scale.setScalar(thrust > 0 ? .3 + thrust * .7 : .001))
   }
 
-  render(renderer: WebGLRenderer, camera: Camera) {
-    if (this.status === 'ready' && this.root.visible && !this.destroyed && !this.suspended) {
-      if (this.model) this.model.visible = !this.exterior?.apply(camera.position.distanceTo(this.root.position),
+  render(renderer: WebGLRenderer, camera: Camera, universe?: Scene) {
+    if (this.model && this.status !== 'failed' && this.root.visible && !this.destroyed && !this.suspended) {
+      const distance = camera.position.distanceTo(this.root.position)
+      // Reuse current skins at map distance, rather than loading a second copy of the same GLB.
+      if (this.model?.userData.currentFittedAssembly) this.visibility?.currentDetail(this.cockpit || distance < 120)
+      if (this.model) this.model.visible = !this.exterior?.apply(distance,
         this.cockpit, this.doorsOpen, !!this.highPoly)
       this.environment.ensure(renderer)
-      if (this.cockpit && this.model?.userData.masterInterior) this.contact.render(renderer, camera)
+      if (this.model?.userData.currentFittedAssembly && universe) {
+        const shadow = renderer.shadowMap?.enabled
+        try {
+          if (this.refined && this.cockpit) renderer.shadowMap.enabled = true
+          this.backdrop.render(renderer, universe, camera, () => this.refined && this.cockpit
+            ? this.contact.render(renderer, camera, true) : renderShipLayer(renderer, this.scene, camera))
+        } finally { if (shadow !== undefined) renderer.shadowMap.enabled = shadow }
+      }
+      else if (this.cockpit && this.model?.userData.masterInterior) this.contact.render(renderer, camera)
       else renderShipLayer(renderer, this.scene, camera)
     }
   }
   snapshot() { return { status: this.status, suspended: this.suspended, anchors: [...this.anchors],
+    surface: this.lighting?.surfaceSnapshot(),
+    previewReady: !!this.model && !this.ownsModel,
+    loadProgress: this.loadProgress ? { ...this.loadProgress } : undefined, loadError: this.loadError,
+    currentFittedAssembly: this.model?.userData.currentFittedAssembly === true, cabin: this.micro?.snapshot() ?? this.cabin?.snapshot(),
     meshes: 0, triangles: 0, ...this.visibility?.snapshot(),
     ...this.exterior?.snapshot(),
     cockpitFov: this.model?.getObjectByName('Ship_Adapted') ? 55 : 75,
     highPoly: this.highPoly?.snapshot() } }
   cabinObstacles() { return this.model ? shipCabinObstacles(this.model) : [] }
+  updateCabin(seconds: number, input: CabinMove, yaw: number, pitch: number, walking: boolean, seated: boolean, running: boolean, frame?: CabinFloatFrame) {
+    if (this.micro) { this.micro.update(seconds, input, yaw, walking, seated, running, frame); return this.micro.camera(yaw, pitch) }
+    this.cabin?.update(seconds, input, yaw, walking, seated, running)
+    return this.cabin?.camera(yaw, pitch)
+  }
+  cabinAction(action: CabinHandAction) { return this.micro?.action(action) ?? this.cabin?.action(action) ?? false }
+  cabinInteract(){return this.micro?.interact() ?? this.cabin?.interact()}
+  cabinSeat(seated:boolean){return this.micro?.requestSeat(seated) ?? this.cabin?.requestSeat(seated) ?? true}
+  cabinKey(code: string, down: boolean) { return this.micro?.key(code, down) ?? false }
+  clearCabinInput() { this.micro?.clearInput() }
+  cabinControls() { return this.micro?.toggleControls() ?? false }
+  cabinEva(action: CabinEvaAction) { return this.micro?.evaAction(action) ?? false }
+  cabinEquipment(id: string, action: CabinEquipmentAction) { return this.micro?.equipmentAction(id, action) ?? false }
+  cabinNudge(forward: number, right: number) { this.micro?.nudgeMove(forward, right); this.cabin?.nudgeMove(forward, right) }
+  hitCabinButton(camera: Camera, x: number, y: number, width: number, height: number) {
+    return this.micro?.hitButton(camera, x, y, width, height) ?? this.cabin?.hitButton(camera, x, y, width, height) ?? false
+  }
+  cancelCabinAction(stand=false) { this.micro?.cancel(stand); this.cabin?.cancel(stand) }
+  resetCabin() { this.microSaved=undefined;this.micro?.reset();this.cabinSaved=undefined;this.cabin?.reset() }
   cabinVolume() { return this.model ? shipMasterCabinVolume(this.model) : undefined }
   suspend(hidden: boolean) {
     if (this.destroyed || hidden === this.suspended) return
@@ -180,12 +277,19 @@ export class ShipModelRuntime {
     } else this.startLoading()
   }
   private release() {
+    this.stopWatching()
+    this.backdrop.dispose()
     this.contact.dispose()
     this.environment.dispose()
     this.exterior?.dispose(); this.exterior = undefined
     this.highPoly?.dispose(); this.highPoly = undefined
+    if(this.micro){this.microSaved=this.micro.save();this.micro.dispose();this.micro=undefined}
+    if(this.cabin){this.cabinSaved=this.cabin.save();this.cabin.dispose();this.cabin=undefined}
     this.mechanisms?.dispose(); this.lighting?.dispose(); this.visibility?.dispose()
-    if (this.model) disposeShipModel(this.model)
+    if (this.model) {
+      if (this.ownsModel) disposeShipModel(this.model)
+      else this.model.removeFromParent()
+    }
     this.model = undefined; this.mechanisms = undefined; this.visibility = undefined; this.lighting = undefined
     this.plumes = []; this.anchors = []
   }

@@ -2,6 +2,7 @@ import { Group, Mesh } from 'three'
 import { loadShipAsset } from './shipAssetLoader'
 import { ShipReviewLighting } from './shipVisibility'
 import { SHIP_MODEL_ASSETS } from './shipModelAssets'
+import { prepareCurrentShipSkins } from './currentShipAssembly'
 
 /** Hysteresis prevents flicker; any interior or moving-door view keeps the real animated assembly. */
 export function distantExterior(distance: number, previous: boolean, cockpit: boolean, doorsOpen: boolean) {
@@ -23,7 +24,9 @@ export class ShipExteriorDetail {
   private failed = false
 
   constructor(private releaseModel: (model: Group) => void,
-    private load: (signal: AbortSignal) => Promise<Group> = signal => loadShipAsset(SHIP_MODEL_ASSETS.exterior, signal).then(gltf => gltf.scene)) {
+    private load: (signal: AbortSignal) => Promise<Group> = signal => loadShipAsset(SHIP_MODEL_ASSETS.exterior, signal, true).then(gltf => {
+      prepareCurrentShipSkins(gltf.scene); return gltf.scene
+    })) {
     this.root.visible = false
   }
 

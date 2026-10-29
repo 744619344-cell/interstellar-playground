@@ -1,4 +1,4 @@
-import { Color, DirectionalLight, Group, HemisphereLight, PerspectiveCamera, PMREMGenerator, Scene, SkinnedMesh, type WebGLRenderer } from 'three'
+import { Color, DirectionalLight, Group, HemisphereLight, PerspectiveCamera, PMREMGenerator, Scene, type WebGLRenderer } from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js'
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js'
@@ -6,9 +6,6 @@ import { disposeShipModel } from '../spacecraft/shipModelRuntime'
 
 const url = new URL('../../../../assets/models/astronaut-rigged-v4.glb', import.meta.url).href
 export function disposeAstronaut(model: Group) {
-  const skeletons = new Set<SkinnedMesh['skeleton']>()
-  model.traverse(node => { if (node instanceof SkinnedMesh) skeletons.add(node.skeleton) })
-  skeletons.forEach(skeleton => skeleton.dispose())
   disposeShipModel(model)
 }
 

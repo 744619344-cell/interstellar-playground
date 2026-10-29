@@ -36,6 +36,8 @@ export class ShipCameraRig {
     if (mode === 'follow') { this.yaw = 0; this.pitch = SHIP_CAMERA.pitch }
   }
 
+  resetLook() { this.yaw = 0; this.pitch = SHIP_CAMERA.pitch }
+
   orbit(yawDelta: number, pitchDelta: number) {
     const yaw = wrap(this.yaw + wrap(finite(yawDelta)))
     this.yaw = yaw

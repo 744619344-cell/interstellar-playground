@@ -40,7 +40,7 @@ export function useSystemMapRuntime() {
       start: () => engineRef.current?.start(),
       stop: () => engineRef.current?.stop(),
       clearInput: () => engineRef.current?.clearInput(),
-      setInputEnabled: (enabled) => engineRef.current?.setInputEnabled(enabled)
+      setInputEnabled: (enabled, releaseResources) => engineRef.current?.setInputEnabled(enabled, releaseResources)
     })
     controllerRef.current = controller
     const build = () => {
@@ -76,15 +76,20 @@ export function useSystemMapRuntime() {
     observer.observe(stage)
     let blurred = false
     const onVisibility = () => {
-      const hidden = document.hidden || blurred
-      controller.setHidden(hidden)
-      effectsAudio.setSuspended(hidden)
+      controller.setHidden(document.hidden)
+      effectsAudio.setSuspended(document.hidden || blurred)
     }
-    const onBlur = () => { controller.clearInput(); blurred = true; onVisibility() }
-    const onFocus = () => { blurred = false; onVisibility() }
+    const onBlur = () => { blurred = true; controller.setBlurred(true); onVisibility() }
+    const onFocus = () => { blurred = false; controller.setBlurred(false); onVisibility() }
     const onKey = (event: KeyboardEvent) => {
-      if (event.type === 'keydown' && (event.repeat || document.activeElement !== canvas || event.ctrlKey || event.metaKey || event.altKey)) return
-      if (engineRef.current?.shipKey(event.code, event.type === 'keydown')) event.preventDefault()
+      const element=document.activeElement as HTMLElement|null
+      const editing=!!element&&(element.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(element.tagName))
+      const context=['KeyF','KeyE','KeyM','KeyR','KeyX','KeyV','KeyG','KeyH','KeyI','KeyT','KeyP','KeyK','KeyL','Escape'].includes(event.code)
+      const movement=/^(Arrow(Up|Down|Left|Right)|Key[WASDZCQEB]|Space|Shift(Left|Right))$/.test(event.code)
+      const cabinControl=!!element?.closest('.ship-camera-panel,.cabin-context-hud,.cabin-device-panel,.cabin-eva-panel,.cabin-study-panel,.system-map-top,.cabin-game-hud')
+        && movement && engineRef.current?.snapshot().shipFlight?.mode==='cabin'
+      if (event.type === 'keydown' && (event.repeat || editing || element!==canvas&&!context&&!cabinControl || event.ctrlKey || event.metaKey || event.altKey)) return
+      if (engineRef.current?.shipKey(event.code, event.type === 'keydown')) { event.preventDefault();if((context||cabinControl)&&event.type==='keydown')canvas.focus({preventScroll:true}) }
     }
     document.addEventListener('visibilitychange', onVisibility)
     window.addEventListener('blur', onBlur)

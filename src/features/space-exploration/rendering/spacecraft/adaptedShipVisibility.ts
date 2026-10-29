@@ -5,6 +5,8 @@ const enclosure = /(?:floor|ceiling|wall|window-frame|window-liner)$/
 
 /** Explicit asset metadata avoids treating Chinese mesh labels as legacy geometry names. */
 export function adaptedShipVisible(mesh: Mesh, state: VisibilityState): boolean | undefined {
+  // Current assembly is already the exact fitted preview: do not hide its glass, inner skin or crew.
+  if (mesh.userData.currentShipPart) return true
   const { module, zone, part, cutaway, label } = mesh.userData
   if (mesh.userData.supersededByJoinery || mesh.userData.supersededByAtlas) return false
   const innerFrame = module === 'airlock-door-frame' && label === '气闸内门框'

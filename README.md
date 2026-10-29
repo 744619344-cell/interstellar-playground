@@ -1,10 +1,72 @@
 # 我们的宇宙
 
+[接手指南：当前状态、未解决问题与资源范围](docs/space-exploration/HANDOFF.md)
+
+2026-10-29 驾驶座附近移动问题尚未通过：普通入口保留原碰撞；沿面滑行与收腿分别是 `seatSlide=1`、`seatEscape=1` 的隔离候选。收腿在一帧实景姿态的同源重建中1.2秒约29.5厘米，但另一实景首段只有约4.9厘米，截图原位置重建也未改善；右手与腿可能分别被座椅挡住。最终367项回归、类型检查和构建通过不代表移动体验通过。
+
+2026-10-29 舱内HUD精简：[实际画面与操作](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-hud-20261029/index.html)。内舱/驾驶座撤下常驻大卡片、自动出舱步骤和诊断条；F打开唯一设备短侧栏，Tab统一查看手册、观测和设置，移动自动收回菜单。取消嵌套展开/收起，普通说明淡出，未解除的阻挡保留一行反馈；原物理/抓握/门控及模型保持。最终360项回归、类型检查与生产构建通过，整体模型美术、完整EVA与长时性能仍待验收。
+
+2026-10-29 质感返修：[主游戏三机位原图对比与资产问题](output/hunyuan-adaptation/microgravity-cabin-20261025/surface-quality-20261029/index.html)。修正异常镜面反光和涂层金属感，保留原贴图变化，接回接触遮蔽、人物投影与有限2K近景预算；14份保护模型保持。最终355项回归、类型检查和生产构建通过，但整体仍未达到3A：来源硬边变形、混合图集/烘焙明暗、人物制服风格与冷加载/长时性能仍待解决，工程通过不等于视觉通过。
+
+2026-10-29 端游操控与设备入口：[实景和剩余清单](output/hunyuan-adaptation/microgravity-cabin-20261025/desktop-controls-20261029/index.html)。默认辅助改为视向WASD/方向键、移动时平滑转身、Space/C升降、Shift加速、松键缓停；右键拖拽接入环视，严格惯性和实验隔离保持。原关节增加小幅渐变随动，人物比例/骨段/权重与原件保持。设备面板提供真实“抓稳设备”，服舱开柜/穿脱/检查集中；另修复自身关闭柜门误挡F查看及画布失焦残留按键。最终生产包已正常移动到服舱并完成抓稳、开柜、R穿戴、检查及F退出，先前独立连续路线完成领用/巡检暂停恢复；350项完整回归、类型检查和25.64秒生产构建通过。整体操控/动作仍待用户确认，完整EVA、实验装置及长时性能仍未通过，不能由这些数字代替验收。
+
+2026-10-29 控制体验返修：[辅助漂浮与独立转身实景](output/hunyuan-adaptation/microgravity-cabin-20261025/assisted-controls-20261028/index.html)。上一轮只证明扶手的一次推离，未解决无支撑、撞停后的连续控制，用户已否决该体验。默认现为明确标注的游戏辅助：方向键/WASD持续移动、Q/E转身、Space减速、Z/C升降；M保留严格惯性，漂移实验自动切严格并锁定辅助。另修复微小动画跨面导致反向退出被反锁的问题，辅助姿态检查更严格，源几何及平移安全距离保持。生产构建已实测松手零速→移动→停稳→转身→再次移动→停稳，开发场景实测撞停退出；最终345项测试、类型检查与16.34秒构建通过，8份原件哈希保持。操控及整体视觉仍待用户确认，完整EVA/长时性能未通过；下方上轮记录保留为历史。
+
+2026-10-28 宇航员移动与环视修复：方向键现按观察方向直接从真实扶手推离，Shift+方向键保留身体姿态，WASD+Space旧方式保持；无支撑时保持惯性并明确提示X重抓。普通漂浮不再被附近睡袋限制到半个环绕区，主场景已连续水平环视约一整圈；操作面板按钮后的方向键也能自动交回画布。实际仅右方向键推离约79厘米，按钮焦点下独立复验约45厘米，[实景与检查](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-controls-20261028/index.html)保留前后状态。最终340项测试、类型检查和12.07秒构建通过；8份保护原件保持。生产浏览器交互因本机预览环境未验证，未部署；整体视觉、完整EVA与长时性能仍待验收。
+
+2026-10-28 实验装置安装前审：[原模型位置与操作检查](output/hunyuan-adaptation/microgravity-cabin-20261025/capillary-fit-20261028/index.html)保留925条原面射线、三个221点范围、原生手部可达与身体冲突证据。上方遮屏、中部挡工具，下部虽有平整区但操作姿态未通过；停止直接外挂，补右侧工具位改为实验单元的二维正面效果图与真实原件对照，尚未生成或修改三维模型。新图为窄高外形，与原前盒尺寸不同，须重新校准尺寸/控制点及一致多视图，不能套用旧触达结果。工位提示现明确巡检需要工具包、漂移观测无需工具包，并补完成后重抓返回。336项测试、类型检查和10.62秒生产构建通过；8份相关模型哈希保持，新的背部结构/工具收纳/来源和连续操作仍待确认与验证。
+
+2026-10-28 漂移实验连续路线：修复Space推离遗漏已有收臂过渡而使左前臂碰到右舷内衬的问题，保持模型和源面碰撞。实际生产游戏已连续完成初始扶手出发、工位登记/取消重登、观测中暂停恢复、有效报告、左舷重抓及返回工位；[完整原片与实景](output/hunyuan-adaptation/microgravity-cabin-20261025/drift-route-20261028/index.html)含28.154秒正常速度录像，本机完整播放无错误。最终336项测试、类型检查和4.63秒生产构建通过，六份保护模型哈希保持。首个[密闭毛细流装置二维四视图](output/hunyuan-adaptation/microgravity-cabin-20261025/drift-route-20261028/capillary-design.html)可审阅，尚无装置模型/流体解算；整体视觉、无指导操作、完整EVA与长时性能仍未验收。
+
+2026-10-28 设备任务与太空实验：已接通唯一工具包清单领还、抓稳工位巡检、实际照明模式、船载日志及读取真实游戏遥测的漂移观测。主游戏已连续完成初始扶手推离/漂移、重抓、设备切换、领用、巡检和归还；独立实际来源检查点完成3.0064秒/1.563328米有效观测并导出CSV。主游戏随后一次观测因源面碰撞约0.04秒中止，按无效保留，没有放宽碰撞。335项测试、类型检查与12.56秒生产构建通过，六份保护模型哈希保持。[设备与科学实验记录](output/hunyuan-adaptation/microgravity-cabin-20261025/equipment-loop-20261028/index.html)含实景、完整设备状态及NASA/ESA依据；毛细流、植物、舱外材料实验仍为设计项，完整EVA和整体视觉未通过。
+
+2026-10-28 宇航服舱候选：按具体授权另存四片双折柜门，接入附近操作面板、真实开合避让、开柜后穿脱与取消/暂停/重载；主场景已实测从初始扶手接近服舱并显示/驱动新按钮，过近会阻止柜门展开和穿戴。327项工程测试、类型检查与生产构建通过；完整门框穿行两轮返修仍受阻，按质量门禁保留失败并停止该分支，完整EVA未通过。显式`lockerDoors=v1`查看，[本轮实景与限制](output/hunyuan-adaptation/microgravity-cabin-20261025/eva-loop-20261028/index.html)含开柜和穿戴截图，默认旧版保留。
+
+2026-10-28 休息舱动作复查：新增[正侧面、逐帧与连续操作材料](output/hunyuan-adaptation/microgravity-cabin-20261025/visual-action-gate-20261028/index.html)。显式`sleepFit=v5&sleepPose=v2`动作候选只调整原生上胸骨链与摆臂顺序，并在固定休息末段闭眼；人物根约束点、比例、原骨段、网格/权重及全部模型文件保持。319项完整测试、类型检查和生产构建通过，整体视觉仍待确认；默认与旧动作保留。
+
+2026-10-28 取消重试修复：已复现55 FPS下取消约0.44秒后重试、伸手约0.62秒失去可达接触的问题。设备抓点现按0.7秒伸手期间的惯性漂移筛选，并由同一只手完成；实际距离/速度/接触误差和碰撞限制保持。12组时机/帧率诊断均进入睡袋，生产构建已连续完成取消、重试、休息、暂停恢复、退出及X重抓。[最新实景与录像](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-home-review-20261027.html#retry-review)独立保存，历史失败保留；本轮未修改三维资产，整体视觉仍待用户验收。
+
+2026-10-28 睡袋细磨：另存[v5候选](output/hunyuan-adaptation/microgravity-cabin-20261025/sleep-fit-v5-review.html?sleepFit=v5)，右侧增加最多约7.62mm软布曲率，原布纹改为等比例分段映射并调整哑光参数；原两处尾带35顶点贴合侧布，最大位移约12.95cm，实测间隙约2mm。六片及前后锚点保持，左侧几何、人物和固定结构保持，v4原件保留。316项测试、类型检查及构建通过，正常连续进出/暂停恢复/重抓已完成；取消后立即重试的一轮出现可达性拒绝，另存失败记录，不计通过。整体视觉及用户验收仍待确认，[验收包](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-home-review-20261027.html)含对照。默认旧版保持，显式`sleepFit=v5`查看。
+
+2026-10-28 睡袋侧布接续：用户已明确授权三条右侧上限32cm，已另存[v4候选](output/hunyuan-adaptation/microgravity-cabin-20261025/sleep-fit-v4-review.html?sleepFit=v4)。左侧保持22cm候选，右侧改接前袋布面与原固定后边，实测最大约31.84cm；前袋仍不超过18cm，人物、头枕/背垫/硬框与原件保持。三床正面/右侧实景已保存，314项工程测试、类型检查及构建通过；生产构建连续进出、暂停恢复与重抓完成，59.851秒录像本机完整播放；整体及用户视觉尚未通过。默认保留旧版，显式`?sleepFit=v4`检查；[验收包](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-home-review-20261027.html)保留失败对照，下方v2/v3状态为历史。
+
+2026-10-27 睡袋授权修整：已按明确授权另存[睡袋v2候选](output/hunyuan-adaptation/microgravity-cabin-20261025/sleep-fit-v2-review.html?sleepFit=v2)，原人物/原件/拓扑保留，前袋及带扣最多展开18cm，固定区域已核验。最新311项测试、类型检查、构建通过，实际生产候选连续进出及暂停恢复/重抓完成，59.875秒录像本机完整播放。斜侧面仍有连接缺口，**未通过视觉验收**；[侧边新增布面方案](output/hunyuan-adaptation/microgravity-cabin-20261025/sleep-side-connection-scope-20261027.html)待单独授权，未制作。默认游戏保留旧姿态，显式 `?sleepFit=v2` 查看候选；[验收包](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-home-review-20261027.html)已更新。
+
+2026-10-27 休息舱切片接续：修复初始扶手切向推离、真实可达设备提示、退出后的重抓与取消提示；实际游戏已连续完成二号床进入/退出及暂停恢复。[回家验收包](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-home-review-20261027.html)含59.938秒实际录像、截图与已知问题。最新310项测试、类型检查和生产构建通过；人物原比例和来源网格保持。睡袋头枕/袋面适配仍未通过，拟议几何姿态修整待具体授权，完整EVA和长时性能未验收；详情见唯一活动任务末尾。没有上传、部署或发布，手机访问未验证。
+
+2026-10-27 人物来源接入：用户确认的免费 Microsoft Rocketbox `Medical_Female_03` 已下载、核对来源并转换接入默认游戏微重力内舱；原模型网格与绑定保留，使用原有独立手指和 52 个脸部形变。点击“进入舱内行动”查看；[人物实物检查](output/hunyuan-adaptation/microgravity-cabin-20261025/rocketbox-review.html)与[完整内舱](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-experience.html)共用这一来源。旧人物以 `?crew=legacy` 对照、旧场景以 `?microgravity=0` 保留。本轮 308 项测试、类型检查和本地构建通过，实际游戏已观察到人物及扶手状态；完整动作视觉、连续到达和长时性能仍待验收。来源与 MIT 许可见 `assets-source/characters/rocketbox-medical-female-03/`、`public/licenses/microsoft-rocketbox.txt` 及唯一活动任务末尾。下方早期人物候选为历史。
+
+2026-10-27 人物返修：[完整舱内体验](output/hunyuan-adaptation/microgravity-cabin-20261025/cabin-experience.html)已接入小臂权重修整、保留体积的蒙皮、自然肘腕与松手动作；原网格/贴图保留。此为候选，整体美术与完整EVA仍待验收，详情见唯一活动任务末尾。
+
+2026-10-25 舱内服与系留 EVA：[人物、宇航服舱和出舱原型](output/hunyuan-adaptation/microgravity-cabin-20261025/eva.html)补人物三方向、收纳舱开闭、气闸视觉和范围；独立二维原型可实际走完穿戴、双门互锁、系留出舱与返舱，并验证惯性、方向推进和卷收辅助。新11项检查加入本轮290项通过测试；尚未接入三维主场景，缺少来源资产、绑定、实际碰撞与绳索。另见[连续服务内衬](output/hunyuan-adaptation/microgravity-cabin-20261025/liner.html)：闭背/端面独立二维输入与有限曲面核对，未改产品模型。
+
+2026-10-25 微重力模块细化：新增[模块四视图、尺寸接口与原壳核对](output/hunyuan-adaptation/microgravity-cabin-20261025/modules.html)。睡眠/工位四视图已定向修正侧视和背部安装点，扶手/驾驶区补二维接口；原壳 10 处截面、324 个背部点位与原角色骨链均只读取样。新模块背后需先深化连续服务内衬，有限取样不代表完整净空通过。本轮没有生成或替换三维模型、修改悬浮控制。
+
+2026-10-25 微重力设计：按用户“先重新设计舱内”的要求完成[二维概念与布局评审](output/hunyuan-adaptation/microgravity-cabin-20261025/index.html)。参考 NASA/ESA 的实际乘员移动和睡眠方式，三床改为壁挂睡眠位、中央留漂浮通路，工作/驾驶设置抓握和约束；保留现船弧顶与前舱罩语言。本轮交付为设计稿，游戏模型与控制尚未替换，后续沿多视图、混元来源与实际试装路线制作。
+
+2026-10-25 侧壁与动作返修：主场景原来仍加载旧 j2 船壳，现已原字节接入既有 g12，两侧喷射器对应内舱使用已授权的平整封板。行走、转向、走停、坐起、床边坐下再躺卧、挥手、手指和门旁按键均调整节奏与身体配合，支撑脚增加位置/朝向保持；模型绑定及权重保持。279 项测试、类型检查、构建通过，主场景已实测两侧墙面和完整动作流程。见[本轮检查](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/motion-wall-review-20261025.json)与[交互预览](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/review-cabin-controls.html)；整船美术仍待验收。
+
+2026-10-25 全设备提示：现有 11 处交互点均支持靠近后按 F；三张床可躺下/起身，两座椅可坐下/起立，两组主控台显示实际仪表，工作台、储物柜和宇航服柜提供查看面板及查看记录，舱门保留真实按键开关。床铺支持过渡取消、暂停及资产重载后的姿态恢复。273 项测试、类型检查、构建与主场景实测通过；柜内物品及维护任务尚未登记，未实现物品转移或维修模拟。见[全设备检查](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/cabin-equipment-review-20261025.json)及[操作预览](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/review-cabin-controls.html)。
+
+2026-10-25 接续修整：细磨页已补交互版/主场景入口，修复预览动作按钮后的 F 焦点、入座对位的移动取消，以及向后观察后入座仍朝后的驾驶镜头。界面统一显示实际舱外密封门。268 项测试、类型检查、构建和实景复验通过，十份模型字节保持。见[接续检查](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/cabin-controls-followup-20261025.json)。
+
+2026-10-24 交互返修：主场景现在按距离显示 F 情境提示；靠近舱门可自动短距离对位并伸手开关，靠近左右驾驶座可坐下，入座后 F 起立。转身、走停、坐起与挥手加入过渡，移动或 Esc 可取消操作；站立时不会推进飞船。现有舱门增加表面标识、密封边涂装和按钮标识，保留通向舱外的布局。267 项测试、类型检查、构建及主场景实测通过，原模型几何/绑定保持。见[本轮返修记录](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/cabin-gameplay-review.json)和[交互预览](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/review-cabin-controls.html)；角色仍使用原骨骼原型，整船美术未验收。
+
+2026-10-24：后舱门与宇航员基础动作已接入主场景。点击“宇航员”进入舱内行动，WASD/方向键行走，拖动转视线；靠近内侧门旁按钮后点击实物按钮或按 E/F，角色实际伸手触到后开关门。Q 挥手、G 轻屈手指、H 张手；关门遇人会回开，开门范围有人会等待。用户明确授权的中央门叶/端面/门槛避让与低位按钮另存为 d2，其余九份产品资产保持。支持暂停及资源重新载入后的角色位置/门状态恢复，不包含 EVA 或新门后通道；角色仍为原有骨骼原型。见[交互实景预览](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/review-cabin-controls.html)、[本轮检查](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/cabin-interaction-review.json)与唯一任务末尾 C/D 记录；整体美术仍为 changes_requested。
+
+2026-10-22：按用户确认，“最新加厚＋宇航员入座版”已接入项目根页面。当前加载j2厚壳/玻璃、119个原有地板/家具/后隔舱实例，以及左驾驶座的暖白宇航员；驾驶视角位于右侧空座。远视沿用同一外壳，旧母版保留供回退。后隔舱为静态模型，门/EVA交互不开放；接缝尚未拉直、角色原型权重仍待完善，接入不代表整船美术通过。10份GLB原字节复制、来源与署名见[资产清单](src/assets/models/current-ship-20261022/manifest.json)和[许可](src/assets/models/current-ship-20261022/ATTRIBUTION.md)，实施与实测见唯一任务M-AO节。下方“产品未替换”等文字是此前历史状态。
+
+最新内舱返修：依据实际顶棚绘制了下舱多视图并完成两次混元原件检查；三图版错误盒化，四图版地板恢复但缺一侧长墙、偏窄偏矮，两件均否决。停止这套输入路线，不以PNG轮廓相同冒称精确重建。[最新真实评审](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/main-split-20261019/lower-v3-volume/review.html)，唯一任务BC-L记录原件、朝向排查和限制。默认原内舱、外部r10、旧下舱与保留顶棚均保持，整舱仍未通过。
+
 “我们的宇宙”是一套面向桌面 Web 的单画布太阳系探索项目。打开项目根地址即进入新版太阳系，不依赖查询参数、旧版航行入口或微信小程序。
+
+2026-10-19 内舱接续：下舱/拱顶两份混元原件已完成同框、独显及实际船壳有限采样，墙顶缝约0.68–0.72m、端部横向偏差与拱顶肩部穿出仍未通过。已提取同一r10来源的正/侧/顶/斜视PNG作为下一轮轮廓参照；它们仍是外部表面，不直接冒充内饰生成图。[最新实景与同源轮廓](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/main-split-20261019/review.html)及唯一任务BC-J记录本轮证据；默认原内舱和外部r10保持。
 
 2026-10-18 本地接续：玻璃局部 r10 已获用户确认，四件混元原件已完成独立等比试装，产品尚未替换、整舱未验收。最新入口为 [内舱试装](output/hunyuan-adaptation/interior-assembly-20261018/review.html)，真实限制、复现步骤与提交推送授权见[唯一任务 AY 节](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md#ay-2026-10-18-用户授权提交推送并交回本地开发)，文件清单见 [本地交接清单](docs/local-handoff-20261018.json)。下方早期停止、玻璃黑块未修复等描述保留为历史，以最新任务节为准。
 
-2026-10-17：用户已停止当前飞船返修并要求换模型接手。未通过的新内舱及玻璃黑块仍未解决；接手状态、可复用代码、实测检查与本机未提交素材范围见[唯一任务末尾交接记录](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md)。下文 `output/` 和 `assets-source/` 中的实验入口可能只存在于本机，不能视为本次提交包含或验收通过的资产。
+2026-10-18：用户要求继续回退，已从r13与后续家具替换版进一步退到整船统一母版v6原内舱。[默认试装入口](output/hunyuan-adaptation/interior-assembly-20261018/review.html)只加载原母版内舱与保留的r10外壳/玻璃两份既有模型，不再加载r13、10月13日混元家具替换或远端v7。来源文件和产品资产未改，整体仍待验收。当前选用与实景证据见[唯一任务 BB 节](docs/tasks/2026-09-23-p3-r01-spacecraft-art-redesign.md)，此前r13恢复与v7为历史记录。
+
+2026-10-18 内部空间适配：用户明确只允许混元生产，并授权二维图片校准。已按原船壳只读采样重做[多视图与分舱输入](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/review.html)；两份整舱混元原件因前端收窄/后顶缺失被否决，转为前围护、闭合主舱、后过渡分段检查。默认原内舱和外部r10保持，任何候选均不代表已验收；实测与受理记录见唯一任务BC节及[混元原件记录](output/hunyuan-adaptation/interior-fit-hunyuan-20261018/hunyuan-runs.json)。没有本地建模、提交推送或产品替换。
 
 用户指定的历史整合包已提供[交接附件下载](https://github.com/744619344-cell/interstellar-playground/releases/download/integration-20261008-archive-20261017/integration-20261008.zip)（1.084 GB，原包 SHA256 与远端一致）。归档说明和完整校验值见[附件页面](https://github.com/744619344-cell/interstellar-playground/releases/tag/integration-20261008-archive-20261017)；该历史包不代表包含后续 v7/v8 全部本机素材或已通过模型验收。
 
@@ -16,7 +78,7 @@
 
 太阳系飞船接入（2026-10-15）：已移除“相机试验”和固定轨道图标，根页面直接加载现有飞船模型。点击模型/标签进入跟随观察，右侧卡片或“飞船”按钮进入驾驶舱；返回全景保留同一飞船的位置、姿态和航线。模型仍待完善，今后通过[统一资产配置](src/features/space-exploration/rendering/spacecraft/shipModelAssets.ts)替换总成及外观LOD；新资产需保持现有坐标、锚点和动画约定，不必重写太阳系入口或航行逻辑。重启后已实测模型显示/点击、驾驶切换、飞行位置与航线保留、缩放及加载失败重试；右侧卡片同步实际泊位/航行状态。真实页面隐藏恢复及长时性能仍待验，软件通过不代表模型美术通过。
 
-尚未具备：太阳系浮动原点、星体 LOD0 近景、宇航员资产的运行时接入、舱内行走与 EVA、运行时资源预算检查、20 分钟性能验收。路线图校准见 [开发路线](docs/space-exploration/04-DELIVERY-ROADMAP.md)。
+尚未具备：太阳系浮动原点、星体 LOD0 近景、EVA、运行时资源预算检查、20 分钟性能验收；基础舱内行走/手部动作见上方 2026-10-24 记录，角色权重和管线仍待完善。路线图校准见 [开发路线](docs/space-exploration/04-DELIVERY-ROADMAP.md)。
 
 模型资产进度（2026-09-13）：外部 LOD0/1/2 与静态内舱 LOD0/1 均已通过资产级验收，内舱布局已获用户确认。开发服务支持 [外部预览](assets-source/blender/spacecraft/viewer.html) 与 [内舱预览](assets-source/blender/spacecraft/interior/viewer.html)，这些独立查看器尚未接入游戏流程。
 

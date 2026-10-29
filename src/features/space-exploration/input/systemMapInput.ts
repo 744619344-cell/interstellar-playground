@@ -65,7 +65,7 @@ export class SystemMapInput {
     this.pointers.delete(point.id)
     this.dragOrigin = this.pointers.values().next().value
     this.pinchDistance = this.pointers.size === 2 ? currentPinch(this.pointers) : 0
-    if (!had || this.moved || this.pointers.size > 0) return []
+    if (!had || had.pan || this.moved || this.pointers.size > 0) return []
     const now = Date.now()
     const doubled = now - this.lastTap < DOUBLE_MS && Math.hypot(point.x - this.lastTapX, point.y - this.lastTapY) < 14
     this.lastTap = now

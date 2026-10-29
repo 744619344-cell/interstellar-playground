@@ -9,6 +9,7 @@ export interface ShipCabinVolume {
 
 /** Dimensions come from the exported master, and fail closed if the manifest is malformed. */
 export function shipMasterCabinVolume(model: Group): ShipCabinVolume | undefined {
+  if (model.userData.currentFittedAssembly) return undefined // Old narrow master dimensions are not current hull collision data.
   const root = model.getObjectByName('Ship_Adapted')
   if (!root?.userData.masterInterior) return undefined
   const value = root.userData.pressureSection as ShipCabinVolume | undefined

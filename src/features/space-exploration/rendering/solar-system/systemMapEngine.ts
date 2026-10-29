@@ -1,4 +1,5 @@
 import { Line, TextureLoader } from 'three'
+import { useMicrogravityCabin } from '../../domain/cabinMode'
 import { ShipFlightRuntime, type ShipFlightAction } from '../spacecraft/shipFlightRuntime'
 import { hitSystemShip, projectSystemShip, type SystemShipSnapshot } from './systemMapShip'
 import { nextShipView } from '../spacecraft/shipViewCamera'
@@ -70,19 +71,16 @@ export class SystemMapEngine {
   private flying = false
   private inputEnabled = true
 
-  constructor(
-    private readonly options: Options,
+  constructor(private readonly options: Options,
     clock: FrameClock = globalThis,
-    factories?: SystemMapWorldFactories,
-    loader?: TextureLoader
-  ) {
+    factories?: SystemMapWorldFactories, loader?: TextureLoader) {
     this.width = options.width
     this.height = options.height
     this.pose = overviewPose({ width: options.width, height: options.height })
     this.loop = new VoyageFrameLoop(clock)
     this.loader = loader ?? new TextureLoader()
     try {
-      this.world = createSystemMapWorld(options.canvas, options.width, options.height, options.pixelRatio, factories)
+      this.world = createSystemMapWorld(options.canvas, options.width, options.height, options.pixelRatio, factories, useMicrogravityCabin())
       this.sky = addSystemSky(this.world.scene, options.textures.milkyWay, this.loader, this.gate)
       const content = createSystemContent(options.textures, this.loader, this.gate)
       this.world.scene.add(content.root)
@@ -103,8 +101,8 @@ export class SystemMapEngine {
   start() { if (!this.destroyed) this.loop.start(this.tick) }
   stop() { this.loop.stop(); this.lastTime = 0 }
   setSimulationPaused(paused: boolean) { this.simulationPaused = paused; this.ship?.pause(paused) }
-  setInputEnabled(enabled: boolean) {
-    this.inputEnabled = enabled; this.input.setEnabled(enabled); this.ship?.suspend(!enabled)
+  setInputEnabled(enabled: boolean, releaseResources = true) {
+    this.inputEnabled = enabled; this.input.setEnabled(enabled); this.ship?.suspend(!enabled, releaseResources)
     this.publish()
   }
   clearInput() { this.input.clear(); this.ship?.clear() }
@@ -126,6 +124,8 @@ export class SystemMapEngine {
   shipKey(code: string, down: boolean) {
     if (!this.flying || !this.ship || !this.inputEnabled) return false
     if (code === 'KeyC') {
+      const cabin = this.ship.snapshot().model.cabin
+      if (this.ship.snapshot().mode === 'cabin' && cabin && 'microgravity' in cabin) return this.ship.key(code, down)
       if (down) this.ship.mode(nextShipView(this.ship.snapshot().mode))
       return true
     }
@@ -266,6 +266,7 @@ export class SystemMapEngine {
         if (gesture.type === 'orbit') this.ship?.orbit(gesture.dx, gesture.dy)
         if (gesture.type === 'pan') this.ship?.pan(gesture.dx, gesture.dy)
         if (gesture.type === 'zoom') this.ship?.zoom(gesture.deltaY)
+        if (gesture.type === 'tap') this.ship?.tryCabinButton(gesture.x,gesture.y,this.width,this.height)
         continue
       }
       if (gesture.type === 'orbit') {

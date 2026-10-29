@@ -32,18 +32,21 @@ test('a model behind a planet cannot expose a floating label or pick target', ()
   assert.equal(hitSystemShip(snapshot, snapshot.projected.x, snapshot.projected.y), false)
 })
 
-test('only a ready visible model can be picked; loading, failed and suspended states stay distinct', () => {
+test('ready models and explicit hull previews can be picked; empty loading, failure and suspension cannot', () => {
   const point = shipBerthPosition(bodyPositionsAt(0).get('earth')!)
   const ready = projectSystemShip(source(point), pose, viewport, 0)!, { x, y, radius } = ready.projected
   assert.equal(hitSystemShip(ready, x, y), true)
   assert.equal(hitSystemShip(ready, x + radius + 30, y), false)
   for (const status of ['loading', 'failed']) assert.equal(hitSystemShip({ ...ready, status } as any, x, y), false)
+  assert.equal(hitSystemShip({ ...ready, status: 'loading', previewReady: true }, x, y), true)
+  assert.equal(hitSystemShip({ ...ready, status: 'failed', previewReady: true }, x, y), false)
+  assert.equal(hitSystemShip({ ...ready, status: 'loading', previewReady: true, suspended: true }, x, y), false)
   assert.equal(hitSystemShip({ ...ready, suspended: true }, x, y), false)
 })
 
-test('both current model URLs are centralized, distinct and use local GLB assets', () => {
-  assert.match(SHIP_MODEL_ASSETS.assembly, /\/assets\/models\/spacecraft-master-lod0\.glb$/)
-  assert.match(SHIP_MODEL_ASSETS.exterior, /\/assets\/models\/spacecraft-redesign-exterior-lod1\.glb$/)
-  assert.notEqual(SHIP_MODEL_ASSETS.assembly, SHIP_MODEL_ASSETS.exterior)
+test('near and distant current skins share the exact latest local hull, with the old master preserved', () => {
+  assert.match(SHIP_MODEL_ASSETS.assembly, /\/assets\/models\/current-ship-20261022\/hull-g12\.glb$/)
+  assert.equal(SHIP_MODEL_ASSETS.exterior, SHIP_MODEL_ASSETS.assembly)
+  assert.match(SHIP_MODEL_ASSETS.legacyAssembly, /\/assets\/models\/spacecraft-master-lod0\.glb$/)
   assert.ok(Object.isFrozen(SHIP_MODEL_ASSETS))
 })

@@ -29,6 +29,15 @@ test('ctrl plus left drag pans instead of orbiting', () => {
   )
 })
 
+test('right-look gestures cannot activate world buttons when released without a drag', () => {
+  const input = new SystemMapInput()
+  input.pointerDown({ id: 1, x: 20, y: 20, pan: true })
+  assert.deepEqual(input.pointerUp({ id: 1, x: 20, y: 20 }), [])
+  input.pointerDown({ id: 2, x: 20, y: 20, pan: true })
+  assert.deepEqual(input.pointerMove({ id: 2, x: 50, y: 40 }), [{ type: 'pan', dx: 30, dy: 20 }])
+  input.clear(); assert.deepEqual(input.pointerMove({ id: 2, x: 80, y: 40 }), [])
+})
+
 test('disabled input ignores further gestures after clear', () => {
   const input = new SystemMapInput()
   input.pointerDown({ id: 1, x: 0, y: 0 })

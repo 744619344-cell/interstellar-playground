@@ -46,6 +46,6 @@ export default function ShipNavigationPanel({ state, onAction }: {
       {state.contact ? `保护介入 · ${bodyName(state.contact)}` : state.risk
         ? `自动制动 · ${bodyName(state.risk.id)} · 制动距离 ${state.risk.stoppingDistance.toFixed(1)} m` : '防撞保护就绪'}
     </output>
-    <p className='ship-navigation-note'>航程需手动完成。辅助只修正船体朝向，不接管移动；空格会退出辅助并制动。W/S 前后、A/D 横移，方向随当前视线。抵达需停在安全净空并保持低相对速度。</p>
+    <p className='ship-navigation-note'>航程需手动完成。辅助只修正船体朝向，不接管移动；手动拖拽转向或空格制动会退出辅助。W/S 沿船头前后，A/D 沿船身横移。抵达需停在安全净空并保持低相对速度。</p>
   </section>
 }

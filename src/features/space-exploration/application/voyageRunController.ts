@@ -2,12 +2,13 @@ export interface VoyageRunner {
   start(): void
   stop(): void
   clearInput(): void
-  setInputEnabled(enabled: boolean): void
+  setInputEnabled(enabled: boolean, releaseResources?: boolean): void
 }
 
 export interface VoyageRunSnapshot {
   running: boolean
   hidden: boolean
+  blurred: boolean
   userPaused: boolean
   overlayPaused: boolean
   destroyed: boolean
@@ -15,6 +16,7 @@ export interface VoyageRunSnapshot {
 
 export class VoyageRunController {
   private hidden = false
+  private blurred = false
   private userPaused = false
   private overlayPaused = false
   private destroyed = false
@@ -34,6 +36,13 @@ export class VoyageRunController {
     if (this.destroyed || this.hidden === hidden) return
     if (hidden) this.runner.clearInput()
     this.hidden = hidden
+    this.sync()
+  }
+
+  setBlurred(blurred: boolean) {
+    if (this.destroyed || this.blurred === blurred) return
+    if (blurred) this.runner.clearInput()
+    this.blurred = blurred
     this.sync()
   }
 
@@ -63,6 +72,7 @@ export class VoyageRunController {
     return {
       running: this.running,
       hidden: this.hidden,
+      blurred: this.blurred,
       userPaused: this.userPaused,
       overlayPaused: this.overlayPaused,
       destroyed: this.destroyed
@@ -73,14 +83,14 @@ export class VoyageRunController {
     if (this.destroyed) return
     this.destroyed = true
     this.running = false
-    this.runner.setInputEnabled(false)
+    this.runner.setInputEnabled(false, true)
     this.runner.stop()
     this.runner.clearInput()
   }
 
   private sync() {
-    const shouldRun = this.mounted && !this.destroyed && !this.hidden && !this.userPaused && !this.overlayPaused
-    this.runner.setInputEnabled(shouldRun)
+    const shouldRun = this.mounted && !this.destroyed && !this.hidden && !this.blurred && !this.userPaused && !this.overlayPaused
+    this.runner.setInputEnabled(shouldRun, this.hidden)
     if (shouldRun === this.running) return
     this.running = shouldRun
     if (shouldRun) this.runner.start()

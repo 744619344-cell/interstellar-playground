@@ -8,6 +8,7 @@ interface Props {
   onPause: () => void
   onOverview: () => void
   onShip: () => void
+  onCrew: () => void
   onMoonRoute: () => void
   onZoom: (delta: number) => void
   onHelp: () => void
@@ -45,7 +46,7 @@ function Toolbar({ paused, onPause, onOverview, onHelp, helpOpen, musicPlaying, 
 }
 
 export default function SystemMapHud(props: Props) {
-  const { snapshot, onOverview, onZoom, onShip, onMoonRoute } = props
+  const { snapshot, onOverview, onZoom, onShip, onCrew, onMoonRoute } = props
   return (
     <div className='system-map-hud'>
       <Toolbar {...props} />
@@ -64,8 +65,8 @@ export default function SystemMapHud(props: Props) {
       </div>
       <nav className='system-map-mode-nav' aria-label='探索模式'>
         <button type='button' className={`system-map-mode-button${snapshot.mode === 'overview' && !snapshot.shipFlight ? ' is-active' : ''}`} onClick={onOverview} aria-label='太阳系全景'><SystemMapIcon name='map' /><span>全景</span></button>
-        <button type='button' className={`system-map-mode-button${snapshot.shipFlight ? ' is-active' : ''}`} onClick={onShip} aria-label='飞船驾驶'><SystemMapIcon name='ship' /><span>飞船</span></button>
-        <button type='button' className='system-map-mode-button' disabled aria-label='宇航员功能筹备中'><SystemMapIcon name='crew' /><span>宇航员</span></button>
+        <button type='button' className={`system-map-mode-button${snapshot.shipFlight ? ' is-active' : ''}`} onClick={onShip} aria-label='查看飞船外观'><SystemMapIcon name='ship' /><span>飞船</span></button>
+        <button type='button' className={`system-map-mode-button${snapshot.shipFlight?.mode==='cabin'?' is-active':''}`} disabled={!snapshot.ship?.crewReady} onClick={onCrew} aria-label='控制宇航员'><SystemMapIcon name='crew' /><span>宇航员</span></button>
       </nav>
       <div className='system-map-zoom'>
         <button type='button' aria-label='放大太阳系' onClick={() => onZoom(-180)}>+</button>

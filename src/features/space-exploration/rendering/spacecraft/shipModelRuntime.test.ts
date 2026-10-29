@@ -80,3 +80,27 @@ test('missing interaction anchors or clips fail closed and release the model', a
   assert.deepEqual(runtime.snapshot().anchors, [])
   runtime.dispose()
 })
+
+ test('stalled loading fails visibly, retry recovers, and a late first result cannot replace it', async () => {
+  let deliver!: (scene: Group) => void, loads = 0, lateReleases = 0
+  const late = new Group(), geometry = new BoxGeometry()
+  geometry.addEventListener('dispose', () => lateReleases++)
+  late.add(new Mesh(geometry, new MeshStandardMaterial()))
+  const ready = new Group(), skin = new Group()
+  ready.userData.currentFittedAssembly = true
+  skin.name = 'Ship_Adapted'; skin.userData.masterInterior = true; ready.add(skin)
+  for (const name of ['Anchor_CockpitCamera', 'Anchor_StandUp']) { const anchor = new Group(); anchor.name = name; ready.add(anchor) }
+  const runtime = new ShipModelRuntime(() => {}, async () => {
+    if (++loads === 1) return new Promise(resolve => { deliver = resolve })
+    return ready
+  }, 15)
+  await new Promise(resolve => setTimeout(resolve, 45))
+  assert.equal(runtime.snapshot().status, 'failed'); assert.match(runtime.snapshot().loadError!, /没有进展/)
+  runtime.suspend(true); runtime.suspend(false)
+  await new Promise(resolve => setImmediate(resolve))
+  assert.equal(runtime.snapshot().status, 'ready'); assert.equal(runtime.snapshot().loadError, undefined)
+  deliver(late); await new Promise(resolve => setImmediate(resolve))
+  assert.equal(lateReleases, 1); assert.equal(runtime.snapshot().status, 'ready')
+  assert.equal(runtime.root.children.includes(ready), true)
+  runtime.dispose()
+})

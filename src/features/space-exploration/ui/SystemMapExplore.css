@@ -77,11 +77,11 @@
 .system-map-preview-card + .system-map-preview-card { border-top: 1px solid #283039; }
 .system-map-preview-title { position: absolute; z-index: 2; top: clamp(20px, 1.607vw, 27px); left: clamp(23px, 1.786vw, 30px); display: flex; align-items: center; }
 .system-map-preview-title h2 { margin: 0; color: #eee; font-size: clamp(21px, 1.607vw, 27px); font-weight: 400; line-height: 1.2; letter-spacing: .02em; }
-.system-map-preview-card p { position: absolute; z-index: 2; top: clamp(51px, 3.988vw, 67px); left: clamp(23px, 1.786vw, 30px); margin: 0; color: #8c8d91; font-size: clamp(12px, .893vw, 15px); line-height: 1.4; }
+.system-map-preview-card p { position: absolute; z-index: 2; top: clamp(51px, 3.988vw, 67px); left: clamp(23px, 1.786vw, 30px); right: 20px; margin: 0; color: #8c8d91; font-size: clamp(12px, .893vw, 15px); line-height: 1.4; }
 .system-map-preview-art { position: absolute; display: block; overflow: hidden; }
 .system-map-preview-art svg { display: block; overflow: hidden; }
 .system-map-preview-art.is-ship { top: clamp(67px, 5.298vw, 89px); bottom: clamp(73px, 5.952vw, 100px); left: clamp(23px, 1.786vw, 30px); right: clamp(23px, 1.786vw, 30px); }
-.system-map-preview-art.is-crew { top: 10px; bottom: 14px; left: 30%; right: 20%; }
+.system-map-preview-art.is-crew { top: 10px; bottom: 72px; left: 30%; right: 20%; }
 .system-map-preview-button {
   position: absolute;
   z-index: 3;
@@ -98,7 +98,9 @@
   font-size: clamp(18px, 1.369vw, 23px);
   font-weight: 400;
 }
-.system-map-preview-card:last-of-type .system-map-preview-button { display: none; }
+.system-map-preview-card:last-of-type .system-map-preview-button { display: block; }
+.system-map-ship-entry { position: absolute; z-index: 3; left: 24px; right: 24px; bottom: 14px; display: flex; gap: 8px; }
+.system-map-ship-entry .system-map-preview-button { position: static; flex: 1; min-width: 0; min-height: 44px; padding: 0 6px; font-size: 15px; }
 .system-map-mode-nav {
   position: absolute;
   left: clamp(412px, 32.202vw, 541px);

@@ -1,0 +1,42 @@
+.is-cabin-play .system-map-top{display:none!important}
+.cabin-game-hud{position:absolute;inset:0;z-index:12;pointer-events:none;font:13px/1.5 system-ui;color:#f2f6f4}
+.cabin-game-hud button,.cabin-game-hud a{pointer-events:auto;font:inherit;cursor:pointer}
+.cabin-game-toolbar{position:absolute;inset:20px 24px auto;display:flex;align-items:center;gap:10px;text-shadow:0 1px 5px #000}
+.cabin-game-toolbar>span{margin-right:auto;font-size:12px;color:#d7e2df;letter-spacing:.08em}
+.cabin-game-toolbar button{display:flex;align-items:center;gap:8px;min-height:32px;padding:4px 11px;border:1px solid #dae9e333;border-radius:5px;color:inherit;background:#101d24a6}
+.cabin-game-toolbar button[aria-pressed=true]{border-color:#e8c88b;color:#ffe3ae}
+.cabin-game-hud kbd{font:inherit;color:#dcecea;padding:1px 5px;border:1px solid #bacdca66;border-radius:3px}
+.cabin-game-footer{position:absolute;left:24px;bottom:18px;max-width:420px;text-shadow:0 1px 4px #000}
+.cabin-game-footer>small{color:#c6d5d1;font-size:11px}
+.cabin-task-status{display:flex;align-items:center;gap:10px;margin-bottom:8px;max-width:420px;font-size:12px}
+.cabin-task-status span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cabin-task-status button{flex-shrink:0;border:0;background:#162930ba;color:#dceae6;border-radius:3px;padding:3px 7px}
+.cabin-suit-status{position:absolute;left:24px;top:56px;color:#dae4db;font-size:12px;text-shadow:0 1px 5px #000}
+.cabin-context-hud.is-minimal{bottom:66px;gap:6px;max-width:460px}
+.is-minimal .cabin-context-use{gap:9px;padding:5px 10px;border:0;border-radius:4px;box-shadow:none;background:#0b191d9e;backdrop-filter:none}
+.is-minimal .cabin-context-use kbd{width:25px;height:25px;border-radius:3px;box-shadow:none;font-size:14px}
+.is-minimal .cabin-context-use strong{font-size:13px;font-weight:500}.is-minimal .cabin-context-use small{font-size:10px}
+.is-minimal .cabin-context-busy{padding:5px 10px;font-size:12px;gap:8px;border:0;border-radius:4px;background:#0b191dab}
+.is-minimal .cabin-context-busy small{font-size:10px}
+.is-minimal .cabin-context-notice{font-size:12px;background:#0b191da8;padding:3px 8px;border-radius:3px}
+.cabin-eva-shortcuts{display:flex;gap:6px}.cabin-eva-shortcuts button{pointer-events:auto;border:0;border-radius:4px;padding:4px 8px;background:#0b191da8;color:inherit}
+.cabin-game-menu{pointer-events:auto;position:absolute;right:24px;top:68px;bottom:64px;width:360px;max-width:calc(100vw - 48px);overflow:auto;overscroll-behavior:contain;padding:18px;background:#101c23f5;border:1px solid #9eb5b34d;border-radius:6px;box-shadow:0 8px 30px #0004}
+.cabin-game-menu header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}
+.cabin-game-menu header>strong{font-size:17px}.cabin-game-menu button{border:1px solid #8ca6aa66;border-radius:4px;padding:6px 9px;background:#23383f;color:inherit}
+.cabin-game-menu nav{display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid #819d9e55;padding-bottom:14px;margin-bottom:16px}
+.cabin-game-menu nav button{background:transparent;border-color:transparent;font-size:12px;padding:5px 7px}
+.cabin-game-menu nav button[aria-pressed=true]{border-color:#9bcec9;color:#bfe8df;background:#29484c}
+.cabin-game-menu p{font-size:12px;color:#c7d9d6;line-height:1.8}
+.cabin-menu-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+.cabin-game-menu .cabin-context-controls{width:auto;max-width:none;background:none;border:0;padding:0;text-align:left}
+.cabin-game-menu .cabin-context-controls button{width:100%;margin:0 0 14px}.cabin-game-menu .cabin-context-controls small{font-size:12px;line-height:1.9}
+.cabin-game-menu .cabin-feature-guide{max-height:none;margin:0}.cabin-game-menu .cabin-feature-guide ul{margin-top:0}
+.cabin-game-menu .cabin-study-panel.is-embedded{position:static;transform:none;width:auto;max-height:none;background:none;border:0;border-radius:0;padding:0}
+.cabin-game-menu h3{font-size:14px;margin:20px 0 9px}.cabin-game-menu ol{padding-left:18px}.cabin-game-menu ol li{margin:12px 0}
+.cabin-diagnostics output{display:block;font-size:11px;margin:8px 0}.cabin-diagnostics pre{white-space:pre-wrap;font:10px/1.5 monospace;overflow-wrap:anywhere}
+.cabin-game-hud .cabin-device-panel{right:24px;top:68px;bottom:auto;max-height:calc(100% - 132px);width:310px;max-width:calc(100vw - 48px);border-radius:6px;background:#101c23f2;backdrop-filter:none;box-shadow:0 8px 30px #0004;padding:14px}
+.cabin-game-hud .cabin-device-heading strong{font-size:15px}.cabin-game-hud .cabin-device-panel p{line-height:1.6;margin:8px 0}
+.cabin-game-hud .cabin-device-panel small{margin-top:6px}.cabin-game-hud .cabin-device-panel dl{margin:8px 0}.cabin-game-hud .cabin-device-panel dl:empty{display:none}
+.cabin-game-hud .cabin-eva-panel.is-embedded{padding:9px 0;margin:6px 0}.cabin-game-hud .cabin-eva-heading{font-size:13px}
+.cabin-game-hud .cabin-equipment-grip{background:none;border:0;padding:0;margin:12px 0}.cabin-game-hud .cabin-equipment-grip small{font-size:11px}
+.cabin-game-hud button:disabled{cursor:default;opacity:.5}.cabin-game-hud button:focus-visible,.cabin-game-hud a:focus-visible{outline:2px solid #b2e3dd;outline-offset:3px}

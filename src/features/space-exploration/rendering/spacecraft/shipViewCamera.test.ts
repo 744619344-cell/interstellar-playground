@@ -46,6 +46,16 @@ test('movement basis follows the current mouse view direction', () => {
   assert.ok(after.forward.x < -0.9)
   near(Math.hypot(after.right.x, after.right.y, after.right.z), 1)
 })
+test('sitting after looking aft restores the forward cockpit view through a continuous transition',()=>{
+  const camera=new ShipViewCamera(subject())
+  camera.setMode('cabin');camera.lookAft();const aft=settle(camera)
+  assert(aft.target.z>aft.position.z)
+  camera.setMode('cockpit');assert.deepEqual(camera.snapshot().position,aft.position)
+  const seated=settle(camera)
+  assert(seated.target.z<seated.position.z)
+  near(seated.yaw,0)
+  camera.orbit(.2,0);assert.notEqual(camera.snapshot().yaw,0,'subsequent look remains available')
+})
 test('switch and rapid interruption keep current pose; transitions finish at all frame rates', () => {
   for (const fps of [30, 60, 120]) {
     const camera = new ShipViewCamera(subject())
@@ -64,6 +74,14 @@ test('switch and rapid interruption keep current pose; transitions finish at all
     for (const value of [...Object.values(result.position), ...Object.values(result.up)]) assert.ok(Number.isFinite(value))
   }
 })
+test('inside seat/body transitions keep cabin geometry visible without changing exterior transition rules',()=>{
+  const camera=new ShipViewCamera(subject())
+  camera.setMode('cockpit');assert.equal(camera.snapshot().interiorTransition,false)
+  settle(camera);camera.setMode('cabin');assert.equal(camera.snapshot().interiorTransition,true)
+  settle(camera);assert.equal(camera.snapshot().interiorTransition,false)
+  camera.setMode('free');assert.equal(camera.snapshot().interiorTransition,false)
+})
+
 test('invalid elapsed time freezes transition and snapshots cannot change internal pose', () => {
   const camera = new ShipViewCamera(subject()); camera.setMode('cockpit')
   const before = camera.snapshot()

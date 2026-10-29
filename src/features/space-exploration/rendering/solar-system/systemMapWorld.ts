@@ -6,6 +6,7 @@ import {
 import { CAMERA_FOV_DEG, SYSTEM_FAR_PLANE as FAR, SYSTEM_NEAR_PLANE as NEAR } from '../../domain/visualScale'
 import type { VoyageResourceGate } from '../voyageResources'
 import { createSystemStars } from './systemMapStars'
+import { installCabinFrameProbe } from './cabinFrameProbe'
 
 export interface SystemMapWorld {
   renderer: WebGLRenderer
@@ -27,12 +28,14 @@ export function createSystemMapWorld(
   width: number,
   height: number,
   pixelRatio: number,
-  factories: SystemMapWorldFactories = DEFAULT_FACTORIES
+  factories: SystemMapWorldFactories = DEFAULT_FACTORIES,
+  logarithmicDepthBuffer = false
 ): SystemMapWorld {
   const renderer = factories.createRenderer({
     canvas,
     antialias: true,
     alpha: false,
+    logarithmicDepthBuffer,
     powerPreference: 'high-performance'
   })
   try {
@@ -52,6 +55,7 @@ export function createSystemMapWorld(
     const fill = new DirectionalLight(0x6e8fff, 0.52)
     fill.position.set(180, -40, -160)
     scene.add(fill)
+    installCabinFrameProbe(renderer)
     return { renderer, scene, camera, canvas }
   } catch (error) {
     renderer.dispose()

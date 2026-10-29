@@ -1,12 +1,24 @@
 .ship-camera-panel { position: absolute; z-index: 9; left: 24px; top: 170px; color: #d8f2f7; background: #06121eed; border: 1px solid #315767; border-radius: 16px; padding: 16px; font: 14px/1.6 sans-serif; }
 .ship-camera-panel { width: 290px; max-height: calc(100% - 200px); overflow-y: auto; }
 .ship-camera-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.ship-camera-panel.is-collapsed { width: auto; overflow: visible; }
+.ship-camera-panel.is-collapsed { width: 250px; overflow: visible; }
 .ship-camera-panel p { margin: 8px 0; color: #9bb9c6; }
 .ship-camera-panel output { display: block; font-size: 12px; font-variant-numeric: tabular-nums; }
 .ship-feedback-row { display: flex; gap: 8px; margin-top: 10px; }
 .ship-feedback-row output { flex: 1; margin: 0; padding: 6px 8px; border: 1px solid #294b58; border-radius: 8px; color: #73edf4; text-align: center; background: #081c27cc; }
 .ship-camera-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 14px 0; }
+.ship-camera-buttons[hidden] { display:none; }
+.ship-camera-panel.is-collapsed { top:104px; width:220px; padding:12px; box-sizing:border-box; }
+.cabin-context-hud { position:absolute;z-index:12;left:50%;bottom:28px;transform:translateX(-50%);display:flex;align-items:center;flex-direction:column;gap:8px;max-width:calc(100% - 32px);color:#edf7f9;pointer-events:none;font:14px/1.45 system-ui; }
+.cabin-context-use { display:flex;align-items:center;gap:14px;padding:11px 20px;background:#06121ee8;border:1px solid #69c5d3;border-radius:10px;color:inherit;cursor:pointer;pointer-events:auto;box-shadow:0 8px 28px #0007;backdrop-filter:blur(12px); }
+.cabin-context-use kbd { display:grid;place-items:center;width:36px;height:36px;border:1px solid #b9e6ec;border-radius:7px;background:#173640;font:600 21px system-ui;box-shadow:0 3px 0 #0a2028; }
+.cabin-context-use span { display:flex;flex-direction:column;align-items:flex-start;gap:2px; }
+.cabin-context-use strong { font-size:16px; }.cabin-context-use small { color:#a5c3cc;font-size:12px; }
+.cabin-context-notice { font-size:12px;text-shadow:0 1px 5px #000,0 0 7px #000;max-width:400px;text-align:center; }
+.cabin-context-controls { width:max-content;max-width:400px;padding:7px 12px;border:1px solid #315767;border-radius:7px;background:#06121ee8;font:12px/1.6 system-ui;text-align:center; }
+.cabin-context-controls button{display:block;pointer-events:auto;margin:0 auto 5px;padding:4px 8px;border:1px solid #5e9aaa;border-radius:5px;background:#163d4a;color:#d9f4ed;font:inherit;cursor:pointer}.cabin-context-controls button:disabled{opacity:.7;cursor:default}.cabin-context-controls small{display:block;font:inherit}
+.cabin-context-busy { display:flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid #466773;border-radius:9px;background:#06121ee8; }.cabin-context-busy small { color:#9ebbc5; }
+.cabin-context-pulse { width:8px;height:8px;background:#6be1d8;border-radius:50%;box-shadow:0 0 10px #6be1d877; }
 .ship-camera-button { padding: 8px; border-radius: 9px; border: 1px solid #34525f; background: #0b2431; color: #d8f2f7; cursor: pointer; font-size: 13px; }
 .ship-camera-button[aria-pressed=true] { border-color: #39e5ef; color: #39e5ef; }
 .ship-interaction-panel { margin: 12px 0; padding: 10px; border: 1px solid #294b58; border-radius: 10px; background: #081c27cc; }
@@ -18,3 +30,25 @@
 .system-map-page.is-ship-flight:not(.is-focus) .system-map-stage { inset: 0; width: 100%; height: 100%; transform: none; }
 .system-map-page.is-ship-flight .system-map-destination, .system-map-page.is-ship-flight .system-map-mode-nav { display: none; }
 .system-map-page.is-ship-flight .system-map-hud { z-index: 10; }
+.system-map-page.is-ship-flight { position:fixed;inset:0;width:100vw;height:100vh; }
+body:has(.system-map-page.is-ship-flight) { overflow:hidden; }
+.system-map-page.is-ship-flight .system-map-brand { display:none; }
+.system-map-page.is-ship-flight .system-map-top { display:flex;justify-content:flex-end;left:16px;right:16px; }
+
+.cabin-device-panel { position:absolute;right:24px;bottom:96px;z-index:12;width:min(320px,calc(100vw - 48px));max-height:calc(100vh - 190px);overflow:auto;padding:16px;border:1px solid #668b9a;border-radius:12px;background:#10212bea;box-shadow:0 12px 32px #0006;color:#e5f0f3;backdrop-filter:blur(10px) }
+.cabin-device-heading { display:flex;align-items:center;justify-content:space-between;gap:12px }
+.cabin-device-panel p,.cabin-device-panel small { color:#abc1cc;font-size:12px }
+.cabin-device-panel small { display:block;margin-top:12px }
+.cabin-device-panel button { padding:6px 10px;margin:4px 6px 0 0;border:1px solid #648997;border-radius:6px;background:#244450;color:#e5f3f7;cursor:pointer }
+.cabin-device-panel button:disabled { opacity:.6;cursor:default }
+.cabin-device-panel dl { margin:16px 0;font-size:13px }
+.cabin-device-panel dl div { display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid #668b9a33 }
+.cabin-device-panel dt { color:#9ab6c2 }.cabin-device-panel dd { margin:0;text-align:right }
+
+.cabin-eva-panel{position:absolute;z-index:13;right:16px;top:116px;width:300px;max-height:calc(100vh - 250px);overflow:auto;padding:14px;border:1px solid #657e8d;border-radius:10px;background:#10232fed;color:#e7f1f5;font:13px/1.55 system-ui}.cabin-eva-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.cabin-eva-panel button{padding:7px 10px;border:1px solid #678494;border-radius:6px;background:#234756;color:inherit;font:inherit}.cabin-eva-panel button:disabled{opacity:.5}.cabin-eva-panel p{margin:10px 0}.cabin-eva-actions{display:grid;gap:9px}.cabin-eva-actions button{width:100%;display:flex;justify-content:space-between;gap:8px}.cabin-eva-panel small{display:block;color:#b7c9d2;font-size:11px}.cabin-eva-panel kbd{border:1px solid #7193a4;border-radius:3px;padding:0 5px}
+.cabin-equipment-use details{margin:10px 0}.cabin-equipment-use summary{cursor:pointer;color:#bdddd8}.cabin-equipment-use p{margin:8px 0;line-height:1.5}.cabin-equipment-use small{display:block;line-height:1.5;color:#bfd2d4}.cabin-equipment-controls{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:10px 0}.cabin-equipment-controls button{min-height:37px}.cabin-equipment-use progress{width:100%;accent-color:#92d6c9}.cabin-equipment-use ol{padding-left:20px;max-height:180px;overflow:auto}.cabin-equipment-use li{padding:7px 0}.cabin-equipment-use li p{font-size:12px;color:#bfd2d4}.cabin-device-panel{max-height:calc(100vh - 190px);overflow-y:auto;overscroll-behavior:contain}
+.cabin-study-panel{position:absolute;z-index:14;top:110px;left:50%;transform:translateX(-50%);width:305px;max-height:60vh;overflow:auto;padding:14px;background:#102832f2;border:1px solid #54717a;border-radius:12px;color:#e8eee9;font-size:13px}.cabin-study-panel>div{display:flex;align-items:center;justify-content:space-between;gap:10px}.cabin-study-panel p{line-height:1.5}.cabin-study-panel small{display:block;color:#bfd1cd;margin:8px 0;line-height:1.5}.cabin-study-panel svg,.cabin-study-panel progress{display:block;width:100%}.cabin-study-panel progress{accent-color:#94dbca}.cabin-study-panel button,.cabin-study-panel a{font:inherit;color:inherit;background:#294950;border:1px solid #6c8589;padding:6px 9px;border-radius:5px;text-decoration:none}
+.cabin-eva-panel.is-embedded{position:static;width:auto;max-height:none;padding:12px 0;margin:8px 0;border:0;border-top:1px solid #668b9a55;border-radius:0;background:none}
+.cabin-equipment-grip{border:1px solid #5e9e9b;border-radius:7px;padding:8px;margin:10px 0;background:#0b323a}.cabin-equipment-grip button{width:100%;margin:0}.cabin-equipment-grip small{margin-top:6px}
+.cabin-feature-guide{font:12px/1.6 system-ui;margin-top:10px;max-height:50vh;overflow:auto}.cabin-feature-guide summary{cursor:pointer;color:#b4e3df}.cabin-feature-guide ul{padding-left:18px}.cabin-feature-guide li{margin:8px 0}.cabin-feature-guide .cabin-feature-pending{color:#edce9b}
+.cabin-device-panel{top:116px;bottom:auto;max-height:calc(100vh - 240px);box-sizing:border-box}

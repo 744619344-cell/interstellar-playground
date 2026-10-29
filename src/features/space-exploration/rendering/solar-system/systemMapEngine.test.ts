@@ -2,6 +2,8 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { SystemMapEngine } from './systemMapEngine'
 import { overviewPose } from '../../domain/cameraModel'
+import { rotateShipVector } from '../../domain/shipFlightMath'
+import { dot3, normalize3 } from '../../domain/vec3'
 
 class FakeClock {
   nextId = 1
@@ -267,6 +269,24 @@ test('four view keyboard cycle preserves paused flight state and renderer', () =
   engine.destroy()
 })
 
+test('visible blur freezes flight without cancelling the model; actual hiding still suspends it', () => {
+  const { engine, clock } = makeEngine()
+  engine.shipAction('enter'); engine.start(); clock.flush(1000)
+  const ship = (engine as any).ship, generation = ship.model.generation
+  engine.shipKey('KeyW', true); clock.flush(1050)
+  const before = engine.snapshot().shipFlight!
+  engine.setInputEnabled(false, false); clock.flush(1100)
+  assert.equal(engine.snapshot().shipFlight!.suspended, true)
+  assert.equal(ship.model.generation, generation); assert.equal(ship.model.snapshot().suspended, false)
+  assert.deepEqual(engine.snapshot().shipFlight!.flightPosition, before.flightPosition)
+  assert.equal(engine.shipKey('KeyW', true), false)
+  engine.setInputEnabled(true, false); clock.flush(1150)
+  assert.equal(ship.model.generation, generation)
+  engine.setInputEnabled(false, true)
+  assert.equal(ship.model.snapshot().suspended, true); assert.equal(ship.model.generation, generation + 1)
+  engine.destroy()
+})
+
 test('seat state follows view controls, F routes one contextual interaction, and reset clears the anchor', () => {
   const { engine } = makeEngine()
   engine.shipAction('enter')
@@ -374,7 +394,7 @@ test('direct lateral movement keeps guidance while explicit stop relinquishes it
   engine.destroy()
 })
 
-test('mouse view determines direct forward movement direction', () => {
+test('free observation changes only the camera and forward thrust stays along the nose', () => {
   const { engine, clock } = makeEngine()
   engine.shipAction('enter'); engine.shipAction('free'); engine.start(); clock.flush(1000)
   engine.handlePointerDown(100, 100)
@@ -386,8 +406,60 @@ test('mouse view determines direct forward movement direction', () => {
   for (let i = 0; i < 20; i++) clock.flush(time += 50)
   engine.shipKey('KeyW', false)
   const position = engine.snapshot().shipFlight!.flightPosition
-  assert.ok(Math.abs(position.x) > Math.abs(position.z) * 4, JSON.stringify(position))
+  assert.ok(position.z < -1); assert.equal(position.x, 0)
+  assert.deepEqual(engine.snapshot().shipFlight!.orientation, { x: 0, y: 0, z: 0, w: 1 })
   engine.destroy()
+})
+
+test('exterior and cockpit mouse steering rotate the hull and propel along its nose', () => {
+  for (const mode of ['follow', 'cockpit'] as const) {
+    const { engine, clock } = makeEngine()
+    engine.shipAction('enter'); engine.shipAction(mode); engine.start(); clock.flush(1000)
+    engine.shipAction('target:moon'); engine.shipAction('assist')
+    engine.handlePointerDown(100, 200); engine.handlePointerMove(300, 140); engine.handlePointerUp(300, 140)
+    assert.equal(engine.snapshot().shipFlight!.navigation.assist, false)
+    let time = 1000
+    for (let i = 0; i < 120; i++) clock.flush(time += 50)
+    const before = engine.snapshot().shipFlight!
+    const nose = rotateShipVector(before.orientation, { x: 0, y: 0, z: -1 })
+    assert(nose.x > .65); assert(nose.y > .2)
+    assert.equal(before.yaw, 0)
+    engine.shipKey('KeyW', true)
+    for (let i = 0; i < 20; i++) clock.flush(time += 50)
+    engine.shipKey('KeyW', false)
+    const after = engine.snapshot().shipFlight!
+    const delta = { x: after.flightPosition.x - before.flightPosition.x,
+      y: after.flightPosition.y - before.flightPosition.y, z: after.flightPosition.z - before.flightPosition.z }
+    assert(dot3(normalize3(delta), nose) > .9999)
+    assert(Math.abs(after.speed - 8) < 1e-6)
+    assert.deepEqual(after.orientation, before.orientation)
+    engine.destroy()
+  }
+})
+
+test('pause, suspension, brake, view switch and reset discard queued mouse steering', () => {
+  for (const action of ['pause', 'suspend', 'brake', 'free', 'cabin', 'reset'] as const) {
+    const { engine, clock } = makeEngine()
+    engine.shipAction('enter'); engine.start(); clock.flush(1000)
+    engine.handlePointerDown(100, 200); engine.handlePointerMove(350, 200); engine.handlePointerUp(350, 200)
+    if (action === 'pause') {
+      engine.setSimulationPaused(true)
+      engine.handlePointerDown(100, 200); engine.handlePointerMove(400, 100); engine.handlePointerUp(400, 100)
+      clock.flush(1050); engine.setSimulationPaused(false)
+    } else if (action === 'suspend') { engine.setInputEnabled(false); clock.flush(1050); engine.setInputEnabled(true) }
+    else if (action === 'brake') { engine.shipKey('Space', true); engine.shipKey('Space', false) }
+    else engine.shipAction(action)
+    if (action === 'free' || action === 'cabin') {
+      engine.handlePointerDown(100, 200); engine.handlePointerMove(400, 100); engine.handlePointerUp(400, 100)
+      engine.shipAction('follow')
+      assert.equal(engine.snapshot().shipFlight!.yaw, 0)
+      assert.equal(engine.snapshot().shipFlight!.pitch, .22)
+    }
+    let time = 1050
+    for (let i = 0; i < 80; i++) clock.flush(time += 50)
+    assert.deepEqual(engine.snapshot().shipFlight!.orientation, { x: 0, y: 0, z: 0, w: 1 }, action)
+    engine.destroy()
+  }
 })
 
 test('benchmark routes lock targets, switch and cancel, and pause/views do not complete', () => {

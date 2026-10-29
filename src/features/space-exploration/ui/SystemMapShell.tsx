@@ -16,10 +16,17 @@ export default function SystemMapShell() {
   const [helpOpen, setHelpOpen] = useState(false)
   const [musicOpen, setMusicOpen] = useState(false)
   const selected = runtime.snapshot.selectedId
+  const crew = runtime.snapshot.shipFlight?.model.cabin
+  const cabinPlay = !!crew && 'microgravity' in crew && ['cabin', 'cockpit'].includes(runtime.snapshot.shipFlight!.mode)
+  const viewShipExterior = () => {
+    runtime.shipAction('enter')
+    runtime.shipAction('follow')
+  }
   const enterCockpit = () => {
     runtime.shipAction('enter')
     runtime.shipAction('cockpit')
   }
+  const enterCabin = () => { runtime.shipAction('enter'); runtime.shipAction('cabin') }
   const startMoonRoute = () => {
     enterCockpit()
     runtime.shipAction('route:moon')
@@ -29,8 +36,19 @@ export default function SystemMapShell() {
     runtime.setOverlayPaused(helpOpen || musicOpen)
   }, [helpOpen, musicOpen])
 
+  useEffect(() => {
+    if (!helpOpen && !musicOpen) return
+    const close = (event: KeyboardEvent) => {
+      if (!['Escape', 'Tab'].includes(event.code) || event.ctrlKey || event.altKey || event.metaKey) return
+      event.preventDefault(); event.stopImmediatePropagation()
+      setHelpOpen(false); setMusicOpen(false); runtime.canvasRef.current?.focus({ preventScroll: true })
+    }
+    window.addEventListener('keydown', close, true)
+    return () => window.removeEventListener('keydown', close, true)
+  }, [helpOpen, musicOpen])
+
   return (
-    <div className={`system-map-page${runtime.snapshot.mode === 'focus' ? ' is-focus' : ''}${runtime.snapshot.shipFlight ? ' is-ship-flight' : ''}`}>
+    <div className={`system-map-page${runtime.snapshot.mode === 'focus' ? ' is-focus' : ''}${runtime.snapshot.shipFlight ? ' is-ship-flight' : ''}${cabinPlay ? ' is-cabin-play' : ''}`}>
       <div className='system-map-stage' ref={runtime.stageRef}>
         <canvas
           ref={runtime.canvasRef}
@@ -42,8 +60,9 @@ export default function SystemMapShell() {
             event.currentTarget.focus({ preventScroll: true })
             event.currentTarget.setPointerCapture?.(event.pointerId)
             const point = runtime.localPoint(event)
-            if (event.button !== 0) return
-            runtime.pointerDown(point.x, point.y, event.pointerId, event.ctrlKey)
+            const cabinLook = event.button === 2 && runtime.snapshot.shipFlight?.mode === 'cabin'
+            if (event.button !== 0 && !cabinLook) return
+            runtime.pointerDown(point.x, point.y, event.pointerId, event.ctrlKey || cabinLook)
           }}
           onPointerMove={(event) => {
             const point = runtime.localPoint(event)
@@ -53,7 +72,8 @@ export default function SystemMapShell() {
             const point = runtime.localPoint(event)
             runtime.pointerUp(point.x, point.y, event.pointerId, event.ctrlKey)
           }}
-          onPointerCancel={(event) => runtime.pointerUp(0, 0, event.pointerId)}
+          onPointerCancel={() => runtime.clearInput()}
+          onContextMenu={(event) => { if (runtime.snapshot.shipFlight?.mode === 'cabin') event.preventDefault() }}
           onWheel={(event) => {
             event.preventDefault()
             runtime.wheel(event.deltaY)
@@ -70,14 +90,19 @@ export default function SystemMapShell() {
           onEnter={() => { runtime.shipAction('enter'); runtime.shipAction('follow') }}
           onRetry={() => runtime.shipAction('retryModel')} />}
       </div>
-      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.shipFlight && <SystemMapExplorePanel ship={runtime.snapshot.ship} onEnterCockpit={enterCockpit} />}
-      <ShipFlightPanel state={runtime.snapshot.shipFlight} onAction={runtime.shipAction} />
+      {runtime.snapshot.mode === 'overview' && !runtime.snapshot.shipFlight && <SystemMapExplorePanel ship={runtime.snapshot.ship}
+        onViewShip={viewShipExterior} onEnterCockpit={enterCockpit} onCrew={enterCabin} onRetry={() => runtime.shipAction('retryModel')} />}
+      <ShipFlightPanel state={runtime.snapshot.shipFlight} onAction={runtime.shipAction} chrome={{
+        clearInput: runtime.clearInput, focusGame: () => runtime.canvasRef.current?.focus({ preventScroll: true }),
+        onPause: runtime.togglePaused, onMusic: () => setMusicOpen(true), onOverview: runtime.overview, overlayOpen: helpOpen || musicOpen
+      }}/>
       <SystemMapHud
         snapshot={runtime.snapshot}
         paused={runtime.paused}
         onPause={runtime.togglePaused}
         onOverview={runtime.overview}
-        onShip={enterCockpit}
+        onShip={viewShipExterior}
+        onCrew={enterCabin}
         onMoonRoute={startMoonRoute}
         onZoom={runtime.zoomBy}
         helpOpen={helpOpen}
