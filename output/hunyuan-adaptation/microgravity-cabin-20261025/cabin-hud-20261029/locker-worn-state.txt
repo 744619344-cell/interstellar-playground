@@ -1,0 +1,24 @@
+- generic "太阳系画布" [active]
+- generic: 舱内 / 辅助漂浮
+- button "Tab 菜单":
+  - generic: Tab
+  - text: 菜单
+- button "暂停"
+- status "宇航服状态": 宇航服已穿戴 · 已增压
+- complementary "附近设备交互":
+  - status: 装备检查通过
+- region "设备操作面板":
+  - strong: 宇航服收纳舱
+  - button "结束查看设备": 关闭 · F
+  - generic: 已抓稳设备 · X 松手
+  - region "宇航服与舱外探索":
+    - paragraph: 宇航服已穿戴 · 已增压 · 尚未系留
+    - button "关闭宇航服舱"
+    - button "脱下并收纳宇航服 R":
+      - text: 脱下并收纳宇航服
+      - generic: R
+    - button "重新检查装备 I":
+      - text: 重新检查装备
+      - generic: I
+  - generic: F / Esc 退出 · I 检查
+- generic: WASD 移动 · 右键环视 · Tab 菜单

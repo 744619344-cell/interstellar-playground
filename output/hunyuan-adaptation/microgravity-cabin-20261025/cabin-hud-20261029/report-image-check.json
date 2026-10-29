@@ -1,0 +1,38 @@
+[
+  {
+    "complete": true,
+    "height": 720,
+    "src": "before-held.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-held.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-cruise.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "locker-approach.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-device.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "menu.png",
+    "width": 1280
+  }
+]

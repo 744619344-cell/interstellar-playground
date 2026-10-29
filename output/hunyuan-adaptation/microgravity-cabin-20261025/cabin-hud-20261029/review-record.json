@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-29",
+  "task": "P3-R01",
+  "status": "changes_requested",
+  "scope": "微重力内舱/驾驶座HUD、按需菜单、设备侧栏和UI键盘焦点；无三维/材质/物理/门控修改",
+  "build": {"entry":"index-DNVdK27v.js","seconds":5.22,"typecheck":"passed","warning":"existing large chunk warning","lastChange":"菜单保留上次页面、查看数据直达data；import排序不改变产物hash"},
+  "tests": {"total":360,"passed":360,"failed":0,"suites":3,"durationMs":125697.588},
+  "protectedModels": {"count":14,"allHashesMatch":true,"record":"source-hashes.json"},
+  "screenshots": {"viewport":[1280,720],"beforeHeld":"before-held.png","afterHeld":"after-held.png","cameraAndRootEqual":true,"beforeSource":"上一轮surface-quality-20261029/after-forward原图，资产与质感设置相同","poseMethod":"实际初始扶手，无浏览器坐标设值/缩放人物/隐藏模型","cruise":"after-cruise.png","approach":"locker-approach.png","device":"after-device.png","menu":"menu.png","transitionHistory":"menu-entry-transition.png为进入相机尚未完成的早帧，最终菜单图另在稳定画面取得"},
+  "ui": {"defaultLargeCards":0,"nearLockerAutoProcedureCards":0,"explicitDevicePanels":1,"nestedDeviceFolds":0,"frameProbeWithCabinDiagnosticsOnly":false,"firstSidebarHeight":569,"finalSidebarHeightApprox":317,"sidebarWidth":310,"panelRecord":"panel-check.json","finalPanelRecord":"panel-check-final.json"},
+  "checks": {
+    "tabOpenClose":"actual production",
+    "escapeClosesOnlyMenu":"actual production",
+    "movementClosesMenuAndMoves":"actual final production",
+    "menuRemembersLastPage":"actual index-DNVdK27v.js; menu-page-memory.json",
+    "fClosesMenuAndStillDispatchesToDevice":"actual earlier same-round production; menu-f-priority.json",
+    "musicSingleOverlayAndEscape":"actual earlier same-round production",
+    "pausedWPreservesPositionAndGrip":"actual final production; pause-check.json",
+    "continuousApproachAndNativeGrip":"actual final production",
+    "lockerOpenedCompletely":"actual final production; locker-final-state.txt",
+    "wearShortcut":"index-0vAlPX8b.js实际完整穿戴、I装备检查通过、R脱服收纳、关柜请求、F退出及X/A离开；最后仅菜单记忆调整",
+    "observationCompactAndCsvRetained":"真实data菜单UI回归",
+    "persistentBlockNotice":"unit policy and implementation; earlier cabinet obstruction reproduced, final long-duration display not separately measured"
+  },
+  "failuresPreserved": ["首版569px侧栏仍偏长，另存device-sidebar-v1.png","较高且靠前的位置抓点不可达；原业务拒绝，随后正常移动到低抓点","同轮较靠近身体姿态使柜门暂停，未放宽净空；最后路线保持后侧低位并正常完成开柜"],
+  "lifecycle": {"menuWindowListener":"removed on unmount","ordinaryNoticeTimer":"cleared on change/unmount","sourceResources":"unchanged by this UI round","reload":"actual browser","hiddenRelease":"not separately verified in this round"},
+  "console": {"record":"console.json","errors":0,"driverWarnings":"两个已复验构建各一条既有X4122浮点精度warning；无shader改动"},
+  "delivery": {"normalEntryWithoutDiagnostics":true,"readyRecord":"ready-main.json","readyScreenshot":"ready-main.png","legacyCards":0,"devicePanels":0,"menus":0,"diagnosticCards":0,"frameProbe":false,"paused":false,"canvasFocus":true,"temporaryProductionAndReviewTabsClosed":true,"reportImages":"6张1280x720均已在浏览器实际加载"},
+  "limits": ["Tab菜单为实时侧栏，需要停下时使用暂停","完整模型美术与3A目标未通过","本轮多个浏览器实例/测试并行，不生成性能对照通过结论","目标设备20分钟与完整EVA未通过","气闸门框穿行失败分支没有重启"],
+  "notPerformed": ["模型/纹理或材质修改","碰撞/抓点/门控修改","新动作制作","外部资产","上传","安装依赖","提交","推送","部署","发布"]
+}

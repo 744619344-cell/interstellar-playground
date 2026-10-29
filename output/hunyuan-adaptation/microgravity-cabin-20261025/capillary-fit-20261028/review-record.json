@@ -1,0 +1,597 @@
+{
+  "task": "P3-R01",
+  "date": "2026-10-28",
+  "overall": "changes_requested",
+  "phase": "Read-only scientific hardware mounting pre-review",
+  "geometryAuthored": false,
+  "externalAssetOrUpload": false,
+  "sourceGrid": {
+    "rays": 925,
+    "spacingMeters": {
+      "vertical": 0.05,
+      "longitudinal": 0.0475
+    },
+    "path": "source-grid.json"
+  },
+  "footprints": [
+    {
+      "id": "A",
+      "y": 0.29,
+      "z": -0.84,
+      "back": 1.61,
+      "samples": 221,
+      "knownWork": 221,
+      "missing": 0,
+      "sourceXMin": 1.6288347038433808,
+      "sourceXMax": 1.6511072948050989,
+      "gapMin": 0.018834703843380707,
+      "gapMax": 0.04110729480509878,
+      "sampledIntrusion": 0
+    },
+    {
+      "id": "B",
+      "y": -0.12,
+      "z": -0.84,
+      "back": 1.48,
+      "samples": 221,
+      "knownWork": 221,
+      "missing": 0,
+      "sourceXMin": 1.5873540939010442,
+      "sourceXMax": 1.6752433503487285,
+      "gapMin": 0.10735409390104422,
+      "gapMax": 0.19524335034872853,
+      "sampledIntrusion": 0
+    },
+    {
+      "id": "C",
+      "y": -0.86,
+      "z": -1.12,
+      "back": 1.6,
+      "samples": 221,
+      "knownWork": 221,
+      "missing": 0,
+      "sourceXMin": 1.612541411622762,
+      "sourceXMax": 1.6127006885338908,
+      "gapMin": 0.012541411622762011,
+      "gapMax": 0.012700688533890725,
+      "sampledIntrusion": 0
+    }
+  ],
+  "reach": [
+    {
+      "fixture": "actual-main-arrival",
+      "position": {
+        "x": 1.8201726096246622,
+        "y": 0.1254732158338407,
+        "z": -0.048939737208838846
+      },
+      "grip": "micro-starboard-liner:rail:1",
+      "support": {
+        "reachable": true,
+        "error": 4.1526360914618473e-8,
+        "side": "R"
+      },
+      "targets": [
+        {
+          "id": "A",
+          "target": {
+            "x": 1.4900000000000002,
+            "y": 0.20999999999999996,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "B",
+          "target": {
+            "x": 1.3599999999999999,
+            "y": -0.2,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "C",
+          "target": {
+            "x": 1.48,
+            "y": -0.94,
+            "z": -1.02
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": false
+        },
+        {
+          "id": "C-upper-control",
+          "target": {
+            "x": 1.48,
+            "y": -0.76,
+            "z": -0.9900000000000001
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": false
+        }
+      ],
+      "lowestSkinY": -0.5388832334136999,
+      "sourceBelow": {
+        "x": 1.8201726096246622,
+        "y": -1.5209543704986572,
+        "z": -0.048939737208838846
+      },
+      "behindSourceSamples": [
+        {
+          "index": 64,
+          "point": {
+            "x": 2.292400267652947,
+            "y": 0.2962208785570679,
+            "z": -0.20644635803364797
+          },
+          "hit": {
+            "x": 2.253487793118218,
+            "y": 0.2962208785570679,
+            "z": -0.20644635803364797
+          },
+          "owner": "node_0",
+          "triangle": 22060,
+          "nearHandContact": true
+        },
+        {
+          "index": 67,
+          "point": {
+            "x": 2.2969462622005166,
+            "y": 0.27491826095558336,
+            "z": -0.2185460452214909
+          },
+          "hit": {
+            "x": 2.2534047489445195,
+            "y": 0.27491826095558336,
+            "z": -0.2185460452214909
+          },
+          "owner": "node_0",
+          "triangle": 22060,
+          "nearHandContact": true
+        }
+      ],
+      "limits": "Static finite source pose/line checks only. A point behind the first inboard face is conservative evidence, not a closed-volume proof. Not continuous arrival, full limb sweep, load rating or installed device validation."
+    },
+    {
+      "fixture": "explicit-existing-work-grip-fixture",
+      "position": {
+        "x": 1.0064998770309264,
+        "y": -0.5971629681204811,
+        "z": -0.6482285582409272
+      },
+      "grip": "micro-work:rail:1",
+      "support": {
+        "reachable": true,
+        "error": 3.440574621034299e-8,
+        "side": "R"
+      },
+      "targets": [
+        {
+          "id": "A",
+          "target": {
+            "x": 1.4900000000000002,
+            "y": 0.20999999999999996,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "B",
+          "target": {
+            "x": 1.3599999999999999,
+            "y": -0.2,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": true,
+          "lineClear": true
+        },
+        {
+          "id": "C",
+          "target": {
+            "x": 1.48,
+            "y": -0.94,
+            "z": -1.02
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "C-upper-control",
+          "target": {
+            "x": 1.48,
+            "y": -0.76,
+            "z": -0.9900000000000001
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        }
+      ],
+      "lowestSkinY": -1.2615194173416115,
+      "sourceBelow": {
+        "x": 1.0064998770309264,
+        "y": -1.5209543704986572,
+        "z": -0.6482285582409272
+      },
+      "behindSourceSamples": [
+        {
+          "index": 64,
+          "point": {
+            "x": 1.6757998397612066,
+            "y": -0.4004857777906259,
+            "z": -0.6708432299430694
+          },
+          "hit": {
+            "x": 1.6455943402845534,
+            "y": -0.4004857777906259,
+            "z": -0.6708432299430694
+          },
+          "owner": "node_0",
+          "triangle": 28531,
+          "nearHandContact": true
+        },
+        {
+          "index": 67,
+          "point": {
+            "x": 1.689615439239767,
+            "y": -0.40220606285975835,
+            "z": -0.6915082197008678
+          },
+          "hit": {
+            "x": 1.6592407939913056,
+            "y": -0.40220606285975835,
+            "z": -0.6915082197008678
+          },
+          "owner": "node_0",
+          "triangle": 14865,
+          "nearHandContact": true
+        }
+      ],
+      "limits": "Static finite source pose/line checks only. A point behind the first inboard face is conservative evidence, not a closed-volume proof. Not continuous arrival, full limb sweep, load rating or installed device validation."
+    },
+    {
+      "fixture": "proposed-close-lower-posture-only",
+      "position": {
+        "x": 1.21,
+        "y": -0.76,
+        "z": -0.86
+      },
+      "grip": "micro-work:rail:1",
+      "support": {
+        "reachable": true,
+        "error": 5.633049942532059e-8,
+        "side": "R"
+      },
+      "targets": [
+        {
+          "id": "A",
+          "target": {
+            "x": 1.4900000000000002,
+            "y": 0.20999999999999996,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "B",
+          "target": {
+            "x": 1.3599999999999999,
+            "y": -0.2,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": true,
+          "lineClear": true
+        },
+        {
+          "id": "C",
+          "target": {
+            "x": 1.48,
+            "y": -0.94,
+            "z": -1.02
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "C-upper-control",
+          "target": {
+            "x": 1.48,
+            "y": -0.76,
+            "z": -0.9900000000000001
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        }
+      ],
+      "lowestSkinY": -1.4243564492475402,
+      "sourceBelow": {
+        "x": 1.21,
+        "y": -1.5209543704986572,
+        "z": -0.86
+      },
+      "behindSourceSamples": [
+        {
+          "index": 64,
+          "point": {
+            "x": 1.6158525354400877,
+            "y": -0.2874820282741648,
+            "z": -0.5780703909454001
+          },
+          "hit": {
+            "x": 1.5519306148832734,
+            "y": -0.2874820282741648,
+            "z": -0.5780703909454001
+          },
+          "owner": "node_0",
+          "triangle": 29176,
+          "nearHandContact": true
+        }
+      ],
+      "limits": "Static finite source pose/line checks only. A point behind the first inboard face is conservative evidence, not a closed-volume proof. Not continuous arrival, full limb sweep, load rating or installed device validation."
+    },
+    {
+      "fixture": "proposed-25deg-tilted-posture-raised-3cm-only",
+      "position": {
+        "x": 1.22,
+        "y": -0.85,
+        "z": -0.68
+      },
+      "grip": "micro-work:rail:1",
+      "support": {
+        "reachable": true,
+        "error": 2.974355031586532e-8,
+        "side": "R"
+      },
+      "targets": [
+        {
+          "id": "A",
+          "target": {
+            "x": 1.4900000000000002,
+            "y": 0.20999999999999996,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": true,
+          "lineClear": true
+        },
+        {
+          "id": "B",
+          "target": {
+            "x": 1.3599999999999999,
+            "y": -0.2,
+            "z": -0.74
+          },
+          "freeHand": "L",
+          "canReach": true,
+          "lineClear": true
+        },
+        {
+          "id": "C",
+          "target": {
+            "x": 1.48,
+            "y": -0.94,
+            "z": -1.02
+          },
+          "freeHand": "L",
+          "canReach": false,
+          "lineClear": true
+        },
+        {
+          "id": "C-upper-control",
+          "target": {
+            "x": 1.48,
+            "y": -0.76,
+            "z": -0.9900000000000001
+          },
+          "freeHand": "L",
+          "canReach": true,
+          "lineClear": true
+        }
+      ],
+      "lowestSkinY": -1.5050688588288157,
+      "sourceBelow": {
+        "x": 1.22,
+        "y": -1.5209543704986572,
+        "z": -0.68
+      },
+      "behindSourceSamples": [
+        {
+          "index": 20,
+          "point": {
+            "x": 1.627054906833169,
+            "y": -0.4729818251476574,
+            "z": -0.6036469067325498
+          },
+          "hit": {
+            "x": 1.604161936223955,
+            "y": -0.4729818251476574,
+            "z": -0.6036469067325498
+          },
+          "owner": "node_0",
+          "triangle": 28688,
+          "nearHandContact": true
+        },
+        {
+          "index": 24,
+          "point": {
+            "x": 1.6392519552269964,
+            "y": -0.4320630313139473,
+            "z": -0.6006837540712013
+          },
+          "hit": {
+            "x": 1.6011959425855529,
+            "y": -0.4320630313139473,
+            "z": -0.6006837540712013
+          },
+          "owner": "node_0",
+          "triangle": 28681,
+          "nearHandContact": true
+        },
+        {
+          "index": 26,
+          "point": {
+            "x": 1.6052980848396565,
+            "y": -0.373195417999135,
+            "z": -0.603502169196852
+          },
+          "hit": {
+            "x": 1.5612135357703467,
+            "y": -0.373195417999135,
+            "z": -0.603502169196852
+          },
+          "owner": "node_0",
+          "triangle": 28740,
+          "nearHandContact": true
+        },
+        {
+          "index": 64,
+          "point": {
+            "x": 1.6645873151128188,
+            "y": -0.29386895026676374,
+            "z": -0.7167096033038575
+          },
+          "hit": {
+            "x": 1.6469226990849593,
+            "y": -0.29386895026676374,
+            "z": -0.7167096033038575
+          },
+          "owner": "node_0",
+          "triangle": 14435,
+          "nearHandContact": true
+        },
+        {
+          "index": 65,
+          "point": {
+            "x": 1.5628918288517335,
+            "y": -0.3516113770712268,
+            "z": -0.6250093103127118
+          },
+          "hit": {
+            "x": 1.5475930727923108,
+            "y": -0.3516113770712268,
+            "z": -0.6250093103127118
+          },
+          "owner": "node_0",
+          "triangle": 29240,
+          "nearHandContact": true
+        },
+        {
+          "index": 69,
+          "point": {
+            "x": 1.6060512255974784,
+            "y": -0.28455058898716956,
+            "z": -0.6367982260009692
+          },
+          "hit": {
+            "x": 1.5545657071149772,
+            "y": -0.28455058898716956,
+            "z": -0.6367982260009692
+          },
+          "owner": "node_0",
+          "triangle": 29355,
+          "nearHandContact": true
+        },
+        {
+          "index": 115,
+          "point": {
+            "x": 1.6291438414352943,
+            "y": -0.15289008779282987,
+            "z": -0.6247468635830837
+          },
+          "hit": {
+            "x": 1.5391385902963584,
+            "y": -0.15289008779282987,
+            "z": -0.6247468635830837
+          },
+          "owner": "node_0",
+          "triangle": 29352,
+          "nearHandContact": false
+        },
+        {
+          "index": 117,
+          "point": {
+            "x": 1.587538235189515,
+            "y": -0.028345766667402073,
+            "z": -0.6344196211191736
+          },
+          "hit": {
+            "x": 1.54948287523437,
+            "y": -0.028345766667402073,
+            "z": -0.6344196211191736
+          },
+          "owner": "node_0",
+          "triangle": 29299,
+          "nearHandContact": false
+        }
+      ],
+      "limits": "Static finite source pose/line checks only. A point behind the first inboard face is conservative evidence, not a closed-volume proof. Not continuous arrival, full limb sweep, load rating or installed device validation."
+    }
+  ],
+  "findings": {
+    "A": "Rejected: occludes existing display",
+    "B": "Rejected for direct mounting: occludes existing tool",
+    "C": "Surface-only footprint candidate; operating posture failed. Original main approach cannot reach; tilted posture has source conflict. No accepted mounting.",
+    "D": "2D layout direction only: redesign right tool bay with an experiment insert; displaced tool storage, rear support and total depth remain undecided. No source replacement/geometry/upload authorized."
+  },
+  "implementation": {
+    "hintOnly": [
+      "Inspection needs kit; drift study does not",
+      "Contact/collision invalidates during recording; regrasp after completion is expected"
+    ],
+    "behaviorChanges": false
+  },
+  "engineering": {
+    "tests": 336,
+    "passed": 336,
+    "failed": 0,
+    "durationSeconds": 103.0973225,
+    "typecheck": "passed",
+    "buildPagesSeconds": 10.62,
+    "largeChunkWarning": "existing"
+  },
+  "sourcesPreserved": 8,
+  "imagesVerified": {
+    "count": 8,
+    "allCompleteWithNaturalSize": true,
+    "reviewScreenshot": "review-concept-page.png"
+  },
+  "concept": {
+    "path": "D-front-design-v1.png",
+    "originalReference": "work-source-front.png",
+    "prompt": "D-front-design-v1-prompt.txt",
+    "mode": "built-in image_gen, one 2D image edit, no CLI",
+    "status": "Visual candidate only; user appearance acceptance pending",
+    "difference": "Generated insert is taller/narrower than prior 320x240mm proposal. Dimensions, exact control target and consistent back/side/top inputs remain pending. Old B target reach is not proof of new controls."
+  },
+  "artifactChecks": {
+    "scriptSyntax": "3 passed",
+    "sourceViewReady": true,
+    "sourceViewErrorWarnings": 0,
+    "visibility": "IAB document.hidden remained false; hide/release code reviewed but real hidden-event and GPU-memory release not measured",
+    "sourceHashes": "8 final matches",
+    "localReferenceTargets": 19,
+    "diffCheck": "passed"
+  },
+  "limits": [
+    "All diagnostic body placements are explicit static fixtures, not a main-game continuous arrival proof.",
+    "Rays and first-inboard-face checks are finite conservative measurements, not a solid-body intersection proof.",
+    "Load capacity, device mounting hardware, real mechanical button contact, sample loading and complete arm sweeps not validated.",
+    "Do not use the diagram as 3D/upload authorization; dedicated device and fluid solver not implemented."
+  ]
+}

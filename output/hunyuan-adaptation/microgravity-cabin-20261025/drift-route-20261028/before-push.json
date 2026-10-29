@@ -1,0 +1,97 @@
+{
+  "float": {
+    "position": {
+      "x": 1.968010732381108,
+      "y": 0.13975698380539575,
+      "z": -0.24419265804705537
+    },
+    "velocity": {
+      "x": -9.86985104434157e-13,
+      "y": 1.1714385812200132e-12,
+      "z": -7.837010148462731e-10
+    },
+    "orientation": {
+      "x": 0,
+      "y": -0.963617863092768,
+      "z": 0,
+      "w": -0.26728377041737444
+    },
+    "angularVelocity": {
+      "x": 0,
+      "y": -3.335404905975943e-8,
+      "z": 0
+    },
+    "contactSeconds": 1.63333333333333,
+    "notice": "抓握中，手臂吸收相对运动",
+    "contact": {
+      "id": "micro-starboard-liner:rail:1",
+      "point": {
+        "x": 2.2081961304383526,
+        "y": 0.3510137858293034,
+        "z": -0.15180573781195716
+      },
+      "normal": {
+        "x": -1,
+        "y": 0,
+        "z": 2.220446049250313e-16
+      }
+    }
+  },
+  "eva": {
+    "location": "cabin",
+    "suit": "stowed",
+    "lockerOpen": true,
+    "innerOpen": false,
+    "outerOpen": false,
+    "pressure": "cabin",
+    "tether": false,
+    "checks": {
+      "helmet": false,
+      "seal": false,
+      "oxygen": false,
+      "battery": false,
+      "lifeSupport": false
+    },
+    "elapsed": 0,
+    "notice": "靠近宇航服舱，R 穿戴"
+  },
+  "stations": {
+    "panel": "micro-work",
+    "checked": []
+  },
+  "equipment": {
+    "version": 1,
+    "kit": "storage",
+    "light": "normal",
+    "elapsed": 11.233333333333471,
+    "sequence": 0,
+    "inspections": 0,
+    "log": [],
+    "notice": "抓稳后可操作设备"
+  },
+  "doors": {
+    "inner": {
+      "progress": 0,
+      "target": 0,
+      "blocked": false
+    },
+    "outer": {
+      "progress": 0,
+      "target": 0,
+      "blocked": false
+    }
+  },
+  "lockerDoor": {
+    "progress": 0,
+    "target": 0,
+    "blocked": false
+  },
+  "evaMotion": {
+    "fuel": 1,
+    "lineLength": 8
+  },
+  "suitResources": {
+    "oxygen": 1,
+    "battery": 1
+  }
+}

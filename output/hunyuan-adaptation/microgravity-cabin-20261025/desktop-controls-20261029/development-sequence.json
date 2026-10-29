@@ -1,0 +1,237 @@
+[
+  {
+    "step": "released-zero-speed",
+    "value": {
+      "controlMode": "assisted",
+      "float": {
+        "position": {
+          "x": -1.5458488260237888,
+          "y": 0.13958075848893012,
+          "z": 1.8555189474537765
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "angularVelocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "contactSeconds": 0,
+        "notice": "已松手，保持惯性"
+      },
+      "blocked": false,
+      "posture": "floating",
+      "view": {
+        "yaw": 0,
+        "pitch": 0.22,
+        "position": {
+          "x": -1.545848826023789,
+          "y": 1.0578103815697995,
+          "z": 3.9049035910480483
+        },
+        "target": {
+          "x": -1.545848826023789,
+          "y": 0.4895807584889301,
+          "z": 1.855518947453777
+        }
+      }
+    }
+  },
+  {
+    "step": "D-release-auto-stop",
+    "value": {
+      "controlMode": "assisted",
+      "float": {
+        "position": {
+          "x": -0.9141421520237887,
+          "y": 0.13958075848893012,
+          "z": 1.8555189474537765
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "angularVelocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "contactSeconds": 0,
+        "notice": "已松手，保持惯性"
+      },
+      "blocked": false,
+      "posture": "floating",
+      "view": {
+        "yaw": 0,
+        "pitch": 0.22,
+        "position": {
+          "x": -0.9141421520237886,
+          "y": 1.0578103815697995,
+          "z": 3.904903591048048
+        },
+        "target": {
+          "x": -0.9141421520237886,
+          "y": 0.4895807584889301,
+          "z": 1.8555189474537765
+        }
+      }
+    }
+  },
+  {
+    "step": "manual-turn-before-follow",
+    "value": {
+      "controlMode": "assisted",
+      "float": {
+        "position": {
+          "x": -0.9141421520237887,
+          "y": 0.13958075848893012,
+          "z": 1.8555189474537765
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "orientation": {
+          "x": 0,
+          "y": -0.6121067332778519,
+          "z": 0,
+          "w": 0.7907751558287074
+        },
+        "angularVelocity": {
+          "x": 0,
+          "y": -0.43964141450584904,
+          "z": 0
+        },
+        "contactSeconds": 0,
+        "notice": "已松手，保持惯性"
+      },
+      "blocked": false,
+      "posture": "floating",
+      "view": {
+        "yaw": 0,
+        "pitch": 0.22,
+        "position": {
+          "x": -0.9141421520237886,
+          "y": 1.0578103815697995,
+          "z": 3.904903591048048
+        },
+        "target": {
+          "x": -0.9141421520237886,
+          "y": 0.4895807584889301,
+          "z": 1.8555189474537765
+        }
+      }
+    }
+  },
+  {
+    "step": "W-follows-view-after-manual-turn",
+    "value": {
+      "controlMode": "assisted",
+      "float": {
+        "position": {
+          "x": -0.9141421520237887,
+          "y": 0.13958075848893012,
+          "z": -0.10464183854622003
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "orientation": {
+          "x": 0,
+          "y": 0.000005050022595924354,
+          "z": 0,
+          "w": 0.9999999999872486
+        },
+        "angularVelocity": {
+          "x": 0,
+          "y": 3.4750642531192476e-40,
+          "z": 0
+        },
+        "contactSeconds": 0,
+        "notice": "已松手，保持惯性"
+      },
+      "blocked": false,
+      "posture": "floating",
+      "view": {
+        "yaw": 0,
+        "pitch": 0.22,
+        "position": {
+          "x": -0.9141421520237887,
+          "y": 1.0578103815697995,
+          "z": 1.9447428050480515
+        },
+        "target": {
+          "x": -0.9141421520237887,
+          "y": 0.4895807584889301,
+          "z": -0.10464183854622003
+        }
+      }
+    }
+  },
+  {
+    "step": "arrive-service-area",
+    "value": {
+      "controlMode": "assisted",
+      "float": {
+        "position": {
+          "x": 1.52206426997621,
+          "y": 0.13958075848893012,
+          "z": -0.10464183854622003
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "orientation": {
+          "x": 0,
+          "y": 5.350593030704174e-13,
+          "z": 0,
+          "w": 1
+        },
+        "angularVelocity": {
+          "x": 0,
+          "y": -4.790027124398869e-56,
+          "z": 0
+        },
+        "contactSeconds": 0,
+        "notice": "已松手，保持惯性"
+      },
+      "blocked": false,
+      "posture": "floating",
+      "view": {
+        "yaw": 0,
+        "pitch": 0.22,
+        "position": {
+          "x": 1.52206426997621,
+          "y": 1.0578103815697995,
+          "z": 1.9447428050480515
+        },
+        "target": {
+          "x": 1.52206426997621,
+          "y": 0.4895807584889301,
+          "z": -0.10464183854622003
+        }
+      }
+    }
+  }
+]

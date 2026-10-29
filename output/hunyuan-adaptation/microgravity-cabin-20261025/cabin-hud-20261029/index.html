@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>舱内HUD精简 · 实景记录</title>
+<style>*{box-sizing:border-box}body{margin:0;color:#e5e9e6;background:#141d21;font:16px/1.7 system-ui}main{max-width:1440px;margin:auto;padding:30px}h1{font-size:30px;margin:8px 0}h2{font-size:21px;margin:32px 0 12px}p{max-width:1050px}small{color:#a5b9b8}a{color:#a8dad4}nav{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0}nav a{background:#273e43;border:1px solid #789d9e70;border-radius:5px;padding:8px 14px;text-decoration:none}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0 0 20px}img{display:block;width:100%;border:1px solid #607b7b55;border-radius:5px}figcaption{font-size:13px;color:#bed0cc;margin:5px 0 10px}table{border-collapse:collapse;width:100%;text-align:left}td,th{padding:12px;border-bottom:1px solid #79959144;vertical-align:top}th{color:#b9dcd5}.note{border-left:3px solid #9fbfae;background:#233037;padding:12px 18px}@media(max-width:850px){main{padding:18px}.grid{grid-template-columns:1fr}}</style>
+<main><small>2026-10-29 · P3-R01 · 桌面 Web · 实际游戏截图</small>
+<h1>让视线回到船舱</h1>
+<p>撤下舱内常驻大面板、自动出舱步骤和诊断条。平时仅保留边缘状态、菜单/暂停入口和一条附近操作提示。设备界面按 F 才出现，完整手册和观测详情通过 Tab 查看。</p>
+<nav><a href="/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2">进入当前游戏</a><a href="review-record.json">检查记录</a><a href="source-hashes.json">14份模型保护记录</a></nav>
+<h2>同机位前后对比</h2>
+<p><small>均为1280×720、同一实际初始扶手、相机与人物位置、相同模型和质感设置。改前为上一轮保存的真实画面；改后为本轮生产构建。暂停截图，没有缩放人物、隐藏模型或设置人物坐标。</small></p>
+<div class="grid"><figure><figcaption>改前：左上大卡片、右上诊断条、下方多层提示</figcaption><a href="before-held.png"><img src="before-held.png" alt="精简前同机位HUD"></a></figure><figure><figcaption>改后：边缘入口与简短操作提示</figcaption><a href="after-held.png"><img src="after-held.png" alt="精简后同机位HUD"></a></figure></div>
+<h2>自由移动与设备操作</h2>
+<div class="grid"><figure><figcaption>正常松手、移动到通道，视野不被常驻面板挡住</figcaption><a href="after-cruise.png"><img src="after-cruise.png" alt="精简后正常漂浮实景"></a></figure><figure><figcaption>靠近服舱只显示F提示，不自动打开出舱步骤</figcaption><a href="locker-approach.png"><img src="locker-approach.png" alt="靠近服舱的简短操作提示"></a></figure><figure><figcaption>按F才显示唯一设备侧栏；约310×317像素，没有嵌套折叠</figcaption><a href="after-device.png"><img src="after-device.png" alt="按F打开的短设备侧栏"></a></figure><figure><figcaption>Tab菜单按需查看说明、手册、观测与设置；移动可直接收回</figcaption><a href="menu.png"><img src="menu.png" alt="按需打开的统一舱内菜单"></a></figure></div>
+<h2>操作方式</h2>
+<table><thead><tr><th>场景</th><th>现在的方式</th></tr></thead><tbody>
+<tr><td>普通漂浮与抓握</td><td>原WASD、方向键、升降、转身、X抓握保持；不需要先展开操作面板。</td></tr>
+<tr><td>附近设备</td><td>靠近后F查看或执行当前动作；设备侧栏中直接抓稳、开柜、穿脱或维护。F/Esc退出，I检查。</td></tr>
+<tr><td>手册与设置</td><td>Tab打开统一菜单；Tab/Esc关闭。移动键自动收回菜单并继续交给人物；F同样继续走原设备业务。</td></tr>
+<tr><td>游戏暂停</td><td>右上暂停按钮。Tab菜单为实时侧栏，需要完全停下时单独暂停。</td></tr>
+<tr><td>任务与错误反馈</td><td>观测以小状态显示，可直接停止；完整曲线/CSV/日志在菜单。普通说明自动淡出；未解除的柜门阻挡或绳路受阻以一行提示保留至业务消息更新。</td></tr>
+<tr><td>音乐</td><td>从菜单手动进入原音乐界面，其他HUD收起；Tab/Esc关闭后回到游戏。</td></tr>
+</tbody></table>
+<h2>验证范围</h2>
+<p class="note">本轮只调整界面与键盘焦点交接，模型、材质、物理、抓点、门控和穿戴业务保持。整体模型美术、稳定60FPS、目标设备长时性能及完整EVA仍未通过；本轮没有重启门框穿行失败分支。</p>
+<p>最终完整360项回归、类型检查与5.22秒生产构建通过。实际连续低位路线完成抓稳、柜门全开、R穿戴、I检查通过、R脱服收纳、F退出并离开；<a href="locker-worn.png">穿戴后短侧栏实景</a>保留。最后的菜单记忆调整另有实际复验和data菜单回归。</p>
+<p>侧栏首版569像素偏高，已压到约317像素；原图保留为<a href="device-sidebar-v1.png">首版侧栏</a>。较高前侧抓握被拒和身体阻挡柜门均按原业务处理，没有放宽碰撞或抓点。</p>
+<p><a href="panel-check.json">实际侧栏数量、尺寸、焦点与折叠检查</a> · <a href="menu-f-priority.json">Tab菜单中F退出检查</a> · <a href="before-held-state.json">改前相机/人物</a> · <a href="after-held-state.json">改后相机/人物</a></p>
+</main></html>

@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-29",
+  "status": "engineering_checked_user_review_pending",
+  "task": "P3-R01",
+  "game": "/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1",
+  "build": "index-DX8HUai5.js",
+  "checks": {
+    "tests": 350,
+    "passed": 350,
+    "failed": 0,
+    "suites": 3,
+    "seconds": 127.7097419,
+    "typecheck": "passed after correcting the test-only source owner/triangle types",
+    "testAfterTypeFix": 1,
+    "buildSeconds": 25.64,
+    "originalHashes": true,
+    "missing": [],
+    "localReferences": 12,
+    "consoleErrors": 0,
+    "consoleWarnings": 1,
+    "jsonErrors": []
+  },
+  "evidence": {
+    "screenshots": [
+      {
+        "name": "auto-stop.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "equipment-grab-and-kit.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "locker-arrival-before.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-device-use.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-doff-and-close.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-front-clean.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-front.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-inspection-complete.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-locker-donning.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-locker-opening.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-paused-inspection.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-side.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-suit-checked.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-suited-side.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "production-suited.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "ready-main.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "turn-before.png",
+        "width": 65536,
+        "height": 4292542531
+      },
+      {
+        "name": "view-follow.png",
+        "width": 65536,
+        "height": 4292542531
+      }
+    ],
+    "firstProduction": "production-sequence-before-locker-fix.json",
+    "lockerProduction": "locker-route-post-fix.json",
+    "sourceDiagnostic": "locker-source-diagnostic.json",
+    "finalLockerIncludes": [
+      "F view",
+      "real grip",
+      "open fully",
+      "R don",
+      "equipment check",
+      "F close panel",
+      "R doff and stow",
+      "close cabinet fully"
+    ],
+    "productionConsole": [
+      {
+        "level": "warn",
+        "message": "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+        "timestamp": "2026-10-29T01:07:52.022Z",
+        "url": "http://127.0.0.1:4174/assets/index-DX8HUai5.js"
+      }
+    ],
+    "handoff": {
+      "state": {
+        "controlMode": "assisted",
+        "float": {
+          "position": {
+            "x": -0.9029974200237875,
+            "y": 0.13958075848893012,
+            "z": 1.8555189474537765
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "angularVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "contactSeconds": 0,
+          "notice": "已松手，保持惯性"
+        },
+        "blocked": false,
+        "posture": "floating",
+        "view": {
+          "yaw": 0,
+          "pitch": 0.22,
+          "position": {
+            "x": -0.9029974200237875,
+            "y": 1.0578103815697992,
+            "z": 3.904903591048048
+          },
+          "target": {
+            "x": -0.9029974200237875,
+            "y": 0.4895807584889299,
+            "z": 1.8555189474537765
+          }
+        }
+      },
+      "focus": {
+        "focused": "CANVAS",
+        "pausedButton": "false"
+      },
+      "note": "未暂停，原正常移动松键停稳；非扶手复位"
+    },
+    "reviewImages": [
+      {
+        "complete": true,
+        "height": 720,
+        "src": "production-front-clean.png",
+        "width": 1280
+      },
+      {
+        "complete": true,
+        "height": 720,
+        "src": "production-device-use.png",
+        "width": 1280
+      },
+      {
+        "complete": true,
+        "height": 720,
+        "src": "production-inspection-complete.png",
+        "width": 1280
+      },
+      {
+        "complete": true,
+        "height": 720,
+        "src": "production-locker-opening.png",
+        "width": 1280
+      },
+      {
+        "complete": true,
+        "height": 720,
+        "src": "production-suit-checked.png",
+        "width": 1280
+      }
+    ]
+  },
+  "limits": [
+    "Visual and control feel await user review",
+    "Full EVA doorway passage still not accepted",
+    "New experiment hardware not implemented",
+    "No long-duration performance acceptance",
+    "Right-drag wired and unit tested; actual full orbit used left drag",
+    "Suit wear uses existing outfit swap and procedural motion; no cloth simulation",
+    "Versions are separate normal routes, not one full EVA run"
+  ]
+}

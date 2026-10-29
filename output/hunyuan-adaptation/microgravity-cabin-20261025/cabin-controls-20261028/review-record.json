@@ -1,0 +1,48 @@
+{
+  "task": "P3-R01",
+  "date": "2026-10-28",
+  "scope": "Arrow movement, ordinary cabin orbit, gameplay-control keyboard focus",
+  "overall": "changes_requested",
+  "fixes": [
+    "View-relative arrow-only push from actual hand support; Shift arrows retain body attitude controls",
+    "Ordinary orbit no longer inherits nearby sleep-bay inboard hemisphere restriction",
+    "Movement keys from cabin control buttons return focus to canvas; editable fields and button Space remain unchanged",
+    "Visible no-support, constraint and blocked-direction feedback"
+  ],
+  "geometryChanged": false,
+  "collisionThresholdsChanged": false,
+  "browser": {
+    "entry": "/",
+    "viewport": [565, 668],
+    "source": "actual development main game; default assets; no body reset during each recorded operation",
+    "arrowOnlyDisplacementX": 0.7885759994653481,
+    "arrowSpeed": 0.52,
+    "buttonFocus": { "before": "BUTTON", "after": "CANVAS", "displacementX": 0.45042400000003635 },
+    "orbitYawRadians": [0, 1.57, 3.1399999999999997, -1.5731853071795874, -0.003185307179587149],
+    "orbitOffsetXRange": [-0.47023956383502563, 2.0493839937996428],
+    "orbitBodyContact": "micro-port-liner:rail:1",
+    "productionInteraction": "not verified: standalone preview process did not remain listening; static wrapper could not resolve production asset base"
+  },
+  "engineering": {
+    "tests": 340,
+    "passed": 340,
+    "failed": 0,
+    "suites": 3,
+    "durationSeconds": 114.7479658,
+    "typecheck": "passed",
+    "buildSeconds": 12.07,
+    "largeChunkWarning": "existing",
+    "diffCheck": "passed",
+    "reviewImages": { "count": 8, "allCompleteWithNaturalSize": true },
+    "localReferenceTargets": 14,
+    "mainConsoleErrorsWarnings": 0,
+    "bundleSha256": "a993d3330d25c9b089b26e944c25746b65cb57dbebf355af475060f82d08c63e"
+  },
+  "protectedSources": 8,
+  "handoff": { "restoredAfterEvidence": true, "paused": false, "focus": "CANVAS", "contact": "micro-port-liner:rail:1", "state": "handoff-state.json", "screenshot": "handoff-ready.png" },
+  "limits": [
+    "No propulsion in unsupported cabin free flight; regrasp required for another push",
+    "Sleep interaction retains its protective camera; camera collision can shorten the boom and hide an occluding actor",
+    "No long-duration performance, complete EVA or overall art acceptance claimed"
+  ]
+}

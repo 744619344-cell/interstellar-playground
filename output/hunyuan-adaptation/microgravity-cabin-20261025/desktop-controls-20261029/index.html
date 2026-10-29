@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>端游操控与设备入口 · 2026-10-29</title>
+<style>body{margin:0;background:#0b151d;color:#e4edef;font:16px/1.8 system-ui}main{max-width:1120px;margin:auto;padding:32px 20px}h1{font-size:30px}h2{margin-top:42px;color:#a6e4dc}a{color:#8edbd6}p{max-width:900px}figure{margin:22px 0}img{display:block;width:100%;border:1px solid #3b5861;border-radius:12px}figcaption,small{color:#a8bdc4;font-size:14px}.note{border-left:3px solid #dea870;padding:12px 18px;background:#263038}table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;padding:12px;border-bottom:1px solid #37515b;vertical-align:top}kbd{padding:3px 6px;background:#233d48;border-radius:4px}li{margin:7px 0}.links{display:flex;flex-wrap:wrap;gap:18px}</style>
+<main><small>实际桌面 Web · 2026-10-29 · 制作候选，整体仍待用户验收</small><h1>减少记键，让移动与操作连起来</h1>
+<p>默认辅助模式改为常见桌面游戏的视向移动：人物在移动时平滑转向镜头所看的方向；松键缓停。四肢增加低幅、渐入渐出的移动响应，保留角色的来源网格、原生骨段、比例与权重。它是明确的游戏辅助；真实惯性实验仍使用独立严格模式。</p>
+<p class="links"><a href="http://127.0.0.1:5173/?microgravity=1&amp;lockerDoors=v1&amp;sleepFit=v5&amp;sleepPose=v2&amp;cabinDiagnostics=1">进入本机候选游戏</a><a href="review-record.json">本轮记录</a><a href="source-hashes.json">8份保护原件校验</a></p>
+<table><tr><th>日常操作</th><th>默认辅助模式</th></tr><tr><td>移动 / 看向</td><td><kbd>WASD</kbd> 或方向键移动；右键拖拽环视，左键拖拽保留；移动时身体平滑跟随视线。</td></tr><tr><td>升降 / 加速 / 停下</td><td><kbd>Space</kbd> 上浮，<kbd>C</kbd> 下潜，<kbd>Shift</kbd> 加速；松键缓停，<kbd>B</kbd> 主动制动。</td></tr><tr><td>设备</td><td>靠近后 <kbd>F</kbd> 查看/进入/退出；面板内点“抓稳这台设备”，形成真实手部接触后操作；<kbd>Esc</kbd> 取消动作。</td></tr><tr><td>可选键</td><td><kbd>Q/E</kbd> 单独转身，<kbd>X</kbd> 抓握/松手，<kbd>R</kbd> 穿脱，<kbd>V</kbd> 挥手，<kbd>G/H</kbd> 手指动作。</td></tr><tr><td>严格惯性</td><td><kbd>M</kbd> 切换；扶稳后方向键推离，或WASD选方向再Space推离；松键保持惯性。漂移观测自动切严格并锁定辅助。</td></tr></table>
+<h2>真实游戏画面</h2>
+<figure><img src="production-front-clean.png" alt="实际来源角色正面，原比例保持"><figcaption>生产游戏中的原角色正面。此图来自操控/设备验证构建，随后只补服舱查看识别；没有生成新人物，也没有改变来源几何。</figcaption></figure>
+<figure><img src="production-device-use.png" alt="实际抓稳设备并领用工具包"><figcaption>连续移动到设备后，按钮伸手抓稳实际来源表面，工具包从储物处转入随身清单；F可结束查看并保留支撑。角色伸手与设备接触同时可见。</figcaption></figure>
+<figure><img src="production-inspection-complete.png" alt="暂停恢复后实际完成巡检"><figcaption>领用工具后启动工位巡检。暂停时进度保持0.08759999999997672秒，暂停按W没有推进；恢复后实际显示完成1次，船载日志2条。</figcaption></figure>
+<h2>服舱入口补齐</h2>
+<p>实景连续到达服舱时曾出现“R穿戴”却没有F入口。只读来源射线确认：柜门比柜体识别目标提前约33毫米，被当作遮挡。现仅将本服舱所属门面识别为可查看正面；其他结构仍阻挡识别，身体和手的真实碰撞保持。</p>
+<figure><img src="production-locker-opening.png" alt="服舱面板内真实柜门开启"><figcaption>最终生产包从初始扶手正常移动到低位抓点后，F打开集中面板，点击抓稳，再实际开启柜门；未设置人物坐标。穿脱须等柜门完全展开。</figcaption></figure>
+<figure><img src="production-suit-checked.png" alt="R穿戴结束并通过装备检查"><figcaption>同一正常到达流程中，R穿戴完成，面板内完成装备检查，F结束查看；随后已正常R脱服回收，并确认柜门完全关闭。实际白色宇航服与柜门细节保持来源现状，视觉仍待验收。</figcaption></figure>
+<p><a href="locker-source-diagnostic.json">来源射线诊断</a> · <a href="locker-arrival-before.png">保留修复前缺失入口现场</a> · <a href="production-sequence-before-locker-fix.json">操控、设备及暂停连续记录</a> · <a href="locker-route-post-fix.json">服舱补修后的独立连续记录</a></p>
+<h2>仍未完成的部分</h2>
+<p class="note">气闸门框实际穿行和完整EVA出返舱仍未通过；毛细流、植物与舱外材料实验装置尚未完成。动作整体视觉、全部设备无指导可用性与长时性能仍待验收。界面清单、工程测试、静态截图或已实现的气闸按钮，都不代表这些项目完成。</p>
+<p>本轮没有新增/修改三维模型几何、下载外部资产、上传、安装依赖、提交、推送或部署。已有穿戴为来源服装切换及程序动作，不是逐片衣物/软体穿戴模拟；新随动也不是专业动作捕捉素材。</p>
+<h2>验证范围</h2>
+<p>最终代码350项回归通过；类型检查通过，生产构建通过25.64秒，保留已有大包提示。新增检查包含松键停稳、视向跟随、升降/加速、真实源面撞停退出、失焦清键、抓稳取消/过期面板、关闭柜门识别及原角色逐帧手掌/骨段检查。8份保护原件哈希与字节保持。</p>
+<p>生产控制台没有error，保留1条驱动着色器数值精度warning；<a href="production-console.json">原始记录</a>可核对，本轮没有改写着色器以隐藏该警告。</p>
+<p>浏览器实测移动、转身后再移动、Space/C升降、Shift移动、左拖整圈观察、设备领用、巡检暂停恢复和服舱操作。右键拖拽已接入相同手势通路并有手势回归，本轮未单独录制右键拖拽实景。连续路线分版本分别保留，不能拼成一条无中断全流程。</p>
+<p>键鼠习惯参考 <a href="https://dev.epicgames.com/documentation/unreal-engine/third-person-template-in-unreal-engine?lang=en-US">Epic第三人称模板</a> 的WASD与鼠标观察组合，再按微重力场景调整升降和辅助；没有声称达到成熟端游的全部制作质量。</p>
+</main></html>

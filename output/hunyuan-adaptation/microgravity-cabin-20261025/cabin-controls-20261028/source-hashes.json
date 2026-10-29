@@ -1,0 +1,50 @@
+[
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/sleep-v1.glb",
+    "bytes": 36572488,
+    "sha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1",
+    "matches": true
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/crew-rocketbox.glb",
+    "bytes": 42961724,
+    "sha256": "d269783834d89bde89b2d51379270be26c4f9b67bed5a724943e83fa825191a1",
+    "matches": true
+  },
+  {
+    "path": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/sleep-fit-v4-20261027/sleep-fit-v4.glb",
+    "bytes": 37447972,
+    "sha256": "c324228270ec8c413d3ebc0ff2106be5680bc4fe649d92392ea648d7b8be7b9f",
+    "matches": true
+  },
+  {
+    "path": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/sleep-fit-v5-20261028/sleep-fit-v5.glb",
+    "bytes": 37448076,
+    "sha256": "71ebcfa0eb5ef97032114ccc3f323a87c432c0c417003a42db956ba0c615cc47",
+    "matches": true
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/locker-v1.glb",
+    "bytes": 44336596,
+    "sha256": "efe13e4c72a61435d725eeb1a913cc449ea1549ab8fbc42c8219ab0838e41c37",
+    "matches": true
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/candidates/locker-doors-v1-20261028/locker-doors-v1.glb",
+    "bytes": 10888,
+    "sha256": "e3fe4b25dbd5f7ec3205c6933461d0e8ed586a8610d385def76d6975c2f9b950",
+    "matches": true
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/work-v1.glb",
+    "bytes": 44027988,
+    "sha256": "d64231e00e263f87be8db91a88606e4a6c22a49bf1fc9767aa08b410c6d64596",
+    "matches": true
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/starboard-liner-v1.glb",
+    "bytes": 30319820,
+    "sha256": "7f5103dadb5bdb49980687d8e0962c7af6628bd66dec0deb4e328bc3b4bea166",
+    "matches": true
+  }
+]

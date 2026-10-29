@@ -1,0 +1,130 @@
+Browser tab: 4, Title: "我们的宇宙", URL: "[local-preview]/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1".
+1 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1
+	2 container
+		3 image 太阳系画布
+		36 container 附近设备交互
+			42 text 尚无可达扶手；漂浮时不会产生空气推进
+			43 text F / X 抓握或松手 · WASD + Z/C 选推离方向 · Space 推离 · 方向键调整姿态 · Q/E 翻滚 · V 挥手
+		94 container 漂移惯性观测
+			95 text 漂移惯性观测
+			96 button 收起观测
+			97 text 舱内漂移观测完成，已生成模拟数据报告
+			98 progress indicator 3
+			99 container
+				100 text 30  个样本 ·  3.00  s · 船舱坐标系
+			101 container 实际模拟遥测速率随时间曲线
+			102 container
+				103 text 位移  1.562  m
+				104 text 速率  0.520 – 0.520  m/s
+				105 text 匀速预测残差  0.0000  m
+			106 link 保存实验数据 CSV
+				107 text 保存实验数据 CSV
+			108 text 记录当前游戏模拟数据。未接触、未系绳且飞船稳定时有效；未模拟空气阻力与轨道重力梯度。
+		44 container 飞船驾驶
+			45 text 舱内行动
+			46 button (expanded) 收起面板, Secondary Actions: Collapse
+			109 container 飞船视角
+				110 checkbox 飞船外观, Value: 0
+				111 checkbox 驾驶舱, Value: 0
+				112 checkbox 舱内行动, Value: 1
+				113 checkbox 自由观察, Value: 0
+			47 container 飞船模型
+				48 text 飞船已就绪 · 当前模型待后续完善
+			114 text 微重力制作候选：F/X 抓握或松手，扶稳后 WASD 与 Z/C 选方向，Space 推离；空中松键保持惯性。方向键在抓握时调整姿态，Q/E 翻滚。
+			115 container
+				116 text 左键拖拽转动视线。 滚轮调整远近。 V 挥手。设备约束、穿戴和气闸正在制作，此候选入口保留原版回退。
+			117 button 返回地球泊位
+			118 container 舱内观察操作
+				119 button 拉近
+				120 button 拉远
+				121 button 面向后舱门
+				122 button 向前移动
+				123 button 向后移动
+				124 button 向左移动
+				125 button 向右移动
+			126 container 宇航员手部动作
+				127 button 挥手 V
+					128 text 挥手 
+					129 text V
+				130 button 屈指 G
+				131 button 张手 H
+				132 container 宇航员动作
+					133 text 漂浮
+			134 container 飞船交互
+				135 text 舱内交互
+				136 button (disabled) 靠近设备后显示操作
+				137 container
+					138 text 座椅  未入座
+				139 container
+					140 text 驾驶控制  入座后接管
+				141 container
+					142 text 舱外密封门  气闸内门已密合
+				143 text 尚无可达扶手；漂浮时不会产生空气推进
+				144 link Description: 模型署名与许可, Value: 127.0.0.1:5173/src/assets/models/microgravity-cabin-20261025/ATTRIBUTION.md?no-inline
+			145 container 视角状态
+				146 text 舱内行动
+			147 container 舱内视野
+				148 text 视场  55 °
+			149 container 飞行状态
+				150 text 速度  0.00  m/s ·  地球泊位
+			151 container 飞船反馈
+				152 container 推进反馈
+					153 text 待机
+				154 container 姿态反馈
+					155 text 姿态稳定
+			156 container
+				157 button (expanded) 运行诊断, Secondary Actions: Collapse
+					158 text 运行诊断
+				159 container 宇航员位置
+					160 text 位置  -0.204 / 0.792 / -0.050  · 脚底  0.128
+				173 container 舱内运动诊断
+					174 text {
+  "float": {
+    "position": {
+      "x": -0.2044494611231928,
+      "y": 0.7920438510422411,
+      "z": -0.04950292344784913
+    },
+    "velocity": {
+      "x": 0.08655956085340716,
+      "y": 0.020156269865357693,
+      "z": 0.0006846765960675979
+    },
+    "orientation": {
+      "x": 0,
+      "y": -0.9684899019155243,
+      "z": 0,
+      "w": 0.24905282549623528
+    },
+    "angularVelocity": {
+      "x": 0,
+      "y": -3.5e-323,
+      "z": 0
+    },
+    "contactSeconds": 0,
+    "notice": "已推离；松键继续滑行"
+  },
+  "blocked": false,
+  "posture": "floating"
+}
+				175 container 舱门动作
+					176 text 门行程  0.000  · 目标  0  ·  无阻挡
+				163 container 飞行位置
+					164 text 位置  0.00 / 0.00 / 0.00
+				165 container 飞行姿态
+					166 text 姿态  0.000 / 0.000 / 0.000 / 1.000
+				167 container 渲染资源
+					168 text 纹理  80  · 几何  99  · 程序  47
+				169 container 渲染帧率
+					170 text 最近 300 帧 · 平均 55.9 FPS · 1% low 27.6 FPS
+				171 container 图形后端
+					172 text ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025E2) Direct3D11 vs_5_0 ps_5_0, D3D11)
+		20 container
+			22 button (collapsed) 说明, Secondary Actions: Expand
+			23 checkbox 继续, Value: 1
+			24 button 音乐
+			25 button 返回全景
+	53 button (collapsed) 本地帧时间诊断 · 未记录, Secondary Actions: Expand
+		54 text 本地帧时间诊断 · 未记录
+
+The focused UI element is 157 button (expanded) 运行诊断, Secondary Actions: Collapse

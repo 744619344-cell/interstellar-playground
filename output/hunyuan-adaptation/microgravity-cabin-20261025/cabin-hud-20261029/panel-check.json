@@ -1,0 +1,16 @@
+{
+  "autoEvaCards": 0,
+  "canvasFocus": "CANVAS",
+  "devicePanels": 1,
+  "folds": 0,
+  "frameProbe": false,
+  "menus": 0,
+  "panelBounds": [
+    {
+      "height": 316.95001220703125,
+      "width": 310,
+      "x": 946,
+      "y": 68
+    }
+  ]
+}

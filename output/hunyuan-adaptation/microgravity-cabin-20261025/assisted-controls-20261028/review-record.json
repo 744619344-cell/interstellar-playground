@@ -1,0 +1,22 @@
+{
+  "task": "P3-R01",
+  "date": "2026-10-29",
+  "overall": "changes_requested",
+  "scope": "Continuous assisted character movement, independent body turning, collision recovery and explicit inertial mode",
+  "defaultControls": "assisted (explicitly labeled game assistance)",
+  "geometryChanged": false,
+  "collision": { "translationSafetyMeters": 0.004, "assistedPoseCrossingTolerance": 0, "legacyPoseCrossingTolerance": 0.003, "sourceTrianglesRetained": true },
+  "experimentalIsolation": "successful study registration selects inertial mode; active study blocks assistance; legacy active saves restore as inertial",
+  "profiles": { "microgravity": 1, "lockerDoors": "v1", "sleepFit": "v5", "sleepPose": "v2" },
+  "browser": {
+    "viewport": [1280, 720],
+    "development": { "sequence": "pilot-sequence.json", "unsupportedStart": true, "moveRightMeters": 0.607928274, "moveForwardMeters": 0.627093036, "structureRecoveryMeters": 0.889968312, "strictModeNoForceChecked": true },
+    "production": { "sequence": "production-sequence.json", "unsupportedStart": true, "moveRightMeters": 0.630586284, "turnDegreesApprox": 79, "moveForwardMeters": 0.589960032, "stoppedVelocity": [0, 0, 0], "consoleErrorsWarnings": 0 },
+    "separateRuns": true
+  },
+  "engineering": { "tests": 345, "pass": 345, "fail": 0, "suites": 3, "durationSeconds": 115.2916901, "typecheck": "passed", "buildSeconds": 16.34, "largeChunkWarning": "existing", "diffCheck": "passed" },
+  "artifacts": { "imagesVerified": 6, "allLoadedWithNaturalSize": true, "localTargets": 11, "reviewScreenshot": "review-production-effect.png" },
+  "handoff": { "entry": "development candidate", "mode": "assisted", "paused": false, "contact": false, "stopped": true, "state": "ready-to-play.json", "screenshot": "ready-to-play.png" },
+  "protectedModels": 8,
+  "limits": ["game assistance is not unpowered astronaut dynamics", "overall art and user control acceptance pending", "full EVA and long-duration performance not accepted"]
+}
