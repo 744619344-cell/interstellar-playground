@@ -1,0 +1,77 @@
+{
+  "candidate": true,
+  "accepted": false,
+  "date": "2026-10-25",
+  "authorization": "Explicit user approval recorded in the active task; free Hunyuan sources and scoped local binding, moving door caps and tether equipment",
+  "assets": {
+    "liner-v2": {
+      "file": "liner-v2.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/liner-v2/original.glb",
+      "bytes": 31273004,
+      "sha256": "d097f3741f9b1e0f39e3b54093aa1410230d9f3aaed195f9dd4a59ee9901613d",
+      "geometryAuthored": false
+    },
+    "sleep-v1": {
+      "file": "sleep-v1.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/sleep-v1/original.glb",
+      "bytes": 36572488,
+      "sha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1",
+      "geometryAuthored": false
+    },
+    "work-v1": {
+      "file": "work-v1.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/work-v1/original.glb",
+      "bytes": 44027988,
+      "sha256": "d64231e00e263f87be8db91a88606e4a6c22a49bf1fc9767aa08b410c6d64596",
+      "geometryAuthored": false
+    },
+    "locker-v1": {
+      "file": "locker-v1.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/locker-v1/original.glb",
+      "bytes": 44336596,
+      "sha256": "efe13e4c72a61435d725eeb1a913cc449ea1549ab8fbc42c8219ab0838e41c37",
+      "geometryAuthored": false
+    },
+    "starboard-liner-v1": {
+      "file": "starboard-liner-v1.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/starboard-liner-v1/original.glb",
+      "bytes": 30319820,
+      "sha256": "7f5103dadb5bdb49980687d8e0962c7af6628bd66dec0deb4e328bc3b4bea166",
+      "geometryAuthored": false
+    },
+    "liner-end-return-v1": {
+      "file": "liner-end-return-v1.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/sources/liner-end-return-v1/original.glb",
+      "bytes": 21076060,
+      "sha256": "a0c69e88468d9cf92cbb48ab8ded74aeff925b86e1ad4982dba0c5488bd01879",
+      "geometryAuthored": false
+    },
+    "inner-airlock-closed-v7": {
+      "file": "inner-airlock-closed-v7.glb",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/inner-airlock-closed-v7/model.glb",
+      "bytes": 27251848,
+      "sha256": "089f763a67afa334ddf3d95dd30c3b386bff1813c63220a17edf44c9fdcb1c0a",
+      "geometryAuthored": "Explicitly authorized central door separation/caps and outer joining rim, max .45m; source original preserved"
+    },
+    "crew-rocketbox": {
+      "file": "crew-rocketbox.glb",
+      "bytes": 42961724,
+      "sha256": "d269783834d89bde89b2d51379270be26c4f9b67bed5a724943e83fa825191a1",
+      "source": "assets-source/characters/rocketbox-medical-female-03/original/Export/Medical_Female_03_facial.fbx",
+      "repository": "https://github.com/microsoft/Microsoft-Rocketbox",
+      "revision": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+      "license": "MIT; copyright and permission notice in ROCKETBOX-LICENSE.txt",
+      "geometryAuthored": false,
+      "conversion": "Existing 80-joint binding, base mesh and weights retained; 52 existing ARKit morph channels selected; lossless PNG with glTF Y-origin conversion; legacy PBR material approximation",
+      "userApprovedPublicPreview": true,
+      "gameplayVisualAccepted": false
+    },
+    "crew-bound-v6": {
+      "file": "crew-bound-v6.glb",
+      "bytes": 32445592,
+      "sha256": "c8e1fe69ac803fa76efda8ae34947d975be4055e201dee1cfd69944eb6127b23",
+      "source": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/crew-bound-v6/model.glb",
+      "geometryAuthored": "Original mesh/image buffers preserved; authorized anatomical joint-ring fitting and weight repair"
+    }
+  }
+}

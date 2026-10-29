@@ -1,0 +1,478 @@
+{
+  "version": "sleep-side-v3-20261027",
+  "sourceSha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1",
+  "sourceVertices": 35529,
+  "maximumDepthM": 0.22,
+  "moduleScale": 1.9119317706909098,
+  "columns": 6,
+  "clothUv": [
+    0.0234375,
+    0.59375,
+    0.0859375,
+    0.671875
+  ],
+  "panels": [
+    {
+      "name": "left",
+      "anchors": [
+        {
+          "front": 16046,
+          "rear": [
+            7302
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 34215,
+          "rear": [
+            28743
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 16967,
+          "rear": [
+            35079
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 25265,
+          "rear": [
+            35082
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 34133,
+          "rear": [
+            34194
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 25276,
+          "rear": [
+            35081
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 25272,
+          "rear": [
+            34183
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 25297,
+          "rear": [
+            35078
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 8867,
+          "rear": [
+            35076
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 20670,
+          "rear": [
+            35075
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 20637,
+          "rear": [
+            35073
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 20658,
+          "rear": [
+            20677
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 20665,
+          "rear": [
+            20680
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10848,
+          "rear": [
+            10955
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10831,
+          "rear": [
+            10950
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10852,
+          "rear": [
+            28563
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10985,
+          "rear": [
+            35071
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10997,
+          "rear": [
+            28800
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18500,
+          "rear": [
+            35069
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18483,
+          "rear": [
+            18450
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18477,
+          "rear": [
+            18456
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18552,
+          "rear": [
+            35067
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18725,
+          "rear": [
+            18569
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18717,
+          "rear": [
+            18573
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 18718,
+          "rear": [
+            35018
+          ],
+          "weights": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "right",
+      "anchors": [
+        {
+          "front": 18764,
+          "rear": [
+            34727
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 23330,
+          "rear": [
+            35029
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 23340,
+          "rear": [
+            34734
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10256,
+          "rear": [
+            34742
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10400,
+          "rear": [
+            10189
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10360,
+          "rear": [
+            34740
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 24873,
+          "rear": [
+            10192
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10347,
+          "rear": [
+            22379
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 7160,
+          "rear": [
+            34837
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 25879,
+          "rear": [
+            34741
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 29490,
+          "rear": [
+            34764
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 23842,
+          "rear": [
+            34751
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 34699,
+          "rear": [
+            34772
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 34689,
+          "rear": [
+            34798
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 11402,
+          "rear": [
+            13860
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 19555,
+          "rear": [
+            34775
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 11769,
+          "rear": [
+            34754
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 14541,
+          "rear": [
+            34753
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 29410,
+          "rear": [
+            34752
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 30031,
+          "rear": [
+            25591
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 11939,
+          "rear": [
+            34749
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 30029,
+          "rear": [
+            25574
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 10501,
+          "rear": [
+            25561
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 11533,
+          "rear": [
+            25562
+          ],
+          "weights": [
+            1
+          ]
+        },
+        {
+          "front": 11541,
+          "rear": [
+            25564
+          ],
+          "weights": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "visualAccepted": false,
+  "rearAnchors": "Actual fixed rear edge vertices. Single-vertex barycentric representation; source untouched."
+}

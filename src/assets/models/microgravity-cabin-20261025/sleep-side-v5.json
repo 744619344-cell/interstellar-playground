@@ -1,0 +1,11 @@
+{
+  "version": "sleep-side-v5-20261028",
+  "anchorsFrom": "sleep-side-v4.json",
+  "closedBowM": 0.007,
+  "openBowM": 0.004,
+  "rippleM": 0.0015,
+  "verticalTextureRepeats": 4,
+  "cloth": { "metalness": 0, "roughness": 0.9, "normalScale": 0.65, "specularIntensity": 0.35, "specularColor": 0.55 },
+  "scope": "Same six authorized side strips and source anchors. Left geometry unchanged; right curvature remains within32cm. Original maps, character and fixed source regions preserved.",
+  "visualAccepted": false
+}

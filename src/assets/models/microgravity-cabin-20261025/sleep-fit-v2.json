@@ -1,0 +1,14 @@
+{
+  "version": "sleep-fit-v2-20261027",
+  "sourceSha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1",
+  "vertices": 35529,
+  "maximumCabinDisplacementM": 0.18,
+  "leftConnection": [-0.218, -0.18],
+  "rightConnection": [0.13, 0.17],
+  "bottomConnection": [0.08, 0.14],
+  "neckOpening": [0.8, 0.845],
+  "rearConnection": [-0.012, 0.006],
+  "axis": "Source module +Z, towards cabin; source X/Y unchanged",
+  "authorization": "User explicitly confirmed this scope on 2026-10-27; existing front bag, joining edges, straps and buckles only. Head pad, rear pad and rigid frame fixed; topology, UVs, source and character unchanged.",
+  "visualAccepted": false
+}
