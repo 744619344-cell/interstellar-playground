@@ -1,0 +1,38 @@
+[
+  {
+    "complete": true,
+    "height": 720,
+    "src": "before-side.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-side.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "before-aft.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-aft.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "before-forward.png",
+    "width": 1280
+  },
+  {
+    "complete": true,
+    "height": 720,
+    "src": "after-forward.png",
+    "width": 1280
+  }
+]

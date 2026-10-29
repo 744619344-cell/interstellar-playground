@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-29",
+  "task": "P3-R01",
+  "status": "changes_requested",
+  "scope": "运行时数值材质、有限2K采样、局部光照、SAO与人物动态投影；无模型或颜色贴图文件修改",
+  "build": {"entry": "index-DwyA57u-.js", "seconds": 4.38, "typecheck": "passed", "warning": "existing large chunk warning"},
+  "tests": {"total":355,"passed":355,"failed":0,"suites":3,"durationMs":129377.228},
+  "protectedModels": {"total":14,"allHashesMatch":true,"record":"source-hashes.json"},
+  "sourceFindings": {"specularColorFactor":2,"portLinerMetalMedian":247,"portLinerRoughnessMedian":82,"ormAoChannelConstant":255,"channelScale":255},
+  "runtime": {"refined":true,"samplers":32,"numericalMaps":7,"fallbacks":0,"record":"runtime-surface.json"},
+  "visualEvidence": {
+    "viewport":[1280,720],
+    "forwardCameraAndRootMatch":true,
+    "yaw":[0,1.57,3.14],
+    "pitch":0.22,
+    "before":["before-forward.png","before-side.png","before-aft.png"],
+    "candidate":["after-forward.png","after-side.png","after-aft.png"],
+    "method":"同一实际初始扶手，正常鼠标环视并暂停截图；人物、相机未通过浏览器设值",
+    "history":"v1截图保留；candidate-v1-render-failure.png命名过早，实际为进入镜头过渡阶段，之后正常，无控制台错误，不归类渲染失败"
+  },
+  "performance": {
+    "method":"同一生产构建、同一反向扶手机位、正常运行，各最近300帧；短时快照，不是目标设备长时基准",
+    "fullModuleShadowFirstVersion":{"fps":40.4,"lowFps":18.7},
+    "source":{"fps":49.4,"lowFps":27.8,"textures":68,"geometries":98,"programs":41,"record":"performance-source-aft.json"},
+    "candidate":{"fps":41.5,"lowFps":27.6,"textures":88,"geometries":103,"programs":64,"record":"performance-aft-final.json"},
+    "candidateOtherViewAfterMovement":{"fps":49.4,"lowFps":27.8,"record":"interaction-smoke.json"},
+    "stable60Passed":false,"twentyMinutePassed":false,
+    "fallback":"surface=source 保留原渲染和1K模块预算"
+  },
+  "interaction": {"production":true,"normalContinuousMovement":true,"lockerFOpenClose":true,"positionReset":false,"record":"interaction-smoke.json","screenshot":"device-smoke.png","consoleErrors":0,"consoleWarnings":0},
+  "lifecycle": {"derivedOwnershipAndDispose":"tested","sourceMaterialAndShadowFlagsRestore":"tested","normalPrepassFailureRecovery":"tested","browserPauseResume":"checked","browserReload":"checked","browserHiddenReleaseThisRound":"not separately verified"},
+  "remaining": ["来源硬边波浪/鼓包","颜色图烘焙了明暗与高光","布料/涂层/金属混合图集","人物制服/皮肤/头发统一美术","宇航服缺法线与ORM","部分地板无细节纹理","约435MB源装配冷加载与显存预算","稳定帧率和20分钟目标设备验收","整体视觉用户验收","原停止的完整EVA门框通行"],
+  "notPerformed": ["新三维几何","UV/拓扑/权重或骨段修改","颜色纹理重绘","外部模型或环境图引入","上传","依赖安装","提交","推送","部署","发布"]
+}

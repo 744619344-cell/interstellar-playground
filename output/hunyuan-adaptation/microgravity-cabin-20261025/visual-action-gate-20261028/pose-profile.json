@@ -1,0 +1,27 @@
+{
+  "selection": "Explicit candidate query only; default and legacy preserved",
+  "space": "actor local +Y up, +Z forward",
+  "limits": [
+    "Preset pose, not soft body physics",
+    "User visual acceptance pending"
+  ],
+  "blend": "quintic of existing sleep pose amount, then existing exponential frame smoothing",
+  "bone": "spine_01",
+  "sourceCrewSha256": "d269783834d89bde89b2d51379270be26c4f9b67bed5a724943e83fa825191a1",
+  "preserved": [
+    "root constraint point",
+    "source bone translations and hierarchy",
+    "source geometry and weights",
+    "original head/back pads and frame",
+    "source GLB files"
+  ],
+  "targetTorsoAxis": [
+    0,
+    1,
+    0.35
+  ],
+  "profile": "sleepPose=v2",
+  "eyelids": "native EyeBlinkLeft/Right blend to closed during final 20% of sleep pose amount; original blink/gaze return on exit",
+  "sleepFabric": "sleepFit=v5",
+  "order": "restore original rotations -> upper thorax alignment -> relaxed arms and legs -> native fingers and face -> frame smoothing"
+}

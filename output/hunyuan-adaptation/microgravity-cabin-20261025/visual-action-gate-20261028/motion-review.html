@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>休息舱 · 多视角逐帧检查</title>
+<style>body{margin:0;overflow:hidden;background:#111d28;color:#eef5fa;font:14px/1.5 system-ui}canvas{display:block}aside{position:absolute;z-index:2;left:12px;top:12px;width:260px;max-height:calc(100vh - 52px);overflow:auto;padding:14px;background:#102330ef;border:1px solid #638497;border-radius:8px}h1{font-size:18px;margin:0 0 8px}button,a{font:inherit;padding:5px 8px;margin:3px;border:1px solid #7995a3;border-radius:5px;background:#294959;color:inherit}p{font-size:12px;color:#c8d9e0}#state{white-space:pre-wrap}a{display:inline-block}</style>
+<body><aside><h1>休息舱 · 多视角逐帧检查</h1><p>真实v5资产与现有动作；床边诊断起点，不代替实际游戏连续到达证明。按固定60Hz重放；没有创建三维夹具。</p>
+<div><button data-bed="1">一号床</button><button data-bed="2">二号床</button><button data-bed="3">三号床</button></div>
+<div><button data-view="front">正面全身</button><button data-view="right">右侧全身</button><button data-view="left">左侧全身</button><button data-view="follow">游戏跟随</button></div>
+<div><button data-time="0">起点</button><button data-time=".35">伸手中间</button><button data-time=".7">接触</button><button data-time="1.4">对位前段</button><button data-time="2.1">对位中间</button><button data-time="2.8">进入袋内</button><button data-time="3.6">固定休息</button></div>
+<div><button id="play">播放/暂停</button><button id="slow">速度：正常</button><button data-step="1">前进1帧</button><button data-step="12">前进12帧</button></div>
+<div><button id="leave">离开睡袋</button><button id="cancel">取消</button><button id="grasp">抓握/松手</button></div>
+<div><button id="return-mid">退出中间</button></div>
+<p id="state">读取来源…</p><p>头枕、背垫、硬框、人物网格/权重与约束点保持。观察到穿插不代表获得修改这些部位的授权。</p><a href="../cabin-home-review-20261027.html">验收包</a></aside><script type="module" src="motion-review.mjs"></script></body></html>

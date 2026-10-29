@@ -1,0 +1,22 @@
+[
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/sleep-v1.glb",
+    "bytes": 36572488,
+    "sha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1"
+  },
+  {
+    "path": "src/assets/models/microgravity-cabin-20261025/crew-rocketbox.glb",
+    "bytes": 42961724,
+    "sha256": "d269783834d89bde89b2d51379270be26c4f9b67bed5a724943e83fa825191a1"
+  },
+  {
+    "path": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/sleep-fit-v4-20261027/sleep-fit-v4.glb",
+    "bytes": 37447972,
+    "sha256": "c324228270ec8c413d3ebc0ff2106be5680bc4fe649d92392ea648d7b8be7b9f"
+  },
+  {
+    "path": "output/hunyuan-adaptation/microgravity-cabin-20261025/candidates/sleep-fit-v5-20261028/sleep-fit-v5.glb",
+    "bytes": 37448076,
+    "sha256": "71ebcfa0eb5ef97032114ccc3f323a87c432c0c417003a42db956ba0c615cc47"
+  }
+]

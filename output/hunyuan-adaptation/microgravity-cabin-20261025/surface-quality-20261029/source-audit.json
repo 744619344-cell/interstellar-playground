@@ -1,0 +1,1063 @@
+[
+  {
+    "file": "src/assets/models/current-ship-20261022/hull-g12.glb",
+    "bytes": 59312672,
+    "sha256": "b2a0f9e9c57ec0ba95f5272c2772bc99b4be77349267bb4ad43fb16aa407a2e0",
+    "materials": [
+      {
+        "name": "warm ceramic",
+        "base": [
+          0.66,
+          0.64,
+          0.59,
+          1
+        ],
+        "metal": 0.04,
+        "rough": 0.74
+      },
+      {
+        "name": "graphite powder coat",
+        "base": [
+          0.075,
+          0.088,
+          0.101,
+          1
+        ],
+        "metal": 0.12,
+        "rough": 0.72
+      },
+      {
+        "name": "brushed titanium",
+        "base": [
+          0.28,
+          0.31,
+          0.33,
+          1
+        ],
+        "metal": 0.65,
+        "rough": 0.38
+      },
+      {
+        "name": "rubber seal",
+        "base": [
+          0.013,
+          0.019,
+          0.024,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.9
+      },
+      {
+        "name": "warm diffuser",
+        "base": [
+          0.95,
+          0.76,
+          0.44,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.6
+      },
+      {
+        "name": "cyan status",
+        "base": [
+          0.05,
+          0.6,
+          0.75,
+          1
+        ],
+        "metal": 0.1,
+        "rough": 0.35
+      },
+      {
+        "name": "mattress woven gray",
+        "base": [
+          0.12,
+          0.15,
+          0.18,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.94
+      },
+      {
+        "name": "display glass",
+        "base": [
+          0.008,
+          0.026,
+          0.038,
+          1
+        ],
+        "metal": 0.12,
+        "rough": 0.34
+      },
+      {
+        "name": "muted safety amber",
+        "base": [
+          0.57,
+          0.32,
+          0.07,
+          1
+        ],
+        "metal": 0.05,
+        "rough": 0.7
+      },
+      {
+        "name": "ivory inset",
+        "base": [
+          0.48,
+          0.47,
+          0.43,
+          1
+        ],
+        "metal": 0.03,
+        "rough": 0.82
+      },
+      {
+        "name": "optical glazing",
+        "base": [
+          0.28,
+          0.39,
+          0.42,
+          0.13
+        ],
+        "metal": 0,
+        "rough": 0.13
+      },
+      {
+        "name": "flight display",
+        "base": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.56,
+        "baseMap": 0,
+        "emissive": 0
+      },
+      {
+        "name": "seat_base",
+        "baseMap": 3,
+        "orm": 4,
+        "normal": 2,
+        "emissive": 1
+      },
+      {
+        "name": "seat_top",
+        "baseMap": 6,
+        "orm": 7,
+        "normal": 5
+      },
+      {
+        "name": "Material.001",
+        "baseMap": 9,
+        "orm": 10,
+        "normal": 8,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "原设计舱罩玻璃",
+        "base": [
+          0.19,
+          0.35,
+          0.41,
+          0.12
+        ],
+        "metal": 0.05,
+        "rough": 0.18
+      },
+      {
+        "name": "Material.001",
+        "baseMap": 12,
+        "orm": 13,
+        "normal": 11,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "局部检修盖_合金",
+        "base": [
+          0.34,
+          0.37,
+          0.39,
+          1
+        ],
+        "metal": 0.55,
+        "rough": 0.5
+      },
+      {
+        "name": "固定凹位_石墨",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "导轨检修盖_合金",
+        "base": [
+          0.22,
+          0.23,
+          0.24,
+          1
+        ],
+        "metal": 0.28,
+        "rough": 0.7
+      },
+      {
+        "name": "Material.001",
+        "baseMap": 12,
+        "orm": 13,
+        "normal": 11,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "局部检修盖_合金",
+        "base": [
+          0.34,
+          0.37,
+          0.39,
+          1
+        ],
+        "metal": 0.55,
+        "rough": 0.5
+      },
+      {
+        "name": "固定凹位_石墨",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "导轨检修盖_合金",
+        "base": [
+          0.22,
+          0.23,
+          0.24,
+          1
+        ],
+        "metal": 0.28,
+        "rough": 0.7
+      },
+      {
+        "name": "Material.001",
+        "baseMap": 15,
+        "orm": 16,
+        "normal": 14,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "局部检修盖_合金",
+        "base": [
+          0.34,
+          0.37,
+          0.39,
+          1
+        ],
+        "metal": 0.55,
+        "rough": 0.5
+      },
+      {
+        "name": "固定凹位_石墨",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "导轨检修盖_合金",
+        "base": [
+          0.22,
+          0.23,
+          0.24,
+          1
+        ],
+        "metal": 0.28,
+        "rough": 0.7
+      },
+      {
+        "name": "Material.001",
+        "baseMap": 15,
+        "orm": 16,
+        "normal": 14,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "局部检修盖_合金",
+        "base": [
+          0.34,
+          0.37,
+          0.39,
+          1
+        ],
+        "metal": 0.55,
+        "rough": 0.5
+      },
+      {
+        "name": "固定凹位_石墨",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "导轨检修盖_合金",
+        "base": [
+          0.22,
+          0.23,
+          0.24,
+          1
+        ],
+        "metal": 0.28,
+        "rough": 0.7
+      },
+      {
+        "name": "原件材质六向烘焙_待遮挡复验",
+        "metal": 1,
+        "rough": 1,
+        "baseMap": 17,
+        "orm": 18
+      },
+      {
+        "name": "正面暖白涂层",
+        "base": [
+          0.78,
+          0.75,
+          0.68,
+          1
+        ],
+        "metal": 0.12,
+        "rough": 0.65
+      },
+      {
+        "name": "固定凹位_石墨",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "导轨检修盖_合金",
+        "base": [
+          0.22,
+          0.23,
+          0.24,
+          1
+        ],
+        "metal": 0.28,
+        "rough": 0.7
+      },
+      {
+        "name": "底抽屉警示锁扣_琥珀",
+        "base": [
+          0.72,
+          0.37,
+          0.06,
+          1
+        ],
+        "metal": 0.2,
+        "rough": 0.65
+      },
+      {
+        "name": "保留原抽屉顶垫细节_消除错误法线贴图",
+        "metal": 0,
+        "rough": 0.8,
+        "baseMap": 19
+      },
+      {
+        "name": "原高模六向颜色与金属粗糙重投影",
+        "metal": 1,
+        "rough": 1,
+        "baseMap": 20,
+        "orm": 21
+      },
+      {
+        "name": "复用顶盖暖白",
+        "base": [
+          0.55,
+          0.53,
+          0.49,
+          1
+        ],
+        "metal": 0.12,
+        "rough": 0.7
+      },
+      {
+        "name": "复用顶盖固定点合金",
+        "base": [
+          0.08,
+          0.09,
+          0.1,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.7
+      },
+      {
+        "name": "复用顶盖边界",
+        "base": [
+          0.11,
+          0.12,
+          0.13,
+          1
+        ],
+        "metal": 0.2,
+        "rough": 0.7
+      },
+      {
+        "name": "柜底深灰涂层",
+        "base": [
+          0.035,
+          0.04,
+          0.045,
+          1
+        ],
+        "metal": 0.15,
+        "rough": 0.75
+      },
+      {
+        "name": "底盖安装固定点",
+        "base": [
+          0.16,
+          0.17,
+          0.18,
+          1
+        ],
+        "metal": 0.5,
+        "rough": 0.65
+      },
+      {
+        "name": "原高模六向颜色与金属粗糙重投影",
+        "metal": 1,
+        "rough": 1,
+        "baseMap": 22,
+        "orm": 23
+      },
+      {
+        "name": "端边合金",
+        "base": [
+          0.32,
+          0.34,
+          0.36,
+          1
+        ],
+        "metal": 0.55,
+        "rough": 0.7
+      },
+      {
+        "name": "压力屏_低反射保留青色图案",
+        "base": [
+          0.12,
+          0.14,
+          0.14,
+          1
+        ],
+        "metal": 0,
+        "rough": 1,
+        "baseMap": 22,
+        "emissive": 22
+      },
+      {
+        "name": "旋钮石墨端盖",
+        "base": [
+          0.08,
+          0.08,
+          0.09,
+          1
+        ],
+        "metal": 0.15,
+        "rough": 0.75,
+        "baseMap": 22
+      },
+      {
+        "name": "前挡与左右侧窗_透明光学玻璃候选",
+        "base": [
+          0.82,
+          0.94,
+          1,
+          0.28
+        ],
+        "metal": 0,
+        "rough": 0.14,
+        "extensions": {
+          "KHR_materials_transmission": {
+            "transmissionFactor": 0.98
+          },
+          "KHR_materials_ior": {
+            "ior": 1.45
+          }
+        }
+      },
+      {
+        "name": "Optical laminated glass - nominal 80mm",
+        "base": [
+          0.96,
+          0.99,
+          1,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.065,
+        "extensions": {
+          "KHR_materials_transmission": {
+            "transmissionFactor": 1
+          },
+          "KHR_materials_ior": {
+            "ior": 1.48
+          },
+          "KHR_materials_volume": {
+            "thicknessFactor": 0.08,
+            "attenuationColor": [
+              0.66,
+              0.89,
+              0.91
+            ],
+            "attenuationDistance": 4
+          }
+        }
+      },
+      {
+        "name": "Retained cabin inner finish",
+        "base": [
+          0.75,
+          0.74,
+          0.68,
+          1
+        ],
+        "metal": 0.04,
+        "rough": 0.64
+      },
+      {
+        "name": "Cabin thickness reveal",
+        "base": [
+          0.12,
+          0.15,
+          0.17,
+          1
+        ],
+        "metal": 0.25,
+        "rough": 0.34
+      },
+      {
+        "name": "Glass edge low glare",
+        "base": [
+          0.81,
+          0.95,
+          0.97,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.14,
+        "extensions": {
+          "KHR_materials_transmission": {
+            "transmissionFactor": 1
+          },
+          "KHR_materials_ior": {
+            "ior": 1.12
+          }
+        }
+      },
+      {
+        "name": "Same source paint - repaired rear interface",
+        "base": [
+          0.6038273388553378,
+          0.6038273388553378,
+          0.5972017883637634,
+          1
+        ],
+        "metal": 0.6431372549019608,
+        "rough": 0.22,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "name": "Roof insert - opaque pure black",
+        "base": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "metal": 0,
+        "rough": 1,
+        "extensions": {
+          "KHR_materials_unlit": {}
+        }
+      },
+      {
+        "name": "Cabin painted thickness reveal",
+        "base": [
+          0.75,
+          0.74,
+          0.68,
+          1
+        ],
+        "metal": 0.04,
+        "rough": 0.72
+      }
+    ],
+    "images": 24
+  },
+  {
+    "file": "src/assets/models/current-ship-20261022/floor.glb",
+    "bytes": 101140,
+    "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9",
+    "materials": [
+      {
+        "name": "graphite powder coat",
+        "base": [
+          0.075,
+          0.088,
+          0.101,
+          1
+        ],
+        "metal": 0.12,
+        "rough": 0.72
+      },
+      {
+        "name": "brushed titanium",
+        "base": [
+          0.28,
+          0.31,
+          0.33,
+          1
+        ],
+        "metal": 0.65,
+        "rough": 0.38
+      },
+      {
+        "name": "rubber seal",
+        "base": [
+          0.013,
+          0.019,
+          0.024,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.9
+      },
+      {
+        "name": "muted safety amber",
+        "base": [
+          0.57,
+          0.32,
+          0.07,
+          1
+        ],
+        "metal": 0.05,
+        "rough": 0.7
+      }
+    ]
+  },
+  {
+    "file": "src/assets/models/current-ship-20261022/seat.glb",
+    "bytes": 3536020,
+    "sha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc",
+    "materials": [
+      {
+        "name": "seat_base",
+        "baseMap": 2,
+        "orm": 3,
+        "normal": 1,
+        "emissive": 0
+      },
+      {
+        "name": "seat_top",
+        "baseMap": 5,
+        "orm": 6,
+        "normal": 4
+      },
+      {
+        "name": "Interior_Titanium",
+        "base": [
+          0.23999999463558197,
+          0.28999999165534973,
+          0.3199999928474426,
+          1
+        ],
+        "metal": 0.699999988079071,
+        "rough": 0.3400000035762787
+      },
+      {
+        "name": "Interior_Graphite",
+        "base": [
+          0.024000000208616257,
+          0.03200000151991844,
+          0.039000000804662704,
+          1
+        ],
+        "metal": 0.3499999940395355,
+        "rough": 0.4300000071525574
+      },
+      {
+        "name": "Interior_Display",
+        "base": [
+          0.006000000052154064,
+          0.02500000037252903,
+          0.03799999877810478,
+          1
+        ],
+        "metal": 0.15000000596046448,
+        "rough": 0.27000001072883606
+      },
+      {
+        "name": "Interior_Cyan",
+        "base": [
+          0.02500000037252903,
+          0.6000000238418579,
+          0.7099999785423279,
+          1
+        ],
+        "metal": 0.10000000149011612,
+        "rough": 0.3499999940395355,
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 1.1359999825954432
+          }
+        }
+      },
+      {
+        "name": "Interior_Amber",
+        "base": [
+          0.6600000262260437,
+          0.30000001192092896,
+          0.054999999701976776,
+          1
+        ],
+        "metal": 0.15000000596046448,
+        "rough": 0.44999998807907104
+      },
+      {
+        "name": "Interior_Titanium.001",
+        "base": [
+          0.23999999463558197,
+          0.28999999165534973,
+          0.3199999928474426,
+          1
+        ],
+        "metal": 0.699999988079071,
+        "rough": 0.3400000035762787
+      },
+      {
+        "name": "Interior_Titanium.002",
+        "base": [
+          0.23999999463558197,
+          0.28999999165534973,
+          0.3199999928474426,
+          1
+        ],
+        "metal": 0.699999988079071,
+        "rough": 0.3400000035762787
+      },
+      {
+        "name": "Interior_Floor.003",
+        "base": [
+          0.12999999523162842,
+          0.1599999964237213,
+          0.18000000715255737,
+          1
+        ],
+        "metal": 0.20000000298023224,
+        "rough": 0.6499999761581421
+      }
+    ],
+    "images": 7
+  },
+  {
+    "file": "src/assets/models/current-ship-20261022/crew.glb",
+    "bytes": 60165248,
+    "sha256": "e218554e4de456f6000caef71b174517407a8070e346cccfda38a870f497c1f8",
+    "materials": [
+      {
+        "name": "mat0",
+        "metal": 0,
+        "baseMap": 0
+      }
+    ],
+    "images": 1
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/crew-rocketbox.glb",
+    "bytes": 42961724,
+    "sha256": "d269783834d89bde89b2d51379270be26c4f9b67bed5a724943e83fa825191a1",
+    "materials": [
+      {
+        "name": "f154_body",
+        "metal": 0,
+        "rough": 0.82,
+        "baseMap": 0,
+        "normal": 1,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularFactor": 1,
+            "specularColorTexture": {
+              "index": 2
+            }
+          }
+        }
+      },
+      {
+        "name": "f154_head",
+        "metal": 0,
+        "rough": 0.68,
+        "baseMap": 3,
+        "normal": 4,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularFactor": 1,
+            "specularColorTexture": {
+              "index": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "f154_opacity",
+        "metal": 0,
+        "rough": 0.68,
+        "baseMap": 6
+      }
+    ],
+    "images": 7
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/sleep-v1.glb",
+    "bytes": 36572488,
+    "sha256": "f08714436a78af303f8e98a36ca72d6b471acddc059aa90ce3665511480cfbb1",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    ],
+    "images": 3
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/work-v1.glb",
+    "bytes": 44027988,
+    "sha256": "d64231e00e263f87be8db91a88606e4a6c22a49bf1fc9767aa08b410c6d64596",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    ],
+    "images": 3
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/locker-v1.glb",
+    "bytes": 44336596,
+    "sha256": "efe13e4c72a61435d725eeb1a913cc449ea1549ab8fbc42c8219ab0838e41c37",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    ],
+    "images": 3
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/starboard-liner-v1.glb",
+    "bytes": 30319820,
+    "sha256": "7f5103dadb5bdb49980687d8e0962c7af6628bd66dec0deb4e328bc3b4bea166",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    ],
+    "images": 3
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/liner-v2.glb",
+    "bytes": 31273004,
+    "sha256": "d097f3741f9b1e0f39e3b54093aa1410230d9f3aaed195f9dd4a59ee9901613d",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      }
+    ],
+    "images": 3
+  },
+  {
+    "file": "src/assets/models/microgravity-cabin-20261025/inner-airlock-closed-v7.glb",
+    "bytes": 27251848,
+    "sha256": "089f763a67afa334ddf3d95dd30c3b386bff1813c63220a17edf44c9fdcb1c0a",
+    "materials": [
+      {
+        "name": "Material.001",
+        "baseMap": 1,
+        "orm": 2,
+        "normal": 0,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "name": "Authorized_InnerDoor_Edge_Cap",
+        "base": [
+          0.09000000357627869,
+          0.11999999731779099,
+          0.125,
+          1
+        ],
+        "metal": 0.41999998688697815,
+        "rough": 0.5699999928474426
+      },
+      {
+        "name": "Ivory_Structural_Perimeter",
+        "base": [
+          0.6399999856948853,
+          0.6499999761581421,
+          0.6000000238418579,
+          1
+        ],
+        "metal": 0.2800000011920929,
+        "rough": 0.6200000047683716
+      },
+      {
+        "name": "InnerDoor_Seal_Rubber",
+        "base": [
+          0.012000000104308128,
+          0.019999999552965164,
+          0.02199999988079071,
+          1
+        ],
+        "metal": 0,
+        "rough": 0.8299999833106995
+      }
+    ],
+    "images": 3
+  }
+]

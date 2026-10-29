@@ -1,0 +1,26 @@
+[
+  {
+    "file": "aligned-rest-bed3-front.png",
+    "state": "3号床 · resting\n时间 3.600 秒 / 216帧\n人物约束点 -2.3900, -0.0800, -1.1046\n已进入睡袋，F 解除约束\n镜头 front：0.900, -0.000, -1.065"
+  },
+  {
+    "file": "aligned-rest-bed3-right.png",
+    "state": "3号床 · resting\n时间 3.600 秒 / 216帧\n人物约束点 -2.3900, -0.0800, -1.1046\n已进入睡袋，F 解除约束\n镜头 right：0.150, 0.000, 1.095"
+  },
+  {
+    "file": "aligned-rest-bed3-left.png",
+    "state": "3号床 · resting\n时间 3.600 秒 / 216帧\n人物约束点 -2.3900, -0.0800, -1.1046\n已进入睡袋，F 解除约束\n镜头 left：0.150, 0.000, -3.305"
+  },
+  {
+    "file": "aligned-rest-bed1-right.png",
+    "state": "1号床 · resting\n时间 3.600 秒 / 216帧\n人物约束点 -2.3900, -0.0800, 2.8541\n已进入睡袋，F 解除约束\n镜头 right：0.750, 0.000, 3.754"
+  },
+  {
+    "file": "aligned-entry-mid-right.png",
+    "state": "2号床 · docking\n时间 2.100 秒 / 126帧\n人物约束点 -1.7601, -0.0725, 0.8707\n抓握中，手臂吸收相对运动\n镜头 right：0.150, 0.000, 3.071"
+  },
+  {
+    "file": "aligned-exit-mid-right.png",
+    "state": "2号床 · docking\n时间 5.000 秒 / 300帧\n人物约束点 -1.7601, -0.0725, 0.8707\n正在解除设备约束\n镜头 right：0.150, 0.000, 3.071"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "currentTime": 27.798,
+    "duration": 27.798,
+    "ended": true,
+    "error": null,
+    "height": 900,
+    "id": "actual-video",
+    "paused": true,
+    "readyState": 4,
+    "width": 1600
+  },
+  {
+    "currentTime": 59.945,
+    "duration": 59.945,
+    "ended": true,
+    "error": null,
+    "height": 900,
+    "id": "slow-video",
+    "paused": true,
+    "readyState": 4,
+    "width": 1600
+  }
+]

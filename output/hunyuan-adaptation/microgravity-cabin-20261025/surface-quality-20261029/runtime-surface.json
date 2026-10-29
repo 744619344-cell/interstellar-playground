@@ -1,0 +1,15 @@
+{
+  "refined": true,
+  "variants": {
+    "original": 26,
+    "paint": 6,
+    "metal": 2,
+    "fabric": 3,
+    "sleep": 1,
+    "equipment": 3,
+    "skin": 2
+  },
+  "samplers": 32,
+  "numericalMaps": 7,
+  "fallbacks": 0
+}

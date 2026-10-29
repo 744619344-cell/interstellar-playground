@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内舱质感返修 · 实际游戏对比</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101a20;color:#e0e7e9;font:16px/1.7 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:32px}h1{font-size:30px;margin:4px 0 12px}h2{font-size:21px;margin:30px 0 10px}p{max-width:1000px}a{color:#8bdddf}small,.muted{color:#a6bbc3}.tag{color:#e0b87a}nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}button,nav a{border:1px solid #41606d;background:#1e333d;border-radius:7px;color:#deedf1;padding:9px 16px;font:inherit;text-decoration:none;cursor:pointer}button[aria-pressed=true]{background:#205b68;border-color:#79d4dc}.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0}figcaption{margin:5px 0 9px}img{display:block;width:100%;border:1px solid #3d505a;border-radius:8px}table{width:100%;border-collapse:collapse;text-align:left}th,td{border-bottom:1px solid #354852;padding:12px;vertical-align:top}th{color:#9edade}.notice{border-left:3px solid #dfaf64;padding:10px 18px;background:#202d33}.links{display:flex;gap:16px;flex-wrap:wrap}@media(max-width:850px){main{padding:18px}.compare{grid-template-columns:1fr}table{font-size:14px}}
+</style><main>
+<small>2026-10-29 · P3-R01 · 桌面 Web · 本地候选</small>
+<h1>先修正材质与光，再判断资产本身</h1>
+<p class="notice"><strong>当前仍未达到 3A 视觉质量，整体验收未通过。</strong>本轮已接入主场景的运行时材质、照明、接触遮蔽与人物投影改进。原模型、贴图文件、人物比例和绑定保持；下方是实际游戏截图，不是设计效果图。</p>
+<nav><a href="/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2">进入当前候选</a><a href="/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&surface=source">进入原渲染对照</a></nav>
+<h2>同机位对比</h2>
+<p class="muted">三组均为 1280 × 720。使用同一初始扶手、原人物姿态、相机距离和俯仰；正向 yaw 0，左侧 1.57，反向 3.14。暂停后正常鼠标拖拽观察，没有设置人物坐标、缩放人物或隐藏缺陷。眼部微动时刻可能不同。</p>
+<nav aria-label="对比机位"><button aria-pressed="true" data-view="side">睡眠舱侧面</button><button aria-pressed="false" data-view="aft">人物与后舱</button><button aria-pressed="false" data-view="forward">前舱与设备</button></nav>
+<div class="compare"><figure><figcaption>原渲染：高光刺眼，部分白色模块呈镜面</figcaption><a id="before-link" href="before-side.png"><img id="before" src="before-side.png" alt="改进前睡眠舱侧面实际游戏截图"></a></figure><figure><figcaption>本轮候选：哑光涂层、布料层次与接触遮蔽</figcaption><a id="after-link" href="after-side.png"><img id="after" src="after-side.png" alt="改进后睡眠舱侧面实际游戏截图"></a></figure></div>
+<p class="muted">点击图片查看原图。候选灯光并非简单整体调暗：舱内降低无差别补光，增加局部冷白主光；船外使用独立强度。</p>
+<h2>本轮实际修正</h2>
+<table><thead><tr><th>查到的问题</th><th>落实的改变</th></tr></thead><tbody>
+<tr><td>当前装配绕过既有内饰材质分区和接触遮蔽路径。</td><td>按涂层、布料、皮肤、设备混合图集与金属分配独立运行时材质副本；接回已有 SAO 和输出色彩处理。</td></tr>
+<tr><td>多件来源的 specularColorFactor 为 2；左侧内衬金属通道中位数为 247/255。</td><td>限制异常镜面反射；另建数值 ORM 副本保留像素变化，降低涂层金属感、增加布料粗糙度。颜色与法线贴图没有重绘。</td></tr>
+<tr><td>五件混元 ORM 的 AO 红通道全为 255，没有独立遮蔽信息。</td><td>使用屏幕空间接触遮蔽补足边框、扶手与装配接触层次；仅人物投射动态阴影，避免所有高密度模块重复投影。</td></tr>
+<tr><td>近景统一压到 1K，斜视细节容易发糊。</td><td>微重力模块按有限 2K 预算解码，采样副本使用各向异性；原文件与 UV 约定保持。</td></tr>
+<tr><td>新增渲染资源可能在退出/失败时残留。</td><td>派生材质/数值贴图/阴影目标归属明确；恢复源材质和网格标志；法线预通道异常时恢复目标、颜色、阴影开关和场景 override。</td></tr>
+</tbody></table>
+<h2>仍阻碍 3A 质感的资产问题</h2>
+<table><thead><tr><th>现象</th><th>后续资产制作应解决的内容</th></tr></thead><tbody>
+<tr><td>硬框边缘波浪、鼓包与细碎噪点仍可见。</td><td>先按真实尺度确认统一造型与接口，再获得合格来源模型；几何形状问题无法靠材质消除。需要具体制作范围，不能擅自重建。</td></tr>
+<tr><td>同一图集混有布料、金属和涂层；颜色中烘焙了高光、阴影和脏点。</td><td>需要清洁的颜色/法线/粗糙度/金属度/遮蔽数据及可靠材质分区。当前数值修正仍是折中。</td></tr>
+<tr><td>人物制服仍写着 PARAMEDIC，脸、头发与舱内风格不统一。</td><td>成熟角色提供了正常比例和绑定，但不是最终宇航员美术；服装统一、皮肤/头发精修与专业动作仍待制作和视觉验收。</td></tr>
+<tr><td>宇航服来源只有单张颜色图；地板部分材料只有常数。</td><td>缺失的高质量表面细节需要资产制作，不能靠提高光照或滤镜凭空补齐。</td></tr>
+<tr><td>当前源模型装配下载约 435 MB，多个大文件和主代码包仍重。</td><td>后续需要分阶段加载、压缩及明确的纹理/三角形预算。桌面 Web 不等于可以忽略显存、冷加载与帧率。</td></tr>
+</tbody></table>
+<h2>验证边界</h2>
+<p>最终本轮完整回归 <strong>355 通过、0 失败</strong>，类型检查与生产构建通过。真实浏览器确认 7 张派生数值图、32 个采样副本、0 个回退；14 份保护模型哈希保持。工程通过不等于美术通过。</p>
+<p id="performance" class="notice">首版全模块投影的稳定采样曾降到约 40.4 FPS / 1% low 18.7，随后收窄为人物投影。最终生产版同一反向机位、各最近300帧：原渲染49.4 FPS / low 27.8，候选41.5 FPS / low 27.6，候选平均帧率约低16%。候选正常移动到服舱后采样49.4 FPS，仅代表另一视点。当前没有稳定60 FPS或目标设备20分钟性能通过结论；可用上方原渲染对照回退。</p>
+<p>最终候选从初始扶手正常松手、D移动、W前移，到服舱出现F提示并实际打开/退出设备面板；终点无接触、线速度为零，没有途中设值或复位。<a href="device-smoke.png">设备入口实景</a>、<a href="interaction-smoke.json">正常路线读数</a>已保留；没有将本次短路线当完整EVA复验。</p>
+<p>本轮不宣称完整 EVA、所有设备、专业动作或整体视觉已通过。原气闸穿行失败停止点保持，未借本次质感调整绕过碰撞或门控。</p>
+<div class="links"><a href="review-record.json">本轮结果与实际采样</a><a href="source-audit.json">来源材质审计</a><a href="orm-audit.json">数值贴图审计</a><a href="source-hashes.json">14 份保护模型哈希</a><a href="before-state.json">原相机/人物读数</a><a href="after-state-final.json">候选相机/人物读数</a><a href="runtime-surface.json">实际运行材质统计</a></div>
+<h2>技术依据</h2>
+<p class="muted">标准 PBR 与数值贴图约定参考 <a href="https://threejs.org/docs/pages/MeshStandardMaterial.html">Three.js MeshStandardMaterial</a> 和 <a href="https://threejs.org/manual/pages/color-management.html">色彩管理说明</a>。本轮复用项目已有 Three.js 后处理，没有引入外部环境图、贴图、模型、依赖，也未上传、提交或部署。</p>
+</main><script>
+const names={side:'睡眠舱侧面',aft:'人物与后舱',forward:'前舱与设备'};
+document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{
+  const view=button.dataset.view;
+  document.querySelectorAll('[data-view]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  for(const phase of ['before','after']){const path=`${phase}-${view}.png`;document.getElementById(phase).src=path;document.getElementById(`${phase}-link`).href=path;document.getElementById(phase).alt=`${phase==='before'?'原渲染':'本轮候选'}${names[view]}实际游戏截图`;}
+}));
+</script></html>

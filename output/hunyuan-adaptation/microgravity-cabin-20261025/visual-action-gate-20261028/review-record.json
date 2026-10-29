@@ -1,0 +1,107 @@
+{
+  "implementation": [
+    "native upper thorax spine_01 alignment above source leg branch",
+    "relaxed arm axes solved after torso alignment",
+    "native eyelid rest blending"
+  ],
+  "date": "2026-10-28",
+  "protected": "source-hashes.json",
+  "profile": "sleepFit=v5&sleepPose=v2",
+  "engineering": {
+    "typecheck": "passed",
+    "actualCabin": "all three source berths; original rail inertial cancellation retry; target positions, pause/rebuild, exit, regrasp",
+    "seconds": 88.4556017,
+    "skinAndRig": "native leg branch positions, bone translations, source arrays, skin edge and head/hand continuity regression",
+    "failed": 0,
+    "tests": 319,
+    "buildPages": "passed; 6.79s; existing large chunk warning"
+  },
+  "mediaLimits": [
+    "WebGL canvas only",
+    "no HUD or audio",
+    "separate HUD screenshots",
+    "slow diagnostic uses source bedside start"
+  ],
+  "experiments": [
+    {
+      "name": "first spine alignment",
+      "result": "rejected",
+      "reason": "native thighs are children of spine; moved foot sample6653 into source wall"
+    },
+    {
+      "name": "upper thorax after arm pose",
+      "result": "rejected",
+      "reason": "rotated posed hands toward source wall"
+    },
+    {
+      "name": "upper thorax before relaxed arms",
+      "result": "candidate",
+      "reason": "all three berth and inertial route regressions pass"
+    }
+  ],
+  "limits": [
+    "source medical uniform and original texture detail remain",
+    "preset soft bag pose, not cloth physics",
+    "full EVA, target device, cold load,20-minute performance and remote phone delivery not accepted",
+    "this turn does not claim a new isolated performance acceptance"
+  ],
+  "preserved": [
+    "actor root constraints",
+    "character proportions and native bind lengths",
+    "all geometry/weights/source files",
+    "head pad/back pad/frame",
+    "source collision and contact limits"
+  ],
+  "geometryChanges": false,
+  "status": "changes_requested: user visual acceptance pending",
+  "cameras": {
+    "diagnostic": "fixed 53 degree, 1280x720 CSS, 1.25 pixel ratio, source lighting .87 exposure",
+    "limits": "fixed diagnostic start is not continuous gameplay proof",
+    "fallback": "source ray obstruction selects smaller side angle for berth1; original blocked screenshot retained"
+  },
+  "task": "P3-R01",
+  "browserRoute": {
+    "partialLimits": "automatic 60s stop / did not cover entire route; preserved separately, not concatenated",
+    "entry": "production local build with explicit sleepFit=v5&sleepPose=v2",
+    "states": "production-route-states.json",
+    "positionOverride": false,
+    "route": "initial real rail push -> Escape cancel -> retry -> resting -> pause/resume -> exit -> X regrasp",
+    "partialRecordings": [
+      "production-route-first-max60.webm",
+      "production-route-second-entry-only.webm"
+    ],
+    "video": "production-aligned-route.webm",
+    "bytes": 5125899
+  },
+  "slowDiagnostic": {
+    "rate": 0.25,
+    "start": "source bedside fixture, explicitly labeled",
+    "bytes": 10109317,
+    "coverage": "entry and fixed rest only; automatic 60s stop",
+    "video": "diagnostic-quarter-side.webm"
+  },
+  "playback": [
+    {
+      "currentTime": 27.798,
+      "duration": 27.798,
+      "ended": true,
+      "error": null,
+      "height": 900,
+      "id": "actual-video",
+      "paused": true,
+      "readyState": 4,
+      "width": 1600
+    },
+    {
+      "currentTime": 59.945,
+      "duration": 59.945,
+      "ended": true,
+      "error": null,
+      "height": 900,
+      "id": "slow-video",
+      "paused": true,
+      "readyState": 4,
+      "width": 1600
+    }
+  ]
+}
