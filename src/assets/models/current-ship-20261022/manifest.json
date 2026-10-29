@@ -1,0 +1,80 @@
+{
+  "version": "cabin-motion-walls-20261025",
+  "geometryCreatedOrModified": true,
+  "authorizedGeometryScope": "Previously authorized j16 seams, w3 side-wall infills, black insert, shell/glazing thickness, and d2 aft door. Existing g12 bytes reused; no geometry authored in this integration.",
+  "visualAccepted": false,
+  "limitations": [
+    "Source hull joints/folds remain changes_requested; previous j2 is retained as hull.glb",
+    "rear doorway opens onto the existing floor end; no new corridor or EVA passage",
+    "existing astronaut rig prototype; poses reuse existing bones, weight and hose limitations remain"
+  ],
+  "assets": {
+    "hull": {
+      "source": "output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/ship-glass-depth-g12.glb",
+      "file": "hull-g12.glb",
+      "bytes": 59312672,
+      "sha256": "b2a0f9e9c57ec0ba95f5272c2772bc99b4be77349267bb4ad43fb16aa407a2e0"
+    },
+    "crew": {
+      "source": "assets-source/blender/astronaut/external-abrazafarolas/warm-white-rig-prototype.glb",
+      "file": "crew.glb",
+      "bytes": 60165248,
+      "sha256": "e218554e4de456f6000caef71b174517407a8070e346cccfda38a870f497c1f8"
+    },
+    "floor": {
+      "source": "output/hunyuan-adaptation/master-design-20261009/modules-v6/cockpit-floor.glb",
+      "file": "floor.glb",
+      "bytes": 101140,
+      "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9"
+    },
+    "folding-berth": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/folding-berth.glb",
+      "file": "folding-berth.glb",
+      "bytes": 1788912,
+      "sha256": "41fad8b02986f2e72b3445c1bcecf6e0f73320381bf5579f010e4c07b30753ea"
+    },
+    "rear-workbench": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/rear-workbench.glb",
+      "file": "rear-workbench.glb",
+      "bytes": 966604,
+      "sha256": "b408bea04b685c7a0a9c66cd3cede47d4ad6c52ff80b57b20f3c37ff776f59d8"
+    },
+    "storage-cabinet": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/storage-cabinet.glb",
+      "file": "storage-cabinet.glb",
+      "bytes": 1092580,
+      "sha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461"
+    },
+    "dual-suit-locker": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/dual-suit-locker.glb",
+      "file": "dual-suit-locker.glb",
+      "bytes": 1001964,
+      "sha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375"
+    },
+    "seat": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/seat.glb",
+      "file": "seat.glb",
+      "bytes": 3536020,
+      "sha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc"
+    },
+    "main-console": {
+      "source": "output/hunyuan-adaptation/assembly-20261008/optimized-modules-v2/main-console.glb",
+      "file": "main-console.glb",
+      "bytes": 1042820,
+      "sha256": "d3965e3b490cab12957103b9061a484d6e88c13079ea59b2b19d0c63c8c01d38"
+    },
+    "aft-bulkhead": {
+      "source": "output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/aft-door-d2.glb",
+      "file": "aft-door-d2.glb",
+      "bytes": 33407652,
+      "sha256": "6b27ee144d19308dc78160df3c8bef6f3e032a2bf4804ddf6a780cc1c2f9ce21"
+    }
+  },
+  "retainedHull": {
+    "source": "output/hunyuan-adaptation/interior-fit-hunyuan-20261018/thickness-material-20261021/ship-joint-j2.glb",
+    "file": "hull.glb",
+    "bytes": 29191280,
+    "sha256": "75dc3bb69f1c7d5ab22a8c7de2f7cb4eb0e8f0b6b94e15bc4d4df6cd2645413b"
+  },
+  "runtimeIntegrationCreatesGeometry": false
+}
