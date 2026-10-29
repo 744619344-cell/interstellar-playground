@@ -1,0 +1,15 @@
+Browser tab: 1, Title: "我们的宇宙", URL: "http://127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1".
+0 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1
+	1 container
+		2 image 太阳系画布
+		3 container
+			8 text 舱内  /  辅助漂浮
+			4 button (collapsed) Tab 菜单, Secondary Actions: Expand
+				9 text Tab
+				10 text 菜单
+			5 checkbox 暂停, Value: 0
+		16 container 附近设备交互
+			17 text 前方有结构；换方向退出，松键缓停，B制动
+		15 text WASD 移动 · 右键环视 · Tab 菜单
+
+The focused UI element is 2 image 太阳系画布

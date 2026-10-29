@@ -1,0 +1,43 @@
+Browser tab: 9, Title: "我们的宇宙", URL: "[local-preview]/interstellar-playground/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1".
+1 AXWebArea 我们的宇宙, URL: 127.0.0.1:4173/interstellar-playground/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1
+	2 container
+		3 image 太阳系画布
+		129 container 附近设备交互
+			197 button F 查看设备
+				198 text F
+				199 text 查看设备
+				237 container
+					238 text 舱壁服务与储物面板  · 0.4 m
+			135 text 正在查看固定维护工位
+			136 text F / X 抓握或松手 · WASD + Z/C 选推离方向 · Space 推离 · 方向键调整姿态 · Q/E 翻滚 · V 挥手
+		179 container 漂移惯性观测
+			180 text 漂移惯性观测
+			181 button 收起观测
+			182 text 舱内漂移观测完成，已生成模拟数据报告
+			183 progress indicator 3
+			184 container
+				185 text 28  个样本 ·  3.02  s · 船舱坐标系
+			190 container 实际模拟遥测速率随时间曲线
+			191 container
+				192 text 位移  1.569  m
+				193 text 速率  0.520 – 0.520  m/s
+				194 text 匀速预测残差  0.0000  m
+			195 link 保存实验数据 CSV
+				196 text 保存实验数据 CSV
+			187 text 记录当前游戏模拟数据。未接触、未系绳且飞船稳定时有效；未模拟空气阻力与轨道重力梯度。
+		44 container 飞船驾驶
+			45 text 舱内行动
+			46 button (collapsed) 展开操作, Secondary Actions: Expand
+			47 container 飞船模型
+				48 text 飞船已就绪 · 当前模型待后续完善
+			137 container 舱内动作提示
+				138 text 舱门 气闸内门已密合  ·  抓握
+		20 container
+			22 button (collapsed) 说明, Secondary Actions: Expand
+			23 checkbox 继续, Value: 1
+			24 button 音乐
+			25 button 返回全景
+	235 button (collapsed) 本地帧时间诊断 · 未记录, Secondary Actions: Expand
+		236 text 本地帧时间诊断 · 未记录
+
+The focused UI element is 23 checkbox 继续, Value: 1

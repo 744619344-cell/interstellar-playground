@@ -1,0 +1,475 @@
+{
+  "method": "Explicit actual-source device fixtures, not a continuous main-game route",
+  "results": [
+    {
+      "grip": "micro-starboard-liner:rail:0",
+      "position": {
+        "x": 1.5881962065563298,
+        "y": -0.9127596964380146,
+        "z": -0.15180573781195703
+      },
+      "initialPrompt": {
+        "id": "workbench",
+        "deviceId": "micro-work",
+        "title": "固定维护工位",
+        "verb": "查看设备",
+        "key": "F",
+        "distance": 0.475844067412197,
+        "point": {
+          "x": 1.5881962065563298,
+          "y": -0.6127596964380146,
+          "z": -0.5211667759458992
+        }
+      },
+      "panel": {
+        "id": "micro-work",
+        "kind": "workbench",
+        "title": "固定维护工位",
+        "description": "领用检修工具包后，抓稳工位执行例行巡检",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:0",
+        "point": {
+          "x": 2.20819620655633,
+          "y": -0.6927596964380146,
+          "z": -0.15180573781195716
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-work",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-starboard-liner",
+          "title": "舱壁服务与储物面板"
+        },
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-starboard-liner:rail:1",
+      "position": {
+        "x": 1.5881961304383525,
+        "y": 0.13101378582930343,
+        "z": -0.15180573781195703
+      },
+      "initialPrompt": {
+        "id": "workbench",
+        "deviceId": "micro-work",
+        "title": "固定维护工位",
+        "verb": "查看设备",
+        "key": "F",
+        "distance": 0.475844067412197,
+        "point": {
+          "x": 1.5881961304383525,
+          "y": 0.4310137858293034,
+          "z": -0.5211667759458992
+        }
+      },
+      "panel": {
+        "id": "micro-work",
+        "kind": "workbench",
+        "title": "固定维护工位",
+        "description": "领用检修工具包后，抓稳工位执行例行巡检",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:1",
+        "point": {
+          "x": 2.2081961304383526,
+          "y": 0.3510137858293034,
+          "z": -0.15180573781195716
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-work",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-starboard-liner",
+          "title": "舱壁服务与储物面板"
+        },
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-starboard-liner:rail:2",
+      "position": {
+        "x": 1.4320463345316137,
+        "y": -0.9088684640779842,
+        "z": 1.8818507208088444
+      },
+      "initialPrompt": {
+        "id": "locker",
+        "deviceId": "micro-locker",
+        "title": "宇航服收纳舱",
+        "verb": "查看装备 · R 穿脱",
+        "key": "F",
+        "distance": 0.29999999999999993,
+        "point": {
+          "x": 1.4320463345316137,
+          "y": -0.6088684640779842,
+          "z": 1.8818507208088444
+        }
+      },
+      "panel": {
+        "id": "micro-locker",
+        "kind": "locker",
+        "title": "宇航服收纳舱",
+        "description": "宇航服收纳与换装工位，R 穿脱；出舱前仍需装备检查",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:2",
+        "point": {
+          "x": 2.052046334531614,
+          "y": -0.6888684640779842,
+          "z": 1.8818507208088442
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-locker",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-locker",
+          "title": "宇航服收纳舱"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-starboard-liner:rail:3",
+      "position": {
+        "x": 1.492295507875781,
+        "y": 0.13062798379240667,
+        "z": 1.917665214328678
+      },
+      "initialPrompt": {
+        "id": "locker",
+        "deviceId": "micro-locker",
+        "title": "宇航服收纳舱",
+        "verb": "查看装备 · R 穿脱",
+        "key": "F",
+        "distance": 0.29999999999999993,
+        "point": {
+          "x": 1.492295507875781,
+          "y": 0.43062798379240663,
+          "z": 1.917665214328678
+        }
+      },
+      "panel": {
+        "id": "micro-locker",
+        "kind": "locker",
+        "title": "宇航服收纳舱",
+        "description": "宇航服收纳与换装工位，R 穿脱；出舱前仍需装备检查",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:3",
+        "point": {
+          "x": 2.112295507875781,
+          "y": 0.35062798379240667,
+          "z": 1.9176652143286779
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-locker",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-locker",
+          "title": "宇航服收纳舱"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-work:rail:0",
+      "position": {
+        "x": 1.0055407339538642,
+        "y": -0.597879907772505,
+        "z": -1.5925139442381595
+      },
+      "initialPrompt": {
+        "id": "workbench",
+        "deviceId": "micro-work",
+        "title": "固定维护工位",
+        "verb": "查看设备",
+        "key": "F",
+        "distance": 0.5657751090084822,
+        "point": {
+          "x": 1.4852296685495665,
+          "y": -0.297879907772505,
+          "z": -1.5925139442381595
+        }
+      },
+      "panel": {
+        "id": "micro-work",
+        "kind": "workbench",
+        "title": "固定维护工位",
+        "description": "领用检修工具包后，抓稳工位执行例行巡检",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-work:rail:0",
+        "point": {
+          "x": 1.6255407339538641,
+          "y": -0.377879907772505,
+          "z": -1.5925139442381597
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-work",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-work:rail:1",
+      "position": {
+        "x": 1.0064998770309264,
+        "y": -0.5971629681204811,
+        "z": -0.6482285582409272
+      },
+      "initialPrompt": {
+        "id": "workbench",
+        "deviceId": "micro-work",
+        "title": "固定维护工位",
+        "verb": "查看设备",
+        "key": "F",
+        "distance": 0.5649621343837838,
+        "point": {
+          "x": 1.4852296685495665,
+          "y": -0.2971629681204811,
+          "z": -0.6482285582409272
+        }
+      },
+      "panel": {
+        "id": "micro-work",
+        "kind": "workbench",
+        "title": "固定维护工位",
+        "description": "领用检修工具包后，抓稳工位执行例行巡检",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-work:rail:1",
+        "point": {
+          "x": 1.6264998770309265,
+          "y": -0.3771629681204811,
+          "z": -0.6482285582409273
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-work",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-starboard-liner:rail:1 offset 0",
+      "position": {
+        "x": 1.5881961304383525,
+        "y": 0.13101378582930343,
+        "z": -0.15180573781195703
+      },
+      "panel": {
+        "id": "micro-starboard-liner",
+        "kind": "storage",
+        "title": "舱壁服务与储物面板",
+        "description": "检修工具包领用归还、舱内照明与船载状态记录",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:1",
+        "point": {
+          "x": 2.2081961304383526,
+          "y": 0.3510137858293034,
+          "z": -0.15180573781195716
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-starboard-liner",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-starboard-liner",
+          "title": "舱壁服务与储物面板"
+        },
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    },
+    {
+      "grip": "micro-starboard-liner:rail:1 offset 0.15",
+      "position": {
+        "x": 1.5881961304383525,
+        "y": 0.13101378582930343,
+        "z": -0.001805737811957031
+      },
+      "panel": {
+        "id": "micro-starboard-liner",
+        "kind": "storage",
+        "title": "舱壁服务与储物面板",
+        "description": "检修工具包领用归还、舱内照明与船载状态记录",
+        "checked": false
+      },
+      "contact": {
+        "id": "micro-starboard-liner:rail:1",
+        "point": {
+          "x": 2.2081961304383526,
+          "y": 0.3510137858293034,
+          "z": -0.15180573781195716
+        },
+        "normal": {
+          "x": -1,
+          "y": 0,
+          "z": 2.220446049250313e-16
+        }
+      },
+      "context": {
+        "id": "micro-starboard-liner",
+        "near": true,
+        "held": true,
+        "ready": true,
+        "pressure": "cabin",
+        "doorsClosed": true,
+        "suit": "stowed",
+        "oxygen": 1,
+        "battery": 1,
+        "tether": false
+      },
+      "nearby": [
+        {
+          "id": "micro-starboard-liner",
+          "title": "舱壁服务与储物面板"
+        },
+        {
+          "id": "micro-work",
+          "title": "固定维护工位"
+        }
+      ],
+      "notice": "抓握中，手臂吸收相对运动"
+    }
+  ]
+}

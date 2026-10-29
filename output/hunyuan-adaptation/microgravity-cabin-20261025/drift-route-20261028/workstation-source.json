@@ -1,0 +1,25 @@
+{
+  "method": "Read-only source world bounding box in cabin metres. Not a flat mounting surface or a clearance pass.",
+  "id": "micro-work",
+  "min": {
+    "x": 1.4852296685495665,
+    "y": -1.4799999999999998,
+    "z": -1.7188332240541002
+  },
+  "max": {
+    "x": 2.1490501141993525,
+    "y": 0.5700000000000001,
+    "z": -0.5211667759458992
+  },
+  "size": {
+    "x": 0.663820445649786,
+    "y": 2.05,
+    "z": 1.197666448108201
+  },
+  "proposedDeviceMillimeters": {
+    "width": 320,
+    "height": 240,
+    "depth": 120
+  },
+  "fit": "unverified; inspect actual source face and native hands before any 3D placement"
+}

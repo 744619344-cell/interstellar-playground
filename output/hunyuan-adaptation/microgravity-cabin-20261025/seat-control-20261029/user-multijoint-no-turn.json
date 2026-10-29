@@ -1,0 +1,15 @@
+{
+  "note": "Offline reconstructed original root and source initial pose, 0.6s sequential joint rotation then movement with fixed body yaw; not a runtime candidate or visual validation.",
+  "rotations": 36,
+  "poseRejected": 0,
+  "blocked": 30,
+  "distance72": 0.20056889042494402,
+  "along72": 0.2004489245231602,
+  "distance": 0.3456481169130038,
+  "along": 0.31255537106556114,
+  "end": {
+    "x": -0.45572782902808484,
+    "y": -0.7808878386357792,
+    "z": -3.891440399779973
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "note": "Exploratory finite search of frozen actual skin samples against source surfaces; no posed animation, changing door, dynamic contact, or actual gameplay execution.",
+  "step": 0.012,
+  "margin": 0.004,
+  "goal": [
+    0.33744716649666506,
+    0,
+    -0.9413444692690195
+  ],
+  "expanded": 2,
+  "blocked": 14,
+  "bestProgress": 0,
+  "found": false,
+  "elapsedMs": 15,
+  "path": []
+}

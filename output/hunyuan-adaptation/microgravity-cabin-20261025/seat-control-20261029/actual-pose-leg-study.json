@@ -1,0 +1,228 @@
+{
+  "note": "Offline local-joint rotation study against real source sweeps; visual quality and dynamic gameplay not validated.",
+  "sampleCount": 126,
+  "maxError": 0.000003496010364801912,
+  "averageError": 8.80532808642749e-7,
+  "baseline": {
+    "toward": 0,
+    "opposite": 0.2
+  },
+  "studies": [
+    {
+      "bone": "thigh_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "clear": true,
+      "toward": 0.013629354510331253,
+      "opposite": 0.2
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "clear": true,
+      "toward": 0.04228992735468451,
+      "opposite": 0.2
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "clear": true,
+      "toward": 0.01662312860846319,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "clear": true,
+      "toward": 0,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "clear": true,
+      "toward": 0,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "clear": true,
+      "toward": 0,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "clear": false,
+      "toward": null,
+      "opposite": null
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+Browser tab: 12, Title: "我们的宇宙", URL: "http://127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1&cabinContactProbe=1".
+0 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1&cabinContactProbe=1
+	1 container
+		2 image 太阳系画布
+		3 container
+			4 text 舱内  /  辅助漂浮
+			5 button (expanded) Tab 菜单, Secondary Actions: Collapse
+				6 text Tab
+				7 text 菜单
+			8 checkbox 暂停, Value: 0
+		9 text WASD 移动 · 右键环视 · Tab 菜单
+		10 container 舱内菜单
+			11 container
+				12 text 舱内菜单
+				13 button 关闭舱内菜单
+					14 text 关闭 
+					15 text Tab / Esc
+			16 container 菜单页面
+				17 checkbox 操作, Value: 0
+				18 checkbox 设备手册, Value: 0
+				19 checkbox 观测与日志, Value: 0
+				20 checkbox 诊断, Value: 1
+			21 container 运行诊断
+				22 container 宇航员位置
+					23 text 位置  -1.801 / 0.139 / 1.856
+				24 container 舱内运动诊断
+					25 text {
+  "controlMode": "assisted",
+  "float": {
+    "position": {
+      "x": -1.8010427848921495,
+      "y": 0.13869838620324523,
+      "z": 1.855599036667556
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "orientation": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "angularVelocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "contactSeconds": 0,
+    "notice": "已松手，保持惯性"
+  },
+  "blocked": false,
+  "posture": "floating",
+  "collisionProbe": {
+    "owner": "node_0",
+    "triangle": 47405,
+    "sample": 74,
+    "from": {
+      "x": -1.8010427101462112,
+      "y": 0.13873362690438226,
+      "z": 1.855595838017629
+    },
+    "point": {
+      "x": -2.062025229950187,
+      "y": 0.3759458974065808,
+      "z": 1.8486232426566147
+    },
+    "hit": {
+      "x": -2.0622201476617406,
+      "y": 0.37594043324884785,
+      "z": 1.8486237386151845
+    },
+    "normal": {
+      "x": 0.9999977690418436,
+      "y": -0.0021036759645252407,
+      "z": 0.00019094180174603542
+    },
+    "delta": {
+      "x": -0.0002923404343257996,
+      "y": -0.000008195223677481822,
+      "z": 7.43845915973651e-7
+    },
+    "identity": {
+      "mesh": "mesh_0",
+      "vertex": 2989,
+      "bone": "forearm_L"
+    }
+  },
+  "view": {
+    "yaw": 0,
+    "pitch": 0.22,
+    "position": {
+      "x": -1.8010427848921498,
+      "y": 1.0569280092841145,
+      "z": 3.904983680261828
+    },
+    "target": {
+      "x": -1.8010427848921498,
+      "y": 0.48869838620324524,
+      "z": 1.855599036667556
+    }
+  }
+}
+				26 container 舱门动作
+					27 text 门行程  0.000  · 目标  0  ·  无阻挡
+				28 container 渲染资源
+					29 text 纹理  88  · 几何  100  · 程序  62
+				30 container 表面材质诊断
+					31 text {
+  "refined": true,
+  "variants": {
+    "original": 26,
+    "paint": 6,
+    "metal": 2,
+    "fabric": 3,
+    "sleep": 1,
+    "equipment": 3,
+    "skin": 2
+  },
+  "samplers": 32,
+  "numericalMaps": 7,
+  "fallbacks": 0
+}
+				32 container 渲染帧率
+					33 text 最近  300  帧 · 平均  49.1  FPS · 1% low  27.7  FPS
+				34 container 图形后端
+					35 text ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025E2) Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+The focused UI element is 20 checkbox 诊断, Value: 1

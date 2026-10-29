@@ -1,0 +1,141 @@
+{
+  "started": "2026-10-28T02:01:03.662Z",
+  "ended": "2026-10-28T02:01:42.661Z",
+  "frames": 2220,
+  "activeSeconds": 38.98489999999997,
+  "averageFps": 56.945124907335966,
+  "onePercentLowFps": 50.350262697030466,
+  "longestFrameMs": 35.79999999998836,
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "pixelRatio": 1.25
+  },
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "averageCpuRenderSubmissionMs": 2.8131081081058427,
+  "averageDrawCallsPerFrame": 643.9504504504505,
+  "averageTrianglesPerFrame": 1907174.5405405406,
+  "resources": [
+    {
+      "path": "/interstellar-playground/assets/hull-g12.glb-DltjjsYu.gz",
+      "durationMs": 707.2999999998137,
+      "encodedBytes": 34421642,
+      "transferredBytes": 34421942
+    },
+    {
+      "path": "/interstellar-playground/assets/floor.glb-DwccUSxo.gz",
+      "durationMs": 11.900000000372529,
+      "encodedBytes": 17830,
+      "transferredBytes": 18130
+    },
+    {
+      "path": "/interstellar-playground/assets/seat.glb-D-pAnaRc.gz",
+      "durationMs": 129.40000000037253,
+      "encodedBytes": 3256550,
+      "transferredBytes": 3256850
+    },
+    {
+      "path": "/interstellar-playground/assets/main-console.glb-sE2P_2rp.gz",
+      "durationMs": 15.400000000372529,
+      "encodedBytes": 810883,
+      "transferredBytes": 811183
+    },
+    {
+      "path": "/interstellar-playground/assets/aft-door-d2.glb-Ca9MkHfg.gz",
+      "durationMs": 306.90000000037253,
+      "encodedBytes": 30843555,
+      "transferredBytes": 30843855
+    },
+    {
+      "path": "/interstellar-playground/assets/crew.glb-BL314ZGB.gz",
+      "durationMs": 300.29999999981374,
+      "encodedBytes": 34437242,
+      "transferredBytes": 34437542
+    },
+    {
+      "path": "/interstellar-playground/assets/liner-v2-CBNtUQWP.glb",
+      "durationMs": 93.20000000018626,
+      "encodedBytes": 31273004,
+      "transferredBytes": 31273304
+    },
+    {
+      "path": "/interstellar-playground/assets/sleep-v1-BwHRbaLC.glb",
+      "durationMs": 116,
+      "encodedBytes": 36572488,
+      "transferredBytes": 36572788
+    },
+    {
+      "path": "/interstellar-playground/assets/work-v1-DCbXw2H2.glb",
+      "durationMs": 116.09999999962747,
+      "encodedBytes": 44027988,
+      "transferredBytes": 44028288
+    },
+    {
+      "path": "/interstellar-playground/assets/locker-v1-BWsaDALl.glb",
+      "durationMs": 134.29999999981374,
+      "encodedBytes": 44336596,
+      "transferredBytes": 44336896
+    },
+    {
+      "path": "/interstellar-playground/assets/starboard-liner-v1-Buz52D13.glb",
+      "durationMs": 87.29999999981374,
+      "encodedBytes": 30319820,
+      "transferredBytes": 30320120
+    },
+    {
+      "path": "/interstellar-playground/assets/inner-airlock-closed-v7-DI4W_f-G.glb",
+      "durationMs": 77,
+      "encodedBytes": 27251848,
+      "transferredBytes": 27252148
+    },
+    {
+      "path": "/interstellar-playground/assets/liner-end-return-v1-B9r3EnJT.glb",
+      "durationMs": 57.59999999962747,
+      "encodedBytes": 21076060,
+      "transferredBytes": 21076360
+    },
+    {
+      "path": "/interstellar-playground/assets/crew-rocketbox-8MdvNRfN.glb",
+      "durationMs": 241.29999999981374,
+      "encodedBytes": 42961724,
+      "transferredBytes": 42962024
+    }
+  ],
+  "resourceSamples": [
+    {
+      "seconds": 0,
+      "geometries": 97,
+      "textures": 80,
+      "programs": 47,
+      "jsHeapBytes": 408169563
+    },
+    {
+      "seconds": 0,
+      "geometries": 97,
+      "textures": 80,
+      "programs": 47,
+      "jsHeapBytes": 408169563
+    },
+    {
+      "seconds": 30.013299999999987,
+      "geometries": 97,
+      "textures": 80,
+      "programs": 47,
+      "jsHeapBytes": 416953778
+    },
+    {
+      "seconds": 38.98489999999997,
+      "geometries": 97,
+      "textures": 80,
+      "programs": 47,
+      "jsHeapBytes": 427665383
+    }
+  ],
+  "visibility": [],
+  "limits": [
+    "RAF frame delivery on this local browser only",
+    "CPU render submission excludes GPU duration and collision/update work",
+    "No GPU byte measurement; object counters are not memory bytes",
+    "Cold-load timing and target-device acceptance remain separate"
+  ]
+}

@@ -1,0 +1,131 @@
+Browser tab: 11, Title: "我们的宇宙", URL: "http://127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1&cabinContactProbe=1".
+0 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1&cabinContactProbe=1
+	1 container
+		2 image 太阳系画布
+		3 container
+			4 text 舱内  /  辅助漂浮
+			5 button (expanded) Tab 菜单, Secondary Actions: Collapse
+				6 text Tab
+				7 text 菜单
+			8 checkbox 暂停, Value: 0
+		15 text WASD 移动 · 右键环视 · Tab 菜单
+		16 container 舱内菜单
+			17 container
+				18 text 舱内菜单
+				19 button 关闭舱内菜单
+					20 text 关闭 
+					21 text Tab / Esc
+			22 container 菜单页面
+				23 checkbox 操作, Value: 0
+				24 checkbox 设备手册, Value: 0
+				25 checkbox 观测与日志, Value: 0
+				26 checkbox 诊断, Value: 1
+			27 container 运行诊断
+				28 container 宇航员位置
+					29 text 位置  -1.408 / -0.566 / -4.830
+				30 container 舱内运动诊断
+					31 text {
+  "controlMode": "assisted",
+  "float": {
+    "position": {
+      "x": -1.4079938067659883,
+      "y": -0.5658415996569967,
+      "z": -4.830050074349763
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "orientation": {
+      "x": 0,
+      "y": -0.2699566553003542,
+      "z": 0,
+      "w": 0.9628724755953126
+    },
+    "angularVelocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "contactSeconds": 0,
+    "notice": "已松手，保持惯性"
+  },
+  "blocked": false,
+  "posture": "floating",
+  "collisionProbe": {
+    "owner": "seat",
+    "triangle": 5312,
+    "sample": 88,
+    "from": {
+      "x": -1.4079937143502943,
+      "y": -0.5658486255428126,
+      "z": -4.830122669757637
+    },
+    "point": {
+      "x": -1.2129097617266578,
+      "y": -1.1493972278104532,
+      "z": -4.83211417775131
+    },
+    "hit": {
+      "x": -1.2129096523152847,
+      "y": -1.1493971468572382,
+      "z": -4.83211332682481
+    },
+    "normal": {
+      "x": -0.9999196091603736,
+      "y": 0.012435530272639005,
+      "z": -0.002476449758058895
+    },
+    "delta": {
+      "x": 0.000009337255850949688,
+      "y": 0.000006908613422340615,
+      "z": 0.00007261876185982175
+    },
+    "identity": {
+      "mesh": "mesh_0",
+      "vertex": 5788,
+      "bone": "foot_R"
+    }
+  },
+  "view": {
+    "yaw": -1.9149999999999998,
+    "pitch": 0.22,
+    "position": {
+      "x": -2.1607280928712678,
+      "y": 0.005872603820524735,
+      "z": -5.099885464330182
+    },
+    "target": {
+      "x": -1.4079938067659883,
+      "y": -0.21584159965699667,
+      "z": -4.830050074349763
+    }
+  }
+}
+				32 container 舱门动作
+					33 text 门行程  0.000  · 目标  0  ·  无阻挡
+				34 container 渲染资源
+					35 text 纹理  88  · 几何  100  · 程序  64
+				36 container 表面材质诊断
+					37 text {
+  "refined": true,
+  "variants": {
+    "original": 26,
+    "paint": 6,
+    "metal": 2,
+    "fabric": 3,
+    "sleep": 1,
+    "equipment": 3,
+    "skin": 2
+  },
+  "samplers": 32,
+  "numericalMaps": 7,
+  "fallbacks": 0
+}
+				38 container 渲染帧率
+					39 text 最近  300  帧 · 平均  56.7  FPS · 1% low  54.5  FPS
+				40 container 图形后端
+					41 text ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025E2) Direct3D11 vs_5_0 ps_5_0, D3D11)
+
+The focused UI element is 2 image 太阳系画布

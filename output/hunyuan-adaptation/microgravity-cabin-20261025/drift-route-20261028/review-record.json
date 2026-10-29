@@ -1,0 +1,112 @@
+{
+  "task": "P3-R01",
+  "date": "2026-10-28",
+  "overall": "changes_requested",
+  "scope": "Original source work grip release and continuous cabin telemetry round trip; no geometry edits",
+  "fix": {
+    "file": "src/features/space-exploration/rendering/spacecraft/microgravityCabinRuntime.ts",
+    "cause": "Space push removed contact without starting existing withdrawal. Left forearm vertex2989 hit original starboard liner triangle22473.",
+    "change": "Start original withdrawal when contact is removed by motion; unchanged source meshes, reach thresholds, collision margins and withdrawal parameters."
+  },
+  "engineering": {
+    "tests": 336,
+    "passed": 336,
+    "failed": 0,
+    "suites": 3,
+    "durationSeconds": 138.3473648,
+    "typecheck": "passed",
+    "buildPagesSeconds": 4.63,
+    "largeChunkWarning": "existing",
+    "protectedHashes": 6
+  },
+  "runtime": {
+    "entry": "/interstellar-playground/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1",
+    "method": "Normal native keyboard/AX controls only; explicit read-only DOM motion diagnostics assist timing; no position sets or middle reset.",
+    "stages": "initial source rail -> work -> arm/cancel/rearm -> actual push -> pause/resume -> completed observation -> port rail3 -> actual push -> starboard rail1 -> work",
+    "events": "production-final-events.json",
+    "finalHud": "production-final-ax.txt",
+    "captureFrame": {
+      "width": 565,
+      "height": 668
+    },
+    "viewportNote": "Capture dimensions observed in PNG; video dimensions independently read from browser player."
+  },
+  "observation": {
+    "samples": 28,
+    "seconds": 3.0164,
+    "displacementMeters": 1.5685280000000001,
+    "speedMetersPerSecond": 0.52,
+    "residualFromRoundedCsvMeters": 0,
+    "csv": "production-final-observation.csv",
+    "dataType": "game simulation",
+    "limits": "No air drag or orbital gravity gradients; later contact does not modify the completed report"
+  },
+  "pause": {
+    "sourceRegression": "Passed active pause120frames, save/rebuild and resume",
+    "ui": "Recording screenshot shows about0.78seconds, resumed to completion.",
+    "numericDomRead": "progress.value returned empty string; not counted as a numerical freeze check"
+  },
+  "video": {
+    "file": "production-complete-route.webm",
+    "bytes": 5513756,
+    "canvasOnly": true,
+    "audio": false,
+    "hud": false,
+    "playbackVerification": {
+      "durationSeconds": 28.154,
+      "currentTime": 28.154,
+      "width": 707,
+      "height": 835,
+      "readyState": 4,
+      "ended": true,
+      "error": null,
+      "evidence": "video-playback-ended.png"
+    }
+  },
+  "labDesign": {
+    "file": "capillary-design.html",
+    "status": "2D only, not geometry authorization",
+    "suggestedMillimeters": {
+      "width": 320,
+      "height": 240,
+      "depth": 120
+    },
+    "sourceBounds": "workstation-source.json",
+    "mountFit": "unverified"
+  },
+  "failuresPreserved": [
+    "baseline.json",
+    "main-return-missed-ax.txt",
+    "production-approach-missed.png",
+    "production-approach-missed-complete.webm",
+    "production-route-first-60s.webm"
+  ],
+  "invalidTruncatedVideoCopies": [
+    "main-partial-first.webm",
+    "production-approach-missed.webm"
+  ],
+  "limits": [
+    "User overall visual acceptance pending",
+    "Full EVA remains stopped at the prior frame-traversal gate",
+    "Unguided usability, all station routes, cold load and target hardware long-session performance unverified",
+    "Dedicated fluid hardware, source mounting and fluid solver not implemented"
+  ],
+  "sources": [
+    "https://www.nasa.gov/image-article/station-astronaut-sets-up-capillary-channel-flow-experiment/",
+    "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/Space_behaviour"
+  ],
+  "finalVerification": {
+    "diffCheck": "passed",
+    "sourceHashes": "6 unchanged",
+    "artifactImagesLoaded": 3,
+    "labOrthographicViewsInspected": 4,
+    "labScreenshot": "capillary-design-review.png",
+    "screenshot": "production-returned-clean.png"
+  },
+  "evidenceRedaction": "Local preview origins redacted from AX text; gameplay values unchanged.",
+  "codeLines": {
+    "rendering/spacecraft/microgravityCabinRuntime.ts": 372,
+    "ui/ShipFlightPanel.tsx": 89,
+    "rendering/spacecraft/microgravityDriftRoute.test.ts": 46
+  }
+}

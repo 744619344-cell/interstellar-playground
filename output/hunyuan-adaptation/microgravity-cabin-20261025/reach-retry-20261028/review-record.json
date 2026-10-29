@@ -1,0 +1,82 @@
+{
+  "limits": [
+    "Current linear velocity and pose prediction; actual per-frame rejection remains for later movement or obstruction",
+    "No claim of all possible contact paths being reachable",
+    "Cold load, 20-minute, target device, full EVA and remote phone delivery not accepted"
+  ],
+  "performance": {
+    "mixed": {
+      "seconds": 160.152,
+      "includes": "recording and concurrent test workload; not isolated performance acceptance",
+      "low": 19.378503702677683,
+      "fps": 51.96937908986463
+    },
+    "unrecorded": {
+      "fps": 56.945124907335966,
+      "low": 50.350262697030466,
+      "seconds": 38.98489999999997,
+      "longestMs": 35.79999999998836,
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "pixelRatio": 1.25
+      },
+      "scope": "gripped idle only; no concurrent tests or canvas recording"
+    }
+  },
+  "browser": {
+    "positionOverride": false,
+    "uiRetryDelayMeasured": false,
+    "videoBytes": 7892212,
+    "hudEvidence": [
+      "production-canceled.png",
+      "production-retry-rest-paused.png",
+      "production-regrasp.png",
+      "production-regrasp-clean.png"
+    ],
+    "video": "production-cancel-retry-exit.webm",
+    "route": "initial real rail push -> sleep entry -> Escape cancellation -> UI screenshot -> retry -> rest -> pause/resume -> exit -> X regrasp",
+    "videoIncludes": [
+      "WebGL canvas"
+    ],
+    "videoExcludes": [
+      "audio",
+      "HUD"
+    ],
+    "playback": {
+      "currentTime": 52.494,
+      "duration": 52.494,
+      "ended": true,
+      "error": null,
+      "height": 900,
+      "paused": true,
+      "readyState": 4,
+      "width": 1600
+    }
+  },
+  "status": "changes_requested: user visual acceptance pending",
+  "diagnosis": {
+    "afterFailures": 0,
+    "beforeFailures": 1,
+    "exactRegression": "55 FPS; idle 240 frames; cancel after 1 frame; retry after 24 frames; old failure near 0.62s reach",
+    "beforeCases": 12,
+    "afterCases": 12
+  },
+  "sourceHashes": "source-hashes.json",
+  "engineering": {
+    "failed": 0,
+    "buildPages": "passed; 3.00s; existing chunk warning",
+    "seconds": 88.0449054,
+    "typecheck": "passed",
+    "tests": 317,
+    "limitsPreserved": [
+      "1.05m body reach",
+      "0.65m/s catch speed",
+      "0.012m actual palm contact",
+      "inertial movement",
+      "actual source collision"
+    ]
+  },
+  "task": "P3-R01",
+  "scope": "Code repair only: inertial contact selection during 0.7s station reach; no geometry or source asset changes"
+}

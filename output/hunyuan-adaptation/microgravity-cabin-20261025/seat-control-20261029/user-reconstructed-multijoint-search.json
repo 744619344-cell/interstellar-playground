@@ -1,0 +1,121 @@
+{
+  "note": "Greedy offline source initial pose at recorded root; fixed pose only, no dynamics or visual acceptance.",
+  "initial": {
+    "distance": 0.12891968633067744,
+    "blocker": {
+      "owner": "seat_1",
+      "triangle": 2422,
+      "identity": {
+        "mesh": "mesh_0",
+        "vertex": 2467,
+        "bone": "hand_R"
+      }
+    }
+  },
+  "final": {
+    "distance": 0.19380878659728168,
+    "blocker": {
+      "owner": "seat_1",
+      "triangle": 2205,
+      "identity": {
+        "mesh": "mesh_0",
+        "vertex": 2467,
+        "bone": "hand_R"
+      }
+    }
+  },
+  "iterations": 3,
+  "attempts": 108,
+  "sequence": [
+    {
+      "name": "upper_arm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2
+    },
+    {
+      "name": "forearm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2
+    },
+    {
+      "name": "thigh_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2
+    },
+    {
+      "name": "upper_arm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "clearance": {
+        "distance": 0.16021159440809224,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "name": "forearm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "clearance": {
+        "distance": 0.17940836799135956,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "name": "upper_arm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "clearance": {
+        "distance": 0.19380878659728168,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2205,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    }
+  ]
+}

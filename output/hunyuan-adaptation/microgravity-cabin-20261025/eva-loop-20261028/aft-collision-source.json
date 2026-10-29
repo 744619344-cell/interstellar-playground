@@ -1,0 +1,69 @@
+{
+  "method": "Read-only collision diagnosis from an explicit phase fixture; not a traversal proof.",
+  "position": {
+    "x": 0.0002718773915099115,
+    "y": -0.18885757014701834,
+    "z": 8.1114445874234
+  },
+  "velocity": {
+    "x": 0.002023835138681583,
+    "y": 0.0059298111812332716,
+    "z": -0.00012120015395895682
+  },
+  "hits": [
+    {
+      "point": {
+        "x": -0.00044181672386924995,
+        "y": 0.7361424298529817,
+        "z": 7.99658997193562
+      },
+      "distance": 0.003960235861811157,
+      "parents": [
+        {
+          "name": "mesh_109",
+          "visible": true,
+          "part": "skin"
+        },
+        {
+          "name": "Exterior_Hull_90_0",
+          "visible": true
+        },
+        {
+          "name": "Ship_Adapted",
+          "visible": true
+        },
+        {
+          "name": "Thickness-only_ship_skins",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "point": {
+        "x": 0.0011446693727581963,
+        "y": 0.7359165998891697,
+        "z": 7.9965983280591075
+      },
+      "distance": 0.00011536618407070875,
+      "parents": [
+        {
+          "name": "mesh_109",
+          "visible": true,
+          "part": "skin"
+        },
+        {
+          "name": "Exterior_Hull_90_0",
+          "visible": true
+        },
+        {
+          "name": "Ship_Adapted",
+          "visible": true
+        },
+        {
+          "name": "Thickness-only_ship_skins",
+          "visible": true
+        }
+      ]
+    }
+  ]
+}

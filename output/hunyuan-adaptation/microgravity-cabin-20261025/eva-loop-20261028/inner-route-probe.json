@@ -1,0 +1,1085 @@
+{
+  "method": "Actual-source locker fixture, then real grasp/wear/push/actions. No position changes after initial fixture; not a main-scene continuous proof.",
+  "samples": [
+    {
+      "stage": "held at actual locker grip",
+      "position": {
+        "x": 0.5236025178907705,
+        "y": -0.46522608181631275,
+        "z": 1.852528526616786
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contact": "micro-locker:rail:0",
+      "suit": "stowed",
+      "location": "cabin",
+      "notice": "抓握中，手臂吸收相对运动",
+      "prompt": {
+        "id": "locker",
+        "deviceId": "micro-locker",
+        "title": "宇航服收纳舱",
+        "verb": "查看装备 · R 穿脱",
+        "key": "F",
+        "distance": 0.6330174914304683,
+        "point": {
+          "x": 1.0810172149134836,
+          "y": -0.16522608181631276,
+          "z": 1.852528526616786
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "穿戴准备",
+        "hint": "靠近宇航服舱，抓稳扶手后操作柜门与装备。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "locker",
+            "label": "打开宇航服舱",
+            "enabled": true
+          },
+          {
+            "id": "wear",
+            "label": "穿上宇航服",
+            "key": "R",
+            "enabled": false,
+            "reason": "先打开宇航服舱并等门完全打开"
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cabinet door fully open",
+      "position": {
+        "x": 0.5236025178907705,
+        "y": -0.46522608181631275,
+        "z": 1.852528526616786
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contact": "micro-locker:rail:0",
+      "suit": "stowed",
+      "location": "cabin",
+      "notice": "宇航服柜门已完全展开",
+      "prompt": {
+        "id": "locker",
+        "deviceId": "micro-locker",
+        "title": "宇航服收纳舱",
+        "verb": "查看装备 · R 穿脱",
+        "key": "F",
+        "distance": 0.6330174914304683,
+        "point": {
+          "x": 1.0810172149134836,
+          "y": -0.16522608181631276,
+          "z": 1.852528526616786
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "穿戴准备",
+        "hint": "靠近宇航服舱，抓稳扶手后操作柜门与装备。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "locker",
+            "label": "关闭宇航服舱",
+            "enabled": true
+          },
+          {
+            "id": "wear",
+            "label": "穿上宇航服",
+            "key": "R",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "wear and inspect",
+      "position": {
+        "x": 0.5236025178907705,
+        "y": -0.46522608181631275,
+        "z": 1.852528526616786
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "contact": "micro-locker:rail:0",
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "装备检查通过",
+      "prompt": {
+        "id": "locker",
+        "deviceId": "micro-locker",
+        "title": "宇航服收纳舱",
+        "verb": "查看装备 · R 穿脱",
+        "key": "F",
+        "distance": 0.6330174914304683,
+        "point": {
+          "x": 1.0810172149134836,
+          "y": -0.16522608181631276,
+          "z": 1.852528526616786
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "locker",
+            "label": "关闭宇航服舱",
+            "enabled": true
+          },
+          {
+            "id": "wear",
+            "label": "脱下并收纳宇航服",
+            "key": "R",
+            "enabled": true
+          },
+          {
+            "id": "inspect",
+            "label": "重新检查装备",
+            "key": "I",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push toward inner",
+      "position": {
+        "x": -0.4046297023096752,
+        "y": -0.4653596923751709,
+        "z": 3.6431549894564217
+      },
+      "velocity": {
+        "x": -0.2323101318319703,
+        "y": -0.000943133356642999,
+        "z": -0.00011840147463265671
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "开启舱门",
+        "key": "F",
+        "distance": 0.6463108254359112,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "开启气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "inner request",
+      "position": {
+        "x": -0.48407187900001797,
+        "y": -0.465577317714553,
+        "z": 3.6401384664426133
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0.00017696895068536415,
+        "z": 0
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "正在开启舱门",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.5847464999539125,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 0.019230769230769232,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "inner source regrasp and open",
+      "position": {
+        "x": -0.48407187900001797,
+        "y": -0.46543941711968023,
+        "z": 3.6401384664426133
+      },
+      "velocity": {
+        "x": 0,
+        "y": 4.524832257286487e-19,
+        "z": 0
+      },
+      "contact": "InnerDoorHinge:lip:-1:-1:-0.3",
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "舱门已开启",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.5847026094949302,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "frame supported lateral push",
+      "position": {
+        "x": -0.46902910061069775,
+        "y": -0.4656650119934674,
+        "z": 3.5427409074109644
+      },
+      "velocity": {
+        "x": 0.012114989306833412,
+        "y": -0.0001816871466770497,
+        "z": -0.07844098713956557
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.6544129636091505,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "opening edge regrasp",
+      "position": {
+        "x": -0.45959831280169766,
+        "y": -0.4658064444689334,
+        "z": 3.4816793343046193
+      },
+      "velocity": {
+        "x": 0.00012177788256028131,
+        "y": -0.0000018262893553088467,
+        "z": -0.0007884759183738261
+      },
+      "contact": "InnerDoorHinge:lip:-1:-1:-0.3",
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "抓握中，手臂吸收相对运动",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.7016528758033205,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push into airlock 0",
+      "position": {
+        "x": -0.45931939503156954,
+        "y": -0.4658055555664227,
+        "z": 3.481697362208766
+      },
+      "velocity": {
+        "x": 0.03347013241537431,
+        "y": 0.00010666830128030505,
+        "z": 0.002163348497598472
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.70182890851322,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push into airlock 60",
+      "position": {
+        "x": -0.45260420661452255,
+        "y": -0.4657110657148745,
+        "z": 3.4773918817125997
+      },
+      "velocity": {
+        "x": 0.0013779794114965396,
+        "y": 0.00009298400161883932,
+        "z": -0.005655804338283464
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.7093094501256456,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push into airlock 120",
+      "position": {
+        "x": -0.451226227203026,
+        "y": -0.4656180817132561,
+        "z": 3.4717360773742927
+      },
+      "velocity": {
+        "x": 0.0013779794114965396,
+        "y": 0.00009298400161883932,
+        "z": -0.005655804338283464
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.7141063859958793,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push into airlock 180",
+      "position": {
+        "x": -0.4498482477915295,
+        "y": -0.4655250977116377,
+        "z": 3.4660802730359856
+      },
+      "velocity": {
+        "x": 0.0013779794114965396,
+        "y": 0.00009298400161883932,
+        "z": -0.005655804338283464
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.7189184628277665,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "stage": "push into airlock 240",
+      "position": {
+        "x": -0.44847026838003295,
+        "y": -0.4654321137100193,
+        "z": 3.4604244686976786
+      },
+      "velocity": {
+        "x": 0.0013779794114965396,
+        "y": 0.00009298400161883932,
+        "z": -0.005655804338283464
+      },
+      "suit": "ready",
+      "location": "cabin",
+      "notice": "已推离；松键继续滑行",
+      "prompt": {
+        "id": "door",
+        "deviceId": "inner-front",
+        "title": "气闸内门",
+        "verb": "关闭舱门",
+        "key": "F",
+        "distance": 0.7237453786112723,
+        "point": {
+          "x": -0.9341008820553411,
+          "y": -0.27940453582243374,
+          "z": 3.9637772479567146
+        }
+      },
+      "doors": {
+        "inner": {
+          "progress": 1,
+          "target": 1,
+          "blocked": false
+        },
+        "outer": {
+          "progress": 0,
+          "target": 0,
+          "blocked": false
+        }
+      },
+      "buttons": [
+        {
+          "id": "inner-front",
+          "point": {
+            "x": -0.9341008820553411,
+            "y": -0.27940453582243374,
+            "z": 3.9637772479567146
+          }
+        },
+        {
+          "id": "inner-back",
+          "point": {
+            "x": -0.9402042296930917,
+            "y": -0.2799942214051933,
+            "z": 4.441695584971931
+          }
+        },
+        {
+          "id": "outer",
+          "point": {
+            "x": -0.75735,
+            "y": -0.2904,
+            "z": 6.667843199040771
+          }
+        }
+      ],
+      "controls": {
+        "visible": true,
+        "stage": "前往气闸",
+        "hint": "装备检查通过。开启内门，X 抓稳门框；WASD/ZC 选方向，Space 借助抓边移身穿门。",
+        "pressure": "已增压",
+        "controls": [
+          {
+            "id": "inner",
+            "label": "关闭气闸内门",
+            "key": "F",
+            "enabled": true
+          }
+        ]
+      }
+    }
+  ]
+}

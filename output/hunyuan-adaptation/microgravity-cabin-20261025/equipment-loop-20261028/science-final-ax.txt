@@ -1,0 +1,43 @@
+Browser tab: 6, Title: "设备操作 · 实际模型检查", URL: "http://127.0.0.1:5173/output/hunyuan-adaptation/microgravity-cabin-20261025/equipment-loop-20261028/trial.html?lockerDoors=v1&sleepFit=v5&sleepPose=v2".
+1 AXWebArea 设备操作 · 实际模型检查, URL: 127.0.0.1:5173/output/hunyuan-adaptation/microgravity-cabin-20261025/equipment-loop-20261028/trial.html?lockerDoors=v1&sleepFit=v5&sleepPose=v2
+	2 container
+		3 heading 设备操作 · 实际模型检查, Value: 1
+			4 text 设备操作 · 实际模型检查
+		5 text 现有真实模型与主游戏共用控制器。检查点只设置起始位置；领用、切换工位、巡检与归还可在同一位置连续操作。 检查起点 
+		6 pop up button (collapsed, settable) 检查起点, Value: 服务面板附近, ID: fixture, Secondary Actions: Expand
+			7 menu
+				8 (selected) 服务面板附近
+				9 维护工位附近
+				10 初始扶手
+		11 button 载入检查点, ID: reset
+		12 button 设备操作 F, ID: interact
+		13 button 抓握 / 松手 X, ID: grip
+		14 button 推离 Space, ID: push
+		15 button 继续, ID: pause
+		16 button 取消 Esc, ID: cancel
+		17 text 实际模型已就绪 · F 查看，X 抓稳
+		18 text 先 F 打开设备，再 X 抓稳；重叠区域可切换附近设备。暂停冻结巡检，F/Esc取消。
+		19 button (collapsed) 实际状态, Secondary Actions: Expand
+			20 text 实际状态
+		21 link Description: 主游戏, Value: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2
+		22 link Description: 本轮清单与证据, Value: 127.0.0.1:5173/output/hunyuan-adaptation/microgravity-cabin-20261025/equipment-loop-20261028/index.html
+		23 text 此页为明确起点的来源检查，不能替代从主场景初始扶手连续抵达所有设备的验收。
+	56 container 漂移惯性观测
+		57 text 漂移惯性观测
+		58 button 收起观测
+		59 text 舱内漂移观测完成，已生成模拟数据报告
+		60 progress indicator 3
+		61 container
+			62 text 29  个样本 ·  3.01  s · 船舱坐标系
+		63 container 实际模拟遥测速率随时间曲线
+		66 container
+			67 text 位移  1.563  m
+			68 text 速率  0.520 – 0.520  m/s
+			69 text 匀速预测残差  0.0000  m
+		70 link 保存实验数据 CSV
+			71 text 保存实验数据 CSV
+		65 text 记录当前游戏模拟数据。未接触、未系绳且飞船稳定时有效；未模拟空气阻力与轨道重力梯度。
+	72 text 舱内漂移观测已归档
+	48 image
+
+The focused UI element is 48 image

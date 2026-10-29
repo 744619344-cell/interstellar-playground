@@ -1,0 +1,147 @@
+{
+  "task": "P3-R01",
+  "date": "2026-10-28",
+  "overall": "changes_requested",
+  "scope": "Existing equipment operations and cabin telemetry study; no 3D geometry or new external assets",
+  "engineering": {
+    "tests": {
+      "total": 335,
+      "passed": 335,
+      "failed": 0,
+      "suites": 3,
+      "durationSeconds": 120.0049495
+    },
+    "typecheck": "passed",
+    "buildPages": {
+      "passed": true,
+      "durationSeconds": 12.56,
+      "existingLargeChunkWarning": true
+    }
+  },
+  "sourceFixture": {
+    "method": "Explicit native-source work/service starting point. No position reset during issue, inspection, pause/resume, return and experiment sequence.",
+    "actualGripRequired": true,
+    "pausedInspectionSeconds": 0.298,
+    "observedFrozenOnLaterRead": true,
+    "validScience": {
+      "samples": 29,
+      "durationSeconds": 3.0064,
+      "displacementMeters": 1.563328,
+      "speedMinMetersPerSecond": 0.52,
+      "speedMaxMetersPerSecond": 0.52,
+      "residualMetersFromRoundedCsv": 0,
+      "csv": "science-observation.csv",
+      "dataType": "game simulation telemetry",
+      "caption": "Screenshot taken after completed measurement and further coasting, then paused. No claim it is the endpoint pose."
+    }
+  },
+  "mainScene": {
+    "continuousApproach": "Initial source handrail -> direction selected with existing attitude control -> actual Space push -> inertial flight -> X grasp -> F open work -> nearby service -> issue kit. No teleport or position fixture.",
+    "inspection": "Continuous source route completed one inspection and returned unique kit. Final storage1/carried0, local log3. No position set or reset.",
+    "notClaimed": "All ten station arrival paths or complete EVA",
+    "study": {
+      "outcome": "invalid",
+      "seconds": 0.0357000008225441,
+      "samples": 1,
+      "reason": "Source surface collision after actual Space push. No valid report.",
+      "screenshot": "main-study-collision-invalid.png"
+    }
+  },
+  "images": [
+    {
+      "path": "inspection-complete.png",
+      "bytes": 115044,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "inspection-paused.png",
+      "bytes": 115706,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "lighting-rest.png",
+      "bytes": 115783,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "main-inspection-complete.png",
+      "bytes": 58253,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "main-storage-issued.png",
+      "bytes": 59682,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "main-storage-returned.png",
+      "bytes": 59323,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "main-study-collision-invalid.png",
+      "bytes": 63152,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "science-complete.png",
+      "bytes": 125255,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "science-near-bed-camera.png",
+      "bytes": 144708,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "storage-issued.png",
+      "bytes": 115829,
+      "width": 65536,
+      "height": 4292542531
+    },
+    {
+      "path": "storage-returned.png",
+      "bytes": 115900,
+      "width": 65536,
+      "height": 4292542531
+    }
+  ],
+  "limits": [
+    "Kit is inventory ledger without authored 3D pickup or tool-use motion.",
+    "Inspection is a four-second gameplay check, not forceful repair.",
+    "Drift study omits air drag and orbital gravity gradients; sample timing uses actual timestamps, not guaranteed exact 10 Hz.",
+    "Capillary, plant and external material experiments are design contracts without dedicated hardware or solvers.",
+    "Full EVA traversal remains failed and stopped at prior two-repair gate.",
+    "User visual, cold loading and target hardware long-session performance remain unaccepted."
+  ],
+  "sources": [
+    "https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/",
+    "https://www.nasa.gov/wp-content/uploads/2023/03/human-integration-design-handbook-revision-1.pdf",
+    "https://www.nasa.gov/image-article/station-astronaut-sets-up-capillary-channel-flow-experiment/",
+    "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/Space_behaviour",
+    "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/how-do-you-water-plants-in-space/"
+  ],
+  "finalVerification": {
+    "diffCheck": "passed",
+    "artifactImagesLoaded": 10,
+    "protectedHashesMatched": 6,
+    "codeLineCounts": {
+      "microgravityCabinRuntime": 372,
+      "microgravityStations": 188,
+      "cabinEquipmentUse": 66,
+      "cabinMotionStudy": 35,
+      "CabinEquipmentUsePanel": 39,
+      "CabinMotionStudyPanel": 22
+    },
+    "viewportOverrideChanged": false
+  }
+}

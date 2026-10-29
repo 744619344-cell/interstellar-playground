@@ -1,0 +1,156 @@
+{
+  "note": "Offline local-joint rotation study against real source sweeps; visual quality and dynamic gameplay not validated.",
+  "sampleCount": 126,
+  "maxError": 0.000003496010364801912,
+  "averageError": 8.80532808642749e-7,
+  "baseline": {
+    "toward": 0,
+    "opposite": 0.2
+  },
+  "studies": [
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.0005908350667345671,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "clear": true,
+      "toward": 0.2,
+      "opposite": 0.2
+    }
+  ]
+}

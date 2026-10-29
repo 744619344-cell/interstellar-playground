@@ -1,0 +1,413 @@
+{
+  "note": "Reconstructed root transform, source initial skeletal pose; not original user live pose and not a gameplay test.",
+  "baseline": {
+    "distance": 0.0023670965591725667,
+    "blocker": {
+      "owner": "seat_1",
+      "triangle": 1935,
+      "identity": {
+        "mesh": "mesh_0",
+        "vertex": 18146,
+        "bone": "Bip01_R_Finger21"
+      }
+    }
+  },
+  "studies": [
+    {
+      "bone": "thigh_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.10791006925242175,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5318,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.12650690177417973,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.07321172532367466,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5271,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.12891968633067744,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2422,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.12891968633067744,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2422,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "thigh_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.022412914817954113,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1906,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.12238119567922395,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11229463667185981,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5318,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.1095590866118117,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5318,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.12355423141633162,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.1274037804338383,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "shin_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.10588999174499453,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5318,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "foot_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.11661095239441581,
+        "blocker": {
+          "owner": "seat",
+          "triangle": 5261,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 4093,
+            "bone": "shin_R"
+          }
+        }
+      }
+    }
+  ]
+}

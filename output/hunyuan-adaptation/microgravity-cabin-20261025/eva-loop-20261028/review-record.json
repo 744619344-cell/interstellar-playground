@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-28",
+  "task": "P3-R01",
+  "status": "changes_requested",
+  "profile": "microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2",
+  "candidate": "locker-doors-v1",
+  "fullJourney": "not passed: source hatch grasp/departure collision remains; two rejected candidates retained",
+  "engineering": {
+    "tests": 327,
+    "failed": 0,
+    "durationSeconds": 113.4574173,
+    "typecheck": "passed",
+    "build": "passed, 11.59s; existing large-chunk warning"
+  },
+  "browser": {
+    "viewport": "1280x720",
+    "backend": "ANGLE NVIDIA GeForce RTX 3050 Laptop GPU Direct3D11",
+    "main": "Initial real rail -> directional push/coast -> real locker grasp -> contextual button reaches door controller; a too-close approach blocks door and wear remains disabled",
+    "localTrial": "Explicit locker start: closed-wear rejection, open fully, wear, inspect; screenshots show actual source",
+    "performance": "Main short observation about 35 FPS with blocked door/diagnostics and parallel work; not a performance pass"
+  },
+  "phaseFixtures": {
+    "method": "Actual source geometry with explicit seeded lock/exterior states, not a continuous route",
+    "indoor": "Attached coasting uses no RCS fuel; pause preserves state",
+    "outside": "External fixture beyond aft roof at z=9.5; propulsion/fuel/inertia/8m constraint and reload checked",
+    "failedFixture": "z=7.9,y=-0.2 hits existing aft roof at helmet height; source collision retained"
+  },
+  "limits": [
+    "Full hatch traversal and continuous departure/return not passed",
+    "Wardrobe uses existing two rigs and a shortened game transition, not cloth simulation",
+    "Suit checks and reel/brake are game mechanics",
+    "User visual confirmation, cold load, 20-minute target-device performance and remote-phone display unverified"
+  ],
+  "screenshots": [
+    "locker-closed.png",
+    "locker-open.png",
+    "locker-suited.png",
+    "main-context-blocked.png"
+  ],
+  "deliveryCheck": "All four review images loaded at 1280x720; normal Git diff --check passed. Default Windows CRLF filtering is retained."
+}

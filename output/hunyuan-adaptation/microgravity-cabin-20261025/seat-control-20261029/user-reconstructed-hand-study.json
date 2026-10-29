@@ -1,0 +1,905 @@
+{
+  "note": "Reconstructed root transform, source initial skeletal pose; not original user live pose and not a gameplay test.",
+  "baseline": {
+    "distance": 0.0023670965591725667,
+    "blocker": {
+      "owner": "seat_1",
+      "triangle": 1935,
+      "identity": {
+        "mesh": "mesh_0",
+        "vertex": 18146,
+        "bone": "Bip01_R_Finger21"
+      }
+    }
+  },
+  "studies": [
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.035789733459125214,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.023569552012633457,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.08496364657989205,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2422,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.045791275308442625,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2512,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "safe": false
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.05327574006710989,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2461,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "upper_arm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.08318479544022188,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2513,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.004227608570236243,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0035509154735728753,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0004118565477035452,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.050675176275920775,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2512,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.03076548884570805,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "safe": false
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": false
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": false
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "safe": false
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.023944604769683596,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "forearm_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.05119239624450987,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2512,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.00003865802821012912,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0013040598245524738,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.00313462809493665,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0036530120762200205,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": false
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "safe": false
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.009881997549973025,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.011960485736222135,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": false
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "safe": false
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.011753343561245869,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "hand_R",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.01103994340446789,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 2565,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 2467,
+            "bone": "hand_R"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0010248594131896252,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0016912547968722614,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.003052924523594602,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.0037601610728682806,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.00019621779633747713,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1936,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.004286124688594213,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.00612118163820294,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.1,
+      "safe": true,
+      "clearance": {
+        "distance": 0.005124200748783487,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    },
+    {
+      "bone": "Bip01_R_Finger21",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0.2,
+      "safe": true,
+      "clearance": {
+        "distance": 0.007861434014570236,
+        "blocker": {
+          "owner": "seat_1",
+          "triangle": 1935,
+          "identity": {
+            "mesh": "mesh_0",
+            "vertex": 18146,
+            "bone": "Bip01_R_Finger21"
+          }
+        }
+      }
+    }
+  ]
+}

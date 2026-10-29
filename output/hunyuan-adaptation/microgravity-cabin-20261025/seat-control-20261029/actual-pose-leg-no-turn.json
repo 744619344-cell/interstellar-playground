@@ -1,0 +1,14 @@
+{
+  "note": "Offline 0.5s sequential retraction then movement; body yaw intentionally held; not a runtime candidate or visual validation.",
+  "maxError": 0.000003496010364801912,
+  "rotations": 30,
+  "poseRejected": 0,
+  "blocked": 0,
+  "distance": 0.274999999999998,
+  "along": 0.274999999999998,
+  "end": {
+    "x": -1.4067892549754608,
+    "y": -0.6304421094840136,
+    "z": -4.424191286467141
+  }
+}

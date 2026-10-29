@@ -1,0 +1,4 @@
+Browser tab: 10, Title: "我们的宇宙", URL: "http://127.0.0.1:4174/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1&seatSlide=1".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~					40 text 最近  300  帧 · 平均  50.6  FPS · 1% low  27.9  FPS
+The focused UI element is 27 checkbox 诊断, Value: 1

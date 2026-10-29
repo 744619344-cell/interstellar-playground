@@ -1,0 +1,36 @@
+Browser tab: 4, Title: "我们的宇宙", URL: "http://127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1".
+0 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1
+	1 container
+		2 image 太阳系画布
+		35 container 附近设备交互
+			50 button F 查看设备
+				51 text F
+				52 text 查看设备
+				97 container
+					98 text 固定维护工位  · 0.3 m
+			41 text 观测中止：发生接触、碰撞、飞船机动或无效数据；请重新登记
+			42 text F / X 抓握或松手 · WASD + Z/C 选推离方向 · Space 推离 · 方向键调整姿态 · Q/E 翻滚 · V 挥手
+		88 container 漂移惯性观测
+			89 text 漂移惯性观测
+			90 button 收起观测
+			91 text 观测中止：发生接触、碰撞、飞船机动或无效数据；请重新登记
+			92 progress indicator 0.0357000008225441
+			93 container
+				94 text 1  个样本 ·  0.04  s · 船舱坐标系
+			96 text 记录当前游戏模拟数据。未接触、未系绳且飞船稳定时有效；未模拟空气阻力与轨道重力梯度。
+		43 container 飞船驾驶
+			44 text 舱内行动
+			45 button (collapsed) 展开操作, Secondary Actions: Expand
+			46 container 飞船模型
+				47 text 飞船已就绪 · 当前模型待后续完善
+			48 container 舱内动作提示
+				49 text 舱门 气闸内门已密合  ·  漂浮
+		19 container
+			21 button (collapsed) 说明, Secondary Actions: Expand
+			22 checkbox 继续, Value: 1
+			23 button 音乐
+			24 button 返回全景
+	33 button (collapsed) 本地帧时间诊断 · 未记录, Secondary Actions: Expand
+		34 text 本地帧时间诊断 · 未记录
+
+The focused UI element is 22 checkbox 继续, Value: 1

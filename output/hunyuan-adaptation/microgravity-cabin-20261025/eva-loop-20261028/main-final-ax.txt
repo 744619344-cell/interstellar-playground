@@ -1,0 +1,105 @@
+Browser tab: 4, Title: "我们的宇宙", URL: "http://127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1".
+0 AXWebArea 我们的宇宙, URL: 127.0.0.1:5173/?microgravity=1&lockerDoors=v1&sleepFit=v5&sleepPose=v2&cabinDiagnostics=1
+	1 container
+		2 image 太阳系画布
+		35 container 附近设备交互
+			132 button F 查看装备 · R 穿脱
+				133 text F
+				134 text 查看装备 · R 穿脱
+				135 container
+					136 text 宇航服收纳舱  · 0.4 m
+			41 text 已推离；松键继续滑行
+			42 text F / X 抓握或松手 · WASD + Z/C 选推离方向 · Space 推离 · 方向键调整姿态 · Q/E 翻滚 · V 挥手
+			117 container
+				118 text R  穿戴宇航服
+		119 container 宇航服与舱外探索
+			120 text 穿戴准备
+			121 button (expanded) 收起出舱步骤, Secondary Actions: Collapse
+			122 container
+				123 text 舱内服  ·  已增压  ·  尚未系留
+			124 text 靠近宇航服舱，抓稳扶手后操作柜门与装备。
+			125 button (disabled) 关闭宇航服舱
+			137 text 先按 X 抓稳扶手
+			127 button (disabled) 穿上宇航服 R
+				128 text 穿上宇航服
+				129 text R
+			130 text 先按 X 抓稳扶手
+			131 text 减压/复压采用游戏时长。门遇人物或安全绳会暂停，清空后继续。
+		43 container 飞船驾驶
+			44 text 舱内行动
+			45 button (expanded) 收起面板, Secondary Actions: Collapse
+			48 container 飞船视角
+				49 checkbox 飞船外观, Value: 0
+				50 checkbox 驾驶舱, Value: 0
+				51 checkbox 舱内行动, Value: 1
+				52 checkbox 自由观察, Value: 0
+			46 container 飞船模型
+				47 text 飞船已就绪 · 当前模型待后续完善
+			53 text 微重力制作候选：F/X 抓握或松手，扶稳后 WASD 与 Z/C 选方向，Space 推离；空中松键保持惯性。方向键在抓握时调整姿态，Q/E 翻滚。
+			54 container
+				55 text 左键拖拽转动视线。 滚轮调整远近。 V 挥手。设备约束、穿戴和气闸正在制作，此候选入口保留原版回退。
+			56 button 返回地球泊位
+			57 container 舱内观察操作
+				58 button 拉近
+				59 button 拉远
+				60 button 面向后舱门
+				61 button 向前移动
+				62 button 向后移动
+				63 button 向左移动
+				64 button 向右移动
+			65 container 宇航员手部动作
+				66 button 挥手 V
+					67 text 挥手 
+					68 text V
+				69 button 屈指 G
+				70 button 张手 H
+				71 container 宇航员动作
+					72 text 漂浮
+			73 container 飞船交互
+				74 text 舱内交互
+				75 button F · 查看装备 · R 穿脱
+				76 container
+					77 text 座椅  未入座
+				78 container
+					79 text 驾驶控制  入座后接管
+				80 container
+					81 text 舱外密封门  气闸内门已密合
+				82 text 已推离；松键继续滑行
+				83 link Description: 模型署名与许可, Value: 127.0.0.1:5173/src/assets/models/microgravity-cabin-20261025/ATTRIBUTION.md?no-inline
+			84 container 视角状态
+				85 text 舱内行动
+			86 container 舱内视野
+				87 text 视场  55 °
+			88 container 飞行状态
+				89 text 速度  0.00  m/s ·  地球泊位
+			90 container 飞船反馈
+				91 container 推进反馈
+					92 text 待机
+				93 container 姿态反馈
+					94 text 姿态稳定
+			95 container
+				96 button (expanded) 运行诊断, Secondary Actions: Collapse
+					97 text 运行诊断
+				98 container 宇航员位置
+					99 text 位置  0.796 / -0.651 / 1.881  · 脚底  -1.315
+				100 container 舱门动作
+					101 text 门行程  0.000  · 目标  0  ·  无阻挡
+				102 container 飞行位置
+					103 text 位置  0.00 / 0.00 / 0.00
+				104 container 飞行姿态
+					105 text 姿态  0.000 / 0.000 / 0.000 / 1.000
+				106 container 渲染资源
+					107 text 纹理  80  · 几何  99  · 程序  47
+				108 container 渲染帧率
+					109 text 最近 300 帧 · 平均 35.0 FPS · 1% low 18.9 FPS
+				110 container 图形后端
+					111 text ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025E2) Direct3D11 vs_5_0 ps_5_0, D3D11)
+		19 container
+			21 button (collapsed) 说明, Secondary Actions: Expand
+			22 checkbox 继续, Value: 1
+			23 button 音乐
+			24 button 返回全景
+	33 button (collapsed) 本地帧时间诊断 · 未记录, Secondary Actions: Expand
+		34 text 本地帧时间诊断 · 未记录
+
+The focused UI element is 22 checkbox 继续, Value: 1

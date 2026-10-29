@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "service": "https://3d.hunyuan.tencent.com/creation",
+  "settings": { "model": "V3.1", "requestedFaces": "50k", "paidActions": 0 },
+  "views": {
+    "front.png": "77e5816666b6c072f0c63674919bb55677a575ba869e3224d7f0ec797a9bfdb5",
+    "back.png": "c3ddb2efec2f3055ab515208d007d7a8d301c0a35ce1211097f1a10d72558c8c",
+    "left.png": "3a9ebc180bb02fcf3c4f071c77c8b8198c92a7f35db45bc459868b375c3c94cd",
+    "right.png": "2b92b94d77f4282ad93aee0b51cf168af75ad8d94960172de9c89a0052521893"
+  },
+  "jobs": [
+    { "id": "crew-v2", "views": ["front", "back", "left", "right"], "quotaBefore": 20, "quotaAfter": 19, "faces": 49916, "vertices": 33902, "sha256": "2f51c29b5b98f2613776756283f16d4fe22cb369f13e90f0d45cbf14a2310141", "visualStatus": "not accepted: face and hand detail defects" },
+    { "id": "crew-v3", "views": ["front", "back"], "quotaBefore": 19, "quotaAfter": 18, "faces": 50000, "vertices": 33419, "sha256": "dc652ad5902d849ce09bf37ba2e38fd19258d458e25fd26af8dfbec6ebd109c1", "visualStatus": "not accepted: visible facial texture seams and hand defects" }
+  ],
+  "limitations": "Both are static sources without skeletons or animation; position-welded edge checks do not establish visual quality or deformation suitability. Side reference views do not perfectly match the front A-pose."
+}
