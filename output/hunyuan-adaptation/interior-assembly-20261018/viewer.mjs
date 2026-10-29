@@ -5,6 +5,7 @@ import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {createPreviewAssets} from '../hunyuan-design-20261009/驾驶预览资源.mjs';
 import {attachPreviewRuntime} from '../hunyuan-design-20261009/驾驶预览运行.mjs';
 import {attachObservationMoves} from '../hunyuan-design-20261009/驾驶围护观察移动.mjs';
+import {attachReviewLighting} from './review-lighting.mjs';
 
 const views={cockpit:[[0,.1,-1.65],[0,-.5,-5.25]],aft:[[0,-.12,-2.6],[0,-.3,4.2]],
  forward:[[0,-.05,3.9],[0,-.35,-4.5]],beds:[[.5,-.1,1.7],[-2.85,-1.02,1.4]],
@@ -42,8 +43,7 @@ export async function start(){
  const pmrem=new T.PMREMGenerator(renderer),room=new RoomEnvironment();
  const environment=pmrem.fromScene(room,.04);scene.environment=environment.texture;room.dispose();pmrem.dispose();
  const originals=new Map(),groups=new Map();
- const hemi=new T.HemisphereLight(0xffffff,0x5b7180,1.5);scene.add(hemi);
- const sun=new T.DirectionalLight(0xfff5e5,3);sun.position.set(-6,10,-8);scene.add(sun);
+ let lighting;
  function resize(){renderer.setSize(host.clientWidth,host.clientHeight);camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix();}
  function view(name){camera.position.fromArray(views[name][0]);controls.target.fromArray(views[name][1]);controls.update();}
  function visibility(){
@@ -57,13 +57,11 @@ export async function start(){
   }
  }
  const runtime=attachPreviewRuntime({renderer,controls,observation,resize,
-  release:()=>{events.abort();assets.dispose();environment.dispose();scene.clear();originals.clear();groups.clear();},
+  release:()=>{events.abort();lighting?.dispose();assets.dispose();environment.dispose();scene.clear();originals.clear();groups.clear();},
   onFailure:error=>{status.textContent='预览失败：'+error.message;}});
  try{
   const manifest=await assets.json('./assembly-v2.json');if(runtime.disposed)return;
-  for(const row of manifest.reviewLights){
-   const light=new T.PointLight(new T.Color(...row.color),row.watts,0,2);light.position.fromArray(row.position);scene.add(light);
-  }
+  lighting=attachReviewLighting({scene,renderer,reviewLights:manifest.reviewLights});
   for(const row of manifest.sources){
    let original=originals.get(row.source);
    if(!original){original=await assets.original('../../../'+row.source);if(runtime.disposed)return;originals.set(row.source,original);}
@@ -72,7 +70,11 @@ export async function start(){
   if(runtime.disposed)return;
   resize();visibility();view('aft');
   document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>view(button.dataset.view),options));
-  document.querySelectorAll('#tools input').forEach(input=>input.addEventListener('change',visibility,options));
+  document.querySelectorAll('#shell,#glass,#cabin,#furniture').forEach(input=>input.addEventListener('change',visibility,options));
+  const exposure=document.querySelector('#review-exposure'),exposureValue=document.querySelector('#exposure-value');
+  exposure.value='1';exposureValue.value='1.00';document.querySelector('#review-fill').checked=true;
+  exposure.addEventListener('input',()=>{exposureValue.value=lighting.setExposure(Number(exposure.value)).toFixed(2);},options);
+  document.querySelector('#review-fill').addEventListener('change',event=>lighting.setInterior(event.target.checked),options);
   status.textContent='真实原件试装；拖拽旋转、右键平移、滚轮缩放，WASD / 方向键移动，Q / E 升降。取消外壳仅为显式诊断。';
   let previous;
   runtime.start(time=>{const seconds=previous===undefined?0:Math.max(0,(time-previous)/1000);previous=time;

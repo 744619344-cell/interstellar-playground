@@ -1,0 +1,3309 @@
+{
+  "date": "2026-10-19",
+  "revision": "aft-closed",
+  "geometryCreatedOrModified": false,
+  "accepted": false,
+  "sources": {
+    "floor": {
+      "url": "../../master-design-20261009/modules-v6/cockpit-floor.glb",
+      "sha256": "135cc98958ae5606af622cf19d7a708c65090075db24cc0aa2e4a8f5ec6d52d9",
+      "bytes": 101140,
+      "sourceTriangles": 2496
+    },
+    "folding-berth": {
+      "url": "../../assembly-20261008/optimized-modules-v2/folding-berth.glb",
+      "sha256": "41fad8b02986f2e72b3445c1bcecf6e0f73320381bf5579f010e4c07b30753ea",
+      "bytes": 1788912,
+      "sourceTriangles": 3694
+    },
+    "rear-workbench": {
+      "url": "../../assembly-20261008/optimized-modules-v2/rear-workbench.glb",
+      "sha256": "b408bea04b685c7a0a9c66cd3cede47d4ad6c52ff80b57b20f3c37ff776f59d8",
+      "bytes": 966604,
+      "sourceTriangles": 3998
+    },
+    "storage-cabinet": {
+      "url": "../../assembly-20261008/optimized-modules-v2/storage-cabinet.glb",
+      "sha256": "60abd642b5d1f8fb90ae1f57345a847b87c894629d0250b1d092b67f7458e461",
+      "bytes": 1092580,
+      "sourceTriangles": 2830
+    },
+    "dual-suit-locker": {
+      "url": "../../assembly-20261008/optimized-modules-v2/dual-suit-locker.glb",
+      "sha256": "1f8d50b6e484603b832f63dff457b604ac278813f3d2e66a239e3e6e41775375",
+      "bytes": 1001964,
+      "sourceTriangles": 3756
+    },
+    "seat": {
+      "url": "../../assembly-20261008/optimized-modules-v2/seat.glb",
+      "sha256": "9476c9c3cc1a10bd511c386cabccd3a39a56f1543f2772ba94fd4ce7dab314dc",
+      "bytes": 3536020,
+      "sourceTriangles": 9019
+    },
+    "main-console": {
+      "url": "../../assembly-20261008/optimized-modules-v2/main-console.glb",
+      "sha256": "d3965e3b490cab12957103b9061a484d6e88c13079ea59b2b19d0c63c8c01d38",
+      "bytes": 1042820,
+      "sourceTriangles": 4000
+    },
+    "aft-bulkhead": {
+      "url": "../main-parts-20261019/aft-bulkhead-01/hunyuan-source-01.glb",
+      "sha256": "1da4616850eadfbd3eedbc08fd666c4e09b63d1fda5e3a2601a01a6fe66a06f1",
+      "bytes": 31543368,
+      "sourceTriangles": 50034
+    }
+  },
+  "parts": [
+    {
+      "name": "reused-v6-floor",
+      "type": "floor",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 1.909090798748433,
+        "offset": [
+          -0.0,
+          1.4753635439518127,
+          9.86363589468084
+        ]
+      }
+    },
+    {
+      "name": "reused-folding-berth-1",
+      "type": "furniture",
+      "source": "folding-berth",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 2.1,
+        "offset": [
+          -1.9130662202835085,
+          -0.773653540611267,
+          -0.3000702828168869
+        ]
+      },
+      "worldBounds": [
+        [
+          -2.95,
+          -1.16,
+          -0.9487614065408707
+        ],
+        [
+          -0.8766973316669466,
+          -0.3874772182106971,
+          0.3487614065408707
+        ]
+      ]
+    },
+    {
+      "name": "reused-folding-berth-2",
+      "type": "furniture",
+      "source": "folding-berth",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 2.1,
+        "offset": [
+          -1.9130662202835085,
+          -0.773653540611267,
+          1.5999297171831133
+        ]
+      },
+      "worldBounds": [
+        [
+          -2.95,
+          -1.16,
+          0.9512385934591295
+        ],
+        [
+          -0.8766973316669466,
+          -0.3874772182106971,
+          2.2487614065408708
+        ]
+      ]
+    },
+    {
+      "name": "reused-folding-berth-3",
+      "type": "furniture",
+      "source": "folding-berth",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 2.1,
+        "offset": [
+          -1.9130662202835085,
+          -0.773653540611267,
+          3.499929717183113
+        ]
+      },
+      "worldBounds": [
+        [
+          -2.95,
+          -1.16,
+          2.8512385934591293
+        ],
+        [
+          -0.8766973316669466,
+          -0.3874772182106971,
+          4.148761406540871
+        ]
+      ]
+    },
+    {
+      "name": "reused-rear-workbench-1",
+      "type": "furniture",
+      "source": "rear-workbench",
+      "placement": {
+        "quaternion": [
+          0.0,
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 1.8,
+        "offset": [
+          2.4149305188655856,
+          -0.9168871045112609,
+          -0.39984968900680545
+        ]
+      },
+      "worldBounds": [
+        [
+          1.939861037731171,
+          -1.525,
+          -1.1931178331375123
+        ],
+        [
+          2.89,
+          -0.30877420902252184,
+          0.3931178331375122
+        ]
+      ]
+    },
+    {
+      "name": "reused-storage-cabinet-1",
+      "type": "furniture",
+      "source": "storage-cabinet",
+      "placement": {
+        "quaternion": [
+          0.0,
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 1.5,
+        "offset": [
+          2.5767614990472794,
+          -1.1536885067820548,
+          1.4
+        ]
+      },
+      "worldBounds": [
+        [
+          2.1535229980945587,
+          -1.525,
+          0.6766662538051604
+        ],
+        [
+          3.0,
+          -0.7823770135641097,
+          2.1233337461948394
+        ]
+      ]
+    },
+    {
+      "name": "reused-dual-suit-locker-1",
+      "type": "furniture",
+      "source": "dual-suit-locker",
+      "placement": {
+        "quaternion": [
+          0.0,
+          -0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "uniformScale": 1.8,
+        "offset": [
+          2.5120934861898423,
+          -0.6208011627197264,
+          3.3999217331409453
+        ]
+      },
+      "worldBounds": [
+        [
+          2.1444065916538237,
+          -1.525,
+          2.854354304075241
+        ],
+        [
+          2.88,
+          0.2833976745605471,
+          3.9456456959247586
+        ]
+      ]
+    },
+    {
+      "name": "fore-floor-00-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.9222097450843152,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.2814731633895435,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.6407365816947718,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.0,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.6407365816947718,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.2814731633895435,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-00-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.9222097450843152,
+          -1.2527424332269068,
+          -5.204924288017141
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.242578035931701,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.6018414542369295,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.9611048725421576,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.3203682908473859,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.3203682908473859,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.9611048725421576,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.6018414542369295,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-01-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.242578035931701,
+          -1.2527424332269068,
+          -4.59242428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.242578035931701,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.6018414542369295,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.9611048725421576,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.3203682908473859,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.3203682908473859,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.9611048725421576,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.6018414542369295,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-02-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.242578035931701,
+          -1.2527424332269068,
+          -3.97992428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.562946326779087,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.9222097450843152,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.2814731633895435,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.6407365816947718,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.0,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.6407365816947718,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.2814731633895435,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.9222097450843152,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-03-08",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.562946326779087,
+          -1.2527424332269068,
+          -3.36742428801714
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.562946326779087,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.9222097450843152,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.2814731633895435,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.6407365816947718,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.0,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.6407365816947718,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.2814731633895435,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.9222097450843152,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-04-08",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.562946326779087,
+          -1.2527424332269068,
+          -2.7549242880171403
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.426886623685018,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.7861500419902459,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.1454134602954742,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.5046768786007024,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.1360597030940693,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.7767962847888411,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.4175328664836129,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.0582694481783843,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-05-08",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.699006029873156,
+          -1.2527424332269068,
+          -2.1424242880171405
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.883314617626473,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.242578035931701,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.6018414542369295,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.9611048725421576,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.3203682908473859,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.3203682908473859,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.9611048725421576,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.6018414542369295,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-08",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.242578035931701,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-06-09",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.883314617626473,
+          -1.2527424332269068,
+          -1.5299242880171402
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-00",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -3.203682908473859,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-01",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -2.562946326779087,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-02",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.9222097450843152,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-03",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -1.2814731633895435,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-04",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          -0.6407365816947718,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-05",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.0,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-06",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          0.6407365816947718,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-07",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.2814731633895435,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-08",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          1.9222097450843152,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-09",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          2.562946326779087,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "fore-floor-07-10",
+      "type": "floor",
+      "zone": "fore",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.18560604987831986,
+        "offset": [
+          3.203682908473859,
+          -1.2527424332269068,
+          -0.9174242880171399
+        ]
+      }
+    },
+    {
+      "name": "reused-seat--1",
+      "type": "furniture",
+      "source": "seat",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 1.2,
+        "offset": [
+          -0.8999969244003296,
+          -0.790889352798462,
+          -4.450067520141602
+        ]
+      },
+      "worldBounds": [
+        [
+          -1.3387206673622132,
+          -1.544,
+          -4.914683985710144
+        ],
+        [
+          -0.4612793326377869,
+          -0.038155502319335954,
+          -3.985316014289856
+        ]
+      ],
+      "zone": "fore",
+      "side": -1
+    },
+    {
+      "name": "reused-seat-1",
+      "type": "furniture",
+      "source": "seat",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 1.2,
+        "offset": [
+          0.9000030755996704,
+          -0.790889352798462,
+          -4.450067520141602
+        ]
+      },
+      "worldBounds": [
+        [
+          0.46127933263778687,
+          -1.544,
+          -4.914683985710144
+        ],
+        [
+          1.3387206673622132,
+          -0.038155502319335954,
+          -3.985316014289856
+        ]
+      ],
+      "zone": "fore",
+      "side": 1
+    },
+    {
+      "name": "reused-main-console--1",
+      "type": "furniture",
+      "source": "main-console",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 1.6,
+        "offset": [
+          -0.9000000000000001,
+          -0.9248544158935547,
+          -5.65
+        ]
+      },
+      "worldBounds": [
+        [
+          -1.590516757965088,
+          -1.544,
+          -6.089243984222413
+        ],
+        [
+          -0.2094832420349122,
+          -0.3057088317871093,
+          -5.210756015777588
+        ]
+      ],
+      "zone": "fore",
+      "side": -1
+    },
+    {
+      "name": "reused-main-console-1",
+      "type": "furniture",
+      "source": "main-console",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 1.6,
+        "offset": [
+          0.9000000000000001,
+          -0.9248544158935547,
+          -5.65
+        ]
+      },
+      "worldBounds": [
+        [
+          0.2094832420349122,
+          -1.544,
+          -6.089243984222413
+        ],
+        [
+          1.590516757965088,
+          -0.3057088317871093,
+          -5.210756015777588
+        ]
+      ],
+      "zone": "fore",
+      "side": 1
+    },
+    {
+      "name": "aft-floor-00-00",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -2.4714125293941187,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-01",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.9222097450843147,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-02",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.3730069607745103,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-03",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.8238041764647063,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-04",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.2746013921549021,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-05",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.2746013921549021,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-06",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.8238041764647063,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-07",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.3730069607745103,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-08",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.9222097450843147,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-00-09",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          2.4714125293941187,
+          -1.2946363713373488,
+          5.838636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-00",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -2.4714125293941187,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-01",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.9222097450843147,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-02",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.3730069607745103,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-03",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.8238041764647063,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-04",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.2746013921549021,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-05",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.2746013921549021,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-06",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.8238041764647063,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-07",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.3730069607745103,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-08",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.9222097450843147,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-01-09",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          2.4714125293941187,
+          -1.2946363713373488,
+          6.363636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-00",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -2.1968111372392167,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-01",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.6476083529294125,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-02",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.0984055686196084,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-03",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.5492027843098042,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-04",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.0,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-05",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.5492027843098042,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-06",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.0984055686196084,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-07",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.6476083529294125,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-02-08",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          2.1968111372392167,
+          -1.2946363713373488,
+          6.888636324556737
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-00",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.6476083529294125,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-01",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -1.0984055686196084,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-02",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          -0.5492027843098042,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-03",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.0,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-04",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          0.5492027843098042,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-05",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.0984055686196084,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-floor-03-06",
+      "type": "floor",
+      "zone": "aft",
+      "source": "floor",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 0.1590908998957027,
+        "offset": [
+          1.6476083529294125,
+          -1.2946363713373488,
+          7.413636324556736
+        ]
+      }
+    },
+    {
+      "name": "aft-bulkhead-complete",
+      "type": "wall",
+      "zone": "aft",
+      "source": "aft-bulkhead",
+      "placement": {
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uniformScale": 5.12,
+        "offset": [
+          0.000463409423828125,
+          -1.7999999864831115,
+          6.8
+        ]
+      }
+    }
+  ],
+  "floorDiagnostics": {
+    "dimensions": [
+      6.590433411717652,
+      0.1243718465532334,
+      6.300000000000001
+    ],
+    "floorAlignment": "median walking floor ray to shared floor; finite samples only",
+    "walkRays": [
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999999,
+      0.5009999999999998,
+      0.5009999999999999
+    ]
+  },
+  "wallCounts": [
+    {
+      "side": -1,
+      "count": 7,
+      "roofEdgeArcLength": 6.431785411251593,
+      "nominalWallWidthAtHeight2_83": 1.0228440181379665
+    },
+    {
+      "side": 1,
+      "count": 7,
+      "roofEdgeArcLength": 6.428760916816733,
+      "nominalWallWidthAtHeight2_83": 1.0228440181379665
+    }
+  ],
+  "measuredRoofEdgeCurves": {
+    "-1": [
+      {
+        "z": -1.4,
+        "x": -2.745122918450441,
+        "y": 1.200292679558622,
+        "finiteVertexCount": 261
+      },
+      {
+        "z": -1.19,
+        "x": -2.799383120111795,
+        "y": 1.2,
+        "finiteVertexCount": 210
+      },
+      {
+        "z": -0.9799999999999999,
+        "x": -2.863259651595876,
+        "y": 1.2002784516586533,
+        "finiteVertexCount": 193
+      },
+      {
+        "z": -0.7699999999999998,
+        "x": -2.9062617603238117,
+        "y": 1.2002856304343072,
+        "finiteVertexCount": 192
+      },
+      {
+        "z": -0.5599999999999998,
+        "x": -2.9595225215377514,
+        "y": 1.2001071842500781,
+        "finiteVertexCount": 172
+      },
+      {
+        "z": -0.34999999999999987,
+        "x": -3.0178485682124316,
+        "y": 1.2002285551576988,
+        "finiteVertexCount": 220
+      },
+      {
+        "z": -0.13999999999999968,
+        "x": -3.0637953827439746,
+        "y": 1.2003214005948173,
+        "finiteVertexCount": 235
+      },
+      {
+        "z": 0.07000000000000028,
+        "x": -3.11089876103755,
+        "y": 1.2002500549595145,
+        "finiteVertexCount": 225
+      },
+      {
+        "z": 0.28000000000000025,
+        "x": -3.1589089227663325,
+        "y": 1.2002500549595145,
+        "finiteVertexCount": 231
+      },
+      {
+        "z": 0.4900000000000002,
+        "x": -3.207929162946227,
+        "y": 1.200557077520325,
+        "finiteVertexCount": 231
+      },
+      {
+        "z": 0.7000000000000002,
+        "x": -3.256381865628841,
+        "y": 1.2004500115259191,
+        "finiteVertexCount": 378
+      },
+      {
+        "z": 0.9100000000000001,
+        "x": -3.284334816045548,
+        "y": 1.200657071130113,
+        "finiteVertexCount": 376
+      },
+      {
+        "z": 1.1200000000000006,
+        "x": -3.288768097706598,
+        "y": 1.200835571307872,
+        "finiteVertexCount": 264
+      },
+      {
+        "z": 1.3300000000000005,
+        "x": -3.292159174145368,
+        "y": 1.200907010322686,
+        "finiteVertexCount": 259
+      },
+      {
+        "z": 1.5400000000000005,
+        "x": -3.26987117345785,
+        "y": 1.2019707470245953,
+        "finiteVertexCount": 193
+      },
+      {
+        "z": 1.7500000000000004,
+        "x": -3.292430549619701,
+        "y": 1.2029274082408736,
+        "finiteVertexCount": 151
+      },
+      {
+        "z": 1.9600000000000004,
+        "x": -3.2923875720847615,
+        "y": 1.2008999365354318,
+        "finiteVertexCount": 202
+      },
+      {
+        "z": 2.1700000000000004,
+        "x": -3.2703137144116816,
+        "y": 1.2010641874433439,
+        "finiteVertexCount": 219
+      },
+      {
+        "z": 2.3800000000000003,
+        "x": -3.2896106275994694,
+        "y": 1.2010641874433439,
+        "finiteVertexCount": 278
+      },
+      {
+        "z": 2.5900000000000003,
+        "x": -3.2859481756863667,
+        "y": 1.2008500741106989,
+        "finiteVertexCount": 443
+      },
+      {
+        "z": 2.8000000000000003,
+        "x": -3.2535405612211763,
+        "y": 1.2004074682769774,
+        "finiteVertexCount": 472
+      },
+      {
+        "z": 3.0100000000000002,
+        "x": -3.2054912516387866,
+        "y": 1.200471760475437,
+        "finiteVertexCount": 294
+      },
+      {
+        "z": 3.22,
+        "x": -3.1567315361694526,
+        "y": 1.2003861159626887,
+        "finiteVertexCount": 245
+      },
+      {
+        "z": 3.43,
+        "x": -3.1177166576075153,
+        "y": 1.200428954403497,
+        "finiteVertexCount": 289
+      },
+      {
+        "z": 3.640000000000001,
+        "x": -3.0614824679799844,
+        "y": 1.2005003844364268,
+        "finiteVertexCount": 262
+      },
+      {
+        "z": 3.850000000000001,
+        "x": -3.017884311904857,
+        "y": 1.2003148101109011,
+        "finiteVertexCount": 195
+      },
+      {
+        "z": 4.0600000000000005,
+        "x": -2.973829147190869,
+        "y": 1.2001006471306843,
+        "finiteVertexCount": 204
+      },
+      {
+        "z": 4.270000000000001,
+        "x": -2.912911682815388,
+        "y": 1.2002291837969428,
+        "finiteVertexCount": 197
+      },
+      {
+        "z": 4.48,
+        "x": -2.8529652554174483,
+        "y": 1.2002792032339378,
+        "finiteVertexCount": 172
+      },
+      {
+        "z": 4.690000000000001,
+        "x": -2.791947793807207,
+        "y": 1.2002792032339378,
+        "finiteVertexCount": 190
+      },
+      {
+        "z": 4.9,
+        "x": -2.7507270187984796,
+        "y": 1.2004148837163966,
+        "finiteVertexCount": 258
+      }
+    ],
+    "1": [
+      {
+        "z": -1.4,
+        "x": 2.743987630695805,
+        "y": 1.2003712087559801,
+        "finiteVertexCount": 258
+      },
+      {
+        "z": -1.19,
+        "x": 2.797002334884213,
+        "y": 1.2004711963707264,
+        "finiteVertexCount": 169
+      },
+      {
+        "z": -0.9799999999999999,
+        "x": 2.853286523129124,
+        "y": 1.2004711963707264,
+        "finiteVertexCount": 175
+      },
+      {
+        "z": -0.7699999999999998,
+        "x": 2.905654968592886,
+        "y": 1.2008496133034807,
+        "finiteVertexCount": 182
+      },
+      {
+        "z": -0.5599999999999998,
+        "x": 2.9642022857444816,
+        "y": 1.2005498112968833,
+        "finiteVertexCount": 157
+      },
+      {
+        "z": -0.34999999999999987,
+        "x": 3.0169990172371204,
+        "y": 1.2004927254001454,
+        "finiteVertexCount": 213
+      },
+      {
+        "z": -0.13999999999999968,
+        "x": 3.0588873269778896,
+        "y": 1.2002500246758516,
+        "finiteVertexCount": 214
+      },
+      {
+        "z": 0.07000000000000028,
+        "x": 3.1148182271199936,
+        "y": 1.200549869654239,
+        "finiteVertexCount": 207
+      },
+      {
+        "z": 0.28000000000000025,
+        "x": 3.1489570703069756,
+        "y": 1.2006427057162998,
+        "finiteVertexCount": 231
+      },
+      {
+        "z": 0.4900000000000002,
+        "x": 3.209553266970781,
+        "y": 1.200685564347242,
+        "finiteVertexCount": 238
+      },
+      {
+        "z": 0.7000000000000002,
+        "x": 3.2586985036941254,
+        "y": 1.2005642411359163,
+        "finiteVertexCount": 352
+      },
+      {
+        "z": 0.9100000000000001,
+        "x": 3.279987063934229,
+        "y": 1.200856956984691,
+        "finiteVertexCount": 392
+      },
+      {
+        "z": 1.1200000000000006,
+        "x": 3.291231008322729,
+        "y": 1.2020777663897164,
+        "finiteVertexCount": 288
+      },
+      {
+        "z": 1.3300000000000005,
+        "x": 3.291216753397774,
+        "y": 1.201399602604675,
+        "finiteVertexCount": 299
+      },
+      {
+        "z": 1.5400000000000005,
+        "x": 3.291505894338282,
+        "y": 1.2026061364918161,
+        "finiteVertexCount": 200
+      },
+      {
+        "z": 1.7500000000000004,
+        "x": 3.279708773757492,
+        "y": 1.2026061364918161,
+        "finiteVertexCount": 152
+      },
+      {
+        "z": 1.9600000000000004,
+        "x": 3.279516013130487,
+        "y": 1.201478220392408,
+        "finiteVertexCount": 194
+      },
+      {
+        "z": 2.1700000000000004,
+        "x": 3.2718950536613702,
+        "y": 1.2017423982142033,
+        "finiteVertexCount": 265
+      },
+      {
+        "z": 2.3800000000000003,
+        "x": 3.292758838413817,
+        "y": 1.201171303741708,
+        "finiteVertexCount": 266
+      },
+      {
+        "z": 2.5900000000000003,
+        "x": 3.2820181779802633,
+        "y": 1.200935736250469,
+        "finiteVertexCount": 385
+      },
+      {
+        "z": 2.8000000000000003,
+        "x": 3.2499139593805357,
+        "y": 1.20082867332851,
+        "finiteVertexCount": 373
+      },
+      {
+        "z": 3.0100000000000002,
+        "x": 3.200425966178046,
+        "y": 1.2008358464439532,
+        "finiteVertexCount": 226
+      },
+      {
+        "z": 3.22,
+        "x": 3.1510702033615203,
+        "y": 1.2002790257725504,
+        "finiteVertexCount": 219
+      },
+      {
+        "z": 3.43,
+        "x": 3.108203941940806,
+        "y": 1.200457509152908,
+        "finiteVertexCount": 215
+      },
+      {
+        "z": 3.640000000000001,
+        "x": 3.063713363735464,
+        "y": 1.2004147267836744,
+        "finiteVertexCount": 216
+      },
+      {
+        "z": 3.850000000000001,
+        "x": 3.0197225589438483,
+        "y": 1.2004361774258006,
+        "finiteVertexCount": 206
+      },
+      {
+        "z": 4.0600000000000005,
+        "x": 2.9688890710336517,
+        "y": 1.2004361774258006,
+        "finiteVertexCount": 175
+      },
+      {
+        "z": 4.270000000000001,
+        "x": 2.9114518295679286,
+        "y": 1.2003505459389119,
+        "finiteVertexCount": 190
+      },
+      {
+        "z": 4.48,
+        "x": 2.8494100345816196,
+        "y": 1.2004576653384298,
+        "finiteVertexCount": 181
+      },
+      {
+        "z": 4.690000000000001,
+        "x": 2.804626804894549,
+        "y": 1.2004005792516639,
+        "finiteVertexCount": 172
+      },
+      {
+        "z": 4.9,
+        "x": 2.7490206830053405,
+        "y": 1.2000864908515576,
+        "finiteVertexCount": 253
+      }
+    ]
+  },
+  "floorY": -1.54,
+  "rangeZ": [
+    -1.4,
+    4.9
+  ],
+  "limits": [
+    "Only existing whole-object clones, rigid transforms and positive uniform scale.",
+    "Wall bays join side-by-side through existing sealing margins; no vertical stacking, new gap fillers or geometry export.",
+    "Contact datums estimated from source vertex bands; actual surface and visual checks required.",
+    "Original floor/roof/wall geometry, materials, UVs and normals are unchanged.",
+    "Furniture originals reused whole; separate collision and aisle checks required; structure must pass with furniture hidden.",
+    "Furniture originals reused whole; separate collision and aisle checks required; structure must pass with furniture hidden.",
+    "Furniture originals reused whole; separate collision and aisle checks required; structure must pass with furniture hidden.",
+    "Furniture originals reused whole; separate collision and aisle checks required; structure must pass with furniture hidden.",
+    "Fore floor uses adjacent complete existing floor units, not the rejected Hunyuan floor.",
+    "Rejected fore cassettes are excluded; complete Hunyuan fore wall sources still required.",
+    "Asymmetric original hull datums retained; floor panels may shift as whole units, never stretch.",
+    "Aft whole-panel diagnosis, rear bulkhead still pending. No local mesh generation, trimming or wall stacking."
+  ],
+  "floorUnitRows": [
+    {
+      "row": 0,
+      "zRange": [
+        -6.3,
+        -5.6875
+      ],
+      "count": 7,
+      "actualWidth": 4.485156071863402,
+      "centerX": 0.0,
+      "portExtent": 2.242578035931701,
+      "starboardExtent": 2.242578035931701,
+      "minimumSampledShellWidthMinus6cm": 4.653922662334199
+    },
+    {
+      "row": 1,
+      "zRange": [
+        -5.6875,
+        -5.074999999999999
+      ],
+      "count": 8,
+      "actualWidth": 5.125892653558174,
+      "centerX": 0.0,
+      "portExtent": 2.562946326779087,
+      "starboardExtent": 2.562946326779087,
+      "minimumSampledShellWidthMinus6cm": 5.169265101952921
+    },
+    {
+      "row": 2,
+      "zRange": [
+        -5.074999999999999,
+        -4.4624999999999995
+      ],
+      "count": 8,
+      "actualWidth": 5.125892653558174,
+      "centerX": 0.0,
+      "portExtent": 2.562946326779087,
+      "starboardExtent": 2.562946326779087,
+      "minimumSampledShellWidthMinus6cm": 5.468435922122653
+    },
+    {
+      "row": 3,
+      "zRange": [
+        -4.4624999999999995,
+        -3.8499999999999996
+      ],
+      "count": 9,
+      "actualWidth": 5.766629235252946,
+      "centerX": 0.0,
+      "portExtent": 2.883314617626473,
+      "starboardExtent": 2.883314617626473,
+      "minimumSampledShellWidthMinus6cm": 5.955688529373981
+    },
+    {
+      "row": 4,
+      "zRange": [
+        -3.8499999999999996,
+        -3.2375
+      ],
+      "count": 9,
+      "actualWidth": 5.766629235252946,
+      "centerX": 0.0,
+      "portExtent": 2.883314617626473,
+      "starboardExtent": 2.883314617626473,
+      "minimumSampledShellWidthMinus6cm": 6.403073003393113
+    },
+    {
+      "row": 5,
+      "zRange": [
+        -3.2375,
+        -2.6249999999999996
+      ],
+      "count": 9,
+      "actualWidth": 5.766629235252946,
+      "centerX": 0.1360597030940693,
+      "portExtent": 2.747254914532404,
+      "starboardExtent": 3.019374320720542,
+      "minimumSampledShellWidthMinus6cm": 6.121816083754381
+    },
+    {
+      "row": 6,
+      "zRange": [
+        -2.6249999999999996,
+        -2.0124999999999993
+      ],
+      "count": 10,
+      "actualWidth": 6.407365816947718,
+      "centerX": 0.0,
+      "portExtent": 3.203682908473859,
+      "starboardExtent": 3.203682908473859,
+      "minimumSampledShellWidthMinus6cm": 7.01903075517181
+    },
+    {
+      "row": 7,
+      "zRange": [
+        -2.0124999999999993,
+        -1.3999999999999995
+      ],
+      "count": 11,
+      "actualWidth": 7.04810239864249,
+      "centerX": 0.0,
+      "portExtent": 3.524051199321245,
+      "starboardExtent": 3.524051199321245,
+      "minimumSampledShellWidthMinus6cm": 7.2112298096392315
+    }
+  ],
+  "foreFloorBaseWidthProfile": [
+    [
+      -6.3,
+      4.3
+    ],
+    [
+      -5.6875,
+      4.445156071863402
+    ],
+    [
+      -5.074999999999999,
+      4.8725000000000005
+    ],
+    [
+      -4.4624999999999995,
+      5.085892653558174
+    ],
+    [
+      -3.8499999999999996,
+      5.445
+    ],
+    [
+      -3.2375,
+      5.590569532158877
+    ],
+    [
+      -2.6249999999999996,
+      5.726629235252946
+    ],
+    [
+      -2.0124999999999993,
+      6.30375
+    ],
+    [
+      -1.3999999999999995,
+      6.59
+    ]
+  ],
+  "foreFloorBaseProfiles": {
+    "-1": [
+      [
+        -6.3,
+        2.15
+      ],
+      [
+        -5.6875,
+        2.222578035931701
+      ],
+      [
+        -5.074999999999999,
+        2.4362500000000002
+      ],
+      [
+        -4.4624999999999995,
+        2.542946326779087
+      ],
+      [
+        -3.8499999999999996,
+        2.7225
+      ],
+      [
+        -3.2375,
+        2.727254914532404
+      ],
+      [
+        -2.6249999999999996,
+        2.727254914532404
+      ],
+      [
+        -2.0124999999999993,
+        3.151875
+      ],
+      [
+        -1.3999999999999995,
+        3.295
+      ]
+    ],
+    "1": [
+      [
+        -6.3,
+        2.15
+      ],
+      [
+        -5.6875,
+        2.222578035931701
+      ],
+      [
+        -5.074999999999999,
+        2.4362500000000002
+      ],
+      [
+        -4.4624999999999995,
+        2.542946326779087
+      ],
+      [
+        -3.8499999999999996,
+        2.7225
+      ],
+      [
+        -3.2375,
+        2.863314617626473
+      ],
+      [
+        -2.6249999999999996,
+        2.999374320720542
+      ],
+      [
+        -2.0124999999999993,
+        3.151875
+      ],
+      [
+        -1.3999999999999995,
+        3.295
+      ]
+    ]
+  },
+  "aftFloorBaseProfiles": {
+    "-1": [
+      [
+        4.9,
+        2.7260139215490207
+      ],
+      [
+        5.425000000000001,
+        2.7260139215490207
+      ],
+      [
+        5.95,
+        2.4514125293941187
+      ],
+      [
+        6.475,
+        1.9022097450843147
+      ],
+      [
+        7.0,
+        1.9022097450843147
+      ]
+    ],
+    "1": [
+      [
+        4.9,
+        2.7260139215490207
+      ],
+      [
+        5.425000000000001,
+        2.7260139215490207
+      ],
+      [
+        5.95,
+        2.4514125293941187
+      ],
+      [
+        6.475,
+        1.9022097450843147
+      ],
+      [
+        7.0,
+        1.9022097450843147
+      ]
+    ]
+  },
+  "aftFloorRows": [
+    {
+      "row": 0,
+      "zRange": [
+        4.9,
+        5.425000000000001
+      ],
+      "count": 10,
+      "actualWidth": 5.492027843098041,
+      "centerX": 0.0,
+      "portExtent": 2.7460139215490207,
+      "starboardExtent": 2.7460139215490207,
+      "minimumSampledShellWidthMinus6cm": 5.54550873262652
+    },
+    {
+      "row": 1,
+      "zRange": [
+        5.425000000000001,
+        5.95
+      ],
+      "count": 10,
+      "actualWidth": 5.492027843098041,
+      "centerX": 0.0,
+      "portExtent": 2.7460139215490207,
+      "starboardExtent": 2.7460139215490207,
+      "minimumSampledShellWidthMinus6cm": 5.546031406961723
+    },
+    {
+      "row": 2,
+      "zRange": [
+        5.95,
+        6.475
+      ],
+      "count": 9,
+      "actualWidth": 4.942825058788237,
+      "centerX": 0.0,
+      "portExtent": 2.4714125293941187,
+      "starboardExtent": 2.4714125293941187,
+      "minimumSampledShellWidthMinus6cm": 5.123634858324294
+    },
+    {
+      "row": 3,
+      "zRange": [
+        6.475,
+        7.0
+      ],
+      "count": 7,
+      "actualWidth": 3.8444194901686295,
+      "centerX": 0.0,
+      "portExtent": 1.9222097450843147,
+      "starboardExtent": 1.9222097450843147,
+      "minimumSampledShellWidthMinus6cm": 4.199182980141502
+    }
+  ],
+  "diagnosticOnly": true,
+  "usesGeneratedTexture": false
+}

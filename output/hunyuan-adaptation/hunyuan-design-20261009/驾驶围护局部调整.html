@@ -1,11 +1,27 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>驾驶围护 · 保留混元原件的局部调整</title>
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>飞船 · 原内舱恢复 / 外部 r10</title>
 <style>body{margin:0;overflow:hidden;background:#17354c;color:#e6edf2;font:14px/1.5 system-ui}canvas{display:block}header{position:absolute;z-index:2;inset:12px auto auto 12px;background:#132331ed;border-radius:8px;padding:12px;max-width:calc(100% - 48px)}button{margin:3px;padding:7px;background:#273f50;color:white;border:1px solid #5a7484;border-radius:4px}button[aria-pressed=true]{background:#476d83;border-color:#a2d6ed}#status{white-space:pre-line}small{display:block}body.compact .info{display:none}</style>
-<header><b>驾驶围护 · 第九版局部修订</b><button id="fold">收起信息</button>
-<div><button id="original" aria-pressed="false">混元原件</button><button id="adjusted" aria-pressed="true">局部修订</button></div>
-<div class="info"><p>只修前段顶棚接口、两处变形把手与缺失顶灯；保留整舱结构和安装位置。</p>
+<style>body.clean header{display:none}#restore-panel{display:none;position:fixed;top:12px;left:12px;z-index:3}body.clean #restore-panel{display:block}</style>
+<style>header{max-height:calc(100vh - 48px);overflow:auto}button:disabled,select:disabled{opacity:.5;cursor:wait}#load-state{margin:6px 0;padding:8px;background:#203b4b;border-radius:4px;overflow-wrap:anywhere}#load-state[role=alert]{background:#5c302a}#load-progress{white-space:pre-line}button[hidden]{display:none}</style>
+<header><b>飞船 · 恢复远端前内舱 / 保留外部 r10</b><button id="fold">收起信息</button><button id="hide-panel">隐藏面板看实物</button>
+<div id="load-state" role="status" aria-live="polite"><span id="load-progress">正在准备3D预览…</span><button id="retry-preview" hidden>重新加载预览</button></div>
+<div><button data-view="整船外观">整船外观</button><button data-view="整船侧面">整船侧面</button><button data-view="整船后方">整船后方</button><button data-view="驾驶眼位">进入驾驶舱</button></div>
+<small style="color:#ffd49a">按用户要求恢复远端重新装配前的内舱：r13围护、主仪表台v2及原家具布局；外壳与玻璃保留当前r10。内舱恢复选用不代表整舱已验收。</small>
+<div><button id="original" aria-pressed="false">混元原件</button><button id="adjusted" aria-pressed="true">局部修订</button><a id="revision-link" style="color:#bce5ff;margin-left:8px" href="?revision=r9">对照上一版 r9</a></div>
+<div><a style="color:#bce5ff" href="?revision=r17">接口纹理 r17（未通过，仅对照）</a><button id="coating-before" hidden>同机位：r13 材质</button><button id="coating-after" hidden>同机位：图像候选</button></div>
+<div><label>舱内布局 <select id="context-layout"><option value="placement">混元内舱试装候选</option><option value="legacy">旧混合位置（已否决）</option></select></label><small id="context-note">手建参照待混元模型替换。</small></div>
+<div><a id="console-version-link" style="color:#bce5ff" href="?console=v1">对照旧主仪表台 v1</a> · <a style="color:#bce5ff" href="./内舱装配-20261013/主仪表台-v2/来源试装.html">主仪表台原件与同机位对照</a></div>
+<div class="info"><p>主仪表台v2已集成两根握把，正进行整舱试装；屏幕细节、手部可达与膝部净空待验。外侧落地台继续撤下，两侧过道留空。驾驶隔舱/门叶为静态试装，接边待验。r13保留，旧布局仅作对照。</p>
 <div><button data-view="驾驶席">驾驶席</button><button data-view="背面">背面</button><button data-view="左接边">左接边</button><button data-view="右接边">右接边</button><button data-view="地面过渡">地面过渡</button><button data-view="顶棚过渡">顶棚过渡</button><button data-view="后舱接边">后舱接边</button><button data-view="侧面总览">侧面总览</button></div>
+<div><button data-view="左肩角近景">左肩角近景</button><button data-view="右肩角近景">右肩角近景</button></div>
+<div><button data-view="设备俯视">设备俯视</button><button data-view="后舱总览">后舱总览</button><button data-view="折叠床近景">折叠床近景</button><button data-view="工作台近景">工作台近景</button></div>
+<div><button data-view="驾驶隔舱前侧">驾驶隔舱前侧</button><button data-view="驾驶隔舱后侧">驾驶隔舱后侧</button></div>
+<div><button data-view="左侧过道">左侧过道</button><button data-view="右侧过道">右侧过道</button><button data-view="座椅通路总览">座椅通路总览</button></div>
 <div><button data-move="前移">前移</button><button data-move="后移">后移</button><button data-move="左移">左移</button><button data-move="右移">右移</button><button data-move="拉近">拉近</button><button data-move="拉远">拉远</button></div>
 <label><input id="candidate" type="checkbox" checked>显示混元围护</label><label><input id="context" type="checkbox" checked>显示舱内参照</label>
-<div id="status">加载原始文件…</div><small>拖动旋转 · 滚轮缩放 · 右键平移；按钮为观察移动，无碰撞限制。本页为局部修订对照，整舱与用户美术尚未验收。</small></div></header>
+<label><input id="exterior" type="checkbox" checked>显示飞船外壳（关闭仅作剖视）</label><label><input id="glazing" type="checkbox" checked>显示前挡及舱罩玻璃</label>
+<label><input id="normal-detail" type="checkbox" checked>保留来源凹凸贴图（对照）</label>
+<label><input id="color-detail" type="checkbox" checked>保留来源颜色贴图（对照）</label>
+<div id="status">加载原始文件…</div><small>WASD / 方向键移动 · Q/E 升降 · 拖动旋转 · 滚轮缩放 · 右键平移；按钮为观察移动，无碰撞限制。本页为局部修订对照，整舱与用户美术尚未验收。</small></div></header>
+<button id="restore-panel">显示面板</button>
 <script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
 <script type="module" src="./驾驶围护局部调整.mjs"></script></html>

@@ -8,17 +8,31 @@ sys.path.insert(0,str(ROOT/'output/hunyuan-adaptation/windshield-glass-20261018'
 from glb_surface_io import accessor,load
 
 
+def selected_module(node, primitive):
+    """Classify existing tagged side glazing without changing source data."""
+    module = node.get('extras', {}).get('module')
+    region = primitive.get('extras', {}).get('reviewRegion')
+    if module == 'exterior-hull' and region in {'left-pane', 'right-pane'}:
+        return 'exterior-glass'
+    return module
+
+
 def read_world(path,modules=None):
     doc,binary,_=load(path)
     vertices=[];faces=[];count=0
     def visit(index,parent):
         nonlocal count
         node=doc['nodes'][index];world=parent@transform(node)
-        module=node.get('extras',{}).get('module')
-        if 'mesh' in node and (modules is None or module in modules):
+        if 'mesh' in node:
             for primitive in doc['meshes'][node['mesh']]['primitives']:
+                if modules is not None and selected_module(node, primitive) not in modules:
+                    continue
                 v=accessor(doc,binary,primitive['attributes']['POSITION'])
                 f=accessor(doc,binary,primitive['indices']).reshape(-1,3)
+                if modules is not None:
+                    # Shared accessors also contain vertices unused by this pane.
+                    used = np.unique(f)
+                    v, f = v[used], np.searchsorted(used, f)
                 vertices.append(v@world[:3,:3].T+world[:3,3]);faces.append(f+count);count+=len(v)
         for child in node.get('children',[]):visit(child,world)
     for index in doc['scenes'][doc.get('scene',0)]['nodes']:visit(index,np.eye(4))
